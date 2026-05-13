@@ -1,16 +1,22 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+import { getSiteUrl } from "@/lib/seo";
+
+const STATIC_PAGES = [
+  "/",
+  "/find-youtube-quotes",
+  "/search-podcast-transcripts",
+  "/find-youtube-timestamps",
+  "/search-youtube-captions",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-  ];
+  const siteUrl = getSiteUrl();
+
+  return STATIC_PAGES.map((path) => ({
+    url: path === "/" ? siteUrl : `${siteUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: path === "/" ? 1 : 0.8,
+  }));
 }
