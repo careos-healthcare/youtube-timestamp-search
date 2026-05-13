@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     description: "Paste a YouTube video link and find the exact timestamp where something is mentioned.",
     images: ["/og-placeholder.svg"],
   },
+  verification: {
+    google: "Y9eWmNIxO4fyfS4htuc5kUIbjbJ1xBqd-5DVcH7-V44",
+  },
 };
 
 export default function RootLayout({
