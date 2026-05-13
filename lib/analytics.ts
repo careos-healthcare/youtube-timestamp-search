@@ -1,10 +1,13 @@
 import { track } from "@vercel/analytics";
 
 export type AnalyticsEventName =
-  | "searches"
-  | "successful_results"
-  | "transcript_failures"
-  | "result_clicks";
+  | "search_submitted"
+  | "transcript_load_success"
+  | "transcript_load_failed"
+  | "cta_email_submitted"
+  | "cta_chrome_extension_clicked"
+  | "cta_api_access_clicked"
+  | "cta_save_search_clicked";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
@@ -20,6 +23,6 @@ export function trackEvent(name: AnalyticsEventName, payload: AnalyticsPayload =
   }
 
   if (process.env.NODE_ENV !== "production") {
-    console.debug("[analytics-placeholder]", name, payload);
+    console.debug("[analytics]", name, payload);
   }
 }
