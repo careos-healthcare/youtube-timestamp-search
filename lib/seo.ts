@@ -46,6 +46,36 @@ export function buildVideoPath(videoId: string) {
   return `/video/${videoId}`;
 }
 
+export function buildTopicPath(keyword: string) {
+  return `/topic/${encodeURIComponent(keyword.toLowerCase())}`;
+}
+
+export function createTopicMetadata(keyword: string): Metadata {
+  const label = keyword.charAt(0).toUpperCase() + keyword.slice(1);
+  const title = `Search YouTube transcripts for ${label.toLowerCase()} moments`;
+  const description = `Find ${label.toLowerCase()} quotes, podcast moments, and timestamps inside YouTube transcripts.`;
+  const url = `${getSiteUrl()}${buildTopicPath(keyword)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+  };
+}
+
 export function createMomentMetadata(videoId: string, query: string): Metadata {
   const phrase = normalizeText(query);
   const title = `Find '${phrase}' in YouTube transcript`;

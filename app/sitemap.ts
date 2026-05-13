@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import { getSiteUrl } from "@/lib/seo";
+import { getSiteUrl, buildTopicPath } from "@/lib/seo";
+import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 
 const STATIC_PAGES = [
   "/",
@@ -13,10 +14,19 @@ const STATIC_PAGES = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
 
-  return STATIC_PAGES.map((path) => ({
+  const staticEntries = STATIC_PAGES.map((path) => ({
     url: path === "/" ? siteUrl : `${siteUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: path === "/" ? 1 : 0.8,
   }));
+
+  const topicEntries = TOPIC_KEYWORDS.map((keyword) => ({
+    url: `${siteUrl}${buildTopicPath(keyword)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...topicEntries];
 }
