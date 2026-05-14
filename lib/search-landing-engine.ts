@@ -1,7 +1,8 @@
 import { buildMomentPath, buildVideoPath } from "@/lib/seo";
-import { extractAnswerFromMoments, type ExtractedAnswerResult } from "@/lib/search/answer-extraction";
+import { buildAnswerDominance, type AnswerDominanceResult } from "@/lib/search/answer-dominance";
 import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
 import type { SearchLandingMoment } from "@/lib/search/landing-types";
+import { synthesizeMultiVideoAnswer, type MultiVideoSynthesis } from "@/lib/search/multi-video-synthesis";
 import { getPeopleAlsoSearched, getRelatedIntentGroups } from "@/lib/search/related-intent";
 import type { IndexedTranscriptSearchResult } from "@/lib/search/types";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
@@ -16,7 +17,8 @@ export type SearchLandingData = {
   peopleAlsoSearched: Array<{ phrase: string; href: string; score: number }>;
   relatedIntentGroups: ReturnType<typeof getRelatedIntentGroups>;
   searchMode: string;
-  answer: ExtractedAnswerResult;
+  answer: AnswerDominanceResult;
+  synthesis: MultiVideoSynthesis;
   topVideos: Array<{
     videoId: string;
     title: string;
@@ -55,12 +57,13 @@ export async function getSearchLandingData(phrase: string, limit = 40): Promise<
     ranking: moment.ranking,
   }));
 
-  const answer = extractAnswerFromMoments({
+  const answer = buildAnswerDominance({
     query: trimmed,
     moments,
     relatedPhrases: peopleAlsoSearched.map((item) => item.phrase),
     peopleAlsoSearched,
   });
+  const synthesis = synthesizeMultiVideoAnswer(trimmed, moments);
 
   return {
     phrase: trimmed,
@@ -71,6 +74,7 @@ export async function getSearchLandingData(phrase: string, limit = 40): Promise<
     relatedIntentGroups: getRelatedIntentGroups(trimmed),
     searchMode: hybrid.diagnostics.mode,
     answer,
+    synthesis,
     topVideos: buildTopVideos(hybrid.results),
   };
 }

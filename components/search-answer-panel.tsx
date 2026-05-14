@@ -37,6 +37,11 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
 
   const source = answer.sourceMoment;
   const range = answer.timestampRange;
+  const tiered = [
+    answer.bestBeginnerExplanation,
+    answer.bestTechnicalExplanation,
+    answer.bestPracticalExample,
+  ].filter(Boolean);
 
   return (
     <section className="rounded-2xl border border-emerald-400/25 bg-emerald-400/5 p-4 sm:p-6">
@@ -97,6 +102,40 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
             </Link>
           </div>
         </div>
+
+        {tiered.length > 0 ? (
+          <div className="grid gap-3 lg:grid-cols-3">
+            {tiered.map((tier) => (
+              <div
+                key={tier!.label}
+                className="rounded-xl border border-white/10 bg-slate-950/50 p-3"
+              >
+                <h3 className="text-sm font-semibold text-white">{tier!.label}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-300">&quot;{tier!.snippet}&quot;</p>
+                <p className="mt-2 text-xs text-slate-500">{tier!.moment.videoTitle}</p>
+              </div>
+            ))}
+          </div>
+        ) : null}
+
+        {data.synthesis.consensusExplanation ? (
+          <div className="rounded-xl border border-white/10 bg-slate-950/50 p-4">
+            <h3 className="text-sm font-semibold text-white">Consensus across indexed videos</h3>
+            <p className="mt-2 text-sm leading-7 text-slate-300">{data.synthesis.consensusExplanation}</p>
+            {data.synthesis.recurringThemes.length > 0 ? (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {data.synthesis.recurringThemes.map((theme) => (
+                  <span
+                    key={theme}
+                    className="rounded-full border border-blue-400/20 bg-blue-500/10 px-2.5 py-0.5 text-xs text-blue-100"
+                  >
+                    {theme}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        ) : null}
 
         {answer.supportingMoments.length > 0 ? (
           <div>

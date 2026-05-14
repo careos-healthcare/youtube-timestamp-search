@@ -9,6 +9,7 @@ import { SearchForm } from "@/components/search-form";
 import { SearchLandingResults } from "@/components/search-landing-results";
 import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
 import { SearchQueryTracker } from "@/components/search-query-tracker";
+import { SearchSessionTracker } from "@/components/search-session-tracker";
 import { SearchSharePanel } from "@/components/search-share-panel";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { buildSearchPageUrl } from "@/lib/og-urls";
@@ -87,6 +88,11 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
   return (
     <PageShell>
       <SearchQueryTracker query={phrase} resultCount={landing.moments.length} />
+      <SearchSessionTracker
+        query={phrase}
+        resultCount={landing.moments.length}
+        answerMode={landing.answer.mode}
+      />
 
       <script
         type="application/ld+json"

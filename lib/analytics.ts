@@ -28,7 +28,12 @@ export type AnalyticsEventName =
   | "result_feedback"
   | "referrer_visit"
   | "extension_video_search"
-  | "extension_index_request";
+  | "extension_index_request"
+  | "search_reformulation"
+  | "search_pogo_stick"
+  | "search_abandon"
+  | "search_answer_success"
+  | "search_dwell";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

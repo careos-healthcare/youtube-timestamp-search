@@ -26,7 +26,10 @@
     "queries:validate-intelligence": "tsx scripts/validate-query-intelligence.ts",
     "queries:validate-quality": "tsx scripts/validate-query-quality.ts",
     "pages:generate": "tsx scripts/generate-opportunity-pages.ts",
-    "pages:validate": "tsx scripts/validate-generated-pages.ts"
+    "pages:validate": "tsx scripts/validate-generated-pages.ts",
+    "search:validate-answers": "tsx scripts/validate-answer-quality.ts",
+    "graph:build": "tsx scripts/build-knowledge-graph.ts",
+    "graph:validate": "tsx scripts/validate-knowledge-graph.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
