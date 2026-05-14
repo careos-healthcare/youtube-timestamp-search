@@ -17,6 +17,11 @@ import {
   tokenizeQuery,
 } from "@/lib/query-intelligence/query-normalizer";
 import {
+  isJunkPhrase,
+  passesOpportunityQuality,
+  scorePhraseQuality,
+} from "@/lib/query-quality/phrase-quality-score";
+import {
   rankOpportunities,
   type OpportunityInput,
   type ScoredOpportunity,
@@ -89,6 +94,8 @@ function bumpSignal(
   patch: Partial<MutableSignal> & { source?: string }
 ) {
   if (!isUsefulQueryPhrase(phrase)) return;
+  if (isJunkPhrase(phrase)) return;
+  if (patch.source === "indexed-transcript" && !passesOpportunityQuality(phrase)) return;
 
   const key = mergeQueryKey(phrase);
   const existing = map.get(key) ?? {
@@ -167,7 +174,8 @@ async function loadCorpusSignals(map: Map<string, MutableSignal>) {
   }
 
   for (const [phrase, count] of phraseCounts.entries()) {
-    if (count < 4) continue;
+    if (count < 6) continue;
+    if (!passesOpportunityQuality(phrase)) continue;
     bumpSignal(map, phrase, {
       corpusHits: count,
       demand: Math.min(count, 12),
@@ -215,18 +223,25 @@ function toOpportunityInputs(
   map: Map<string, MutableSignal>,
   clusters: ReturnType<typeof clusterQueries>
 ): OpportunityInput[] {
-  return [...map.values()].map((signal) => ({
-    phrase: signal.phrase,
-    demand: signal.demand,
-    zeroResults: signal.zeroResults,
-    clicks: signal.clicks,
-    feedbackYes: signal.feedbackYes,
-    feedbackNo: signal.feedbackNo,
-    existingCoverage: existingCoverageScore(signal.phrase, map),
-    topicDepthGap: topicDepthGapScore(signal.phrase, clusters),
-    freshnessBoost: freshnessBoostScore(signal),
-    intent: classifyQueryIntent(signal.phrase),
-  }));
+  return [...map.values()]
+    .map((signal) => {
+      const existingCoverage = existingCoverageScore(signal.phrase, map);
+      const quality = scorePhraseQuality(signal.phrase, { existingCoverage });
+      return {
+        phrase: signal.phrase,
+        demand: signal.demand,
+        zeroResults: signal.zeroResults,
+        clicks: signal.clicks,
+        feedbackYes: signal.feedbackYes,
+        feedbackNo: signal.feedbackNo,
+        existingCoverage,
+        topicDepthGap: topicDepthGapScore(signal.phrase, clusters),
+        freshnessBoost: freshnessBoostScore(signal),
+        intent: classifyQueryIntent(signal.phrase),
+        phraseQuality: quality.qualityScore,
+      };
+    })
+    .filter((input) => !isJunkPhrase(input.phrase) && (input.phraseQuality ?? 0) >= 0.35);
 }
 
 function buildIngestRecommendations(opportunities: ScoredOpportunity[]) {

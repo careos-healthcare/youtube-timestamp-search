@@ -35,11 +35,12 @@ function testOpportunityScoring() {
     topicDepthGap: 0.7,
     freshnessBoost: 0.5,
     intent: "definitional",
+    phraseQuality: 0.82,
   });
 
   const low = scoreOpportunity({
-    phrase: "kubernetes",
-    demand: 2,
+    phrase: "does not",
+    demand: 30,
     zeroResults: 0,
     clicks: 0,
     feedbackYes: 0,
@@ -48,6 +49,7 @@ function testOpportunityScoring() {
     topicDepthGap: 0.1,
     freshnessBoost: 0,
     intent: "general",
+    phraseQuality: 0.05,
   });
 
   assert.ok(high.opportunityScore > low.opportunityScore);

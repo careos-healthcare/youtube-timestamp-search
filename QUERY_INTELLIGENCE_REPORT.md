@@ -1,6 +1,6 @@
 # Query Intelligence Report
 
-Generated: 2026-05-14T22:11:45.376Z
+Generated: 2026-05-14T22:35:44.841Z
 Analytics source: high-intent-fallback
 Indexed videos scanned: 80
 Corpus phrase candidates: 155343
@@ -9,31 +9,31 @@ Corpus phrase candidates: 155343
 
 | Rank | Query | Opportunity | Demand | Zero | Clicks | Intent |
 |------|-------|------------:|-------:|-----:|-------:|--------|
-| 1 | data | 73.0 | 30 | 0 | 0 | general |
-| 2 | does | 67.5 | 30 | 0 | 0 | general |
-| 3 | does not | 67.5 | 30 | 0 | 0 | general |
-| 4 | how does | 67.5 | 30 | 0 | 0 | general |
-| 5 | y combinator startup school | 67.5 | 8 | 0 | 0 | commercial |
-| 6 | diary of a ceo startup | 65.5 | 7 | 0 | 0 | commercial |
-| 7 | y combinator startup school startup | 65.5 | 7 | 0 | 0 | commercial |
-| 8 | y combinator startup school entrepreneurship | 65.5 | 7 | 0 | 0 | commercial |
-| 9 | y combinator startup school saas | 65.5 | 7 | 0 | 0 | commercial |
-| 10 | it's | 63.0 | 30 | 0 | 0 | general |
-| 11 | let's | 63.0 | 30 | 0 | 0 | general |
-| 12 | right | 63.0 | 30 | 0 | 0 | general |
-| 13 | know | 63.0 | 30 | 0 | 0 | general |
-| 14 | some | 63.0 | 30 | 0 | 0 | general |
-| 15 | that's | 63.0 | 30 | 0 | 0 | general |
-| 16 | want | 63.0 | 30 | 0 | 0 | general |
-| 17 | we're | 63.0 | 30 | 0 | 0 | general |
-| 18 | more | 63.0 | 30 | 0 | 0 | general |
-| 19 | what's | 63.0 | 30 | 0 | 0 | definitional |
-| 20 | can't | 63.0 | 30 | 0 | 0 | general |
-| 21 | how much | 63.0 | 30 | 0 | 0 | general |
-| 22 | how many | 63.0 | 30 | 0 | 0 | general |
-| 23 | can actually | 63.0 | 30 | 0 | 0 | general |
-| 24 | what's the | 63.0 | 30 | 0 | 0 | definitional |
-| 25 | can make | 63.0 | 30 | 0 | 0 | general |
+| 1 | y combinator startup school | 82.5 | 8 | 0 | 0 | commercial |
+| 2 | y combinator startup school entrepreneurship | 81.2 | 7 | 0 | 0 | commercial |
+| 3 | y combinator startup school saas | 81.2 | 7 | 0 | 0 | commercial |
+| 4 | y combinator startup school startup | 80.5 | 7 | 0 | 0 | commercial |
+| 5 | diary of a ceo startup | 74.3 | 7 | 0 | 0 | commercial |
+| 6 | tool use | 62.9 | 9 | 0 | 0 | commercial |
+| 7 | huberman lab clips dopamine | 60.5 | 7 | 0 | 0 | navigational |
+| 8 | huberman lab clips neuroscience | 60.5 | 7 | 0 | 0 | navigational |
+| 9 | huberman lab clips sleep | 59.1 | 7 | 0 | 0 | navigational |
+| 10 | huberman lab clips focus | 59.1 | 7 | 0 | 0 | navigational |
+| 11 | best model | 58.8 | 7 | 0 | 0 | commercial |
+| 12 | how to learn python | 58.8 | 18 | 0 | 0 | how_to |
+| 13 | system software | 57.0 | 9 | 0 | 0 | commercial |
+| 14 | software development | 56.0 | 7 | 0 | 0 | commercial |
+| 15 | react course | 55.8 | 8 | 0 | 0 | commercial |
+| 16 | during course | 55.5 | 9 | 0 | 0 | commercial |
+| 17 | learn all | 54.8 | 9 | 0 | 0 | how_to |
+| 18 | movie review | 54.2 | 9 | 0 | 0 | commercial |
+| 19 | lex ai clips ai | 51.7 | 7 | 0 | 0 | general |
+| 20 | lex ai clips robotics | 51.7 | 7 | 0 | 0 | general |
+| 21 | learn kubernetes | 51.1 | 6 | 0 | 0 | how_to |
+| 22 | price house | 50.6 | 9 | 0 | 0 | commercial |
+| 23 | update best | 50.4 | 7 | 0 | 0 | commercial |
+| 24 | two minute papers machine-learning | 50.3 | 7 | 0 | 0 | general |
+| 25 | deep learning | 49.6 | 12 | 0 | 0 | general |
 
 
 ## Zero-result opportunities
@@ -53,90 +53,90 @@ _No candidates yet._
 
 ## New topic clusters to index
 
-1. **Data science** — 150 related queries (demand 1032)
-2. **Time management** — 68 related queries (demand 543)
-3. **Deep work** — 39 related queries (demand 255)
-4. **Web development** — 32 related queries (demand 239)
-5. **Machine learning** — 36 related queries (demand 225)
-6. **Open source** — 29 related queries (demand 190)
-7. **Find YouTube quotes** — 30 related queries (demand 178)
-8. **Cloud computing** — 21 related queries (demand 163)
-9. **Language learning** — 22 related queries (demand 158)
-10. **Conference talk** — 19 related queries (demand 154)
-11. **System design** — 24 related queries (demand 149)
-12. **React** — 20 related queries (demand 148)
-13. **Second brain** — 16 related queries (demand 113)
-14. **Transcript search** — 14 related queries (demand 113)
-15. **Exercise science** — 16 related queries (demand 106)
+1. **Machine learning** — 10 related queries (demand 99)
+2. **Deep work** — 10 related queries (demand 88)
+3. **Transcript search** — 8 related queries (demand 86)
+4. **Time management** — 4 related queries (demand 46)
+5. **Strength training** — 5 related queries (demand 45)
+6. **Audiobook clips** — 6 related queries (demand 42)
+7. **Audience building** — 5 related queries (demand 38)
+8. **Startup** — 5 related queries (demand 36)
+9. **Science podcast** — 4 related queries (demand 30)
+10. **Web development** — 4 related queries (demand 29)
+11. **docker container** — 2 related queries (demand 21)
+12. **Lecture transcript** — 2 related queries (demand 19)
+13. **Python** — 1 related queries (demand 18)
+14. **Business podcast** — 2 related queries (demand 18)
+15. **price house** — 2 related queries (demand 17)
 
 ## Pages to create next
 
 | Rank | Query | Opportunity | Demand | Zero | Clicks | Intent |
 |------|-------|------------:|-------:|-----:|-------:|--------|
-| 1 | data | 73.0 | 30 | 0 | 0 | general |
-| 2 | does | 67.5 | 30 | 0 | 0 | general |
-| 3 | does not | 67.5 | 30 | 0 | 0 | general |
-| 4 | how does | 67.5 | 30 | 0 | 0 | general |
-| 5 | y combinator startup school | 67.5 | 8 | 0 | 0 | commercial |
-| 6 | diary of a ceo startup | 65.5 | 7 | 0 | 0 | commercial |
-| 7 | y combinator startup school startup | 65.5 | 7 | 0 | 0 | commercial |
-| 8 | y combinator startup school entrepreneurship | 65.5 | 7 | 0 | 0 | commercial |
-| 9 | y combinator startup school saas | 65.5 | 7 | 0 | 0 | commercial |
-| 10 | it's | 63.0 | 30 | 0 | 0 | general |
-| 11 | let's | 63.0 | 30 | 0 | 0 | general |
-| 12 | right | 63.0 | 30 | 0 | 0 | general |
-| 13 | know | 63.0 | 30 | 0 | 0 | general |
-| 14 | some | 63.0 | 30 | 0 | 0 | general |
-| 15 | that's | 63.0 | 30 | 0 | 0 | general |
-| 16 | want | 63.0 | 30 | 0 | 0 | general |
-| 17 | we're | 63.0 | 30 | 0 | 0 | general |
-| 18 | more | 63.0 | 30 | 0 | 0 | general |
-| 19 | what's | 63.0 | 30 | 0 | 0 | definitional |
-| 20 | can't | 63.0 | 30 | 0 | 0 | general |
+| 1 | y combinator startup school | 82.5 | 8 | 0 | 0 | commercial |
+| 2 | y combinator startup school entrepreneurship | 81.2 | 7 | 0 | 0 | commercial |
+| 3 | y combinator startup school saas | 81.2 | 7 | 0 | 0 | commercial |
+| 4 | y combinator startup school startup | 80.5 | 7 | 0 | 0 | commercial |
+| 5 | diary of a ceo startup | 74.3 | 7 | 0 | 0 | commercial |
+| 6 | tool use | 62.9 | 9 | 0 | 0 | commercial |
+| 7 | huberman lab clips dopamine | 60.5 | 7 | 0 | 0 | navigational |
+| 8 | huberman lab clips neuroscience | 60.5 | 7 | 0 | 0 | navigational |
+| 9 | huberman lab clips sleep | 59.1 | 7 | 0 | 0 | navigational |
+| 10 | huberman lab clips focus | 59.1 | 7 | 0 | 0 | navigational |
+| 11 | best model | 58.8 | 7 | 0 | 0 | commercial |
+| 12 | system software | 57.0 | 9 | 0 | 0 | commercial |
+| 13 | software development | 56.0 | 7 | 0 | 0 | commercial |
+| 14 | react course | 55.8 | 8 | 0 | 0 | commercial |
+| 15 | during course | 55.5 | 9 | 0 | 0 | commercial |
+| 16 | learn all | 54.8 | 9 | 0 | 0 | how_to |
+| 17 | movie review | 54.2 | 9 | 0 | 0 | commercial |
+| 18 | lex ai clips ai | 51.7 | 7 | 0 | 0 | general |
+| 19 | lex ai clips robotics | 51.7 | 7 | 0 | 0 | general |
+| 20 | learn kubernetes | 51.1 | 6 | 0 | 0 | how_to |
 
 
 ## Videos/channels to ingest next
 
-1. **All-In Podcast** — 242 high-opportunity queries map to this creator/channel (score 8037.3)
-2. **Lex Fridman** — 238 high-opportunity queries map to this creator/channel (score 7769.5)
-3. **Sam Harris** — 238 high-opportunity queries map to this creator/channel (score 7749.7)
-4. **Patrick Bet-David** — 14 high-opportunity queries map to this creator/channel (score 612.5)
-5. **Diary of a CEO** — 11 high-opportunity queries map to this creator/channel (score 564.8)
-6. **Huberman Lab Clips** — 11 high-opportunity queries map to this creator/channel (score 449.1)
-7. **Tim Ferriss** — 8 high-opportunity queries map to this creator/channel (score 425.4)
-8. **Joe Rogan** — 3 high-opportunity queries map to this creator/channel (score 128.7)
-9. **does** — Topic cluster with 3 related demand signals (score 90.0)
-10. **Modern Wisdom** — 2 high-opportunity queries map to this creator/channel (score 79.2)
-11. **Jordan Peterson** — 2 high-opportunity queries map to this creator/channel (score 79.2)
-12. **Theo Von** — 2 high-opportunity queries map to this creator/channel (score 79.2)
-13. **some** — Topic cluster with 2 related demand signals (score 60.0)
-14. **what's** — Topic cluster with 2 related demand signals (score 60.0)
-15. **Startup** — Topic cluster with 5 related demand signals (score 36.0)
+1. **All-In Podcast** — 18 high-opportunity queries map to this creator/channel (score 935.6)
+2. **Lex Fridman** — 15 high-opportunity queries map to this creator/channel (score 646.6)
+3. **Sam Harris** — 14 high-opportunity queries map to this creator/channel (score 576.3)
+4. **Diary of a CEO** — 7 high-opportunity queries map to this creator/channel (score 480.4)
+5. **Tim Ferriss** — 6 high-opportunity queries map to this creator/channel (score 429.6)
+6. **Huberman Lab Clips** — 4 high-opportunity queries map to this creator/channel (score 239.0)
+7. **Patrick Bet-David** — 4 high-opportunity queries map to this creator/channel (score 196.7)
+8. **Joe Rogan** — 2 high-opportunity queries map to this creator/channel (score 100.8)
+9. **Transcript search** — Topic cluster with 6 related demand signals (score 71.0)
+10. **Audiobook clips** — Topic cluster with 6 related demand signals (score 42.0)
+11. **Modern Wisdom** — 1 high-opportunity queries map to this creator/channel (score 40.4)
+12. **Jordan Peterson** — 1 high-opportunity queries map to this creator/channel (score 40.4)
+13. **Theo Von** — 1 high-opportunity queries map to this creator/channel (score 40.4)
+14. **Startup** — Topic cluster with 5 related demand signals (score 36.0)
+15. **Machine learning** — Topic cluster with 3 related demand signals (score 31.0)
 
 ## Revenue/commercial-intent opportunities
 
 | Rank | Query | Opportunity | Demand | Zero | Clicks | Intent |
 |------|-------|------------:|-------:|-----:|-------:|--------|
-| 1 | y combinator startup school | 67.5 | 8 | 0 | 0 | commercial |
-| 2 | diary of a ceo startup | 65.5 | 7 | 0 | 0 | commercial |
-| 3 | y combinator startup school startup | 65.5 | 7 | 0 | 0 | commercial |
-| 4 | y combinator startup school entrepreneurship | 65.5 | 7 | 0 | 0 | commercial |
-| 5 | y combinator startup school saas | 65.5 | 7 | 0 | 0 | commercial |
-| 6 | system software | 58.6 | 9 | 0 | 0 | commercial |
-| 7 | react course | 56.8 | 8 | 0 | 0 | commercial |
-| 8 | taking course | 54.8 | 5 | 0 | 0 | commercial |
-| 9 | learning course | 54.8 | 5 | 0 | 0 | commercial |
-| 10 | piece software | 54.8 | 5 | 0 | 0 | commercial |
-| 11 | types software | 54.8 | 5 | 0 | 0 | commercial |
-| 12 | software application | 54.8 | 5 | 0 | 0 | commercial |
-| 13 | software development | 54.8 | 7 | 0 | 0 | commercial |
-| 14 | course i'm | 53.3 | 12 | 0 | 0 | commercial |
-| 15 | throughout course | 53.3 | 12 | 0 | 0 | commercial |
-| 16 | later course | 53.3 | 12 | 0 | 0 | commercial |
-| 17 | course let's | 53.3 | 12 | 0 | 0 | commercial |
-| 18 | course going | 53.3 | 12 | 0 | 0 | commercial |
-| 19 | course it's | 53.3 | 12 | 0 | 0 | commercial |
-| 20 | best way | 53.3 | 12 | 0 | 0 | commercial |
+| 1 | y combinator startup school | 82.5 | 8 | 0 | 0 | commercial |
+| 2 | y combinator startup school entrepreneurship | 81.2 | 7 | 0 | 0 | commercial |
+| 3 | y combinator startup school saas | 81.2 | 7 | 0 | 0 | commercial |
+| 4 | y combinator startup school startup | 80.5 | 7 | 0 | 0 | commercial |
+| 5 | diary of a ceo startup | 74.3 | 7 | 0 | 0 | commercial |
+| 6 | tool use | 62.9 | 9 | 0 | 0 | commercial |
+| 7 | best model | 58.8 | 7 | 0 | 0 | commercial |
+| 8 | system software | 57.0 | 9 | 0 | 0 | commercial |
+| 9 | software development | 56.0 | 7 | 0 | 0 | commercial |
+| 10 | react course | 55.8 | 8 | 0 | 0 | commercial |
+| 11 | during course | 55.5 | 9 | 0 | 0 | commercial |
+| 12 | movie review | 54.2 | 9 | 0 | 0 | commercial |
+| 13 | price house | 50.6 | 9 | 0 | 0 | commercial |
+| 14 | update best | 50.4 | 7 | 0 | 0 | commercial |
+| 15 | start course | 49.3 | 6 | 0 | 0 | commercial |
+| 16 | line tool | 49.3 | 6 | 0 | 0 | commercial |
+| 17 | over course | 49.3 | 6 | 0 | 0 | commercial |
+| 18 | price prediction | 48.8 | 8 | 0 | 0 | commercial |
+| 19 | house price | 48.8 | 8 | 0 | 0 | commercial |
+| 20 | one best | 48.1 | 6 | 0 | 0 | commercial |
 
 
 ## Regenerate

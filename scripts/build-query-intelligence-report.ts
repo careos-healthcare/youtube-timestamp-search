@@ -8,6 +8,10 @@ import {
   buildQueryIntelligenceReport,
   formatQueryIntelligenceMarkdown,
 } from "../lib/query-intelligence/build-report";
+import {
+  buildQueryQualityReport,
+  formatQueryQualityMarkdown,
+} from "../lib/query-quality/quality-report";
 
 async function main() {
   loadLocalEnv();
@@ -22,8 +26,20 @@ async function main() {
   writeFileSync(markdownPath, markdown, "utf8");
   writeFileSync(jsonPath, JSON.stringify(report, null, 2), "utf8");
 
+  const qualityReport = buildQueryQualityReport(
+    report.opportunities.map((item) => ({
+      phrase: item.phrase,
+      demand: item.demand,
+      freshnessBoost: item.freshnessBoost,
+      existingCoverage: item.existingCoverage,
+    }))
+  );
+  const qualityMarkdownPath = join(process.cwd(), "QUERY_QUALITY_REPORT.md");
+  writeFileSync(qualityMarkdownPath, formatQueryQualityMarkdown(qualityReport), "utf8");
+
   console.log(`Wrote ${markdownPath}`);
   console.log(`Wrote ${jsonPath}`);
+  console.log(`Wrote ${qualityMarkdownPath}`);
   console.log(`Analytics source: ${report.analyticsSource}`);
   console.log(`Opportunities ranked: ${report.opportunities.length}`);
   console.log(`Top opportunity: ${report.opportunities[0]?.phrase ?? "none"}`);

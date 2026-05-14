@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import type { ScoredOpportunity } from "@/lib/query-intelligence/opportunity-scoring";
+import { passesPageGenerationQuality } from "@/lib/query-quality/phrase-quality-score";
 import { isSpamOrNoisePhrase } from "@/lib/page-generation/page-quality-guard";
 import { slugifySearchPhrase, slugifyTopicPhrase } from "@/lib/page-generation/page-slugger";
 import { PRIORITY_SEARCH_QUERIES } from "@/lib/search-query-seeds";
@@ -61,6 +62,7 @@ export function selectSearchOpportunities(
     const phrase = item.phrase.trim().toLowerCase();
     const slug = slugifySearchPhrase(phrase);
     if (seen.has(slug) || existing.has(slug) || isSpamOrNoisePhrase(phrase)) continue;
+    if (!passesPageGenerationQuality(phrase, item.existingCoverage)) continue;
 
     seen.add(slug);
     selected.push({

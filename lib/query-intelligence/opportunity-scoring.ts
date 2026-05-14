@@ -12,6 +12,7 @@ export type OpportunityInput = {
   topicDepthGap: number;
   freshnessBoost: number;
   intent: QueryIntent;
+  phraseQuality?: number;
 };
 
 export type ScoredOpportunity = OpportunityInput & {
@@ -23,10 +24,19 @@ export type ScoredOpportunity = OpportunityInput & {
     topicDepthGap: number;
     commercialIntent: number;
     freshnessBoost: number;
+    phraseQualityBoost: number;
+    genericLanguagePenalty: number;
     existingCoveragePenalty: number;
     badResultPenalty: number;
   };
 };
+
+function educationalIntentBoost(intent: QueryIntent) {
+  if (intent === "definitional" || intent === "how_to") return 12;
+  if (intent === "comparison" || intent === "problem_solving") return 9;
+  if (intent === "commercial" || intent === "navigational") return 5;
+  return 0;
+}
 
 export function scoreOpportunity(input: OpportunityInput): ScoredOpportunity {
   const demand = Math.log2(input.demand + 1) * 12;
@@ -34,6 +44,8 @@ export function scoreOpportunity(input: OpportunityInput): ScoredOpportunity {
   const topicDepthGap = input.topicDepthGap * 18;
   const commercialIntent = commercialIntentScore(input.phrase) * 20;
   const freshnessBoost = input.freshnessBoost * 10;
+  const phraseQualityBoost = (input.phraseQuality ?? 0) * 22 + educationalIntentBoost(input.intent);
+  const genericLanguagePenalty = (1 - (input.phraseQuality ?? 0)) * 18;
   const existingCoveragePenalty = input.existingCoverage * 25;
   const badResultPenalty =
     input.feedbackNo > input.feedbackYes ? Math.min((input.feedbackNo - input.feedbackYes) * 6, 24) : 0;
@@ -46,7 +58,9 @@ export function scoreOpportunity(input: OpportunityInput): ScoredOpportunity {
         zeroResultWeight +
         topicDepthGap +
         commercialIntent +
-        freshnessBoost -
+        freshnessBoost +
+        phraseQualityBoost -
+        genericLanguagePenalty -
         existingCoveragePenalty -
         badResultPenalty
       ).toFixed(2)
@@ -63,6 +77,8 @@ export function scoreOpportunity(input: OpportunityInput): ScoredOpportunity {
       topicDepthGap,
       commercialIntent,
       freshnessBoost,
+      phraseQualityBoost,
+      genericLanguagePenalty,
       existingCoveragePenalty,
       badResultPenalty,
     },

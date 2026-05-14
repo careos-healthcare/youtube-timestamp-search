@@ -24,6 +24,7 @@
     "search:validate-semantic": "tsx scripts/validate-semantic-search.ts",
     "queries:intelligence": "tsx scripts/build-query-intelligence-report.ts",
     "queries:validate-intelligence": "tsx scripts/validate-query-intelligence.ts",
+    "queries:validate-quality": "tsx scripts/validate-query-quality.ts",
     "pages:generate": "tsx scripts/generate-opportunity-pages.ts",
     "pages:validate": "tsx scripts/validate-generated-pages.ts"
   },

@@ -25,6 +25,14 @@ export function classifyQueryIntent(phrase: string): QueryIntent {
     return "how_to";
   }
 
+  if (/\b(guide|tutorial|explained|walkthrough|introduction to)\b/.test(lower)) {
+    return "how_to";
+  }
+
+  if (/\b(market fit|fundraising|pricing|go to market|product strategy)\b/.test(lower)) {
+    return "commercial";
+  }
+
   if (COMMERCIAL_PATTERN.test(lower)) {
     return "commercial";
   }
