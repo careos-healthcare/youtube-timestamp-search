@@ -4,7 +4,7 @@ import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { getCreatorBySlug } from "@/lib/creator-data";
 import { getTranscriptCategoryBySlug } from "@/lib/category-data";
 import { PRODUCT_DESCRIPTION, PRODUCT_WEDGE } from "@/lib/product-copy";
-import { buildSearchOgImageUrl, buildVideoOgImageUrl } from "@/lib/og-urls";
+import { buildMomentOgImageUrl, buildSearchOgImageUrl, buildVideoOgImageUrl } from "@/lib/og-urls";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -232,6 +232,7 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
   const title = `Find '${phrase}' inside this video`;
   const description = `${PRODUCT_WEDGE} Search the transcript for '${phrase}' in video ${videoId} and open the exact timestamp.`;
   const url = buildMomentUrl(videoId, phrase);
+  const ogImage = buildMomentOgImageUrl(videoId, { query: phrase });
 
   return {
     title,
@@ -242,13 +243,13 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
       description,
       url,
       type: "website",
-      images: ["/og-placeholder.svg"],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-placeholder.svg"],
+      images: [ogImage],
     },
   };
 }

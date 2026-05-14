@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { MomentSharePanel } from "@/components/moment-share-panel";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { RelatedSearches } from "@/components/related-searches";
 import { SearchForm } from "@/components/search-form";
 import { TranscriptResults } from "@/components/transcript-results";
+import { getIndexedVideoById } from "@/lib/indexed-videos";
 import { buildMomentUrl, createMomentMetadata, deslugifyQuery } from "@/lib/seo";
 import { fetchTranscriptByVideoId, TranscriptFetchError } from "@/lib/transcript-service";
 import { hybridFindMatches } from "@/lib/search/per-video-hybrid-search";
@@ -23,6 +25,7 @@ export default async function MomentPage({ params }: MomentPageProps) {
   const { videoId, query } = await params;
   const phrase = deslugifyQuery(query);
   const shareUrl = buildMomentUrl(videoId, phrase);
+  const indexed = await getIndexedVideoById(videoId);
   let transcriptError = "";
   let results = [] as ReturnType<typeof hybridFindMatches>;
   let suggestions: string[] = [];
@@ -79,6 +82,23 @@ export default async function MomentPage({ params }: MomentPageProps) {
             searchedPhrase={phrase}
             videoId={videoId}
             shareUrl={shareUrl}
+          />
+
+          <MomentSharePanel
+            videoId={videoId}
+            phrase={phrase}
+            videoTitle={indexed?.title ?? `Video ${videoId}`}
+            channelName={indexed?.channelName}
+            topResult={
+              results[0]
+                ? {
+                    snippet: results[0].snippet,
+                    timestamp: results[0].timestamp,
+                    youtubeUrl: results[0].openUrl,
+                    startSeconds: results[0].start,
+                  }
+                : undefined
+            }
           />
 
           <section className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">

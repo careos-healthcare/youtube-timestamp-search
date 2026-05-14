@@ -2,11 +2,18 @@
 
 import { useState } from "react";
 
+import { ClipBriefPanel } from "@/components/clip-brief-panel";
 import { CopyableLink } from "@/components/copyable-link";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
+import { buildContextSentence } from "@/lib/clip-distribution";
 import {
+  buildAnswerOgImageUrl,
+  buildEmbedAnswerUrl,
   buildEmbedMomentUrl,
   buildEmbedSearchUrl,
+  buildMomentOgImageUrl,
+  buildSearchOgImageUrl,
+  buildTrackedSearchPageUrl,
 } from "@/lib/og-urls";
 
 type SearchSharePanelProps = {
@@ -29,30 +36,40 @@ function buildPlainTextSummary(phrase: string, landing: SearchLandingData, canon
   return lines.join("\n");
 }
 
-function buildRedditTitle(phrase: string, landing: SearchLandingData) {
-  return `[Searchable moments] "${phrase}" across ${landing.videoCount} indexed long-form videos`;
-}
-
-function buildHackerNewsTitle(phrase: string) {
-  return `Search inside video for "${phrase}" — timestamped transcript moments`;
-}
-
 export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchSharePanelProps) {
   const [shared, setShared] = useState(false);
-  const plainSummary = buildPlainTextSummary(phrase, landing, canonicalUrl);
+  const trackedUrl = buildTrackedSearchPageUrl(phrase, "copy", "copy");
+  const plainSummary = buildPlainTextSummary(phrase, landing, trackedUrl);
   const embedSearch = buildEmbedSearchUrl(phrase);
+  const embedAnswer = buildEmbedAnswerUrl(phrase);
   const topMoment = landing.moments[0];
   const embedMoment = topMoment
-    ? buildEmbedMomentUrl(topMoment.videoId, phrase, topMoment.timestamp)
+    ? buildEmbedMomentUrl(topMoment.videoId, phrase, {
+        timestamp: topMoment.timestamp,
+        snippet: topMoment.snippet,
+        channelName: topMoment.channelName,
+      })
     : null;
+
+  const searchBrief = {
+    kind: "search" as const,
+    title: phrase,
+    quote: topMoment?.snippet ?? `Indexed transcript moments for "${phrase}".`,
+    timestampUrl: topMoment?.youtubeUrl ?? trackedUrl,
+    pageUrl: canonicalUrl,
+    videoTitle: topMoment?.videoTitle,
+    channelName: topMoment?.channelName,
+    timestampLabel: topMoment?.timestamp,
+    videoId: topMoment?.videoId,
+  };
 
   async function handleNativeShare() {
     if (!navigator.share) return;
     try {
       await navigator.share({
-        title: buildHackerNewsTitle(phrase),
+        title: `Search inside video for "${phrase}"`,
         text: plainSummary,
-        url: canonicalUrl,
+        url: trackedUrl,
       });
       setShared(true);
     } catch {
@@ -66,7 +83,7 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
         <div>
           <h2 className="text-base font-semibold text-white">Share this search</h2>
           <p className="mt-1 text-sm text-slate-300">
-            Copy timestamp links, plain-text summaries, or embed widgets for blogs and forums.
+            Share cards, clip briefs, embed widgets, and tracked links for forums and social posts.
           </p>
         </div>
         {typeof navigator !== "undefined" && "share" in navigator ? (
@@ -80,15 +97,66 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
         ) : null}
       </div>
 
-      <CopyableLink label="Canonical link" value={canonicalUrl} />
+      <CopyableLink label="Search share card image" value={buildSearchOgImageUrl(phrase)} />
+      {landing.answer.mode === "answer" && landing.answer.answerSnippet ? (
+        <CopyableLink label="Answer share card image" value={buildAnswerOgImageUrl(phrase)} />
+      ) : null}
+      {topMoment ? (
+        <CopyableLink
+          label="Top moment share card image"
+          value={buildMomentOgImageUrl(topMoment.videoId, {
+            query: phrase,
+            timestamp: topMoment.timestamp,
+            snippet: topMoment.snippet,
+          })}
+        />
+      ) : null}
+
+      <ClipBriefPanel brief={searchBrief} ogImageUrl={buildSearchOgImageUrl(phrase)} />
+
+      <CopyableLink label="Tracked canonical link" value={trackedUrl} />
       <CopyableLink label="Plain text summary (Reddit / forums)" value={plainSummary} />
-      <CopyableLink label="Reddit post title" value={buildRedditTitle(phrase, landing)} monospace={false} />
-      <CopyableLink label="Hacker News title" value={buildHackerNewsTitle(phrase)} monospace={false} />
-      <CopyableLink label="Embed search widget" value={`<iframe src="${embedSearch}" width="100%" height="180" style="border:0;border-radius:12px" loading="lazy"></iframe>`} />
+      <CopyableLink
+        label="Embed search widget"
+        value={`<iframe src="${embedSearch}" width="100%" height="200" style="border:0;border-radius:12px" loading="lazy" title="Search transcript moments"></iframe>`}
+      />
+      <CopyableLink
+        label="Embed answer widget"
+        value={`<iframe src="${embedAnswer}" width="100%" height="240" style="border:0;border-radius:12px" loading="lazy" title="Transcript answer card"></iframe>`}
+      />
       {embedMoment ? (
         <CopyableLink
-          label="Embed timestamp card"
-          value={`<iframe src="${embedMoment}" width="100%" height="220" style="border:0;border-radius:12px" loading="lazy"></iframe>`}
+          label="Embed moment card"
+          value={`<iframe src="${embedMoment}" width="100%" height="260" style="border:0;border-radius:12px" loading="lazy" title="Timestamped transcript moment"></iframe>`}
+        />
+      ) : null}
+
+      {landing.answer.mode === "answer" &&
+      landing.answer.answerSnippet &&
+      landing.answer.sourceMoment &&
+      landing.answer.jumpUrl ? (
+        <ClipBriefPanel
+          brief={{
+            kind: "answer",
+            title: phrase,
+            quote: landing.answer.answerSnippet,
+            timestampUrl: landing.answer.jumpUrl,
+            pageUrl: canonicalUrl,
+            videoId: landing.answer.sourceMoment.videoId,
+            videoTitle: landing.answer.sourceMoment.videoTitle,
+            channelName: landing.answer.sourceMoment.channelName,
+            timestampLabel: landing.answer.sourceMoment.timestamp,
+            contextSentence: buildContextSentence({
+              kind: "answer",
+              title: phrase,
+              quote: landing.answer.answerSnippet,
+              timestampUrl: landing.answer.jumpUrl,
+              pageUrl: canonicalUrl,
+              videoTitle: landing.answer.sourceMoment.videoTitle,
+              timestampLabel: landing.answer.sourceMoment.timestamp,
+            }),
+          }}
+          ogImageUrl={buildAnswerOgImageUrl(phrase)}
         />
       ) : null}
 
