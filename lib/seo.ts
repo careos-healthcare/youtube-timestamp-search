@@ -252,10 +252,15 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
   };
 }
 
-export function createSearchMetadata(query: string): Metadata {
+export function createSearchMetadata(
+  query: string,
+  options?: { title?: string; description?: string }
+): Metadata {
   const phrase = normalizeText(query);
-  const title = `Search indexed videos for '${phrase}'`;
-  const description = `${PRODUCT_WEDGE} Find exact transcript matches for '${phrase}' across long-form lectures, podcasts, and tutorials.`;
+  const title = options?.title ?? `Search indexed videos for '${phrase}'`;
+  const description =
+    options?.description ??
+    `${PRODUCT_WEDGE} Find exact transcript matches for '${phrase}' across long-form lectures, podcasts, and tutorials.`;
   const url = `${getSiteUrl()}${buildSearchPath(phrase)}`;
 
   return {

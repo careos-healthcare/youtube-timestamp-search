@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { SearchResultFeedback } from "@/components/search-result-feedback";
 import { ShareActions } from "@/components/share-actions";
-import { trackEvent } from "@/lib/analytics";
+import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
 import { NO_PHRASE_MATCH_COPY } from "@/lib/empty-state-copy";
 import { renderHighlightedText } from "@/lib/highlight";
 import type { SearchResult } from "@/lib/transcript-types";
@@ -78,13 +78,18 @@ export function TranscriptResults({
                 href={result.openUrl}
                 target="_blank"
                 rel="noreferrer"
-                onClick={() =>
+                onClick={() => {
                   trackEvent("youtube_timestamp_click", {
                     videoId,
                     position: index + 1,
                     timestamp: result.timestamp,
-                  })
-                }
+                  });
+                  trackPersistentEvent("youtube_open", {
+                    query: searchedPhrase,
+                    videoId,
+                    timestamp: result.timestamp,
+                  });
+                }}
                 className="inline-flex h-11 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-400/10 px-4 text-sm font-medium whitespace-nowrap text-blue-100 transition hover:bg-blue-400/20"
               >
                 Open at this moment

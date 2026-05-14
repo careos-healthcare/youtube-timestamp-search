@@ -4,6 +4,7 @@ import { FormEvent, KeyboardEvent, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { trackEvent } from "@/lib/analytics";
+import { SearchSuggestions } from "@/components/search-suggestions";
 import { slugifyQuery } from "@/lib/seo";
 import { extractYouTubeVideoId, getYouTubeWatchUrl } from "@/lib/youtube";
 
@@ -31,6 +32,7 @@ export function SearchForm({
     initialUrl || (initialVideoId ? getYouTubeWatchUrl(initialVideoId) : "")
   );
   const [phrase, setPhrase] = useState(initialPhrase);
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -194,11 +196,23 @@ export function SearchForm({
           value={phrase}
           onChange={(event) => setPhrase(event.target.value)}
           onKeyDown={handlePhraseKeyDown}
+          onFocus={() => setShowSuggestions(true)}
+          onBlur={() => window.setTimeout(() => setShowSuggestions(false), 150)}
           placeholder="What moment are you looking for?"
           className="h-12 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-white outline-none transition focus:border-blue-400/60 focus:bg-white/8"
           autoComplete="off"
           required
         />
+        {showSuggestions ? (
+          <SearchSuggestions
+            inputId="search-phrase"
+            value={phrase}
+            onSelect={(next) => {
+              setPhrase(next);
+              setShowSuggestions(false);
+            }}
+          />
+        ) : null}
       </div>
 
       {!compact && (

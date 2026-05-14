@@ -6,6 +6,10 @@ export type AnalyticsEventName =
   | "result_click"
   | "youtube_timestamp_click"
   | "no_results"
+  | "search_query"
+  | "search_result_click"
+  | "search_zero_results"
+  | "youtube_open"
   | "search_submitted"
   | "transcript_load_success"
   | "transcript_load_failed"
@@ -37,6 +41,37 @@ export function trackEvent(name: AnalyticsEventName, payload: AnalyticsPayload =
 
   if (process.env.NODE_ENV !== "production") {
     console.debug("[analytics]", name, payload);
+  }
+}
+
+export function trackPersistentEvent(name: AnalyticsEventName, payload: AnalyticsPayload = {}) {
+  trackEvent(name, payload);
+
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  const body = JSON.stringify({
+    event: name,
+    query: typeof payload.query === "string" ? payload.query : undefined,
+    videoId: typeof payload.videoId === "string" ? payload.videoId : undefined,
+    payload,
+  });
+
+  try {
+    const blob = new Blob([body], { type: "application/json" });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon("/api/analytics/event", blob);
+    } else {
+      void fetch("/api/analytics/event", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+        keepalive: true,
+      });
+    }
+  } catch {
+    // non-blocking
   }
 }
 

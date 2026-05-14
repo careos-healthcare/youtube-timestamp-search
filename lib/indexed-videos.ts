@@ -439,6 +439,11 @@ export async function getRecentTranscriptSegments(
   }));
 }
 
+export async function listAllIndexedVideoIds(limit = 2000): Promise<string[]> {
+  const page = await getLatestIndexedVideos(limit, 0);
+  return page.videos.map((video) => video.videoId);
+}
+
 export async function getRelatedIndexedVideos(
   videoId: string,
   limit = 6

@@ -39,6 +39,7 @@ import {
 import {
   getRelatedTopicsForKeywords,
 } from "@/lib/video-related-links";
+import { getRelatedPhrasesForVideo } from "@/lib/internal-linking";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
 
 export const revalidate = 60;
@@ -96,6 +97,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
 
   const suggestions = suggestKeywords(transcript, "", 10);
   const relatedTopics = getRelatedTopicsForKeywords(suggestions, 8);
+  const relatedSearchLinks = getRelatedPhrasesForVideo(suggestions, 10);
   const relatedVideos = await getRelatedIndexedVideos(videoId, 4);
   const previewSections = buildTranscriptPreviewSections(transcript, {
     linesPerSection: 12,
@@ -109,15 +111,18 @@ export default async function VideoPage({ params }: VideoPageProps) {
   const category = categorySlug ? getTranscriptCategoryBySlug(categorySlug) : undefined;
   const categoryLabel = category?.label ?? (categorySlug ? getCategoryLabelForSlug(categorySlug) : undefined);
 
-  const structuredData = buildVideoStructuredData({
-    videoId,
-    title: title ?? `YouTube video ${videoId}`,
-    description: `Searchable YouTube transcript for ${title ?? videoId}${channelName ? ` from ${channelName}` : ""}.`,
-    channelName,
-    fetchedAt,
-    segmentCount: transcript.length || indexed?.segmentCount,
-    categoryLabel,
-  });
+  const structuredData = buildVideoStructuredData(
+    {
+      videoId,
+      title: title ?? `YouTube video ${videoId}`,
+      description: `Searchable YouTube transcript for ${title ?? videoId}${channelName ? ` from ${channelName}` : ""}.`,
+      channelName,
+      fetchedAt,
+      segmentCount: transcript.length || indexed?.segmentCount,
+      categoryLabel,
+    },
+    { discussedTopics: suggestions }
+  );
 
   return (
     <PageShell>
@@ -277,6 +282,39 @@ export default async function VideoPage({ params }: VideoPageProps) {
           ) : null}
         </>
       )}
+
+      {!transcriptError && suggestions.length > 0 ? (
+        <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+          <h2 className="text-base font-semibold text-white">Key discussed topics</h2>
+          <p className="mt-1 text-sm text-slate-400">
+            Search this video or explore the same topics across the public index.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {suggestions.map((topic) => (
+              <Link
+                key={topic}
+                href={buildMomentPath(videoId, topic)}
+                className="inline-flex h-9 items-center rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 text-sm text-cyan-100"
+              >
+                {topic}
+              </Link>
+            ))}
+          </div>
+          {relatedSearchLinks.length > 0 ? (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {relatedSearchLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="inline-flex h-8 items-center rounded-full border border-white/10 px-3 text-xs text-slate-300 hover:bg-white/5"
+                >
+                  Search: {link.label}
+                </Link>
+              ))}
+            </div>
+          ) : null}
+        </section>
+      ) : null}
 
       {!transcriptError ? <RelatedSearches videoId={videoId} keywords={suggestions.slice(0, 8)} /> : null}
 

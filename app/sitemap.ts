@@ -1,6 +1,16 @@
 import type { MetadataRoute } from "next";
 
-import { getSiteUrl, buildTopicPath, buildCreatorPath, buildCategoryPath } from "@/lib/seo";
+import { listAllIndexedVideoIds } from "@/lib/indexed-videos";
+import { SEARCH_QUERY_SLUGS, phraseFromSearchSlug } from "@/lib/search-query-seeds";
+import {
+  getSiteUrl,
+  buildTopicPath,
+  buildCreatorPath,
+  buildCategoryPath,
+  buildSearchPath,
+  buildVideoPath,
+  buildTranscriptsIndexPath,
+} from "@/lib/seo";
 import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
@@ -18,14 +28,14 @@ const STATIC_PAGES = [
   "/search-youtube-captions",
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
 
   const staticEntries = STATIC_PAGES.map((path) => ({
     url: path === "/" ? siteUrl : `${siteUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: path === "/" ? 1 : 0.8,
+    priority: path === "/" ? 1 : path === "/transcripts" ? 0.9 : 0.8,
   }));
 
   const topicEntries = TOPIC_KEYWORDS.map((keyword) => ({
@@ -39,15 +49,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${buildCreatorPath(slug)}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 0.75,
+    priority: 0.65,
   }));
 
   const categoryEntries = TRANSCRIPT_CATEGORY_SLUGS.map((slug) => ({
     url: `${siteUrl}${buildCategoryPath(slug)}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 0.72,
+    priority: 0.85,
   }));
 
-  return [...staticEntries, ...topicEntries, ...creatorEntries, ...categoryEntries];
+  const searchEntries = SEARCH_QUERY_SLUGS.map((slug) => ({
+    url: `${siteUrl}${buildSearchPath(phraseFromSearchSlug(slug))}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.88,
+  }));
+
+  const videoIds = await listAllIndexedVideoIds(2000);
+  const videoEntries = videoIds.map((videoId) => ({
+    url: `${siteUrl}${buildVideoPath(videoId)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.82,
+  }));
+
+  const transcriptIndexEntry = {
+    url: `${siteUrl}${buildTranscriptsIndexPath()}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.9,
+  };
+
+  return [
+    ...staticEntries.filter((entry) => !entry.url.endsWith("/transcripts")),
+    transcriptIndexEntry,
+    ...searchEntries,
+    ...videoEntries,
+    ...categoryEntries,
+    ...topicEntries,
+    ...creatorEntries,
+  ];
 }

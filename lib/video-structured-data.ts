@@ -13,7 +13,10 @@ export type VideoStructuredDataInput = {
   categoryLabel?: string;
 };
 
-export function buildVideoStructuredData(input: VideoStructuredDataInput) {
+export function buildVideoStructuredData(
+  input: VideoStructuredDataInput,
+  options?: { discussedTopics?: string[] }
+) {
   const pageUrl = `${getSiteUrl()}${buildVideoPath(input.videoId)}`;
   const thumbnailUrl = getYouTubeThumbnailUrl(input.videoId);
 
@@ -76,14 +79,39 @@ export function buildVideoStructuredData(input: VideoStructuredDataInput) {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Latest videos",
-            item: `${getSiteUrl()}/latest`,
+            name: "Video index",
+            item: `${getSiteUrl()}/transcripts`,
           },
           {
             "@type": "ListItem",
             position: 3,
             name: input.title,
             item: pageUrl,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: `How do I search inside "${input.title}"?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Use the search box on this page to find exact phrases in the transcript and jump to timestamps on YouTube.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: `What topics are discussed in this video?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                options?.discussedTopics?.length
+                  ? `Key topics include ${options.discussedTopics.slice(0, 8).join(", ")}.`
+                  : "Browse searchable moments and transcript sections on this page to explore topics.",
+            },
           },
         ],
       },
