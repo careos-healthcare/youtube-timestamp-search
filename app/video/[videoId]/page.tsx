@@ -15,8 +15,6 @@ import {
 import {
   buildCategoriesIndexPath,
   buildCategoryPath,
-  buildCreatorPath,
-  buildCreatorsIndexPath,
   buildLatestPath,
   buildMomentPath,
   buildTopicPath,
@@ -39,7 +37,6 @@ import {
   getCategoryLabelForSlug,
 } from "@/lib/video-structured-data";
 import {
-  getRelatedCreatorsForKeywords,
   getRelatedTopicsForKeywords,
 } from "@/lib/video-related-links";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
@@ -64,7 +61,7 @@ export async function generateMetadata({ params }: VideoPageProps): Promise<Meta
     thumbnailUrl: getYouTubeThumbnailUrl(videoId),
     segmentCount,
     description: title
-      ? `Search the indexed YouTube transcript for "${title}"${channelName ? ` from ${channelName}` : ""}. Browse preview sections, searchable moments, and jump to exact timestamps.`
+      ? `Search inside this indexed long-form video: "${title}"${channelName ? ` from ${channelName}` : ""}. Browse preview sections, searchable moments, and jump to exact timestamps.`
       : undefined,
   });
 }
@@ -99,7 +96,6 @@ export default async function VideoPage({ params }: VideoPageProps) {
 
   const suggestions = suggestKeywords(transcript, "", 10);
   const relatedTopics = getRelatedTopicsForKeywords(suggestions, 8);
-  const relatedCreators = getRelatedCreatorsForKeywords(suggestions, 8);
   const relatedVideos = await getRelatedIndexedVideos(videoId, 4);
   const previewSections = buildTranscriptPreviewSections(transcript, {
     linesPerSection: 12,
@@ -134,7 +130,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_220px]">
           <div className="space-y-4">
             <span className="inline-flex w-fit rounded-full border border-blue-300/30 bg-blue-400/15 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-blue-100 uppercase">
-              Indexed transcript
+              Searchable video
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
               {title ?? `YouTube transcript search for ${videoId}`}
@@ -145,8 +141,8 @@ export default async function VideoPage({ params }: VideoPageProps) {
               </p>
             ) : null}
             <p className="max-w-3xl text-sm leading-7 text-slate-300 sm:text-base">
-              Search this YouTube transcript for exact quotes, topics, and timestamps. Browse preview
-              sections, jump to searchable moments, and explore related topics and creators.
+              Search inside this video for exact quotes, topics, and timestamps. Browse preview
+              sections, jump to searchable moments, and open the right point without scrubbing.
             </p>
 
             <nav className="flex flex-wrap gap-2 text-sm">
@@ -161,18 +157,6 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 className="inline-flex h-9 items-center rounded-full border border-blue-400/20 bg-blue-500/10 px-3 text-blue-100"
               >
                 Latest
-              </Link>
-              <Link
-                href={buildTopicsIndexPath()}
-                className="inline-flex h-9 items-center rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 text-emerald-100"
-              >
-                Topics
-              </Link>
-              <Link
-                href={buildCreatorsIndexPath()}
-                className="inline-flex h-9 items-center rounded-full border border-violet-400/20 bg-violet-500/10 px-3 text-violet-100"
-              >
-                Creators
               </Link>
               <Link
                 href={buildCategoriesIndexPath()}
@@ -296,10 +280,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
 
       {!transcriptError ? <RelatedSearches videoId={videoId} keywords={suggestions.slice(0, 8)} /> : null}
 
-      <section className="grid gap-4 lg:grid-cols-2">
-        {!transcriptError && relatedTopics.length > 0 ? (
-          <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-            <h2 className="text-base font-semibold text-white">Related topic pages</h2>
+      {!transcriptError && relatedTopics.length > 0 ? (
+        <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+          <h2 className="text-base font-semibold text-white">Related searches</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {relatedTopics.map((topic) => (
                 <Link
@@ -313,24 +296,6 @@ export default async function VideoPage({ params }: VideoPageProps) {
             </div>
           </section>
         ) : null}
-
-        {!transcriptError && relatedCreators.length > 0 ? (
-          <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-            <h2 className="text-base font-semibold text-white">Related creator pages</h2>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {relatedCreators.map((creator) => (
-                <Link
-                  key={creator.slug}
-                  href={buildCreatorPath(creator.slug)}
-                  className="inline-flex h-9 items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-3 text-sm text-violet-100"
-                >
-                  {creator.displayName}
-                </Link>
-              ))}
-            </div>
-          </section>
-        ) : null}
-      </section>
 
       {category ? (
         <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { SearchForm } from "@/components/search-form";
+import { PRODUCT_BADGE, PRODUCT_WEDGE } from "@/lib/product-copy";
 
 type SeoLandingPageProps = {
   title: string;
@@ -24,11 +25,11 @@ export function SeoLandingPage({
         <div className="flex flex-col gap-5">
           <div className="max-w-3xl space-y-3">
             <span className="inline-flex w-fit rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-blue-100 uppercase">
-              YouTube transcript utility
+              {PRODUCT_BADGE}
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">{title}</h1>
             <p className="max-w-2xl text-sm leading-6 text-slate-300 sm:text-lg sm:leading-8">
-              {description}
+              {description || PRODUCT_WEDGE}
             </p>
           </div>
 

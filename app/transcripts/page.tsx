@@ -11,9 +11,9 @@ import {
 } from "@/lib/seo";
 import { listCachedTranscripts, getTranscriptCacheMode } from "@/lib/transcript-cache";
 
-const title = "Indexed YouTube transcripts";
+const title = "Public video knowledge index";
 const description =
-  "Browse cached YouTube transcripts indexed after search. Re-open videos and search across saved transcript text.";
+  "Browse long-form YouTube videos indexed for in-video search. Reopen any video and search inside its transcript like a search engine index.";
 
 export const metadata: Metadata = {
   title,
@@ -45,14 +45,14 @@ export default async function TranscriptsIndexPage() {
       <section className="overflow-hidden rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 via-white/5 to-slate-950/80 p-4 shadow-2xl shadow-emerald-500/10 backdrop-blur sm:p-6 lg:p-8">
         <div className="max-w-3xl space-y-4">
           <span className="inline-flex w-fit rounded-full border border-emerald-300/30 bg-emerald-400/15 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-emerald-100 uppercase">
-            Transcript index
+            Video knowledge index
           </span>
           <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-            Indexed YouTube transcripts
+            Public video knowledge index
           </h1>
           <p className="text-sm leading-7 text-slate-200 sm:text-lg">
-            Transcripts are cached after successful searches so you can reopen videos faster and search
-            across saved transcript text.
+            Long-form videos indexed for in-video search. Reopen any video and search inside its
+            transcript without scrubbing.
           </p>
           <Link
             href="/"

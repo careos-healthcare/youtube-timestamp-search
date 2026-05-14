@@ -176,7 +176,7 @@ export function SearchForm({
           value={phrase}
           onChange={(event) => setPhrase(event.target.value)}
           onKeyDown={handlePhraseKeyDown}
-          placeholder="Search for a moment, topic, or keyword"
+          placeholder="What moment are you looking for?"
           className="h-12 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-white outline-none transition focus:border-blue-400/60 focus:bg-white/8"
           autoComplete="off"
           required
@@ -206,7 +206,7 @@ export function SearchForm({
           disabled={isSubmitDisabled}
           className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-blue-500 px-5 text-sm font-semibold whitespace-nowrap text-white transition hover:bg-blue-400 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {isLoading ? "Searching the transcript..." : "Search transcript"}
+          {isLoading ? "Searching inside the video..." : "Search inside video"}
         </button>
       </div>
 

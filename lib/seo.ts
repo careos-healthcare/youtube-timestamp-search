@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { getCreatorBySlug } from "@/lib/creator-data";
 import { getTranscriptCategoryBySlug } from "@/lib/category-data";
+import { PRODUCT_DESCRIPTION, PRODUCT_WEDGE } from "@/lib/product-copy";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -89,7 +90,7 @@ export function createLatestMetadata(page = 1): Metadata {
       ? `Latest searchable YouTube transcripts — page ${page}`
       : "Latest searchable YouTube transcripts";
   const description =
-    "Browse the newest indexed YouTube transcript videos. Search captions, jump to timestamps, and explore related topics and creators.";
+    "Browse the newest long-form videos in the public knowledge index. Search inside each transcript and jump to exact useful moments.";
   const url = `${getSiteUrl()}${buildLatestPath(page)}`;
 
   return {
@@ -116,8 +117,8 @@ export function createCategoryMetadata(slug: string): Metadata {
   const category = getTranscriptCategoryBySlug(slug);
   if (!category) return {};
 
-  const title = `${category.label} transcript search — latest indexed videos`;
-  const description = category.description;
+  const title = `${category.label} — searchable long-form videos`;
+  const description = `${category.description} ${PRODUCT_WEDGE}`;
   const url = `${getSiteUrl()}${buildCategoryPath(category.slug)}`;
 
   return {
@@ -141,9 +142,9 @@ export function createCategoryMetadata(slug: string): Metadata {
 }
 
 export function createCategoriesIndexMetadata(): Metadata {
-  const title = "Browse transcript categories — programming, AI, business, finance, self-improvement";
+  const title = "Browse searchable video categories";
   const description =
-    "Discover indexed YouTube transcripts by category. Search programming tutorials, AI podcasts, business interviews, finance education, and self-improvement episodes.";
+    "Discover indexed long-form YouTube videos by subject — programming, AI, business, finance, and self-improvement. Search inside each video for exact moments.";
   const url = `${getSiteUrl()}${buildCategoriesIndexPath()}`;
 
   return {
@@ -227,8 +228,8 @@ export function createTopicMetadata(keyword: string): Metadata {
 
 export function createMomentMetadata(videoId: string, query: string): Metadata {
   const phrase = normalizeText(query);
-  const title = `Find '${phrase}' in YouTube transcript`;
-  const description = `Search YouTube transcript timestamps for '${phrase}' in video ${videoId}. Jump to exact moments instantly.`;
+  const title = `Find '${phrase}' inside this video`;
+  const description = `${PRODUCT_WEDGE} Search the transcript for '${phrase}' in video ${videoId} and open the exact timestamp.`;
   const url = buildMomentUrl(videoId, phrase);
 
   return {
@@ -253,8 +254,8 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
 
 export function createSearchMetadata(query: string): Metadata {
   const phrase = normalizeText(query);
-  const title = `Search YouTube transcripts for '${phrase}'`;
-  const description = `Find exact YouTube transcript timestamps for '${phrase}'. Search podcasts, interviews, lectures, and tutorials instantly.`;
+  const title = `Search indexed videos for '${phrase}'`;
+  const description = `${PRODUCT_WEDGE} Find exact transcript matches for '${phrase}' across long-form lectures, podcasts, and tutorials.`;
   const url = `${getSiteUrl()}${buildSearchPath(phrase)}`;
 
   return {
@@ -289,13 +290,13 @@ export function createVideoMetadata(
 ): Metadata {
   const channelSuffix = options?.channelName ? ` from ${options.channelName}` : "";
   const title = options?.title
-    ? `${options.title} transcript search — find timestamps & quotes`
-    : `Search YouTube transcript for ${videoId}`;
+    ? `Search inside: ${options.title}`
+    : `Search inside video ${videoId}`;
   const description =
     options?.description ??
     (options?.title
-      ? `Search the full YouTube transcript for "${options.title}"${channelSuffix}. Jump to searchable moments, quotes, and exact timestamps.`
-      : `Search the YouTube transcript for video ${videoId}. Find exact timestamps without scrubbing.`);
+      ? `${PRODUCT_WEDGE} Search the indexed transcript for "${options.title}"${channelSuffix}. Jump to searchable moments without scrubbing.`
+      : `${PRODUCT_DESCRIPTION} Video ${videoId}.`);
   const url = `${getSiteUrl()}${buildVideoPath(videoId)}`;
   const image = options?.thumbnailUrl ?? `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 

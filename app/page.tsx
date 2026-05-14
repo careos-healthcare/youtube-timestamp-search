@@ -2,16 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CtaSection } from "@/components/cta-section";
-import { FeaturedCreators } from "@/components/featured-creators";
 import { PageShell, SiteFooter } from "@/components/page-shell";
-import { PopularTopicSearches } from "@/components/popular-topic-searches";
 import { SearchForm } from "@/components/search-form";
-import { buildTranscriptsIndexPath, buildLatestPath } from "@/lib/seo";
+import {
+  PRODUCT_BADGE,
+  PRODUCT_DESCRIPTION,
+  PRODUCT_META_DESCRIPTION,
+  PRODUCT_META_TITLE,
+  PRODUCT_TAGLINE,
+  PRODUCT_WEDGE,
+} from "@/lib/product-copy";
+import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Search YouTube Transcripts Instantly",
-  description:
-    "Paste a YouTube video link and find the exact timestamp where something is mentioned.",
+  title: PRODUCT_META_TITLE,
+  description: PRODUCT_META_DESCRIPTION,
 };
 
 export default function HomePage() {
@@ -21,14 +26,13 @@ export default function HomePage() {
         <div className="flex flex-col gap-5">
           <div className="max-w-3xl space-y-3">
             <span className="inline-flex w-fit rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-blue-100 uppercase">
-              YouTube transcript utility
+              {PRODUCT_BADGE}
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              Find the moment without scrubbing.
+              {PRODUCT_TAGLINE}
             </h1>
             <p className="max-w-2xl text-sm leading-6 text-slate-300 sm:text-lg sm:leading-8">
-              Paste a YouTube video link, search the transcript, and jump straight to the right
-              timestamp.
+              {PRODUCT_WEDGE} {PRODUCT_DESCRIPTION}
             </p>
           </div>
 
@@ -37,23 +41,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <PopularTopicSearches />
-
-      <FeaturedCreators />
-
       <section className="rounded-2xl border border-emerald-400/15 bg-emerald-500/5 p-4 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-base font-semibold text-white">Indexed transcript library</h2>
+            <h2 className="text-base font-semibold text-white">Public video knowledge index</h2>
             <p className="mt-1 text-sm text-slate-300">
-              Reopen cached transcripts and search across videos indexed after prior lookups.
+              Reopen indexed long-form videos and search across transcript text like a search engine
+              index.
             </p>
           </div>
           <Link
             href={buildTranscriptsIndexPath()}
             className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100"
           >
-            Browse indexed transcripts
+            Browse the index
           </Link>
         </div>
       </section>
@@ -61,16 +62,33 @@ export default function HomePage() {
       <section className="rounded-2xl border border-blue-400/15 bg-blue-500/5 p-4 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-base font-semibold text-white">Latest searchable videos</h2>
+            <h2 className="text-base font-semibold text-white">Latest indexed videos</h2>
             <p className="mt-1 text-sm text-slate-300">
-              Browse the newest indexed transcript videos with previews and related topics.
+              New long-form lectures, podcasts, and tutorials added to the searchable corpus.
             </p>
           </div>
           <Link
             href={buildLatestPath()}
             className="inline-flex h-10 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-4 text-sm font-medium text-blue-100"
           >
-            View latest videos
+            View latest
+          </Link>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-cyan-400/15 bg-cyan-500/5 p-4 sm:p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-base font-semibold text-white">Browse by subject</h2>
+            <p className="mt-1 text-sm text-slate-300">
+              Programming, AI, business, finance, and self-improvement — indexed for in-video search.
+            </p>
+          </div>
+          <Link
+            href={buildCategoriesIndexPath()}
+            className="inline-flex h-10 items-center rounded-full border border-cyan-400/30 bg-cyan-500/10 px-4 text-sm font-medium text-cyan-100"
+          >
+            View categories
           </Link>
         </div>
       </section>
@@ -78,13 +96,13 @@ export default function HomePage() {
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300 sm:p-5">
         <div className="grid gap-2 sm:grid-cols-3 sm:gap-4">
           <div className="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-3">
-            Search long podcasts
+            Search inside any long video transcript
           </div>
           <div className="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-3">
-            Jump to exact timestamps
+            Jump to exact useful moments instantly
           </div>
           <div className="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-3">
-            No sign-up needed
+            No accounts, feeds, or creator tools
           </div>
         </div>
       </section>

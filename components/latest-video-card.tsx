@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 import type { IndexedVideo } from "@/lib/indexed-videos";
-import { buildCreatorPath, buildTopicPath, buildVideoPath } from "@/lib/seo";
+import { buildTopicPath, buildVideoPath } from "@/lib/seo";
 
 type LatestVideoCardProps = {
   video: IndexedVideo;
@@ -89,7 +89,7 @@ export function LatestVideoCard({ video, position }: LatestVideoCardProps) {
               onClick={handleOpen}
               className="inline-flex h-9 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-3 text-sm text-blue-100"
             >
-              Search transcript
+              Search inside video
             </Link>
             <a
               href={video.videoUrl}
@@ -119,22 +119,6 @@ export function LatestVideoCard({ video, position }: LatestVideoCardProps) {
             </div>
           ) : null}
 
-          {video.relatedCreators.length > 0 ? (
-            <div className="space-y-2">
-              <p className="text-xs font-medium tracking-wide text-slate-400 uppercase">Related creators</p>
-              <div className="flex flex-wrap gap-2">
-                {video.relatedCreators.map((creator) => (
-                  <Link
-                    key={creator.slug}
-                    href={buildCreatorPath(creator.slug)}
-                    className="inline-flex h-8 items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-3 text-xs text-violet-100"
-                  >
-                    {creator.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          ) : null}
         </div>
       </div>
     </article>

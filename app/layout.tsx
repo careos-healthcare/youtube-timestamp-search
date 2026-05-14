@@ -4,6 +4,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { getSiteUrl } from "@/lib/seo";
+import {
+  PRODUCT_META_DESCRIPTION,
+  PRODUCT_META_TITLE,
+  PRODUCT_NAME,
+} from "@/lib/product-copy";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,27 +19,27 @@ const metadataBase = new URL(getSiteUrl());
 
 export const metadata: Metadata = {
   metadataBase,
-  title: "Search YouTube Transcripts Instantly",
-  description: "Paste a YouTube video link and find the exact timestamp where something is mentioned.",
+  title: PRODUCT_META_TITLE,
+  description: PRODUCT_META_DESCRIPTION,
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "Search YouTube Transcripts Instantly",
-    description: "Paste a YouTube video link and find the exact timestamp where something is mentioned.",
+    title: PRODUCT_META_TITLE,
+    description: PRODUCT_META_DESCRIPTION,
     images: [
       {
         url: "/og-placeholder.svg",
         width: 1200,
         height: 630,
-        alt: "YouTube Timestamp Search preview",
+        alt: `${PRODUCT_NAME} — video knowledge search`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Search YouTube Transcripts Instantly",
-    description: "Paste a YouTube video link and find the exact timestamp where something is mentioned.",
+    title: PRODUCT_META_TITLE,
+    description: PRODUCT_META_DESCRIPTION,
     images: ["/og-placeholder.svg"],
   },
   verification: {
