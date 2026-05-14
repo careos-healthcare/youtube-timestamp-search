@@ -21,7 +21,9 @@
     "ingest:validate": "tsx scripts/validate-ingestion-pipeline.ts",
     "test:extension-api": "tsx scripts/test-extension-api.ts",
     "embeddings:backfill": "tsx scripts/backfill-segment-embeddings.ts",
-    "search:validate-semantic": "tsx scripts/validate-semantic-search.ts"
+    "search:validate-semantic": "tsx scripts/validate-semantic-search.ts",
+    "queries:intelligence": "tsx scripts/build-query-intelligence-report.ts",
+    "queries:validate-intelligence": "tsx scripts/validate-query-intelligence.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
