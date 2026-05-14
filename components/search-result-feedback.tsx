@@ -2,15 +2,29 @@
 
 import { useState } from "react";
 
+import { trackPersistentEvent } from "@/lib/analytics";
+
 type SearchResultFeedbackProps = {
   resultCount: number;
+  query?: string;
+  videoId?: string;
 };
 
-export function SearchResultFeedback({ resultCount }: SearchResultFeedbackProps) {
+export function SearchResultFeedback({ resultCount, query, videoId }: SearchResultFeedbackProps) {
   const [answer, setAnswer] = useState<"yes" | "no" | null>(null);
 
   if (resultCount === 0) {
     return null;
+  }
+
+  function submitFeedback(helpful: boolean) {
+    setAnswer(helpful ? "yes" : "no");
+    trackPersistentEvent("result_feedback", {
+      query,
+      videoId,
+      helpful,
+      resultCount,
+    });
   }
 
   return (
@@ -27,14 +41,14 @@ export function SearchResultFeedback({ resultCount }: SearchResultFeedbackProps)
           <div className="flex gap-2">
             <button
               type="button"
-              onClick={() => setAnswer("yes")}
+              onClick={() => submitFeedback(true)}
               className="inline-flex h-9 items-center justify-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100 transition hover:bg-emerald-500/20"
             >
               Yes
             </button>
             <button
               type="button"
-              onClick={() => setAnswer("no")}
+              onClick={() => submitFeedback(false)}
               className="inline-flex h-9 items-center justify-center rounded-full border border-white/10 bg-white/5 px-4 text-sm font-medium text-slate-200 transition hover:bg-white/10"
             >
               No

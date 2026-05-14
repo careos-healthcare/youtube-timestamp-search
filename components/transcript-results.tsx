@@ -116,7 +116,11 @@ export function TranscriptResults({
         </article>
       ))}
 
-      <SearchResultFeedback resultCount={results.length} />
+      <SearchResultFeedback
+        resultCount={results.length}
+        query={searchedPhrase}
+        videoId={videoId}
+      />
     </section>
   );
 }

@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     });
 
     const supabase = getSupabaseAdminClient();
-    if (supabase && (body.query || body.videoId)) {
+    if (supabase) {
       await supabase.from("search_analytics_events").insert({
         event_name: event,
         query: body.query ?? null,
