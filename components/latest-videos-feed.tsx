@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { LatestVideoCard } from "@/components/latest-video-card";
 import { trackEvent } from "@/lib/analytics";
+import { NOT_INDEXED_EMPTY_STATE } from "@/lib/empty-state-copy";
 import type { IndexedVideosPage } from "@/lib/indexed-videos";
 
 type LatestVideosFeedProps = {
@@ -20,7 +21,7 @@ export function LatestVideosFeed({
   initialPage,
   apiPath = "/api/latest",
   emptyTitle = "No indexed videos yet",
-  emptyDescription = "Search a YouTube video on the homepage to index its transcript and populate this feed.",
+  emptyDescription = NOT_INDEXED_EMPTY_STATE,
   emptyActionHref = "/",
   emptyActionLabel = "Start searching",
 }: LatestVideosFeedProps) {

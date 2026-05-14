@@ -1,6 +1,11 @@
 import { track } from "@vercel/analytics";
 
 export type AnalyticsEventName =
+  | "homepage_search"
+  | "paste_url_submit"
+  | "result_click"
+  | "youtube_timestamp_click"
+  | "no_results"
   | "search_submitted"
   | "transcript_load_success"
   | "transcript_load_failed"

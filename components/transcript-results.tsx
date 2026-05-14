@@ -1,6 +1,12 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 
+import { SearchResultFeedback } from "@/components/search-result-feedback";
 import { ShareActions } from "@/components/share-actions";
+import { trackEvent } from "@/lib/analytics";
+import { NO_PHRASE_MATCH_COPY } from "@/lib/empty-state-copy";
 import { renderHighlightedText } from "@/lib/highlight";
 import type { SearchResult } from "@/lib/transcript-types";
 import { buildMomentUrl } from "@/lib/seo";
@@ -18,10 +24,24 @@ export function TranscriptResults({
   videoId,
   shareUrl,
 }: TranscriptResultsProps) {
+  useEffect(() => {
+    if (results.length === 0) {
+      trackEvent("no_results", {
+        videoId,
+        phraseLength: searchedPhrase.length,
+      });
+    }
+  }, [results.length, searchedPhrase.length, videoId]);
+
   if (results.length === 0) {
     return (
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
-        No matching moment found for &quot;{searchedPhrase}&quot; in video {videoId}.
+        <p>{NO_PHRASE_MATCH_COPY}</p>
+        <p className="mt-3">
+          <Link href="/" className="text-blue-200 hover:text-blue-100">
+            Search another video
+          </Link>
+        </p>
       </section>
     );
   }
@@ -38,7 +58,7 @@ export function TranscriptResults({
         </div>
       </div>
 
-      {results.map((result) => (
+      {results.map((result, index) => (
         <article
           key={`${result.start}-${result.timestamp}`}
           className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 sm:p-5"
@@ -58,12 +78,26 @@ export function TranscriptResults({
                 href={result.openUrl}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() =>
+                  trackEvent("youtube_timestamp_click", {
+                    videoId,
+                    position: index + 1,
+                    timestamp: result.timestamp,
+                  })
+                }
                 className="inline-flex h-11 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-400/10 px-4 text-sm font-medium whitespace-nowrap text-blue-100 transition hover:bg-blue-400/20"
               >
                 Open at this moment
               </a>
               <Link
                 href={result.pageUrl}
+                onClick={() =>
+                  trackEvent("result_click", {
+                    videoId,
+                    position: index + 1,
+                    timestamp: result.timestamp,
+                  })
+                }
                 className="inline-flex h-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 text-sm font-medium text-slate-100 hover:bg-white/10"
               >
                 View indexed result
@@ -76,6 +110,8 @@ export function TranscriptResults({
           </div>
         </article>
       ))}
+
+      <SearchResultFeedback resultCount={results.length} />
     </section>
   );
 }

@@ -36,7 +36,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <SearchForm />
+          <SearchForm source="homepage" />
           <CtaSection />
         </div>
       </section>

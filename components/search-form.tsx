@@ -12,6 +12,7 @@ type SearchFormProps = {
   initialPhrase?: string;
   initialVideoId?: string;
   compact?: boolean;
+  source?: "homepage" | "moment" | "seo";
 };
 
 const DEMO_VIDEO_URL = "https://www.youtube.com/watch?v=PkZNo7MFNFg";
@@ -23,6 +24,7 @@ export function SearchForm({
   initialPhrase = "",
   initialVideoId = "",
   compact = false,
+  source = "seo",
 }: SearchFormProps) {
   const router = useRouter();
   const [url, setUrl] = useState(
@@ -64,7 +66,15 @@ export function SearchForm({
     trackEvent("search_submitted", {
       phraseLength: trimmedPhrase.length,
       hasValidUrl: Boolean(extractYouTubeVideoId(trimmedUrl)),
+      source,
     });
+
+    if (source === "homepage") {
+      trackEvent("homepage_search", {
+        phraseLength: trimmedPhrase.length,
+        hasValidUrl: Boolean(extractYouTubeVideoId(trimmedUrl)),
+      });
+    }
 
     try {
       const response = await fetch("/api/transcript", {
@@ -95,7 +105,15 @@ export function SearchForm({
 
       trackEvent("transcript_load_success", {
         phraseLength: trimmedPhrase.length,
+        source,
       });
+
+      if (source === "homepage") {
+        trackEvent("paste_url_submit", {
+          videoId,
+          phraseLength: trimmedPhrase.length,
+        });
+      }
 
       router.push(`/video/${videoId}/moment/${slugifyQuery(trimmedPhrase)}`);
     } catch (submissionError) {

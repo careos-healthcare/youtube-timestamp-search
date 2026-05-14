@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 
 import { trackEvent } from "@/lib/analytics";
+import { NOT_INDEXED_EMPTY_STATE } from "@/lib/empty-state-copy";
 import { buildMomentPath, buildVideoPath } from "@/lib/seo";
 
 type IndexedMatch = {
@@ -48,6 +49,9 @@ export function TranscriptIndexSearch() {
       }
 
       setResults(data.results ?? []);
+      if ((data.results ?? []).length === 0) {
+        trackEvent("no_results", { queryLength: trimmed.length, surface: "index" });
+      }
     } catch {
       setError("Indexed search failed.");
       setResults([]);
@@ -83,6 +87,10 @@ export function TranscriptIndexSearch() {
         </form>
 
         {error ? <p className="text-sm text-red-300">{error}</p> : null}
+
+        {!isLoading && query.trim().length > 0 && results.length === 0 && !error ? (
+          <p className="text-sm text-slate-300">{NOT_INDEXED_EMPTY_STATE}</p>
+        ) : null}
 
         {results.length > 0 ? (
           <div className="space-y-3">
