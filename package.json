@@ -13,7 +13,12 @@
     "generate:seed-batch": "tsx scripts/generate-seed-batch.ts",
     "audit:seo": "tsx scripts/audit-seo-pages.ts",
     "discover:queries": "tsx scripts/discover-high-intent-queries.ts",
-    "refresh:index": "tsx scripts/refresh-search-index.ts"
+    "refresh:index": "tsx scripts/refresh-search-index.ts",
+    "ingest:discover-channels": "tsx scripts/ingest-discover-channels.ts",
+    "ingest:queue": "tsx scripts/ingest-queue.ts",
+    "ingest:worker": "tsx scripts/ingest-worker.ts",
+    "ingest:refresh": "tsx scripts/ingest-refresh.ts",
+    "ingest:validate": "tsx scripts/validate-ingestion-pipeline.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

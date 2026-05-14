@@ -69,6 +69,7 @@ export type SeedTranscriptSummary = {
 
 export type SeedTranscriptOptions = {
   delayMs?: number;
+  skipCacheCheck?: boolean;
   onResult?: (result: SeedTranscriptResult, index: number, total: number) => void;
 };
 
@@ -96,7 +97,8 @@ function sleep(ms: number) {
 }
 
 export async function ingestSeedTranscript(
-  input: SeedTranscriptInput
+  input: SeedTranscriptInput,
+  options?: { skipCacheCheck?: boolean }
 ): Promise<SeedTranscriptResult> {
   const videoId = resolveSeedVideoId(input);
   const url = input.url ?? (videoId ? getYouTubeWatchUrl(videoId) : undefined);
@@ -122,7 +124,7 @@ export async function ingestSeedTranscript(
     priority: input.priority,
   };
 
-  if (await hasCachedTranscript(videoId)) {
+  if (!options?.skipCacheCheck && (await hasCachedTranscript(videoId))) {
     return {
       ...base,
       status: "skipped",
@@ -195,7 +197,9 @@ export async function ingestSeedTranscripts(
 
   for (let index = 0; index < inputs.length; index += 1) {
     const input = inputs[index];
-    const result = await ingestSeedTranscript(input);
+    const result = await ingestSeedTranscript(input, {
+      skipCacheCheck: options.skipCacheCheck,
+    });
     results.push(result);
     options.onResult?.(result, index + 1, inputs.length);
 
