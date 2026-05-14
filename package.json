@@ -19,7 +19,9 @@
     "ingest:worker": "tsx scripts/ingest-worker.ts",
     "ingest:refresh": "tsx scripts/ingest-refresh.ts",
     "ingest:validate": "tsx scripts/validate-ingestion-pipeline.ts",
-    "test:extension-api": "tsx scripts/test-extension-api.ts"
+    "test:extension-api": "tsx scripts/test-extension-api.ts",
+    "embeddings:backfill": "tsx scripts/backfill-segment-embeddings.ts",
+    "search:validate-semantic": "tsx scripts/validate-semantic-search.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

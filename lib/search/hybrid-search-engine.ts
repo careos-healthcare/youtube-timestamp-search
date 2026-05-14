@@ -2,7 +2,11 @@ import { getCachedTranscript } from "@/lib/transcript-cache";
 
 import { searchKeywordTranscripts } from "@/lib/search/keyword-search-provider";
 import { rankIndexedResults, type RankableMoment } from "@/lib/search/hybrid-ranking";
-import { getSearchRuntimeConfig, getSearchModeLabel } from "@/lib/search/search-config";
+import {
+  getSearchRuntimeConfig,
+  getSearchModeLabel,
+  getSemanticFallbackReason,
+} from "@/lib/search/search-config";
 import { searchSemanticTranscripts } from "@/lib/search/semantic-search-provider";
 import type { HybridSearchDiagnostics, IndexedTranscriptSearchResult } from "@/lib/search/types";
 
@@ -29,6 +33,25 @@ async function enrichResultsWithMetadata(results: IndexedTranscriptSearchResult[
   return enriched;
 }
 
+function buildDiagnostics(
+  partial: Omit<
+    HybridSearchDiagnostics,
+    "mode" | "searchMode" | "semanticEnabled" | "semanticAvailable" | "embeddingModel"
+  >
+): HybridSearchDiagnostics {
+  const config = getSearchRuntimeConfig();
+  const mode = getSearchModeLabel();
+
+  return {
+    ...partial,
+    mode,
+    searchMode: mode,
+    semanticEnabled: config.semanticSearchEnabled,
+    semanticAvailable: config.semanticAvailable,
+    embeddingModel: config.embeddingModel,
+  };
+}
+
 export async function hybridSearchTranscripts(
   query: string,
   limit = 20,
@@ -39,21 +62,22 @@ export async function hybridSearchTranscripts(
   diagnostics: HybridSearchDiagnostics;
 }> {
   const trimmed = query.trim();
+  const config = getSearchRuntimeConfig();
+
   if (!trimmed) {
     return {
       results: [],
       moments: [],
-      diagnostics: {
-        mode: getSearchModeLabel(),
+      diagnostics: buildDiagnostics({
         keywordResultCount: 0,
         semanticResultCount: 0,
         hybridApplied: false,
         semanticFallback: true,
-      },
+        fallbackReason: "empty_query",
+      }),
     };
   }
 
-  const config = getSearchRuntimeConfig();
   const keywordResults = await enrichResultsWithMetadata(
     await searchKeywordTranscripts(trimmed, Math.max(limit * 2, 30))
   );
@@ -62,18 +86,25 @@ export async function hybridSearchTranscripts(
     return {
       results: keywordResults.slice(0, limit),
       moments: [],
-      diagnostics: {
-        mode: "keyword-only",
+      diagnostics: buildDiagnostics({
         keywordResultCount: keywordResults.length,
         semanticResultCount: 0,
         hybridApplied: false,
         semanticFallback: !config.semanticSearchEnabled,
-      },
+        fallbackReason: config.semanticSearchEnabled ? "hybrid_disabled" : getSemanticFallbackReason(),
+      }),
     };
   }
 
   const semantic = await searchSemanticTranscripts(trimmed, Math.max(limit * 2, 30));
-  const semanticFallback = config.semanticSearchEnabled && semantic.hits.length === 0;
+  const semanticFallback =
+    config.semanticSearchEnabled &&
+    (semantic.hits.length === 0 || Boolean(semantic.fallbackReason));
+
+  const fallbackReason =
+    semantic.fallbackReason ??
+    (semantic.hits.length === 0 && config.semanticSearchEnabled ? "semantic_zero_hits" : getSemanticFallbackReason());
+
   const ranked = rankIndexedResults(
     trimmed,
     keywordResults,
@@ -84,13 +115,14 @@ export async function hybridSearchTranscripts(
   return {
     results: ranked.results.slice(0, limit),
     moments: ranked.moments,
-    diagnostics: {
-      mode: getSearchModeLabel(),
+    diagnostics: buildDiagnostics({
       keywordResultCount: keywordResults.length,
       semanticResultCount: semantic.hits.length,
       hybridApplied: true,
       semanticFallback,
-    },
+      fallbackReason: semanticFallback ? fallbackReason : undefined,
+      semanticProvider: semantic.provider,
+    }),
   };
 }
 

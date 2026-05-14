@@ -1,7 +1,15 @@
+import { isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
+
+import {
+  getEmbeddingModelName,
+  isEmbeddingProviderAvailable,
+} from "@/lib/search/embedding-provider";
+
 export type SearchRuntimeConfig = {
   hybridSearchEnabled: boolean;
   semanticSearchEnabled: boolean;
   embeddingsConfigured: boolean;
+  semanticAvailable: boolean;
   embeddingModel: string;
   exactPhraseBoost: number;
   semanticWeight: number;
@@ -9,6 +17,7 @@ export type SearchRuntimeConfig = {
   maxMomentsPerVideo: number;
   maxMomentsPerChannel: number;
   minTimestampGapSeconds: number;
+  minSemanticSimilarity: number;
 };
 
 function readBooleanFlag(value: string | undefined, defaultValue: boolean) {
@@ -23,39 +32,33 @@ function readBooleanFlag(value: string | undefined, defaultValue: boolean) {
 }
 
 export function isEmbeddingsConfigured() {
-  const provider = process.env.SEMANTIC_EMBEDDING_PROVIDER?.trim().toLowerCase();
-  const openAiKey = process.env.OPENAI_API_KEY?.trim();
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
+  return isEmbeddingProviderAvailable() && isSupabaseTranscriptStoreConfigured();
+}
 
-  if (provider === "openai") {
-    return Boolean(openAiKey);
-  }
-
-  if (provider === "supabase") {
-    return Boolean(supabaseUrl && serviceKey);
-  }
-
-  return Boolean(openAiKey);
+export function isSemanticInfrastructureAvailable() {
+  return isEmbeddingsConfigured();
 }
 
 export function getSearchRuntimeConfig(): SearchRuntimeConfig {
   const embeddingsConfigured = isEmbeddingsConfigured();
+  const semanticAvailable = embeddingsConfigured;
   const semanticSearchEnabled =
-    readBooleanFlag(process.env.SEMANTIC_SEARCH_ENABLED, false) && embeddingsConfigured;
+    readBooleanFlag(process.env.SEMANTIC_SEARCH_ENABLED, false) && semanticAvailable;
   const hybridSearchEnabled = readBooleanFlag(process.env.HYBRID_SEARCH_ENABLED, true);
 
   return {
     hybridSearchEnabled,
     semanticSearchEnabled,
     embeddingsConfigured,
-    embeddingModel: process.env.SEMANTIC_EMBEDDING_MODEL?.trim() || "text-embedding-3-small",
+    semanticAvailable,
+    embeddingModel: getEmbeddingModelName(),
     exactPhraseBoost: Number(process.env.HYBRID_EXACT_PHRASE_BOOST ?? 15),
     semanticWeight: Number(process.env.HYBRID_SEMANTIC_WEIGHT ?? 20),
     titleMetadataBoost: Number(process.env.HYBRID_TITLE_METADATA_BOOST ?? 6),
     maxMomentsPerVideo: Number(process.env.HYBRID_MAX_MOMENTS_PER_VIDEO ?? 2),
     maxMomentsPerChannel: Number(process.env.HYBRID_MAX_MOMENTS_PER_CHANNEL ?? 6),
     minTimestampGapSeconds: Number(process.env.HYBRID_MIN_TIMESTAMP_GAP_SECONDS ?? 45),
+    minSemanticSimilarity: Number(process.env.HYBRID_MIN_SEMANTIC_SIMILARITY ?? 0.25),
   };
 }
 
@@ -64,4 +67,17 @@ export function getSearchModeLabel() {
   if (config.semanticSearchEnabled) return "hybrid-keyword-semantic";
   if (config.hybridSearchEnabled) return "hybrid-keyword";
   return "keyword-only";
+}
+
+export function getSemanticFallbackReason(): string | undefined {
+  if (!readBooleanFlag(process.env.SEMANTIC_SEARCH_ENABLED, false)) {
+    return "semantic_disabled";
+  }
+  if (!isEmbeddingProviderAvailable()) {
+    return "embedding_provider_unavailable";
+  }
+  if (!isSupabaseTranscriptStoreConfigured()) {
+    return "supabase_unavailable";
+  }
+  return undefined;
 }

@@ -1,7 +1,10 @@
-import { getSupabaseAdminClient } from "@/lib/supabase";
-import { normalizeText } from "@/lib/youtube";
-
-import { getSearchRuntimeConfig, isEmbeddingsConfigured } from "@/lib/search/search-config";
+import { embedQuery, EmbeddingProviderError } from "@/lib/search/embedding-provider";
+import { searchEmbeddingsByVector } from "@/lib/search/embedding-store";
+import {
+  getSearchRuntimeConfig,
+  getSemanticFallbackReason,
+  isSemanticInfrastructureAvailable,
+} from "@/lib/search/search-config";
 import type { SemanticSearchHit } from "@/lib/search/types";
 
 export type SemanticSearchProvider = {
@@ -10,25 +13,12 @@ export type SemanticSearchProvider = {
   search(query: string, limit: number): Promise<SemanticSearchHit[]>;
 };
 
-function tokenize(value: string) {
-  return normalizeText(value)
-    .toLowerCase()
-    .split(/[^a-z0-9]+/)
-    .filter((token) => token.length >= 3);
-}
-
-function lexicalSimilarity(query: string, text: string) {
-  const queryTokens = new Set(tokenize(query));
-  if (queryTokens.size === 0) return 0;
-
-  const textTokens = new Set(tokenize(text));
-  let overlap = 0;
-  for (const token of queryTokens) {
-    if (textTokens.has(token)) overlap += 1;
-  }
-
-  return overlap / queryTokens.size;
-}
+export type SemanticSearchResponse = {
+  provider: string;
+  hits: SemanticSearchHit[];
+  error?: string;
+  fallbackReason?: string;
+};
 
 class NoOpSemanticSearchProvider implements SemanticSearchProvider {
   readonly name = "disabled";
@@ -42,89 +32,21 @@ class NoOpSemanticSearchProvider implements SemanticSearchProvider {
   }
 }
 
-class SupabaseVectorSemanticSearchProvider implements SemanticSearchProvider {
-  readonly name = "supabase-vector";
+class OpenAiVectorSemanticSearchProvider implements SemanticSearchProvider {
+  readonly name = "openai-supabase-vector";
 
   isAvailable() {
-    return isEmbeddingsConfigured();
+    return isSemanticInfrastructureAvailable();
   }
 
   async search(query: string, limit: number): Promise<SemanticSearchHit[]> {
-    const supabase = getSupabaseAdminClient();
-    if (!supabase) return [];
-
-    const normalizedQuery = normalizeText(query);
-    if (!normalizedQuery) return [];
-
-    try {
-      const { data, error } = await supabase.rpc("search_segment_embeddings", {
-        search_query: normalizedQuery,
-        result_limit: Math.max(limit * 3, 30),
-      });
-
-      if (error || !data) {
-        return [];
-      }
-
-      return data.map((row: {
-        video_id: string;
-        segment_index: number;
-        start_seconds: number | string;
-        text: string;
-        similarity: number | string;
-      }) => ({
-        videoId: row.video_id,
-        segmentIndex: Number(row.segment_index ?? 0),
-        startSeconds: Number(row.start_seconds ?? 0),
-        text: row.text,
-        snippet: row.text,
-        similarity: Number(row.similarity ?? 0),
-      }));
-    } catch {
-      return [];
-    }
-  }
-}
-
-class LexicalSemanticPlaceholderProvider implements SemanticSearchProvider {
-  readonly name = "lexical-placeholder";
-
-  isAvailable() {
-    return true;
-  }
-
-  async search(query: string, limit: number): Promise<SemanticSearchHit[]> {
-    const supabase = getSupabaseAdminClient();
-    if (!supabase) return [];
-
-    const normalizedQuery = normalizeText(query);
-    if (!normalizedQuery) return [];
-
-    const { data, error } = await supabase
-      .from("transcript_segments")
-      .select("video_id, segment_index, text, start_seconds")
-      .ilike("text", `%${normalizedQuery.split(/\s+/)[0] ?? normalizedQuery}%`)
-      .limit(Math.max(limit * 8, 40));
-
-    if (error || !data) return [];
-
-    const ranked = data
-      .map((row) => {
-        const similarity = lexicalSimilarity(normalizedQuery, row.text ?? "");
-        return {
-          videoId: row.video_id,
-          segmentIndex: Number(row.segment_index ?? 0),
-          startSeconds: Number(row.start_seconds ?? 0),
-          text: row.text ?? "",
-          snippet: row.text ?? "",
-          similarity,
-        };
-      })
-      .filter((row) => row.similarity >= 0.34)
-      .sort((left, right) => right.similarity - left.similarity)
-      .slice(0, limit);
-
-    return ranked;
+    const config = getSearchRuntimeConfig();
+    const embedded = await embedQuery(query);
+    return searchEmbeddingsByVector(embedded.embedding, {
+      matchCount: Math.max(limit * 3, 30),
+      minSimilarity: config.minSemanticSimilarity,
+      embeddingModel: embedded.model,
+    });
   }
 }
 
@@ -134,24 +56,62 @@ export function createSemanticSearchProvider(): SemanticSearchProvider {
     return new NoOpSemanticSearchProvider();
   }
 
-  const provider = process.env.SEMANTIC_EMBEDDING_PROVIDER?.trim().toLowerCase();
-  if (provider === "supabase" && config.embeddingsConfigured) {
-    return new SupabaseVectorSemanticSearchProvider();
+  if (!isSemanticInfrastructureAvailable()) {
+    return new NoOpSemanticSearchProvider();
   }
 
-  if (process.env.SEMANTIC_LEXICAL_PLACEHOLDER === "true") {
-    return new LexicalSemanticPlaceholderProvider();
-  }
-
-  return new NoOpSemanticSearchProvider();
+  return new OpenAiVectorSemanticSearchProvider();
 }
 
-export async function searchSemanticTranscripts(query: string, limit = 20) {
+export async function searchSemanticTranscripts(
+  query: string,
+  limit = 20
+): Promise<SemanticSearchResponse> {
+  const config = getSearchRuntimeConfig();
   const provider = createSemanticSearchProvider();
-  if (!provider.isAvailable()) {
-    return { provider: provider.name, hits: [] as SemanticSearchHit[] };
+
+  if (!config.semanticSearchEnabled) {
+    return {
+      provider: provider.name,
+      hits: [],
+      fallbackReason: getSemanticFallbackReason() ?? "semantic_disabled",
+    };
   }
 
-  const hits = await provider.search(query, limit);
-  return { provider: provider.name, hits };
+  if (!provider.isAvailable()) {
+    return {
+      provider: provider.name,
+      hits: [],
+      fallbackReason: getSemanticFallbackReason() ?? "semantic_unavailable",
+    };
+  }
+
+  try {
+    const hits = await provider.search(query, limit);
+    if (hits.length === 0) {
+      return {
+        provider: provider.name,
+        hits,
+        fallbackReason: "semantic_zero_hits",
+      };
+    }
+
+    return { provider: provider.name, hits };
+  } catch (error) {
+    if (error instanceof EmbeddingProviderError) {
+      return {
+        provider: provider.name,
+        hits: [],
+        error: error.message,
+        fallbackReason: error.code,
+      };
+    }
+
+    return {
+      provider: provider.name,
+      hits: [],
+      error: error instanceof Error ? error.message : "semantic_search_failed",
+      fallbackReason: "semantic_search_failed",
+    };
+  }
 }

@@ -15,14 +15,19 @@ export async function GET(request: Request) {
   trackServerEvent("indexed_transcript_search", {
     queryLength: query.length,
     resultCount: results.length,
-    searchMode: diagnostics.mode,
+    searchMode: diagnostics.searchMode,
+    semanticEnabled: diagnostics.semanticEnabled,
     semanticFallback: diagnostics.semanticFallback,
   });
 
   return NextResponse.json({
     query,
     resultCount: results.length,
-    searchMode: diagnostics.mode,
+    searchMode: diagnostics.searchMode,
+    semanticEnabled: diagnostics.semanticEnabled,
+    semanticAvailable: diagnostics.semanticAvailable,
+    embeddingModel: diagnostics.embeddingModel,
+    fallbackReason: diagnostics.fallbackReason ?? null,
     diagnostics,
     results,
   });
@@ -41,14 +46,19 @@ export async function POST(request: Request) {
     trackServerEvent("indexed_transcript_search", {
       queryLength: query.length,
       resultCount: results.length,
-      searchMode: diagnostics.mode,
+      searchMode: diagnostics.searchMode,
+      semanticEnabled: diagnostics.semanticEnabled,
       semanticFallback: diagnostics.semanticFallback,
     });
 
     return NextResponse.json({
       query,
       resultCount: results.length,
-      searchMode: diagnostics.mode,
+      searchMode: diagnostics.searchMode,
+      semanticEnabled: diagnostics.semanticEnabled,
+      semanticAvailable: diagnostics.semanticAvailable,
+      embeddingModel: diagnostics.embeddingModel,
+      fallbackReason: diagnostics.fallbackReason ?? null,
       diagnostics,
       results,
     });

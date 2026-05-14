@@ -37,6 +37,12 @@ export type SemanticSearchHit = {
 
 export type HybridSearchDiagnostics = {
   mode: string;
+  searchMode: string;
+  semanticEnabled: boolean;
+  semanticAvailable: boolean;
+  embeddingModel: string;
+  fallbackReason?: string;
+  semanticProvider?: string;
   keywordResultCount: number;
   semanticResultCount: number;
   hybridApplied: boolean;
