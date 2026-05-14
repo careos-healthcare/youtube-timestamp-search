@@ -4,6 +4,7 @@ import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { getCreatorBySlug } from "@/lib/creator-data";
 import { getTranscriptCategoryBySlug } from "@/lib/category-data";
 import { PRODUCT_DESCRIPTION, PRODUCT_WEDGE } from "@/lib/product-copy";
+import { buildSearchOgImageUrl, buildVideoOgImageUrl } from "@/lib/og-urls";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -254,7 +255,7 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
 
 export function createSearchMetadata(
   query: string,
-  options?: { title?: string; description?: string }
+  options?: { title?: string; description?: string; noindex?: boolean }
 ): Metadata {
   const phrase = normalizeText(query);
   const title = options?.title ?? `Search indexed videos for '${phrase}'`;
@@ -262,23 +263,32 @@ export function createSearchMetadata(
     options?.description ??
     `${PRODUCT_WEDGE} Find exact transcript matches for '${phrase}' across long-form lectures, podcasts, and tutorials.`;
   const url = `${getSiteUrl()}${buildSearchPath(phrase)}`;
+  const ogImage = buildSearchOgImageUrl(phrase);
 
   return {
     title,
     description,
     alternates: { canonical: url },
+    robots: options?.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       title,
       description,
       url,
       type: "website",
-      images: ["/og-placeholder.svg"],
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `Search inside video for ${phrase}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-placeholder.svg"],
+      images: [ogImage],
     },
   };
 }
@@ -303,7 +313,7 @@ export function createVideoMetadata(
       ? `${PRODUCT_WEDGE} Search the indexed transcript for "${options.title}"${channelSuffix}. Jump to searchable moments without scrubbing.`
       : `${PRODUCT_DESCRIPTION} Video ${videoId}.`);
   const url = `${getSiteUrl()}${buildVideoPath(videoId)}`;
-  const image = options?.thumbnailUrl ?? `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+  const image = options?.thumbnailUrl ?? buildVideoOgImageUrl(videoId);
 
   return {
     title,

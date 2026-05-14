@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound, redirect } from "next/navigation";
 
-import { PageShell, SiteFooter } from "@/components/page-shell";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
+import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
-import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { SearchLandingResults } from "@/components/search-landing-results";
 import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
 import { SearchQueryTracker } from "@/components/search-query-tracker";
+import { SearchSharePanel } from "@/components/search-share-panel";
+import { buildInternalLinkGraph } from "@/lib/internal-linking";
+import { buildSearchPageUrl } from "@/lib/og-urls";
 import { getSearchLandingData } from "@/lib/search-landing-engine";
 import { PRODUCT_WEDGE } from "@/lib/product-copy";
 import {
   getSearchQuerySeed,
-  phraseFromSearchSlug,
   SEARCH_QUERY_SLUGS,
 } from "@/lib/search-query-seeds";
+import {
+  resolveSearchQuery,
+  shouldNoIndexSearchPage,
+} from "@/lib/search-query-guard";
 import { buildSearchLandingStructuredData } from "@/lib/search-structured-data";
 import {
   buildTranscriptsIndexPath,
@@ -34,25 +40,48 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: SearchPageProps): Promise<Metadata> {
   const { query } = await params;
+  const landing = await getSearchLandingData(
+    resolveSearchQuery(query).phrase,
+    1
+  );
+  const resolved = resolveSearchQuery(query, landing.moments.length);
   const seed = getSearchQuerySeed(query);
-  const phrase = seed?.phrase ?? phraseFromSearchSlug(query);
-  const title = seed?.title ?? `Search inside video for "${phrase}"`;
+  const title =
+    seed?.title ?? `Exact video moments for "${resolved.phrase}"`;
   const description =
     seed?.description ??
-    `${PRODUCT_WEDGE} Find indexed YouTube video moments about "${phrase}" with exact timestamps.`;
+    `${PRODUCT_WEDGE} ${landing.moments.length} indexed moments across ${landing.videoCount} videos for "${resolved.phrase}".`;
 
-  return createSearchMetadata(phrase, { title, description });
+  return createSearchMetadata(resolved.phrase, {
+    title,
+    description,
+    noindex: shouldNoIndexSearchPage(resolved),
+  });
 }
 
 export default async function SearchQueryPage({ params }: SearchPageProps) {
   const { query } = await params;
-  const phrase = getSearchQuerySeed(query)?.phrase ?? phraseFromSearchSlug(query);
-  const landing = await getSearchLandingData(phrase);
+  const landing = await getSearchLandingData(
+    resolveSearchQuery(query).phrase,
+    40
+  );
+  const resolved = resolveSearchQuery(query, landing.moments.length);
+
+  if (!resolved.isValid) {
+    notFound();
+  }
+
+  if (query.toLowerCase() !== resolved.canonicalSlug.toLowerCase()) {
+    redirect(resolved.canonicalPath);
+  }
+
+  const phrase = resolved.phrase;
   const structuredData = buildSearchLandingStructuredData(landing);
   const internalLinks = buildInternalLinkGraph({
     phrase,
     topVideos: landing.topVideos,
   });
+  const canonicalUrl = buildSearchPageUrl(phrase);
 
   return (
     <PageShell>
@@ -67,14 +96,15 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
         <div className="space-y-5">
           <div className="space-y-3">
             <span className="inline-flex w-fit rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-blue-100 uppercase">
-              Video knowledge search
+              Shareable search page
             </span>
-            <h1 className="text-3xl font-semibold text-white sm:text-4xl">
-              Search inside video for &quot;{phrase}&quot;
+            <h1 className="text-3xl font-semibold text-white sm:text-5xl">
+              Exact video moments for &quot;{phrase}&quot;
             </h1>
-            <p className="max-w-3xl text-sm leading-7 text-slate-300 sm:text-base">
-              {PRODUCT_WEDGE} Browse indexed moments that mention &quot;{phrase}&quot; and open
-              exact timestamps on YouTube.
+            <p className="max-w-3xl text-sm leading-7 text-slate-300 sm:text-lg">
+              {PRODUCT_WEDGE} {landing.moments.length} timestamped result
+              {landing.moments.length === 1 ? "" : "s"} across {landing.videoCount} indexed video
+              {landing.videoCount === 1 ? "" : "s"}.
             </p>
             <div className="flex flex-wrap gap-3 text-sm">
               <Link href="/" className="text-blue-200 hover:text-blue-100">
@@ -91,6 +121,8 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
       </section>
 
       <SearchLandingResults data={landing} />
+
+      <SearchSharePanel phrase={phrase} canonicalUrl={canonicalUrl} landing={landing} />
 
       {landing.moments.length < 3 ? (
         <SearchLandingThinContent phrase={phrase} momentCount={landing.moments.length} />

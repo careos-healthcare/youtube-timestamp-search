@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+import { REFERRER_LABELS } from "@/lib/referrer-tracking";
 import type { ValidationMetrics } from "@/lib/validation-metrics";
 import { buildVideoPath } from "@/lib/seo";
 
@@ -192,6 +193,23 @@ export function AdminValidationDashboard({ initialMetrics }: AdminValidationDash
               </ol>
             )}
           </article>
+        </section>
+
+        <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+          <h2 className="text-base font-semibold text-white">Referrer breakdown</h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {Object.entries(metrics.analytics.referrerBreakdown).map(([source, count]) => (
+              <div
+                key={source}
+                className="rounded-xl border border-white/5 bg-slate-950/50 px-3 py-3 text-sm"
+              >
+                <p className="text-slate-400">
+                  {REFERRER_LABELS[source as keyof typeof REFERRER_LABELS]}
+                </p>
+                <p className="mt-1 text-xl font-semibold text-white">{formatNumber(count)}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </main>

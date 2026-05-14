@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { ReferrerTracker } from "@/components/referrer-tracker";
 import { getSiteUrl } from "@/lib/seo";
 import {
   PRODUCT_META_DESCRIPTION,
@@ -56,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         {children}
+        <ReferrerTracker />
         <Analytics />
       </body>
     </html>

@@ -11,6 +11,10 @@ export type ValidationRankedVideo = {
   count: number;
 };
 
+import type { ReferrerSource } from "@/lib/referrer-tracking";
+
+export type ReferrerBreakdown = Record<ReferrerSource, number>;
+
 export type ValidationAnalyticsSnapshot = {
   totalSearchEvents: number;
   zeroResultSearches: number;
@@ -19,6 +23,7 @@ export type ValidationAnalyticsSnapshot = {
   feedbackNo: number;
   topQueries: ValidationRankedQuery[];
   topVideos: ValidationRankedVideo[];
+  referrerBreakdown: ReferrerBreakdown;
   source: "supabase_rpc" | "supabase_fallback" | "unavailable";
 };
 
@@ -38,6 +43,14 @@ const EMPTY_ANALYTICS: ValidationAnalyticsSnapshot = {
   feedbackNo: 0,
   topQueries: [],
   topVideos: [],
+  referrerBreakdown: {
+    reddit: 0,
+    hackernews: 0,
+    twitter: 0,
+    google: 0,
+    direct: 0,
+    other: 0,
+  },
   source: "unavailable",
 };
 
@@ -84,6 +97,14 @@ function parseRpcMetrics(data: unknown): ValidationAnalyticsSnapshot {
           };
         })
       : [],
+    referrerBreakdown: {
+      reddit: 0,
+      hackernews: 0,
+      twitter: 0,
+      google: 0,
+      direct: 0,
+      other: 0,
+    },
     source: "supabase_rpc",
   };
 }
@@ -115,17 +136,50 @@ async function countFeedback(helpful: boolean) {
   return count ?? 0;
 }
 
+async function fetchReferrerBreakdown(): Promise<ReferrerBreakdown> {
+  const supabase = getSupabaseAdminClient();
+  const empty: ReferrerBreakdown = {
+    reddit: 0,
+    hackernews: 0,
+    twitter: 0,
+    google: 0,
+    direct: 0,
+    other: 0,
+  };
+  if (!supabase) return empty;
+
+  const { data } = await supabase
+    .from("search_analytics_events")
+    .select("payload")
+    .eq("event_name", "referrer_visit")
+    .order("created_at", { ascending: false })
+    .limit(5000);
+
+  for (const row of data ?? []) {
+    const payload = row.payload as Record<string, unknown> | null;
+    const source = String(payload?.source ?? "other") as ReferrerSource;
+    if (source in empty) {
+      empty[source] += 1;
+    } else {
+      empty.other += 1;
+    }
+  }
+
+  return empty;
+}
+
 async function fetchFallbackAnalytics(): Promise<ValidationAnalyticsSnapshot> {
   const supabase = getSupabaseAdminClient();
   if (!supabase) return EMPTY_ANALYTICS;
 
-  const [totalSearchEvents, zeroResultSearches, youtubeTimestampClicks, feedbackYes, feedbackNo] =
+  const [totalSearchEvents, zeroResultSearches, youtubeTimestampClicks, feedbackYes, feedbackNo, referrerBreakdown] =
     await Promise.all([
       countEventsByNames(SEARCH_EVENT_NAMES),
       countEventsByNames(ZERO_RESULT_EVENT_NAMES),
       countEventsByNames(YOUTUBE_CLICK_EVENT_NAMES),
       countFeedback(true),
       countFeedback(false),
+      fetchReferrerBreakdown(),
     ]);
 
   const { data: queryRows } = await supabase
@@ -171,6 +225,7 @@ async function fetchFallbackAnalytics(): Promise<ValidationAnalyticsSnapshot> {
       .map(([videoId, count]) => ({ videoId, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 25),
+    referrerBreakdown,
     source: "supabase_fallback",
   };
 }
@@ -181,7 +236,9 @@ async function fetchAnalyticsSnapshot(): Promise<ValidationAnalyticsSnapshot> {
 
   const { data, error } = await supabase.rpc("validation_dashboard_metrics");
   if (!error && data) {
-    return parseRpcMetrics(data);
+    const metrics = parseRpcMetrics(data);
+    metrics.referrerBreakdown = await fetchReferrerBreakdown();
+    return metrics;
   }
 
   return fetchFallbackAnalytics();

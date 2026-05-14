@@ -12,6 +12,8 @@ import {
   PRODUCT_TAGLINE,
   PRODUCT_WEDGE,
 } from "@/lib/product-copy";
+import { TrendingSearchesSection } from "@/components/trending-searches-section";
+import { getTrendingSearches } from "@/lib/trending-searches";
 import { buildHomeStructuredData } from "@/lib/site-structured-data";
 import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath, getSiteUrl } from "@/lib/seo";
 
@@ -36,8 +38,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
   const structuredData = buildHomeStructuredData();
+  const trending = await getTrendingSearches();
 
   return (
     <PageShell>
@@ -63,6 +66,8 @@ export default function HomePage() {
           <CtaSection />
         </div>
       </section>
+
+      <TrendingSearchesSection data={trending} />
 
       <section className="rounded-2xl border border-emerald-400/15 bg-emerald-500/5 p-4 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

@@ -41,6 +41,8 @@ import {
 import {
   getRelatedTopicsForKeywords,
 } from "@/lib/video-related-links";
+import { ChannelMomentsSection } from "@/components/channel-moments-section";
+import { getChannelCorpusMoments } from "@/lib/channel-corpus-search";
 import { extractBestMoments } from "@/lib/best-moments";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
@@ -107,6 +109,14 @@ export default async function VideoPage({ params }: VideoPageProps) {
   });
   const searchableMoments = buildSearchableMoments(videoId, transcript, suggestions, 8);
   const bestMoments = extractBestMoments(videoId, transcript, 8);
+  const channelPhrase = suggestions[0] ?? title ?? "highlights";
+  const channelMoments =
+    channelName && transcript.length > 0
+      ? await getChannelCorpusMoments(channelName, channelPhrase, {
+          excludeVideoId: videoId,
+          limit: 6,
+        })
+      : [];
   const internalLinks = buildInternalLinkGraph({
     phrase: title ?? videoId,
     videoKeywords: suggestions,
@@ -434,6 +444,14 @@ export default async function VideoPage({ params }: VideoPageProps) {
           </Link>
           .
         </section>
+      ) : null}
+
+      {!transcriptError && channelName ? (
+        <ChannelMomentsSection
+          channelName={channelName}
+          phrase={channelPhrase}
+          moments={channelMoments}
+        />
       ) : null}
 
       <InternalLinksPanel
