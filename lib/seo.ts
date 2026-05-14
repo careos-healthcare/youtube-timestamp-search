@@ -2,6 +2,20 @@ import type { Metadata } from "next";
 
 import { normalizeText } from "@/lib/youtube";
 
+export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
+
+export function getSiteUrl() {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+  }
+
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:3000";
+  }
+
+  return PRODUCTION_SITE_URL;
+}
+
 export function slugifyQuery(query: string) {
   return encodeURIComponent(
     normalizeText(query)
@@ -16,18 +30,6 @@ export function deslugifyQuery(slug: string) {
   } catch {
     return slug.replace(/-/g, " ");
   }
-}
-
-export function getSiteUrl() {
-  if (process.env.NEXT_PUBLIC_SITE_URL) {
-    return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
-  }
-
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
-  }
-
-  return "http://localhost:3000";
 }
 
 export function buildMomentPath(videoId: string, query: string) {

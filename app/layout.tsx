@@ -3,17 +3,14 @@ import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { getSiteUrl } from "@/lib/seo";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const metadataBase =
-  process.env.NEXT_PUBLIC_SITE_URL
-    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-    : process.env.VERCEL_URL
-      ? new URL(`https://${process.env.VERCEL_URL}`)
-      : new URL("http://localhost:3000");
+const metadataBase = new URL(getSiteUrl());
 
 export const metadata: Metadata = {
   metadataBase,
