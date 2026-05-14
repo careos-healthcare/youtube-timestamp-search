@@ -6,6 +6,7 @@ import {
   readSupabaseTranscript,
   searchSupabaseTranscripts,
   writeSupabaseTranscript,
+  formatSupabaseWriteFailure,
 } from "@/lib/transcript-cache-supabase";
 import type { TranscriptLine } from "@/lib/transcript-types";
 import { isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
@@ -227,7 +228,8 @@ export async function hasCachedTranscript(videoId: string): Promise<boolean> {
 
 export async function saveTranscript(
   videoId: string,
-  transcriptData: Omit<CachedTranscript, "videoId" | "fetchedAt"> & { fetchedAt?: string }
+  transcriptData: Omit<CachedTranscript, "videoId" | "fetchedAt"> & { fetchedAt?: string },
+  options?: { skipSupabase?: boolean }
 ): Promise<CachedTranscript> {
   const normalizedId = normalizeVideoId(videoId);
   const payload: CachedTranscript = {
@@ -244,8 +246,14 @@ export async function saveTranscript(
 
   await memoryBackend.write(payload);
 
-  if (isSupabaseTranscriptStoreConfigured()) {
-    void writeSupabaseTranscript(payload);
+  if (isSupabaseTranscriptStoreConfigured() && !options?.skipSupabase) {
+    void writeSupabaseTranscript(payload).then((result) => {
+      if (!result.ok) {
+        console.error(
+          `[transcript-cache] Supabase persistence failed for ${normalizedId}: ${formatSupabaseWriteFailure(result)}`
+        );
+      }
+    });
   }
 
   if (fileBackend) {

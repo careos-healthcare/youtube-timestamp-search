@@ -9,6 +9,58 @@ import { formatTimestampFromMs, getYouTubeWatchUrl, normalizeText } from "@/lib/
 
 const SEGMENT_BATCH_SIZE = 500;
 
+export type SupabaseTranscriptWriteStep =
+  | "client_unavailable"
+  | "upsert_transcript"
+  | "delete_segments"
+  | "insert_segments"
+  | "unexpected";
+
+export type SupabaseTranscriptWriteResult =
+  | { ok: true }
+  | {
+      ok: false;
+      step: SupabaseTranscriptWriteStep;
+      message: string;
+      code?: string;
+      details?: string;
+      hint?: string;
+      batchOffset?: number;
+      segmentCount?: number;
+    };
+
+function failureFromPostgrest(
+  step: Exclude<SupabaseTranscriptWriteStep, "client_unavailable" | "unexpected">,
+  error: { message: string; code?: string; details?: string | null; hint?: string | null },
+  extra?: Pick<Extract<SupabaseTranscriptWriteResult, { ok: false }>, "batchOffset" | "segmentCount">
+): Extract<SupabaseTranscriptWriteResult, { ok: false }> {
+  return {
+    ok: false,
+    step,
+    message: error.message,
+    code: error.code,
+    details: error.details ?? undefined,
+    hint: error.hint ?? undefined,
+    ...extra,
+  };
+}
+
+export function formatSupabaseWriteFailure(
+  result: Extract<SupabaseTranscriptWriteResult, { ok: false }>
+) {
+  return [
+    `Supabase ${result.step} failed`,
+    result.message,
+    result.code ? `code=${result.code}` : null,
+    result.details ? `details=${result.details}` : null,
+    result.hint ? `hint=${result.hint}` : null,
+    result.batchOffset != null ? `batchOffset=${result.batchOffset}` : null,
+    result.segmentCount != null ? `segmentCount=${result.segmentCount}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+
 function normalizeVideoId(videoId: string) {
   return videoId.trim();
 }
@@ -73,9 +125,17 @@ export async function readSupabaseTranscript(videoId: string): Promise<CachedTra
   }
 }
 
-export async function writeSupabaseTranscript(transcript: CachedTranscript): Promise<boolean> {
+export async function writeSupabaseTranscript(
+  transcript: CachedTranscript
+): Promise<SupabaseTranscriptWriteResult> {
   const supabase = getSupabaseAdminClient();
-  if (!supabase) return false;
+  if (!supabase) {
+    return {
+      ok: false,
+      step: "client_unavailable",
+      message: "Supabase admin client is not configured",
+    };
+  }
 
   const normalizedId = normalizeVideoId(transcript.videoId);
 
@@ -98,8 +158,19 @@ export async function writeSupabaseTranscript(transcript: CachedTranscript): Pro
       .select("id")
       .single();
 
-    if (upsertError || !upserted?.id) {
-      return false;
+    if (upsertError) {
+      return failureFromPostgrest("upsert_transcript", upsertError, {
+        segmentCount: transcript.segments.length,
+      });
+    }
+
+    if (!upserted?.id) {
+      return {
+        ok: false,
+        step: "upsert_transcript",
+        message: "Upsert succeeded but no transcript id was returned",
+        segmentCount: transcript.segments.length,
+      };
     }
 
     const transcriptId = upserted.id;
@@ -110,7 +181,9 @@ export async function writeSupabaseTranscript(transcript: CachedTranscript): Pro
       .eq("transcript_id", transcriptId);
 
     if (deleteError) {
-      return false;
+      return failureFromPostgrest("delete_segments", deleteError, {
+        segmentCount: transcript.segments.length,
+      });
     }
 
     for (let offset = 0; offset < transcript.segments.length; offset += SEGMENT_BATCH_SIZE) {
@@ -126,13 +199,21 @@ export async function writeSupabaseTranscript(transcript: CachedTranscript): Pro
 
       const { error: insertError } = await supabase.from("transcript_segments").insert(rows);
       if (insertError) {
-        return false;
+        return failureFromPostgrest("insert_segments", insertError, {
+          batchOffset: offset,
+          segmentCount: transcript.segments.length,
+        });
       }
     }
 
-    return true;
-  } catch {
-    return false;
+    return { ok: true };
+  } catch (error) {
+    return {
+      ok: false,
+      step: "unexpected",
+      message: error instanceof Error ? error.message : "Unknown Supabase write error",
+      segmentCount: transcript.segments.length,
+    };
   }
 }
 

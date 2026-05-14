@@ -5,7 +5,10 @@ import {
   saveTranscript,
   type CachedTranscript,
 } from "@/lib/transcript-cache";
-import { writeSupabaseTranscript } from "@/lib/transcript-cache-supabase";
+import {
+  writeSupabaseTranscript,
+  formatSupabaseWriteFailure,
+} from "@/lib/transcript-cache-supabase";
 import {
   fetchTranscriptFromYoutube,
   TranscriptFetchError,
@@ -135,21 +138,27 @@ export async function ingestSeedTranscript(
       channelName: input.creator ?? metadata.channelName,
     });
 
-    const saved: CachedTranscript = await saveTranscript(videoId, {
-      ...payload,
-      videoUrl: url ?? payload.videoUrl,
-      category: input.category ? normalizeCategorySlug(input.category) : undefined,
-      topic: input.topic,
-      creatorName: input.creator,
-    });
+    const saved: CachedTranscript = await saveTranscript(
+      videoId,
+      {
+        ...payload,
+        videoUrl: url ?? payload.videoUrl,
+        category: input.category ? normalizeCategorySlug(input.category) : undefined,
+        topic: input.topic,
+        creatorName: input.creator,
+      },
+      { skipSupabase: isSupabaseTranscriptStoreConfigured() }
+    );
 
     if (isSupabaseTranscriptStoreConfigured()) {
       const persisted = await writeSupabaseTranscript(saved);
-      if (!persisted) {
+      if (!persisted.ok) {
+        const reason = formatSupabaseWriteFailure(persisted);
+        console.error(`[seed] Supabase persistence failed for ${videoId}: ${reason}`);
         return {
           ...base,
           status: "failed",
-          reason: "Transcript fetched but Supabase persistence failed",
+          reason: `Transcript fetched but Supabase persistence failed — ${reason}`,
         };
       }
     }
