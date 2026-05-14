@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "seed:transcripts": "tsx scripts/seed-transcripts.ts",
-    "seed:transcripts:csv": "tsx scripts/seed-transcripts.ts --csv"
+    "seed:transcripts:csv": "tsx scripts/seed-transcripts.ts --csv",
+    "check:transcripts": "tsx scripts/check-transcript-availability.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

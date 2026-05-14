@@ -14,6 +14,34 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
 3. Install dependencies: `npm install`
 
+## Recommended workflow
+
+1. **Create a raw CSV** with candidate videos (`url`, `video_id`, `category`, `creator`, `topic`, `priority`).
+2. **Run the availability checker** to test captions without saving anything:
+
+```bash
+npm run check:transcripts -- data/seed-videos-batch-001.csv
+```
+
+This writes:
+
+- `data/seed-videos-batch-001.available.csv` — videos with fetchable transcripts
+- `data/seed-videos-batch-001.rejected.csv` — failures with a `reason` column
+
+Optional slower rate limit:
+
+```bash
+CHECK_DELAY_MS=2500 npm run check:transcripts -- data/my-raw-batch.csv
+```
+
+3. **Seed only the available CSV** into Supabase:
+
+```bash
+npm run seed:transcripts:csv -- data/seed-videos-batch-001.available.csv
+```
+
+The checker uses `fetchTranscriptFromYoutube` only. It does **not** write to Supabase or the local transcript cache.
+
 ## CLI examples
 
 Index one or more video IDs or URLs:
