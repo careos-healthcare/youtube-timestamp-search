@@ -1,3 +1,4 @@
+import { normalizeCategorySlug } from "@/lib/category-data";
 import {
   buildCachedTranscriptPayload,
   hasCachedTranscript,
@@ -19,7 +20,25 @@ export type SeedTranscriptInput = {
   category?: string;
   creator?: string;
   topic?: string;
+  priority?: number;
 };
+
+export type SeedCsvValidationError = {
+  line: number;
+  message: string;
+  preview?: string;
+};
+
+export type ParseSeedCsvResult = {
+  rows: SeedTranscriptInput[];
+  errors: SeedCsvValidationError[];
+};
+
+const REQUIRED_IDENTIFIER_HEADERS = ["url", "video_id", "videoid"] as const;
+const OPTIONAL_CSV_HEADERS = ["category", "creator", "topic", "priority"] as const;
+const MAX_METADATA_FIELD_LENGTH = 200;
+const MIN_PRIORITY = 1;
+const MAX_PRIORITY = 5;
 
 export type SeedTranscriptStatus = "indexed" | "skipped" | "failed";
 
@@ -30,6 +49,7 @@ export type SeedTranscriptResult = {
   category?: string;
   creator?: string;
   topic?: string;
+  priority?: number;
   segmentCount?: number;
   title?: string;
   channelName?: string;
@@ -96,6 +116,7 @@ export async function ingestSeedTranscript(
     category: input.category,
     creator: input.creator,
     topic: input.topic,
+    priority: input.priority,
   };
 
   if (await hasCachedTranscript(videoId)) {
@@ -117,6 +138,9 @@ export async function ingestSeedTranscript(
     const saved: CachedTranscript = await saveTranscript(videoId, {
       ...payload,
       videoUrl: url ?? payload.videoUrl,
+      category: input.category ? normalizeCategorySlug(input.category) : undefined,
+      topic: input.topic,
+      creatorName: input.creator,
     });
 
     if (isSupabaseTranscriptStoreConfigured()) {
@@ -180,41 +204,262 @@ export async function ingestSeedTranscripts(
   };
 }
 
-export function parseSeedCsv(content: string): SeedTranscriptInput[] {
+function isValidYouTubeVideoId(videoId: string) {
+  return /^[a-zA-Z0-9_-]{11}$/.test(videoId);
+}
+
+function validateMetadataField(
+  fieldName: string,
+  value: string | undefined,
+  line: number,
+  errors: SeedCsvValidationError[],
+  preview: string
+) {
+  if (value == null || value.length === 0) {
+    return undefined;
+  }
+
+  if (value.length > MAX_METADATA_FIELD_LENGTH) {
+    errors.push({
+      line,
+      message: `${fieldName} exceeds ${MAX_METADATA_FIELD_LENGTH} characters`,
+      preview,
+    });
+    return undefined;
+  }
+
+  return value;
+}
+
+function validatePriority(
+  rawValue: string | undefined,
+  line: number,
+  errors: SeedCsvValidationError[],
+  preview: string
+): number | undefined {
+  if (rawValue == null || rawValue.length === 0) {
+    return undefined;
+  }
+
+  const parsed = Number(rawValue);
+  if (!Number.isInteger(parsed) || parsed < MIN_PRIORITY || parsed > MAX_PRIORITY) {
+    errors.push({
+      line,
+      message: `priority must be an integer between ${MIN_PRIORITY} and ${MAX_PRIORITY}`,
+      preview,
+    });
+    return undefined;
+  }
+
+  return parsed;
+}
+
+function validateSeedCsvHeaders(headers: string[], errors: SeedCsvValidationError[]) {
+  const hasIdentifierColumn = REQUIRED_IDENTIFIER_HEADERS.some((header) =>
+    headers.includes(header)
+  );
+
+  if (!hasIdentifierColumn) {
+    errors.push({
+      line: 1,
+      message: `CSV header must include at least one of: ${REQUIRED_IDENTIFIER_HEADERS.join(", ")}`,
+      preview: headers.join(","),
+    });
+  }
+
+  const allowedHeaders = new Set<string>([
+    ...REQUIRED_IDENTIFIER_HEADERS,
+    ...OPTIONAL_CSV_HEADERS,
+  ]);
+
+  for (const header of headers) {
+    if (!allowedHeaders.has(header)) {
+      errors.push({
+        line: 1,
+        message: `Unknown CSV column "${header}". Allowed columns: ${[...allowedHeaders].join(", ")}`,
+        preview: headers.join(","),
+      });
+    }
+  }
+}
+
+function validateSeedCsvRow(
+  record: Record<string, string>,
+  line: number,
+  errors: SeedCsvValidationError[],
+  preview: string
+): SeedTranscriptInput | null {
+  const url = record.url?.trim() ?? "";
+  const videoIdRaw = (record.video_id ?? record.videoid ?? "").trim();
+  const hasUrl = url.length > 0;
+  const hasVideoId = videoIdRaw.length > 0;
+
+  if (!hasUrl && !hasVideoId) {
+    errors.push({
+      line,
+      message: "Row must include a non-empty url or video_id",
+      preview,
+    });
+    return null;
+  }
+
+  let resolvedVideoId: string | null = null;
+
+  if (hasVideoId) {
+    if (!isValidYouTubeVideoId(videoIdRaw)) {
+      errors.push({
+        line,
+        message: `video_id must be exactly 11 YouTube characters (got "${videoIdRaw}")`,
+        preview,
+      });
+    } else {
+      resolvedVideoId = videoIdRaw;
+    }
+  }
+
+  let resolvedUrlVideoId: string | null = null;
+  if (hasUrl) {
+    resolvedUrlVideoId = extractYouTubeVideoId(url);
+    if (!resolvedUrlVideoId) {
+      errors.push({
+        line,
+        message: `url is not a supported YouTube watch URL (got "${url}")`,
+        preview,
+      });
+    }
+  }
+
+  if (
+    resolvedVideoId &&
+    resolvedUrlVideoId &&
+    resolvedVideoId !== resolvedUrlVideoId
+  ) {
+    errors.push({
+      line,
+      message: `url and video_id disagree (${resolvedUrlVideoId} vs ${resolvedVideoId})`,
+      preview,
+    });
+    return null;
+  }
+
+  const videoId = resolvedVideoId ?? resolvedUrlVideoId;
+  if (!videoId) {
+    return null;
+  }
+
+  const errorsBeforeMetadata = errors.length;
+
+  const row: SeedTranscriptInput = {
+    url: hasUrl ? url : undefined,
+    videoId,
+    category: validateMetadataField("category", record.category, line, errors, preview),
+    creator: validateMetadataField("creator", record.creator, line, errors, preview),
+    topic: validateMetadataField("topic", record.topic, line, errors, preview),
+    priority: validatePriority(record.priority, line, errors, preview),
+  };
+
+  if (errors.length > errorsBeforeMetadata) {
+    return null;
+  }
+
+  return row;
+}
+
+export function formatSeedCsvValidationErrors(errors: SeedCsvValidationError[]) {
+  return errors
+    .map((error) => {
+      const preview = error.preview ? ` | row: ${error.preview}` : "";
+      return `Line ${error.line}: ${error.message}${preview}`;
+    })
+    .join("\n");
+}
+
+export function parseSeedCsv(content: string): ParseSeedCsvResult {
   const lines = content
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter((line) => line.length > 0);
 
   if (lines.length === 0) {
-    return [];
+    return { rows: [], errors: [] };
   }
 
   const headers = splitCsvLine(lines[0]).map((header) => header.trim().toLowerCase());
+  const errors: SeedCsvValidationError[] = [];
+  validateSeedCsvHeaders(headers, errors);
+
   const rows: SeedTranscriptInput[] = [];
 
-  for (const line of lines.slice(1)) {
+  for (let index = 1; index < lines.length; index += 1) {
+    const line = lines[index];
+    const lineNumber = index + 1;
     const values = splitCsvLine(line);
     const record: Record<string, string> = {};
 
-    headers.forEach((header, index) => {
-      record[header] = values[index]?.trim() ?? "";
+    headers.forEach((header, headerIndex) => {
+      record[header] = values[headerIndex]?.trim() ?? "";
     });
 
-    const row: SeedTranscriptInput = {
-      url: record.url || undefined,
-      videoId: record.video_id || record.videoid || undefined,
-      category: record.category || undefined,
-      creator: record.creator || undefined,
-      topic: record.topic || undefined,
-    };
+    if (headers.length !== values.length) {
+      errors.push({
+        line: lineNumber,
+        message: `Expected ${headers.length} column(s) but found ${values.length}`,
+        preview: line,
+      });
+      continue;
+    }
 
-    if (row.url || row.videoId) {
+    const row = validateSeedCsvRow(record, lineNumber, errors, line);
+    if (row) {
       rows.push(row);
     }
   }
 
-  return rows;
+  const duplicateVideoIds = findDuplicateVideoIds(rows);
+  for (const duplicate of duplicateVideoIds) {
+    errors.push({
+      line: duplicate.line,
+      message: `Duplicate video_id "${duplicate.videoId}" also appears on line ${duplicate.firstLine}`,
+      preview: duplicate.preview,
+    });
+  }
+
+  return { rows, errors };
+}
+
+function findDuplicateVideoIds(rows: SeedTranscriptInput[]) {
+  const seen = new Map<string, { line: number; preview: string }>();
+  const duplicates: Array<{
+    line: number;
+    firstLine: number;
+    videoId: string;
+    preview: string;
+  }> = [];
+
+  rows.forEach((row, index) => {
+    const videoId = row.videoId;
+    if (!videoId) return;
+
+    const line = index + 2;
+    const preview = [row.url, row.videoId, row.category, row.creator, row.topic]
+      .filter(Boolean)
+      .join(",");
+
+    const existing = seen.get(videoId);
+    if (existing) {
+      duplicates.push({
+        line,
+        firstLine: existing.line,
+        videoId,
+        preview,
+      });
+      return;
+    }
+
+    seen.set(videoId, { line, preview });
+  });
+
+  return duplicates;
 }
 
 function splitCsvLine(line: string) {
@@ -271,6 +516,7 @@ export function formatSeedResultLine(result: SeedTranscriptResult) {
     result.category ? `category=${result.category}` : null,
     result.creator ? `creator=${result.creator}` : null,
     result.topic ? `topic=${result.topic}` : null,
+    result.priority != null ? `priority=${result.priority}` : null,
   ]
     .filter(Boolean)
     .join(" ");

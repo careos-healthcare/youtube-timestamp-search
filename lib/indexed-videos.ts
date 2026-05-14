@@ -1,5 +1,6 @@
 import { getSupabaseAdminClient, isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
 import { listCachedTranscripts, getCachedTranscript } from "@/lib/transcript-cache";
+import type { TranscriptCategorySlug } from "@/lib/category-data";
 import {
   getRelatedCreatorsForKeywords,
   getRelatedTopicsForKeywords,
@@ -144,24 +145,35 @@ async function getPreviewSegmentsByVideoIds(videoIds: string[]) {
   }
 }
 
-async function getLatestFromSupabase(limit: number, offset: number): Promise<IndexedVideosPage | null> {
+async function getIndexedFromSupabase(options: {
+  limit: number;
+  offset: number;
+  category?: TranscriptCategorySlug;
+}): Promise<IndexedVideosPage | null> {
+  const { limit, offset, category } = options;
   const supabase = getSupabaseAdminClient();
   if (!supabase) return null;
 
   try {
-    const { count, error: countError } = await supabase
+    let countQuery = supabase.from("transcripts").select("id", { count: "exact", head: true });
+    let dataQuery = supabase
       .from("transcripts")
-      .select("id", { count: "exact", head: true });
+      .select("video_id, video_url, title, channel_name, fetched_at, transcript_segments(count)")
+      .order("fetched_at", { ascending: false })
+      .range(offset, offset + limit - 1);
+
+    if (category) {
+      countQuery = countQuery.eq("category", category);
+      dataQuery = dataQuery.eq("category", category);
+    }
+
+    const { count, error: countError } = await countQuery;
 
     if (countError) {
       return null;
     }
 
-    const { data, error } = await supabase
-      .from("transcripts")
-      .select("video_id, video_url, title, channel_name, fetched_at, transcript_segments(count)")
-      .order("fetched_at", { ascending: false })
-      .range(offset, offset + limit - 1);
+    const { data, error } = await dataQuery;
 
     if (error || !data) {
       return null;
@@ -195,6 +207,10 @@ async function getLatestFromSupabase(limit: number, offset: number): Promise<Ind
   } catch {
     return null;
   }
+}
+
+async function getLatestFromSupabase(limit: number, offset: number): Promise<IndexedVideosPage | null> {
+  return getIndexedFromSupabase({ limit, offset });
 }
 
 async function getLatestFromFallback(limit: number, offset: number): Promise<IndexedVideosPage> {
@@ -233,6 +249,71 @@ async function getLatestFromFallback(limit: number, offset: number): Promise<Ind
     hasMore: offset + videos.length < summaries.length,
     source: "fallback",
   };
+}
+
+async function getCategoryFromFallback(
+  category: TranscriptCategorySlug,
+  limit: number,
+  offset: number
+): Promise<IndexedVideosPage> {
+  const summaries = await listCachedTranscripts();
+  const filtered: typeof summaries = [];
+
+  for (const summary of summaries) {
+    const cached = await getCachedTranscript(summary.videoId);
+    if (cached?.category === category) {
+      filtered.push(summary);
+    }
+  }
+
+  const slice = filtered.slice(offset, offset + limit);
+  const videos = await Promise.all(
+    slice.map(async (summary) => {
+      const cached = await getCachedTranscript(summary.videoId);
+      const previewSnippet = buildPreviewSnippet(
+        (cached?.segments ?? []).slice(0, 3).map((segment, index) => ({
+          segmentIndex: index,
+          text: segment.text,
+          start: segment.start,
+          duration: segment.duration,
+        }))
+      );
+
+      return enrichIndexedVideo({
+        videoId: summary.videoId,
+        videoUrl: summary.videoUrl,
+        title: summary.title,
+        channelName: summary.channelName,
+        fetchedAt: summary.fetchedAt,
+        segmentCount: summary.segmentCount,
+        previewSnippet,
+      });
+    })
+  );
+
+  return {
+    videos,
+    total: filtered.length,
+    limit,
+    offset,
+    hasMore: offset + videos.length < filtered.length,
+    source: "fallback",
+  };
+}
+
+export async function getIndexedVideosByCategory(
+  category: TranscriptCategorySlug,
+  limit = DEFAULT_LIMIT,
+  offset = 0
+): Promise<IndexedVideosPage> {
+  if (isSupabaseTranscriptStoreConfigured()) {
+    const fromSupabase = await getIndexedFromSupabase({ limit, offset, category });
+    if (fromSupabase) {
+      return fromSupabase;
+    }
+  }
+
+  return getCategoryFromFallback(category, limit, offset);
 }
 
 export async function getLatestIndexedVideos(

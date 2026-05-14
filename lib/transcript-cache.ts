@@ -22,6 +22,9 @@ export type CachedTranscript = {
   videoUrl: string;
   title?: string;
   channelName?: string;
+  category?: string;
+  topic?: string;
+  creatorName?: string;
   fetchedAt: string;
   segments: CachedTranscriptSegment[];
 };
@@ -232,6 +235,9 @@ export async function saveTranscript(
     videoUrl: transcriptData.videoUrl,
     title: transcriptData.title,
     channelName: transcriptData.channelName,
+    category: transcriptData.category,
+    topic: transcriptData.topic,
+    creatorName: transcriptData.creatorName,
     fetchedAt: transcriptData.fetchedAt ?? new Date().toISOString(),
     segments: transcriptData.segments,
   };

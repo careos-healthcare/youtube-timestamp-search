@@ -9,9 +9,21 @@ import type { IndexedVideosPage } from "@/lib/indexed-videos";
 
 type LatestVideosFeedProps = {
   initialPage: IndexedVideosPage;
+  apiPath?: string;
+  emptyTitle?: string;
+  emptyDescription?: string;
+  emptyActionHref?: string;
+  emptyActionLabel?: string;
 };
 
-export function LatestVideosFeed({ initialPage }: LatestVideosFeedProps) {
+export function LatestVideosFeed({
+  initialPage,
+  apiPath = "/api/latest",
+  emptyTitle = "No indexed videos yet",
+  emptyDescription = "Search a YouTube video on the homepage to index its transcript and populate this feed.",
+  emptyActionHref = "/",
+  emptyActionLabel = "Start searching",
+}: LatestVideosFeedProps) {
   const [videos, setVideos] = useState(initialPage.videos);
   const [offset, setOffset] = useState(initialPage.offset + initialPage.videos.length);
   const [hasMore, setHasMore] = useState(initialPage.hasMore);
@@ -25,7 +37,7 @@ export function LatestVideosFeed({ initialPage }: LatestVideosFeedProps) {
     setError("");
 
     try {
-      const response = await fetch(`/api/latest?offset=${offset}&limit=${initialPage.limit}`);
+      const response = await fetch(`${apiPath}?offset=${offset}&limit=${initialPage.limit}`);
       const data = (await response.json()) as IndexedVideosPage & { error?: string };
 
       if (!response.ok) {
@@ -46,15 +58,13 @@ export function LatestVideosFeed({ initialPage }: LatestVideosFeedProps) {
   if (videos.length === 0) {
     return (
       <section className="rounded-2xl border border-dashed border-white/15 bg-white/5 p-6 text-center">
-        <h2 className="text-lg font-semibold text-white">No indexed videos yet</h2>
-        <p className="mt-2 text-sm text-slate-300">
-          Search a YouTube video on the homepage to index its transcript and populate this feed.
-        </p>
+        <h2 className="text-lg font-semibold text-white">{emptyTitle}</h2>
+        <p className="mt-2 text-sm text-slate-300">{emptyDescription}</p>
         <Link
-          href="/"
+          href={emptyActionHref}
           className="mt-4 inline-flex h-10 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-4 text-sm font-medium text-blue-100"
         >
-          Start searching
+          {emptyActionLabel}
         </Link>
       </section>
     );

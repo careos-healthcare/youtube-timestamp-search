@@ -1,0 +1,12 @@
+url,video_id,category,creator,topic,priority
+https://www.youtube.com/watch?v=PkZNo7MFNFg,PkZNo7MFNFg,programming tutorials,freeCodeCamp,javascript,1
+https://www.youtube.com/watch?v=rfscVS0vtbw,rfscVS0vtbw,programming tutorials,freeCodeCamp,python,1
+https://www.youtube.com/watch?v=Tn6-PIqc4UM,Tn6-PIqc4UM,programming tutorials,Fireship,react,2
+https://www.youtube.com/watch?v=L_Guz73e6fw,L_Guz73e6fw,AI podcasts,Lex Fridman,openai,1
+https://www.youtube.com/watch?v=nis745H7YRc,nis745H7YRc,AI podcasts,Dwarkesh Patel,scaling-laws,2
+https://www.youtube.com/watch?v=MT4Ig2uqjTc,MT4Ig2uqjTc,business interviews,Y Combinator,customer-discovery,1
+https://www.youtube.com/watch?v=Th8JoIan4dg,Th8JoIan4dg,business interviews,Y Combinator,startup-ideas,2
+https://www.youtube.com/watch?v=B9XG_upIDOE,B9XG_upIDOE,finance education,Ray Dalio,economic-cycles,1
+https://www.youtube.com/watch?v=ZK3O402wf1c,ZK3O402wf1c,finance education,MIT OpenCourseWare,linear-algebra,3
+https://www.youtube.com/watch?v=hFL6qRIJZ_Y,hFL6qRIJZ_Y,self-improvement podcasts,Andrew Huberman,focus,1
+https://www.youtube.com/watch?v=nm1TxQj9IsQ,nm1TxQj9IsQ,self-improvement podcasts,Andrew Huberman,sleep,1

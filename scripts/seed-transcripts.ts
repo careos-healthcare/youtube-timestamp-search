@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 import {
+  formatSeedCsvValidationErrors,
   formatSeedResultLine,
   formatSeedSummary,
   ingestSeedTranscripts,
@@ -46,7 +47,7 @@ Environment:
 `);
 }
 
-function parseArgs(argv: string[]) {
+function parseArgs(argv: string[]): SeedTranscriptInput[] {
   const csvFlagIndex = argv.findIndex((arg) => arg === "--csv" || arg === "-f");
   if (csvFlagIndex !== -1) {
     const csvPath = argv[csvFlagIndex + 1];
@@ -60,7 +61,15 @@ function parseArgs(argv: string[]) {
     }
 
     const content = readFileSync(absolutePath, "utf8");
-    return parseSeedCsv(content);
+    const parsed = parseSeedCsv(content);
+
+    if (parsed.errors.length > 0) {
+      console.error("CSV validation failed:\n");
+      console.error(formatSeedCsvValidationErrors(parsed.errors));
+      process.exit(1);
+    }
+
+    return parsed.rows;
   }
 
   const cliInputs = parseSeedCliArgs(argv);

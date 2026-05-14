@@ -1,14 +1,16 @@
 import type { MetadataRoute } from "next";
 
-import { getSiteUrl, buildTopicPath, buildCreatorPath } from "@/lib/seo";
+import { getSiteUrl, buildTopicPath, buildCreatorPath, buildCategoryPath } from "@/lib/seo";
 import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
+import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
 
 const STATIC_PAGES = [
   "/",
   "/latest",
   "/topics",
   "/creators",
+  "/categories",
   "/transcripts",
   "/find-youtube-quotes",
   "/search-podcast-transcripts",
@@ -40,5 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticEntries, ...topicEntries, ...creatorEntries];
+  const categoryEntries = TRANSCRIPT_CATEGORY_SLUGS.map((slug) => ({
+    url: `${siteUrl}${buildCategoryPath(slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.72,
+  }));
+
+  return [...staticEntries, ...topicEntries, ...creatorEntries, ...categoryEntries];
 }

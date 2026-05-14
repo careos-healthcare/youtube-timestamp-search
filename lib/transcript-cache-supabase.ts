@@ -37,7 +37,7 @@ export async function readSupabaseTranscript(videoId: string): Promise<CachedTra
   try {
     const { data: transcript, error: transcriptError } = await supabase
       .from("transcripts")
-      .select("id, video_id, video_url, title, channel_name, fetched_at")
+      .select("id, video_id, video_url, title, channel_name, category, topic, creator_name, fetched_at")
       .eq("video_id", normalizedId)
       .maybeSingle();
 
@@ -62,6 +62,9 @@ export async function readSupabaseTranscript(videoId: string): Promise<CachedTra
       videoUrl: transcript.video_url ?? getYouTubeWatchUrl(transcript.video_id),
       title: transcript.title ?? undefined,
       channelName: transcript.channel_name ?? undefined,
+      category: transcript.category ?? undefined,
+      topic: transcript.topic ?? undefined,
+      creatorName: transcript.creator_name ?? undefined,
       fetchedAt: transcript.fetched_at,
       segments: mapSegments(segments),
     };
@@ -85,6 +88,9 @@ export async function writeSupabaseTranscript(transcript: CachedTranscript): Pro
           video_url: transcript.videoUrl,
           title: transcript.title ?? null,
           channel_name: transcript.channelName ?? null,
+          category: transcript.category ?? null,
+          topic: transcript.topic ?? null,
+          creator_name: transcript.creatorName ?? null,
           fetched_at: transcript.fetchedAt,
         },
         { onConflict: "video_id" }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { getCreatorBySlug } from "@/lib/creator-data";
+import { getTranscriptCategoryBySlug } from "@/lib/category-data";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -74,6 +75,14 @@ export function buildLatestPath(page = 1) {
   return page > 1 ? `/latest?page=${page}` : "/latest";
 }
 
+export function buildCategoryPath(slug: string) {
+  return `/category/${encodeURIComponent(slug.toLowerCase())}`;
+}
+
+export function buildCategoriesIndexPath() {
+  return "/categories";
+}
+
 export function createLatestMetadata(page = 1): Metadata {
   const title =
     page > 1
@@ -82,6 +91,60 @@ export function createLatestMetadata(page = 1): Metadata {
   const description =
     "Browse the newest indexed YouTube transcript videos. Search captions, jump to timestamps, and explore related topics and creators.";
   const url = `${getSiteUrl()}${buildLatestPath(page)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+  };
+}
+
+export function createCategoryMetadata(slug: string): Metadata {
+  const category = getTranscriptCategoryBySlug(slug);
+  if (!category) return {};
+
+  const title = `${category.label} transcript search — latest indexed videos`;
+  const description = category.description;
+  const url = `${getSiteUrl()}${buildCategoryPath(category.slug)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+  };
+}
+
+export function createCategoriesIndexMetadata(): Metadata {
+  const title = "Browse transcript categories — programming, AI, business, finance, self-improvement";
+  const description =
+    "Discover indexed YouTube transcripts by category. Search programming tutorials, AI podcasts, business interviews, finance education, and self-improvement episodes.";
+  const url = `${getSiteUrl()}${buildCategoriesIndexPath()}`;
 
   return {
     title,

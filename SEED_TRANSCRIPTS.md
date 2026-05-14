@@ -28,28 +28,58 @@ npm run seed:transcripts -- https://www.youtube.com/watch?v=dQw4w9WgXcQ https://
 
 ## CSV examples
 
-Create `data/seed-videos.csv`:
+Copy the starter file and edit as needed:
+
+```bash
+cp data/seed-videos.example.csv data/seed-videos.csv
+```
+
+`data/seed-videos.example.csv` includes curated rows across:
+
+- programming tutorials
+- AI podcasts
+- business interviews
+- finance education
+- self-improvement podcasts
+
+Minimal custom CSV:
 
 ```csv
-url,video_id,category,creator,topic
-https://www.youtube.com/watch?v=PkZNo7MFNFg,,education,,javascript
-,joe-rogan-example-id,podcasts,joe-rogan,psychology
+url,video_id,category,creator,topic,priority
+https://www.youtube.com/watch?v=PkZNo7MFNFg,PkZNo7MFNFg,programming tutorials,freeCodeCamp,javascript,1
 ```
 
 Supported columns:
 
 | Column | Description |
 |--------|-------------|
-| `url` | Full YouTube URL |
-| `video_id` | 11-character YouTube video ID |
+| `url` | Full YouTube URL (required unless `video_id` is set) |
+| `video_id` | 11-character YouTube video ID (required unless `url` is set) |
 | `category` | Logged with seed status (optional) |
 | `creator` | Used as channel override when oEmbed channel is missing (optional) |
 | `topic` | Logged with seed status (optional) |
+| `priority` | Integer `1`–`5` for batch ordering notes (optional) |
+
+CSV validation rejects malformed files before ingestion starts. Common failures:
+
+- missing `url` / `video_id` columns in the header
+- rows with neither `url` nor `video_id`
+- invalid YouTube IDs or URLs
+- mismatched `url` and `video_id` on the same row
+- wrong column counts
+- duplicate `video_id` values
+- invalid `priority` values
 
 Run:
 
 ```bash
 npm run seed:transcripts:csv -- data/seed-videos.csv
+```
+
+Or use the example file directly:
+
+```bash
+npm run seed:transcripts:csv -- data/seed-videos.example.csv
 ```
 
 ## Behavior
