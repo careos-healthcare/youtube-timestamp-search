@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -52,11 +53,19 @@ export function buildTopicPath(keyword: string) {
   return `/topic/${encodeURIComponent(keyword.toLowerCase())}`;
 }
 
+export function buildTopicsIndexPath() {
+  return "/topics";
+}
+
 export function createTopicMetadata(keyword: string): Metadata {
-  const label = keyword.charAt(0).toUpperCase() + keyword.slice(1);
+  const topic = getTopicBySlug(keyword);
+  const label = topic?.displayName ?? formatTopicLabel(keyword);
   const title = `Search YouTube transcripts for ${label.toLowerCase()} moments`;
-  const description = `Find ${label.toLowerCase()} quotes, podcast moments, and timestamps inside YouTube transcripts.`;
-  const url = `${getSiteUrl()}${buildTopicPath(keyword)}`;
+  const description =
+    topic?.description ??
+    `Find ${label.toLowerCase()} quotes, podcast moments, and timestamps inside YouTube transcripts.`;
+  const canonicalSlug = topic?.slug ?? keyword.toLowerCase();
+  const url = `${getSiteUrl()}${buildTopicPath(canonicalSlug)}`;
 
   return {
     title,

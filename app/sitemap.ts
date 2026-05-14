@@ -5,6 +5,7 @@ import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 
 const STATIC_PAGES = [
   "/",
+  "/topics",
   "/find-youtube-quotes",
   "/search-podcast-transcripts",
   "/find-youtube-timestamps",

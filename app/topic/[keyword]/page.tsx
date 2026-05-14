@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import { CtaSection } from "@/components/cta-section";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
-import { buildSearchPath, buildTopicPath, createTopicMetadata } from "@/lib/seo";
+import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, createTopicMetadata } from "@/lib/seo";
 import { buildTopicContent } from "@/lib/topic-content";
-import { isTopicKeyword, TOPIC_KEYWORDS } from "@/lib/topic-keywords";
+import { formatTopicLabel, isTopicKeyword, normalizeTopicSlug, TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 
 type TopicPageProps = {
   params: Promise<{ keyword: string }>;
@@ -18,7 +18,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {
-  const { keyword } = await params;
+  const { keyword: rawKeyword } = await params;
+  const keyword = normalizeTopicSlug(rawKeyword);
   if (!isTopicKeyword(keyword)) {
     return {};
   }
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
 }
 
 export default async function TopicPage({ params }: TopicPageProps) {
-  const { keyword } = await params;
+  const { keyword: rawKeyword } = await params;
+  const keyword = normalizeTopicSlug(rawKeyword);
 
   if (!isTopicKeyword(keyword)) {
     notFound();
@@ -41,7 +43,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
         <div className="flex flex-col gap-6">
           <div className="max-w-3xl space-y-4">
             <span className="inline-flex w-fit rounded-full border border-blue-300/30 bg-blue-400/15 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-blue-100 uppercase">
-              Transcript topic search
+              {content.clusterLabel}
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
               Search YouTube transcripts for {content.label.toLowerCase()} moments
@@ -141,7 +143,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
                 href={buildTopicPath(topic)}
                 className="inline-flex h-9 items-center rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 text-sm text-emerald-100 transition hover:border-emerald-300/40 hover:bg-emerald-400/20"
               >
-                {topic}
+                {formatTopicLabel(topic)}
               </Link>
             ))}
           </div>
@@ -151,6 +153,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
         <h2 className="text-base font-semibold text-white">More ways to search</h2>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
+          <Link href={buildTopicsIndexPath()} className="text-blue-200 transition hover:text-blue-100">
+            Browse all topics
+          </Link>
           <Link href="/" className="text-blue-200 transition hover:text-blue-100">
             Homepage search
           </Link>
