@@ -14,7 +14,8 @@ export type AnalyticsEventName =
   | "cta_email_submitted"
   | "cta_chrome_extension_clicked"
   | "cta_api_access_clicked"
-  | "cta_save_search_clicked";
+  | "cta_save_search_clicked"
+  | "video_within_search_submitted";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

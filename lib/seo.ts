@@ -279,15 +279,25 @@ export function createSearchMetadata(query: string): Metadata {
 
 export function createVideoMetadata(
   videoId: string,
-  options?: { title?: string; channelName?: string }
+  options?: {
+    title?: string;
+    channelName?: string;
+    description?: string;
+    thumbnailUrl?: string;
+    segmentCount?: number;
+  }
 ): Metadata {
-  const label = options?.title ?? `video ${videoId}`;
   const channelSuffix = options?.channelName ? ` from ${options.channelName}` : "";
-  const title = `Search transcript for ${label}`;
-  const description = options?.title
-    ? `Search the YouTube transcript for "${options.title}"${channelSuffix}. Find exact timestamps without scrubbing.`
-    : `Search the YouTube transcript for video ${videoId}. Find exact timestamps without scrubbing.`;
+  const title = options?.title
+    ? `${options.title} transcript search — find timestamps & quotes`
+    : `Search YouTube transcript for ${videoId}`;
+  const description =
+    options?.description ??
+    (options?.title
+      ? `Search the full YouTube transcript for "${options.title}"${channelSuffix}. Jump to searchable moments, quotes, and exact timestamps.`
+      : `Search the YouTube transcript for video ${videoId}. Find exact timestamps without scrubbing.`);
   const url = `${getSiteUrl()}${buildVideoPath(videoId)}`;
+  const image = options?.thumbnailUrl ?? `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 
   return {
     title,
@@ -297,14 +307,26 @@ export function createVideoMetadata(
       title,
       description,
       url,
-      type: "website",
-      images: ["/og-placeholder.svg"],
+      type: "video.other",
+      images: [
+        {
+          url: image,
+          width: 1280,
+          height: 720,
+          alt: options?.title ?? `YouTube video ${videoId}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-placeholder.svg"],
+      images: [image],
     },
+    other: options?.segmentCount
+      ? {
+          "video:duration": String(options.segmentCount),
+        }
+      : undefined,
   };
 }

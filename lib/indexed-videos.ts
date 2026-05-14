@@ -29,6 +29,9 @@ export type IndexedVideo = {
   videoUrl: string;
   title: string;
   channelName?: string;
+  category?: string;
+  topic?: string;
+  creatorName?: string;
   fetchedAt: string;
   segmentCount: number;
   previewSnippet: string;
@@ -81,6 +84,9 @@ function enrichIndexedVideo(input: {
   videoUrl: string;
   title?: string;
   channelName?: string;
+  category?: string;
+  topic?: string;
+  creatorName?: string;
   fetchedAt: string;
   segmentCount: number;
   previewSnippet: string;
@@ -100,6 +106,9 @@ function enrichIndexedVideo(input: {
     videoUrl: input.videoUrl,
     title: input.title ?? `YouTube video ${input.videoId}`,
     channelName: input.channelName,
+    category: input.category,
+    topic: input.topic,
+    creatorName: input.creatorName,
     fetchedAt: input.fetchedAt,
     segmentCount: input.segmentCount,
     previewSnippet: input.previewSnippet || "Transcript indexed and ready to search.",
@@ -339,7 +348,9 @@ export async function getIndexedVideoById(videoId: string): Promise<IndexedVideo
       try {
         const { data, error } = await supabase
           .from("transcripts")
-          .select("video_id, video_url, title, channel_name, fetched_at, transcript_segments(count)")
+          .select(
+            "video_id, video_url, title, channel_name, category, topic, creator_name, fetched_at, transcript_segments(count)"
+          )
           .eq("video_id", normalizedId)
           .maybeSingle();
 
@@ -350,6 +361,9 @@ export async function getIndexedVideoById(videoId: string): Promise<IndexedVideo
             videoUrl: data.video_url ?? getYouTubeWatchUrl(data.video_id),
             title: data.title ?? undefined,
             channelName: data.channel_name ?? undefined,
+            category: data.category ?? undefined,
+            topic: data.topic ?? undefined,
+            creatorName: data.creator_name ?? undefined,
             fetchedAt: data.fetched_at,
             segmentCount: data.transcript_segments?.[0]?.count ?? segments.length,
             previewSnippet: buildPreviewSnippet(segments),
@@ -369,6 +383,9 @@ export async function getIndexedVideoById(videoId: string): Promise<IndexedVideo
     videoUrl: cached.videoUrl,
     title: cached.title,
     channelName: cached.channelName,
+    category: cached.category,
+    topic: cached.topic,
+    creatorName: cached.creatorName,
     fetchedAt: cached.fetchedAt,
     segmentCount: cached.segments.length,
     previewSnippet: buildPreviewSnippet(
