@@ -1,5 +1,7 @@
 /** Priority long-tail queries pre-rendered at build time for /search/[query]. */
 
+import { GENERATED_SEARCH_QUERY_SEEDS } from "@/lib/generated-search-query-seeds";
+
 export type SearchQuerySeed = {
   slug: string;
   phrase: string;
@@ -7,7 +9,7 @@ export type SearchQuerySeed = {
   description?: string;
 };
 
-export const PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
+const MANUAL_PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
   { slug: "what-is-rag", phrase: "what is rag", title: "What is RAG — video moments" },
   { slug: "how-to-learn-python", phrase: "how to learn python", title: "How to learn Python — video moments" },
   { slug: "ai-agents", phrase: "ai agents", title: "AI agents — video moments" },
@@ -38,6 +40,11 @@ export const PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
   { slug: "graphql", phrase: "graphql" },
   { slug: "nextjs", phrase: "nextjs" },
   { slug: "saas-pricing", phrase: "saas pricing" },
+];
+
+export const PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
+  ...MANUAL_PRIORITY_SEARCH_QUERIES,
+  ...GENERATED_SEARCH_QUERY_SEEDS,
 ];
 
 export const SEARCH_QUERY_SLUGS = PRIORITY_SEARCH_QUERIES.map((q) => q.slug);

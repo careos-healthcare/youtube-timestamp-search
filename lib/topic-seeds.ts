@@ -1,6 +1,7 @@
 import type { TopicSeed } from "@/lib/topic-keywords";
+import { GENERATED_TOPIC_SEEDS } from "@/lib/generated-topic-seeds";
 
-export const TOPIC_SEEDS: TopicSeed[] = [
+const MANUAL_TOPIC_SEEDS: TopicSeed[] = [
   { slug: "youtube-transcripts", displayName: "YouTube transcripts", cluster: "youtube-transcript-search", description: "Search full YouTube video transcripts and jump to exact mentions instantly.", featured: false },
   { slug: "transcript-search", displayName: "Transcript search", cluster: "youtube-transcript-search", description: "Search any YouTube transcript for keywords, phrases, and speaker moments.", featured: true },
   { slug: "find-youtube-quotes", displayName: "Find YouTube quotes", cluster: "youtube-transcript-search", description: "Locate quotable lines inside YouTube videos without manual scrubbing.", featured: true },
@@ -223,3 +224,5 @@ export const TOPIC_SEEDS: TopicSeed[] = [
   { slug: "veritasium", displayName: "Veritasium", cluster: "popular-creator", description: "Locate Veritasium physics explanations and experiment breakdowns.", featured: false },
   { slug: "fireship", displayName: "Fireship", cluster: "popular-creator", description: "Find Fireship dev tool summaries and fast-paced coding explainers.", featured: false },
 ];
+
+export const TOPIC_SEEDS: TopicSeed[] = [...MANUAL_TOPIC_SEEDS, ...GENERATED_TOPIC_SEEDS];

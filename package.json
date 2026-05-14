@@ -23,7 +23,9 @@
     "embeddings:backfill": "tsx scripts/backfill-segment-embeddings.ts",
     "search:validate-semantic": "tsx scripts/validate-semantic-search.ts",
     "queries:intelligence": "tsx scripts/build-query-intelligence-report.ts",
-    "queries:validate-intelligence": "tsx scripts/validate-query-intelligence.ts"
+    "queries:validate-intelligence": "tsx scripts/validate-query-intelligence.ts",
+    "pages:generate": "tsx scripts/generate-opportunity-pages.ts",
+    "pages:validate": "tsx scripts/validate-generated-pages.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

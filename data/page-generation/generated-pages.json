@@ -1,0 +1,3012 @@
+{
+  "generatedAt": "2026-05-14T22:18:01.512Z",
+  "intelligenceGeneratedAt": "2026-05-14T22:11:45.376Z",
+  "evaluatedCount": 23,
+  "acceptedCount": 21,
+  "rejectedCount": 2,
+  "searchSeeds": [
+    {
+      "slug": "my-first-million-business",
+      "phrase": "my first million business",
+      "title": "My First Million Business — video moments",
+      "description": "20 indexed moments across 15 videos for \"my first million business\"."
+    },
+    {
+      "slug": "my-first-million-side-hustle",
+      "phrase": "my first million side-hustle",
+      "title": "My First Million Side-hustle — video moments",
+      "description": "20 indexed moments across 14 videos for \"my first million side-hustle\"."
+    },
+    {
+      "slug": "the-net-ninja-javascript",
+      "phrase": "the net ninja javascript",
+      "title": "The Net Ninja Javascript — video moments",
+      "description": "20 indexed moments across 19 videos for \"the net ninja javascript\"."
+    },
+    {
+      "slug": "the-net-ninja-react",
+      "phrase": "the net ninja react",
+      "title": "The Net Ninja React — video moments",
+      "description": "20 indexed moments across 19 videos for \"the net ninja react\"."
+    },
+    {
+      "slug": "the-net-ninja-web-development",
+      "phrase": "the net ninja web-development",
+      "title": "The Net Ninja Web-development — video moments",
+      "description": "20 indexed moments across 19 videos for \"the net ninja web-development\"."
+    },
+    {
+      "slug": "the-plain-bagel-index-funds",
+      "phrase": "the plain bagel index-funds",
+      "title": "The Plain Bagel Index-funds — video moments",
+      "description": "20 indexed moments across 19 videos for \"the plain bagel index-funds\"."
+    },
+    {
+      "slug": "google-cloud",
+      "phrase": "google cloud",
+      "title": "Google Cloud — video moments",
+      "description": "17 indexed moments across 13 videos for \"google cloud\"."
+    },
+    {
+      "slug": "javascript-code",
+      "phrase": "javascript code",
+      "title": "Javascript Code — video moments",
+      "description": "15 indexed moments across 9 videos for \"javascript code\"."
+    },
+    {
+      "slug": "web-server",
+      "phrase": "web server",
+      "title": "Web Server — video moments",
+      "description": "20 indexed moments across 12 videos for \"web server\"."
+    },
+    {
+      "slug": "web-page",
+      "phrase": "web page",
+      "title": "Web Page — video moments",
+      "description": "20 indexed moments across 11 videos for \"web page\"."
+    },
+    {
+      "slug": "create-react",
+      "phrase": "create react",
+      "title": "Create React — video moments",
+      "description": "16 indexed moments across 8 videos for \"create react\"."
+    },
+    {
+      "slug": "react-app",
+      "phrase": "react app",
+      "title": "React App — video moments",
+      "description": "14 indexed moments across 8 videos for \"react app\"."
+    },
+    {
+      "slug": "i'll-talk",
+      "phrase": "i'll talk",
+      "title": "I'll Talk — video moments",
+      "description": "20 indexed moments across 12 videos for \"i'll talk\"."
+    },
+    {
+      "slug": "every-time",
+      "phrase": "every time",
+      "title": "Every Time — video moments",
+      "description": "20 indexed moments across 11 videos for \"every time\"."
+    },
+    {
+      "slug": "react-component",
+      "phrase": "react component",
+      "title": "React Component — video moments",
+      "description": "16 indexed moments across 11 videos for \"react component\"."
+    },
+    {
+      "slug": "react-router",
+      "phrase": "react router",
+      "title": "React Router — video moments",
+      "description": "11 indexed moments across 6 videos for \"react router\"."
+    },
+    {
+      "slug": "create-exercise",
+      "phrase": "create exercise",
+      "title": "Create Exercise — video moments",
+      "description": "6 indexed moments across 4 videos for \"create exercise\"."
+    },
+    {
+      "slug": "exercise-list",
+      "phrase": "exercise list",
+      "title": "Exercise List — video moments",
+      "description": "4 indexed moments across 2 videos for \"exercise list\"."
+    },
+    {
+      "slug": "find-out",
+      "phrase": "find out",
+      "title": "Find Out — video moments",
+      "description": "20 indexed moments across 12 videos for \"find out\"."
+    },
+    {
+      "slug": "programming-language",
+      "phrase": "programming language",
+      "title": "Programming Language — video moments",
+      "description": "20 indexed moments across 10 videos for \"programming language\"."
+    },
+    {
+      "slug": "index-html",
+      "phrase": "index html",
+      "title": "Index Html — video moments",
+      "description": "15 indexed moments across 9 videos for \"index html\"."
+    }
+  ],
+  "topicSeeds": [],
+  "pages": [
+    {
+      "phrase": "my first million business",
+      "pageType": "search",
+      "slug": "my-first-million-business",
+      "path": "/search/my-first-million-business",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 15,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "my-first-million-business",
+        "canonicalPath": "/search/my-first-million-business"
+      },
+      "relatedSearches": [
+        "business podcast",
+        "business",
+        "fresh and fit business",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks"
+      ],
+      "relatedTopics": [
+        "business-podcast",
+        "business",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "oWZbWzAyHAE",
+          "title": "Startup Business Models and Pricing | Startup School",
+          "href": "/video/oWZbWzAyHAE",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "1uFY60CESlM",
+          "title": "MongoDB Tutorial for Beginners - 1 - Installing Mongo",
+          "href": "/video/1uFY60CESlM",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "NWONeJKn6kc",
+          "title": "Machine Learning Course for Beginners",
+          "href": "/video/NWONeJKn6kc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "e-gwvmhyU7A",
+          "title": "Aravind Srinivas: Perplexity CEO on Future of AI, Search & the Internet | Lex Fridman Podcast #434",
+          "href": "/video/e-gwvmhyU7A",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_4uQI4ihGVU",
+          "title": "Learn Kubernetes in 6 Hours – Full Course with Real-World Project",
+          "href": "/video/_4uQI4ihGVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hdI2bqOjy3c",
+          "title": "JavaScript Crash Course For Beginners",
+          "href": "/video/hdI2bqOjy3c",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "6WtdFqgsEY0",
+          "title": "Standing Up For Startups - YC Goes To D.C.",
+          "href": "/video/6WtdFqgsEY0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "cdiD-9MMpb0",
+          "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+          "href": "/video/cdiD-9MMpb0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "9vM4p9NN0Ts",
+          "title": "9vM4p9NN0Ts",
+          "href": "/video/9vM4p9NN0Ts",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "BiA08jfr4RU",
+          "title": "19 Web Dev Projects – HTML, CSS, JavaScript Tutorial",
+          "href": "/video/BiA08jfr4RU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "C842vFY5kRo",
+          "title": "System Design Course – APIs, Databases, Caching, CDNs, Load Balancing & Production Infra",
+          "href": "/video/C842vFY5kRo",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "7HKot-brXFE",
+          "title": "AWS Certified Cloud Practitioner Certification Course 2026 (CLF-C02) - Pass the Exam!",
+          "href": "/video/7HKot-brXFE",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "UB1O30fR-EE",
+          "title": "HTML Crash Course For Absolute Beginners",
+          "href": "/video/UB1O30fR-EE",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"my first million business\"?",
+          "answer": "I'm Aaron Epstein I'm a group partner here at Y combinator and in this video we're going to be talking about business",
+          "evidenceVideoId": "oWZbWzAyHAE",
+          "evidenceTimestamp": 11.8
+        },
+        {
+          "question": "What do videos say about \"my first million business\"?",
+          "answer": "what is going on guys my name is Bucky Roberts and welcome to your very first",
+          "evidenceVideoId": "1uFY60CESlM",
+          "evidenceTimestamp": 0.6
+        },
+        {
+          "question": "What do videos say about \"my first million business\"?",
+          "answer": "a datab base without using tables so if you guys are like all right that sounds a lot more confusing well it is at first",
+          "evidenceVideoId": "1uFY60CESlM",
+          "evidenceTimestamp": 87.2
+        },
+        {
+          "question": "What do videos say about \"my first million business\"?",
+          "answer": "machine learning applications and real-world applications and many domains okay but wait first who am i my name is",
+          "evidenceVideoId": "NWONeJKn6kc",
+          "evidenceTimestamp": 39
+        }
+      ]
+    },
+    {
+      "phrase": "my first million side-hustle",
+      "pageType": "search",
+      "slug": "my-first-million-side-hustle",
+      "path": "/search/my-first-million-side-hustle",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 14,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "my-first-million-side-hustle",
+        "canonicalPath": "/search/my-first-million-side-hustle"
+      },
+      "relatedSearches": [
+        "side hustle",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "side-hustle",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "1uFY60CESlM",
+          "title": "MongoDB Tutorial for Beginners - 1 - Installing Mongo",
+          "href": "/video/1uFY60CESlM",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "NWONeJKn6kc",
+          "title": "Machine Learning Course for Beginners",
+          "href": "/video/NWONeJKn6kc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "e-gwvmhyU7A",
+          "title": "Aravind Srinivas: Perplexity CEO on Future of AI, Search & the Internet | Lex Fridman Podcast #434",
+          "href": "/video/e-gwvmhyU7A",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_4uQI4ihGVU",
+          "title": "Learn Kubernetes in 6 Hours – Full Course with Real-World Project",
+          "href": "/video/_4uQI4ihGVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hdI2bqOjy3c",
+          "title": "JavaScript Crash Course For Beginners",
+          "href": "/video/hdI2bqOjy3c",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "cdiD-9MMpb0",
+          "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+          "href": "/video/cdiD-9MMpb0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "9vM4p9NN0Ts",
+          "title": "9vM4p9NN0Ts",
+          "href": "/video/9vM4p9NN0Ts",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "UB1O30fR-EE",
+          "title": "HTML Crash Course For Absolute Beginners",
+          "href": "/video/UB1O30fR-EE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "BiA08jfr4RU",
+          "title": "19 Web Dev Projects – HTML, CSS, JavaScript Tutorial",
+          "href": "/video/BiA08jfr4RU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "C842vFY5kRo",
+          "title": "System Design Course – APIs, Databases, Caching, CDNs, Load Balancing & Production Infra",
+          "href": "/video/C842vFY5kRo",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "7HKot-brXFE",
+          "title": "AWS Certified Cloud Practitioner Certification Course 2026 (CLF-C02) - Pass the Exam!",
+          "href": "/video/7HKot-brXFE",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "21EYKqUsPfg",
+          "title": "Richard Sutton – Father of RL thinks LLMs are a dead end",
+          "href": "/video/21EYKqUsPfg",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"my first million side-hustle\"?",
+          "answer": "what is going on guys my name is Bucky Roberts and welcome to your very first",
+          "evidenceVideoId": "1uFY60CESlM",
+          "evidenceTimestamp": 0.6
+        },
+        {
+          "question": "What do videos say about \"my first million side-hustle\"?",
+          "answer": "a datab base without using tables so if you guys are like all right that sounds a lot more confusing well it is at first",
+          "evidenceVideoId": "1uFY60CESlM",
+          "evidenceTimestamp": 87.2
+        },
+        {
+          "question": "What do videos say about \"my first million side-hustle\"?",
+          "answer": "machine learning applications and real-world applications and many domains okay but wait first who am i my name is",
+          "evidenceVideoId": "NWONeJKn6kc",
+          "evidenceTimestamp": 39
+        },
+        {
+          "question": "What do videos say about \"my first million side-hustle\"?",
+          "answer": "after this completing that start this course that deep learning course okay so that's that's that is from my side and",
+          "evidenceVideoId": "NWONeJKn6kc",
+          "evidenceTimestamp": 95.4
+        }
+      ]
+    },
+    {
+      "phrase": "the net ninja javascript",
+      "pageType": "search",
+      "slug": "the-net-ninja-javascript",
+      "path": "/search/the-net-ninja-javascript",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 19,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "the-net-ninja-javascript",
+        "canonicalPath": "/search/the-net-ninja-javascript"
+      },
+      "relatedSearches": [
+        "javascript",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "javascript",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "nu_pCVPKzTk",
+          "title": "Full Stack Web Development for Beginners (Full Course on HTML, CSS, JavaScript, Node.js, MongoDB)",
+          "href": "/video/nu_pCVPKzTk",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "5fb2aPlgoys",
+          "title": "JavaScript DOM Manipulation – Full Course for Beginners",
+          "href": "/video/5fb2aPlgoys",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "eyxmSmjmNS0",
+          "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+          "href": "/video/eyxmSmjmNS0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "kTp5xUtcalw",
+          "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+          "href": "/video/kTp5xUtcalw",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hdI2bqOjy3c",
+          "title": "JavaScript Crash Course For Beginners",
+          "href": "/video/hdI2bqOjy3c",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "PaCmpygFfXo",
+          "title": "The spelled-out intro to language modeling: building makemore",
+          "href": "/video/PaCmpygFfXo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "mC43pZkpTec",
+          "title": "Michael Saylor: Bitcoin, Inflation, and the Future of Money | Lex Fridman Podcast #276",
+          "href": "/video/mC43pZkpTec",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "9uw3F6rndnA",
+          "title": "Transformers: The best idea in AI | Andrej Karpathy and Lex Fridman",
+          "href": "/video/9uw3F6rndnA",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "fKl2JW_qrso",
+          "title": "Python Multiprocessing Tutorial: Run Code in Parallel Using the Multiprocessing Module",
+          "href": "/video/fKl2JW_qrso",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "PkZNo7MFNFg",
+          "title": "Learn JavaScript - Full Course for Beginners",
+          "href": "/video/PkZNo7MFNFg",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "UmljXZIypDc",
+          "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+          "href": "/video/UmljXZIypDc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "eWRfhZUzrAc",
+          "title": "Python for Beginners – Full Course [Programming Tutorial]",
+          "href": "/video/eWRfhZUzrAc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "_4uQI4ihGVU",
+          "title": "Learn Kubernetes in 6 Hours – Full Course with Real-World Project",
+          "href": "/video/_4uQI4ihGVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "d6WC5n9G_sM",
+          "title": "Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)",
+          "href": "/video/d6WC5n9G_sM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "4Bdc55j80l8",
+          "title": "Illustrated Guide to Transformers Neural Network: A step by step explanation",
+          "href": "/video/4Bdc55j80l8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "zJSY8tbf_ys",
+          "title": "Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)",
+          "href": "/video/zJSY8tbf_ys",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"the net ninja javascript\"?",
+          "answer": "all right then gang and welcome to your first step on the path to become a",
+          "evidenceVideoId": "iWOYAxlnaww",
+          "evidenceTimestamp": 0.8
+        },
+        {
+          "question": "What do videos say about \"the net ninja javascript\"?",
+          "answer": "hey young and welcome to your very first step in becoming an HTML and CSS and ninja ok the gang so I've decided to do",
+          "evidenceVideoId": "hu-q2zYwEYs",
+          "evidenceTimestamp": 2
+        },
+        {
+          "question": "What do videos say about \"the net ninja javascript\"?",
+          "answer": "development course for beginners first you'll learn how to use HTML CSS and JavaScript and then you'll learn how to",
+          "evidenceVideoId": "nu_pCVPKzTk",
+          "evidenceTimestamp": 4.1
+        },
+        {
+          "question": "What do videos say about \"the net ninja javascript\"?",
+          "answer": "in this course you will learn about javascript dom manipulation this is",
+          "evidenceVideoId": "5fb2aPlgoys",
+          "evidenceTimestamp": 0.1
+        }
+      ]
+    },
+    {
+      "phrase": "the net ninja react",
+      "pageType": "search",
+      "slug": "the-net-ninja-react",
+      "path": "/search/the-net-ninja-react",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 19,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "the-net-ninja-react",
+        "canonicalPath": "/search/the-net-ninja-react"
+      },
+      "relatedSearches": [
+        "react",
+        "react hooks",
+        "react course",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "system design"
+      ],
+      "relatedTopics": [
+        "react",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "Tn6-PIqc4UM",
+          "title": "React in 100 Seconds",
+          "href": "/video/Tn6-PIqc4UM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "eyxmSmjmNS0",
+          "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+          "href": "/video/eyxmSmjmNS0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "kTp5xUtcalw",
+          "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+          "href": "/video/kTp5xUtcalw",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "PaCmpygFfXo",
+          "title": "The spelled-out intro to language modeling: building makemore",
+          "href": "/video/PaCmpygFfXo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "1WmNXEVia8I",
+          "title": "Next.js for Beginners - Full Course",
+          "href": "/video/1WmNXEVia8I",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "mC43pZkpTec",
+          "title": "Michael Saylor: Bitcoin, Inflation, and the Future of Money | Lex Fridman Podcast #276",
+          "href": "/video/mC43pZkpTec",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "9uw3F6rndnA",
+          "title": "Transformers: The best idea in AI | Andrej Karpathy and Lex Fridman",
+          "href": "/video/9uw3F6rndnA",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "fKl2JW_qrso",
+          "title": "Python Multiprocessing Tutorial: Run Code in Parallel Using the Multiprocessing Module",
+          "href": "/video/fKl2JW_qrso",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "UmljXZIypDc",
+          "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+          "href": "/video/UmljXZIypDc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "_4uQI4ihGVU",
+          "title": "Learn Kubernetes in 6 Hours – Full Course with Real-World Project",
+          "href": "/video/_4uQI4ihGVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "d6WC5n9G_sM",
+          "title": "Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)",
+          "href": "/video/d6WC5n9G_sM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "tN6oJu2DqCM",
+          "title": "Back End Developer Roadmap",
+          "href": "/video/tN6oJu2DqCM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"the net ninja react\"?",
+          "answer": "hey gang and welcome to your first step to become a react",
+          "evidenceVideoId": "j942wKiXFu8",
+          "evidenceTimestamp": 0.2
+        },
+        {
+          "question": "What do videos say about \"the net ninja react\"?",
+          "answer": "[Music] welcome to the ultimate react course in",
+          "evidenceVideoId": "SqcY0GlETPk",
+          "evidenceTimestamp": 0
+        },
+        {
+          "question": "What do videos say about \"the net ninja react\"?",
+          "answer": "react a javascript library for building user interfaces developed at facebook",
+          "evidenceVideoId": "Tn6-PIqc4UM",
+          "evidenceTimestamp": 0.2
+        },
+        {
+          "question": "What do videos say about \"the net ninja react\"?",
+          "answer": "hey young and welcome to your very first step in becoming an HTML and CSS and ninja ok the gang so I've decided to do",
+          "evidenceVideoId": "hu-q2zYwEYs",
+          "evidenceTimestamp": 2
+        }
+      ]
+    },
+    {
+      "phrase": "the net ninja web-development",
+      "pageType": "search",
+      "slug": "the-net-ninja-web-development",
+      "path": "/search/the-net-ninja-web-development",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 19,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "the-net-ninja-web-development",
+        "canonicalPath": "/search/the-net-ninja-web-development"
+      },
+      "relatedSearches": [
+        "web development",
+        "mobile development",
+        "api development",
+        "software development",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering"
+      ],
+      "relatedTopics": [
+        "web-development",
+        "mobile-development",
+        "api-development",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "eyxmSmjmNS0",
+          "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+          "href": "/video/eyxmSmjmNS0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "kTp5xUtcalw",
+          "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+          "href": "/video/kTp5xUtcalw",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "PaCmpygFfXo",
+          "title": "The spelled-out intro to language modeling: building makemore",
+          "href": "/video/PaCmpygFfXo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "UmljXZIypDc",
+          "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+          "href": "/video/UmljXZIypDc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "zJSY8tbf_ys",
+          "title": "Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)",
+          "href": "/video/zJSY8tbf_ys",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "mC43pZkpTec",
+          "title": "Michael Saylor: Bitcoin, Inflation, and the Future of Money | Lex Fridman Podcast #276",
+          "href": "/video/mC43pZkpTec",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "9uw3F6rndnA",
+          "title": "Transformers: The best idea in AI | Andrej Karpathy and Lex Fridman",
+          "href": "/video/9uw3F6rndnA",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "fKl2JW_qrso",
+          "title": "Python Multiprocessing Tutorial: Run Code in Parallel Using the Multiprocessing Module",
+          "href": "/video/fKl2JW_qrso",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "_4uQI4ihGVU",
+          "title": "Learn Kubernetes in 6 Hours – Full Course with Real-World Project",
+          "href": "/video/_4uQI4ihGVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "d6WC5n9G_sM",
+          "title": "Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)",
+          "href": "/video/d6WC5n9G_sM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "M7lc1UVf-VE",
+          "title": "YouTube Developers Live: Embedded Web Player Customization",
+          "href": "/video/M7lc1UVf-VE",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "4Bdc55j80l8",
+          "title": "Illustrated Guide to Transformers Neural Network: A step by step explanation",
+          "href": "/video/4Bdc55j80l8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "Q8Fkpi18QXU",
+          "title": "Terence Tao – How the world’s top mathematician uses AI",
+          "href": "/video/Q8Fkpi18QXU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "bAWV_yrqx4w",
+          "title": "[GRPO Explained] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "href": "/video/bAWV_yrqx4w",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "u6XAPnuFjJc",
+          "title": "RSA ANIMATE: Drive: The surprising truth about what motivates us",
+          "href": "/video/u6XAPnuFjJc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "2PXHZqv2-qc",
+          "title": "AI Scaling, Alignment, and the Path to Superintelligence — With Dwarkesh Patel",
+          "href": "/video/2PXHZqv2-qc",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"the net ninja web-development\"?",
+          "answer": "hey young and welcome to your very first step in becoming an HTML and CSS and ninja ok the gang so I've decided to do",
+          "evidenceVideoId": "hu-q2zYwEYs",
+          "evidenceTimestamp": 2
+        },
+        {
+          "question": "What do videos say about \"the net ninja web-development\"?",
+          "answer": "hi there today we'll look at generative adversarial Nets by Ian J good fellow at",
+          "evidenceVideoId": "eyxmSmjmNS0",
+          "evidenceTimestamp": 0
+        },
+        {
+          "question": "What do videos say about \"the net ninja web-development\"?",
+          "answer": "all right then gang and welcome to your first step on the path to become a",
+          "evidenceVideoId": "iWOYAxlnaww",
+          "evidenceTimestamp": 0.8
+        },
+        {
+          "question": "What do videos say about \"the net ninja web-development\"?",
+          "answer": "hey gang and welcome to your first step to become a react ninja",
+          "evidenceVideoId": "j942wKiXFu8",
+          "evidenceTimestamp": 2.1
+        }
+      ]
+    },
+    {
+      "phrase": "the plain bagel index-funds",
+      "pageType": "search",
+      "slug": "the-plain-bagel-index-funds",
+      "path": "/search/the-plain-bagel-index-funds",
+      "opportunityScore": 49.5,
+      "momentCount": 20,
+      "videoCount": 19,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "the-plain-bagel-index-funds",
+        "canonicalPath": "/search/the-plain-bagel-index-funds"
+      },
+      "relatedSearches": [
+        "index funds",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "index-funds",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "bAWV_yrqx4w",
+          "title": "[GRPO Explained] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "href": "/video/bAWV_yrqx4w",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "PaCmpygFfXo",
+          "title": "The spelled-out intro to language modeling: building makemore",
+          "href": "/video/PaCmpygFfXo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "mC43pZkpTec",
+          "title": "Michael Saylor: Bitcoin, Inflation, and the Future of Money | Lex Fridman Podcast #276",
+          "href": "/video/mC43pZkpTec",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "fKl2JW_qrso",
+          "title": "Python Multiprocessing Tutorial: Run Code in Parallel Using the Multiprocessing Module",
+          "href": "/video/fKl2JW_qrso",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "tN6oJu2DqCM",
+          "title": "Back End Developer Roadmap",
+          "href": "/video/tN6oJu2DqCM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "wN0x9eZLix4",
+          "title": "Object Oriented Programming (OOP) in C++ Course",
+          "href": "/video/wN0x9eZLix4",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "rmVRLeJRkl4",
+          "title": "Stanford CS224N: NLP with Deep Learning | Winter 2021 | Lecture 1 - Intro & Word Vectors",
+          "href": "/video/rmVRLeJRkl4",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "UmljXZIypDc",
+          "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+          "href": "/video/UmljXZIypDc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "u6XAPnuFjJc",
+          "title": "RSA ANIMATE: Drive: The surprising truth about what motivates us",
+          "href": "/video/u6XAPnuFjJc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "yubzJw0uiE4",
+          "title": "Blockchain In 7 Minutes | What Is Blockchain | Blockchain Explained|How Blockchain Works|Simplilearn",
+          "href": "/video/yubzJw0uiE4",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "2PXHZqv2-qc",
+          "title": "AI Scaling, Alignment, and the Path to Superintelligence — With Dwarkesh Patel",
+          "href": "/video/2PXHZqv2-qc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "CDiqA4SJNpA",
+          "title": "Robert Crews: Afghanistan, Taliban, Bin Laden, and War in the Middle East | Lex Fridman Podcast #244",
+          "href": "/video/CDiqA4SJNpA",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "6ZrlsVx85ek",
+          "title": "The Science of Healthy Hair, Hair Loss and How to Regrow Hair",
+          "href": "/video/6ZrlsVx85ek",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "8hly31xKli0",
+          "title": "Algorithms and Data Structures Tutorial - Full Course for Beginners",
+          "href": "/video/8hly31xKli0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "OHWnPOKh_S0",
+          "title": "Marc Andreessen: Trump, Power, Tech, AI, Immigration & Future of America | Lex Fridman Podcast #458",
+          "href": "/video/OHWnPOKh_S0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "9V6tWC4CdFQ",
+          "title": "Sundar Pichai: CEO of Google and Alphabet | Lex Fridman Podcast #471",
+          "href": "/video/9V6tWC4CdFQ",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"the plain bagel index-funds\"?",
+          "answer": "remember george washington you know how he died well-meaning physicians bled him to death and this was the most important",
+          "evidenceVideoId": "mC43pZkpTec",
+          "evidenceTimestamp": 1.5
+        },
+        {
+          "question": "What do videos say about \"the plain bagel index-funds\"?",
+          "answer": "going to spell everything out so we're going to build it out slowly and together",
+          "evidenceVideoId": "PaCmpygFfXo",
+          "evidenceTimestamp": 17.9
+        },
+        {
+          "question": "What do videos say about \"the plain bagel index-funds\"?",
+          "answer": "name make more might help you so here are some example generations from the neural network",
+          "evidenceVideoId": "PaCmpygFfXo",
+          "evidenceTimestamp": 69.5
+        },
+        {
+          "question": "What do videos say about \"the plain bagel index-funds\"?",
+          "answer": "hey there how's it going everybody in this video we're gonna be learning how",
+          "evidenceVideoId": "fKl2JW_qrso",
+          "evidenceTimestamp": 0.1
+        }
+      ]
+    },
+    {
+      "phrase": "google cloud",
+      "pageType": "search",
+      "slug": "google-cloud",
+      "path": "/search/google-cloud",
+      "opportunityScore": 49.16,
+      "momentCount": 17,
+      "videoCount": 13,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "google-cloud",
+        "canonicalPath": "/search/google-cloud"
+      },
+      "relatedSearches": [
+        "cloud computing",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "cloud-computing",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "7HKot-brXFE",
+          "title": "AWS Certified Cloud Practitioner Certification Course 2026 (CLF-C02) - Pass the Exam!",
+          "href": "/video/7HKot-brXFE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "4m9j6hlbf4g",
+          "title": "IT Fundamentals Course – Hardware, Cloud, DevOps, Networking, Security, Databases, DNS, Git, Linux",
+          "href": "/video/4m9j6hlbf4g",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "SBvmnHTQIPY",
+          "title": "Node.js App From Scratch | Express, MongoDB & Google OAuth",
+          "href": "/video/SBvmnHTQIPY",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "CcrC5zSv1iA",
+          "title": "LLM Fine-Tuning Course – From Supervised FT to RLHF, LoRA, and Multimodal",
+          "href": "/video/CcrC5zSv1iA",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_1f-o0nqpEI",
+          "title": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters | Lex Fridman Podcast #459",
+          "href": "/video/_1f-o0nqpEI",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "e-gwvmhyU7A",
+          "title": "Aravind Srinivas: Perplexity CEO on Future of AI, Search & the Internet | Lex Fridman Podcast #434",
+          "href": "/video/e-gwvmhyU7A",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "EV7WhVT270Q",
+          "title": "State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI | Lex Fridman Podcast #490",
+          "href": "/video/EV7WhVT270Q",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "mDG_Hx3BSUE",
+          "title": "Dylan Patel — The single biggest bottleneck to scaling AI compute",
+          "href": "/video/mDG_Hx3BSUE",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "kzB23CoZG30",
+          "title": "[ML News] Llama 3 changes the game",
+          "href": "/video/kzB23CoZG30",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "vagyIcmIGOQ",
+          "title": "DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting | Lex Fridman Podcast #474",
+          "href": "/video/vagyIcmIGOQ",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "vif8NQcjVf0",
+          "title": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Podcast #494",
+          "href": "/video/vif8NQcjVf0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "Hrbq66XqtCo",
+          "title": "Jensen Huang – Will Nvidia’s moat persist?",
+          "href": "/video/Hrbq66XqtCo",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"google cloud\"?",
+          "answer": "Whether we are using AWS or Azure or Google Cloud,",
+          "evidenceVideoId": "4m9j6hlbf4g",
+          "evidenceTimestamp": 31015.1
+        },
+        {
+          "question": "What do videos say about \"google cloud\"?",
+          "answer": "the autoay for the Google cloud platform",
+          "evidenceVideoId": "CcrC5zSv1iA",
+          "evidenceTimestamp": 25709.8
+        },
+        {
+          "question": "What do videos say about \"google cloud\"?",
+          "answer": "example Sund announced that Google cloud",
+          "evidenceVideoId": "e-gwvmhyU7A",
+          "evidenceTimestamp": 1109.1
+        },
+        {
+          "question": "What do videos say about \"google cloud\"?",
+          "answer": "And obviously Google Cloud has a lot of offerings,",
+          "evidenceVideoId": "EV7WhVT270Q",
+          "evidenceTimestamp": 739.8
+        }
+      ]
+    },
+    {
+      "phrase": "javascript code",
+      "pageType": "search",
+      "slug": "javascript-code",
+      "path": "/search/javascript-code",
+      "opportunityScore": 49.16,
+      "momentCount": 15,
+      "videoCount": 9,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "javascript-code",
+        "canonicalPath": "/search/javascript-code"
+      },
+      "relatedSearches": [
+        "javascript",
+        "no-code",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design"
+      ],
+      "relatedTopics": [
+        "javascript",
+        "no-code",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "zJSY8tbf_ys",
+          "title": "Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)",
+          "href": "/video/zJSY8tbf_ys",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "BiA08jfr4RU",
+          "title": "19 Web Dev Projects – HTML, CSS, JavaScript Tutorial",
+          "href": "/video/BiA08jfr4RU",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "nu_pCVPKzTk",
+          "title": "Full Stack Web Development for Beginners (Full Course on HTML, CSS, JavaScript, Node.js, MongoDB)",
+          "href": "/video/nu_pCVPKzTk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "PkZNo7MFNFg",
+          "title": "Learn JavaScript - Full Course for Beginners",
+          "href": "/video/PkZNo7MFNFg",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "U5OD8MjYnOM",
+          "title": "Wojciech Zaremba: OpenAI Codex, GPT-3, Robotics, and the Future of AI | Lex Fridman Podcast #215",
+          "href": "/video/U5OD8MjYnOM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "32M1al-Y6Ag",
+          "title": "Node.js Crash Course",
+          "href": "/video/32M1al-Y6Ag",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "rIpUf-Vy2JA",
+          "title": "Joscha Bach: Nature of Reality, Dreams, and Consciousness | Lex Fridman Podcast #212",
+          "href": "/video/rIpUf-Vy2JA",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"javascript code\"?",
+          "answer": "Global scope means they can be seen everywhere in your Javascript code.",
+          "evidenceVideoId": "PkZNo7MFNFg",
+          "evidenceTimestamp": 3355.2
+        },
+        {
+          "question": "What do videos say about \"javascript code\"?",
+          "answer": "code, the JavaScript code, but just to give you a mental model for how",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 80766.8
+        },
+        {
+          "question": "What do videos say about \"javascript code\"?",
+          "answer": "it's going to get a copy of the HTML, the CSS, and the JavaScript code.",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 72448
+        },
+        {
+          "question": "What do videos say about \"javascript code\"?",
+          "answer": "JavaScript meaning plain JavaScript code",
+          "evidenceVideoId": "SqcY0GlETPk",
+          "evidenceTimestamp": 220.1
+        }
+      ]
+    },
+    {
+      "phrase": "web server",
+      "pageType": "search",
+      "slug": "web-server",
+      "path": "/search/web-server",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 12,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "web-server",
+        "canonicalPath": "/search/web-server"
+      },
+      "relatedSearches": [
+        "web development",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "web-development",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "d6WC5n9G_sM",
+          "title": "Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)",
+          "href": "/video/d6WC5n9G_sM",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "fqMOX6JJhGo",
+          "title": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+          "href": "/video/fqMOX6JJhGo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "4m9j6hlbf4g",
+          "title": "IT Fundamentals Course – Hardware, Cloud, DevOps, Networking, Security, Databases, DNS, Git, Linux",
+          "href": "/video/4m9j6hlbf4g",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "UmljXZIypDc",
+          "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+          "href": "/video/UmljXZIypDc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Z1RJmh_OqeA",
+          "title": "Learn Flask for Python - Full Tutorial",
+          "href": "/video/Z1RJmh_OqeA",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "fBNz5xF-Kx4",
+          "title": "Node.js Crash Course",
+          "href": "/video/fBNz5xF-Kx4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "iWOYAxlnaww",
+          "title": "Modern JavaScript Tutorial #1 - Intro & Setup",
+          "href": "/video/iWOYAxlnaww",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "32M1al-Y6Ag",
+          "title": "Node.js Crash Course",
+          "href": "/video/32M1al-Y6Ag",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "tN6oJu2DqCM",
+          "title": "Back End Developer Roadmap",
+          "href": "/video/tN6oJu2DqCM",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"web server\"?",
+          "answer": "there we will utilize express web server package and create our custom web server plan for this",
+          "evidenceVideoId": "d6WC5n9G_sM",
+          "evidenceTimestamp": 4933.4
+        },
+        {
+          "question": "What do videos say about \"web server\"?",
+          "answer": "task or process such as to host an instance of a web server or application server or a database,",
+          "evidenceVideoId": "fqMOX6JJhGo",
+          "evidenceTimestamp": 1507.1
+        },
+        {
+          "question": "What do videos say about \"web server\"?",
+          "answer": "DNS to point to their web server, the IP address of their web server,",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 67111.5
+        },
+        {
+          "question": "What do videos say about \"web server\"?",
+          "answer": "There's web servers, there's chat servers, video servers, game servers.",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 65569.7
+        }
+      ]
+    },
+    {
+      "phrase": "web page",
+      "pageType": "search",
+      "slug": "web-page",
+      "path": "/search/web-page",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 11,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "web-page",
+        "canonicalPath": "/search/web-page"
+      },
+      "relatedSearches": [
+        "web development",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "web-development",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "nu_pCVPKzTk",
+          "title": "Full Stack Web Development for Beginners (Full Course on HTML, CSS, JavaScript, Node.js, MongoDB)",
+          "href": "/video/nu_pCVPKzTk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "M7lc1UVf-VE",
+          "title": "YouTube Developers Live: Embedded Web Player Customization",
+          "href": "/video/M7lc1UVf-VE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8DvywoWv6fI",
+          "title": "Python for Everybody - Full University Python Course",
+          "href": "/video/8DvywoWv6fI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7xTGNNLPyMI",
+          "title": "Deep Dive into LLMs like ChatGPT",
+          "href": "/video/7xTGNNLPyMI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "bAWV_yrqx4w",
+          "title": "[GRPO Explained] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "href": "/video/bAWV_yrqx4w",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "cdiD-9MMpb0",
+          "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+          "href": "/video/cdiD-9MMpb0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "5fb2aPlgoys",
+          "title": "JavaScript DOM Manipulation – Full Course for Beginners",
+          "href": "/video/5fb2aPlgoys",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "9vM4p9NN0Ts",
+          "title": "9vM4p9NN0Ts",
+          "href": "/video/9vM4p9NN0Ts",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "13CZPWmke6A",
+          "title": "13CZPWmke6A",
+          "href": "/video/13CZPWmke6A",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"web page\"?",
+          "answer": "know to send it to your web page or my web page or some other customer",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 66542.8
+        },
+        {
+          "question": "What do videos say about \"web page\"?",
+          "answer": "But an iFrame is a way of embedding someone else's web page in your web",
+          "evidenceVideoId": "8mAITcNt710",
+          "evidenceTimestamp": 69074.5
+        },
+        {
+          "question": "What do videos say about \"web page\"?",
+          "answer": "page inside a web page so what I mean by",
+          "evidenceVideoId": "nu_pCVPKzTk",
+          "evidenceTimestamp": 3892.5
+        },
+        {
+          "question": "What do videos say about \"web page\"?",
+          "answer": "web page you see on the web there's some",
+          "evidenceVideoId": "nu_pCVPKzTk",
+          "evidenceTimestamp": 319
+        }
+      ]
+    },
+    {
+      "phrase": "create react",
+      "pageType": "search",
+      "slug": "create-react",
+      "path": "/search/create-react",
+      "opportunityScore": 49.16,
+      "momentCount": 16,
+      "videoCount": 8,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "create-react",
+        "canonicalPath": "/search/create-react"
+      },
+      "relatedSearches": [
+        "react",
+        "react hooks",
+        "react course",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "system design"
+      ],
+      "relatedTopics": [
+        "react",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "XCifkDC0yXA",
+          "title": "React Native Crash Course 2026 - Build a Complete Mobile App",
+          "href": "/video/XCifkDC0yXA",
+          "detail": "2 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"create react\"?",
+          "answer": "essentially, we'll see what create react app created for us.",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 2537.2
+        },
+        {
+          "question": "What do videos say about \"create react\"?",
+          "answer": "when we run, create react app, online, we created our first project.",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 12848.9
+        },
+        {
+          "question": "What do videos say about \"create react\"?",
+          "answer": "earlier, we did create react app that created our whole react project, I'm going to close some",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 2793.1
+        },
+        {
+          "question": "What do videos say about \"create react\"?",
+          "answer": "we're going to get create react app to scaffold all the boilerplate needed to run our application.",
+          "evidenceVideoId": "m_u6P5k0vP0",
+          "evidenceTimestamp": 7244.6
+        }
+      ]
+    },
+    {
+      "phrase": "react app",
+      "pageType": "search",
+      "slug": "react-app",
+      "path": "/search/react-app",
+      "opportunityScore": 49.16,
+      "momentCount": 14,
+      "videoCount": 8,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "react-app",
+        "canonicalPath": "/search/react-app"
+      },
+      "relatedSearches": [
+        "react",
+        "react hooks",
+        "react course",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "system design"
+      ],
+      "relatedTopics": [
+        "react",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "XCifkDC0yXA",
+          "title": "React Native Crash Course 2026 - Build a Complete Mobile App",
+          "href": "/video/XCifkDC0yXA",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Oe421EPjeBE",
+          "title": "Node.js and Express.js - Full Course",
+          "href": "/video/Oe421EPjeBE",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"react app\"?",
+          "answer": "technically, you don't need to use create react app to work with react, you can build",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 2142.9
+        },
+        {
+          "question": "What do videos say about \"react app\"?",
+          "answer": "And you'll see how the Create react app starts bootstrapping your react application.",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 2350.2
+        },
+        {
+          "question": "What do videos say about \"react app\"?",
+          "answer": "empty, our, our react app is going to send a bio property with an empty string.",
+          "evidenceVideoId": "m_u6P5k0vP0",
+          "evidenceTimestamp": 6302.6
+        },
+        {
+          "question": "What do videos say about \"react app\"?",
+          "answer": "earlier, we did create react app that created our whole react project, I'm going to close some",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 2793.1
+        }
+      ]
+    },
+    {
+      "phrase": "i'll talk",
+      "pageType": "search",
+      "slug": "i'll-talk",
+      "path": "/search/i'll-talk",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 12,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "i'll-talk",
+        "canonicalPath": "/search/i'll-talk"
+      },
+      "relatedSearches": [
+        "conference talk",
+        "ted talk",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design"
+      ],
+      "relatedTopics": [
+        "conference-talk",
+        "ted-talk",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "Oe421EPjeBE",
+          "title": "Node.js and Express.js - Full Course",
+          "href": "/video/Oe421EPjeBE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "B31LgI4Y4DQ",
+          "title": "Data Structures - Full Course Using C and C++",
+          "href": "/video/B31LgI4Y4DQ",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "kCc8FmEb1nY",
+          "title": "Let's build GPT: from scratch, in code, spelled out.",
+          "href": "/video/kCc8FmEb1nY",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "6g4O5UOH304",
+          "title": "TensorFlow 2.0 Crash Course",
+          "href": "/video/6g4O5UOH304",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "9vM4p9NN0Ts",
+          "title": "9vM4p9NN0Ts",
+          "href": "/video/9vM4p9NN0Ts",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "32M1al-Y6Ag",
+          "title": "Node.js Crash Course",
+          "href": "/video/32M1al-Y6Ag",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Kbk9BiPhm7o",
+          "title": "Elon Musk: Neuralink and the Future of Humanity | Lex Fridman Podcast #438",
+          "href": "/video/Kbk9BiPhm7o",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "6ZrlsVx85ek",
+          "title": "The Science of Healthy Hair, Hair Loss and How to Regrow Hair",
+          "href": "/video/6ZrlsVx85ek",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "PkZNo7MFNFg",
+          "title": "Learn JavaScript - Full Course for Beginners",
+          "href": "/video/PkZNo7MFNFg",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Qp0rCU49lMs",
+          "title": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+          "href": "/video/Qp0rCU49lMs",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"i'll talk\"?",
+          "answer": "and then i'll talk about it why we would",
+          "evidenceVideoId": "Oe421EPjeBE",
+          "evidenceTimestamp": 7827.8
+        },
+        {
+          "question": "What do videos say about \"i'll talk\"?",
+          "answer": "i'll talk about evaluation of prefix okay so let's get started i have written an expression in",
+          "evidenceVideoId": "B31LgI4Y4DQ",
+          "evidenceTimestamp": 14428.6
+        },
+        {
+          "question": "What do videos say about \"i'll talk\"?",
+          "answer": "okay now i'll talk about some properties of tree tree can be called a recursive data structure",
+          "evidenceVideoId": "B31LgI4Y4DQ",
+          "evidenceTimestamp": 19167.3
+        },
+        {
+          "question": "What do videos say about \"i'll talk\"?",
+          "answer": "Transformer I'll I'll talk about that in",
+          "evidenceVideoId": "kCc8FmEb1nY",
+          "evidenceTimestamp": 5860.2
+        }
+      ]
+    },
+    {
+      "phrase": "every time",
+      "pageType": "search",
+      "slug": "every-time",
+      "path": "/search/every-time",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 11,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "every-time",
+        "canonicalPath": "/search/every-time"
+      },
+      "relatedSearches": [
+        "time management",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "time-management",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8DvywoWv6fI",
+          "title": "Python for Everybody - Full University Python Course",
+          "href": "/video/8DvywoWv6fI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8hly31xKli0",
+          "title": "Algorithms and Data Structures Tutorial - Full Course for Beginners",
+          "href": "/video/8hly31xKli0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_1f-o0nqpEI",
+          "title": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters | Lex Fridman Podcast #459",
+          "href": "/video/_1f-o0nqpEI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "6g4O5UOH304",
+          "title": "TensorFlow 2.0 Crash Course",
+          "href": "/video/6g4O5UOH304",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "YFjfBk8HI5o",
+          "title": "OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491",
+          "href": "/video/YFjfBk8HI5o",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "3cDHx2_QbPE",
+          "title": "China is killing the US on energy. Does that mean they’ll win AGI? — Casey Handmer",
+          "href": "/video/3cDHx2_QbPE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "48pxVdmkMIE",
+          "title": "Fully autonomous robots are much closer than you think – Sergey Levine",
+          "href": "/video/48pxVdmkMIE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "5t1vTLU7s40",
+          "title": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+          "href": "/video/5t1vTLU7s40",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"every time\"?",
+          "answer": "use effect of we have, however, a war on the second time.",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 18406.5
+        },
+        {
+          "question": "What do videos say about \"every time\"?",
+          "answer": "And so every time the CPU needs a new instruction,",
+          "evidenceVideoId": "8DvywoWv6fI",
+          "evidenceTimestamp": 883.5
+        },
+        {
+          "question": "What do videos say about \"every time\"?",
+          "answer": "application in an email application and so on.",
+          "evidenceVideoId": "_uQrJ0TkZlc",
+          "evidenceTimestamp": 10180
+        },
+        {
+          "question": "What do videos say about \"every time\"?",
+          "answer": "with this approach, every time you want to call one of the functions",
+          "evidenceVideoId": "_uQrJ0TkZlc",
+          "evidenceTimestamp": 12868
+        }
+      ]
+    },
+    {
+      "phrase": "react component",
+      "pageType": "search",
+      "slug": "react-component",
+      "path": "/search/react-component",
+      "opportunityScore": 49.16,
+      "momentCount": 16,
+      "videoCount": 11,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "react-component",
+        "canonicalPath": "/search/react-component"
+      },
+      "relatedSearches": [
+        "react",
+        "react hooks",
+        "react course",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "system design"
+      ],
+      "relatedTopics": [
+        "react",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "XCifkDC0yXA",
+          "title": "React Native Crash Course 2026 - Build a Complete Mobile App",
+          "href": "/video/XCifkDC0yXA",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "1WmNXEVia8I",
+          "title": "Next.js for Beginners - Full Course",
+          "href": "/video/1WmNXEVia8I",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "32M1al-Y6Ag",
+          "title": "Node.js Crash Course",
+          "href": "/video/32M1al-Y6Ag",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "gh2_PhgZGsM",
+          "title": "Claude Code for Beginners Tutorial",
+          "href": "/video/gh2_PhgZGsM",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"react component\"?",
+          "answer": "react component, I don't have to type import react and then set up the component.",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 4162.8
+        },
+        {
+          "question": "What do videos say about \"react component\"?",
+          "answer": "efficiently update and rerender our components.",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 2667.5
+        },
+        {
+          "question": "What do videos say about \"react component\"?",
+          "answer": "Now to create a react component we right",
+          "evidenceVideoId": "SqcY0GlETPk",
+          "evidenceTimestamp": 686.3
+        },
+        {
+          "question": "What do videos say about \"react component\"?",
+          "answer": "need Redux react component fragment prop types, all this stuff we need.",
+          "evidenceVideoId": "m_u6P5k0vP0",
+          "evidenceTimestamp": 9464.6
+        }
+      ]
+    },
+    {
+      "phrase": "react router",
+      "pageType": "search",
+      "slug": "react-router",
+      "path": "/search/react-router",
+      "opportunityScore": 49.16,
+      "momentCount": 11,
+      "videoCount": 6,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "react-router",
+        "canonicalPath": "/search/react-router"
+      },
+      "relatedSearches": [
+        "react",
+        "react hooks",
+        "react course",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "system design"
+      ],
+      "relatedTopics": [
+        "react",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4UZrsTqkcW4",
+          "title": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+          "href": "/video/4UZrsTqkcW4",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "w7ejDZ8SWv8",
+          "title": "React JS Crash Course",
+          "href": "/video/w7ejDZ8SWv8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "j942wKiXFu8",
+          "title": "Full React Tutorial #1 - Introduction",
+          "href": "/video/j942wKiXFu8",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"react router\"?",
+          "answer": "Navigate to react router folder, and then you're looking for react router, info markdown",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 32603.8
+        },
+        {
+          "question": "What do videos say about \"react router\"?",
+          "answer": "that would be a basic setup for react router, where we have a router, we wrap our whole",
+          "evidenceVideoId": "4UZrsTqkcW4",
+          "evidenceTimestamp": 33305.9
+        },
+        {
+          "question": "What do videos say about \"react router\"?",
+          "answer": "an extra package called react router dom",
+          "evidenceVideoId": "w7ejDZ8SWv8",
+          "evidenceTimestamp": 163
+        }
+      ]
+    },
+    {
+      "phrase": "create exercise",
+      "pageType": "search",
+      "slug": "create-exercise",
+      "path": "/search/create-exercise",
+      "opportunityScore": 49.16,
+      "momentCount": 6,
+      "videoCount": 4,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "create-exercise",
+        "canonicalPath": "/search/create-exercise"
+      },
+      "relatedSearches": [
+        "exercise science",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "exercise-science",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "G3e-cpL7ofc",
+          "title": "G3e-cpL7ofc",
+          "href": "/video/G3e-cpL7ofc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "5fb2aPlgoys",
+          "title": "JavaScript DOM Manipulation – Full Course for Beginners",
+          "href": "/video/5fb2aPlgoys",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"create exercise\"?",
+          "answer": "list, component, exercise, create exercise, and create user component.",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 3201.1
+        },
+        {
+          "question": "What do videos say about \"create exercise\"?",
+          "answer": "to create exercises list dot component, dot j, s, I'm going to create, edit, exercises,",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 3409.4
+        },
+        {
+          "question": "What do videos say about \"create exercise\"?",
+          "answer": "I've created an exercise that we can practice with text.",
+          "evidenceVideoId": "G3e-cpL7ofc",
+          "evidenceTimestamp": 4663.1
+        },
+        {
+          "question": "What do videos say about \"create exercise\"?",
+          "answer": "here are some challenge exercises that you can do to create other popular",
+          "evidenceVideoId": "G3e-cpL7ofc",
+          "evidenceTimestamp": 23402.7
+        }
+      ]
+    },
+    {
+      "phrase": "exercise list",
+      "pageType": "search",
+      "slug": "exercise-list",
+      "path": "/search/exercise-list",
+      "opportunityScore": 49.16,
+      "momentCount": 4,
+      "videoCount": 2,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "exercise-list",
+        "canonicalPath": "/search/exercise-list"
+      },
+      "relatedSearches": [
+        "exercise science",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "exercise-science",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "7CqJlxBYj-M",
+          "title": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+          "href": "/video/7CqJlxBYj-M",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "2 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is \"exercise list\" discussed in indexed videos?",
+          "answer": "complete the exercise list component.",
+          "evidenceVideoId": "7CqJlxBYj-M",
+          "evidenceTimestamp": 5351.1
+        }
+      ]
+    },
+    {
+      "phrase": "find out",
+      "pageType": "search",
+      "slug": "find-out",
+      "path": "/search/find-out",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 12,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "find-out",
+        "canonicalPath": "/search/find-out"
+      },
+      "relatedSearches": [
+        "find youtube quotes",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "find-youtube-quotes",
+        "transcript-search",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing",
+        "entrepreneurship"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "4m9j6hlbf4g",
+          "title": "IT Fundamentals Course – Hardware, Cloud, DevOps, Networking, Security, Databases, DNS, Git, Linux",
+          "href": "/video/4m9j6hlbf4g",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "HsLgZzgpz9Y",
+          "title": "Dave Plummer: Programming, Autism, and Old-School Microsoft Stories | Lex Fridman Podcast #479",
+          "href": "/video/HsLgZzgpz9Y",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "R8h_gpSpEVU",
+          "title": "Deploying AI Models with Hugging Face – Hands-On Course",
+          "href": "/video/R8h_gpSpEVU",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "SqcY0GlETPk",
+          "title": "React Tutorial for Beginners",
+          "href": "/video/SqcY0GlETPk",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "-leIp449qXA",
+          "title": "Automate Your Life in 4 hours – Agent and Automation Zapier Course",
+          "href": "/video/-leIp449qXA",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_9V_Hbe-N1A",
+          "title": "Adam Marblestone – AI is missing something fundamental about the brain",
+          "href": "/video/_9V_Hbe-N1A",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "RBSGKlAvoiM",
+          "title": "Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer",
+          "href": "/video/RBSGKlAvoiM",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "-HzgcbRXUK8",
+          "title": "Demis Hassabis: Future of AI, Simulating Reality, Physics and Video Games | Lex Fridman Podcast #475",
+          "href": "/video/-HzgcbRXUK8",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_1f-o0nqpEI",
+          "title": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters | Lex Fridman Podcast #459",
+          "href": "/video/_1f-o0nqpEI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "-0exw-9YJBo",
+          "title": "Learn The MERN Stack - Express & MongoDB Rest API",
+          "href": "/video/-0exw-9YJBo",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "2 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"find out\"?",
+          "answer": "something, they look at the logs and they find find out who",
+          "evidenceVideoId": "4m9j6hlbf4g",
+          "evidenceTimestamp": 22968.8
+        },
+        {
+          "question": "What do videos say about \"find out\"?",
+          "answer": "Y columns to find out which rows have changed, go through and find out which ones actually",
+          "evidenceVideoId": "HsLgZzgpz9Y",
+          "evidenceTimestamp": 2425.9
+        },
+        {
+          "question": "What do videos say about \"find out\"?",
+          "answer": "you should find alerts so let's find out",
+          "evidenceVideoId": "SqcY0GlETPk",
+          "evidenceTimestamp": 3725.3
+        },
+        {
+          "question": "What do videos say about \"find out\"?",
+          "answer": "Well, we want to find a repository, find",
+          "evidenceVideoId": "-leIp449qXA",
+          "evidenceTimestamp": 12638.6
+        }
+      ]
+    },
+    {
+      "phrase": "programming language",
+      "pageType": "search",
+      "slug": "programming-language",
+      "path": "/search/programming-language",
+      "opportunityScore": 49.16,
+      "momentCount": 20,
+      "videoCount": 10,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "programming-language",
+        "canonicalPath": "/search/programming-language"
+      },
+      "relatedSearches": [
+        "language learning",
+        "large language models",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "language-learning",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "8DvywoWv6fI",
+          "title": "Python for Everybody - Full University Python Course",
+          "href": "/video/8DvywoWv6fI",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8jLOx1hD3_o",
+          "title": "C++ Programming Course - Beginner to Advanced",
+          "href": "/video/8jLOx1hD3_o",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "ua-CiDNNj30",
+          "title": "Learn Data Science Tutorial - Full Course for Beginners",
+          "href": "/video/ua-CiDNNj30",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "8mAITcNt710",
+          "title": "Harvard CS50 – Full Computer Science University Course",
+          "href": "/video/8mAITcNt710",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "_uQrJ0TkZlc",
+          "title": "Python Full Course for Beginners",
+          "href": "/video/_uQrJ0TkZlc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "7wnove7K-ZQ",
+          "title": "Introduction to Programming & Python | Python Tutorial - Day #1",
+          "href": "/video/7wnove7K-ZQ",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "eWRfhZUzrAc",
+          "title": "Python for Beginners – Full Course [Programming Tutorial]",
+          "href": "/video/eWRfhZUzrAc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "89cbCbWrM4U",
+          "title": "CS50x 2025 - Lecture 1 - C",
+          "href": "/video/89cbCbWrM4U",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "cwtpLIWylAw",
+          "title": "CS50x 2024 - Lecture 1 - C",
+          "href": "/video/cwtpLIWylAw",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "HsLgZzgpz9Y",
+          "title": "Dave Plummer: Programming, Autism, and Old-School Microsoft Stories | Lex Fridman Podcast #479",
+          "href": "/video/HsLgZzgpz9Y",
+          "detail": "2 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"programming language\"?",
+          "answer": "And Python is an excellent programming language for data mining and data",
+          "evidenceVideoId": "8DvywoWv6fI",
+          "evidenceTimestamp": 170.7
+        },
+        {
+          "question": "What do videos say about \"programming language\"?",
+          "answer": "programming language go ahead and finish",
+          "evidenceVideoId": "8jLOx1hD3_o",
+          "evidenceTimestamp": 10599
+        },
+        {
+          "question": "What do videos say about \"programming language\"?",
+          "answer": "programming language R, the general purpose language Python.",
+          "evidenceVideoId": "ua-CiDNNj30",
+          "evidenceTimestamp": 18022.6
+        },
+        {
+          "question": "What do videos say about \"programming language\"?",
+          "answer": "language R, which is specifically for data, there's the general purpose programming language",
+          "evidenceVideoId": "ua-CiDNNj30",
+          "evidenceTimestamp": 9267.5
+        }
+      ]
+    },
+    {
+      "phrase": "index html",
+      "pageType": "search",
+      "slug": "index-html",
+      "path": "/search/index-html",
+      "opportunityScore": 49.16,
+      "momentCount": 15,
+      "videoCount": 9,
+      "noindex": false,
+      "sitemapEligible": true,
+      "quality": {
+        "accepted": true,
+        "noindex": false,
+        "thinContent": false,
+        "canonicalSlug": "index-html",
+        "canonicalPath": "/search/index-html"
+      },
+      "relatedSearches": [
+        "index funds",
+        "what is rag",
+        "how to learn python",
+        "ai agents",
+        "machine learning",
+        "large language models",
+        "prompt engineering",
+        "react hooks",
+        "system design",
+        "startup advice"
+      ],
+      "relatedTopics": [
+        "index-funds",
+        "transcript-search",
+        "find-youtube-quotes",
+        "podcast-transcript",
+        "podcast-clips",
+        "podcast-interviews",
+        "startup",
+        "marketing"
+      ],
+      "relatedVideos": [
+        {
+          "videoId": "mU6anWqZJcc",
+          "title": "Learn HTML5 and CSS3 From Scratch - Full Course",
+          "href": "/video/mU6anWqZJcc",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "UB1O30fR-EE",
+          "title": "HTML Crash Course For Absolute Beginners",
+          "href": "/video/UB1O30fR-EE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "BiA08jfr4RU",
+          "title": "19 Web Dev Projects – HTML, CSS, JavaScript Tutorial",
+          "href": "/video/BiA08jfr4RU",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Oe421EPjeBE",
+          "title": "Node.js and Express.js - Full Course",
+          "href": "/video/Oe421EPjeBE",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "Z1RJmh_OqeA",
+          "title": "Learn Flask for Python - Full Tutorial",
+          "href": "/video/Z1RJmh_OqeA",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "32M1al-Y6Ag",
+          "title": "Node.js Crash Course",
+          "href": "/video/32M1al-Y6Ag",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "LDB4uaJ87e0",
+          "title": "React Crash Course",
+          "href": "/video/LDB4uaJ87e0",
+          "detail": "2 matches"
+        },
+        {
+          "videoId": "m_u6P5k0vP0",
+          "title": "Full Stack React & Firebase Tutorial - Build a social media app",
+          "href": "/video/m_u6P5k0vP0",
+          "detail": "1 matches"
+        },
+        {
+          "videoId": "hu-q2zYwEYs",
+          "title": "HTML & CSS Crash Course Tutorial #1 - Introduction",
+          "href": "/video/hu-q2zYwEYs",
+          "detail": "1 matches"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What do videos say about \"index html\"?",
+          "answer": "would like to do here, I guess, again, for the whole psychosis.",
+          "evidenceVideoId": "mU6anWqZJcc",
+          "evidenceTimestamp": 25291.5
+        },
+        {
+          "question": "What do videos say about \"index html\"?",
+          "answer": "bring us here now let's go to index HTML",
+          "evidenceVideoId": "UB1O30fR-EE",
+          "evidenceTimestamp": 3582.1
+        },
+        {
+          "question": "What do videos say about \"index html\"?",
+          "answer": "we're going to call this update dot html.",
+          "evidenceVideoId": "Z1RJmh_OqeA",
+          "evidenceTimestamp": 2096.5
+        },
+        {
+          "question": "What do videos say about \"index html\"?",
+          "answer": "index HTML in the browser and then it it",
+          "evidenceVideoId": "LDB4uaJ87e0",
+          "evidenceTimestamp": 788.4
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "phrase": "y combinator startup school startup",
+      "pageType": "search",
+      "reason": "Duplicate intent suppressed"
+    },
+    {
+      "phrase": "exercise component",
+      "pageType": "search",
+      "reason": "Thin page: 2 moments (minimum 3)"
+    }
+  ]
+}

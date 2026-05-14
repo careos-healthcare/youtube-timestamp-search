@@ -1,6 +1,6 @@
 # Query Intelligence Report
 
-Generated: 2026-05-14T22:06:00.181Z
+Generated: 2026-05-14T22:11:45.376Z
 Analytics source: high-intent-fallback
 Indexed videos scanned: 80
 Corpus phrase candidates: 155343
