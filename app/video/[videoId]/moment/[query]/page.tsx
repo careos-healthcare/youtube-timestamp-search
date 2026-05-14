@@ -7,7 +7,8 @@ import { SearchForm } from "@/components/search-form";
 import { TranscriptResults } from "@/components/transcript-results";
 import { buildMomentUrl, createMomentMetadata, deslugifyQuery } from "@/lib/seo";
 import { fetchTranscriptByVideoId, TranscriptFetchError } from "@/lib/transcript-service";
-import { findMatches, suggestKeywords } from "@/lib/transcript-search";
+import { hybridFindMatches } from "@/lib/search/per-video-hybrid-search";
+import { suggestKeywords } from "@/lib/transcript-search";
 
 type MomentPageProps = {
   params: Promise<{ videoId: string; query: string }>;
@@ -23,12 +24,12 @@ export default async function MomentPage({ params }: MomentPageProps) {
   const phrase = deslugifyQuery(query);
   const shareUrl = buildMomentUrl(videoId, phrase);
   let transcriptError = "";
-  let results = [] as ReturnType<typeof findMatches>;
+  let results = [] as ReturnType<typeof hybridFindMatches>;
   let suggestions: string[] = [];
 
   try {
     const transcript = await fetchTranscriptByVideoId(videoId);
-    results = findMatches(videoId, transcript, phrase);
+    results = hybridFindMatches(videoId, transcript, phrase);
     suggestions = suggestKeywords(transcript, phrase);
   } catch (error) {
     transcriptError =

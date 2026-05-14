@@ -366,6 +366,12 @@ export async function searchCachedTranscripts(
   query: string,
   limit = 20
 ): Promise<IndexedTranscriptSearchResult[]> {
+  const { hybridSearchTranscriptsSimple } = await import("@/lib/search/hybrid-search-engine");
+  return hybridSearchTranscriptsSimple(query, limit);
+}
+
+/** Keyword-only path retained for diagnostics and quality comparisons. */
+export async function searchKeywordOnlyTranscripts(query: string, limit = 20) {
   if (isSupabaseTranscriptStoreConfigured()) {
     const supabaseResults = await searchSupabaseTranscripts(query, limit);
     if (supabaseResults.length > 0) {

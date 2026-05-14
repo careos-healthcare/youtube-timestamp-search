@@ -1,6 +1,7 @@
-import { searchCachedTranscripts, type IndexedTranscriptSearchResult } from "@/lib/transcript-cache";
-import { getRelatedSearchPhrases } from "@/lib/internal-linking";
 import { buildMomentPath, buildVideoPath } from "@/lib/seo";
+import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
+import { getPeopleAlsoSearched, getRelatedIntentGroups } from "@/lib/search/related-intent";
+import type { IndexedTranscriptSearchResult } from "@/lib/search/types";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
 
 export type SearchLandingMoment = {
@@ -14,6 +15,13 @@ export type SearchLandingMoment = {
   youtubeUrl: string;
   videoPath: string;
   score: number;
+  ranking?: {
+    keywordScore: number;
+    semanticScore: number;
+    exactPhraseBoost: number;
+    metadataBoost: number;
+    finalScore: number;
+  };
 };
 
 export type SearchLandingData = {
@@ -21,6 +29,9 @@ export type SearchLandingData = {
   moments: SearchLandingMoment[];
   videoCount: number;
   relatedPhrases: string[];
+  peopleAlsoSearched: Array<{ phrase: string; href: string; score: number }>;
+  relatedIntentGroups: ReturnType<typeof getRelatedIntentGroups>;
+  searchMode: string;
   topVideos: Array<{
     videoId: string;
     title: string;
@@ -29,32 +40,6 @@ export type SearchLandingData = {
     matchCount: number;
   }>;
 };
-
-function flattenResults(
-  results: IndexedTranscriptSearchResult[],
-  phrase: string
-): SearchLandingMoment[] {
-  const moments: SearchLandingMoment[] = [];
-
-  for (const result of results) {
-    for (const match of result.matches) {
-      moments.push({
-        videoId: result.videoId,
-        videoTitle: result.title ?? `Video ${result.videoId}`,
-        channelName: result.channelName,
-        timestamp: match.timestamp,
-        startSeconds: match.start,
-        snippet: match.snippet,
-        momentPath: buildMomentPath(result.videoId, phrase),
-        youtubeUrl: getYouTubeWatchUrl(result.videoId, match.start),
-        videoPath: buildVideoPath(result.videoId),
-        score: result.score,
-      });
-    }
-  }
-
-  return moments.sort((a, b) => b.score - a.score || a.startSeconds - b.startSeconds);
-}
 
 function buildTopVideos(results: IndexedTranscriptSearchResult[]) {
   return results.map((result) => ({
@@ -68,15 +53,31 @@ function buildTopVideos(results: IndexedTranscriptSearchResult[]) {
 
 export async function getSearchLandingData(phrase: string, limit = 40): Promise<SearchLandingData> {
   const trimmed = phrase.trim();
-  const results = await searchCachedTranscripts(trimmed, 25);
-  const moments = flattenResults(results, trimmed).slice(0, limit);
-  const relatedPhrases = getRelatedSearchPhrases(trimmed, 12);
+  const hybrid = await hybridSearchTranscripts(trimmed, 25, { momentLimit: limit });
+  const peopleAlsoSearched = await getPeopleAlsoSearched(trimmed, 12);
+
+  const moments: SearchLandingMoment[] = hybrid.moments.slice(0, limit).map((moment) => ({
+    videoId: moment.videoId,
+    videoTitle: moment.title ?? `Video ${moment.videoId}`,
+    channelName: moment.channelName,
+    timestamp: moment.match.timestamp,
+    startSeconds: moment.match.start,
+    snippet: moment.match.snippet,
+    momentPath: buildMomentPath(moment.videoId, trimmed),
+    youtubeUrl: getYouTubeWatchUrl(moment.videoId, moment.match.start),
+    videoPath: buildVideoPath(moment.videoId),
+    score: moment.ranking.finalScore,
+    ranking: moment.ranking,
+  }));
 
   return {
     phrase: trimmed,
     moments,
-    videoCount: results.length,
-    relatedPhrases,
-    topVideos: buildTopVideos(results),
+    videoCount: hybrid.results.length,
+    relatedPhrases: peopleAlsoSearched.map((item) => item.phrase),
+    peopleAlsoSearched,
+    relatedIntentGroups: getRelatedIntentGroups(trimmed),
+    searchMode: hybrid.diagnostics.mode,
+    topVideos: buildTopVideos(hybrid.results),
   };
 }

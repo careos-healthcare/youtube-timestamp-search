@@ -98,6 +98,23 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
         </section>
       ) : null}
 
+      {data.peopleAlsoSearched.length > 0 ? (
+        <section className="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <h2 className="text-sm font-semibold text-white">People also searched</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {data.peopleAlsoSearched.map((related) => (
+              <Link
+                key={related.phrase}
+                href={related.href}
+                className="inline-flex h-8 items-center rounded-full border border-white/10 px-3 text-xs text-slate-200 hover:bg-white/5"
+              >
+                {related.phrase}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {data.relatedPhrases.length > 0 ? (
         <section className="rounded-2xl border border-white/10 bg-white/5 p-4">
           <h2 className="text-sm font-semibold text-white">Related searches</h2>

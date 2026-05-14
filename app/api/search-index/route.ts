@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { trackServerEvent } from "@/lib/analytics";
-import { searchCachedTranscripts } from "@/lib/transcript-cache";
+import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -11,15 +11,19 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "A search query is required." }, { status: 400 });
   }
 
-  const results = await searchCachedTranscripts(query);
+  const { results, diagnostics } = await hybridSearchTranscripts(query);
   trackServerEvent("indexed_transcript_search", {
     queryLength: query.length,
     resultCount: results.length,
+    searchMode: diagnostics.mode,
+    semanticFallback: diagnostics.semanticFallback,
   });
 
   return NextResponse.json({
     query,
     resultCount: results.length,
+    searchMode: diagnostics.mode,
+    diagnostics,
     results,
   });
 }
@@ -33,15 +37,19 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "A search query is required." }, { status: 400 });
     }
 
-    const results = await searchCachedTranscripts(query);
+    const { results, diagnostics } = await hybridSearchTranscripts(query);
     trackServerEvent("indexed_transcript_search", {
       queryLength: query.length,
       resultCount: results.length,
+      searchMode: diagnostics.mode,
+      semanticFallback: diagnostics.semanticFallback,
     });
 
     return NextResponse.json({
       query,
       resultCount: results.length,
+      searchMode: diagnostics.mode,
+      diagnostics,
       results,
     });
   } catch {
