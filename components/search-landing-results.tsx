@@ -15,14 +15,24 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
     return null;
   }
 
+  const primary = data.answer.sourceMoment;
+  const visibleMoments = data.moments.filter((moment) => {
+    if (!primary || data.answer.mode !== "answer") return true;
+    return !(
+      moment.videoId === primary.videoId &&
+      Math.abs(moment.startSeconds - primary.startSeconds) < 3
+    );
+  });
+
   return (
     <section className="grid gap-4">
       <p className="text-sm text-slate-300">
-        {data.moments.length} moment{data.moments.length === 1 ? "" : "s"} across{" "}
-        {data.videoCount} indexed video{data.videoCount === 1 ? "" : "s"}.
+        {data.answer.mode === "answer" ? "More moments" : "Results"}: {visibleMoments.length} moment
+        {visibleMoments.length === 1 ? "" : "s"} across {data.videoCount} indexed video
+        {data.videoCount === 1 ? "" : "s"}.
       </p>
 
-      {data.moments.map((moment, index) => (
+      {visibleMoments.map((moment, index) => (
         <article
           key={`${moment.videoId}-${moment.startSeconds}-${index}`}
           className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 sm:p-5"

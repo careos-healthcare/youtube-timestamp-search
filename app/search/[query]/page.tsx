@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 
 import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { PageShell, SiteFooter } from "@/components/page-shell";
+import { SearchAnswerPanel } from "@/components/search-answer-panel";
 import { SearchForm } from "@/components/search-form";
 import { SearchLandingResults } from "@/components/search-landing-results";
 import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
@@ -119,6 +120,8 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
           <SearchForm initialPhrase={phrase} />
         </div>
       </section>
+
+      <SearchAnswerPanel data={landing} />
 
       <SearchLandingResults data={landing} />
 

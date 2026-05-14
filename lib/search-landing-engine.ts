@@ -1,28 +1,12 @@
 import { buildMomentPath, buildVideoPath } from "@/lib/seo";
+import { extractAnswerFromMoments, type ExtractedAnswerResult } from "@/lib/search/answer-extraction";
 import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
+import type { SearchLandingMoment } from "@/lib/search/landing-types";
 import { getPeopleAlsoSearched, getRelatedIntentGroups } from "@/lib/search/related-intent";
 import type { IndexedTranscriptSearchResult } from "@/lib/search/types";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
 
-export type SearchLandingMoment = {
-  videoId: string;
-  videoTitle: string;
-  channelName?: string;
-  timestamp: string;
-  startSeconds: number;
-  snippet: string;
-  momentPath: string;
-  youtubeUrl: string;
-  videoPath: string;
-  score: number;
-  ranking?: {
-    keywordScore: number;
-    semanticScore: number;
-    exactPhraseBoost: number;
-    metadataBoost: number;
-    finalScore: number;
-  };
-};
+export type { SearchLandingMoment } from "@/lib/search/landing-types";
 
 export type SearchLandingData = {
   phrase: string;
@@ -32,6 +16,7 @@ export type SearchLandingData = {
   peopleAlsoSearched: Array<{ phrase: string; href: string; score: number }>;
   relatedIntentGroups: ReturnType<typeof getRelatedIntentGroups>;
   searchMode: string;
+  answer: ExtractedAnswerResult;
   topVideos: Array<{
     videoId: string;
     title: string;
@@ -70,6 +55,13 @@ export async function getSearchLandingData(phrase: string, limit = 40): Promise<
     ranking: moment.ranking,
   }));
 
+  const answer = extractAnswerFromMoments({
+    query: trimmed,
+    moments,
+    relatedPhrases: peopleAlsoSearched.map((item) => item.phrase),
+    peopleAlsoSearched,
+  });
+
   return {
     phrase: trimmed,
     moments,
@@ -78,6 +70,7 @@ export async function getSearchLandingData(phrase: string, limit = 40): Promise<
     peopleAlsoSearched,
     relatedIntentGroups: getRelatedIntentGroups(trimmed),
     searchMode: hybrid.diagnostics.mode,
+    answer,
     topVideos: buildTopVideos(hybrid.results),
   };
 }
