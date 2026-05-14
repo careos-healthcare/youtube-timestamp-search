@@ -5,8 +5,9 @@ import { notFound } from "next/navigation";
 import { CtaSection } from "@/components/cta-section";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
-import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, createTopicMetadata } from "@/lib/seo";
+import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, buildCreatorPath, buildCreatorsIndexPath, createTopicMetadata } from "@/lib/seo";
 import { buildTopicContent } from "@/lib/topic-content";
+import { getCreatorsForTopic } from "@/lib/creator-data";
 import { formatTopicLabel, isTopicKeyword, normalizeTopicSlug, TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 
 type TopicPageProps = {
@@ -36,6 +37,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
   }
 
   const content = buildTopicContent(keyword);
+  const relatedCreators = getCreatorsForTopic(keyword, 6);
 
   return (
     <PageShell>
@@ -151,10 +153,31 @@ export default async function TopicPage({ params }: TopicPageProps) {
       </section>
 
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <h2 className="text-base font-semibold text-white">Creators to search for {content.label.toLowerCase()}</h2>
+        <p className="mt-2 text-sm text-slate-400">
+          Jump to creator transcript search pages connected to this topic.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {relatedCreators.map((creator) => (
+            <Link
+              key={creator.slug}
+              href={buildCreatorPath(creator.slug)}
+              className="inline-flex h-9 items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-3 text-sm text-violet-100 transition hover:border-violet-300/40 hover:bg-violet-400/20"
+            >
+              {creator.displayName}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
         <h2 className="text-base font-semibold text-white">More ways to search</h2>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
           <Link href={buildTopicsIndexPath()} className="text-blue-200 transition hover:text-blue-100">
             Browse all topics
+          </Link>
+          <Link href={buildCreatorsIndexPath()} className="text-blue-200 transition hover:text-blue-100">
+            Browse creators
           </Link>
           <Link href="/" className="text-blue-200 transition hover:text-blue-100">
             Homepage search

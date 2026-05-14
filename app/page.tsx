@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { CtaSection } from "@/components/cta-section";
+import { FeaturedCreators } from "@/components/featured-creators";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { PopularTopicSearches } from "@/components/popular-topic-searches";
 import { SearchForm } from "@/components/search-form";
@@ -35,6 +36,8 @@ export default function HomePage() {
       </section>
 
       <PopularTopicSearches />
+
+      <FeaturedCreators />
 
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300 sm:p-5">
         <div className="grid gap-2 sm:grid-cols-3 sm:gap-4">

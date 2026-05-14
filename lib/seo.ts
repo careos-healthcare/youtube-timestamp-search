@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
+import { getCreatorBySlug } from "@/lib/creator-data";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -55,6 +56,43 @@ export function buildTopicPath(keyword: string) {
 
 export function buildTopicsIndexPath() {
   return "/topics";
+}
+
+export function buildCreatorPath(slug: string) {
+  return `/creator/${encodeURIComponent(slug.toLowerCase())}`;
+}
+
+export function buildCreatorsIndexPath() {
+  return "/creators";
+}
+
+export function createCreatorMetadata(slug: string): Metadata {
+  const creator = getCreatorBySlug(slug);
+  if (!creator) return {};
+
+  const title = `${creator.displayName} transcript search — find timestamps & quotes`;
+  const description = creator.description;
+  const canonicalSlug = creator.slug;
+  const url = `${getSiteUrl()}${buildCreatorPath(canonicalSlug)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+  };
 }
 
 export function createTopicMetadata(keyword: string): Metadata {
