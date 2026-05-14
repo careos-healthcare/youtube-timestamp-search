@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageShell, SiteFooter } from "@/components/page-shell";
+import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { SearchForm } from "@/components/search-form";
+import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { SearchLandingResults } from "@/components/search-landing-results";
 import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
 import { SearchQueryTracker } from "@/components/search-query-tracker";
@@ -47,6 +49,10 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
   const phrase = getSearchQuerySeed(query)?.phrase ?? phraseFromSearchSlug(query);
   const landing = await getSearchLandingData(phrase);
   const structuredData = buildSearchLandingStructuredData(landing);
+  const internalLinks = buildInternalLinkGraph({
+    phrase,
+    topVideos: landing.topVideos,
+  });
 
   return (
     <PageShell>
@@ -89,6 +95,12 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
       {landing.moments.length < 3 ? (
         <SearchLandingThinContent phrase={phrase} momentCount={landing.moments.length} />
       ) : null}
+
+      <InternalLinksPanel
+        relatedPhrases={internalLinks.relatedPhrases}
+        relatedTopics={internalLinks.relatedTopics}
+        relatedVideos={internalLinks.relatedVideos}
+      />
 
       <SiteFooter />
     </PageShell>

@@ -28,6 +28,7 @@ const STATIC_PAGES = [
   "/search-podcast-transcripts",
   "/find-youtube-timestamps",
   "/search-youtube-captions",
+  "/stats",
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

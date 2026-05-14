@@ -3,6 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { CtaSection } from "@/components/cta-section";
+import { InternalLinksPanel } from "@/components/internal-links-panel";
+import { TopicClusterLiveSection } from "@/components/topic-cluster-live-section";
+import { getTopicClusterData } from "@/lib/topic-cluster-engine";
+import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
 import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, buildCreatorPath, buildCreatorsIndexPath, createTopicMetadata } from "@/lib/seo";
@@ -38,6 +42,11 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
   const content = buildTopicContent(keyword);
   const relatedCreators = getCreatorsForTopic(keyword, 6);
+  const clusterData = await getTopicClusterData(keyword);
+  const internalLinks = buildInternalLinkGraph({
+    phrase: clusterData?.searchPhrase ?? content.label,
+    topVideos: clusterData?.landing.topVideos,
+  });
 
   return (
     <PageShell>
@@ -61,6 +70,14 @@ export default async function TopicPage({ params }: TopicPageProps) {
           </div>
         </div>
       </section>
+
+      {clusterData ? <TopicClusterLiveSection data={clusterData} /> : null}
+
+      <InternalLinksPanel
+        relatedPhrases={internalLinks.relatedPhrases}
+        relatedTopics={internalLinks.relatedTopics}
+        relatedVideos={internalLinks.relatedVideos}
+      />
 
       <section className="grid gap-4 lg:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { BestMomentsSection } from "@/components/best-moments-section";
+import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { RelatedSearches } from "@/components/related-searches";
 import { ShareActions } from "@/components/share-actions";
@@ -39,7 +41,8 @@ import {
 import {
   getRelatedTopicsForKeywords,
 } from "@/lib/video-related-links";
-import { getRelatedPhrasesForVideo } from "@/lib/internal-linking";
+import { extractBestMoments } from "@/lib/best-moments";
+import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { getYouTubeWatchUrl } from "@/lib/youtube";
 
 export const revalidate = 60;
@@ -97,13 +100,21 @@ export default async function VideoPage({ params }: VideoPageProps) {
 
   const suggestions = suggestKeywords(transcript, "", 10);
   const relatedTopics = getRelatedTopicsForKeywords(suggestions, 8);
-  const relatedSearchLinks = getRelatedPhrasesForVideo(suggestions, 10);
   const relatedVideos = await getRelatedIndexedVideos(videoId, 4);
   const previewSections = buildTranscriptPreviewSections(transcript, {
     linesPerSection: 12,
     maxSections: 8,
   });
   const searchableMoments = buildSearchableMoments(videoId, transcript, suggestions, 8);
+  const bestMoments = extractBestMoments(videoId, transcript, 8);
+  const internalLinks = buildInternalLinkGraph({
+    phrase: title ?? videoId,
+    videoKeywords: suggestions,
+    topVideos: relatedVideos.map((video) => ({
+      videoId: video.videoId,
+      title: video.title,
+    })),
+  });
   const pageUrl = `${getSiteUrl()}${buildVideoPath(videoId)}`;
   const thumbnailUrl = getYouTubeThumbnailUrl(videoId);
 
@@ -220,6 +231,8 @@ export default async function VideoPage({ params }: VideoPageProps) {
         </section>
       ) : (
         <>
+          <BestMomentsSection moments={bestMoments} />
+
           {searchableMoments.length > 0 ? (
             <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
               <h2 className="text-base font-semibold text-white">Searchable moments</h2>
@@ -300,9 +313,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
               </Link>
             ))}
           </div>
-          {relatedSearchLinks.length > 0 ? (
+          {internalLinks.videoPhraseLinks.length > 0 ? (
             <div className="mt-4 flex flex-wrap gap-2">
-              {relatedSearchLinks.map((link) => (
+              {internalLinks.videoPhraseLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -422,6 +435,12 @@ export default async function VideoPage({ params }: VideoPageProps) {
           .
         </section>
       ) : null}
+
+      <InternalLinksPanel
+        relatedPhrases={internalLinks.relatedPhrases}
+        relatedTopics={internalLinks.relatedTopics}
+        relatedVideos={internalLinks.relatedVideos}
+      />
 
       <SiteFooter />
     </PageShell>

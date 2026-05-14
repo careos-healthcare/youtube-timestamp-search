@@ -11,7 +11,9 @@
     "seed:transcripts:csv": "tsx scripts/seed-transcripts.ts --csv",
     "check:transcripts": "tsx scripts/check-transcript-availability.ts",
     "generate:seed-batch": "tsx scripts/generate-seed-batch.ts",
-    "audit:seo": "tsx scripts/audit-seo-pages.ts"
+    "audit:seo": "tsx scripts/audit-seo-pages.ts",
+    "discover:queries": "tsx scripts/discover-high-intent-queries.ts",
+    "refresh:index": "tsx scripts/refresh-search-index.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

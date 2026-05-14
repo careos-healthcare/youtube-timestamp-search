@@ -127,6 +127,7 @@ export const TOPIC_SEEDS: TopicSeed[] = [
   { slug: "communication-skills", displayName: "Communication skills", cluster: "psychology", description: "Find communication skills training in coaching and business videos.", featured: false },
   { slug: "persuasion", displayName: "Persuasion", cluster: "psychology", description: "Search persuasion psychology and influence tactics in marketing content.", featured: false },
   { slug: "ai", displayName: "AI", cluster: "ai-software", description: "Search AI breakthroughs, demos, and debates inside YouTube transcripts.", featured: true },
+  { slug: "artificial-intelligence", displayName: "Artificial intelligence", cluster: "ai-software", description: "Search artificial intelligence lectures, demos, and debates across indexed long-form videos.", featured: true },
   { slug: "chatgpt", displayName: "ChatGPT", cluster: "ai-software", description: "Find ChatGPT tutorials, prompts, and workflow tips in tech videos.", featured: true },
   { slug: "machine-learning", displayName: "Machine learning", cluster: "ai-software", description: "Search machine learning lectures for models, training, and evaluation.", featured: false },
   { slug: "coding", displayName: "Coding", cluster: "ai-software", description: "Find coding tutorials, walkthroughs, and debugging explanations on YouTube.", featured: true },
