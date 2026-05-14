@@ -38,6 +38,8 @@ Suggested batch files:
 
 Start from `data/seed-videos.example.csv` as a format reference.
 
+For automated batch generation from known channels, see `SEED_BATCH_WORKFLOW.md`.
+
 ## Quality rules
 
 Only index videos that meet **all** of these:

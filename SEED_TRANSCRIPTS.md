@@ -16,6 +16,19 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
 ## Recommended workflow
 
+See **`SEED_BATCH_WORKFLOW.md`** for the full quality pipeline.
+
+**Never seed a raw CSV.** Always preflight captions and seed only `.available.csv` files.
+
+### Option A — generate from known channels (recommended)
+
+```bash
+npm run generate:seed-batch -- --batch 003 --limit 100
+npm run seed:transcripts:csv -- data/seed-videos-raw-batch-003.available.csv
+```
+
+### Option B — manual raw CSV
+
 1. **Create a raw CSV** with candidate videos (`url`, `video_id`, `category`, `creator`, `topic`, `priority`).
 2. **Run the availability checker** to test captions without saving anything:
 
@@ -39,6 +52,8 @@ CHECK_DELAY_MS=2500 npm run check:transcripts -- data/my-raw-batch.csv
 ```bash
 npm run seed:transcripts:csv -- data/seed-videos-batch-001.available.csv
 ```
+
+Never run the seed command against a raw/unverified CSV.
 
 The checker uses `fetchTranscriptFromYoutube` only. It does **not** write to Supabase or the local transcript cache.
 
