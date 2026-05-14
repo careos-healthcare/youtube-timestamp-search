@@ -9,7 +9,7 @@ import {
   buildVideoPath,
   getSiteUrl,
 } from "@/lib/seo";
-import { listCachedTranscripts } from "@/lib/transcript-cache";
+import { listCachedTranscripts, getTranscriptCacheMode } from "@/lib/transcript-cache";
 
 const title = "Indexed YouTube transcripts";
 const description =
@@ -38,6 +38,7 @@ export const metadata: Metadata = {
 
 export default async function TranscriptsIndexPage() {
   const cachedTranscripts = await listCachedTranscripts();
+  const cacheMode = getTranscriptCacheMode();
 
   return (
     <PageShell>
@@ -61,6 +62,19 @@ export default async function TranscriptsIndexPage() {
           </Link>
         </div>
       </section>
+
+      {cacheMode === "fallback" ? (
+        <section className="rounded-2xl border border-amber-400/20 bg-amber-500/10 p-4 text-sm text-amber-100">
+          Transcript index is running in temporary cache mode. Add Supabase env vars to persist
+          transcripts across deployments. See `SUPABASE_TRANSCRIPT_INDEX_SETUP.md`.
+        </section>
+      ) : (
+        <section className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-4 text-sm text-emerald-100">
+          Transcript index is connected to Supabase Postgres. Cached transcripts persist across
+          deployments.
+          {cachedTranscripts.length > 0 ? ` ${cachedTranscripts.length} indexed.` : ""}
+        </section>
+      )}
 
       <TranscriptIndexSearch />
 

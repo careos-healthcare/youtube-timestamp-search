@@ -1,7 +1,14 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
+import {
+  listSupabaseTranscripts,
+  readSupabaseTranscript,
+  searchSupabaseTranscripts,
+  writeSupabaseTranscript,
+} from "@/lib/transcript-cache-supabase";
 import type { TranscriptLine } from "@/lib/transcript-types";
+import { isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
 import { formatTimestampFromMs, getYouTubeWatchUrl, normalizeText } from "@/lib/youtube";
 
 export type CachedTranscriptSegment = {
@@ -41,6 +48,8 @@ export type IndexedTranscriptSearchResult = {
     text: string;
   }>;
 };
+
+export type TranscriptCacheMode = "supabase" | "fallback";
 
 type TranscriptCacheBackend = {
   read(videoId: string): Promise<CachedTranscript | null>;
@@ -88,6 +97,10 @@ function toSummary(transcript: CachedTranscript): CachedTranscriptSummary {
     fetchedAt: transcript.fetchedAt,
     segmentCount: transcript.segments.length,
   };
+}
+
+export function getTranscriptCacheMode(): TranscriptCacheMode {
+  return isSupabaseTranscriptStoreConfigured() ? "supabase" : "fallback";
 }
 
 function getCacheDirectory() {
@@ -163,11 +176,33 @@ function createFileBackend(): TranscriptCacheBackend | null {
 const memoryBackend = createMemoryBackend();
 const fileBackend = createFileBackend();
 
+function mergeSummaries(summaries: CachedTranscriptSummary[]) {
+  const merged = new Map<string, CachedTranscriptSummary>();
+
+  for (const summary of summaries) {
+    const existing = merged.get(summary.videoId);
+    if (!existing || summary.fetchedAt > existing.fetchedAt) {
+      merged.set(summary.videoId, summary);
+    }
+  }
+
+  return [...merged.values()].sort((a, b) => b.fetchedAt.localeCompare(a.fetchedAt));
+}
+
 export async function getCachedTranscript(videoId: string): Promise<CachedTranscript | null> {
   const normalizedId = normalizeVideoId(videoId);
+
   const fromMemory = await memoryBackend.read(normalizedId);
   if (fromMemory) {
     return fromMemory;
+  }
+
+  if (isSupabaseTranscriptStoreConfigured()) {
+    const fromSupabase = await readSupabaseTranscript(normalizedId);
+    if (fromSupabase) {
+      await memoryBackend.write(fromSupabase);
+      return fromSupabase;
+    }
   }
 
   if (!fileBackend) {
@@ -202,6 +237,11 @@ export async function saveTranscript(
   };
 
   await memoryBackend.write(payload);
+
+  if (isSupabaseTranscriptStoreConfigured()) {
+    void writeSupabaseTranscript(payload);
+  }
+
   if (fileBackend) {
     void fileBackend.write(payload);
   }
@@ -210,22 +250,19 @@ export async function saveTranscript(
 }
 
 export async function listCachedTranscripts(): Promise<CachedTranscriptSummary[]> {
-  const memorySummaries = await memoryBackend.list();
-  if (!fileBackend) {
-    return memorySummaries;
+  const summaries: CachedTranscriptSummary[] = [];
+
+  if (isSupabaseTranscriptStoreConfigured()) {
+    summaries.push(...(await listSupabaseTranscripts()));
   }
 
-  const fileSummaries = await fileBackend.list();
-  const merged = new Map<string, CachedTranscriptSummary>();
+  summaries.push(...(await memoryBackend.list()));
 
-  for (const summary of [...fileSummaries, ...memorySummaries]) {
-    const existing = merged.get(summary.videoId);
-    if (!existing || summary.fetchedAt > existing.fetchedAt) {
-      merged.set(summary.videoId, summary);
-    }
+  if (fileBackend) {
+    summaries.push(...(await fileBackend.list()));
   }
 
-  return [...merged.values()].sort((a, b) => b.fetchedAt.localeCompare(a.fetchedAt));
+  return mergeSummaries(summaries);
 }
 
 function buildSnippet(segments: CachedTranscriptSegment[], index: number) {
@@ -239,7 +276,7 @@ function buildSnippet(segments: CachedTranscriptSegment[], index: number) {
   );
 }
 
-export async function searchCachedTranscripts(
+async function searchFallbackTranscripts(
   query: string,
   limit = 20
 ): Promise<IndexedTranscriptSearchResult[]> {
@@ -309,6 +346,20 @@ export async function searchCachedTranscripts(
   return results
     .sort((left, right) => right.score - left.score || right.matches.length - left.matches.length)
     .slice(0, limit);
+}
+
+export async function searchCachedTranscripts(
+  query: string,
+  limit = 20
+): Promise<IndexedTranscriptSearchResult[]> {
+  if (isSupabaseTranscriptStoreConfigured()) {
+    const supabaseResults = await searchSupabaseTranscripts(query, limit);
+    if (supabaseResults.length > 0) {
+      return supabaseResults;
+    }
+  }
+
+  return searchFallbackTranscripts(query, limit);
 }
 
 export function buildCachedTranscriptPayload(
