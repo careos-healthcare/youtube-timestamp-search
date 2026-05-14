@@ -6,7 +6,7 @@ import { FeaturedCreators } from "@/components/featured-creators";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { PopularTopicSearches } from "@/components/popular-topic-searches";
 import { SearchForm } from "@/components/search-form";
-import { buildTranscriptsIndexPath } from "@/lib/seo";
+import { buildTranscriptsIndexPath, buildLatestPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Search YouTube Transcripts Instantly",
@@ -54,6 +54,23 @@ export default function HomePage() {
             className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100"
           >
             Browse indexed transcripts
+          </Link>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-blue-400/15 bg-blue-500/5 p-4 sm:p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-base font-semibold text-white">Latest searchable videos</h2>
+            <p className="mt-1 text-sm text-slate-300">
+              Browse the newest indexed transcript videos with previews and related topics.
+            </p>
+          </div>
+          <Link
+            href={buildLatestPath()}
+            className="inline-flex h-10 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-4 text-sm font-medium text-blue-100"
+          >
+            View latest videos
           </Link>
         </div>
       </section>

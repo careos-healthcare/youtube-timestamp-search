@@ -9,6 +9,7 @@ import {
   buildCreatorPath,
   buildTopicPath,
   buildTranscriptsIndexPath,
+  buildLatestPath,
   buildVideoPath,
   createVideoMetadata,
   getSiteUrl,
@@ -20,6 +21,7 @@ import {
   getRelatedCreatorsForKeywords,
   getRelatedTopicsForKeywords,
 } from "@/lib/video-related-links";
+import { getRelatedIndexedVideos } from "@/lib/indexed-videos";
 import { formatTimestampFromMs, getYouTubeWatchUrl } from "@/lib/youtube";
 
 type VideoPageProps = {
@@ -62,6 +64,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
   const suggestions = suggestKeywords(transcript, "");
   const relatedTopics = getRelatedTopicsForKeywords(suggestions);
   const relatedCreators = getRelatedCreatorsForKeywords(suggestions);
+  const relatedVideos = await getRelatedIndexedVideos(videoId, 4);
   const pageUrl = `${getSiteUrl()}${buildVideoPath(videoId)}`;
 
   return (
@@ -83,6 +86,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
               </Link>
               <Link href={buildTranscriptsIndexPath()} className="text-blue-200 hover:text-blue-100">
                 Indexed transcripts
+              </Link>
+              <Link href={buildLatestPath()} className="text-blue-200 hover:text-blue-100">
+                Latest videos
               </Link>
             </div>
             {fromCache && fetchedAt ? (
@@ -156,6 +162,27 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 className="inline-flex h-9 items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-3 text-sm text-violet-100"
               >
                 {creator.displayName}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {!transcriptError && relatedVideos.length > 0 ? (
+        <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+          <h2 className="text-base font-semibold text-white">Related searchable videos</h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {relatedVideos.map((related) => (
+              <Link
+                key={related.videoId}
+                href={buildVideoPath(related.videoId)}
+                className="rounded-xl border border-white/10 bg-slate-950/40 p-3 transition hover:border-blue-300/30 hover:bg-blue-500/10"
+              >
+                <p className="text-sm font-medium text-white">{related.title}</p>
+                {related.channelName ? (
+                  <p className="mt-1 text-xs text-slate-400">{related.channelName}</p>
+                ) : null}
+                <p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-400">{related.previewSnippet}</p>
               </Link>
             ))}
           </div>

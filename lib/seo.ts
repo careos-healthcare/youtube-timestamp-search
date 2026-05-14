@@ -70,6 +70,39 @@ export function buildTranscriptsIndexPath() {
   return "/transcripts";
 }
 
+export function buildLatestPath(page = 1) {
+  return page > 1 ? `/latest?page=${page}` : "/latest";
+}
+
+export function createLatestMetadata(page = 1): Metadata {
+  const title =
+    page > 1
+      ? `Latest searchable YouTube transcripts — page ${page}`
+      : "Latest searchable YouTube transcripts";
+  const description =
+    "Browse the newest indexed YouTube transcript videos. Search captions, jump to timestamps, and explore related topics and creators.";
+  const url = `${getSiteUrl()}${buildLatestPath(page)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+  };
+}
+
 export function createCreatorMetadata(slug: string): Metadata {
   const creator = getCreatorBySlug(slug);
   if (!creator) return {};

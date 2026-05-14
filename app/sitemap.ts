@@ -6,6 +6,7 @@ import { CREATOR_SLUGS } from "@/lib/creator-data";
 
 const STATIC_PAGES = [
   "/",
+  "/latest",
   "/topics",
   "/creators",
   "/transcripts",
