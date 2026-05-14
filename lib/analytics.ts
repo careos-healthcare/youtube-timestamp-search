@@ -26,7 +26,9 @@ export type AnalyticsEventName =
   | "cta_save_search_clicked"
   | "video_within_search_submitted"
   | "result_feedback"
-  | "referrer_visit";
+  | "referrer_visit"
+  | "extension_video_search"
+  | "extension_index_request";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
