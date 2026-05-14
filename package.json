@@ -10,7 +10,8 @@
     "seed:transcripts": "tsx scripts/seed-transcripts.ts",
     "seed:transcripts:csv": "tsx scripts/seed-transcripts.ts --csv",
     "check:transcripts": "tsx scripts/check-transcript-availability.ts",
-    "generate:seed-batch": "tsx scripts/generate-seed-batch.ts"
+    "generate:seed-batch": "tsx scripts/generate-seed-batch.ts",
+    "audit:seo": "tsx scripts/audit-seo-pages.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

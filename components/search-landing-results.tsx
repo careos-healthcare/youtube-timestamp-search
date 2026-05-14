@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 import { trackPersistentEvent } from "@/lib/analytics";
-import { NOT_INDEXED_EMPTY_STATE } from "@/lib/empty-state-copy";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
 import { buildSearchPath } from "@/lib/seo";
 
@@ -13,11 +12,7 @@ type SearchLandingResultsProps = {
 
 export function SearchLandingResults({ data }: SearchLandingResultsProps) {
   if (data.moments.length === 0) {
-    return (
-      <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
-        <p>{NOT_INDEXED_EMPTY_STATE}</p>
-      </section>
-    );
+    return null;
   }
 
   return (

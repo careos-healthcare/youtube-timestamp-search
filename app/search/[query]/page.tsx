@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
 import { SearchLandingResults } from "@/components/search-landing-results";
+import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
 import { SearchQueryTracker } from "@/components/search-query-tracker";
 import { getSearchLandingData } from "@/lib/search-landing-engine";
 import { PRODUCT_WEDGE } from "@/lib/product-copy";
@@ -84,6 +85,10 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
       </section>
 
       <SearchLandingResults data={landing} />
+
+      {landing.moments.length < 3 ? (
+        <SearchLandingThinContent phrase={phrase} momentCount={landing.moments.length} />
+      ) : null}
 
       <SiteFooter />
     </PageShell>

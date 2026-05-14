@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 
 import { listAllIndexedVideoIds } from "@/lib/indexed-videos";
+import { buildMomentSitemapEntries } from "@/lib/moment-sitemap";
+import { SITEMAP_INCLUDE_MOMENTS } from "@/lib/sitemap-config";
 import { SEARCH_QUERY_SLUGS, phraseFromSearchSlug } from "@/lib/search-query-seeds";
 import {
   getSiteUrl,
@@ -74,6 +76,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.82,
   }));
 
+  const momentEntries = SITEMAP_INCLUDE_MOMENTS
+    ? (await buildMomentSitemapEntries()).map((entry) => ({
+        url: `${siteUrl}${entry.path}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.75,
+      }))
+    : [];
+
   const transcriptIndexEntry = {
     url: `${siteUrl}${buildTranscriptsIndexPath()}`,
     lastModified: new Date(),
@@ -86,6 +97,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     transcriptIndexEntry,
     ...searchEntries,
     ...videoEntries,
+    ...momentEntries,
     ...categoryEntries,
     ...topicEntries,
     ...creatorEntries,

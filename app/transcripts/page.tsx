@@ -9,6 +9,7 @@ import {
   buildVideoPath,
   getSiteUrl,
 } from "@/lib/seo";
+import { buildTranscriptsIndexStructuredData } from "@/lib/site-structured-data";
 import { listCachedTranscripts, getTranscriptCacheMode } from "@/lib/transcript-cache";
 
 const title = "Public video knowledge index";
@@ -39,9 +40,14 @@ export const metadata: Metadata = {
 export default async function TranscriptsIndexPage() {
   const cachedTranscripts = await listCachedTranscripts();
   const cacheMode = getTranscriptCacheMode();
+  const structuredData = buildTranscriptsIndexStructuredData(cachedTranscripts.length);
 
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className="overflow-hidden rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 via-white/5 to-slate-950/80 p-4 shadow-2xl shadow-emerald-500/10 backdrop-blur sm:p-6 lg:p-8">
         <div className="max-w-3xl space-y-4">
           <span className="inline-flex w-fit rounded-full border border-emerald-300/30 bg-emerald-400/15 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-emerald-100 uppercase">

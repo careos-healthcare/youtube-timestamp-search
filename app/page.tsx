@@ -12,16 +12,39 @@ import {
   PRODUCT_TAGLINE,
   PRODUCT_WEDGE,
 } from "@/lib/product-copy";
-import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath } from "@/lib/seo";
+import { buildHomeStructuredData } from "@/lib/site-structured-data";
+import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath, getSiteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: PRODUCT_META_TITLE,
   description: PRODUCT_META_DESCRIPTION,
+  alternates: {
+    canonical: getSiteUrl(),
+  },
+  openGraph: {
+    title: PRODUCT_META_TITLE,
+    description: PRODUCT_META_DESCRIPTION,
+    url: getSiteUrl(),
+    type: "website",
+    images: ["/og-placeholder.svg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PRODUCT_META_TITLE,
+    description: PRODUCT_META_DESCRIPTION,
+    images: ["/og-placeholder.svg"],
+  },
 };
 
 export default function HomePage() {
+  const structuredData = buildHomeStructuredData();
+
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/25 backdrop-blur sm:p-6 lg:p-8">
         <div className="flex flex-col gap-5">
           <div className="max-w-3xl space-y-3">
