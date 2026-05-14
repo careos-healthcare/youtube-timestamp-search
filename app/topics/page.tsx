@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageShell, SiteFooter } from "@/components/page-shell";
-import { buildTopicPath, buildTopicsIndexPath, getSiteUrl } from "@/lib/seo";
+import { buildTopicPath, buildTopicsIndexPath, buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
 import { getTopicsGroupedByCluster, TOPIC_DATABASE } from "@/lib/topic-keywords";
 
 const title = "Browse YouTube transcript search topics";
@@ -48,12 +48,20 @@ export default function TopicsIndexPage() {
             health, business, and more. Each page helps you search transcripts and jump to exact
             timestamps.
           </p>
-          <Link
-            href="/"
-            className="inline-flex h-10 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-4 text-sm font-medium text-blue-100 transition hover:border-blue-300/50 hover:bg-blue-500/20"
-          >
-            Back to search
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/"
+              className="inline-flex h-10 items-center rounded-full border border-blue-400/30 bg-blue-500/10 px-4 text-sm font-medium text-blue-100 transition hover:border-blue-300/50 hover:bg-blue-500/20"
+            >
+              Back to search
+            </Link>
+            <Link
+              href={buildTranscriptsIndexPath()}
+              className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100 transition hover:border-emerald-300/50 hover:bg-emerald-500/20"
+            >
+              Indexed transcripts
+            </Link>
+          </div>
         </div>
       </section>
 

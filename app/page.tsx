@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { CtaSection } from "@/components/cta-section";
 import { FeaturedCreators } from "@/components/featured-creators";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { PopularTopicSearches } from "@/components/popular-topic-searches";
 import { SearchForm } from "@/components/search-form";
+import { buildTranscriptsIndexPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Search YouTube Transcripts Instantly",
@@ -38,6 +40,23 @@ export default function HomePage() {
       <PopularTopicSearches />
 
       <FeaturedCreators />
+
+      <section className="rounded-2xl border border-emerald-400/15 bg-emerald-500/5 p-4 sm:p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-base font-semibold text-white">Indexed transcript library</h2>
+            <p className="mt-1 text-sm text-slate-300">
+              Reopen cached transcripts and search across videos indexed after prior lookups.
+            </p>
+          </div>
+          <Link
+            href={buildTranscriptsIndexPath()}
+            className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100"
+          >
+            Browse indexed transcripts
+          </Link>
+        </div>
+      </section>
 
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300 sm:p-5">
         <div className="grid gap-2 sm:grid-cols-3 sm:gap-4">

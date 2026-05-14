@@ -6,6 +6,7 @@ import {
   buildCreatorPath,
   buildCreatorsIndexPath,
   buildTopicsIndexPath,
+  buildTranscriptsIndexPath,
   getSiteUrl,
 } from "@/lib/seo";
 import { CREATOR_DATABASE, getCreatorsGroupedByCategory } from "@/lib/creator-data";
@@ -65,6 +66,12 @@ export default function CreatorsIndexPage() {
               className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100 transition hover:border-emerald-300/50 hover:bg-emerald-500/20"
             >
               Browse topics
+            </Link>
+            <Link
+              href={buildTranscriptsIndexPath()}
+              className="inline-flex h-10 items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-100 transition hover:border-emerald-300/50 hover:bg-emerald-500/20"
+            >
+              Indexed transcripts
             </Link>
           </div>
         </div>

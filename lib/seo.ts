@@ -66,6 +66,10 @@ export function buildCreatorsIndexPath() {
   return "/creators";
 }
 
+export function buildTranscriptsIndexPath() {
+  return "/transcripts";
+}
+
 export function createCreatorMetadata(slug: string): Metadata {
   const creator = getCreatorBySlug(slug);
   if (!creator) return {};
@@ -177,10 +181,16 @@ export function createSearchMetadata(query: string): Metadata {
   };
 }
 
-export function createVideoMetadata(videoId: string): Metadata {
-  const title = `YouTube transcript search for ${videoId}`;
-  const description =
-    "Search this YouTube video transcript and jump to exact timestamps without scrubbing.";
+export function createVideoMetadata(
+  videoId: string,
+  options?: { title?: string; channelName?: string }
+): Metadata {
+  const label = options?.title ?? `video ${videoId}`;
+  const channelSuffix = options?.channelName ? ` from ${options.channelName}` : "";
+  const title = `Search transcript for ${label}`;
+  const description = options?.title
+    ? `Search the YouTube transcript for "${options.title}"${channelSuffix}. Find exact timestamps without scrubbing.`
+    : `Search the YouTube transcript for video ${videoId}. Find exact timestamps without scrubbing.`;
   const url = `${getSiteUrl()}${buildVideoPath(videoId)}`;
 
   return {

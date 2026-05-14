@@ -8,6 +8,7 @@ const STATIC_PAGES = [
   "/",
   "/topics",
   "/creators",
+  "/transcripts",
   "/find-youtube-quotes",
   "/search-podcast-transcripts",
   "/find-youtube-timestamps",
