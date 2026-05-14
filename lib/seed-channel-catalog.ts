@@ -83,6 +83,81 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "M8HrtodtpL4", topic: "blockchain", priority: 2 },
       { videoId: "PkZNo7MFNFg", topic: "javascript", priority: 1 },
       { videoId: "rfscVS0vtbw", topic: "python", priority: 1 },
+      { videoId: "jS4aFq5-91M", topic: "javascript-full-course", priority: 1 },
+      { videoId: "8DvywoWv6fI", topic: "python-for-everybody", priority: 1 },
+      { videoId: "jH85McHenvw", topic: "python-types", priority: 1 },
+      { videoId: "RGOj5yH7evk", topic: "git-github", priority: 1 },
+      { videoId: "kqtD5dpn9C8", topic: "python-scrimba", priority: 1 },
+      { videoId: "Oe421EPjeBE", topic: "flutter-full-course", priority: 1 },
+      { videoId: "qz0aGYrrlhU", topic: "html-css-javascript", priority: 1 },
+      { videoId: "wN0x9eZLix4", topic: "data-structures-algorithms-python", priority: 1 },
+      { videoId: "eIrMbAQSU34", topic: "java-full-course", priority: 1 },
+      { videoId: "c4OyfL5o7DU", topic: "nodejs-full-course", priority: 1 },
+      { videoId: "09_LlHjoEiY", topic: "react-native", priority: 1 },
+      { videoId: "TlB_eWDSMt4", topic: "nodejs-tutorial", priority: 1 },
+      { videoId: "zJSY8tbf_ys", topic: "flask-python", priority: 1 },
+      { videoId: "HXV3zeQKqGY", topic: "sql-fundamentals", priority: 1 },
+      { videoId: "fis26HvvDII", topic: "angular-full-course", priority: 1 },
+      { videoId: "4UZrsTqkcW4", topic: "backend-development", priority: 1 },
+      { videoId: "ua-CiDNNj30", topic: "backend-python", priority: 1 },
+      { videoId: "1PnVor36_40", topic: "devops-ci-cd", priority: 1 },
+      { videoId: "1WmNXEVia8I", topic: "algorithms-python", priority: 1 },
+      { videoId: "8hly31xKli0", topic: "express-mongodb", priority: 1 },
+      { videoId: "8aGhZQkoFbQ", topic: "javascript-event-loop", priority: 1 },
+      { videoId: "x0uinJvhNxI", topic: "bootstrap-4", priority: 2 },
+      { videoId: "M7lc1UVf-VE", topic: "html5-css3", priority: 1 },
+      { videoId: "Wf2eSG3owoA", topic: "docker-kubernetes", priority: 1 },
+      { videoId: "kTp5xUtcalw", topic: "docker-kubernetes-hands-on", priority: 1 },
+      { videoId: "d6WC5n9G_sM", topic: "kubernetes-beginners", priority: 1 },
+      { videoId: "_4uQI4ihGVU", topic: "kubernetes-deep-dive", priority: 1 },
+      { videoId: "fqMOX6JJhGo", topic: "docker-devops", priority: 1 },
+      { videoId: "7HKot-brXFE", topic: "aws-cloud-practitioner", priority: 1 },
+      { videoId: "4m9j6hlbf4g", topic: "it-fundamentals", priority: 1 },
+      { videoId: "C842vFY5kRo", topic: "system-design", priority: 1 },
+      { videoId: "CcrC5zSv1iA", topic: "llm-fine-tuning", priority: 1 },
+      { videoId: "BiA08jfr4RU", topic: "web-dev-projects", priority: 1 },
+      { videoId: "SqQUQHdYWyc", topic: "cuda-programming", priority: 2 },
+      { videoId: "uHNOqKdqQas", topic: "jenkins-devops", priority: 2 },
+      { videoId: "tVskbekONlw", topic: "mlops-mlflow", priority: 1 },
+      { videoId: "R8h_gpSpEVU", topic: "deploying-ai-models", priority: 1 },
+      { videoId: "gh2_PhgZGsM", topic: "claude-code", priority: 1 },
+      { videoId: "XKOR4h3CrwE", topic: "gemini-cli", priority: 2 },
+      { videoId: "WG5PJ8nFjv0", topic: "neural-networks", priority: 1 },
+      { videoId: "gfDE2a9MXdw", topic: "tensorflow", priority: 1 },
+      { videoId: "tPYj3fFJGjk", topic: "transformers", priority: 1 },
+      { videoId: "7eh4dLRsPhM", topic: "data-science", priority: 1 },
+      { videoId: "tx7uPw278zw", topic: "bootstrap-5", priority: 1 },
+      { videoId: "NWONeJKn6kc", topic: "machine-learning-python", priority: 1 },
+      { videoId: "VmQ4qUJKdNA", topic: "algorithms", priority: 1 },
+      { videoId: "i6OiDI95OCQ", topic: "docker", priority: 1 },
+      { videoId: "D72ZrfSyIFs", topic: "javascript-projects", priority: 1 },
+      { videoId: "qxMowoLG1nU", topic: "machine-learning", priority: 1 },
+      { videoId: "tqv0I8qd0HI", topic: "pytorch", priority: 1 },
+      { videoId: "0FTFbBgXWKU", topic: "apache-spark", priority: 2 },
+      { videoId: "9kHcLRAhXZY", topic: "kafka", priority: 2 },
+      { videoId: "5eSolROwW8E", topic: "r-programming", priority: 2 },
+      { videoId: "30lx5KP8GLg", topic: "typescript", priority: 1 },
+      { videoId: "BwuLxPH8IDs", topic: "typescript-course", priority: 1 },
+      { videoId: "0ik6l4pCcJA", topic: "tailwind-css", priority: 1 },
+      { videoId: "xW7hn3LCvic", topic: "javascript-algorithms", priority: 1 },
+      { videoId: "-leIp449qXA", topic: "automation-zapier", priority: 2 },
+      { videoId: "zBJB8zLpBNA", topic: "linux-command-line", priority: 1 },
+      { videoId: "Amq-urqMOD4", topic: "vue-full-course", priority: 1 },
+      { videoId: "iW9wy_Jct6E", topic: "sveltekit", priority: 1 },
+      { videoId: "GPv9cjHvK0M", topic: "linux-administration", priority: 1 },
+      { videoId: "Cy9BoVm6Zd4", topic: "solidity-smart-contracts", priority: 1 },
+      { videoId: "RGKpSfhZkPM", topic: "web3-blockchain", priority: 2 },
+      { videoId: "G3h2r404IV8", topic: "ethical-hacking-2024", priority: 1 },
+      { videoId: "3JJIQ32GHXs", topic: "digital-forensics", priority: 2 },
+      { videoId: "Po8zNc7ju_0", topic: "astro-framework", priority: 1 },
+      { videoId: "R9SmhmQ6Ue0", topic: "html-css-design", priority: 1 },
+      { videoId: "AAoeSIQIR2w", topic: "bootstrap-portfolio", priority: 2 },
+      { videoId: "ScKCyC7ISrk", topic: "sass-scss", priority: 2 },
+      { videoId: "8DvyzeWtfqM", topic: "dart-programming", priority: 2 },
+      { videoId: "VFuotXOk8_Q", topic: "julia-programming", priority: 3 },
+      { videoId: "7CqJlxBYj-M", topic: "perl-programming", priority: 3 },
+      { videoId: "qCRNB1z1ErM", topic: "lua-programming", priority: 3 },
+      { videoId: "uQcTS7A-qGA", topic: "deno-runtime", priority: 2 }
     ],
   },
   {
@@ -96,6 +171,17 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "70bSF1MN8fk", topic: "computer-science", priority: 1 },
       { videoId: "W5J5JHal5-c", topic: "algorithms", priority: 2 },
       { videoId: "nBuS-WjidY8", topic: "linear-algebra", priority: 1 },
+      { videoId: "ZA-tUyM_y7s", topic: "6-006-algorithms", priority: 1 },
+      { videoId: "CHhwJjR0mZA", topic: "6-006-dynamic-arrays", priority: 1 },
+      { videoId: "OQ5jsbhAv_M", topic: "6-006-divide-conquer", priority: 1 },
+      { videoId: "HtSuA80QTyo", topic: "6-006-peak-finding", priority: 1 },
+      { videoId: "C1lhuz6pZC0", topic: "6-006-sorting", priority: 1 },
+      { videoId: "IPSaG9RRc-k", topic: "6-006-problem-session", priority: 1 },
+      { videoId: "J7vHQiTn88Q", topic: "18-06-linear-algebra", priority: 1 },
+      { videoId: "QkxuFQkm8Eo", topic: "18-06-elimination", priority: 1 },
+      { videoId: "lhyC6h08jVI", topic: "18-06-multiplication", priority: 1 },
+      { videoId: "rGldnwTlwfU", topic: "18-06-factorization", priority: 1 },
+      { videoId: "c2xH2zU99b4", topic: "18-06-transposes", priority: 1 }
     ],
   },
   {
@@ -105,6 +191,16 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "8mAITcNt710", topic: "artificial-intelligence", priority: 1 },
       { videoId: "5q87K1WaoDR", topic: "python", priority: 1 },
+      { videoId: "cwtpLIWylAw", topic: "lecture-1-c-2024", priority: 1 },
+      { videoId: "jZzyERW7h1A", topic: "lecture-3-algorithms", priority: 1 },
+      { videoId: "0euvEdPwQnQ", topic: "lecture-5-data-structures", priority: 1 },
+      { videoId: "EHi0RDZ31VA", topic: "lecture-6-python", priority: 1 },
+      { videoId: "89cbCbWrM4U", topic: "lecture-1-c-2025", priority: 1 },
+      { videoId: "zYOMDD4v8-U", topic: "lecture-2-c-2024", priority: 1 },
+      { videoId: "1WfOAfxZSL8", topic: "lecture-4-memory", priority: 1 },
+      { videoId: "iBB4Gwa2vNU", topic: "lecture-7-python", priority: 1 },
+      { videoId: "9TycLR0QuqI", topic: "lecture-8-python", priority: 1 },
+      { videoId: "9bZkp7q19f0", topic: "lecture-9-flask", priority: 1 }
     ],
   },
   {
@@ -115,6 +211,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "W6NZfCO5XIk", topic: "javascript-basics", priority: 1 },
       { videoId: "SqcY0GlETPk", topic: "typescript", priority: 1 },
       { videoId: "_uQrJ0TkZlc", topic: "python-basics", priority: 1 },
+      { videoId: "Rf-sc-brCQ4", topic: "react-native", priority: 2 }
     ],
   },
   {
@@ -132,6 +229,27 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "4UZrsTqkcTI", topic: "nextjs", priority: 1 },
       { videoId: "SBmSRk3Feww", topic: "vue", priority: 1 },
       { videoId: "Ke90YMEj5kY", topic: "mongodb", priority: 2 },
+      { videoId: "32M1al-Y6Ag", topic: "nodejs-crash-course-2024", priority: 1 },
+      { videoId: "LDB4uaJ87e0", topic: "react-crash-course-2024", priority: 1 },
+      { videoId: "SBvmnHTQIPY", topic: "nodejs-mongodb-oauth", priority: 1 },
+      { videoId: "-0exw-9YJBo", topic: "mern-express-api", priority: 1 },
+      { videoId: "fBNz5xF-Kx4", topic: "nodejs-crash-course", priority: 1 },
+      { videoId: "Oive66jrwBs", topic: "mern-social-network", priority: 1 },
+      { videoId: "3aGSqasVPsI", topic: "tailwind-crash", priority: 1 },
+      { videoId: "UB1O30fR-EE", topic: "html-css-crash", priority: 1 },
+      { videoId: "1uFY60CESlM", topic: "vanilla-javascript", priority: 1 },
+      { videoId: "5fb2aPlgoys", topic: "django-crash", priority: 1 },
+      { videoId: "8TMQcRcBnW8", topic: "fastapi-crash", priority: 1 },
+      { videoId: "XCifkDC0yXA", topic: "react-native-crash", priority: 1 },
+      { videoId: "G1Nr6N0Figk", topic: "flask-python", priority: 1 },
+      { videoId: "7lCZCPAK5Yc", topic: "django-blog", priority: 1 },
+      { videoId: "NgaypNQ0DWg", topic: "php-mvc", priority: 2 },
+      { videoId: "qlED1bFJ7f4", topic: "laravel", priority: 1 },
+      { videoId: "TwGRAbFBoqk", topic: "angular-crash", priority: 1 },
+      { videoId: "BN_w0ujrnKy", topic: "graphql", priority: 1 },
+      { videoId: "m_u6P5k0vP0", topic: "nextjs-14", priority: 1 },
+      { videoId: "tN6oJu2DqCM", topic: "react-context", priority: 2 },
+      { videoId: "DwGYhESO13M", topic: "http-crash", priority: 2 }
     ],
   },
   {
@@ -209,6 +327,45 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "MvYL6EeoUaI", topic: "jack-dorsey", priority: 2 },
       { videoId: "9NOkEhTNEjY", topic: "space", priority: 2 },
       { videoId: "L_Guz73e6fw", topic: "openai", priority: 1 },
+      { videoId: "0jspaMLxBig", topic: "andrew-ng", priority: 1 },
+      { videoId: "vif8NQcjVf0", topic: "jensen-huang", priority: 1 },
+      { videoId: "-HzgcbRXUK8", topic: "demis-hassabis", priority: 1 },
+      { videoId: "EV7WhVT270Q", topic: "state-of-ai-2026", priority: 1 },
+      { videoId: "YFjfBk8HI5o", topic: "openclaw-ai-agent", priority: 1 },
+      { videoId: "HsLgZzgpz9Y", topic: "dave-plummer", priority: 1 },
+      { videoId: "vagyIcmIGOQ", topic: "dhh-programming", priority: 1 },
+      { videoId: "HUkBz-cdB-k", topic: "terence-tao", priority: 1 },
+      { videoId: "9V6tWC4CdFQ", topic: "sundar-pichai", priority: 1 },
+      { videoId: "5t1vTLU7s40", topic: "guido-van-rossum", priority: 1 },
+      { videoId: "mC43pZkpTec", topic: "dario-amodei", priority: 1 },
+      { videoId: "cdiD-9MMpb0", topic: "andrej-karpathy", priority: 1 },
+      { videoId: "Kbk9BiPhm7o", topic: "elon-musk-neuralink", priority: 1 },
+      { videoId: "U5OD8MjYnOM", topic: "yann-lecun-2", priority: 1 },
+      { videoId: "Qp0rCU49lMs", topic: "michael-levin", priority: 1 },
+      { videoId: "NNr6gPelJ3E", topic: "roman-yampolskiy", priority: 1 },
+      { videoId: "_1f-o0nqpEI", topic: "deepseek-openai-nvidia", priority: 1 },
+      { videoId: "OHWnPOKh_S0", topic: "marc-andreessen", priority: 1 },
+      { videoId: "e-gwvmhyU7A", topic: "aravind-srinivas", priority: 1 },
+      { videoId: "F3Jd9GI6XqE", topic: "edward-gibson", priority: 1 },
+      { videoId: "N1e7oyT0eVg", topic: "sam-altman-programming", priority: 1 },
+      { videoId: "ffp4lu70fqQ", topic: "david-deutsch", priority: 1 },
+      { videoId: "xBrNBfxVe8I", topic: "paul-graham", priority: 1 },
+      { videoId: "SiHqnKFa5D4", topic: "sergey-brin", priority: 1 },
+      { videoId: "rY-RP3u2tV8", topic: "jim-keller", priority: 1 },
+      { videoId: "X9-nz8LWXFA", topic: "frank-wilczek", priority: 2 },
+      { videoId: "jdjb-8h0acE", topic: "robert-playter-2", priority: 2 },
+      { videoId: "zNkpwfeZBC4", topic: "dennis-ritchie-legacy", priority: 2 },
+      { videoId: "8n_Cq8QdKUM", topic: "bjarne-stroustrup", priority: 1 },
+      { videoId: "ORrWHULx4Lk", topic: "graham-hancock", priority: 3 },
+      { videoId: "ZIYn6ABQtXA", topic: "roger-rees", priority: 3 },
+      { videoId: "GF0IPbRtO8k", topic: "jimmy-wales", priority: 2 },
+      { videoId: "1X0QPk2Jkn4", topic: "lee-cronin", priority: 2 },
+      { videoId: "y3jYVe1RGaM", topic: "joscha-bach-2", priority: 1 },
+      { videoId: "QVHeOGCs5sY", topic: "max-tegmark-2", priority: 1 },
+      { videoId: "pNZWXmjv7P4", topic: "craig-venter", priority: 2 },
+      { videoId: "13CZPWmke6A", topic: "donald-knuth-2", priority: 1 },
+      { videoId: "acoSnDXUtIE", topic: "robert-playter-boston-dynamics", priority: 2 },
+      { videoId: "wLgPk9k5DzQ", topic: "john-carmack-2", priority: 1 }
     ],
   },
   {
@@ -225,6 +382,21 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "x-ehJTxkQas", topic: "economics", priority: 2 },
       { videoId: "7gKJKHfqejA", topic: "ai-safety", priority: 2 },
       { videoId: "nis745H7YRc", topic: "scaling-laws", priority: 2 },
+      { videoId: "2PXHZqv2-qc", topic: "ai-scaling-alignment", priority: 1 },
+      { videoId: "bc6uFV9CJGg", topic: "mark-zuckerberg-llama", priority: 1 },
+      { videoId: "aR20FWCCjAs", topic: "ilya-sutskever", priority: 1 },
+      { videoId: "n1E9IZfvGMA", topic: "dario-amodei-exponential", priority: 1 },
+      { videoId: "Hrbq66XqtCo", topic: "jensen-huang-moat", priority: 1 },
+      { videoId: "xmkSf5IS-zw", topic: "how-llms-trained", priority: 1 },
+      { videoId: "21EYKqUsPfg", topic: "richard-sutton", priority: 1 },
+      { videoId: "8-boBsWcr5A", topic: "satya-nadella", priority: 1 },
+      { videoId: "BYXbuik3dgA", topic: "elon-musk-space", priority: 1 },
+      { videoId: "_9V_Hbe-N1A", topic: "adam-marblestone", priority: 1 },
+      { videoId: "Q8Fkpi18QXU", topic: "terence-tao", priority: 1 },
+      { videoId: "48pxVdmkMIE", topic: "sergey-levine", priority: 1 },
+      { videoId: "3cDHx2_QbPE", topic: "china-energy-agi", priority: 1 },
+      { videoId: "mDG_Hx3BSUE", topic: "dylan-patel-compute", priority: 1 },
+      { videoId: "myP8UjAM1pk", topic: "michael-nielsen", priority: 1 }
     ],
   },
   {
@@ -235,6 +407,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "kCc8FmEb1nY", topic: "large-language-models", priority: 1 },
       { videoId: "LWiM-LuRe6Q", topic: "neural-networks", priority: 1 },
       { videoId: "u1wT0mEurCU", topic: "gpt", priority: 1 },
+      { videoId: "VMj-3S1tUxc", topic: "makemore", priority: 1 }
     ],
   },
   {
@@ -242,7 +415,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "AI Explained",
     category: "AI podcasts",
     videos: [
-      { videoId: "h1AzMaWYkmg", topic: "ai-news", priority: 2 },
+      { videoId: "h1AzMaWYkmg", topic: "ai-news", priority: 2 }
     ],
   },
   {
@@ -250,7 +423,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "OpenAI",
     category: "AI podcasts",
     videos: [
-      { videoId: "wbEk6mIlDMc", topic: "devday", priority: 1 },
+      { videoId: "wbEk6mIlDMc", topic: "devday", priority: 1 }
     ],
   },
   {
@@ -258,7 +431,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Stanford",
     category: "AI podcasts",
     videos: [
-      { videoId: "p0FERNkpyHE", topic: "sam-altman", priority: 1 },
+      { videoId: "p0FERNkpyHE", topic: "sam-altman", priority: 1 }
     ],
   },
   {
@@ -266,7 +439,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Hard Fork",
     category: "AI podcasts",
     videos: [
-      { videoId: "5MWT_doo68k", topic: "tech-news", priority: 2 },
+      { videoId: "5MWT_doo68k", topic: "tech-news", priority: 2 }
     ],
   },
   {
@@ -274,7 +447,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "No Priors",
     category: "AI podcasts",
     videos: [
-      { videoId: "HAn9sNAJLHQ", topic: "venture-ai", priority: 2 },
+      { videoId: "HAn9sNAJLHQ", topic: "venture-ai", priority: 2 }
     ],
   },
   {
@@ -282,7 +455,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "a16z",
     category: "AI podcasts",
     videos: [
-      { videoId: "6_1QLHugH3c", topic: "ai-startups", priority: 2 },
+      { videoId: "6_1QLHugH3c", topic: "ai-startups", priority: 2 }
     ],
   },
   {
@@ -290,7 +463,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Y Combinator",
     category: "AI podcasts",
     videos: [
-      { videoId: "Z1Lufu0FSrI", topic: "ai-startup-school", priority: 2 },
+      { videoId: "Z1Lufu0FSrI", topic: "ai-startup-school", priority: 2 }
     ],
   },
   {
@@ -310,7 +483,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "4aQAgAjTozk", topic: "founder-mode", priority: 1 },
       { videoId: "IACHfKm9Mow", topic: "yc-interview", priority: 2 },
       { videoId: "MT4Ig2uqjTc", topic: "customer-discovery", priority: 1 },
-      { videoId: "Th8JoIan4dg", topic: "startup-ideas", priority: 2 },
+      { videoId: "Th8JoIan4dg", topic: "startup-ideas", priority: 2 }
     ],
   },
   {
@@ -320,7 +493,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "zQctEb0JyYc", topic: "entrepreneurship", priority: 1 },
       { videoId: "NbDgg22f0B0", topic: "leadership", priority: 1 },
-      { videoId: "b67LiRvIDBc", topic: "founder-mindset", priority: 1 },
+      { videoId: "b67LiRvIDBc", topic: "founder-mindset", priority: 1 }
     ],
   },
   {
@@ -329,7 +502,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     category: "business interviews",
     videos: [
       { videoId: "F9LWUVJeGxw", topic: "startup-ideas", priority: 2 },
-      { videoId: "oWZbWzAyHAE", topic: "business-growth", priority: 2 },
+      { videoId: "oWZbWzAyHAE", topic: "business-growth", priority: 2 }
     ],
   },
   {
@@ -337,7 +510,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Gary Vaynerchuk",
     category: "business interviews",
     videos: [
-      { videoId: "d0yGdNEWdn0", topic: "marketing", priority: 2 },
+      { videoId: "d0yGdNEWdn0", topic: "marketing", priority: 2 }
     ],
   },
   {
@@ -345,7 +518,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Harvard i-lab",
     category: "business interviews",
     videos: [
-      { videoId: "G3e-cpL7ofc", topic: "entrepreneurship", priority: 2 },
+      { videoId: "G3e-cpL7ofc", topic: "entrepreneurship", priority: 2 }
     ],
   },
   {
@@ -353,7 +526,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Stanford",
     category: "business interviews",
     videos: [
-      { videoId: "UF8uR6Z6KLc", topic: "steve-jobs", priority: 1 },
+      { videoId: "UF8uR6Z6KLc", topic: "steve-jobs", priority: 1 }
     ],
   },
   {
@@ -361,7 +534,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Stanford eCorner",
     category: "business interviews",
     videos: [
-      { videoId: "7bB__8O9Y8c", topic: "startup-lessons", priority: 2 },
+      { videoId: "7bB__8O9Y8c", topic: "startup-lessons", priority: 2 }
     ],
   },
   {
@@ -372,7 +545,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "8VGHIH5FBA8", topic: "investing-basics", priority: 1 },
       { videoId: "TJDcN3pm4us", topic: "stock-market", priority: 1 },
       { videoId: "IjnRJXPct1k", topic: "index-funds", priority: 1 },
-      { videoId: "wX8fWXefGLc", topic: "passive-investing", priority: 2 },
+      { videoId: "wX8fWXefGLc", topic: "passive-investing", priority: 2 }
     ],
   },
   {
@@ -382,7 +555,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "lNdOtlpmH5U", topic: "personal-finance", priority: 1 },
       { videoId: "9R_SaLH1lOc", topic: "real-estate", priority: 2 },
-      { videoId: "hJnw3TQXNDs", topic: "housing-market", priority: 2 },
+      { videoId: "hJnw3TQXNDs", topic: "housing-market", priority: 2 }
     ],
   },
   {
@@ -390,7 +563,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Whiteboard Finance",
     category: "finance education",
     videos: [
-      { videoId: "UZBKE1b2tMI", topic: "investing", priority: 1 },
+      { videoId: "UZBKE1b2tMI", topic: "investing", priority: 1 }
     ],
   },
   {
@@ -400,7 +573,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "gw6Llagaa4o", topic: "finance-intro", priority: 1 },
       { videoId: "rD6L2FmvduI", topic: "compound-interest", priority: 1 },
-      { videoId: "WEDIj9JBTCk", topic: "personal-finance", priority: 2 },
+      { videoId: "WEDIj9JBTCk", topic: "personal-finance", priority: 2 }
     ],
   },
   {
@@ -410,7 +583,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "wjc7FzeD7gg", topic: "economic-principles", priority: 1 },
       { videoId: "6Zr0v5q2e7U", topic: "debt-cycles", priority: 2 },
-      { videoId: "B9XG_upIDOE", topic: "economic-cycles", priority: 1 },
+      { videoId: "B9XG_upIDOE", topic: "economic-cycles", priority: 1 }
     ],
   },
   {
@@ -419,7 +592,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     category: "finance education",
     videos: [
       { videoId: "TMF1I-9NVOw", topic: "investing-wisdom", priority: 1 },
-      { videoId: "2MhiHBFMoUk", topic: "value-investing", priority: 1 },
+      { videoId: "2MhiHBFMoUk", topic: "value-investing", priority: 1 }
     ],
   },
   {
@@ -436,7 +609,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "UZMUPw8pP0o", topic: "meditation", priority: 2 },
       { videoId: "y3Umo_jd5AA", topic: "learning", priority: 2 },
       { videoId: "hFL6qRIJZ_Y", topic: "focus", priority: 1 },
-      { videoId: "nm1TxQj9IsQ", topic: "sleep", priority: 1 },
+      { videoId: "nm1TxQj9IsQ", topic: "sleep", priority: 1 }
     ],
   },
   {
@@ -445,7 +618,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     category: "self-improvement podcasts",
     videos: [
       { videoId: "eB2LUXaSOfU", topic: "performance", priority: 1 },
-      { videoId: "QmOF0crdyRU", topic: "productivity", priority: 2 },
+      { videoId: "QmOF0crdyRU", topic: "productivity", priority: 2 }
     ],
   },
   {
@@ -453,7 +626,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Naval Ravikant",
     category: "self-improvement podcasts",
     videos: [
-      { videoId: "TAKErg_Duk4", topic: "happiness", priority: 1 },
+      { videoId: "TAKErg_Duk4", topic: "happiness", priority: 1 }
     ],
   },
   {
@@ -461,7 +634,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Jay Shetty",
     category: "self-improvement podcasts",
     videos: [
-      { videoId: "3qHkc9OOzcQ", topic: "habits", priority: 2 },
+      { videoId: "3qHkc9OOzcQ", topic: "habits", priority: 2 }
     ],
   },
   {
@@ -469,7 +642,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Jocko Willink",
     category: "self-improvement podcasts",
     videos: [
-      { videoId: "6ZrlsVx85ek", topic: "discipline", priority: 1 },
+      { videoId: "6ZrlsVx85ek", topic: "discipline", priority: 1 }
     ],
   },
   {
@@ -477,7 +650,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Cal Newport",
     category: "self-improvement podcasts",
     videos: [
-      { videoId: "ktiZ5j4QO0A", topic: "deep-work", priority: 1 },
+      { videoId: "ktiZ5j4QO0A", topic: "deep-work", priority: 1 }
     ],
   },
   {
@@ -485,7 +658,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "James Clear",
     category: "self-improvement podcasts",
     videos: [
-      { videoId: "l7FSOuFnWRo", topic: "atomic-habits", priority: 1 },
+      { videoId: "l7FSOuFnWRo", topic: "atomic-habits", priority: 1 }
     ],
   },
   {
@@ -504,6 +677,24 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "jBzwzrDvZbc", topic: "python", priority: 2 },
       { videoId: "N5vscRTVt7M", topic: "django", priority: 2 },
       { videoId: "c4M26jsVr70", topic: "django", priority: 2 },
+      { videoId: "Z1RJmh_OqeA", topic: "flask-tutorial", priority: 1 },
+      { videoId: "iukOehU5aF4", topic: "fastapi", priority: 1 },
+      { videoId: "TEb0Zc0b10U", topic: "matplotlib", priority: 2 },
+      { videoId: "uixAmdJatXc", topic: "argparse", priority: 2 },
+      { videoId: "eKqGTln-PuY", topic: "virtual-environments", priority: 2 },
+      { videoId: "t8pYpRWdspE", topic: "docker", priority: 2 },
+      { videoId: "JIf9COiNlqc", topic: "git", priority: 2 },
+      { videoId: "e41ZvEdHxj0", topic: "sqlalchemy", priority: 2 },
+      { videoId: "3c8zFpEsvsY", topic: "context-managers", priority: 2 },
+      { videoId: "KlBPCzcQyl8", topic: "logging", priority: 2 },
+      { videoId: "ve2pmmVJ2n0", topic: "regex", priority: 2 },
+      { videoId: "NI26aqiae_E", topic: "beautifulsoup", priority: 2 },
+      { videoId: "rq8cLfkQxOg", topic: "file-io", priority: 2 },
+      { videoId: "6iIsz1AYnK8", topic: "csv-json", priority: 2 },
+      { videoId: "v3NHysI4l8k", topic: "multiprocessing", priority: 2 },
+      { videoId: "W8KRzm-HUcc", topic: "threading", priority: 2 },
+      { videoId: "nhBVL41-_W4", topic: "itertools", priority: 2 },
+      { videoId: "K5KVE_wzCgk", topic: "functools", priority: 2 }
     ],
   },
   {
@@ -514,6 +705,10 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "aircAruvnKk", topic: "neural-networks", priority: 1 },
       { videoId: "IHZwWFHWa-w", topic: "linear-algebra", priority: 1 },
       { videoId: "jGw_UM8cfgA", topic: "neural-networks", priority: 1 },
+      { videoId: "4Wrcu6BdhXg", topic: "essence-linear-algebra", priority: 1 },
+      { videoId: "kjBOesHnagY", topic: "essence-calculus", priority: 1 },
+      { videoId: "Ilg3gGewQ5U", topic: "backpropagation", priority: 1 },
+      { videoId: "tIeHLJnJ6IY", topic: "gradient-descent", priority: 1 }
     ],
   },
   {
@@ -526,6 +721,26 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "4PaBNEd6SR4", topic: "nlp", priority: 1 },
       { videoId: "vT1Zj5rWpYM", topic: "cs224n", priority: 1 },
       { videoId: "MNIwwo_nZpY", topic: "deep-learning", priority: 1 },
+      { videoId: "rmVRLeJRkl4", topic: "cs224n-lecture-1", priority: 1 },
+      { videoId: "6g4O5UOH304", topic: "cs229-logistic-regression", priority: 1 },
+      { videoId: "h0e2HAPTGF4", topic: "cs229-naive-bayes", priority: 1 },
+      { videoId: "TjZBTDzGeGg", topic: "cs229-policy-gradient", priority: 1 },
+      { videoId: "vT1JzLTH4G4", topic: "cs231n-cnn-intro", priority: 1 },
+      { videoId: "j3N6eRt7SPs", topic: "cs231n-backprop", priority: 1 },
+      { videoId: "dXEbbbQ51eA", topic: "cs231n-neural-nets", priority: 1 },
+      { videoId: "AwHTNEJ81rI", topic: "cs231n-cnn-architectures", priority: 1 },
+      { videoId: "8dGs36Fo_WE", topic: "cs224n-word2vec", priority: 1 },
+      { videoId: "9vM4p9NN0Ts", topic: "cs224n-glove", priority: 1 },
+      { videoId: "nFTQ7k7U4xU", topic: "cs224n-rnn", priority: 1 },
+      { videoId: "BJjjOWqGXPs", topic: "cs224n-seq2seq", priority: 1 },
+      { videoId: "PYHFIZU9sEs", topic: "cs330-deep-rl", priority: 1 },
+      { videoId: "4Bdc55j80l8", topic: "cs229-svm", priority: 1 },
+      { videoId: "ktxecZ3JkO0", topic: "cs229-kernel-methods", priority: 1 },
+      { videoId: "ptuGllU5SQQ", topic: "cs224n-overview", priority: 1 },
+      { videoId: "noQEvlHAUAE", topic: "cs224n-word-vectors", priority: 1 },
+      { videoId: "iWONvLMUE7E", topic: "cs231n-overview", priority: 1 },
+      { videoId: "FScyHcZLVR8", topic: "cs25-transformers", priority: 1 },
+      { videoId: "4Xfi23Yfn-U", topic: "cs229-intro", priority: 1 }
     ],
   },
   {
@@ -535,6 +750,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     videos: [
       { videoId: "7xTGNNLPyMI", topic: "deep-learning", priority: 1 },
       { videoId: "4b4MUYve_U8", topic: "machine-learning", priority: 2 },
+      { videoId: "M7grwLR7w4M", topic: "andrew-ng-ml-specialization", priority: 1 }
     ],
   },
   {
@@ -543,6 +759,38 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     category: "AI podcasts",
     videos: [
       { videoId: "CDiqA4SJNpA", topic: "machine-learning", priority: 2 },
+      { videoId: "eyxmSmjmNS0", topic: "gan-paper", priority: 1 },
+      { videoId: "TrdevFK_am4", topic: "vit-paper", priority: 1 },
+      { videoId: "jE9jAZC42NE", topic: "rnns-paper", priority: 1 },
+      { videoId: "iDulhoQ2pro", topic: "bert-paper", priority: 1 },
+      { videoId: "zjkBMFhNj_g", topic: "gpt3-paper", priority: 1 },
+      { videoId: "9uw3F6rndnA", topic: "clip-paper", priority: 1 },
+      { videoId: "bZQun8Y4L2A", topic: "rlhf-paper", priority: 1 },
+      { videoId: "9zKuYvjFFS8", topic: "gpt4-system-card", priority: 1 },
+      { videoId: "9-Jl0dxWQs8", topic: "mamba-paper", priority: 1 },
+      { videoId: "bAWV_yrqx4w", topic: "grpo-deepseekmath", priority: 1 },
+      { videoId: "hpC4qjWu_aY", topic: "context-rot", priority: 1 },
+      { videoId: "RAEy3JZmIaA", topic: "energy-based-transformers", priority: 1 },
+      { videoId: "V71AJoYAtBQ", topic: "biology-of-llm", priority: 1 },
+      { videoId: "AfAmwIP2ntY", topic: "test-time-compute", priority: 1 },
+      { videoId: "B45FlSQ8ITo", topic: "matmul-free-lm", priority: 1 },
+      { videoId: "7NNxK3CqaDk", topic: "flow-matching", priority: 1 },
+      { videoId: "loaTGpqfctI", topic: "byte-latent-transformer", priority: 1 },
+      { videoId: "gfU5y7qCxF0", topic: "tokenformer", priority: 1 },
+      { videoId: "Bs6eyNQjGpo", topic: "gsm-symbolic", priority: 1 },
+      { videoId: "WwbukAcMM4k", topic: "privacy-backdoors", priority: 1 },
+      { videoId: "-r0XPC7TLzY", topic: "safety-alignment", priority: 1 },
+      { videoId: "0OaEv1a5jUM", topic: "xlstm", priority: 1 },
+      { videoId: "3a0_hAiFKag", topic: "transformerfam", priority: 1 },
+      { videoId: "52kMBrAI_IM", topic: "orpo", priority: 1 },
+      { videoId: "Nao16-6l6dQ", topic: "free-transformer-vae", priority: 1 },
+      { videoId: "PW4JiJ-WaY4", topic: "planning-transformers", priority: 1 },
+      { videoId: "kzB23CoZG30", topic: "ml-news-llama-3", priority: 2 },
+      { videoId: "dnTGn1EQqtQ", topic: "ml-news-gtc", priority: 2 },
+      { videoId: "5bPBbQyLI7E", topic: "ml-news-gpt4o", priority: 2 },
+      { videoId: "YOyr9Bhhaq0", topic: "ml-news-elon-openai", priority: 2 },
+      { videoId: "3nF8Z6HgSLQ", topic: "ml-news-groq-gemma", priority: 2 },
+      { videoId: "Kk8YhCpo1b8", topic: "ml-news-jamba", priority: 2 }
     ],
   },
   {
@@ -555,6 +803,20 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
       { videoId: "YrxBCB_bVgM", topic: "nuxt", priority: 2 },
       { videoId: "bi5vhY9CLfw", topic: "vuex", priority: 2 },
       { videoId: "3aS1KRz_Z9k", topic: "tailwind", priority: 1 },
+      { videoId: "j942wKiXFu8", topic: "react-series", priority: 1 },
+      { videoId: "iWOYAxlnaww", topic: "modern-javascript", priority: 1 },
+      { videoId: "hu-q2zYwEYs", topic: "html-css-series", priority: 1 },
+      { videoId: "wqjNeSTu7ik", topic: "react-hooks", priority: 1 },
+      { videoId: "OxTGwZ5l5J8", topic: "firebase", priority: 1 },
+      { videoId: "KnHAuw2VIxY", topic: "nextjs", priority: 1 },
+      { videoId: "o3PtCE0wyvw", topic: "supabase", priority: 1 },
+      { videoId: "xiHn38lqKU4", topic: "flutter", priority: 2 },
+      { videoId: "jR4fDIATj8E", topic: "vue-3", priority: 1 },
+      { videoId: "q8cf5nhihZU", topic: "graphql", priority: 2 },
+      { videoId: "6Xx2kSEusjU", topic: "node-express", priority: 1 },
+      { videoId: "ZBK3K9rKqa8", topic: "mongodb", priority: 1 },
+      { videoId: "y285yddQJ5Q", topic: "typescript", priority: 1 },
+      { videoId: "QQ3k0Xn9Y9Q", topic: "react-redux", priority: 2 }
     ],
   },
   {
@@ -562,7 +824,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Stanford Online",
     category: "programming tutorials",
     videos: [
-      { videoId: "6xTHwMtNq_Y", topic: "machine-learning", priority: 1 },
+      { videoId: "6xTHwMtNq_Y", topic: "machine-learning", priority: 1 }
     ],
   },
   {
@@ -570,7 +832,7 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "Fireship",
     category: "programming tutorials",
     videos: [
-      { videoId: "Tn6-PIqc4UM", topic: "react", priority: 2 },
+      { videoId: "Tn6-PIqc4UM", topic: "react", priority: 2 }
     ],
   },
   {
@@ -578,7 +840,108 @@ export const SEED_CHANNEL_CATALOG: SeedChannel[] = [
     name: "MIT OpenCourseWare",
     category: "finance education",
     videos: [
-      { videoId: "ZK3O402wf1c", topic: "linear-algebra", priority: 3 },
+      { videoId: "ZK3O402wf1c", topic: "linear-algebra", priority: 3 }
+    ],
+  },
+  {
+    slug: "google-developers",
+    name: "Google Developers",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "jGwOUGg-jCw", topic: "tensorflow-ml-crash", priority: 1 },
+      { videoId: "3dojXA_ihKk", topic: "machine-learning-intro", priority: 1 },
+      { videoId: "nQS_jrD8Hsk", topic: "kotlin-android", priority: 1 },
+      { videoId: "7KPVp7hIGfc", topic: "google-cloud-essentials", priority: 2 },
+      { videoId: "Gjnup-Puqu0", topic: "firebase-web", priority: 2 },
+      { videoId: "lTTajzrSkBw", topic: "chrome-devtools", priority: 2 }
+    ],
+  },
+  {
+    slug: "sentdex",
+    name: "sentdex",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "eE5UswtOIfU", topic: "machine-learning-python", priority: 1 },
+      { videoId: "OGxgnH8y2GQ", topic: "neural-networks-python", priority: 1 },
+      { videoId: "vI3MHF9ZYpQ", topic: "tensorflow-python", priority: 1 },
+      { videoId: "wQ8BIBpyS2g", topic: "matplotlib", priority: 2 },
+      { videoId: "Z78IQMbkWqU", topic: "pandas", priority: 2 }
+    ],
+  },
+  {
+    slug: "nvidia",
+    name: "NVIDIA",
+    category: "AI podcasts",
+    videos: [
+      { videoId: "lIjzF3T2B7Y", topic: "gtc-keynote-ai", priority: 1 },
+      { videoId: "ScsppLKBLkg", topic: "generative-ai-explained", priority: 1 }
+    ],
+  },
+  {
+    slug: "twiml-ai",
+    name: "TWIML AI",
+    category: "AI podcasts",
+    videos: [
+      { videoId: "5A0qAYKxbH8", topic: "andrew-ng-interview", priority: 1 },
+      { videoId: "Q7r--DqG0lk", topic: "yann-lecun-interview", priority: 1 },
+      { videoId: "8F5QdAtUJPg", topic: "demis-hassabis-interview", priority: 1 },
+      { videoId: "0VH1LimQ4So", topic: "ilya-sutskever-interview", priority: 1 },
+      { videoId: "V1eYniV1ooM", topic: "geoffrey-hinton-interview", priority: 1 },
+      { videoId: "u6XAPnuFjJc", topic: "sam-altman-interview", priority: 1 }
+    ],
+  },
+  {
+    slug: "latent-space",
+    name: "Latent Space",
+    category: "AI podcasts",
+    videos: [
+      { videoId: "rb2oJxOZnnE", topic: "ai-engineering-podcast", priority: 1 },
+      { videoId: "SWfHxVAfHGk", topic: "llm-agents", priority: 1 },
+      { videoId: "uRu3zHnWPdg", topic: "rag-production", priority: 1 }
+    ],
+  },
+  {
+    slug: "berkeley-cs61a",
+    name: "Berkeley CS61A",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "0_LryzvBxFw", topic: "cs61a-lecture-1", priority: 1 },
+      { videoId: "8m01DTjUg78", topic: "cs61a-lecture-2", priority: 1 },
+      { videoId: "ENY0tbFlccY", topic: "cs61a-lecture-3", priority: 1 },
+      { videoId: "HmL0E-viG4c", topic: "cs61a-lecture-4", priority: 1 },
+      { videoId: "q6iqI2GIllI", topic: "cs61a-higher-order", priority: 1 },
+      { videoId: "x4sQkFYW0-0", topic: "cs61a-recursion", priority: 1 },
+      { videoId: "Lgy92S0xXC4", topic: "cs61a-trees", priority: 1 }
+    ],
+  },
+  {
+    slug: "android-developers",
+    name: "Android Developers",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "LcrTYsHHhqM", topic: "kotlin-fundamentals", priority: 1 },
+      { videoId: "F9UC9DY-vIU", topic: "android-architecture", priority: 1 },
+      { videoId: "0SJE9dYdpps", topic: "material-design", priority: 2 }
+    ],
+  },
+  {
+    slug: "ibm-technology",
+    name: "IBM Technology",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "Ok-xpKjKp2g", topic: "kubernetes-explained", priority: 1 },
+      { videoId: "1xo-0-kc2EI", topic: "microservices-explained", priority: 1 },
+      { videoId: "kv1MXVZ3890", topic: "blockchain-explained", priority: 2 },
+      { videoId: "yubzJw0uiE4", topic: "ai-explained", priority: 1 }
+    ],
+  },
+  {
+    slug: "mongodb-university",
+    name: "MongoDB University",
+    category: "programming tutorials",
+    videos: [
+      { videoId: "Www6koajkGw", topic: "mongodb-basics", priority: 1 },
+      { videoId: "ofme2EUyX8w", topic: "mongodb-aggregation", priority: 2 }
     ],
   },
 ];
