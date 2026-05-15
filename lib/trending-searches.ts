@@ -81,6 +81,16 @@ async function loadAnalyticsCounts() {
 }
 
 export async function getTrendingSearches(): Promise<TrendingSearchesData> {
+  if (typeof process !== "undefined" && process.env.npm_lifecycle_event === "build") {
+    const trending = seedTrending();
+    return {
+      trending,
+      newestTopics: seedTopics(),
+      fastestGrowing: trending.slice(0, 5),
+      source: "seed-fallback",
+    };
+  }
+
   const analytics = await loadAnalyticsCounts();
 
   if (!analytics) {

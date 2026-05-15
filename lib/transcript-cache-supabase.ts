@@ -265,10 +265,13 @@ export async function searchSupabaseTranscripts(
   const normalizedQuery = normalizeText(query);
   if (!normalizedQuery) return [];
 
+  const isBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
+  const rpcResultLimit = isBuild ? Math.min(Math.max(limit * 5, 50), 80) : Math.max(limit * 5, 50);
+
   try {
     const { data, error } = await supabase.rpc("search_transcript_index", {
       search_query: normalizedQuery,
-      result_limit: Math.max(limit * 5, 50),
+      result_limit: rpcResultLimit,
     });
 
     if (error || !data) {
@@ -325,13 +328,16 @@ async function searchSupabaseTranscriptsWithIlike(
   if (!supabase) return [];
 
   try {
+    const isBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
+    const rowCap = isBuild ? Math.min(Math.max(limit * 10, 50), 120) : Math.max(limit * 10, 50);
+
     const { data, error } = await supabase
       .from("transcript_segments")
       .select(
         "video_id, segment_index, text, start_seconds, duration_seconds, transcripts(video_url, title, channel_name)"
       )
       .ilike("text", `%${normalizedQuery}%`)
-      .limit(Math.max(limit * 10, 50));
+      .limit(rowCap);
 
     if (error || !data) {
       return [];

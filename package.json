@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "seed:transcripts": "tsx scripts/seed-transcripts.ts",
@@ -29,7 +29,9 @@
     "pages:validate": "tsx scripts/validate-generated-pages.ts",
     "search:validate-answers": "tsx scripts/validate-answer-quality.ts",
     "graph:build": "tsx scripts/build-knowledge-graph.ts",
-    "graph:validate": "tsx scripts/validate-knowledge-graph.ts"
+    "graph:validate": "tsx scripts/validate-knowledge-graph.ts",
+    "analytics:truth-report": "tsx scripts/analytics-truth-report.ts",
+    "analytics:import-gsc": "tsx scripts/import-search-console-csv.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

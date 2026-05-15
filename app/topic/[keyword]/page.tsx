@@ -12,14 +12,18 @@ import { SearchForm } from "@/components/search-form";
 import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, buildCreatorPath, buildCreatorsIndexPath, createTopicMetadata } from "@/lib/seo";
 import { buildTopicContent } from "@/lib/topic-content";
 import { getCreatorsForTopic } from "@/lib/creator-data";
-import { formatTopicLabel, isTopicKeyword, normalizeTopicSlug, TOPIC_KEYWORDS } from "@/lib/topic-keywords";
+import { formatTopicLabel, isTopicKeyword, normalizeTopicSlug } from "@/lib/topic-keywords";
 
 type TopicPageProps = {
   params: Promise<{ keyword: string }>;
 };
 
+export const revalidate = 300;
+export const dynamicParams = true;
+
+/** Skip topic pre-render at build; ISR fills from traffic (`revalidate`). */
 export function generateStaticParams() {
-  return TOPIC_KEYWORDS.map((keyword) => ({ keyword }));
+  return [];
 }
 
 export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {

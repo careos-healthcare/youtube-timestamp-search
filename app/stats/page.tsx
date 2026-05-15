@@ -7,6 +7,7 @@ import { buildSearchPath, buildTranscriptsIndexPath, buildVideoPath, getSiteUrl 
 import { buildHomeStructuredData } from "@/lib/site-structured-data";
 
 export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Public search index stats",

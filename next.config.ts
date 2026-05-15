@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+/**
+ * Keep this file free of `@/lib/*` app imports. Pulling runtime modules (e.g. transcript-cache)
+ * into config confuses the bundler NFT trace and slows tooling.
+ */
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [

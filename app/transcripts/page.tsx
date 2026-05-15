@@ -12,6 +12,8 @@ import {
 import { buildTranscriptsIndexStructuredData } from "@/lib/site-structured-data";
 import { listCachedTranscripts, getTranscriptCacheMode } from "@/lib/transcript-cache";
 
+export const dynamic = "force-dynamic";
+
 const title = "Public video knowledge index";
 const description =
   "Browse long-form YouTube videos indexed for in-video search. Reopen any video and search inside its transcript like a search engine index.";

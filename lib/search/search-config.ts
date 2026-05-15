@@ -42,8 +42,11 @@ export function isSemanticInfrastructureAvailable() {
 export function getSearchRuntimeConfig(): SearchRuntimeConfig {
   const embeddingsConfigured = isEmbeddingsConfigured();
   const semanticAvailable = embeddingsConfigured;
+  const isNpmBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
   const semanticSearchEnabled =
-    readBooleanFlag(process.env.SEMANTIC_SEARCH_ENABLED, false) && semanticAvailable;
+    !isNpmBuild &&
+    readBooleanFlag(process.env.SEMANTIC_SEARCH_ENABLED, false) &&
+    semanticAvailable;
   const hybridSearchEnabled = readBooleanFlag(process.env.HYBRID_SEARCH_ENABLED, true);
 
   return {

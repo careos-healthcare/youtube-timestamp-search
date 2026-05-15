@@ -84,13 +84,7 @@ function toCachedSegments(lines: TranscriptLine[]): CachedTranscriptSegment[] {
   }));
 }
 
-export function segmentsToTranscriptLines(segments: CachedTranscriptSegment[]): TranscriptLine[] {
-  return segments.map((segment) => ({
-    text: segment.text,
-    start: segment.start,
-    duration: segment.duration ?? 0,
-  }));
-}
+export { segmentsToTranscriptLines } from "@/lib/transcript-segment-lines";
 
 function toSummary(transcript: CachedTranscript): CachedTranscriptSummary {
   return {

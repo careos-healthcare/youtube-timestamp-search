@@ -34,6 +34,9 @@ async function getMostSearchedTopics(limit = 12): Promise<PublicStatsTopic[]> {
     }));
   }
 
+  const fetchLimit =
+    typeof process !== "undefined" && process.env.npm_lifecycle_event === "build" ? 350 : 3000;
+
   const { data } = await supabase
     .from("search_analytics_events")
     .select("query")
@@ -45,7 +48,7 @@ async function getMostSearchedTopics(limit = 12): Promise<PublicStatsTopic[]> {
       "indexed_transcript_search",
     ])
     .order("created_at", { ascending: false })
-    .limit(3000);
+    .limit(fetchLimit);
 
   const counts = new Map<string, number>();
   for (const row of data ?? []) {

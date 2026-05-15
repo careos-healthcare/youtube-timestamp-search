@@ -4,7 +4,7 @@ import { getIndexedVideoById } from "@/lib/indexed-videos";
 import { getCachedTranscript } from "@/lib/transcript-cache";
 import { suggestKeywords } from "@/lib/transcript-search";
 import { PRODUCT_NAME } from "@/lib/product-copy";
-import { segmentsToTranscriptLines } from "@/lib/transcript-cache";
+import { segmentsToTranscriptLines } from "@/lib/transcript-segment-lines";
 
 export const runtime = "nodejs";
 

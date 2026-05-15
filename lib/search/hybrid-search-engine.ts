@@ -1,5 +1,9 @@
 import { getCachedTranscript } from "@/lib/transcript-cache";
 
+import {
+  cappedHybridFetchSize,
+  maxHybridMetadataEnrichVideos,
+} from "@/lib/search/build-corpus-caps";
 import { searchKeywordTranscripts } from "@/lib/search/keyword-search-provider";
 import { rankIndexedResults, type RankableMoment } from "@/lib/search/hybrid-ranking";
 import {
@@ -11,9 +15,11 @@ import { searchSemanticTranscripts } from "@/lib/search/semantic-search-provider
 import type { HybridSearchDiagnostics, IndexedTranscriptSearchResult } from "@/lib/search/types";
 
 async function enrichResultsWithMetadata(results: IndexedTranscriptSearchResult[]) {
+  const enrichCap = maxHybridMetadataEnrichVideos();
+  const toEnrich = enrichCap != null && results.length > enrichCap ? results.slice(0, enrichCap) : results;
   const enriched: IndexedTranscriptSearchResult[] = [];
 
-  for (const result of results) {
+  for (const result of toEnrich) {
     if (result.category || result.topic || result.creatorName) {
       enriched.push(result);
       continue;
@@ -28,6 +34,10 @@ async function enrichResultsWithMetadata(results: IndexedTranscriptSearchResult[
       topic: cached?.topic,
       creatorName: cached?.creatorName,
     });
+  }
+
+  if (enrichCap != null && results.length > enriched.length) {
+    enriched.push(...results.slice(enriched.length));
   }
 
   return enriched;
@@ -78,8 +88,10 @@ export async function hybridSearchTranscripts(
     };
   }
 
+  const keywordFetchLimit = cappedHybridFetchSize(Math.max(limit * 2, 30));
+
   const keywordResults = await enrichResultsWithMetadata(
-    await searchKeywordTranscripts(trimmed, Math.max(limit * 2, 30))
+    await searchKeywordTranscripts(trimmed, keywordFetchLimit)
   );
 
   if (!config.hybridSearchEnabled) {
@@ -96,7 +108,7 @@ export async function hybridSearchTranscripts(
     };
   }
 
-  const semantic = await searchSemanticTranscripts(trimmed, Math.max(limit * 2, 30));
+  const semantic = await searchSemanticTranscripts(trimmed, cappedHybridFetchSize(Math.max(limit * 2, 30)));
   const semanticFallback =
     config.semanticSearchEnabled &&
     (semantic.hits.length === 0 || Boolean(semantic.fallbackReason));

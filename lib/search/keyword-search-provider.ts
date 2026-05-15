@@ -7,6 +7,10 @@ import {
 import { isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
 import { formatTimestampFromMs, getYouTubeWatchUrl, normalizeText } from "@/lib/youtube";
 
+import {
+  maxLocalTranscriptVideosToScan,
+  maxSegmentsToScanPerVideo,
+} from "@/lib/search/build-corpus-caps";
 import type { IndexedTranscriptSearchResult } from "@/lib/search/types";
 
 function buildSnippet(segments: CachedTranscriptSegment[], index: number) {
@@ -31,9 +35,13 @@ async function searchLocalKeywordTranscripts(
 
   const terms = normalizedQuery.split(/\s+/).filter(Boolean);
   const summaries = await listCachedTranscripts();
+  const videoCap = maxLocalTranscriptVideosToScan();
+  const cappedSummaries =
+    videoCap != null && summaries.length > videoCap ? summaries.slice(0, videoCap) : summaries;
+  const segmentScanCap = maxSegmentsToScanPerVideo();
   const results: IndexedTranscriptSearchResult[] = [];
 
-  for (const summary of summaries) {
+  for (const summary of cappedSummaries) {
     const cached = await getCachedTranscript(summary.videoId);
     if (!cached || cached.segments.length === 0) {
       continue;
@@ -42,7 +50,10 @@ async function searchLocalKeywordTranscripts(
     const matches: IndexedTranscriptSearchResult["matches"] = [];
     let score = 0;
 
-    for (let index = 0; index < cached.segments.length; index += 1) {
+    const maxIndex =
+      segmentScanCap != null ? Math.min(cached.segments.length - 1, segmentScanCap - 1) : cached.segments.length - 1;
+
+    for (let index = 0; index <= maxIndex; index += 1) {
       const segment = cached.segments[index];
       const snippet = buildSnippet(cached.segments, index);
       const haystack = snippet.toLowerCase();

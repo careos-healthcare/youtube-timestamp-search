@@ -18,6 +18,10 @@ function tokenize(value: string) {
 }
 
 async function loadAnalyticsRelatedQueries(phrase: string, limit: number) {
+  if (typeof process !== "undefined" && process.env.npm_lifecycle_event === "build") {
+    return [] as Array<{ phrase: string; score: number }>;
+  }
+
   const supabase = getSupabaseAdminClient();
   if (!supabase) return [] as Array<{ phrase: string; score: number }>;
 

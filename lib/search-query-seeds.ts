@@ -1,4 +1,4 @@
-/** Priority long-tail queries pre-rendered at build time for /search/[query]. */
+/** Priority long-tail queries for SEO sitemaps, audits, and on-demand `/search/[query]` pages. */
 
 import { GENERATED_SEARCH_QUERY_SEEDS } from "@/lib/generated-search-query-seeds";
 
@@ -41,6 +41,11 @@ const MANUAL_PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
   { slug: "nextjs", phrase: "nextjs" },
   { slug: "saas-pricing", phrase: "saas pricing" },
 ];
+
+/** Candidate slugs for audits, sitemaps, and optional future partial prerender — not used at `next build` by default. */
+export const STATIC_BUILD_SEARCH_SLUGS: string[] = MANUAL_PRIORITY_SEARCH_QUERIES.slice(0, 5).map(
+  (entry) => entry.slug
+);
 
 export const PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
   ...MANUAL_PRIORITY_SEARCH_QUERIES,

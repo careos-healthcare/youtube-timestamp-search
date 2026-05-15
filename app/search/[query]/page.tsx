@@ -15,10 +15,7 @@ import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { buildSearchPageUrl } from "@/lib/og-urls";
 import { getSearchLandingData } from "@/lib/search-landing-engine";
 import { PRODUCT_WEDGE } from "@/lib/product-copy";
-import {
-  getSearchQuerySeed,
-  SEARCH_QUERY_SLUGS,
-} from "@/lib/search-query-seeds";
+import { getSearchQuerySeed } from "@/lib/search-query-seeds";
 import {
   resolveSearchQuery,
   shouldNoIndexSearchPage,
@@ -36,23 +33,24 @@ type SearchPageProps = {
   params: Promise<{ query: string }>;
 };
 
+/** No paths are pre-rendered at `next build`; first request fills the ISR cache (see `revalidate`). */
 export function generateStaticParams() {
-  return SEARCH_QUERY_SLUGS.map((query) => ({ query }));
+  return [];
 }
 
 export async function generateMetadata({ params }: SearchPageProps): Promise<Metadata> {
   const { query } = await params;
-  const landing = await getSearchLandingData(
-    resolveSearchQuery(query).phrase,
-    1
-  );
-  const resolved = resolveSearchQuery(query, landing.moments.length);
   const seed = getSearchQuerySeed(query);
-  const title =
-    seed?.title ?? `Exact video moments for "${resolved.phrase}"`;
+  const resolved = resolveSearchQuery(query, 0);
+
+  if (!resolved.isValid) {
+    return {};
+  }
+
+  const title = seed?.title ?? `Exact video moments for "${resolved.phrase}"`;
   const description =
     seed?.description ??
-    `${PRODUCT_WEDGE} ${landing.moments.length} indexed moments across ${landing.videoCount} videos for "${resolved.phrase}".`;
+    `${PRODUCT_WEDGE} Search indexed YouTube transcript moments for "${resolved.phrase}".`;
 
   return createSearchMetadata(resolved.phrase, {
     title,

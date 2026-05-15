@@ -17,6 +17,8 @@ import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
 
+const isNpmBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
+
 const STATIC_PAGES = [
   "/",
   "/latest",
@@ -30,6 +32,9 @@ const STATIC_PAGES = [
   "/search-youtube-captions",
   "/stats",
 ];
+
+export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
@@ -69,7 +74,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.88,
   }));
 
-  const videoIds = await listAllIndexedVideoIds(2000);
+  const videoIdLimit = isNpmBuild ? 350 : 2000;
+  const videoIds = await listAllIndexedVideoIds(videoIdLimit);
   const videoEntries = videoIds.map((videoId) => ({
     url: `${siteUrl}${buildVideoPath(videoId)}`,
     lastModified: new Date(),
@@ -77,14 +83,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.82,
   }));
 
-  const momentEntries = SITEMAP_INCLUDE_MOMENTS
-    ? (await buildMomentSitemapEntries()).map((entry) => ({
-        url: `${siteUrl}${entry.path}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly" as const,
-        priority: 0.75,
-      }))
-    : [];
+  const momentEntries =
+    SITEMAP_INCLUDE_MOMENTS && !isNpmBuild
+      ? (await buildMomentSitemapEntries()).map((entry) => ({
+          url: `${siteUrl}${entry.path}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly" as const,
+          priority: 0.75,
+        }))
+      : [];
 
   const transcriptIndexEntry = {
     url: `${siteUrl}${buildTranscriptsIndexPath()}`,

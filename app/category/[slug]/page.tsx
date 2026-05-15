@@ -8,7 +8,6 @@ import { SearchForm } from "@/components/search-form";
 import {
   getTranscriptCategoryBySlug,
   normalizeCategorySlug,
-  TRANSCRIPT_CATEGORY_SLUGS,
 } from "@/lib/category-data";
 import { getCreatorBySlug } from "@/lib/creator-data";
 import { getIndexedVideosByCategory } from "@/lib/indexed-videos";
@@ -25,6 +24,7 @@ import { formatTopicLabel } from "@/lib/topic-keywords";
 import { isSupabaseTranscriptStoreConfigured } from "@/lib/supabase";
 
 export const revalidate = 60;
+export const dynamicParams = true;
 
 const PAGE_SIZE = 12;
 
@@ -32,8 +32,9 @@ type CategoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+/** Category pages are heavy (indexed video queries); generate on demand instead of at build time. */
 export function generateStaticParams() {
-  return TRANSCRIPT_CATEGORY_SLUGS.map((slug) => ({ slug }));
+  return [];
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
