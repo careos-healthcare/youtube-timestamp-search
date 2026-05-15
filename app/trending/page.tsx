@@ -11,6 +11,7 @@ import { PRODUCT_TAGLINE } from "@/lib/product-copy";
 import { buildCreatorPath, buildSearchPath, buildTopicPath, buildVideoPath, getSiteUrl } from "@/lib/seo";
 import { AUTHORITY_TOPIC_SLUGS } from "@/lib/topic-cluster-engine";
 import { formatTopicLabel } from "@/lib/topic-keywords";
+import { buildTrendingDiscoveryStructuredData } from "@/lib/site-structured-data";
 import { getTrendingSearches } from "@/lib/trending-searches";
 
 export const dynamic = "force-dynamic";
@@ -27,9 +28,14 @@ const FEATURED_CREATORS = CREATOR_SEEDS.filter((c) => c.featured).slice(0, 12);
 
 export default async function TrendingPage() {
   const [trending, latest] = await Promise.all([getTrendingSearches(), getLatestIndexedVideos(10, 0)]);
+  const structuredData = buildTrendingDiscoveryStructuredData();
 
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <TrendingPageViewTracker />
       <section className="rounded-3xl border border-white/10 bg-white/5 p-4 sm:p-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

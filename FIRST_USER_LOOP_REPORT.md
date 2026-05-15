@@ -44,6 +44,19 @@ Existing events (`saved_clip`, `continue_exploring_click`, `recent_search_click`
 - **`/trending`** and **`/saved`** are implemented at **`app/trending/page.tsx`** and **`app/saved/page.tsx`** with **`dynamic = "force-dynamic"`** so Vercel always runs the App Router handler (URLs unchanged).
 - After changing routing, smoke with `npm run audit:seo:quick` and `curl -I https://www.youtubetimesearch.com/trending`.
 
+## Discovery pages — structured data (JSON-LD)
+
+Helpers live in **`lib/site-structured-data.ts`**: **`buildTrendingDiscoveryStructuredData()`** and **`buildSavedMomentsStructuredData()`**. Each page emits a **`<script type="application/ld+json">`** `@graph` with **WebPage** + **BreadcrumbList** (Home → page). No extra server search calls.
+
+| Route | HTTP (prod when routed) | JSON-LD | `robots` | Sitemap |
+| --- | --- | --- | --- | --- |
+| **`/trending`** | **200** | **WebPage** “Trending video searches” + breadcrumb | **index, follow** | **`/trending`** is in `app/sitemap.ts` static list |
+| **`/saved`** | **200** | **WebPage** “Saved video moments” + breadcrumb | **noindex, follow** (metadata unchanged) | **Not** in static sitemap list |
+
+**`npm run audit:seo:quick`:** Before this structured-data commit shipped, production could return **200** for `/trending` / `/saved` but **FAIL_HTML** on “JSON-LD present”. After deploy, the quick audit should **PASS** those two URLs. **`/saved`** HTML should still include **`noindex`** in meta robots.
+
+**Homepage “Start here”:** Depends on the same production deploy as onboarding UI; not tied to JSON-LD alone.
+
 ## Post-deploy verification (commit `05c47bd` and follow-up)
 
 **Repo HEAD checked:** `05c47bd` (`git pull origin main` — already up to date). **Same session:** routing was normalized to **`app/trending`** / **`app/saved`** (flat paths) and pushed as a small follow-up commit after this verification.
