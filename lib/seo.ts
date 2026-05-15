@@ -91,12 +91,42 @@ export function buildLatestPath(page = 1) {
   return page > 1 ? `/latest?page=${page}` : "/latest";
 }
 
+export function buildMomentsIndexPath() {
+  return "/moments";
+}
+
 export function buildCategoryPath(slug: string) {
   return `/category/${encodeURIComponent(slug.toLowerCase())}`;
 }
 
 export function buildCategoriesIndexPath() {
   return "/categories";
+}
+
+export function createMomentsIndexMetadata(): Metadata {
+  const title = "Best searchable video moments";
+  const description = `${PRODUCT_WEDGE} Curated transcript-backed moments from the public index — canonical pages with timestamps that open on YouTube.`;
+  const url = `${getSiteUrl()}${buildMomentsIndexPath()}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+    robots: { index: true, follow: true },
+  };
 }
 
 export function createLatestMetadata(page = 1): Metadata {

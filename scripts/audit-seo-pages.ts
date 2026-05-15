@@ -73,6 +73,62 @@ function isVideoPath(path: string) {
   return path.startsWith("/video/") || path.startsWith("/moment/");
 }
 
+function isPngBody(buffer: ArrayBuffer) {
+  if (buffer.byteLength < 8) return false;
+  const u8 = new Uint8Array(buffer.slice(0, 8));
+  return u8[0] === 0x89 && u8[1] === 0x50 && u8[2] === 0x4e && u8[3] === 0x47;
+}
+
+type OgPngAudit = { url: string; pass: boolean; status: number; contentType: string; detail?: string };
+
+async function auditMomentOgPng(baseUrl: string, pathAndQuery: string): Promise<OgPngAudit> {
+  const url = `${baseUrl.replace(/\/$/, "")}${pathAndQuery}`;
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "youtube-timestamp-search-seo-audit/1.0" },
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_NORMAL_MS),
+    });
+    const buf = await res.arrayBuffer();
+    const ct = (res.headers.get("content-type") ?? "").toLowerCase();
+    const pngHeader = ct.includes("image/png");
+    const pngMagic = isPngBody(buf);
+    const pass = res.status === 200 && (pngHeader || pngMagic);
+    return {
+      url,
+      pass,
+      status: res.status,
+      contentType: res.headers.get("content-type") ?? (pngMagic ? "image/png (magic)" : ""),
+      detail: pass ? undefined : pngMagic ? undefined : `body_bytes=${buf.byteLength}`,
+    };
+  } catch (error) {
+    return {
+      url,
+      pass: false,
+      status: 0,
+      contentType: "",
+      detail: error instanceof Error ? error.message : "fetch_failed",
+    };
+  }
+}
+
+async function auditMomentOgRoutes(baseUrl: string): Promise<OgPngAudit[]> {
+  const moments = loadPublicMoments().slice(0, 2);
+  const out: OgPngAudit[] = [];
+  for (const m of moments) {
+    out.push(await auditMomentOgPng(baseUrl, `/api/og/moment-public/${m.id}`));
+  }
+  const probe = moments[0];
+  if (probe) {
+    const qs = new URLSearchParams({
+      q: probe.phrase,
+      t: probe.timestamp,
+      snippet: probe.snippet.slice(0, 200),
+    });
+    out.push(await auditMomentOgPng(baseUrl, `/api/og/moment/${encodeURIComponent(probe.videoId)}?${qs}`));
+  }
+  return out;
+}
+
 function isAbortOrTimeout(error: unknown): boolean {
   if (!(error instanceof Error)) return false;
   if (error.name === "AbortError") return true;
@@ -536,6 +592,7 @@ async function buildFullAuditPaths(): Promise<Array<{ path: string; isPrioritySe
   const paths: Array<{ path: string; isPrioritySearch?: boolean }> = [
     { path: "/" },
     { path: "/transcripts" },
+    { path: "/moments" },
     ...SEARCH_QUERY_SLUGS.map((slug) => ({
       path: `/search/${slug}`,
       isPrioritySearch: true,
@@ -561,12 +618,13 @@ async function buildFullAuditPaths(): Promise<Array<{ path: string; isPrioritySe
 
 function buildQuickAuditPaths(): Array<{ path: string; isPrioritySearch?: boolean }> {
   const publicSamples = loadPublicMoments()
-    .slice(0, 2)
+    .slice(0, 3)
     .map((m) => ({ path: buildPublicMomentPath(m.id, m.canonicalSlug) }));
 
   return [
     { path: "/" },
     { path: "/transcripts" },
+    { path: "/moments" },
     ...STATIC_BUILD_SEARCH_SLUGS.map((slug) => ({
       path: `/search/${slug}`,
       isPrioritySearch: true,
@@ -638,6 +696,15 @@ async function main() {
   const analytics = await verifyAnalytics(baseUrl);
   console.log(`analytics /api/analytics/event: ${analytics.pass ? "PASS" : "FAIL"} (${analytics.detail})`);
 
+  const ogResults = await auditMomentOgRoutes(baseUrl);
+  for (const row of ogResults) {
+    const icon = row.pass ? "PASS" : "FAIL";
+    console.log(
+      `${icon} [OG PNG] ${row.url} status=${row.status} ct=${row.contentType || "—"}${row.detail ? ` (${row.detail})` : ""}`
+    );
+  }
+  const ogPass = ogResults.length === 0 ? true : ogResults.every((row) => row.pass);
+
   const counts = summarizeResults(results);
   console.log(
     `\nPage summary: ${counts.passed} passed, ${counts.failed_http} failed_http, ${counts.failed_html} failed_html, ${counts.timed_out} timed_out (${counts.total} pages)`
@@ -655,7 +722,7 @@ async function main() {
   }
 
   const blockingPageFailures = counts.failed_http > 0 || counts.failed_html > 0;
-  const hardFail = blockingPageFailures || !robots.pass || !analytics.pass;
+  const hardFail = blockingPageFailures || !robots.pass || !analytics.pass || !ogPass;
   if (counts.timed_out > 0 && !blockingPageFailures) {
     console.log(
       "\nNote: one or more pages hit TIMEOUT (slow HTML or client deadline). Treat as signal, not missing SEO tags."

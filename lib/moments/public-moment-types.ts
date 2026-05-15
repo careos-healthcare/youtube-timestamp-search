@@ -9,6 +9,10 @@ export type PublicMomentRecord = {
   youtubeUrl: string;
   videoTitle?: string;
   channelName?: string;
+  /** Indexed transcript category slug when known. */
+  category?: string;
+  topic?: string;
+  qualityScore?: number;
   materializedAt?: string;
 };
 

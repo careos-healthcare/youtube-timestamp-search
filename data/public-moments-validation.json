@@ -1,0 +1,3014 @@
+{
+  "generatedAt": "2026-05-15T17:27:23.146Z",
+  "cap": 120,
+  "keywordPool": 64,
+  "maxPerVideo": 10,
+  "minStrict": 20,
+  "minSoft": 12,
+  "acceptedCount": 120,
+  "finalCount": 120,
+  "rejectedSample": [
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "going",
+      "reason": "below_threshold_-68",
+      "totalScore": -68
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "just",
+      "reason": "below_threshold_-68",
+      "totalScore": -68
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "we're",
+      "reason": "below_threshold_-8",
+      "totalScore": -8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "then",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "here",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "it's",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "create",
+      "reason": "below_threshold_8",
+      "totalScore": 8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "will",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "user",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "react",
+      "reason": "below_threshold_2",
+      "totalScore": 2
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "we'll",
+      "reason": "below_threshold_-4",
+      "totalScore": -4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "slash",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "right",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "back",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "mongodb",
+      "reason": "below_threshold_10",
+      "totalScore": 10
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "what",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "which",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "let's",
+      "reason": "below_threshold_-8",
+      "totalScore": -8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "date",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "users",
+      "reason": "below_threshold_-4",
+      "totalScore": -4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "that's",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "state",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "return",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "some",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "into",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "like",
+      "reason": "below_threshold_-68",
+      "totalScore": -68
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "code",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "list",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "first",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "instead",
+      "reason": "below_threshold_8",
+      "totalScore": 8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "i'll",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "request",
+      "reason": "below_threshold_4",
+      "totalScore": 4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "method",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "click",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "things",
+      "reason": "below_threshold_-68",
+      "totalScore": -68
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "need",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "delete",
+      "reason": "below_threshold_3",
+      "totalScore": 3
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "router",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "over",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "these",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "when",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "after",
+      "reason": "below_threshold_-4",
+      "totalScore": -4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "start",
+      "reason": "below_threshold_-4",
+      "totalScore": -4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "where",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "file",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "update",
+      "reason": "below_threshold_8",
+      "totalScore": 8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "gonna",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "change",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "you'll",
+      "reason": "below_threshold_8",
+      "totalScore": 8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "array",
+      "reason": "below_threshold_-4",
+      "totalScore": -4
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "atlas",
+      "reason": "below_threshold_-8",
+      "totalScore": -8
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "data",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "about",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "want",
+      "reason": "below_threshold_-64",
+      "totalScore": -64
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "here",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "going",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "will",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "let's",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "want",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "like",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "also",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "then",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "it's",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "create",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "what",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "we're",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "zapier",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "need",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "over",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "google",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "when",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "click",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "just",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "trigger",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "chat",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "field",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "them",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "because",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "some",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "awesome",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "email",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "these",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "okay",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "right",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "button",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "table",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "account",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "very",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "well",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "issue",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "choose",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "test",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "copilot",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "more",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "github",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "there",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "would",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "about",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "agent",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "tool",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "name",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "data",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "server",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "time",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "start",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "where",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "created",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "show",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "folder",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "know",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "example",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "helpful",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "-leIp449qXA",
+      "phrase": "connect",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "here",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "type",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "which",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "will",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "because",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "code",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "want",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "then",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "there",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "types",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "course",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -48
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "number",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "also",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "file",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "just",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "string",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "could",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "would",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "error",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "don't",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "where",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "what",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "it's",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "files",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "these",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "let's",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "does",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "value",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "that's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "result",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "should",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "might",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "return",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "like",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "compile",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "some",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "example",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "well",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "into",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "really",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "know",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "about",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "we're",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "work",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "more",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "only",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "project",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "numbers",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "something",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "make",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "even",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "object",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "need",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "name",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "check",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "strings",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "values",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "look",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "always",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "okay",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "will",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "what",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "then",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "just",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "here",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "which",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "data",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "let's",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "it's",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "take",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "like",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "very",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "model",
+      "reason": "below_threshold_-6",
+      "totalScore": -6
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "that's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "means",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "some",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "learning",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -23
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "about",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "over",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "make",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "going",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "these",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "more",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "theta",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "cluster",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "example",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "number",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "want",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "equals",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -48
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "zero",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "also",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "because",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "first",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "into",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "again",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "good",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "called",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "simply",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "entropy",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "training",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -17
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "linear",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "maybe",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "think",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "there",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "problem",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "hope",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "seen",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "should",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "don't",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "where",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "output",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "doing",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "high",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "we'll",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "each",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "NWONeJKn6kc",
+      "phrase": "kind",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "what",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "going",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "just",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "we're",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "know",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "here",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "like",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "data",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "kind",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "that's",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "then",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "which",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "right",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "some",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "these",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "it's",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "model",
+      "reason": "below_threshold_-2",
+      "totalScore": -2
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "because",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "want",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "let's",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "about",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "need",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "look",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "will",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "we'll",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "into",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "don't",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "okay",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "when",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "output",
+      "reason": "below_threshold_7",
+      "totalScore": 7
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "gonna",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "make",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "means",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "value",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "neural",
+      "reason": "below_threshold_6",
+      "totalScore": 6
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "layer",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "something",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "we've",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "really",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "input",
+      "reason": "below_threshold_-8",
+      "totalScore": -8
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "network",
+      "reason": "below_threshold_6",
+      "totalScore": 6
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "well",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "more",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "very",
+      "reason": "below_threshold_-69",
+      "totalScore": -69
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "doing",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "would",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "zero",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "them",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "example",
+      "reason": "below_threshold_6",
+      "totalScore": 6
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "state",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "where",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "three",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "could",
+      "reason": "below_threshold_-65",
+      "totalScore": -65
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "again",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "those",
+      "reason": "below_threshold_-66",
+      "totalScore": -66
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "image",
+      "reason": "below_threshold_-5",
+      "totalScore": -5
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "works",
+      "reason": "below_threshold_-6",
+      "totalScore": -6
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "here",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "going",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "just",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "it's",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "okay",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "like",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "we'll",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "gemini",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "what",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "there",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "that's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "want",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "know",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "ahead",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "don't",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "we're",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "will",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "really",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "over",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "they",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "file",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "right",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "make",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "because",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "there's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "maybe",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "back",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "which",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "think",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "let's",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "sure",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "again",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "using",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "work",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "then",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "would",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "look",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "very",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "good",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "where",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "other",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -60
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "yeah",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "google",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "folder",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "you're",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "should",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "thing",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "need",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "take",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "some",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "does",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "code",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "might",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "time",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "into",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "i'll",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "stuff",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "create",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "give",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "mode",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "more",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "XKOR4h3CrwE",
+      "phrase": "could",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "here",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "going",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "we're",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "it's",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "code",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "want",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "what",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "just",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "like",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "things",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "right",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "some",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "look",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "that's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "cloud",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -60
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "says",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "error",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "these",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "know",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "don't",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "something",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "then",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "we'll",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "make",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "claude",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "into",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -120
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "kind",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "let's",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "which",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "stuff",
+      "reason": "below_threshold_-11",
+      "totalScore": -11
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "we've",
+      "reason": "below_threshold_-12",
+      "totalScore": -12
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "create",
+      "reason": "snippet_under_88_chars",
+      "totalScore": -48
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "here's",
+      "reason": "below_threshold_0",
+      "totalScore": 0
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "good",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "there",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "will",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "because",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "really",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "where",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "thing",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "need",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "about",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "take",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "when",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "could",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "there's",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "through",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "doing",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "okay",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "little",
+      "reason": "below_threshold_-72",
+      "totalScore": -72
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "session",
+      "reason": "below_threshold_1",
+      "totalScore": 1
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "test",
+      "reason": "below_threshold_-71",
+      "totalScore": -71
+    }
+  ],
+  "acceptedSample": [
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "database",
+      "totalScore": 39
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "kubernetes",
+      "totalScore": 39
+    },
+    {
+      "videoId": "Z1RJmh_OqeA",
+      "phrase": "database",
+      "totalScore": 39
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "training",
+      "totalScore": 38
+    },
+    {
+      "videoId": "bc6uFV9CJGg",
+      "phrase": "training",
+      "totalScore": 38
+    },
+    {
+      "videoId": "_9V_Hbe-N1A",
+      "phrase": "inference",
+      "totalScore": 37
+    },
+    {
+      "videoId": "xmkSf5IS-zw",
+      "phrase": "inference",
+      "totalScore": 35
+    },
+    {
+      "videoId": "aR20FWCCjAs",
+      "phrase": "gemini-3",
+      "totalScore": 35
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "kubernetes",
+      "totalScore": 34
+    },
+    {
+      "videoId": "EV7WhVT270Q",
+      "phrase": "pre-training",
+      "totalScore": 34
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "exercises",
+      "totalScore": 33
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "actually",
+      "totalScore": 33
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "description",
+      "totalScore": 33
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "duration",
+      "totalScore": 33
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "different",
+      "totalScore": 33
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "container",
+      "totalScore": 33
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "containers",
+      "totalScore": 33
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "registry",
+      "totalScore": 33
+    },
+    {
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "patterns",
+      "totalScore": 33
+    },
+    {
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "database",
+      "totalScore": 33
+    },
+    {
+      "videoId": "48pxVdmkMIE",
+      "phrase": "learning",
+      "totalScore": 33
+    },
+    {
+      "videoId": "EV7WhVT270Q",
+      "phrase": "training",
+      "totalScore": 33
+    },
+    {
+      "videoId": "RGOj5yH7evk",
+      "phrase": "terminal",
+      "totalScore": 33
+    },
+    {
+      "videoId": "RGOj5yH7evk",
+      "phrase": "branches",
+      "totalScore": 33
+    },
+    {
+      "videoId": "Z1RJmh_OqeA",
+      "phrase": "underscore",
+      "totalScore": 33
+    },
+    {
+      "videoId": "4b4MUYve_U8",
+      "phrase": "training",
+      "totalScore": 33
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "phrase": "probability",
+      "totalScore": 33
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "phrase": "different",
+      "totalScore": 33
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "phrase": "positive",
+      "totalScore": 33
+    },
+    {
+      "videoId": "KJgsSFOSQv0",
+      "phrase": "basically",
+      "totalScore": 33
+    },
+    {
+      "videoId": "KJgsSFOSQv0",
+      "phrase": "function",
+      "totalScore": 33
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "component",
+      "totalScore": 32
+    },
+    {
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "username",
+      "totalScore": 32
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "typescript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "BwuLxPH8IDs",
+      "phrase": "javascript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "essentially",
+      "totalScore": 32
+    },
+    {
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "function",
+      "totalScore": 32
+    },
+    {
+      "videoId": "gh2_PhgZGsM",
+      "phrase": "database",
+      "totalScore": 32
+    },
+    {
+      "videoId": "CcrC5zSv1iA",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "applications",
+      "totalScore": 32
+    },
+    {
+      "videoId": "Nao16-6l6dQ",
+      "phrase": "inference",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "deployments",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "containers",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "minicube",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "services",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "particular",
+      "totalScore": 32
+    },
+    {
+      "videoId": "d6WC5n9G_sM",
+      "phrase": "specific",
+      "totalScore": 32
+    },
+    {
+      "videoId": "M7lc1UVf-VE",
+      "phrase": "javascript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "N1e7oyT0eVg",
+      "phrase": "predisposition",
+      "totalScore": 32
+    },
+    {
+      "videoId": "tN6oJu2DqCM",
+      "phrase": "databases",
+      "totalScore": 32
+    },
+    {
+      "videoId": "tN6oJu2DqCM",
+      "phrase": "database",
+      "totalScore": 32
+    },
+    {
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "component",
+      "totalScore": 32
+    },
+    {
+      "videoId": "_1f-o0nqpEI",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "important",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "information",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "instance",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "statistics",
+      "totalScore": 32
+    },
+    {
+      "videoId": "ua-CiDNNj30",
+      "phrase": "probability",
+      "totalScore": 32
+    },
+    {
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "component",
+      "totalScore": 32
+    },
+    {
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "essentially",
+      "totalScore": 32
+    },
+    {
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "whatever",
+      "totalScore": 32
+    },
+    {
+      "videoId": "myP8UjAM1pk",
+      "phrase": "certainly",
+      "totalScore": 32
+    },
+    {
+      "videoId": "fis26HvvDII",
+      "phrase": "application",
+      "totalScore": 32
+    },
+    {
+      "videoId": "fis26HvvDII",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "fis26HvvDII",
+      "phrase": "textview",
+      "totalScore": 32
+    },
+    {
+      "videoId": "mDG_Hx3BSUE",
+      "phrase": "capacity",
+      "totalScore": 32
+    },
+    {
+      "videoId": "mDG_Hx3BSUE",
+      "phrase": "gigawatts",
+      "totalScore": 32
+    },
+    {
+      "videoId": "mDG_Hx3BSUE",
+      "phrase": "anthropic",
+      "totalScore": 32
+    },
+    {
+      "videoId": "3cDHx2_QbPE",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "zJSY8tbf_ys",
+      "phrase": "javascript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "RAEy3JZmIaA",
+      "phrase": "inference",
+      "totalScore": 32
+    },
+    {
+      "videoId": "48pxVdmkMIE",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "TlB_eWDSMt4",
+      "phrase": "javascript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "Q8Fkpi18QXU",
+      "phrase": "problems",
+      "totalScore": 32
+    },
+    {
+      "videoId": "Q8Fkpi18QXU",
+      "phrase": "progress",
+      "totalScore": 32
+    },
+    {
+      "videoId": "Q8Fkpi18QXU",
+      "phrase": "important",
+      "totalScore": 32
+    },
+    {
+      "videoId": "09_LlHjoEiY",
+      "phrase": "algorithm",
+      "totalScore": 32
+    },
+    {
+      "videoId": "09_LlHjoEiY",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "09_LlHjoEiY",
+      "phrase": "shortest",
+      "totalScore": 32
+    },
+    {
+      "videoId": "09_LlHjoEiY",
+      "phrase": "priority",
+      "totalScore": 32
+    },
+    {
+      "videoId": "09_LlHjoEiY",
+      "phrase": "augmenting",
+      "totalScore": 32
+    },
+    {
+      "videoId": "bAWV_yrqx4w",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "9vM4p9NN0Ts",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "_9V_Hbe-N1A",
+      "phrase": "learning",
+      "totalScore": 32
+    },
+    {
+      "videoId": "_9V_Hbe-N1A",
+      "phrase": "steering",
+      "totalScore": 32
+    },
+    {
+      "videoId": "_9V_Hbe-N1A",
+      "phrase": "functions",
+      "totalScore": 32
+    },
+    {
+      "videoId": "_9V_Hbe-N1A",
+      "phrase": "function",
+      "totalScore": 32
+    },
+    {
+      "videoId": "9zKuYvjFFS8",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "RGOj5yH7evk",
+      "phrase": "repository",
+      "totalScore": 32
+    },
+    {
+      "videoId": "SBvmnHTQIPY",
+      "phrase": "database",
+      "totalScore": 32
+    },
+    {
+      "videoId": "iWOYAxlnaww",
+      "phrase": "javascript",
+      "totalScore": 32
+    },
+    {
+      "videoId": "bc6uFV9CJGg",
+      "phrase": "basically",
+      "totalScore": 32
+    },
+    {
+      "videoId": "bc6uFV9CJGg",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "eyxmSmjmNS0",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "Z1RJmh_OqeA",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "2PXHZqv2-qc",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "7xTGNNLPyMI",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "lXUZvyajciY",
+      "phrase": "probably",
+      "totalScore": 32
+    },
+    {
+      "videoId": "3c-iBn73dDE",
+      "phrase": "database",
+      "totalScore": 32
+    },
+    {
+      "videoId": "B31LgI4Y4DQ",
+      "phrase": "operator",
+      "totalScore": 32
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "phrase": "regression",
+      "totalScore": 32
+    },
+    {
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "elements",
+      "totalScore": 32
+    },
+    {
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "processes",
+      "totalScore": 32
+    },
+    {
+      "videoId": "p0FERNkpyHE",
+      "phrase": "postgress",
+      "totalScore": 32
+    },
+    {
+      "videoId": "KJgsSFOSQv0",
+      "phrase": "variable",
+      "totalScore": 32
+    },
+    {
+      "videoId": "KJgsSFOSQv0",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "VyWAvY2CF9c",
+      "phrase": "training",
+      "totalScore": 32
+    },
+    {
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "different",
+      "totalScore": 32
+    },
+    {
+      "videoId": "8ext9G7xspg",
+      "phrase": "actually",
+      "totalScore": 32
+    },
+    {
+      "videoId": "8ext9G7xspg",
+      "phrase": "function",
+      "totalScore": 32
+    },
+    {
+      "videoId": "8ext9G7xspg",
+      "phrase": "computer",
+      "totalScore": 32
+    }
+  ]
+}

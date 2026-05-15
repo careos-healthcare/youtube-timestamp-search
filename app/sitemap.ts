@@ -34,6 +34,7 @@ const STATIC_PAGES = [
   "/search-youtube-captions",
   "/stats",
   "/trending",
+  "/moments",
 ];
 
 export const revalidate = 3600;

@@ -1,5 +1,5 @@
 import { PRODUCT_META_DESCRIPTION, PRODUCT_TAGLINE } from "@/lib/product-copy";
-import { buildPublicMomentUrl, buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
+import { buildMomentsIndexPath, buildPublicMomentUrl, buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
 
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
 
@@ -57,6 +57,35 @@ export function buildTranscriptsIndexStructuredData(videoCount: number) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: getSiteUrl() },
           { "@type": "ListItem", position: 2, name: "Video index", item: pageUrl },
+        ],
+      },
+    ],
+  };
+}
+
+/** Discovery hub for curated canonical moment URLs. */
+export function buildMomentsDiscoveryStructuredData(momentCount: number) {
+  const siteUrl = getSiteUrl();
+  const pageUrl = `${siteUrl}${buildMomentsIndexPath()}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": pageUrl,
+        url: pageUrl,
+        name: "Best searchable video moments",
+        description:
+          "Curated list of high-signal transcript moments from the public index, grouped for discovery.",
+        numberOfItems: momentCount,
+        isPartOf: { "@type": "WebSite", name: "YouTube Time Search", url: siteUrl },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+          { "@type": "ListItem", position: 2, name: "Best moments", item: pageUrl },
         ],
       },
     ],

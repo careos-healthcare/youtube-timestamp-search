@@ -19,6 +19,9 @@ export function SiteFooter() {
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
         <span>Recent searches stay on this device only.</span>
         <span>Not affiliated with YouTube.</span>
+        <Link href="/moments" className="hover:text-slate-200">
+          Best moments
+        </Link>
         <Link href="/trending" className="hover:text-slate-200">
           Trending
         </Link>
