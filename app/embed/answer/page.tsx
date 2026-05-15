@@ -12,7 +12,7 @@ type EmbedAnswerPageProps = {
 export default async function EmbedAnswerPage({ searchParams }: EmbedAnswerPageProps) {
   const { q } = await searchParams;
   const phrase = sanitizeSearchPhrase(q ?? "what is rag");
-  const landing = await getSearchLandingData(phrase, 6, { timeoutMs: 7000 });
+  const landing = await getSearchLandingData(phrase, 6, { timeoutMs: 7000, bypassCache: true });
   const answer = landing.answer;
   const trackedSearch = appendShareUtm(`${getSiteUrl()}${buildSearchPath(phrase)}`, {
     source: "embed",

@@ -12,10 +12,23 @@ import {
   getSemanticFallbackReason,
 } from "@/lib/search/search-config";
 import { searchSemanticTranscripts } from "@/lib/search/semantic-search-provider";
-import type { HybridSearchDiagnostics, IndexedTranscriptSearchResult } from "@/lib/search/types";
+import type {
+  HybridSearchDiagnostics,
+  IndexedTranscriptSearchResult,
+  SemanticSearchHit,
+} from "@/lib/search/types";
 
-async function enrichResultsWithMetadata(results: IndexedTranscriptSearchResult[]) {
-  const enrichCap = maxHybridMetadataEnrichVideos();
+async function enrichResultsWithMetadata(
+  results: IndexedTranscriptSearchResult[],
+  enrichCapOverride?: number | null
+) {
+  const enrichCap =
+    enrichCapOverride !== undefined ? enrichCapOverride : maxHybridMetadataEnrichVideos();
+
+  if (enrichCap === 0) {
+    return results.map((r) => ({ ...r }));
+  }
+
   const toEnrich = enrichCap != null && results.length > enrichCap ? results.slice(0, enrichCap) : results;
   const enriched: IndexedTranscriptSearchResult[] = [];
 
@@ -62,10 +75,20 @@ function buildDiagnostics(
   };
 }
 
+export type HybridSearchTranscriptOptions = {
+  momentLimit?: number;
+  /** Skip semantic retrieval and ranking (keyword-only hybrid). */
+  skipSemantic?: boolean;
+  /** Hard cap on keyword transcript fetch size (before corpus caps). */
+  keywordFetchCeiling?: number;
+  /** Max videos to enrich with transcript metadata (0 = skip enrichment I/O). */
+  enrichVideoCap?: number | null;
+};
+
 export async function hybridSearchTranscripts(
   query: string,
   limit = 20,
-  options?: { momentLimit?: number }
+  options?: HybridSearchTranscriptOptions
 ): Promise<{
   results: IndexedTranscriptSearchResult[];
   moments: RankableMoment[];
@@ -88,10 +111,15 @@ export async function hybridSearchTranscripts(
     };
   }
 
-  const keywordFetchLimit = cappedHybridFetchSize(Math.max(limit * 2, 30));
+  const baseKeywordFetch = cappedHybridFetchSize(Math.max(limit * 2, 30));
+  const keywordFetchLimit =
+    options?.keywordFetchCeiling != null
+      ? Math.min(options.keywordFetchCeiling, baseKeywordFetch)
+      : baseKeywordFetch;
 
   const keywordResults = await enrichResultsWithMetadata(
-    await searchKeywordTranscripts(trimmed, keywordFetchLimit)
+    await searchKeywordTranscripts(trimmed, keywordFetchLimit),
+    options?.enrichVideoCap
   );
 
   if (!config.hybridSearchEnabled) {
@@ -108,19 +136,26 @@ export async function hybridSearchTranscripts(
     };
   }
 
-  const semantic = await searchSemanticTranscripts(trimmed, cappedHybridFetchSize(Math.max(limit * 2, 30)));
-  const semanticFallback =
-    config.semanticSearchEnabled &&
-    (semantic.hits.length === 0 || Boolean(semantic.fallbackReason));
+  const semantic = options?.skipSemantic
+    ? { provider: "skipped", hits: [] as SemanticSearchHit[], fallbackReason: undefined as string | undefined }
+    : await searchSemanticTranscripts(trimmed, cappedHybridFetchSize(Math.max(limit * 2, 30)));
 
-  const fallbackReason =
-    semantic.fallbackReason ??
-    (semantic.hits.length === 0 && config.semanticSearchEnabled ? "semantic_zero_hits" : getSemanticFallbackReason());
+  const semanticHits: SemanticSearchHit[] = semantic.hits;
+
+  const semanticFallback = options?.skipSemantic
+    ? true
+    : config.semanticSearchEnabled &&
+      (semanticHits.length === 0 || Boolean(semantic.fallbackReason));
+
+  const fallbackReason = options?.skipSemantic
+    ? "skip_semantic"
+    : semantic.fallbackReason ??
+      (semanticHits.length === 0 && config.semanticSearchEnabled ? "semantic_zero_hits" : getSemanticFallbackReason());
 
   const ranked = rankIndexedResults(
     trimmed,
     keywordResults,
-    semantic.hits,
+    semanticHits,
     options?.momentLimit ?? limit * 2
   );
 
@@ -129,7 +164,7 @@ export async function hybridSearchTranscripts(
     moments: ranked.moments,
     diagnostics: buildDiagnostics({
       keywordResultCount: keywordResults.length,
-      semanticResultCount: semantic.hits.length,
+      semanticResultCount: semanticHits.length,
       hybridApplied: true,
       semanticFallback,
       fallbackReason: semanticFallback ? fallbackReason : undefined,

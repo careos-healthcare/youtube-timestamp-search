@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 
 import { trackServerEvent } from "@/lib/analytics";
 import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
+import {
+  getSearchLandingDiagnosticsLatest,
+  getSearchLandingDiagnosticsRecent,
+} from "@/lib/search/search-runtime-diagnostics";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -20,6 +24,8 @@ export async function GET(request: Request) {
     semanticFallback: diagnostics.semanticFallback,
   });
 
+  const latest = getSearchLandingDiagnosticsLatest();
+
   return NextResponse.json({
     query,
     resultCount: results.length,
@@ -30,6 +36,13 @@ export async function GET(request: Request) {
     fallbackReason: diagnostics.fallbackReason ?? null,
     diagnostics,
     results,
+    degraded: latest?.degraded ?? false,
+    timeoutPhase: latest?.timeoutPhase ?? null,
+    queryComplexity: latest?.queryComplexity ?? null,
+    searchLandingDiagnostics: {
+      latest,
+      recent: getSearchLandingDiagnosticsRecent(),
+    },
   });
 }
 
@@ -51,6 +64,8 @@ export async function POST(request: Request) {
       semanticFallback: diagnostics.semanticFallback,
     });
 
+    const latest = getSearchLandingDiagnosticsLatest();
+
     return NextResponse.json({
       query,
       resultCount: results.length,
@@ -61,6 +76,13 @@ export async function POST(request: Request) {
       fallbackReason: diagnostics.fallbackReason ?? null,
       diagnostics,
       results,
+      degraded: latest?.degraded ?? false,
+      timeoutPhase: latest?.timeoutPhase ?? null,
+      queryComplexity: latest?.queryComplexity ?? null,
+      searchLandingDiagnostics: {
+        latest,
+        recent: getSearchLandingDiagnosticsRecent(),
+      },
     });
   } catch {
     return NextResponse.json({ error: "Indexed transcript search failed." }, { status: 500 });
