@@ -22,7 +22,8 @@ import { getSearchLandingData } from "../lib/search-landing-engine";
 import { buildMomentSitemapEntries } from "../lib/moment-sitemap";
 import { SITEMAP_INCLUDE_MOMENTS } from "../lib/sitemap-config";
 import { listAllIndexedVideoIds } from "../lib/indexed-videos";
-import { getSiteUrl, buildVideoPath } from "../lib/seo";
+import { loadPublicMoments } from "../lib/moments/load-public-moments";
+import { buildPublicMomentPath, buildVideoPath, getSiteUrl } from "../lib/seo";
 
 const MIN_VISIBLE_TEXT = 200;
 const VIDEO_SAMPLE_SIZE = 20;
@@ -69,7 +70,7 @@ function isQuickMode() {
 }
 
 function isVideoPath(path: string) {
-  return path.startsWith("/video/");
+  return path.startsWith("/video/") || path.startsWith("/moment/");
 }
 
 function isAbortOrTimeout(error: unknown): boolean {
@@ -559,6 +560,10 @@ async function buildFullAuditPaths(): Promise<Array<{ path: string; isPrioritySe
 }
 
 function buildQuickAuditPaths(): Array<{ path: string; isPrioritySearch?: boolean }> {
+  const publicSamples = loadPublicMoments()
+    .slice(0, 2)
+    .map((m) => ({ path: buildPublicMomentPath(m.id, m.canonicalSlug) }));
+
   return [
     { path: "/" },
     { path: "/transcripts" },
@@ -571,6 +576,7 @@ function buildQuickAuditPaths(): Array<{ path: string; isPrioritySearch?: boolea
     ...SEO_PRIORITY_VIDEO_IDS.map((id) => ({
       path: buildVideoPath(id),
     })),
+    ...publicSamples,
   ];
 }
 

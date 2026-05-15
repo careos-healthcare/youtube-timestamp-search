@@ -1,5 +1,7 @@
 import { PRODUCT_META_DESCRIPTION, PRODUCT_TAGLINE } from "@/lib/product-copy";
-import { buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
+import { buildPublicMomentUrl, buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
+
+import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
 
 export function buildHomeStructuredData() {
   const siteUrl = getSiteUrl();
@@ -90,6 +92,49 @@ export function buildTrendingDiscoveryStructuredData() {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
           { "@type": "ListItem", position: 2, name: TRENDING_PAGE_NAME, item: pageUrl },
+        ],
+      },
+    ],
+  };
+}
+
+/** Canonical public moment page: WebPage + VideoObject + BreadcrumbList. */
+export function buildPublicMomentStructuredData(row: PublicMomentRecord) {
+  const siteUrl = getSiteUrl();
+  const pageUrl = buildPublicMomentUrl(row.id, row.canonicalSlug);
+  const videoPageUrl = `${siteUrl}/video/${row.videoId}`;
+  const title = row.videoTitle?.trim() || `YouTube video ${row.videoId}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": pageUrl,
+        url: pageUrl,
+        name: `Transcript moment: “${row.phrase}” — ${title}`,
+        description: row.snippet.slice(0, 300),
+        isPartOf: { "@type": "WebSite", name: "YouTube Time Search", url: siteUrl },
+        mainEntity: { "@id": `${pageUrl}#video` },
+      },
+      {
+        "@type": "VideoObject",
+        "@id": `${pageUrl}#video`,
+        name: title,
+        description: row.snippet.slice(0, 500),
+        embedUrl: row.youtubeUrl,
+        ...(row.channelName ? { author: { "@type": "Organization", name: row.channelName } } : {}),
+        potentialAction: {
+          "@type": "WatchAction",
+          target: row.youtubeUrl,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+          { "@type": "ListItem", position: 2, name: "Video", item: videoPageUrl },
+          { "@type": "ListItem", position: 3, name: "Moment", item: pageUrl },
         ],
       },
     ],

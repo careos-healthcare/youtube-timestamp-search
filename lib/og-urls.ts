@@ -1,4 +1,11 @@
-import { buildMomentUrl, buildSearchPath, buildVideoPath, getSiteUrl, slugifyQuery } from "@/lib/seo";
+import {
+  buildMomentUrl,
+  buildPublicMomentUrl,
+  buildSearchPath,
+  buildVideoPath,
+  getSiteUrl,
+  slugifyQuery,
+} from "@/lib/seo";
 
 import { appendShareUtm, type ShareCampaign, type ShareChannel, type ShareMedium } from "@/lib/clip-distribution";
 
@@ -22,6 +29,11 @@ export function buildMomentOgImageUrl(
   if (options?.snippet) params.set("snippet", options.snippet.slice(0, 240));
   const query = params.toString();
   return `${getSiteUrl()}/api/og/moment/${encodeURIComponent(videoId)}${query ? `?${query}` : ""}`;
+}
+
+/** OG image for canonical `/moment/[id]/[slug]` pages (materialized id only). */
+export function buildPublicMomentOgImageUrl(momentId: string) {
+  return `${getSiteUrl()}/api/og/moment-public/${encodeURIComponent(momentId)}`;
 }
 
 /** Quote-card OG image (transcript excerpt + timestamp; opens YouTube only). */
@@ -103,5 +115,19 @@ export function buildTrackedMomentPageUrl(
     medium,
     campaign: "moment",
     content: videoId,
+  });
+}
+
+export function buildTrackedPublicMomentPageUrl(
+  id: string,
+  slug: string,
+  source: ShareChannel,
+  medium: ShareMedium = "social"
+) {
+  return appendShareUtm(buildPublicMomentUrl(id, slug), {
+    source,
+    medium,
+    campaign: "moment",
+    content: id,
   });
 }

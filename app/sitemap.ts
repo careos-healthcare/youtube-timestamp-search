@@ -5,14 +5,16 @@ import { buildMomentSitemapEntries } from "@/lib/moment-sitemap";
 import { SITEMAP_INCLUDE_MOMENTS } from "@/lib/sitemap-config";
 import { SEARCH_QUERY_SLUGS, phraseFromSearchSlug } from "@/lib/search-query-seeds";
 import {
-  getSiteUrl,
-  buildTopicPath,
-  buildCreatorPath,
   buildCategoryPath,
+  buildCreatorPath,
+  buildPublicMomentPath,
   buildSearchPath,
-  buildVideoPath,
+  buildTopicPath,
   buildTranscriptsIndexPath,
+  buildVideoPath,
+  getSiteUrl,
 } from "@/lib/seo";
+import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
@@ -101,12 +103,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.9,
   };
 
+  const publicMomentEntries = loadPublicMoments().map((m) => ({
+    url: `${siteUrl}${buildPublicMomentPath(m.id, m.canonicalSlug)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.74,
+  }));
+
   return [
     ...staticEntries.filter((entry) => !entry.url.endsWith("/transcripts")),
     transcriptIndexEntry,
     ...searchEntries,
     ...videoEntries,
     ...momentEntries,
+    ...publicMomentEntries,
     ...categoryEntries,
     ...topicEntries,
     ...creatorEntries,

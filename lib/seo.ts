@@ -4,7 +4,13 @@ import { formatTopicLabel, getTopicBySlug } from "@/lib/topic-keywords";
 import { getCreatorBySlug } from "@/lib/creator-data";
 import { getTranscriptCategoryBySlug } from "@/lib/category-data";
 import { PRODUCT_DESCRIPTION, PRODUCT_WEDGE } from "@/lib/product-copy";
-import { buildMomentOgImageUrl, buildSearchOgImageUrl, buildVideoOgImageUrl } from "@/lib/og-urls";
+import {
+  buildMomentOgImageUrl,
+  buildPublicMomentOgImageUrl,
+  buildSearchOgImageUrl,
+  buildVideoOgImageUrl,
+} from "@/lib/og-urls";
+import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
 import { normalizeText } from "@/lib/youtube";
 
 export const PRODUCTION_SITE_URL = "https://www.youtubetimesearch.com";
@@ -43,6 +49,14 @@ export function buildMomentPath(videoId: string, query: string) {
 
 export function buildMomentUrl(videoId: string, query: string) {
   return `${getSiteUrl()}${buildMomentPath(videoId, query)}`;
+}
+
+export function buildPublicMomentPath(id: string, slug: string) {
+  return `/moment/${id}/${slug}`;
+}
+
+export function buildPublicMomentUrl(id: string, slug: string) {
+  return `${getSiteUrl()}${buildPublicMomentPath(id, slug)}`;
 }
 
 export function buildSearchPath(query: string) {
@@ -251,6 +265,35 @@ export function createMomentMetadata(videoId: string, query: string): Metadata {
       description,
       images: [ogImage],
     },
+  };
+}
+
+export function createPublicMomentMetadata(row: PublicMomentRecord): Metadata {
+  const phrase = normalizeText(row.phrase);
+  const videoLabel = row.videoTitle?.trim() || `video ${row.videoId}`;
+  const title = `“${phrase}” — ${videoLabel}`;
+  const description = `${PRODUCT_WEDGE} Transcript excerpt at ${row.timestamp} in ${videoLabel}. Opens on YouTube at the indexed timestamp.`;
+  const url = buildPublicMomentUrl(row.id, row.canonicalSlug);
+  const ogImage = buildPublicMomentOgImageUrl(row.id);
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
+    robots: { index: true, follow: true },
   };
 }
 

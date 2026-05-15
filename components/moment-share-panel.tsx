@@ -19,6 +19,12 @@ type MomentSharePanelProps = {
   phrase: string;
   videoTitle: string;
   channelName?: string;
+  /** Full tracked URL (UTM). When set, replaces legacy `/video/.../moment` tracked URL. */
+  trackedMomentPageUrl?: string;
+  /** OG image for share cards (e.g. canonical `/api/og/moment-public/[id]`). */
+  momentOgImageUrl?: string;
+  /** Clean landing URL for viral copy (defaults to tracked page URL). */
+  viralMomentPageUrl?: string;
   topResult?: {
     snippet: string;
     timestamp: string;
@@ -32,11 +38,14 @@ export function MomentSharePanel({
   phrase,
   videoTitle,
   channelName,
+  trackedMomentPageUrl,
+  momentOgImageUrl,
+  viralMomentPageUrl,
   topResult,
 }: MomentSharePanelProps) {
   if (!topResult) return null;
 
-  const pageUrl = buildTrackedMomentPageUrl(videoId, phrase, "copy", "copy");
+  const pageUrl = trackedMomentPageUrl ?? buildTrackedMomentPageUrl(videoId, phrase, "copy", "copy");
   const embedUrl = buildEmbedMomentUrl(videoId, phrase, {
     timestamp: topResult.timestamp,
     snippet: topResult.snippet,
@@ -50,9 +59,17 @@ export function MomentSharePanel({
     snippet: topResult.snippet,
     timestampLabel: topResult.timestamp,
     youtubeUrl: topResult.youtubeUrl,
-    momentPageUrl: pageUrl,
+    momentPageUrl: viralMomentPageUrl ?? pageUrl,
     videoId,
   };
+
+  const shareCardOgUrl =
+    momentOgImageUrl ??
+    buildMomentOgImageUrl(videoId, {
+      query: phrase,
+      timestamp: topResult.timestamp,
+      snippet: topResult.snippet,
+    });
 
   return (
     <section className="grid gap-4 rounded-2xl border border-violet-400/20 bg-violet-500/5 p-4 sm:p-5">
@@ -63,14 +80,7 @@ export function MomentSharePanel({
         </p>
       </div>
 
-      <CopyableLink
-        label="Moment share card image"
-        value={buildMomentOgImageUrl(videoId, {
-          query: phrase,
-          timestamp: topResult.timestamp,
-          snippet: topResult.snippet,
-        })}
-      />
+      <CopyableLink label="Moment share card image" value={shareCardOgUrl} />
       <CopyableLink
         label="Quote card image (OG)"
         value={buildQuoteOgImageUrl(videoId, {
@@ -106,11 +116,7 @@ export function MomentSharePanel({
             timestampLabel: topResult.timestamp,
           }),
         }}
-        ogImageUrl={buildMomentOgImageUrl(videoId, {
-          query: phrase,
-          timestamp: topResult.timestamp,
-          snippet: topResult.snippet,
-        })}
+        ogImageUrl={shareCardOgUrl}
       />
 
       <ViralShareBlock context={viralContext} />

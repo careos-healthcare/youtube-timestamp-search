@@ -47,7 +47,10 @@ export type AnalyticsEventName =
   | "first_clip_saved"
   | "saved_page_open"
   | "trending_page_open"
-  | "search_recovery_suggestion_click";
+  | "search_recovery_suggestion_click"
+  | "canonical_moment_page_view"
+  | "canonical_moment_youtube_click"
+  | "canonical_moment_related_click";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

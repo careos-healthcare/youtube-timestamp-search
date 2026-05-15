@@ -33,7 +33,8 @@
     "graph:validate": "tsx scripts/validate-knowledge-graph.ts",
     "analytics:truth-report": "tsx scripts/analytics-truth-report.ts",
     "analytics:import-gsc": "tsx scripts/import-search-console-csv.ts",
-    "validate:query-expansion": "tsx scripts/validate-query-expansion.ts"
+    "validate:query-expansion": "tsx scripts/validate-query-expansion.ts",
+    "materialize:public-moments": "tsx scripts/materialize-public-moments.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
