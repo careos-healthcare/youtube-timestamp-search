@@ -70,8 +70,6 @@ export async function VideoPageHeavy({ videoId, indexed }: VideoPageHeavyProps) 
         </section>
       ) : (
         <>
-          <BestMomentsSection moments={bestMoments} />
-
           {searchableMoments.length > 0 ? (
             <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
               <h2 className="text-base font-semibold text-white">Searchable moments</h2>
@@ -132,6 +130,8 @@ export async function VideoPageHeavy({ videoId, indexed }: VideoPageHeavyProps) 
               </div>
             </section>
           ) : null}
+
+          <BestMomentsSection moments={bestMoments} />
         </>
       )}
 
@@ -231,6 +231,12 @@ export async function VideoPageHeavy({ videoId, indexed }: VideoPageHeavyProps) 
         </section>
       ) : null}
 
+      <InternalLinksPanel
+        relatedPhrases={internalLinks.relatedPhrases}
+        relatedTopics={internalLinks.relatedTopics}
+        relatedVideos={internalLinks.relatedVideos}
+      />
+
       {!transcriptError && channelName ? (
         <ChannelMomentsSection
           channelName={channelName}
@@ -238,12 +244,6 @@ export async function VideoPageHeavy({ videoId, indexed }: VideoPageHeavyProps) 
           moments={channelMoments}
         />
       ) : null}
-
-      <InternalLinksPanel
-        relatedPhrases={internalLinks.relatedPhrases}
-        relatedTopics={internalLinks.relatedTopics}
-        relatedVideos={internalLinks.relatedVideos}
-      />
     </>
   );
 }

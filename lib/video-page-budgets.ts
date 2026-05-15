@@ -6,7 +6,7 @@ export function readVideoPageDataBudgetMs(): number {
     if (Number.isFinite(n) && n >= 2000 && n <= 55000) return Math.floor(n);
   }
   if (typeof process !== "undefined" && process.env.VERCEL === "1") {
-    return 11000;
+    return 9200;
   }
   return 22000;
 }
@@ -18,6 +18,9 @@ export function readVideoPageMaxTranscriptSegments(): number {
     const n = Number(raw);
     if (Number.isFinite(n) && n >= 200) return Math.min(Math.floor(n), 15000);
   }
+  if (typeof process !== "undefined" && process.env.VERCEL === "1") {
+    return 1000;
+  }
   return 2000;
 }
 
@@ -27,6 +30,9 @@ export function readVideoPageProcessingSegmentCap(): number {
   if (raw != null && raw !== "") {
     const n = Number(raw);
     if (Number.isFinite(n) && n >= 150) return Math.min(Math.floor(n), 8000);
+  }
+  if (typeof process !== "undefined" && process.env.VERCEL === "1") {
+    return 520;
   }
   return 1200;
 }

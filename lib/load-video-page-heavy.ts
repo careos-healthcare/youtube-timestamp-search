@@ -55,6 +55,9 @@ async function computePayload(videoId: string, indexed: IndexedVideo | null): Pr
   const maxSegments = readVideoPageMaxTranscriptSegments();
   const procCap = readVideoPageProcessingSegmentCap();
   const onVercel = typeof process !== "undefined" && process.env.VERCEL === "1";
+  const pageBudgetMs = readVideoPageDataBudgetMs();
+  const transcriptSubBudget =
+    onVercel ? Math.min(5600, Math.floor(pageBudgetMs * 0.58)) : null;
 
   let transcript: TranscriptLine[] = [];
   let transcriptError = "";
@@ -64,7 +67,24 @@ async function computePayload(videoId: string, indexed: IndexedVideo | null): Pr
   let fromCache = false;
 
   try {
-    const result = await getTranscriptForVideo(videoId, { maxSegments });
+    const fetchPromise = getTranscriptForVideo(videoId, { maxSegments });
+    const result =
+      transcriptSubBudget != null
+        ? await maybeRace(
+            fetchPromise,
+            transcriptSubBudget,
+            "video_transcript_fetch",
+            null as Awaited<ReturnType<typeof getTranscriptForVideo>> | null
+          )
+        : await fetchPromise;
+
+    if (!result) {
+      return {
+        ...emptyTimeoutPayload(videoId, indexed),
+        fallbackReason: "transcript_fetch_timeout",
+      };
+    }
+
     transcript = result.lines;
     title = result.metadata.title;
     channelName = result.metadata.channelName;
@@ -100,7 +120,7 @@ async function computePayload(videoId: string, indexed: IndexedVideo | null): Pr
     ? []
     : await maybeRace(
         getRelatedIndexedVideos(videoId, 4),
-        onVercel ? 2200 : null,
+        onVercel ? 1800 : null,
         "video_related_videos",
         []
       );
@@ -108,15 +128,15 @@ async function computePayload(videoId: string, indexed: IndexedVideo | null): Pr
   const previewSections = transcriptError
     ? []
     : buildTranscriptPreviewSections(processingTranscript, {
-        linesPerSection: 12,
-        maxSections: 8,
+        linesPerSection: onVercel ? 8 : 12,
+        maxSections: onVercel ? 4 : 8,
       });
 
   const searchableMoments = transcriptError
     ? []
     : buildSearchableMoments(videoId, processingTranscript, suggestions, 8);
 
-  const bestMoments = transcriptError ? [] : extractBestMoments(videoId, processingTranscript, 8);
+  const bestMoments = transcriptError ? [] : extractBestMoments(videoId, processingTranscript, onVercel ? 5 : 8);
 
   const channelPhrase = suggestions[0] ?? title ?? "highlights";
   const channelMoments =
@@ -127,7 +147,7 @@ async function computePayload(videoId: string, indexed: IndexedVideo | null): Pr
             excludeVideoId: videoId,
             limit: 6,
           }),
-          onVercel ? 2800 : null,
+          onVercel ? 1800 : null,
           "video_channel_moments",
           []
         );

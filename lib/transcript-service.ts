@@ -93,16 +93,22 @@ export async function fetchTranscriptByVideoId(videoId: string): Promise<Transcr
   return lines;
 }
 
+function capTranscriptLines(lines: TranscriptLine[], maxSegments?: number) {
+  if (maxSegments == null || maxSegments <= 0) return lines;
+  return lines.length > maxSegments ? lines.slice(0, maxSegments) : lines;
+}
+
 export async function getTranscriptForVideo(
   videoId: string,
   options?: { maxSegments?: number }
 ) {
+  const maxSegments = options?.maxSegments;
   const cached = await getCachedTranscript(videoId, {
-    maxSegments: options?.maxSegments,
+    maxSegments,
   });
   if (cached) {
     return {
-      lines: segmentsToTranscriptLines(cached.segments),
+      lines: capTranscriptLines(segmentsToTranscriptLines(cached.segments), maxSegments),
       metadata: {
         title: cached.title,
         channelName: cached.channelName,
@@ -114,9 +120,10 @@ export async function getTranscriptForVideo(
 
   try {
     const lines = await fetchTranscriptByVideoId(videoId);
+    const capped = capTranscriptLines(lines, maxSegments);
     const refreshed = await getCachedTranscript(videoId);
     return {
-      lines,
+      lines: capped,
       metadata: {
         title: refreshed?.title,
         channelName: refreshed?.channelName,

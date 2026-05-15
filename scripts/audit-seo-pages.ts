@@ -23,7 +23,7 @@ const MIN_VISIBLE_TEXT = 200;
 const VIDEO_SAMPLE_SIZE = 20;
 
 /** Always audit these video pages (heavy / regression targets). */
-const SEO_PRIORITY_VIDEO_IDS = ["7CqJlxBYj-M"];
+const SEO_PRIORITY_VIDEO_IDS = ["7CqJlxBYj-M", "gh2_PhgZGsM"];
 
 type AuditCheck = {
   name: string;
@@ -136,11 +136,32 @@ function auditHtml(html: string, options?: { isPrioritySearch?: boolean }) {
 
 async function fetchPage(baseUrl: string, path: string): Promise<{ status: number; html: string }> {
   const url = `${baseUrl.replace(/\/$/, "")}${path}`;
-  const response = await fetch(url, {
-    headers: { "User-Agent": "youtube-timestamp-search-seo-audit/1.0" },
-  });
-  const html = await response.text();
-  return { status: response.status, html };
+  const maxAttempts = 2;
+  let lastStatus = 0;
+  let lastHtml = "";
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    const response = await fetch(url, {
+      headers: { "User-Agent": "youtube-timestamp-search-seo-audit/1.0" },
+      signal: AbortSignal.timeout(50000),
+    });
+    lastStatus = response.status;
+    lastHtml = await response.text();
+
+    if (lastStatus === 200) {
+      return { status: lastStatus, html: lastHtml };
+    }
+
+    if (lastStatus !== 502 && lastStatus !== 503 && lastStatus !== 504 && lastStatus !== 429) {
+      return { status: lastStatus, html: lastHtml };
+    }
+
+    if (attempt < maxAttempts - 1) {
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+    }
+  }
+
+  return { status: lastStatus, html: lastHtml };
 }
 
 async function auditPage(
