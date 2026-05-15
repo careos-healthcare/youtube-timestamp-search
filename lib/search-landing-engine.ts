@@ -5,7 +5,9 @@ import { raceWithTimeout, SearchLandingTimeoutError } from "@/lib/search/async-t
 import { buildAnswerDominance, type AnswerDominanceResult } from "@/lib/search/answer-dominance";
 import { getBroadQueryCaps, getQueryComplexity, type QueryComplexity } from "@/lib/search/heavy-query-profile";
 import { hybridSearchTranscripts } from "@/lib/search/hybrid-search-engine";
+import { hybridSearchWithRecovery } from "@/lib/search/hybrid-search-recovery";
 import type { SearchLandingMoment } from "@/lib/search/landing-types";
+import { getContinueExploringPhrases, type RecoveryPath } from "@/lib/search/query-expansion";
 import { synthesizeMultiVideoAnswer, type MultiVideoSynthesis } from "@/lib/search/multi-video-synthesis";
 import { getPeopleAlsoSearched, getRelatedIntentGroups } from "@/lib/search/related-intent";
 import { recordSearchLandingDiagnostics } from "@/lib/search/search-runtime-diagnostics";
@@ -20,6 +22,12 @@ export type SearchLandingLoadMeta = {
   degradedReason?: "timeout" | "error" | "budget" | "broad-query";
   timeoutPhase?: "full" | "keyword-rescue" | "none";
   queryComplexity?: QueryComplexity;
+};
+
+export type SearchLandingRecovery = {
+  appliedQuery: string;
+  path: RecoveryPath | null;
+  explorePhrases: string[];
 };
 
 export type SearchLandingData = {
@@ -40,6 +48,7 @@ export type SearchLandingData = {
     matchCount: number;
   }>;
   loadMeta?: SearchLandingLoadMeta;
+  searchRecovery: SearchLandingRecovery;
 };
 
 export type GetSearchLandingDataOptions = {
@@ -123,7 +132,8 @@ function finalizeLanding(
   peopleAlsoSearched: Array<{ phrase: string; href: string; score: number }>,
   relatedIntentGroups: ReturnType<typeof getRelatedIntentGroups>,
   synthesis: MultiVideoSynthesis,
-  loadMeta?: SearchLandingLoadMeta
+  loadMeta?: SearchLandingLoadMeta,
+  searchRecovery?: SearchLandingRecovery
 ): SearchLandingData {
   const answer = buildAnswerDominance({
     query: trimmed,
@@ -131,6 +141,14 @@ function finalizeLanding(
     relatedPhrases: peopleAlsoSearched.map((item) => item.phrase),
     peopleAlsoSearched,
   });
+
+  const recovery: SearchLandingRecovery =
+    searchRecovery ??
+    ({
+      appliedQuery: trimmed,
+      path: null,
+      explorePhrases: getContinueExploringPhrases(trimmed),
+    } satisfies SearchLandingRecovery);
 
   return {
     phrase: trimmed,
@@ -144,6 +162,7 @@ function finalizeLanding(
     synthesis,
     topVideos: buildTopVideos(hybrid.results),
     loadMeta,
+    searchRecovery: recovery,
   };
 }
 
@@ -170,6 +189,11 @@ export function buildTimeoutFallbackSearchLandingData(phrase: string): SearchLan
     answer,
     synthesis: emptySynthesis(trimmed),
     topVideos: [],
+    searchRecovery: {
+      appliedQuery: trimmed,
+      path: null,
+      explorePhrases: getContinueExploringPhrases(trimmed),
+    },
   };
 }
 
@@ -188,13 +212,14 @@ async function fetchPeopleAlsoBounded(
 
 async function getBroadQueryLanding(trimmed: string): Promise<SearchLandingData> {
   const caps = getBroadQueryCaps();
-  const hybrid = await hybridSearchTranscripts(trimmed, caps.hybridResultLimit, {
+  const recovery = await hybridSearchWithRecovery(trimmed, caps.hybridResultLimit, {
     momentLimit: caps.momentLimit,
     skipSemantic: true,
     keywordFetchCeiling: caps.keywordFetchCeiling,
     enrichVideoCap: caps.enrichVideoCap,
   });
-  const moments = mapMoments(hybrid, trimmed, caps.momentLimit);
+  const { hybrid, appliedQuery, recoveryPath } = recovery;
+  const moments = mapMoments(hybrid, appliedQuery, caps.momentLimit);
   const loadMeta: SearchLandingLoadMeta = {
     timedOut: false,
     degraded: true,
@@ -203,15 +228,20 @@ async function getBroadQueryLanding(trimmed: string): Promise<SearchLandingData>
     queryComplexity: "broad",
   };
 
-  return finalizeLanding(trimmed, hybrid, moments, [], [], emptySynthesis(trimmed), loadMeta);
+  return finalizeLanding(trimmed, hybrid, moments, [], [], emptySynthesis(trimmed), loadMeta, {
+    appliedQuery,
+    path: recoveryPath,
+    explorePhrases: getContinueExploringPhrases(trimmed),
+  });
 }
 
 async function getFullQueryLanding(trimmed: string, limit: number): Promise<SearchLandingData> {
-  const hybrid = await hybridSearchTranscripts(trimmed, 25, { momentLimit: limit });
+  const recovery = await hybridSearchWithRecovery(trimmed, 25, { momentLimit: limit });
+  const { hybrid, appliedQuery, recoveryPath } = recovery;
   const peopleBudget =
     typeof process !== "undefined" && process.env.VERCEL === "1" ? 2000 : 4500;
   const peopleAlsoSearched = await fetchPeopleAlsoBounded(trimmed, 12, peopleBudget);
-  const moments = mapMoments(hybrid, trimmed, limit);
+  const moments = mapMoments(hybrid, appliedQuery, limit);
   const relatedIntentGroups = getRelatedIntentGroups(trimmed);
   const synthesis = synthesizeMultiVideoAnswer(trimmed, moments);
 
@@ -220,17 +250,22 @@ async function getFullQueryLanding(trimmed: string, limit: number): Promise<Sear
     degraded: false,
     timeoutPhase: "none",
     queryComplexity: "normal",
+  }, {
+    appliedQuery,
+    path: recoveryPath,
+    explorePhrases: getContinueExploringPhrases(trimmed),
   });
 }
 
 async function getKeywordRescueLanding(trimmed: string, cap: number): Promise<SearchLandingData> {
-  const hybrid = await hybridSearchTranscripts(trimmed, Math.min(cap, 14), {
+  const recovery = await hybridSearchWithRecovery(trimmed, Math.min(cap, 14), {
     momentLimit: Math.min(cap, 12),
     skipSemantic: true,
     keywordFetchCeiling: 20,
     enrichVideoCap: 4,
   });
-  const moments = mapMoments(hybrid, trimmed, Math.min(cap, 12));
+  const { hybrid, appliedQuery, recoveryPath } = recovery;
+  const moments = mapMoments(hybrid, appliedQuery, Math.min(cap, 12));
   const peopleAlsoSearched: Array<{ phrase: string; href: string; score: number }> = [];
   const relatedIntentGroups: ReturnType<typeof getRelatedIntentGroups> = [];
   const loadMeta: SearchLandingLoadMeta = {
@@ -248,7 +283,12 @@ async function getKeywordRescueLanding(trimmed: string, cap: number): Promise<Se
     peopleAlsoSearched,
     relatedIntentGroups,
     emptySynthesis(trimmed),
-    loadMeta
+    loadMeta,
+    {
+      appliedQuery,
+      path: recoveryPath,
+      explorePhrases: getContinueExploringPhrases(trimmed),
+    }
   );
 }
 

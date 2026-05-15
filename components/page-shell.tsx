@@ -17,8 +17,14 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 pt-2 text-xs text-slate-400 sm:pt-4">
       <p className="mb-2 max-w-2xl text-slate-500">{PRODUCT_TAGLINE}</p>
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
-        <span>We do not store searches.</span>
+        <span>Recent searches stay on this device only.</span>
         <span>Not affiliated with YouTube.</span>
+        <Link href="/trending" className="hover:text-slate-200">
+          Trending
+        </Link>
+        <Link href="/saved" className="hover:text-slate-200">
+          Saved moments
+        </Link>
         <Link href={buildTranscriptsIndexPath()} className="hover:text-slate-200">
           Video index
         </Link>

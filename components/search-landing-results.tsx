@@ -2,9 +2,13 @@
 
 import Link from "next/link";
 
+import { SaveMomentButton } from "@/components/save-moment-button";
+import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
+import type { ViralShareContext } from "@/lib/growth/viral-share-text";
+import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
-import { buildSearchPath } from "@/lib/seo";
+import { buildSearchPath, getSiteUrl } from "@/lib/seo";
 
 type SearchLandingResultsProps = {
   data: SearchLandingData;
@@ -32,7 +36,18 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
         {data.videoCount === 1 ? "" : "s"}.
       </p>
 
-      {visibleMoments.map((moment, index) => (
+      {visibleMoments.map((moment, index) => {
+        const shareCtx: ViralShareContext = {
+          query: data.phrase,
+          videoTitle: moment.videoTitle,
+          channelName: moment.channelName,
+          snippet: moment.snippet,
+          timestampLabel: moment.timestamp,
+          youtubeUrl: moment.youtubeUrl,
+          momentPageUrl: `${getSiteUrl()}${moment.momentPath}`,
+          videoId: moment.videoId,
+        };
+        return (
         <article
           key={`${moment.videoId}-${moment.startSeconds}-${index}`}
           className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 sm:p-5"
@@ -63,13 +78,14 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
                 href={moment.youtubeUrl}
                 target="_blank"
                 rel="noreferrer"
-                onClick={() =>
+                onClick={() => {
+                  recordTimestampClickMilestone({ query: data.phrase, videoId: moment.videoId });
                   trackPersistentEvent("youtube_open", {
                     query: data.phrase,
                     videoId: moment.videoId,
                     timestamp: moment.timestamp,
-                  })
-                }
+                  });
+                }}
                 className="inline-flex h-9 items-center rounded-xl border border-blue-400/30 bg-blue-400/10 px-3 text-sm text-blue-100"
               >
                 Open on YouTube
@@ -87,10 +103,22 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
               >
                 View moment page
               </Link>
+              <SaveMomentButton
+                query={data.phrase}
+                videoId={moment.videoId}
+                title={moment.videoTitle}
+                channel={moment.channelName}
+                timestamp={moment.timestamp}
+                snippet={moment.snippet}
+                youtubeUrl={moment.youtubeUrl}
+                momentPageUrl={moment.momentPath}
+              />
             </div>
+            <ViralShareBlock context={shareCtx} compact />
           </div>
         </article>
-      ))}
+        );
+      })}
 
       {data.topVideos.length > 0 ? (
         <section className="rounded-2xl border border-white/10 bg-white/5 p-4">

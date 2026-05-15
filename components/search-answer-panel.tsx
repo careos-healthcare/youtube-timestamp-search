@@ -2,8 +2,13 @@
 
 import Link from "next/link";
 
+import { SaveMomentButton } from "@/components/save-moment-button";
+import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
+import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
+import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
+import { getSiteUrl } from "@/lib/seo";
 
 type SearchAnswerPanelProps = {
   data: SearchLandingData;
@@ -48,6 +53,11 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
       <div className="space-y-4">
         <div className="flex flex-wrap items-center gap-2">
           <h2 className="text-lg font-semibold text-white sm:text-xl">Best answer</h2>
+          {answer.confidenceLabel === "high" ? (
+            <span className="rounded-full border border-amber-400/35 bg-amber-400/15 px-2.5 py-0.5 text-[11px] font-semibold text-amber-100">
+              Best moment
+            </span>
+          ) : null}
           <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-2.5 py-0.5 text-[11px] font-medium text-emerald-100">
             {confidenceCopy(answer.confidenceLabel)}
           </span>
@@ -75,14 +85,15 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
               href={answer.jumpUrl}
               target="_blank"
               rel="noreferrer"
-              onClick={() =>
+              onClick={() => {
+                recordTimestampClickMilestone({ query: data.phrase, videoId: source.videoId });
                 trackPersistentEvent("youtube_open", {
                   query: data.phrase,
                   videoId: source.videoId,
                   timestamp: range.startLabel,
                   surface: "best_answer",
-                })
-              }
+                });
+              }}
               className="inline-flex h-9 items-center rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 text-sm text-emerald-100"
             >
               Play answer on YouTube
@@ -100,7 +111,34 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
             >
               Open moment page
             </Link>
+            <SaveMomentButton
+              query={data.phrase}
+              videoId={source.videoId}
+              title={source.videoTitle}
+              channel={source.channelName}
+              timestamp={source.timestamp}
+              snippet={answer.answerSnippet}
+              youtubeUrl={answer.jumpUrl}
+              momentPageUrl={source.momentPath}
+            />
           </div>
+          {(() => {
+            const ctx: ViralShareContext = {
+              query: data.phrase,
+              videoTitle: source.videoTitle,
+              channelName: source.channelName,
+              snippet: answer.answerSnippet,
+              timestampLabel: source.timestamp,
+              youtubeUrl: answer.jumpUrl,
+              momentPageUrl: `${getSiteUrl()}${source.momentPath}`,
+              videoId: source.videoId,
+            };
+            return (
+              <div className="mt-3">
+                <ViralShareBlock context={ctx} compact />
+              </div>
+            );
+          })()}
         </div>
 
         {tiered.length > 0 ? (

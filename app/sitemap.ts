@@ -31,6 +31,7 @@ const STATIC_PAGES = [
   "/find-youtube-timestamps",
   "/search-youtube-captions",
   "/stats",
+  "/trending",
 ];
 
 export const revalidate = 3600;

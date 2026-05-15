@@ -7,6 +7,7 @@ const ALLOWED_INTERESTS = new Set([
   "chrome_extension",
   "api_access",
   "save_searches",
+  "weekly_digest",
 ]);
 
 function isValidEmail(email: string) {

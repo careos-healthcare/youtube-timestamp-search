@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 
+import { trackPersistentEvent } from "@/lib/analytics";
 import { ClipBriefPanel } from "@/components/clip-brief-panel";
 import { CopyableLink } from "@/components/copyable-link";
+import { ViralShareBlock } from "@/components/viral-share-block";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
 import { buildContextSentence } from "@/lib/clip-distribution";
+import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import {
   buildAnswerOgImageUrl,
   buildEmbedAnswerUrl,
@@ -15,6 +18,7 @@ import {
   buildSearchOgImageUrl,
   buildTrackedSearchPageUrl,
 } from "@/lib/og-urls";
+import { getSiteUrl } from "@/lib/seo";
 
 type SearchSharePanelProps = {
   phrase: string;
@@ -72,6 +76,13 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
         url: trackedUrl,
       });
       setShared(true);
+      trackPersistentEvent("search_native_share", {
+        query: phrase,
+        resultCount: landing.moments.length,
+        videoCount: landing.videoCount,
+        answerMode: landing.answer.mode,
+        surface: "search_share_panel",
+      });
     } catch {
       // user cancelled
     }
@@ -97,9 +108,9 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
         ) : null}
       </div>
 
-      <CopyableLink label="Search share card image" value={buildSearchOgImageUrl(phrase)} />
+      <CopyableLink label="Search share card image" value={buildSearchOgImageUrl(phrase)} analyticsQuery={phrase} analyticsSurface="search_share" />
       {landing.answer.mode === "answer" && landing.answer.answerSnippet ? (
-        <CopyableLink label="Answer share card image" value={buildAnswerOgImageUrl(phrase)} />
+        <CopyableLink label="Answer share card image" value={buildAnswerOgImageUrl(phrase)} analyticsQuery={phrase} analyticsSurface="search_share" />
       ) : null}
       {topMoment ? (
         <CopyableLink
@@ -109,25 +120,50 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
             timestamp: topMoment.timestamp,
             snippet: topMoment.snippet,
           })}
+          analyticsQuery={phrase}
+          analyticsSurface="search_share"
         />
       ) : null}
 
       <ClipBriefPanel brief={searchBrief} ogImageUrl={buildSearchOgImageUrl(phrase)} />
 
-      <CopyableLink label="Tracked canonical link" value={trackedUrl} />
-      <CopyableLink label="Plain text summary (Reddit / forums)" value={plainSummary} />
+      <CopyableLink label="Tracked canonical link" value={trackedUrl} analyticsQuery={phrase} analyticsSurface="search_share" />
+      <CopyableLink label="Plain text summary (Reddit / forums)" value={plainSummary} analyticsQuery={phrase} analyticsSurface="search_share" />
       <CopyableLink
         label="Embed search widget"
         value={`<iframe src="${embedSearch}" width="100%" height="200" style="border:0;border-radius:12px" loading="lazy" title="Search transcript moments"></iframe>`}
+        analyticsQuery={phrase}
+        analyticsSurface="search_share"
       />
       <CopyableLink
         label="Embed answer widget"
         value={`<iframe src="${embedAnswer}" width="100%" height="240" style="border:0;border-radius:12px" loading="lazy" title="Transcript answer card"></iframe>`}
+        analyticsQuery={phrase}
+        analyticsSurface="search_share"
       />
       {embedMoment ? (
         <CopyableLink
           label="Embed moment card"
           value={`<iframe src="${embedMoment}" width="100%" height="260" style="border:0;border-radius:12px" loading="lazy" title="Timestamped transcript moment"></iframe>`}
+          analyticsQuery={phrase}
+          analyticsSurface="search_share"
+        />
+      ) : null}
+
+      {topMoment ? (
+        <ViralShareBlock
+          context={
+            {
+              query: phrase,
+              videoTitle: topMoment.videoTitle,
+              channelName: topMoment.channelName,
+              snippet: topMoment.snippet,
+              timestampLabel: topMoment.timestamp,
+              youtubeUrl: topMoment.youtubeUrl,
+              momentPageUrl: `${getSiteUrl()}${topMoment.momentPath}`,
+              videoId: topMoment.videoId,
+            } satisfies ViralShareContext
+          }
         />
       ) : null}
 
@@ -168,6 +204,8 @@ export function SearchSharePanel({ phrase, canonicalUrl, landing }: SearchShareP
               key={`${moment.videoId}-${moment.startSeconds}`}
               label={`${moment.timestamp} · ${moment.videoTitle}`}
               value={moment.youtubeUrl}
+              analyticsQuery={phrase}
+              analyticsSurface="search_share_timestamp"
             />
           ))}
         </div>

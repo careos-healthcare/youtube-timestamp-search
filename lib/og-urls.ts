@@ -24,6 +24,14 @@ export function buildMomentOgImageUrl(
   return `${getSiteUrl()}/api/og/moment/${encodeURIComponent(videoId)}${query ? `?${query}` : ""}`;
 }
 
+/** Quote-card OG image (transcript excerpt + timestamp; opens YouTube only). */
+export function buildQuoteOgImageUrl(videoId: string, options: { q: string; t?: string; snippet?: string }) {
+  const params = new URLSearchParams({ videoId, q: options.q });
+  if (options.t) params.set("t", options.t);
+  if (options.snippet) params.set("snippet", options.snippet.slice(0, 240));
+  return `${getSiteUrl()}/api/og/quote?${params.toString()}`;
+}
+
 export function buildVideoOgImageUrl(videoId: string) {
   return `${getSiteUrl()}/api/og/video/${encodeURIComponent(videoId)}`;
 }

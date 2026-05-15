@@ -4,10 +4,13 @@ import Link from "next/link";
 
 import { ClipBriefPanel } from "@/components/clip-brief-panel";
 import { CopyableLink } from "@/components/copyable-link";
+import { ViralShareBlock } from "@/components/viral-share-block";
 import { buildContextSentence } from "@/lib/clip-distribution";
+import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import {
   buildEmbedMomentUrl,
   buildMomentOgImageUrl,
+  buildQuoteOgImageUrl,
   buildTrackedMomentPageUrl,
 } from "@/lib/og-urls";
 
@@ -40,6 +43,17 @@ export function MomentSharePanel({
     channelName,
   });
 
+  const viralContext: ViralShareContext = {
+    query: phrase,
+    videoTitle,
+    channelName,
+    snippet: topResult.snippet,
+    timestampLabel: topResult.timestamp,
+    youtubeUrl: topResult.youtubeUrl,
+    momentPageUrl: pageUrl,
+    videoId,
+  };
+
   return (
     <section className="grid gap-4 rounded-2xl border border-violet-400/20 bg-violet-500/5 p-4 sm:p-5">
       <div>
@@ -54,6 +68,14 @@ export function MomentSharePanel({
         value={buildMomentOgImageUrl(videoId, {
           query: phrase,
           timestamp: topResult.timestamp,
+          snippet: topResult.snippet,
+        })}
+      />
+      <CopyableLink
+        label="Quote card image (OG)"
+        value={buildQuoteOgImageUrl(videoId, {
+          q: phrase,
+          t: topResult.timestamp,
           snippet: topResult.snippet,
         })}
       />
@@ -90,6 +112,8 @@ export function MomentSharePanel({
           snippet: topResult.snippet,
         })}
       />
+
+      <ViralShareBlock context={viralContext} />
 
       <Link href={pageUrl} className="text-sm text-blue-200 hover:text-blue-100">
         Open tracked moment page

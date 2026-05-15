@@ -1,4 +1,4 @@
-import { track } from "@vercel/analytics";
+import { mergeAnalyticsContext } from "@/lib/analytics-context";
 
 export type AnalyticsEventName =
   | "homepage_search"
@@ -33,23 +33,40 @@ export type AnalyticsEventName =
   | "search_pogo_stick"
   | "search_abandon"
   | "search_answer_success"
-  | "search_dwell";
+  | "search_dwell"
+  | "link_copy"
+  | "search_native_share"
+  | "recent_search_click"
+  | "continue_exploring_click"
+  | "search_depth_milestone"
+  | "saved_clip"
+  | "email_capture_prompt_shown"
+  | "email_capture_submit"
+  | "empty_search_recovered";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
 export function trackEvent(name: AnalyticsEventName, payload: AnalyticsPayload = {}) {
+  const merged = mergeAnalyticsContext(payload);
+
   if (typeof window !== "undefined") {
     window.dispatchEvent(
       new CustomEvent("youtube-timestamp-search:analytics", {
-        detail: { name, payload },
+        detail: { name, payload: merged },
       })
     );
 
-    track(name, payload);
+    void import("@vercel/analytics")
+      .then(({ track }) =>
+        track(name, merged as Record<string, string | number | boolean | null>)
+      )
+      .catch(() => {
+        // non-blocking; avoid failing UX if analytics chunk is unavailable
+      });
   }
 
   if (process.env.NODE_ENV !== "production") {
-    console.debug("[analytics]", name, payload);
+    console.debug("[analytics]", name, merged);
   }
 }
 
@@ -60,11 +77,13 @@ export function trackPersistentEvent(name: AnalyticsEventName, payload: Analytic
     return;
   }
 
+  const merged = mergeAnalyticsContext(payload);
+
   const body = JSON.stringify({
     event: name,
-    query: typeof payload.query === "string" ? payload.query : undefined,
-    videoId: typeof payload.videoId === "string" ? payload.videoId : undefined,
-    payload,
+    query: typeof merged.query === "string" ? merged.query : undefined,
+    videoId: typeof merged.videoId === "string" ? merged.videoId : undefined,
+    payload: merged,
   });
 
   try {

@@ -1,7 +1,11 @@
 import Link from "next/link";
 
+import { ContinueExploringSection } from "@/components/continue-exploring-section";
+import { EmailDigestPrompt } from "@/components/email-digest-prompt";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
+import { RecentSearchesPanel } from "@/components/recent-searches-panel";
 import { SearchAnswerPanel } from "@/components/search-answer-panel";
+import { SearchEmptyRecovery } from "@/components/search-empty-recovery";
 import { SearchForm } from "@/components/search-form";
 import { SearchLandingResults } from "@/components/search-landing-results";
 import { SearchLandingThinContent } from "@/components/search-landing-thin-content";
@@ -60,6 +64,14 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
             <h1 className="text-3xl font-semibold text-white sm:text-5xl">
               Exact video moments for &quot;{resolved.phrase}&quot;
             </h1>
+            {!landing.loadMeta?.timedOut &&
+            landing.moments.length > 0 &&
+            landing.searchRecovery.appliedQuery.toLowerCase() !== resolved.phrase.toLowerCase() ? (
+              <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-50">
+                No exact index match for this wording yet — showing the closest transcript hits we have for{" "}
+                <span className="font-semibold">&quot;{landing.searchRecovery.appliedQuery}&quot;</span>.
+              </div>
+            ) : null}
             {landing.loadMeta?.timedOut ? (
               <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
                 The transcript index took longer than usual to respond, so this page loaded without
@@ -89,16 +101,37 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
               <Link href={buildTranscriptsIndexPath()} className="text-blue-200 hover:text-blue-100">
                 Browse video index
               </Link>
+              <Link href="/trending" className="text-blue-200 hover:text-blue-100">
+                Trending & discovery
+              </Link>
             </div>
           </div>
 
           <SearchForm initialPhrase={resolved.phrase} />
+          <RecentSearchesPanel />
+          <EmailDigestPrompt />
         </div>
       </section>
 
       <SearchAnswerPanel data={landing} />
 
       <SearchLandingResults data={landing} />
+
+      {!landing.loadMeta?.timedOut && landing.loadMeta?.degradedReason !== "error" && landing.moments.length === 0 ? (
+        <SearchEmptyRecovery
+          phrase={resolved.phrase}
+          explorePhrases={landing.searchRecovery.explorePhrases}
+          peopleAlsoSearched={landing.peopleAlsoSearched}
+        />
+      ) : null}
+
+      <ContinueExploringSection
+        phrase={resolved.phrase}
+        explorePhrases={landing.searchRecovery.explorePhrases}
+        relatedPhrases={landing.relatedPhrases}
+        peopleAlsoSearched={landing.peopleAlsoSearched}
+        intentGroups={landing.relatedIntentGroups}
+      />
 
       <SearchSharePanel phrase={resolved.phrase} canonicalUrl={canonicalUrl} landing={landing} />
 

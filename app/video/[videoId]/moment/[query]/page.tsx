@@ -82,6 +82,8 @@ export default async function MomentPage({ params }: MomentPageProps) {
             searchedPhrase={phrase}
             videoId={videoId}
             shareUrl={shareUrl}
+            videoTitle={indexed?.title}
+            channelName={indexed?.channelName}
           />
 
           <MomentSharePanel

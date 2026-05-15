@@ -63,6 +63,12 @@ export function SearchLandingThinContent({ phrase, momentCount }: SearchLandingT
         >
           Paste a YouTube URL
         </Link>
+        <Link
+          href="/trending"
+          className="mt-3 ml-0 inline-flex h-10 items-center rounded-full border border-white/10 bg-white/5 px-4 text-sm font-medium text-slate-100 sm:ml-3"
+        >
+          Trending & discovery
+        </Link>
       </div>
     </section>
   );

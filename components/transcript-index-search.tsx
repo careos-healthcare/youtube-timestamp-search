@@ -1,11 +1,12 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useCallback, useState } from "react";
 import Link from "next/link";
 
+import { EmptySearchRecoveryTracker } from "@/components/empty-search-recovery-tracker";
 import { trackEvent } from "@/lib/analytics";
 import { NOT_INDEXED_EMPTY_STATE } from "@/lib/empty-state-copy";
-import { buildMomentPath, buildVideoPath } from "@/lib/seo";
+import { buildMomentPath, buildSearchPath, buildTranscriptsIndexPath, buildVideoPath } from "@/lib/seo";
 
 type IndexedMatch = {
   videoId: string;
@@ -20,15 +21,30 @@ type IndexedMatch = {
   }>;
 };
 
+type SearchIndexResponse = {
+  error?: string;
+  results?: IndexedMatch[];
+  query?: string;
+  appliedQuery?: string;
+  recoveryPath?: string | null;
+  suggestedSearches?: string[];
+  trendingAlternatives?: string[];
+};
+
 export function TranscriptIndexSearch() {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [results, setResults] = useState<IndexedMatch[]>([]);
+  const [meta, setMeta] = useState<{
+    appliedQuery?: string;
+    recoveryPath?: string | null;
+    suggested: string[];
+    trending: string[];
+  }>({ suggested: [], trending: [] });
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const trimmed = query.trim();
+  const runSearch = useCallback(async (raw: string) => {
+    const trimmed = raw.trim();
     if (!trimmed) return;
 
     setIsLoading(true);
@@ -37,28 +53,44 @@ export function TranscriptIndexSearch() {
 
     try {
       const response = await fetch(`/api/search-index?query=${encodeURIComponent(trimmed)}`);
-      const data = (await response.json()) as {
-        error?: string;
-        results?: IndexedMatch[];
-      };
+      const data = (await response.json()) as SearchIndexResponse;
 
       if (!response.ok) {
         setError(data.error ?? "Indexed search failed.");
         setResults([]);
+        setMeta({ suggested: [], trending: [] });
         return;
       }
 
       setResults(data.results ?? []);
+      setMeta({
+        appliedQuery: data.appliedQuery,
+        recoveryPath: data.recoveryPath ?? null,
+        suggested: data.suggestedSearches ?? [],
+        trending: data.trendingAlternatives ?? [],
+      });
+
       if ((data.results ?? []).length === 0) {
         trackEvent("no_results", { queryLength: trimmed.length, surface: "index" });
       }
     } catch {
       setError("Indexed search failed.");
       setResults([]);
+      setMeta({ suggested: [], trending: [] });
     } finally {
       setIsLoading(false);
     }
+  }, []);
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    await runSearch(query);
   }
+
+  const trimmed = query.trim();
+  const showEmpty = !isLoading && trimmed.length > 0 && results.length === 0 && !error;
+  const alternativesShown =
+    showEmpty && (meta.suggested.length > 0 || meta.trending.length > 0);
 
   return (
     <section className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
@@ -70,7 +102,7 @@ export function TranscriptIndexSearch() {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
+        <form onSubmit={(e) => void handleSubmit(e)} className="flex flex-col gap-3 sm:flex-row">
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -88,8 +120,67 @@ export function TranscriptIndexSearch() {
 
         {error ? <p className="text-sm text-red-300">{error}</p> : null}
 
-        {!isLoading && query.trim().length > 0 && results.length === 0 && !error ? (
-          <p className="text-sm text-slate-300">{NOT_INDEXED_EMPTY_STATE}</p>
+        {results.length > 0 &&
+        meta.appliedQuery &&
+        meta.appliedQuery.toLowerCase() !== trimmed.toLowerCase() ? (
+          <p className="rounded-lg border border-amber-400/25 bg-amber-500/10 px-3 py-2 text-xs text-amber-50">
+            Showing index matches for &quot;{meta.appliedQuery}&quot; (expanded from your query).
+          </p>
+        ) : null}
+
+        {showEmpty ? (
+          <div className="rounded-xl border border-white/10 bg-slate-950/50 p-4 text-sm text-slate-300">
+            {alternativesShown ? <EmptySearchRecoveryTracker phrase={trimmed} /> : null}
+            <p className="font-medium text-white">No exact match yet</p>
+            <p className="mt-2">{NOT_INDEXED_EMPTY_STATE}</p>
+            {meta.suggested.length > 0 ? (
+              <div className="mt-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Try next</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {meta.suggested.slice(0, 12).map((p) => (
+                    <button
+                      key={p}
+                      type="button"
+                      onClick={() => {
+                        setQuery(p);
+                        void runSearch(p);
+                      }}
+                      className="inline-flex h-8 items-center rounded-full border border-white/10 px-3 text-xs text-slate-200 hover:bg-white/5"
+                    >
+                      {p}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            {meta.trending.length > 0 ? (
+              <div className="mt-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Trending alternatives</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {meta.trending.map((p) => (
+                    <Link
+                      key={p}
+                      href={buildSearchPath(p)}
+                      className="inline-flex h-8 items-center rounded-full border border-white/10 px-3 text-xs text-slate-200 hover:bg-white/5"
+                    >
+                      {p}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link href="/" className="text-blue-200 hover:text-blue-100">
+                Paste a YouTube URL
+              </Link>
+              <Link href={buildTranscriptsIndexPath()} className="text-blue-200 hover:text-blue-100">
+                Browse index
+              </Link>
+              <Link href="/trending" className="text-blue-200 hover:text-blue-100">
+                Trending
+              </Link>
+            </div>
+          </div>
         ) : null}
 
         {results.length > 0 ? (

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CtaSection } from "@/components/cta-section";
+import { EmailDigestPrompt } from "@/components/email-digest-prompt";
 import { PageShell, SiteFooter } from "@/components/page-shell";
+import { RecentSearchesPanel } from "@/components/recent-searches-panel";
 import { SearchForm } from "@/components/search-form";
 import {
   PRODUCT_BADGE,
@@ -63,11 +65,22 @@ export default async function HomePage() {
           </div>
 
           <SearchForm source="homepage" />
+          <RecentSearchesPanel />
+          <EmailDigestPrompt />
           <CtaSection />
         </div>
       </section>
 
       <TrendingSearchesSection data={trending} />
+
+      <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center sm:p-5">
+        <Link
+          href="/trending"
+          className="text-sm font-medium text-blue-200 hover:text-blue-100"
+        >
+          Open full trending & discovery hub
+        </Link>
+      </section>
 
       <section className="rounded-2xl border border-emerald-400/15 bg-emerald-500/5 p-4 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
