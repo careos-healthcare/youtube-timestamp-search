@@ -41,5 +41,39 @@ Existing events (`saved_clip`, `continue_exploring_click`, `recent_search_click`
 
 ## Deploy / routing notes
 
-- **`/trending`** and **`/saved`** live under the App Router route group **`app/(discovery)/…`** with **`dynamic = "force-dynamic"`** so production always resolves the server route (avoids stale static 404 edge cases on some hosts).
-- After deploy, smoke with `npm run audit:seo:quick` and `curl -I https://www.youtubetimesearch.com/trending`.
+- **`/trending`** and **`/saved`** are implemented at **`app/trending/page.tsx`** and **`app/saved/page.tsx`** with **`dynamic = "force-dynamic"`** so Vercel always runs the App Router handler (URLs unchanged).
+- After changing routing, smoke with `npm run audit:seo:quick` and `curl -I https://www.youtubetimesearch.com/trending`.
+
+## Post-deploy verification (commit `05c47bd` and follow-up)
+
+**Repo HEAD checked:** `05c47bd` (`git pull origin main` — already up to date). **Same session:** routing was normalized to **`app/trending`** / **`app/saved`** (flat paths) and pushed as a small follow-up commit after this verification.
+
+### Production `curl -I` (www)
+
+| URL | HTTP | Notes |
+| --- | --- | --- |
+| `/trending` | **404** | `x-matched-path: /404`; CDN `age` high — production bundle did **not** expose this route at check time. |
+| `/saved` | **404** | Same as `/trending`. |
+| `/search/productivity` | **200** | `x-matched-path: /search/[query]` |
+| `/search/ai-agents` | **200** | ISR metadata present |
+
+**Homepage HTML spot-check:** Response lacked **Start here** / newer footer copy, so **`www` was behind `main`** at verification time (stale or non-deployed production), not only a path bug.
+
+### Local / CI checks (at `05c47bd` workspace)
+
+| Command | Result |
+| --- | --- |
+| `npm run lint` | **Pass** |
+| `npm run build` | **Pass** (`ƒ /trending`, `ƒ /saved` in build manifest) |
+| `npm run audit:seo:quick` | **Fail** — `FAIL_HTTP` on `/trending` and `/saved` only (production 404 above); other quick URLs **PASS**. |
+
+### Follow-ups (routing / deploy only)
+
+1. **Routing adjustment (after this verification):** pages live at **`app/trending/page.tsx`** and **`app/saved/page.tsx`** (flat paths, same behavior as before) to match typical App Router deploy output.
+2. **Redeploy** Vercel production from **`main`** (confirm Git integration + production branch). Prefer **Redeploy → Clear build cache** once if routes stay missing.
+3. **Re-run** `curl -I` on `/trending` and `/saved` after deploy; expect **200** and for `/saved` HTML to include `noindex` in robots meta.
+4. **Re-run** `npm run audit:seo:quick` after production shows **200** for those paths.
+
+### Remaining risk
+
+- Until production ships the same commit as local **`main`**, onboarding links to **`/trending`** / **`/saved`** will keep hitting **404** regardless of App Router structure. Ops: align Vercel deployment with GitHub `main` and purge stale CDN responses if needed.
