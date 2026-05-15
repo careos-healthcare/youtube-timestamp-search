@@ -6,6 +6,10 @@ import { EmailDigestPrompt } from "@/components/email-digest-prompt";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { RecentSearchesPanel } from "@/components/recent-searches-panel";
 import { SearchForm } from "@/components/search-form";
+import { StartHereSection } from "@/components/start-here-section";
+import { TrendingSearchesSection } from "@/components/trending-searches-section";
+import { getTrendingSearches } from "@/lib/trending-searches";
+import { buildHomeStructuredData } from "@/lib/site-structured-data";
 import {
   PRODUCT_BADGE,
   PRODUCT_DESCRIPTION,
@@ -14,9 +18,6 @@ import {
   PRODUCT_TAGLINE,
   PRODUCT_WEDGE,
 } from "@/lib/product-copy";
-import { TrendingSearchesSection } from "@/components/trending-searches-section";
-import { getTrendingSearches } from "@/lib/trending-searches";
-import { buildHomeStructuredData } from "@/lib/site-structured-data";
 import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath, getSiteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -64,6 +65,8 @@ export default async function HomePage() {
             </p>
           </div>
 
+          <StartHereSection />
+
           <SearchForm source="homepage" />
           <RecentSearchesPanel />
           <EmailDigestPrompt />
@@ -73,12 +76,16 @@ export default async function HomePage() {
 
       <TrendingSearchesSection data={trending} />
 
-      <section className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center sm:p-5">
+      <section className="rounded-2xl border border-fuchsia-400/25 bg-gradient-to-br from-fuchsia-500/15 to-blue-500/10 p-5 text-center sm:p-7">
+        <h2 className="text-lg font-semibold text-white sm:text-xl">Trending & discovery hub</h2>
+        <p className="mx-auto mt-2 max-w-xl text-sm text-slate-300">
+          See what people are searching, newest indexed uploads, and topic entry points — built for return visits.
+        </p>
         <Link
           href="/trending"
-          className="text-sm font-medium text-blue-200 hover:text-blue-100"
+          className="mt-5 inline-flex min-h-12 items-center justify-center rounded-2xl border border-fuchsia-300/40 bg-fuchsia-500/20 px-8 text-base font-semibold text-white hover:bg-fuchsia-500/30"
         >
-          Open full trending & discovery hub
+          Open trending & discovery
         </Link>
       </section>
 

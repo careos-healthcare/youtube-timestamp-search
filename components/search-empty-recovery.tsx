@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 
 import { EmptySearchRecoveryTracker } from "@/components/empty-search-recovery-tracker";
+import { trackPersistentEvent } from "@/lib/analytics";
 import { getRelatedSearchPhrases } from "@/lib/internal-linking";
 import { buildLatestPath, buildSearchPath, buildTranscriptsIndexPath } from "@/lib/seo";
 
@@ -15,28 +18,41 @@ export function SearchEmptyRecovery({ phrase, explorePhrases, peopleAlsoSearched
     (p) => p.toLowerCase() !== phrase.toLowerCase()
   );
 
+  function trackRecovery(target: string, href: string) {
+    trackPersistentEvent("search_recovery_suggestion_click", {
+      query: phrase,
+      surface: "empty_recovery",
+      target,
+      href,
+    });
+  }
+
   return (
     <section className="rounded-2xl border border-amber-400/25 bg-amber-500/10 p-4 sm:p-6">
       <EmptySearchRecoveryTracker phrase={phrase} />
       <h2 className="text-lg font-semibold text-white">No exact match yet</h2>
       <p className="mt-2 text-sm leading-7 text-amber-50/90">
-        The public transcript index changes as new long-form videos are added. Try a nearby phrase or open a
-        single video and search its transcript immediately.
+        The public transcript index changes as new long-form videos are added. Try a nearby phrase or open a single
+        video and search its transcript immediately.
       </p>
 
       {closest.length > 0 ? (
         <div className="mt-4">
           <h3 className="text-xs font-semibold uppercase tracking-wide text-amber-100/80">Closest matches</h3>
           <div className="mt-2 flex flex-wrap gap-2">
-            {closest.slice(0, 14).map((p) => (
-              <Link
-                key={p}
-                href={buildSearchPath(p)}
-                className="inline-flex h-8 items-center rounded-full border border-white/15 bg-white/5 px-3 text-xs text-slate-100 hover:bg-white/10"
-              >
-                {p}
-              </Link>
-            ))}
+            {closest.slice(0, 14).map((p) => {
+              const href = buildSearchPath(p);
+              return (
+                <Link
+                  key={p}
+                  href={href}
+                  onClick={() => trackRecovery(p, href)}
+                  className="inline-flex h-8 items-center rounded-full border border-white/15 bg-white/5 px-3 text-xs text-slate-100 hover:bg-white/10"
+                >
+                  {p}
+                </Link>
+              );
+            })}
           </div>
         </div>
       ) : null}
@@ -49,6 +65,7 @@ export function SearchEmptyRecovery({ phrase, explorePhrases, peopleAlsoSearched
               <Link
                 key={p.href}
                 href={p.href}
+                onClick={() => trackRecovery(p.phrase, p.href)}
                 className="inline-flex h-8 items-center rounded-full border border-white/15 bg-white/5 px-3 text-xs text-slate-100 hover:bg-white/10"
               >
                 {p.phrase}
@@ -74,8 +91,8 @@ export function SearchEmptyRecovery({ phrase, explorePhrases, peopleAlsoSearched
       </div>
 
       <p className="mt-4 text-xs text-amber-100/70">
-        Missing a creator or lecture series? Use the Chrome extension request flow from a watch page so the next
-        crawl can pick it up (no rehosting — transcript links only).
+        Missing a creator or lecture series? Use the Chrome extension request flow from a watch page so the next crawl
+        can pick it up (no rehosting — transcript links only).
       </p>
     </section>
   );

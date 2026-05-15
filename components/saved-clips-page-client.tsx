@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 
+import { trackEvent } from "@/lib/analytics";
 import {
   exportSavedClipsMarkdown,
   exportSavedTimestampLinks,
@@ -26,6 +27,10 @@ export function SavedClipsPageClient() {
 
   const refresh = useCallback(() => {
     setClips(getSavedClips());
+  }, []);
+
+  useEffect(() => {
+    trackEvent("saved_page_open", {});
   }, []);
 
   useEffect(() => {

@@ -32,6 +32,7 @@ const MANUAL_PRIORITY_SEARCH_QUERIES: SearchQuerySeed[] = [
   { slug: "sleep", phrase: "sleep" },
   { slug: "dopamine", phrase: "dopamine" },
   { slug: "focus", phrase: "focus" },
+  { slug: "productivity", phrase: "productivity", title: "Productivity — video moments" },
   { slug: "artificial-intelligence", phrase: "artificial intelligence" },
   { slug: "open-source", phrase: "open source" },
   { slug: "vector-database", phrase: "vector database" },

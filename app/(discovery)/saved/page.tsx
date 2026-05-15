@@ -5,6 +5,9 @@ import { SavedClipsPageClient } from "@/components/saved-clips-page-client";
 import { PRODUCT_TAGLINE } from "@/lib/product-copy";
 import { getSiteUrl } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Saved moments",
   description: `${PRODUCT_TAGLINE} Bookmarked transcript moments on this device.`,

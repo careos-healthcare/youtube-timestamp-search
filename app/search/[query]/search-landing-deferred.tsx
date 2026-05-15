@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ContinueExploringSection } from "@/components/continue-exploring-section";
 import { EmailDigestPrompt } from "@/components/email-digest-prompt";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
+import { PeopleAlsoSearchForStrip } from "@/components/people-also-search-for-strip";
 import { RecentSearchesPanel } from "@/components/recent-searches-panel";
 import { SearchAnswerPanel } from "@/components/search-answer-panel";
 import { SearchEmptyRecovery } from "@/components/search-empty-recovery";
@@ -12,6 +13,8 @@ import { SearchLandingThinContent } from "@/components/search-landing-thin-conte
 import { SearchQueryTracker } from "@/components/search-query-tracker";
 import { SearchSessionTracker } from "@/components/search-session-tracker";
 import { SearchSharePanel } from "@/components/search-share-panel";
+import { SearchTrendingNowStrip } from "@/components/search-trending-now-strip";
+import { TryAnotherAngleSection } from "@/components/try-another-angle-section";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { buildSearchPageUrl } from "@/lib/og-urls";
 import { PRODUCT_WEDGE } from "@/lib/product-copy";
@@ -40,6 +43,14 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
     topVideos: landing.topVideos,
   });
   const canonicalUrl = buildSearchPageUrl(resolved.phrase);
+
+  const showTryAnotherAngleBlock =
+    !landing.loadMeta?.timedOut &&
+    landing.loadMeta?.degradedReason !== "error" &&
+    (landing.searchRecovery.path != null ||
+      landing.moments.length < 6 ||
+      landing.loadMeta?.degradedReason === "budget" ||
+      landing.loadMeta?.degradedReason === "broad-query");
 
   return (
     <>
@@ -117,11 +128,23 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
 
       <SearchLandingResults data={landing} />
 
+      {landing.moments.length > 0 && landing.peopleAlsoSearched.length > 0 ? (
+        <PeopleAlsoSearchForStrip phrase={resolved.phrase} items={landing.peopleAlsoSearched} />
+      ) : null}
+
       {!landing.loadMeta?.timedOut && landing.loadMeta?.degradedReason !== "error" && landing.moments.length === 0 ? (
         <SearchEmptyRecovery
           phrase={resolved.phrase}
           explorePhrases={landing.searchRecovery.explorePhrases}
           peopleAlsoSearched={landing.peopleAlsoSearched}
+        />
+      ) : null}
+
+      {showTryAnotherAngleBlock ? (
+        <TryAnotherAngleSection
+          phrase={resolved.phrase}
+          explorePhrases={landing.searchRecovery.explorePhrases}
+          relatedPhrases={landing.relatedPhrases}
         />
       ) : null}
 
@@ -132,6 +155,8 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
         peopleAlsoSearched={landing.peopleAlsoSearched}
         intentGroups={landing.relatedIntentGroups}
       />
+
+      <SearchTrendingNowStrip />
 
       <SearchSharePanel phrase={resolved.phrase} canonicalUrl={canonicalUrl} landing={landing} />
 

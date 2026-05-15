@@ -42,7 +42,12 @@ export type AnalyticsEventName =
   | "saved_clip"
   | "email_capture_prompt_shown"
   | "email_capture_submit"
-  | "empty_search_recovered";
+  | "empty_search_recovered"
+  | "homepage_topic_chip_click"
+  | "first_clip_saved"
+  | "saved_page_open"
+  | "trending_page_open"
+  | "search_recovery_suggestion_click";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
