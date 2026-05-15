@@ -33,7 +33,9 @@ export async function GET(_request: Request, { params }: RouteProps) {
         badge="Canonical moment"
         accent="violet"
         headline={title}
-        subheadline={channelName ? `${channelName} · “${row.phrase}”` : `“${row.phrase}”`}
+        subheadline={
+          channelName ? `${channelName}${row.phrase ? ` · "${row.phrase}"` : ""}` : row.phrase || undefined
+        }
         quote={quote}
         meta={`${row.timestamp} · indexed transcript`}
         footer="Link opens on YouTube · no video rehosting"
