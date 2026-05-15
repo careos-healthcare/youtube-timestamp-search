@@ -1,3 +1,17 @@
+import type { SemanticRankingSignals } from "@/lib/moments/semantic-moment-ranking";
+import type { SemanticTopicLabeling } from "@/lib/moments/semantic-moment-topics";
+import type { SemanticMomentCitations } from "@/lib/moments/semantic-moment-citations";
+import type { SemanticExtractionKind } from "@/lib/moments/semantic-extractor";
+
+/** Optional enrichment for `/moment/[id]/[slug]`, citations, and future `/topic/[slug]`. */
+export type PublicMomentSemanticLayer = {
+  extractionKinds: SemanticExtractionKind[];
+  rankingSignals: SemanticRankingSignals;
+  totalSemanticRank: number;
+  topics: SemanticTopicLabeling;
+  citations: SemanticMomentCitations;
+};
+
 export type PublicMomentRecord = {
   id: string;
   videoId: string;
@@ -14,6 +28,8 @@ export type PublicMomentRecord = {
   topic?: string;
   qualityScore?: number;
   materializedAt?: string;
+  /** Semantic pipeline output (backward-compatible optional field). */
+  semantic?: PublicMomentSemanticLayer;
 };
 
 export type PublicMomentsFile = {

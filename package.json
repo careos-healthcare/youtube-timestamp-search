@@ -34,7 +34,8 @@
     "analytics:truth-report": "tsx scripts/analytics-truth-report.ts",
     "analytics:import-gsc": "tsx scripts/import-search-console-csv.ts",
     "validate:query-expansion": "tsx scripts/validate-query-expansion.ts",
-    "materialize:public-moments": "tsx scripts/materialize-public-moments.ts"
+    "materialize:public-moments": "tsx scripts/materialize-public-moments.ts",
+    "test:moments": "node --import tsx --test lib/moments/semantic-moments.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
