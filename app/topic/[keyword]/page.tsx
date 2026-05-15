@@ -5,14 +5,26 @@ import { notFound } from "next/navigation";
 import { CtaSection } from "@/components/cta-section";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { TopicClusterLiveSection } from "@/components/topic-cluster-live-section";
+import { TopicIntelligenceHubSection } from "@/components/topic-intelligence-hub-section";
+import { TopicPageViewTracker } from "@/components/topic-page-view-tracker";
 import { getTopicClusterData } from "@/lib/topic-cluster-engine";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SearchForm } from "@/components/search-form";
-import { buildSearchPath, buildTopicPath, buildTopicsIndexPath, buildCreatorPath, buildCreatorsIndexPath, createTopicMetadata } from "@/lib/seo";
+import {
+  buildSearchPath,
+  buildTopicPath,
+  buildTopicsIndexPath,
+  buildCreatorPath,
+  buildCreatorsIndexPath,
+  createTopicMetadata,
+} from "@/lib/seo";
 import { buildTopicContent } from "@/lib/topic-content";
 import { getCreatorsForTopic } from "@/lib/creator-data";
 import { formatTopicLabel, isTopicKeyword, normalizeTopicSlug } from "@/lib/topic-keywords";
+import { getTopicHubBySlug } from "@/lib/topics/topic-index";
+import { buildTopicIntelligenceJsonLd } from "@/lib/topics/topic-jsonld";
+import { createTopicIntelligenceMetadata } from "@/lib/topics/topic-seo";
 
 type TopicPageProps = {
   params: Promise<{ keyword: string }>;
@@ -28,25 +40,86 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {
   const { keyword: rawKeyword } = await params;
-  const keyword = normalizeTopicSlug(rawKeyword);
-  if (!isTopicKeyword(keyword)) {
-    return {};
-  }
+  const slug = normalizeTopicSlug(rawKeyword);
+  const hub = getTopicHubBySlug(slug);
+  const seed = isTopicKeyword(slug);
 
-  return createTopicMetadata(keyword);
+  if (!seed && !hub) {
+    return { title: "Topic | YouTube Time Search" };
+  }
+  if (!seed && hub) {
+    return createTopicIntelligenceMetadata(hub);
+  }
+  if (seed && hub) {
+    const base = createTopicMetadata(slug);
+    if (hub.quality === "thin") {
+      return {
+        ...base,
+        robots: { index: false, follow: true },
+      };
+    }
+    return base;
+  }
+  return createTopicMetadata(slug);
 }
 
 export default async function TopicPage({ params }: TopicPageProps) {
   const { keyword: rawKeyword } = await params;
-  const keyword = normalizeTopicSlug(rawKeyword);
+  const slug = normalizeTopicSlug(rawKeyword);
+  const hub = getTopicHubBySlug(slug);
+  const seed = isTopicKeyword(slug);
 
-  if (!isTopicKeyword(keyword)) {
+  if (!seed && !hub) {
     notFound();
   }
 
-  const content = buildTopicContent(keyword);
-  const relatedCreators = getCreatorsForTopic(keyword, 6);
-  const clusterData = await getTopicClusterData(keyword);
+  const jsonLd = hub ? buildTopicIntelligenceJsonLd(hub) : null;
+
+  if (!seed && hub) {
+    return (
+      <PageShell>
+        <TopicPageViewTracker
+          topicSlug={slug}
+          mode="intelligence"
+          momentCount={hub.moments.length}
+          quality={hub.quality}
+        />
+        {jsonLd ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+        ) : null}
+        <section className="overflow-hidden rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 via-white/5 to-slate-950/80 p-4 shadow-2xl shadow-emerald-500/10 backdrop-blur sm:p-6 lg:p-8">
+          <div className="flex max-w-3xl flex-col gap-4">
+            <span className="inline-flex w-fit rounded-full border border-emerald-300/30 bg-emerald-400/15 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-emerald-100 uppercase">
+              Topic research hub
+            </span>
+            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">{hub.displayTitle}</h1>
+            <p className="text-sm leading-7 text-slate-200 sm:text-lg">{hub.description}</p>
+            <SearchForm initialPhrase={hub.displayTitle} compact />
+            <div className="flex flex-wrap gap-3 text-sm text-slate-300">
+              <Link className="text-emerald-200 hover:text-emerald-100" href={buildTopicsIndexPath()}>
+                All topics
+              </Link>
+              <Link className="text-emerald-200 hover:text-emerald-100" href={buildSearchPath(hub.displayTitle)}>
+                Search this topic
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <TopicIntelligenceHubSection hub={hub} />
+
+        <CtaSection />
+        <SiteFooter />
+      </PageShell>
+    );
+  }
+
+  const content = buildTopicContent(slug);
+  const relatedCreators = getCreatorsForTopic(slug, 6);
+  const clusterData = await getTopicClusterData(slug);
   const internalLinks = buildInternalLinkGraph({
     phrase: clusterData?.searchPhrase ?? content.label,
     topVideos: clusterData?.landing.topVideos,
@@ -54,6 +127,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
   return (
     <PageShell>
+      <TopicPageViewTracker
+        topicSlug={slug}
+        mode="seed"
+        momentCount={hub?.moments.length ?? 0}
+        quality={hub?.quality}
+      />
+      {hub && hub.quality === "hub" ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildTopicIntelligenceJsonLd(hub)) }}
+        />
+      ) : null}
       <section className="overflow-hidden rounded-3xl border border-blue-400/20 bg-gradient-to-br from-blue-500/10 via-white/5 to-slate-950/80 p-4 shadow-2xl shadow-blue-500/10 backdrop-blur sm:p-6 lg:p-8">
         <div className="flex flex-col gap-6">
           <div className="max-w-3xl space-y-4">
@@ -66,7 +151,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
             <p className="text-sm leading-7 text-slate-200 sm:text-lg">{content.intro}</p>
           </div>
 
-          <SearchForm initialPhrase={keyword} compact />
+          <SearchForm initialPhrase={slug} compact />
 
           <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4 sm:p-5">
             <h2 className="text-base font-semibold text-white">Why search transcripts for {content.label.toLowerCase()}?</h2>
@@ -76,6 +161,8 @@ export default async function TopicPage({ params }: TopicPageProps) {
       </section>
 
       {clusterData ? <TopicClusterLiveSection data={clusterData} /> : null}
+
+      {hub ? <TopicIntelligenceHubSection hub={hub} /> : null}
 
       <InternalLinksPanel
         relatedPhrases={internalLinks.relatedPhrases}

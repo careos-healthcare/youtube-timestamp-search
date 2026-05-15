@@ -16,6 +16,7 @@ import {
 } from "@/lib/seo";
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
+import { listTopicHubSlugsForSitemap } from "@/lib/topics/topic-index";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
 
@@ -56,6 +57,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
+
+  const seedTopicUrls = new Set(topicEntries.map((e) => e.url));
+  const intelligenceTopicEntries = listTopicHubSlugsForSitemap()
+    .map((slug) => ({
+      url: `${siteUrl}${buildTopicPath(slug)}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.72,
+    }))
+    .filter((e) => !seedTopicUrls.has(e.url));
 
   const creatorEntries = CREATOR_SLUGS.map((slug) => ({
     url: `${siteUrl}${buildCreatorPath(slug)}`,
@@ -120,6 +131,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...publicMomentEntries,
     ...categoryEntries,
     ...topicEntries,
+    ...intelligenceTopicEntries,
     ...creatorEntries,
   ];
 }

@@ -35,6 +35,7 @@
     "analytics:import-gsc": "tsx scripts/import-search-console-csv.ts",
     "validate:query-expansion": "tsx scripts/validate-query-expansion.ts",
     "materialize:public-moments": "tsx scripts/materialize-public-moments.ts",
+    "report:topic-intelligence": "tsx scripts/build-topic-intelligence-report.ts",
     "test:moments": "node --import tsx --test lib/moments/semantic-moments.test.ts"
   },
   "dependencies": {

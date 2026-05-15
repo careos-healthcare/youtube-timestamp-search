@@ -4,6 +4,17 @@ import Link from "next/link";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { buildTopicPath, buildTopicsIndexPath, buildTranscriptsIndexPath, getSiteUrl } from "@/lib/seo";
 import { getTopicsGroupedByCluster, TOPIC_DATABASE } from "@/lib/topic-keywords";
+import { getTopicHubsByPillar } from "@/lib/topics/topic-index";
+import type { TopicPillar } from "@/lib/topics/topic-hub-types";
+
+const PILLAR_LABELS: Record<TopicPillar, string> = {
+  ai: "AI & machine learning",
+  coding: "Coding & software",
+  startups: "Startups & business",
+  productivity: "Productivity & habits",
+  education: "Education & learning",
+  other: "More hubs",
+};
 
 const title = "Browse YouTube transcript search topics";
 const description =
@@ -32,6 +43,8 @@ export const metadata: Metadata = {
 
 export default function TopicsIndexPage() {
   const groups = getTopicsGroupedByCluster();
+  const momentHubsByPillar = getTopicHubsByPillar(8);
+  const pillarOrder = Object.keys(PILLAR_LABELS) as TopicPillar[];
 
   return (
     <PageShell>
@@ -62,6 +75,44 @@ export default function TopicsIndexPage() {
               Indexed transcripts
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-emerald-400/20 bg-emerald-500/5 p-4 sm:p-5">
+        <div className="mb-4 max-w-3xl">
+          <h2 className="text-lg font-semibold text-white">Topic hubs from indexed moments</h2>
+          <p className="mt-1 text-sm text-slate-400">
+            High-signal research pages derived from public transcript moments — grouped for discovery.
+            Thin exploratory hubs stay useful internally but are marked noindex.
+          </p>
+        </div>
+        <div className="space-y-6">
+          {pillarOrder.map((pillar) => {
+            const hubs = momentHubsByPillar[pillar];
+            if (hubs.length === 0) return null;
+            return (
+              <div key={pillar} className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-100/90">
+                  {PILLAR_LABELS[pillar]}
+                </h3>
+                <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {hubs.map((h) => (
+                    <li key={h.slug}>
+                      <Link
+                        href={buildTopicPath(h.slug)}
+                        className="flex h-full flex-col rounded-xl border border-white/10 bg-slate-950/50 px-3 py-3 text-sm transition hover:border-emerald-300/40 hover:bg-emerald-500/10"
+                      >
+                        <span className="font-medium text-white">{h.displayTitle}</span>
+                        <span className="mt-1 text-xs text-slate-400">
+                          {h.moments.length} moment{h.moments.length === 1 ? "" : "s"} · {h.quality} index
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </section>
 

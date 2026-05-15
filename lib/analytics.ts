@@ -50,7 +50,12 @@ export type AnalyticsEventName =
   | "search_recovery_suggestion_click"
   | "canonical_moment_page_view"
   | "canonical_moment_youtube_click"
-  | "canonical_moment_related_click";
+  | "canonical_moment_related_click"
+  | "topic_page_view"
+  | "topic_moment_click"
+  | "topic_related_click"
+  | "topic_creator_click"
+  | "topic_search_click";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
