@@ -2,13 +2,24 @@
 
 import { useState } from "react";
 
+import { trackPersistentEvent } from "@/lib/analytics";
+
 type CopyableLinkProps = {
   label: string;
   value: string;
   monospace?: boolean;
+  /** When set with `analyticsSurface`, fires `link_copy` after a successful clipboard write. */
+  analyticsQuery?: string;
+  analyticsSurface?: string;
 };
 
-export function CopyableLink({ label, value, monospace = true }: CopyableLinkProps) {
+export function CopyableLink({
+  label,
+  value,
+  monospace = true,
+  analyticsQuery,
+  analyticsSurface,
+}: CopyableLinkProps) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
@@ -16,6 +27,13 @@ export function CopyableLink({ label, value, monospace = true }: CopyableLinkPro
       await navigator.clipboard.writeText(value);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1500);
+      if (analyticsQuery && analyticsSurface) {
+        trackPersistentEvent("link_copy", {
+          query: analyticsQuery,
+          surface: analyticsSurface,
+          label,
+        });
+      }
     } catch {
       setCopied(false);
     }
