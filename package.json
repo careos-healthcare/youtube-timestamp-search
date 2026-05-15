@@ -12,6 +12,7 @@
     "check:transcripts": "tsx scripts/check-transcript-availability.ts",
     "generate:seed-batch": "tsx scripts/generate-seed-batch.ts",
     "audit:seo": "tsx scripts/audit-seo-pages.ts",
+    "audit:seo:quick": "tsx scripts/audit-seo-pages.ts --quick",
     "discover:queries": "tsx scripts/discover-high-intent-queries.ts",
     "refresh:index": "tsx scripts/refresh-search-index.ts",
     "ingest:discover-channels": "tsx scripts/ingest-discover-channels.ts",
