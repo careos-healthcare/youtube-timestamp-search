@@ -19,6 +19,8 @@ type MomentSharePanelProps = {
   phrase: string;
   videoTitle: string;
   channelName?: string;
+  /** When set, shows a link to the on-page citation block (avoids duplicating citation UI). */
+  citationSectionId?: string;
   /** Full tracked URL (UTM). When set, replaces legacy `/video/.../moment` tracked URL. */
   trackedMomentPageUrl?: string;
   /** OG image for share cards (e.g. canonical `/api/og/moment-public/[id]`). */
@@ -38,6 +40,7 @@ export function MomentSharePanel({
   phrase,
   videoTitle,
   channelName,
+  citationSectionId,
   trackedMomentPageUrl,
   momentOgImageUrl,
   viralMomentPageUrl,
@@ -79,6 +82,16 @@ export function MomentSharePanel({
           Quote card, clip brief, and embed code — transcript and timestamp links only.
         </p>
       </div>
+
+      {citationSectionId ? (
+        <p className="text-xs text-slate-400">
+          Need a formal reference?{" "}
+          <a href={`#${citationSectionId}`} className="font-medium text-amber-200/95 hover:text-amber-100">
+            Cite this moment
+          </a>{" "}
+          (Markdown, plain text, academic-style, embed).
+        </p>
+      ) : null}
 
       <CopyableLink label="Moment share card image" value={shareCardOgUrl} />
       <CopyableLink

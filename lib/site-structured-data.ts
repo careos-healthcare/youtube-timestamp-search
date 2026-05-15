@@ -166,6 +166,17 @@ export function buildPublicMomentStructuredData(row: PublicMomentRecord) {
           { "@type": "ListItem", position: 3, name: "Moment", item: pageUrl },
         ],
       },
+      ...(row.snippet.trim().length > 0
+        ? [
+            {
+              "@type": "Quotation",
+              "@id": `${pageUrl}#quote`,
+              text: row.snippet.slice(0, 2000),
+              url: pageUrl,
+              name: `Transcript excerpt: “${row.phrase.slice(0, 120)}${row.phrase.length > 120 ? "…" : ""}”`,
+            },
+          ]
+        : []),
     ],
   };
 }

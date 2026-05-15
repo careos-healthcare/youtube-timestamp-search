@@ -55,7 +55,10 @@ export type AnalyticsEventName =
   | "topic_moment_click"
   | "topic_related_click"
   | "topic_creator_click"
-  | "topic_search_click";
+  | "topic_search_click"
+  | "moment_citation_copy"
+  | "moment_embed_copy"
+  | "moment_youtube_citation_click";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

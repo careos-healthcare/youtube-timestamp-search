@@ -7,6 +7,7 @@ import {
   CanonicalMomentRelatedList,
   CanonicalMomentYoutubeCta,
 } from "@/components/canonical-moment-client";
+import { MomentCitationPanel } from "@/components/moment-citation-panel";
 import { MomentSharePanel } from "@/components/moment-share-panel";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SaveMomentButton } from "@/components/save-moment-button";
@@ -19,6 +20,7 @@ import {
 } from "@/lib/moments/load-public-moments";
 import { getRelatedPublicMoments } from "@/lib/moments/public-moment-related";
 import { isPublicMomentId } from "@/lib/moments/stable-id";
+import { buildMomentCitationBundle } from "@/lib/citations";
 import { buildPublicMomentOgImageUrl, buildTrackedPublicMomentPageUrl } from "@/lib/og-urls";
 import { buildPublicMomentStructuredData } from "@/lib/site-structured-data";
 import { hybridFindMatches } from "@/lib/search/per-video-hybrid-search";
@@ -29,6 +31,7 @@ import {
   buildSearchPath,
   buildTranscriptsIndexPath,
   createPublicMomentMetadata,
+  getSiteUrl,
 } from "@/lib/seo";
 import { fetchTranscriptByVideoId, TranscriptFetchError } from "@/lib/transcript-service";
 
@@ -98,6 +101,17 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
   const structuredData = buildPublicMomentStructuredData({ ...row, snippet, timestamp, youtubeUrl });
   const canonicalPath = buildPublicMomentPath(row.id, row.canonicalSlug);
   const canonicalUrl = buildPublicMomentUrl(row.id, row.canonicalSlug);
+  const citationBundle = buildMomentCitationBundle(getSiteUrl(), {
+    momentId: row.id,
+    canonicalSlug: row.canonicalSlug,
+    videoId: row.videoId,
+    phrase: row.phrase,
+    snippet,
+    videoTitle,
+    channelName,
+    timestamp,
+    youtubeUrl,
+  });
 
   return (
     <PageShell>
@@ -157,11 +171,21 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
         </div>
       </section>
 
+      <MomentCitationPanel
+        citeSectionId="cite-this-moment"
+        bundle={citationBundle}
+        momentId={row.id}
+        videoId={row.videoId}
+        phrase={row.phrase}
+        youtubeUrl={youtubeUrl}
+      />
+
       <MomentSharePanel
         videoId={row.videoId}
         phrase={row.phrase}
         videoTitle={videoTitle}
         channelName={channelName}
+        citationSectionId="cite-this-moment"
         trackedMomentPageUrl={buildTrackedPublicMomentPageUrl(row.id, row.canonicalSlug, "copy", "copy")}
         momentOgImageUrl={buildPublicMomentOgImageUrl(row.id)}
         viralMomentPageUrl={canonicalUrl}
