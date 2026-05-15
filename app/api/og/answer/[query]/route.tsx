@@ -14,7 +14,7 @@ export async function GET(_request: Request, { params }: RouteProps) {
   const { query: rawSlug } = await params;
   const seed = getSearchQuerySeed(rawSlug);
   const phrase = seed?.phrase ?? phraseFromSearchSlug(rawSlug);
-  const landing = await getSearchLandingData(phrase, 8);
+  const landing = await getSearchLandingData(phrase, 8, { timeoutMs: 7000 });
   const answer = landing.answer;
 
   if (answer.mode === "answer" && answer.answerSnippet && answer.sourceMoment) {

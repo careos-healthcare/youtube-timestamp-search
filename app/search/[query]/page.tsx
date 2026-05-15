@@ -28,6 +28,7 @@ import {
 
 export const revalidate = 300;
 export const dynamicParams = true;
+export const maxDuration = 30;
 
 type SearchPageProps = {
   params: Promise<{ query: string }>;
@@ -61,10 +62,12 @@ export async function generateMetadata({ params }: SearchPageProps): Promise<Met
 
 export default async function SearchQueryPage({ params }: SearchPageProps) {
   const { query } = await params;
-  const landing = await getSearchLandingData(
-    resolveSearchQuery(query).phrase,
-    40
-  );
+  const momentLimit =
+    typeof process !== "undefined" && process.env.VERCEL === "1"
+      ? Math.min(40, Number(process.env.SEARCH_PAGE_MOMENT_LIMIT ?? 28))
+      : 40;
+
+  const landing = await getSearchLandingData(resolveSearchQuery(query).phrase, momentLimit);
   const resolved = resolveSearchQuery(query, landing.moments.length);
 
   if (!resolved.isValid) {
@@ -106,10 +109,27 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
             <h1 className="text-3xl font-semibold text-white sm:text-5xl">
               Exact video moments for &quot;{phrase}&quot;
             </h1>
+            {landing.loadMeta?.timedOut ? (
+              <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
+                The transcript index took longer than usual to respond, so this page loaded without
+                live results. Use the search box below, try again in a moment, or{" "}
+                <Link href="/" className="text-amber-50 underline underline-offset-2">
+                  paste a YouTube URL
+                </Link>{" "}
+                to search inside a single video immediately.
+              </div>
+            ) : null}
+            {!landing.loadMeta?.timedOut && landing.loadMeta?.degradedReason === "error" ? (
+              <div className="rounded-xl border border-rose-400/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-100">
+                Something went wrong loading live index results. You can still search below or open
+                the homepage to paste a video URL.
+              </div>
+            ) : null}
             <p className="max-w-3xl text-sm leading-7 text-slate-300 sm:text-lg">
-              {PRODUCT_WEDGE} {landing.moments.length} timestamped result
-              {landing.moments.length === 1 ? "" : "s"} across {landing.videoCount} indexed video
-              {landing.videoCount === 1 ? "" : "s"}.
+              {PRODUCT_WEDGE}{" "}
+              {landing.loadMeta?.timedOut || landing.loadMeta?.degradedReason === "error"
+                ? "Indexed transcript search is temporarily unavailable on this request."
+                : `${landing.moments.length} timestamped result${landing.moments.length === 1 ? "" : "s"} across ${landing.videoCount} indexed video${landing.videoCount === 1 ? "" : "s"}.`}
             </p>
             <div className="flex flex-wrap gap-3 text-sm">
               <Link href="/" className="text-blue-200 hover:text-blue-100">
@@ -131,7 +151,7 @@ export default async function SearchQueryPage({ params }: SearchPageProps) {
 
       <SearchSharePanel phrase={phrase} canonicalUrl={canonicalUrl} landing={landing} />
 
-      {landing.moments.length < 3 ? (
+      {landing.loadMeta?.timedOut || landing.loadMeta?.degradedReason === "error" ? null : landing.moments.length < 3 ? (
         <SearchLandingThinContent phrase={phrase} momentCount={landing.moments.length} />
       ) : null}
 

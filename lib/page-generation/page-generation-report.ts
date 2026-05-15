@@ -89,7 +89,7 @@ export async function runPageGeneration(limit = 40): Promise<PageGenerationResul
         ? opportunity.clusterLabel ?? opportunity.phrase
         : opportunity.phrase;
 
-    const landing = await getSearchLandingData(searchPhrase, 20);
+    const landing = await getSearchLandingData(searchPhrase, 20, { disableTimeout: true });
     const quality = evaluatePageQuality({
       phrase: opportunity.phrase,
       pageType: opportunity.pageType,

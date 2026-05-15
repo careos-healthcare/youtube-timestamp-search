@@ -81,7 +81,7 @@ export async function buildKnowledgeGraph(sampleQueryLimit = 8): Promise<Knowled
 
   const synthesisSamples = [];
   for (const seed of PRIORITY_SEARCH_QUERIES.slice(0, sampleQueryLimit)) {
-    const landing = await getSearchLandingData(seed.phrase, 20);
+    const landing = await getSearchLandingData(seed.phrase, 20, { disableTimeout: true });
     synthesisSamples.push(synthesizeMultiVideoAnswer(seed.phrase, landing.moments));
     entities = mergeEntities(entities, extractEntitiesFromPhrase(seed.phrase, 3));
   }

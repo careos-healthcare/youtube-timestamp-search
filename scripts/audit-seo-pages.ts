@@ -238,7 +238,7 @@ async function buildQualityMetrics() {
   const searchAudits = await Promise.all(
     SEARCH_QUERY_SLUGS.map(async (slug) => {
       const phrase = phraseFromSearchSlug(slug);
-      const data = await getSearchLandingData(phrase);
+      const data = await getSearchLandingData(phrase, 40, { disableTimeout: true });
       return { slug, phrase, momentCount: data.moments.length, videoCount: data.videoCount };
     })
   );

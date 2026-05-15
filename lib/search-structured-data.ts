@@ -66,13 +66,18 @@ export function buildSearchLandingStructuredData(data: SearchLandingData) {
     })),
   };
 
+  const timedOut = Boolean(data.loadMeta?.timedOut);
+  const pageDescription = timedOut
+    ? `This search page is available for "${phrase}". The live index was slow to respond; use the search box below or paste a YouTube URL on the homepage to search transcripts.`
+    : `Find exact useful moments about "${phrase}" inside long-form YouTube videos.`;
+
   const graph: Record<string, unknown>[] = [
     {
       "@type": "WebPage",
       "@id": pageUrl,
       url: pageUrl,
       name: `Search inside video for "${phrase}"`,
-      description: `Find exact useful moments about "${phrase}" inside long-form YouTube videos.`,
+      description: pageDescription,
       isPartOf: { "@type": "WebSite", name: "YouTube Time Search", url: getSiteUrl() },
     },
     breadcrumb,

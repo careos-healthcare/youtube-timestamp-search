@@ -12,7 +12,7 @@ type EmbedSearchPageProps = {
 export default async function EmbedSearchPage({ searchParams }: EmbedSearchPageProps) {
   const { q } = await searchParams;
   const phrase = sanitizeSearchPhrase(q ?? "javascript");
-  const landing = await getSearchLandingData(phrase, 4);
+  const landing = await getSearchLandingData(phrase, 4, { timeoutMs: 7000 });
   const topMoment = landing.moments[0];
   const trackedSearch = appendShareUtm(`${getSiteUrl()}${buildSearchPath(phrase)}`, {
     source: "embed",

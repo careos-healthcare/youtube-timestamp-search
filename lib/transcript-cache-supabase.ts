@@ -266,7 +266,12 @@ export async function searchSupabaseTranscripts(
   if (!normalizedQuery) return [];
 
   const isBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
-  const rpcResultLimit = isBuild ? Math.min(Math.max(limit * 5, 50), 80) : Math.max(limit * 5, 50);
+  const isVercel = typeof process !== "undefined" && process.env.VERCEL === "1";
+  const rpcResultLimit = isBuild
+    ? Math.min(Math.max(limit * 5, 50), 80)
+    : isVercel
+      ? Math.min(Math.max(limit * 5, 50), 95)
+      : Math.max(limit * 5, 50);
 
   try {
     const { data, error } = await supabase.rpc("search_transcript_index", {
@@ -329,7 +334,12 @@ async function searchSupabaseTranscriptsWithIlike(
 
   try {
     const isBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
-    const rowCap = isBuild ? Math.min(Math.max(limit * 10, 50), 120) : Math.max(limit * 10, 50);
+    const isVercel = typeof process !== "undefined" && process.env.VERCEL === "1";
+    const rowCap = isBuild
+      ? Math.min(Math.max(limit * 10, 50), 120)
+      : isVercel
+        ? Math.min(Math.max(limit * 10, 50), 140)
+        : Math.max(limit * 10, 50);
 
     const { data, error } = await supabase
       .from("transcript_segments")

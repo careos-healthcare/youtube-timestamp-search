@@ -1,5 +1,6 @@
 import { embedQuery, EmbeddingProviderError } from "@/lib/search/embedding-provider";
 import { searchEmbeddingsByVector } from "@/lib/search/embedding-store";
+import { raceWithTimeout, SearchLandingTimeoutError } from "@/lib/search/async-timeout";
 import {
   getSearchRuntimeConfig,
   getSemanticFallbackReason,
@@ -42,8 +43,12 @@ class OpenAiVectorSemanticSearchProvider implements SemanticSearchProvider {
   async search(query: string, limit: number): Promise<SemanticSearchHit[]> {
     const config = getSearchRuntimeConfig();
     const embedded = await embedQuery(query);
+    const maxMatches =
+      typeof process !== "undefined" && process.env.VERCEL === "1"
+        ? Math.min(Math.max(limit * 3, 30), 48)
+        : Math.max(limit * 3, 30);
     return searchEmbeddingsByVector(embedded.embedding, {
-      matchCount: Math.max(limit * 3, 30),
+      matchCount: maxMatches,
       minSimilarity: config.minSemanticSimilarity,
       embeddingModel: embedded.model,
     });
@@ -87,7 +92,18 @@ export async function searchSemanticTranscripts(
   }
 
   try {
-    const hits = await provider.search(query, limit);
+    const rawBudget =
+      typeof process !== "undefined" && process.env.VERCEL === "1"
+        ? Number(process.env.SEMANTIC_SEARCH_TIMEOUT_MS ?? 4200)
+        : Number(process.env.SEMANTIC_SEARCH_TIMEOUT_MS ?? 14000);
+    const semanticBudgetMs =
+      Number.isFinite(rawBudget) && rawBudget >= 1500 ? rawBudget : 4200;
+
+    const hits = await raceWithTimeout(
+      provider.search(query, limit),
+      semanticBudgetMs,
+      "semantic_vector_search"
+    );
     if (hits.length === 0) {
       return {
         provider: provider.name,
@@ -98,6 +114,18 @@ export async function searchSemanticTranscripts(
 
     return { provider: provider.name, hits };
   } catch (error) {
+    if (error instanceof SearchLandingTimeoutError) {
+      console.warn("[semantic-search] TIMEOUT", {
+        query: query.slice(0, 120),
+        message: error.message,
+        vercel: process.env.VERCEL,
+      });
+      return {
+        provider: provider.name,
+        hits: [],
+        fallbackReason: "semantic_timeout",
+      };
+    }
     if (error instanceof EmbeddingProviderError) {
       return {
         provider: provider.name,

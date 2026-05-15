@@ -14,7 +14,7 @@ export async function GET(_request: Request, { params }: RouteProps) {
   const { query: rawSlug } = await params;
   const seed = getSearchQuerySeed(rawSlug);
   const phrase = seed?.phrase ?? phraseFromSearchSlug(rawSlug);
-  const landing = await getSearchLandingData(phrase, 5);
+  const landing = await getSearchLandingData(phrase, 5, { timeoutMs: 7000 });
   const topMoment = landing.moments[0];
 
   return new ImageResponse(

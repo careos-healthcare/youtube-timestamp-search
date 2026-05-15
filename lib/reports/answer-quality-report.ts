@@ -10,7 +10,7 @@ export async function buildAnswerQualityReport() {
   const evaluations = [];
 
   for (const query of SAMPLE_QUERIES) {
-    const landing = await getSearchLandingData(query, 24);
+    const landing = await getSearchLandingData(query, 24, { disableTimeout: true });
     const dominance = buildAnswerDominance({
       query,
       moments: landing.moments,

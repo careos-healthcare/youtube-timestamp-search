@@ -24,7 +24,7 @@ async function warmPrioritySearchPages() {
   let warmed = 0;
   for (const slug of SEARCH_QUERY_SLUGS) {
     const phrase = phraseFromSearchSlug(slug);
-    await getSearchLandingData(phrase, 20);
+    await getSearchLandingData(phrase, 20, { disableTimeout: true });
     warmed += 1;
   }
   return warmed;
