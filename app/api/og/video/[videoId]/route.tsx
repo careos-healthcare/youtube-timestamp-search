@@ -15,7 +15,7 @@ type RouteProps = {
 export async function GET(_request: Request, { params }: RouteProps) {
   const { videoId } = await params;
   const indexed = await getIndexedVideoById(videoId);
-  const cached = indexed ? null : await getCachedTranscript(videoId);
+  const cached = indexed ? null : await getCachedTranscript(videoId, { maxSegments: 200 });
   const title = indexed?.title ?? cached?.title ?? `Video ${videoId}`;
   const channelName = indexed?.channelName ?? cached?.channelName;
   const lines = cached ? segmentsToTranscriptLines(cached.segments) : [];

@@ -22,6 +22,9 @@ import { getSiteUrl, buildVideoPath } from "../lib/seo";
 const MIN_VISIBLE_TEXT = 200;
 const VIDEO_SAMPLE_SIZE = 20;
 
+/** Always audit these video pages (heavy / regression targets). */
+const SEO_PRIORITY_VIDEO_IDS = ["7CqJlxBYj-M"];
+
 type AuditCheck = {
   name: string;
   pass: boolean;
@@ -346,10 +349,18 @@ async function main() {
     })),
   ];
 
-  const summaries = await listCachedTranscripts();
-  const videoSample = summaries.slice(0, VIDEO_SAMPLE_SIZE).map((row) => ({
-    path: buildVideoPath(row.videoId),
+  const priorityVideoPaths = SEO_PRIORITY_VIDEO_IDS.map((id) => ({
+    path: buildVideoPath(id),
   }));
+  paths.push(...priorityVideoPaths);
+
+  const summaries = await listCachedTranscripts();
+  const videoSample = summaries
+    .filter((row) => !SEO_PRIORITY_VIDEO_IDS.includes(row.videoId))
+    .slice(0, VIDEO_SAMPLE_SIZE)
+    .map((row) => ({
+      path: buildVideoPath(row.videoId),
+    }));
   paths.push(...videoSample);
 
   const results: PageAuditResult[] = [];

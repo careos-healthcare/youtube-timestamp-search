@@ -187,18 +187,44 @@ function mergeSummaries(summaries: CachedTranscriptSummary[]) {
   return [...merged.values()].sort((a, b) => b.fetchedAt.localeCompare(a.fetchedAt));
 }
 
-export async function getCachedTranscript(videoId: string): Promise<CachedTranscript | null> {
+export type GetCachedTranscriptOptions = {
+  maxSegments?: number;
+};
+
+function truncateCachedTranscript(
+  transcript: CachedTranscript,
+  maxSegments: number
+): CachedTranscript {
+  if (transcript.segments.length <= maxSegments) return transcript;
+  return {
+    ...transcript,
+    segments: transcript.segments.slice(0, maxSegments),
+  };
+}
+
+export async function getCachedTranscript(
+  videoId: string,
+  options?: GetCachedTranscriptOptions
+): Promise<CachedTranscript | null> {
   const normalizedId = normalizeVideoId(videoId);
+  const maxSegments = options?.maxSegments;
 
   const fromMemory = await memoryBackend.read(normalizedId);
   if (fromMemory) {
+    if (maxSegments != null && maxSegments > 0 && fromMemory.segments.length > maxSegments) {
+      return truncateCachedTranscript(fromMemory, maxSegments);
+    }
     return fromMemory;
   }
 
   if (isSupabaseTranscriptStoreConfigured()) {
-    const fromSupabase = await readSupabaseTranscript(normalizedId);
+    const fromSupabase = await readSupabaseTranscript(normalizedId, {
+      maxSegments,
+    });
     if (fromSupabase) {
-      await memoryBackend.write(fromSupabase);
+      if (maxSegments == null || maxSegments <= 0) {
+        await memoryBackend.write(fromSupabase);
+      }
       return fromSupabase;
     }
   }
@@ -210,6 +236,10 @@ export async function getCachedTranscript(videoId: string): Promise<CachedTransc
   const fromFile = await fileBackend.read(normalizedId);
   if (fromFile) {
     await memoryBackend.write(fromFile);
+  }
+
+  if (fromFile && maxSegments != null && maxSegments > 0 && fromFile.segments.length > maxSegments) {
+    return truncateCachedTranscript(fromFile, maxSegments);
   }
 
   return fromFile;

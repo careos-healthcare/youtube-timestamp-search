@@ -80,7 +80,15 @@ function mapSegments(rows: Array<{
     }));
 }
 
-export async function readSupabaseTranscript(videoId: string): Promise<CachedTranscript | null> {
+export type ReadSupabaseTranscriptOptions = {
+  /** When set, only fetch the first N segments (ordered by index). Reduces load for huge transcripts. */
+  maxSegments?: number;
+};
+
+export async function readSupabaseTranscript(
+  videoId: string,
+  options?: ReadSupabaseTranscriptOptions
+): Promise<CachedTranscript | null> {
   const supabase = getSupabaseAdminClient();
   if (!supabase) return null;
 
@@ -99,11 +107,18 @@ export async function readSupabaseTranscript(videoId: string): Promise<CachedTra
 
     const transcriptId = transcript.id;
 
-    const { data: segments, error: segmentsError } = await supabase
+    let segmentsQuery = supabase
       .from("transcript_segments")
       .select("segment_index, text, start_seconds, duration_seconds")
       .eq("transcript_id", transcriptId)
       .order("segment_index", { ascending: true });
+
+    const cap = options?.maxSegments;
+    if (cap != null && Number.isFinite(cap) && cap > 0) {
+      segmentsQuery = segmentsQuery.limit(Math.floor(cap));
+    }
+
+    const { data: segments, error: segmentsError } = await segmentsQuery;
 
     if (segmentsError || !segments || segments.length === 0) {
       return null;

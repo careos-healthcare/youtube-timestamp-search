@@ -93,8 +93,13 @@ export async function fetchTranscriptByVideoId(videoId: string): Promise<Transcr
   return lines;
 }
 
-export async function getTranscriptForVideo(videoId: string) {
-  const cached = await getCachedTranscript(videoId);
+export async function getTranscriptForVideo(
+  videoId: string,
+  options?: { maxSegments?: number }
+) {
+  const cached = await getCachedTranscript(videoId, {
+    maxSegments: options?.maxSegments,
+  });
   if (cached) {
     return {
       lines: segmentsToTranscriptLines(cached.segments),
