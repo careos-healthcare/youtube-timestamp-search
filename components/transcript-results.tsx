@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 import { SaveMomentButton } from "@/components/save-moment-button";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { SearchResultFeedback } from "@/components/search-result-feedback";
 import { ShareActions } from "@/components/share-actions";
 import { ViralShareBlock } from "@/components/viral-share-block";
@@ -13,6 +14,7 @@ import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import { NO_PHRASE_MATCH_COPY } from "@/lib/empty-state-copy";
 import { renderHighlightedText } from "@/lib/highlight";
 import type { SearchResult } from "@/lib/transcript-types";
+import { evaluateMomentQualitySignals } from "@/lib/quality";
 import { buildMomentUrl, getSiteUrl } from "@/lib/seo";
 
 type TranscriptResultsProps = {
@@ -83,6 +85,14 @@ export function TranscriptResults({
           momentPageUrl: `${getSiteUrl()}${result.pageUrl}`,
           videoId,
         };
+        const quality = evaluateMomentQualitySignals({
+          phrase: searchedPhrase,
+          snippet: result.snippet,
+          videoTitle: title,
+          channelName,
+          startSeconds: result.start,
+        });
+        const syntheticId = `${videoId}:${Math.round(result.start)}`;
         return (
           <article
             key={`${result.start}-${result.timestamp}`}
@@ -96,6 +106,14 @@ export function TranscriptResults({
                 <p className="max-w-3xl text-sm leading-7 text-slate-200 sm:text-base">
                   {renderHighlightedText(result.snippet, result.highlightTerms)}
                 </p>
+                <MomentQualitySignals
+                  evaluation={quality}
+                  momentId={syntheticId}
+                  videoId={videoId}
+                  phrase={searchedPhrase}
+                  surface="search_result"
+                  compact
+                />
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

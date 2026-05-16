@@ -71,7 +71,7 @@ export const GENERIC_MOMENT_TOKENS = new Set([
   "within",
 ]);
 
-const TECH_BONUS = new Set([
+export const TECH_BONUS = new Set([
   "mongodb",
   "postgres",
   "kubernetes",

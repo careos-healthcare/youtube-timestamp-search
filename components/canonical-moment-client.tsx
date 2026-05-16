@@ -4,7 +4,9 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { useEffect } from "react";
 
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
+import type { MomentQualityEvaluation } from "@/lib/quality/types";
 import { buildPublicMomentPath } from "@/lib/seo";
 
 export function CanonicalMomentPageViewTracker(props: {
@@ -59,6 +61,7 @@ export type CanonicalMomentRelatedItem = {
   videoTitle?: string;
   videoId: string;
   timestamp: string;
+  quality: MomentQualityEvaluation;
 };
 
 export function CanonicalMomentRelatedList(props: {
@@ -68,7 +71,7 @@ export function CanonicalMomentRelatedList(props: {
   return (
     <ul className="mt-4 grid gap-3 sm:grid-cols-2">
       {props.items.map((m) => (
-        <li key={m.id}>
+        <li key={m.id} className="rounded-xl border border-white/10 bg-white/5 p-3 transition hover:border-violet-400/30 hover:bg-violet-500/10">
           <Link
             href={buildPublicMomentPath(m.id, m.canonicalSlug)}
             onClick={() =>
@@ -78,13 +81,23 @@ export function CanonicalMomentRelatedList(props: {
                 videoId: m.videoId,
               })
             }
-            className="block rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200 transition hover:border-violet-400/30 hover:bg-violet-500/10"
+            className="block text-sm text-slate-200"
           >
             <span className="font-medium text-white">&quot;{m.phrase}&quot;</span>
             <span className="mt-1 block text-xs text-slate-400">
               {m.videoTitle ?? m.videoId} · {m.timestamp}
             </span>
           </Link>
+          <div className="mt-2 border-t border-white/5 pt-2">
+            <MomentQualitySignals
+              evaluation={m.quality}
+              momentId={m.id}
+              videoId={m.videoId}
+              phrase={m.phrase}
+              surface="related_moment"
+              compact
+            />
+          </div>
         </li>
       ))}
     </ul>

@@ -1,4 +1,5 @@
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
+import { momentQualityRankingKey } from "@/lib/quality";
 import { normalizeText } from "@/lib/youtube";
 
 function scoreRelated(a: PublicMomentRecord, b: PublicMomentRecord) {
@@ -47,5 +48,7 @@ export function getRelatedPublicMoments(
     }
   }
 
-  return out.slice(0, limit);
+  return out
+    .slice(0, limit)
+    .sort((a, b) => momentQualityRankingKey(b) - momentQualityRankingKey(a));
 }

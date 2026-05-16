@@ -1,6 +1,7 @@
 import { CREATOR_DATABASE } from "@/lib/creator-data";
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
+import { momentQualityRankingKey } from "@/lib/quality";
 
 import type {
   TopicHub,
@@ -39,8 +40,8 @@ function momentHubScore(m: PublicMomentRecord): number {
   const semanticBoost = (m.semantic?.extractionKinds?.length ?? 0) * 8;
   const rank = m.semantic?.totalSemanticRank ?? 0;
   const multi = wc >= 2 ? 22 : 0;
-  const qs = m.qualityScore ?? 0;
-  return qs + semanticBoost + multi + rank * 0.12;
+  const qk = momentQualityRankingKey(m);
+  return qk + semanticBoost + multi + rank * 0.12;
 }
 
 function matchCreator(channelName?: string): TopicHubCreator | undefined {

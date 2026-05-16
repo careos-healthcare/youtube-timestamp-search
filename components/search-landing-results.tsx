@@ -3,11 +3,13 @@
 import Link from "next/link";
 
 import { SaveMomentButton } from "@/components/save-moment-button";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
 import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
+import { evaluateMomentQualitySignals } from "@/lib/quality";
 import { buildSearchPath, getSiteUrl } from "@/lib/seo";
 
 type SearchLandingResultsProps = {
@@ -47,6 +49,15 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
           momentPageUrl: `${getSiteUrl()}${moment.momentPath}`,
           videoId: moment.videoId,
         };
+        const quality = evaluateMomentQualitySignals({
+          phrase: data.phrase,
+          snippet: moment.snippet,
+          videoTitle: moment.videoTitle,
+          channelName: moment.channelName,
+          materializationScore: moment.score,
+          startSeconds: moment.startSeconds,
+        });
+        const syntheticId = `${moment.videoId}:${Math.round(moment.startSeconds)}`;
         return (
         <article
           key={`${moment.videoId}-${moment.startSeconds}-${index}`}
@@ -73,6 +84,14 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
               {moment.channelName ? <span>· {moment.channelName}</span> : null}
             </div>
             <p className="text-sm leading-7 text-slate-200">{moment.snippet}</p>
+            <MomentQualitySignals
+              evaluation={quality}
+              momentId={syntheticId}
+              videoId={moment.videoId}
+              phrase={data.phrase}
+              surface="search_result"
+              compact
+            />
             <div className="flex flex-wrap gap-2">
               <a
                 href={moment.youtubeUrl}

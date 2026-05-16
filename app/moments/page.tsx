@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageShell, SiteFooter } from "@/components/page-shell";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import {
   getTranscriptCategoryBySlug,
   TRANSCRIPT_CATEGORY_SLUGS,
@@ -9,6 +10,7 @@ import {
 } from "@/lib/category-data";
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
+import { evaluatePublicMoment, momentQualityRankingKey } from "@/lib/quality";
 import { buildCategoryPath, buildPublicMomentPath, createMomentsIndexMetadata } from "@/lib/seo";
 import { buildMomentsDiscoveryStructuredData } from "@/lib/site-structured-data";
 
@@ -92,20 +94,32 @@ export default function MomentsDiscoveryPage() {
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {rows
                   .slice()
-                  .sort((a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0))
-                  .map((m) => (
+                  .sort((a, b) => momentQualityRankingKey(b) - momentQualityRankingKey(a))
+                  .map((m) => {
+                    const ev = evaluatePublicMoment(m);
+                    return (
                     <li key={m.id}>
-                      <Link
-                        href={buildPublicMomentPath(m.id, m.canonicalSlug)}
-                        className="block rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200 transition hover:border-violet-400/30 hover:bg-violet-500/10"
-                      >
-                        <span className="font-medium text-white">&quot;{m.phrase}&quot;</span>
-                        <span className="mt-1 block text-xs text-slate-400">
-                          {m.videoTitle ?? m.videoId} · {m.timestamp}
-                        </span>
-                      </Link>
+                      <div className="block rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200 transition hover:border-violet-400/30 hover:bg-violet-500/10">
+                        <Link href={buildPublicMomentPath(m.id, m.canonicalSlug)} className="block">
+                          <span className="font-medium text-white">&quot;{m.phrase}&quot;</span>
+                          <span className="mt-1 block text-xs text-slate-400">
+                            {m.videoTitle ?? m.videoId} · {m.timestamp}
+                          </span>
+                        </Link>
+                        <div className="mt-2 border-t border-white/5 pt-2">
+                          <MomentQualitySignals
+                            evaluation={ev}
+                            momentId={m.id}
+                            videoId={m.videoId}
+                            phrase={m.phrase}
+                            surface="moments_index"
+                            compact
+                          />
+                        </div>
+                      </div>
                     </li>
-                  ))}
+                  );
+                  })}
               </ul>
             </section>
           );

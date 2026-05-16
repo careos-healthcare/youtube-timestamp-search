@@ -22,6 +22,7 @@ import { labelSemanticMomentTopics } from "@/lib/moments/semantic-moment-topics"
 import { extractSemanticPhrasesFromTranscript, type SemanticExtractionKind } from "@/lib/moments/semantic-extractor";
 import { rejectWeakSemanticPhrase } from "@/lib/moments/semantic-phrase-gates";
 import { computePublicMomentStableId } from "@/lib/moments/stable-id";
+import { momentQualityRankingKey } from "@/lib/quality";
 import { hybridFindMatches } from "@/lib/search/per-video-hybrid-search";
 import { getSiteUrl, slugifyQuery } from "@/lib/seo";
 import { suggestKeywords } from "@/lib/transcript-search";
@@ -396,7 +397,7 @@ async function main() {
     }
   }
 
-  pool.sort((a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0));
+  pool.sort((a, b) => momentQualityRankingKey(b) - momentQualityRankingKey(a));
 
   const byId = new Map<string, Candidate>();
   for (const c of pool) {
@@ -408,7 +409,8 @@ async function main() {
 
   let unique = [...byId.values()].sort(
     (a, b) =>
-      Number(b.fromSemantic) - Number(a.fromSemantic) || (b.qualityScore ?? 0) - (a.qualityScore ?? 0)
+      Number(b.fromSemantic) - Number(a.fromSemantic) ||
+      momentQualityRankingKey(b) - momentQualityRankingKey(a)
   );
   unique = dedupeGreedyNearDuplicates(unique);
 

@@ -3,11 +3,13 @@
 import Link from "next/link";
 
 import { SaveMomentButton } from "@/components/save-moment-button";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
 import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
 import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
+import { evaluateMomentQualitySignals } from "@/lib/quality";
 import { getSiteUrl } from "@/lib/seo";
 
 type SearchAnswerPanelProps = {
@@ -42,6 +44,14 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
 
   const source = answer.sourceMoment;
   const range = answer.timestampRange;
+  const answerQuality = evaluateMomentQualitySignals({
+    phrase: data.phrase,
+    snippet: answer.answerSnippet,
+    videoTitle: source.videoTitle,
+    channelName: source.channelName,
+    startSeconds: source.startSeconds,
+  });
+  const answerMomentId = `${source.videoId}:${Math.round(source.startSeconds)}`;
   const tiered = [
     answer.bestBeginnerExplanation,
     answer.bestTechnicalExplanation,
@@ -74,6 +84,15 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
           </Link>
           {source.channelName ? ` · ${source.channelName}` : ""} at {source.timestamp}
         </p>
+
+        <MomentQualitySignals
+          evaluation={answerQuality}
+          momentId={answerMomentId}
+          videoId={source.videoId}
+          phrase={data.phrase}
+          surface="search_result"
+          compact
+        />
 
         <div className="rounded-xl border border-white/10 bg-slate-950/50 p-4">
           <h3 className="text-sm font-semibold text-white">Jump to exact moment</h3>

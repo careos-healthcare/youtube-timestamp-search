@@ -8,6 +8,7 @@ import {
   CanonicalMomentYoutubeCta,
 } from "@/components/canonical-moment-client";
 import { MomentCitationPanel } from "@/components/moment-citation-panel";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { MomentSharePanel } from "@/components/moment-share-panel";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SaveMomentButton } from "@/components/save-moment-button";
@@ -34,6 +35,7 @@ import {
   getSiteUrl,
 } from "@/lib/seo";
 import { fetchTranscriptByVideoId, TranscriptFetchError } from "@/lib/transcript-service";
+import { evaluatePublicMoment } from "@/lib/quality";
 
 export const revalidate = 3600;
 
@@ -112,6 +114,7 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
     timestamp,
     youtubeUrl,
   });
+  const qualityEval = evaluatePublicMoment({ ...row, snippet });
 
   return (
     <PageShell>
@@ -137,6 +140,13 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
               Bookmarkable canonical page with transcript excerpt and timestamp link. Opens on YouTube — no
               rehosting.
             </p>
+            <MomentQualitySignals
+              evaluation={qualityEval}
+              momentId={row.id}
+              videoId={row.videoId}
+              phrase={row.phrase}
+              surface="canonical_moment"
+            />
           </div>
 
           <article className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-4 sm:p-5">
@@ -212,6 +222,7 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
               videoTitle: m.videoTitle,
               videoId: m.videoId,
               timestamp: m.timestamp,
+              quality: evaluatePublicMoment(m),
             }))}
           />
         </section>

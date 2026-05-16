@@ -37,7 +37,8 @@
     "materialize:public-moments": "tsx scripts/materialize-public-moments.ts",
     "report:topic-intelligence": "tsx scripts/build-topic-intelligence-report.ts",
     "test:moments": "node --import tsx --test lib/moments/semantic-moments.test.ts",
-    "distribution:export-links": "tsx scripts/distribution-export-links.ts"
+    "distribution:export-links": "tsx scripts/distribution-export-links.ts",
+    "validate:quality-signals": "tsx scripts/validate-quality-signals.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

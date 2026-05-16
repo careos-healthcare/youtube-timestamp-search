@@ -1,6 +1,8 @@
 import type { TopicHub } from "@/lib/topics/topic-hub-types";
 import { TopicAnalyticsLink } from "@/components/topic-analytics-link";
+import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { formatTopicLabel } from "@/lib/topic-keywords";
+import { evaluatePublicMoment } from "@/lib/quality";
 import {
   buildCreatorPath,
   buildMomentsIndexPath,
@@ -38,7 +40,9 @@ export function TopicIntelligenceHubSection(props: { hub: TopicHub }) {
           </TopicAnalyticsLink>
         </div>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
-          {hub.moments.slice(0, 12).map((m) => (
+          {hub.moments.slice(0, 12).map((m) => {
+            const quality = evaluatePublicMoment(m);
+            return (
             <li
               key={m.id}
               className="rounded-xl border border-white/10 bg-slate-950/50 p-3 transition hover:border-emerald-400/30"
@@ -54,8 +58,19 @@ export function TopicIntelligenceHubSection(props: { hub: TopicHub }) {
                 <p className="mt-1 text-xs text-slate-400 line-clamp-2">{m.videoTitle}</p>
                 <p className="mt-2 text-xs text-slate-500">{m.timestamp}</p>
               </TopicAnalyticsLink>
+              <div className="mt-2 border-t border-white/5 pt-2">
+                <MomentQualitySignals
+                  evaluation={quality}
+                  momentId={m.id}
+                  videoId={m.videoId}
+                  phrase={m.phrase}
+                  surface="topic_hub"
+                  compact
+                />
+              </div>
             </li>
-          ))}
+          );
+          })}
         </ul>
       </section>
 
