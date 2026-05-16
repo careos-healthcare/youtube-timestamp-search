@@ -17,6 +17,7 @@ import {
   estimateSemanticYieldFromTranscriptShape,
   transcriptLengthQualityBand,
 } from "@/lib/corpus/ingestion-priority";
+import { loadRetrievalPriorityWeights } from "@/lib/corpus/retrieval-priority-weights";
 import { estimateTranscriptHoursFromSegments } from "@/lib/corpus/retrieval-calibration";
 import { computeResearchValueMetricsForMoments } from "@/lib/corpus/research-value-metrics";
 import { scoreRetrievalQuality, type RetrievalQualityResult } from "@/lib/corpus/retrieval-quality";
@@ -276,6 +277,7 @@ async function main() {
   const moments = loadPublicMoments();
   const byVid = momentsByVideo(moments);
   const wave1 = await validateWave1CandidatesFile();
+  const weightConfig = loadRetrievalPriorityWeights();
 
   const videoIds = [...new Set([...byVid.keys(), ...wave1.map((c) => c.videoId)])];
   const tmap = await fetchTranscriptMap(videoIds);
@@ -297,6 +299,7 @@ async function main() {
       segments: segs.length ? segs : [{ text: "(no transcript text)", start: 0 }],
       momentsForVideo: mm.length ? mm : undefined,
       transcriptHours: tr.hours,
+      dimensionWeights: weightConfig.retrievalDimensionWeights,
     });
     const research = computeResearchValueMetricsForMoments(mm, tr.hours);
     videoRows.push({
@@ -335,6 +338,7 @@ async function main() {
       segments: segs.length ? segs : [{ text: c.videoTitle, start: 0 }],
       momentsForVideo: mm.length ? mm : undefined,
       transcriptHours: t.hours,
+      dimensionWeights: weightConfig.retrievalDimensionWeights,
     });
     const ch = channelNorm(c.channelName);
     const dup = Math.min(1, (momentCountByChannel.get(ch) ?? 0) / 42);
@@ -353,6 +357,7 @@ async function main() {
       creatorDuplicationPenalty: dup,
       transcriptLengthQualityBand: lenBand,
       segmentCount: t.segmentCount,
+      weights: weightConfig.ingestionPriority,
     });
     wave1Ranked.push({
       ...c,

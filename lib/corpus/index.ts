@@ -46,3 +46,23 @@ export {
 export type { IngestionPriorityScoreResult, IngestionPriorityBreakdownLine } from "./ingestion-priority";
 export { computeResearchValueMetricsForMoments } from "./research-value-metrics";
 export type { ResearchValueMetrics } from "./research-value-metrics";
+export {
+  loadRetrievalPriorityWeights,
+  normalizeDimensionWeights,
+  PRE_CALIBRATION_INGESTION_PRIORITY,
+  TUNED_INGESTION_PRIORITY,
+  DEFAULT_RETRIEVAL_DIMENSION_WEIGHTS,
+} from "./retrieval-priority-weights";
+export type { IngestionPriorityWeights, RetrievalPriorityWeightsFile } from "./retrieval-priority-weights";
+export {
+  analyzeDimensionPredictiveness,
+  analyzeChannelResearchDensity,
+  analyzeConversationalDriftHeuristic,
+  analyzeExpertVsConversational,
+  compareWave1BatchTrust,
+  deriveDimensionWeightsFromPredictiveness,
+} from "./retrieval-weight-validation";
+export type {
+  Wave1SimulationComparison,
+  ExpertVsConversationalComparison,
+} from "./retrieval-weight-validation";

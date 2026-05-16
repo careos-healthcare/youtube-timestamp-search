@@ -20,6 +20,8 @@ export type RetrievalQualityScoreInput = {
   /** When present, clip / semantic yield uses materialized public moments for this video. */
   momentsForVideo?: PublicMomentRecord[];
   transcriptHours?: number | null;
+  /** Optional override for composite overall (e.g. tuned governance weights). */
+  dimensionWeights?: Partial<Record<RetrievalQualityDimensionId, number>>;
 };
 
 export type RetrievalQualityDimensionId =
@@ -416,22 +418,23 @@ export function scoreRetrievalQuality(input: RetrievalQualityScoreInput): Retrie
     },
   ];
 
-  const weights: Partial<Record<RetrievalQualityDimensionId, number>> = {
-    explanation_density: 0.12,
-    multi_speaker_penalty: 0.06,
-    filler_ratio: 0.08,
-    repeated_phrase_ratio: 0.06,
-    citation_richness: 0.1,
-    technical_terminology_density: 0.1,
-    actionable_tutorial_density: 0.07,
-    concrete_example_density: 0.06,
-    question_answer_density: 0.06,
-    speculation_opinion_ratio: 0.06,
-    transcript_coherence: 0.07,
-    clip_extraction_quality: 0.08,
-    semantic_moment_yield: 0.08,
-    average_accepted_moment_score: 0.07,
-  };
+  const weights: Partial<Record<RetrievalQualityDimensionId, number>> =
+    input.dimensionWeights ?? {
+      explanation_density: 0.12,
+      multi_speaker_penalty: 0.06,
+      filler_ratio: 0.08,
+      repeated_phrase_ratio: 0.06,
+      citation_richness: 0.1,
+      technical_terminology_density: 0.1,
+      actionable_tutorial_density: 0.07,
+      concrete_example_density: 0.06,
+      question_answer_density: 0.06,
+      speculation_opinion_ratio: 0.06,
+      transcript_coherence: 0.07,
+      clip_extraction_quality: 0.08,
+      semantic_moment_yield: 0.08,
+      average_accepted_moment_score: 0.07,
+    };
 
   let wSum = 0;
   let acc = 0;
@@ -446,7 +449,8 @@ export function scoreRetrievalQuality(input: RetrievalQualityScoreInput): Retrie
   const sponsorHits = densityHits(full, /\b(sponsor|sponsored by|brought to you by|ad break)\b/gi);
   const ctaHits = (full.match(CTA_RE) ?? []).length;
   const aiFluffHits = densityHits(full, AI_NEWS_FLUFF_RE) + densityHits(full, TOP_TEN_RE);
-  const drift = filler.raw > 0.42 && techRaw < 0.18;
+  /** Spare procedural/tutorial transcripts from “conversational drift” flag. */
+  const drift = filler.raw > 0.42 && techRaw < 0.18 && actionRaw < 0.45;
 
   let semanticYieldPoor = false;
   if (momentsForVideo && momentsForVideo.length > 0 && hours && hours > 0.08) {

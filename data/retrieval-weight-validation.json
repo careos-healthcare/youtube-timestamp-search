@@ -1,0 +1,555 @@
+{
+  "generatedAt": "2026-05-16T08:21:21.926Z",
+  "predictiveness": [
+    {
+      "dimensionId": "explanation_density",
+      "label": "Explanation density",
+      "pearsonVsCitationsPerHour": 0.07877547098735417,
+      "pearsonVsAcceptedPerHour": -0.2845183933850502,
+      "meanNormalized": 0.19674230678460392,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "multi_speaker_penalty",
+      "label": "Multi-speaker / panel chaos (inverted)",
+      "pearsonVsCitationsPerHour": 0.25237768047094006,
+      "pearsonVsAcceptedPerHour": 0.08835930055280417,
+      "meanNormalized": 0.9739611346159657,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "filler_ratio",
+      "label": "Filler disfluency (inverted)",
+      "pearsonVsCitationsPerHour": 0.14262509640380466,
+      "pearsonVsAcceptedPerHour": -0.03128032358933786,
+      "meanNormalized": 0.8311119891242278,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "repeated_phrase_ratio",
+      "label": "Repeated phrase / loopiness (inverted)",
+      "pearsonVsCitationsPerHour": 0.021065546652330302,
+      "pearsonVsAcceptedPerHour": -0.39303154944528895,
+      "meanNormalized": 0.733280185962321,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "citation_richness",
+      "label": "Citation / evidence language",
+      "pearsonVsCitationsPerHour": 0.1055192016169641,
+      "pearsonVsAcceptedPerHour": -0.0978639351032087,
+      "meanNormalized": 0.0890387710797671,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "technical_terminology_density",
+      "label": "Technical terminology density",
+      "pearsonVsCitationsPerHour": -0.04914859832212295,
+      "pearsonVsAcceptedPerHour": -0.08928339065705451,
+      "meanNormalized": 0.2981215333609713,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "actionable_tutorial_density",
+      "label": "Actionable / procedural language",
+      "pearsonVsCitationsPerHour": 0.10111811556384115,
+      "pearsonVsAcceptedPerHour": 0.24851556465806374,
+      "meanNormalized": 0.14302174064378345,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "concrete_example_density",
+      "label": "Concrete example framing",
+      "pearsonVsCitationsPerHour": -0.07421381398334705,
+      "pearsonVsAcceptedPerHour": -0.22205657565741865,
+      "meanNormalized": 0.15236060549977257,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "question_answer_density",
+      "label": "Question–answer rhythm",
+      "pearsonVsCitationsPerHour": 0.013776528890247145,
+      "pearsonVsAcceptedPerHour": -0.222235042899142,
+      "meanNormalized": 0.17712128626747475,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "speculation_opinion_ratio",
+      "label": "Speculation / opinion (inverted)",
+      "pearsonVsCitationsPerHour": -0.011754795814361507,
+      "pearsonVsAcceptedPerHour": -0.1452450111433437,
+      "meanNormalized": 0.7705685360519091,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "transcript_coherence",
+      "label": "Segment length coherence",
+      "pearsonVsCitationsPerHour": 0.07287941699789817,
+      "pearsonVsAcceptedPerHour": 0.08091761957684478,
+      "meanNormalized": 0.7854551130537188,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "clip_extraction_quality",
+      "label": "Clip extraction quality (materialized moments)",
+      "pearsonVsCitationsPerHour": 0.6362957522799092,
+      "pearsonVsAcceptedPerHour": 0.030847767445294876,
+      "meanNormalized": 0.5214637445887444,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "semantic_moment_yield",
+      "label": "Semantic extraction yield",
+      "pearsonVsCitationsPerHour": 0.7140759367948322,
+      "pearsonVsAcceptedPerHour": -0.02489554768967951,
+      "meanNormalized": 0.1810092554386147,
+      "sampleSize": 56
+    },
+    {
+      "dimensionId": "average_accepted_moment_score",
+      "label": "Average accepted moment score (quality model)",
+      "pearsonVsCitationsPerHour": 0.6310474071870459,
+      "pearsonVsAcceptedPerHour": -0.03129987121421571,
+      "meanNormalized": 0.5348222462061747,
+      "sampleSize": 56
+    }
+  ],
+  "drift": {
+    "matchedVideoCount": 1,
+    "wouldBeTutorialFalsePositive": 0,
+    "matchedChannels": [
+      "Lex Fridman"
+    ]
+  },
+  "channels": {
+    "highDensityLowFootprint": [
+      {
+        "channelName": "Stanford Online",
+        "videoCount": 1,
+        "momentCount": 3,
+        "meanCitationsPerHour": 1.1488750598372428,
+        "meanRetrievalOverall": 0.4452877823406668,
+        "corpusFootprint": 5,
+        "researchDensityScore": 0.8322607849637838
+      },
+      {
+        "channelName": "Traversy Media",
+        "videoCount": 3,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.8840918718803529,
+        "meanRetrievalOverall": 0.4174238487978595,
+        "corpusFootprint": 19,
+        "researchDensityScore": 0.6740912614932308
+      },
+      {
+        "channelName": "Corey Schafer",
+        "videoCount": 2,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.5902772897839865,
+        "meanRetrievalOverall": 0.44301007853038527,
+        "corpusFootprint": 17,
+        "researchDensityScore": 0.5240070447198659
+      }
+    ],
+    "largeFootprintWeakRetrieval": [
+      {
+        "channelName": "freeCodeCamp",
+        "videoCount": 22,
+        "momentCount": 127,
+        "meanCitationsPerHour": 0.5745650811760863,
+        "meanRetrievalOverall": 0.45330160045681217,
+        "corpusFootprint": 171,
+        "researchDensityScore": 0.519996514852413
+      },
+      {
+        "channelName": "Dwarkesh Patel",
+        "videoCount": 13,
+        "momentCount": 35,
+        "meanCitationsPerHour": 0.6313996652191184,
+        "meanRetrievalOverall": 0.40244540931632755,
+        "corpusFootprint": 61,
+        "researchDensityScore": 0.5283702500628625
+      },
+      {
+        "channelName": "unknown_channel",
+        "videoCount": 30,
+        "momentCount": 0,
+        "meanCitationsPerHour": null,
+        "meanRetrievalOverall": 0.36682242990654196,
+        "corpusFootprint": 60,
+        "researchDensityScore": 0.16507009345794388
+      },
+      {
+        "channelName": "Lex Fridman",
+        "videoCount": 5,
+        "momentCount": 17,
+        "meanCitationsPerHour": 0.5514678793947996,
+        "meanRetrievalOverall": 0.41361977743179407,
+        "corpusFootprint": 27,
+        "researchDensityScore": 0.48943623351144716
+      },
+      {
+        "channelName": "Traversy Media",
+        "videoCount": 3,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.8840918718803529,
+        "meanRetrievalOverall": 0.4174238487978595,
+        "corpusFootprint": 19,
+        "researchDensityScore": 0.6740912614932308
+      },
+      {
+        "channelName": "Corey Schafer",
+        "videoCount": 2,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.5902772897839865,
+        "meanRetrievalOverall": 0.44301007853038527,
+        "corpusFootprint": 17,
+        "researchDensityScore": 0.5240070447198659
+      },
+      {
+        "channelName": "Yannic Kilcher",
+        "videoCount": 5,
+        "momentCount": 5,
+        "meanCitationsPerHour": 0,
+        "meanRetrievalOverall": 0.4000198236129008,
+        "corpusFootprint": 15,
+        "researchDensityScore": 0.18000892062580537
+      }
+    ],
+    "all": [
+      {
+        "channelName": "freeCodeCamp",
+        "videoCount": 22,
+        "momentCount": 127,
+        "meanCitationsPerHour": 0.5745650811760863,
+        "meanRetrievalOverall": 0.45330160045681217,
+        "corpusFootprint": 171,
+        "researchDensityScore": 0.519996514852413
+      },
+      {
+        "channelName": "Corey Schafer",
+        "videoCount": 2,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.5902772897839865,
+        "meanRetrievalOverall": 0.44301007853038527,
+        "corpusFootprint": 17,
+        "researchDensityScore": 0.5240070447198659
+      },
+      {
+        "channelName": "Dwarkesh Patel",
+        "videoCount": 13,
+        "momentCount": 35,
+        "meanCitationsPerHour": 0.6313996652191184,
+        "meanRetrievalOverall": 0.40244540931632755,
+        "corpusFootprint": 61,
+        "researchDensityScore": 0.5283702500628625
+      },
+      {
+        "channelName": "Lex Fridman",
+        "videoCount": 5,
+        "momentCount": 17,
+        "meanCitationsPerHour": 0.5514678793947996,
+        "meanRetrievalOverall": 0.41361977743179407,
+        "corpusFootprint": 27,
+        "researchDensityScore": 0.48943623351144716
+      },
+      {
+        "channelName": "DeepLearning.AI",
+        "videoCount": 2,
+        "momentCount": 4,
+        "meanCitationsPerHour": 0.28381542536836873,
+        "meanRetrievalOverall": 0.3863987370433845,
+        "corpusFootprint": 8,
+        "researchDensityScore": 0.32997791562212586
+      },
+      {
+        "channelName": "Yannic Kilcher",
+        "videoCount": 5,
+        "momentCount": 5,
+        "meanCitationsPerHour": 0,
+        "meanRetrievalOverall": 0.4000198236129008,
+        "corpusFootprint": 15,
+        "researchDensityScore": 0.18000892062580537
+      },
+      {
+        "channelName": "Traversy Media",
+        "videoCount": 3,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.8840918718803529,
+        "meanRetrievalOverall": 0.4174238487978595,
+        "corpusFootprint": 19,
+        "researchDensityScore": 0.6740912614932308
+      },
+      {
+        "channelName": "Stanford Online",
+        "videoCount": 1,
+        "momentCount": 3,
+        "meanCitationsPerHour": 1.1488750598372428,
+        "meanRetrievalOverall": 0.4452877823406668,
+        "corpusFootprint": 5,
+        "researchDensityScore": 0.8322607849637838
+      },
+      {
+        "channelName": "The Net Ninja",
+        "videoCount": 1,
+        "momentCount": 1,
+        "meanCitationsPerHour": 0,
+        "meanRetrievalOverall": 0.3785079908754271,
+        "corpusFootprint": 3,
+        "researchDensityScore": 0.1703285958939422
+      },
+      {
+        "channelName": "Stanford",
+        "videoCount": 1,
+        "momentCount": 1,
+        "meanCitationsPerHour": 0,
+        "meanRetrievalOverall": 0.4203269758874716,
+        "corpusFootprint": 3,
+        "researchDensityScore": 0.1891471391493622
+      },
+      {
+        "channelName": "MIT OpenCourseWare",
+        "videoCount": 1,
+        "momentCount": 1,
+        "meanCitationsPerHour": 0,
+        "meanRetrievalOverall": 0.43132295201420207,
+        "corpusFootprint": 3,
+        "researchDensityScore": 0.19409532840639093
+      },
+      {
+        "channelName": "unknown_channel",
+        "videoCount": 30,
+        "momentCount": 0,
+        "meanCitationsPerHour": null,
+        "meanRetrievalOverall": 0.36682242990654196,
+        "corpusFootprint": 60,
+        "researchDensityScore": 0.16507009345794388
+      }
+    ]
+  },
+  "expertVsConversational": {
+    "expertChannels": [
+      {
+        "channelName": "Stanford Online",
+        "videoCount": 1,
+        "momentCount": 3,
+        "meanCitationsPerHour": 1.1488750598372428,
+        "meanRetrievalOverall": 0.4452877823406668,
+        "corpusFootprint": 5,
+        "researchDensityScore": 0.8322607849637838
+      },
+      {
+        "channelName": "Traversy Media",
+        "videoCount": 3,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.8840918718803529,
+        "meanRetrievalOverall": 0.4174238487978595,
+        "corpusFootprint": 19,
+        "researchDensityScore": 0.6740912614932308
+      },
+      {
+        "channelName": "Corey Schafer",
+        "videoCount": 2,
+        "momentCount": 13,
+        "meanCitationsPerHour": 0.5902772897839865,
+        "meanRetrievalOverall": 0.44301007853038527,
+        "corpusFootprint": 17,
+        "researchDensityScore": 0.5240070447198659
+      }
+    ],
+    "conversationalChannels": [
+      {
+        "channelName": "freeCodeCamp",
+        "videoCount": 22,
+        "momentCount": 127,
+        "meanCitationsPerHour": 0.5745650811760863,
+        "meanRetrievalOverall": 0.45330160045681217,
+        "corpusFootprint": 171,
+        "researchDensityScore": 0.519996514852413
+      },
+      {
+        "channelName": "Dwarkesh Patel",
+        "videoCount": 13,
+        "momentCount": 35,
+        "meanCitationsPerHour": 0.6313996652191184,
+        "meanRetrievalOverall": 0.40244540931632755,
+        "corpusFootprint": 61,
+        "researchDensityScore": 0.5283702500628625
+      },
+      {
+        "channelName": "Lex Fridman",
+        "videoCount": 5,
+        "momentCount": 17,
+        "meanCitationsPerHour": 0.5514678793947996,
+        "meanRetrievalOverall": 0.41361977743179407,
+        "corpusFootprint": 27,
+        "researchDensityScore": 0.48943623351144716
+      }
+    ],
+    "expertMeanCitationsPerHour": 0.8744147405005274,
+    "conversationalMeanCitationsPerHour": 0.5858108752633348,
+    "expertMeanResearchDensityScore": 0.6767863637256268,
+    "conversationalMeanResearchDensityScore": 0.5126009994755742
+  },
+  "wave1Simulation": {
+    "batchSize": 5,
+    "preCalibration": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "kTp5xUtcalw"
+      ],
+      "expectedCitationsPerHour": 0.8712166549092023,
+      "expectedAcceptedPerHour": 1.754881101148046,
+      "meanPriorityScore": 66.6,
+      "label": "pre_calibration"
+    },
+    "tunedV1": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "qTogNUV3CAI"
+      ],
+      "expectedCitationsPerHour": 0.6969733239273619,
+      "expectedAcceptedPerHour": 1.403904880918437,
+      "meanPriorityScore": 53.2,
+      "label": "tuned_v1"
+    },
+    "tunedV2": {
+      "videoIds": [
+        "fqMOX6JJhGo",
+        "5t1vTLU7s40",
+        "i_LwzRVP7bg",
+        "eyxmSmjmNS0",
+        "qTogNUV3CAI"
+      ],
+      "expectedCitationsPerHour": 0.6969733239273619,
+      "expectedAcceptedPerHour": 1.403904880918437,
+      "meanPriorityScore": 60,
+      "label": "tuned_v2"
+    },
+    "deltaV1VsPreCitationsPerHour": -0.17424333098184042,
+    "deltaV2VsPreCitationsPerHour": -0.17424333098184042,
+    "deltaV2VsV1CitationsPerHour": 0,
+    "retrievalTrustImprovedV1": false,
+    "retrievalTrustImprovedV2": false,
+    "readyForControlledIngest": false
+  },
+  "weightsFile": {
+    "version": 1,
+    "generatedAt": "2026-05-16T08:21:21.926Z",
+    "notes": "v2 emphasizes semantic moment yield + clip extraction (empirical cite/h predictors). Do not ingest until capped simulation shows positive Δ cite/h vs pre-calibration.",
+    "retrievalDimensionWeights": {
+      "explanation_density": 0.01691151269199729,
+      "multi_speaker_penalty": 0.06439448307638052,
+      "filler_ratio": 0.030618745883696195,
+      "repeated_phrase_ratio": 0.009908304517031175,
+      "citation_richness": 0.012459070219010757,
+      "technical_terminology_density": 0.009908304517031175,
+      "actionable_tutorial_density": 0.05043565549751975,
+      "concrete_example_density": 0.009908304517031175,
+      "question_answer_density": 0.009908304517031175,
+      "speculation_opinion_ratio": 0.009908304517031175,
+      "transcript_coherence": 0.024999573075383294,
+      "clip_extraction_quality": 0.24529020981764202,
+      "semantic_moment_yield": 0.26827110272263455,
+      "average_accepted_moment_score": 0.2370781244305799
+    },
+    "ingestionPriority": {
+      "sourceQuality": 0.06,
+      "retrievalOverall": 0.11,
+      "topicCoverageGain": 0.08,
+      "semanticYieldEstimate": 0.14,
+      "citationPotential": 0.05,
+      "corpusDiversityBonus": 0.1,
+      "creatorDuplicationPenalty": 0.08,
+      "transcriptLengthBand": 0.04,
+      "explanationDensityBoost": 0.08,
+      "technicalDensityBoost": 0.11,
+      "clipExtractionBoost": 0.16,
+      "semanticMomentYieldBoost": 0.14,
+      "researchWorkflowBoost": 0.08,
+      "shallowAuthorityPenalty": 5,
+      "perRejectHeuristicPenalty": 2,
+      "maxRejectPenalty": 10
+    },
+    "profiles": {
+      "preCalibration": {
+        "retrievalDimensionWeights": {
+          "explanation_density": 0.12,
+          "multi_speaker_penalty": 0.06,
+          "filler_ratio": 0.08,
+          "repeated_phrase_ratio": 0.06,
+          "citation_richness": 0.1,
+          "technical_terminology_density": 0.1,
+          "actionable_tutorial_density": 0.07,
+          "concrete_example_density": 0.06,
+          "question_answer_density": 0.06,
+          "speculation_opinion_ratio": 0.06,
+          "transcript_coherence": 0.07,
+          "clip_extraction_quality": 0.08,
+          "semantic_moment_yield": 0.08,
+          "average_accepted_moment_score": 0.07
+        },
+        "ingestionPriority": {
+          "sourceQuality": 0.22,
+          "retrievalOverall": 0.28,
+          "topicCoverageGain": 0.12,
+          "semanticYieldEstimate": 0.1,
+          "citationPotential": 0.1,
+          "corpusDiversityBonus": 0.1,
+          "creatorDuplicationPenalty": 0.08,
+          "transcriptLengthBand": 0.06,
+          "explanationDensityBoost": 0,
+          "technicalDensityBoost": 0,
+          "clipExtractionBoost": 0,
+          "semanticMomentYieldBoost": 0,
+          "researchWorkflowBoost": 0,
+          "shallowAuthorityPenalty": 0,
+          "perRejectHeuristicPenalty": 0,
+          "maxRejectPenalty": 0
+        }
+      },
+      "tunedV1": {
+        "retrievalDimensionWeights": {
+          "semantic_moment_yield": 0.2,
+          "clip_extraction_quality": 0.18,
+          "average_accepted_moment_score": 0.12,
+          "explanation_density": 0.1,
+          "technical_terminology_density": 0.1,
+          "actionable_tutorial_density": 0.09,
+          "transcript_coherence": 0.06,
+          "multi_speaker_penalty": 0.04,
+          "filler_ratio": 0.04,
+          "repeated_phrase_ratio": 0.04,
+          "citation_richness": 0.04,
+          "concrete_example_density": 0.04,
+          "question_answer_density": 0.03,
+          "speculation_opinion_ratio": 0.03
+        },
+        "ingestionPriority": {
+          "sourceQuality": 0.12,
+          "retrievalOverall": 0.2,
+          "topicCoverageGain": 0.1,
+          "semanticYieldEstimate": 0.05,
+          "citationPotential": 0.16,
+          "corpusDiversityBonus": 0.1,
+          "creatorDuplicationPenalty": 0.09,
+          "transcriptLengthBand": 0.05,
+          "explanationDensityBoost": 0.09,
+          "technicalDensityBoost": 0.07,
+          "clipExtractionBoost": 0.08,
+          "semanticMomentYieldBoost": 0,
+          "researchWorkflowBoost": 0.06,
+          "shallowAuthorityPenalty": 9,
+          "perRejectHeuristicPenalty": 3.5,
+          "maxRejectPenalty": 14
+        }
+      }
+    }
+  }
+}
