@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-05-16T04:12:06.687Z",
+  "flags": {
+    "simulate": false,
+    "writesIntended": true,
+    "dryRun": false,
+    "reportOnly": false,
+    "skipVerify": false,
+    "writeQueue": true,
+    "ingest": false,
+    "limit": 5,
+    "start": 0
+  },
+  "transcriptGate": {
+    "checked": 5,
+    "available": 5,
+    "unavailable": 0,
+    "passed": true,
+    "minChecksForGate": 3,
+    "maxUnavailableRate": 0.5
+  },
+  "summary": {
+    "eligible": 5,
+    "alreadyIndexed": 0,
+    "cachedTranscript": 0,
+    "inSeedQueue": 0,
+    "inCorpusQueue": 0,
+    "csvExcluded": 0,
+    "unavailableTranscript": 0,
+    "queued": 5,
+    "ingested": 3,
+    "failed": 0
+  },
+  "sourceQualitySummary": {
+    "meanScore": 100,
+    "tierCounts": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "w1-001",
+      "videoId": "qTogNUV3CAI",
+      "url": "https://www.youtube.com/watch?v=qTogNUV3CAI",
+      "channelName": "Dwarkesh Patel",
+      "status": "queued",
+      "expectedTopicCoverageGain": "Adds a second frontier-lab voice on scaling and planning; improves authority diversity vs single-video topics in missing-corpus signals.",
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "segmentCount": 640,
+      "detail": "transcript ok"
+    },
+    {
+      "id": "w1-002",
+      "videoId": "n1E9IZfvGMA",
+      "url": "https://www.youtube.com/watch?v=n1E9IZfvGMA",
+      "channelName": "Dwarkesh Patel",
+      "status": "queued",
+      "expectedTopicCoverageGain": "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "segmentCount": 1480,
+      "detail": "transcript ok"
+    },
+    {
+      "id": "w1-003",
+      "videoId": "5t1vTLU7s40",
+      "url": "https://www.youtube.com/watch?v=5t1vTLU7s40",
+      "channelName": "Lex Fridman",
+      "status": "queued",
+      "expectedTopicCoverageGain": "Adds a second expert stance on LLM limits and open research for transformer-related topic clusters.",
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "segmentCount": 4047,
+      "detail": "transcript ok"
+    },
+    {
+      "id": "w1-004",
+      "videoId": "cdiD-9MMpb0",
+      "url": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
+      "channelName": "Lex Fridman",
+      "status": "queued",
+      "expectedTopicCoverageGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "segmentCount": 6006,
+      "detail": "transcript ok"
+    },
+    {
+      "id": "w1-005",
+      "videoId": "TrdevFK_am4",
+      "url": "https://www.youtube.com/watch?v=TrdevFK_am4",
+      "channelName": "Yannic Kilcher",
+      "status": "queued",
+      "expectedTopicCoverageGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "segmentCount": 818,
+      "detail": "transcript ok"
+    }
+  ],
+  "enqueue": {
+    "added": 5,
+    "skippedDuplicate": 0,
+    "skippedCached": 0,
+    "skippedInQueue": 0
+  },
+  "worker": {
+    "processed": 3,
+    "indexed": 3,
+    "skipped": 0,
+    "failed": 0,
+    "rejected": 0
+  },
+  "corpusMetricsBefore": {
+    "momentCount": 176,
+    "uniqueVideos": 53,
+    "uniqueCreators": 14,
+    "lowTierShare": 0.09090909090909091,
+    "highTierShare": 0.44886363636363635,
+    "citeRichShare": 0.3181818181818182
+  },
+  "corpusMetricsAfter": {
+    "momentCount": 220,
+    "uniqueVideos": 54,
+    "uniqueCreators": 14,
+    "lowTierShare": 0.07272727272727272,
+    "highTierShare": 0.5590909090909091,
+    "citeRichShare": 0.45454545454545453
+  },
+  "proceedToRemaining31": true,
+  "topicCoverageGainSummary": [
+    "Adds a second frontier-lab voice on scaling and planning; improves authority diversity vs single-video topics in missing-corpus signals.",
+    "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
+    "Adds a second expert stance on LLM limits and open research for transformer-related topic clusters.",
+    "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
+    "Directly thickens transformer topic beyond single-video depth flagged in topic coverage."
+  ]
+}

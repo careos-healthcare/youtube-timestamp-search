@@ -1,19 +1,19 @@
 # Ingestion pipeline report
 
-Generated: 2026-05-14T20:17:40.818Z
+Generated: 2026-05-16T04:12:27.229Z
 
 ## Queue status
 
 | Metric | Value |
 |--------|------:|
-| Total jobs | 0 |
-| Pending | 0 |
+| Total jobs | 5 |
+| Pending | 2 |
 | Processing | 0 |
-| Completed | 0 |
+| Completed | 3 |
 | Failed | 0 |
 | Skipped | 0 |
 | Rejected | 0 |
-| Queue updated | 2026-05-14T20:17:40.818Z |
+| Queue updated | 2026-05-16T04:12:27.228Z |
 
 ## Paths
 

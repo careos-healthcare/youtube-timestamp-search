@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-05-16T03:29:16.715Z",
+  "generatedAt": "2026-05-16T04:13:35.178Z",
   "rows": [
     {
       "topic": "uncategorized",
-      "numberOfMoments": 56,
-      "numberOfVideos": 22,
+      "numberOfMoments": 99,
+      "numberOfVideos": 25,
       "uniqueCreators": 5,
-      "authorityDiversity": 5,
-      "beginnerCoverage": 0.875,
-      "technicalCoverage": 0.35714285714285715,
-      "counterpointCoverage": 0.10714285714285714,
+      "authorityDiversity": 6,
+      "beginnerCoverage": 0.9292929292929293,
+      "technicalCoverage": 0.3939393939393939,
+      "counterpointCoverage": 0.1717171717171717,
       "citationRichCoverage": 1,
       "collectionCoverage": 0,
       "topPhraseSaturation": [
         {
           "phrase": "docker container and how to create different containers",
-          "share": 0.017857142857142856
+          "share": 0.010101010101010102
         },
         {
           "phrase": "agi, which is artificial general intelligence, and what is asi, artificial superintelligence, and what are the language",
-          "share": 0.017857142857142856
+          "share": 0.010101010101010102
         },
         {
           "phrase": "pre-training and what is posttraining",
-          "share": 0.017857142857142856
+          "share": 0.010101010101010102
         }
       ],
       "weakComparisonDepth": false,
@@ -1304,6 +1304,27 @@
       "topPhraseSaturation": [
         {
           "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "how-llms-trained, transformers, llm-fine-tuning",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 1,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "hate speech what is dangerous and all that kind of stuff i mean you've different value systems",
           "share": 1
         }
       ],

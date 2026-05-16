@@ -1,16 +1,16 @@
 # Corpus growth report
 
-Generated: 2026-05-14T20:17:48.601Z
+Generated: 2026-05-16T04:12:27.333Z
 
 ## Index size
 
 | Metric | Value |
 |--------|------:|
-| Indexed videos | 232 |
-| Searchable segments | 809529 |
-| Estimated indexed hours | 899.5 |
-| Cache mode | supabase |
-| CSV ledger video IDs | 561 |
+| Indexed videos | 56 |
+| Searchable segments | 183639 |
+| Estimated indexed hours | 204 |
+| Cache mode | fallback |
+| CSV ledger video IDs | 261 |
 
 ## Catalog capacity
 
@@ -23,21 +23,21 @@ Generated: 2026-05-14T20:17:48.601Z
 
 | Rank | Channel | Videos |
 |------|---------|-------:|
-| 1 | freeCodeCamp | 62 |
-| 2 | Lex Fridman | 34 |
-| 3 | Yannic Kilcher | 33 |
-| 4 | Dwarkesh Patel | 17 |
-| 5 | Traversy Media | 16 |
-| 6 | Stanford Online | 10 |
-| 7 | MIT OpenCourseWare | 10 |
-| 8 | Corey Schafer | 7 |
-| 9 | Harvard CS50 | 7 |
-| 10 | Y Combinator | 5 |
-| 11 | The Net Ninja | 3 |
-| 12 | 3Blue1Brown | 3 |
-| 13 | Andrew Huberman | 3 |
-| 14 | Berkeley CS61A | 2 |
-| 15 | IBM Technology | 2 |
+| 1 | freeCodeCamp.org | 23 |
+| 2 | Dwarkesh Patel | 12 |
+| 3 | Lex Fridman | 4 |
+| 4 | Yannic Kilcher | 4 |
+| 5 | unknown | 2 |
+| 6 | Traversy Media | 1 |
+| 7 | Net Ninja | 1 |
+| 8 | Arxiv Insights | 1 |
+| 9 | Programming with Mosh | 1 |
+| 10 | Lex Clips | 1 |
+| 11 | Google for Developers | 1 |
+| 12 | Academind | 1 |
+| 13 | Cole Medin | 1 |
+| 14 | TechWorld with Nana | 1 |
+| 15 | Alex Kantrowitz | 1 |
 
 ## Regenerate
 

@@ -6662,6 +6662,3785 @@
         }
       },
       "qualityScore": 136
+    },
+    {
+      "id": "32eb79dc9e47c0770674",
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "containers, containers are completely isolated environments",
+      "canonicalSlug": "containers%2C-containers-are-completely-isolated-environments",
+      "startSeconds": 345.8,
+      "timestamp": "5:45",
+      "snippet": "now get started with a simple Docker run command. irrespective of what the underlying operating system they're on. All they needed to do was to make sure they had Docker installed on their systems. So what are containers, containers are completely isolated environments. As in",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fqMOX6JJhGo&t=345s",
+      "videoTitle": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:14.369Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 10,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.8,
+          "engagementPrior": 15.5,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 176.2,
+        "topics": {
+          "primaryTopic": "Containers",
+          "secondaryTopics": [
+            "DevOps",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Completely",
+            "Isolated",
+            "Environments"
+          ],
+          "relatedConcepts": [
+            "isolated",
+            "environments",
+            "docker",
+            "they",
+            "started",
+            "simple",
+            "command",
+            "irrespective",
+            "underlying",
+            "operating",
+            "system",
+            "they're"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "devops",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "containers"
+        },
+        "citations": {
+          "markdown": "[Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers](https://www.youtubetimesearch.com/moment/32eb79dc9e47c0770674/containers%2C-containers-are-completely-isolated-environments) — “containers, containers are completely isolated environments” (https://www.youtube.com/watch?v=fqMOX6JJhGo&t=345s)",
+          "academic": "freeCodeCamp.org. *Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/32eb79dc9e47c0770674/containers%2C-containers-are-completely-isolated-environments. Timestamp deep-link: https://www.youtube.com/watch?v=fqMOX6JJhGo&t=345s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/32eb79dc9e47c0770674/containers%2C-containers-are-completely-isolated-environments",
+          "timestampCitation": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers. https://www.youtube.com/watch?v=fqMOX6JJhGo&t=345s (accessed 2026). Quoted moment: “containers, containers are completely isolated environments”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "32eb79dc9e47c0770674",
+            "canonicalSlug": "containers%2C-containers-are-completely-isolated-environments",
+            "videoId": "fqMOX6JJhGo",
+            "startSeconds": 345.8,
+            "phrase": "containers, containers are completely isolated environments",
+            "snippetExcerpt": "now get started with a simple Docker run command. irrespective of what the underlying operating system they're on. All they needed to do was to make sure they had Docker installed on their systems. So what are containers, containers are completely isolated environments. As in",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fqMOX6JJhGo&t=345s"
+          }
+        }
+      },
+      "qualityScore": 134
+    },
+    {
+      "id": "de5f08817655dec21454",
+      "videoId": "09_LlHjoEiY",
+      "phrase": "the Bellman Ford algorithm",
+      "canonicalSlug": "the-bellman-ford-algorithm",
+      "startSeconds": 6655.5,
+      "timestamp": "1:50:55",
+      "snippet": "graph theory. Bellman Ford is definitely one of the simplest, yet I struggled as an undergrad to trying to learn this algorithm, which is part of the reason I'm making this video. So what is the Bellman Ford algorithm? In short, it's a single source shortest path",
+      "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=6655s",
+      "videoTitle": "Algorithms Course - Graph Theory Tutorial from a Google Engineer",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:47.015Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 10,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.851063829787233,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 175.8,
+        "topics": {
+          "primaryTopic": "Bellman",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Ford",
+            "Algorithm"
+          ],
+          "relatedConcepts": [
+            "algorithm",
+            "graph",
+            "theory",
+            "definitely",
+            "simplest",
+            "struggled",
+            "undergrad",
+            "trying",
+            "learn",
+            "which",
+            "part",
+            "reason"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "bellman"
+        },
+        "citations": {
+          "markdown": "[Algorithms Course - Graph Theory Tutorial from a Google Engineer](https://www.youtubetimesearch.com/moment/de5f08817655dec21454/the-bellman-ford-algorithm) — “the Bellman Ford algorithm” (https://www.youtube.com/watch?v=09_LlHjoEiY&t=6655s)",
+          "academic": "freeCodeCamp.org. *Algorithms Course - Graph Theory Tutorial from a Google Engineer*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/de5f08817655dec21454/the-bellman-ford-algorithm. Timestamp deep-link: https://www.youtube.com/watch?v=09_LlHjoEiY&t=6655s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/de5f08817655dec21454/the-bellman-ford-algorithm",
+          "timestampCitation": "Algorithms Course - Graph Theory Tutorial from a Google Engineer. https://www.youtube.com/watch?v=09_LlHjoEiY&t=6655s (accessed 2026). Quoted moment: “the Bellman Ford algorithm”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "de5f08817655dec21454",
+            "canonicalSlug": "the-bellman-ford-algorithm",
+            "videoId": "09_LlHjoEiY",
+            "startSeconds": 6655.5,
+            "phrase": "the Bellman Ford algorithm",
+            "snippetExcerpt": "graph theory. Bellman Ford is definitely one of the simplest, yet I struggled as an undergrad to trying to learn this algorithm, which is part of the reason I'm making this video. So what is the Bellman Ford algorithm? In short, it's a single source shortest path",
+            "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=6655s"
+          }
+        }
+      },
+      "qualityScore": 134
+    },
+    {
+      "id": "2f852479347606a0cf8a",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "it transition distributions and observation distributions",
+      "canonicalSlug": "it-transition-distributions-and-observation-distributions",
+      "startSeconds": 8902.5,
+      "timestamp": "2:28:22",
+      "snippet": "like 1000s of entries, or rows or data points for our models to train for this. We don't need any of that. In fact, all we need is just constant values for probability and our What is it transition distributions and observation distributions. Now, what I'm going to do is",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=8902s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:00.558Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.92,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 174.8,
+        "topics": {
+          "primaryTopic": "Distributions",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Transition",
+            "Observation"
+          ],
+          "relatedConcepts": [
+            "observation",
+            "need",
+            "like",
+            "1000s",
+            "entries",
+            "rows",
+            "data",
+            "points",
+            "models",
+            "train",
+            "don't",
+            "fact"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "distributions"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/2f852479347606a0cf8a/it-transition-distributions-and-observation-distributions) — “it transition distributions and observation distributions” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=8902s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/2f852479347606a0cf8a/it-transition-distributions-and-observation-distributions. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=8902s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/2f852479347606a0cf8a/it-transition-distributions-and-observation-distributions",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=8902s (accessed 2026). Quoted moment: “it transition distributions and observation distributions”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "2f852479347606a0cf8a",
+            "canonicalSlug": "it-transition-distributions-and-observation-distributions",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 8902.5,
+            "phrase": "it transition distributions and observation distributions",
+            "snippetExcerpt": "like 1000s of entries, or rows or data points for our models to train for this. We don't need any of that. In fact, all we need is just constant values for probability and our What is it transition distributions and observation distributions. Now, what I'm going to do is",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=8902s"
+          }
+        }
+      },
+      "qualityScore": 133
+    },
+    {
+      "id": "4614dcc7faa86fd40147",
+      "videoId": "fqMOX6JJhGo",
+      "phrase": "you deploy your own private registry within your organization, the Docker registry, itself another",
+      "canonicalSlug": "you-deploy-your-own-private-registry-within-your-organization%2C-the-docker-registry%2C-itself-another",
+      "startSeconds": 5894.1,
+      "timestamp": "1:38:14",
+      "snippet": "cloud providers like AWS or GCP provide a private registry when you create an account with them. But what if you're running your application on premise and don't have a private registry? How do you deploy your own private registry within your organization, the Docker registry, itself another",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5894s",
+      "videoTitle": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:14.401Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 19.299999999999997,
+          "technicalSpecificity": 18,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.625,
+          "engagementPrior": 15.5,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 171.4,
+        "topics": {
+          "primaryTopic": "Registry",
+          "secondaryTopics": [
+            "DevOps",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Deploy",
+            "Private",
+            "Within",
+            "Organization"
+          ],
+          "relatedConcepts": [
+            "private",
+            "within",
+            "organization",
+            "docker",
+            "itself",
+            "another",
+            "cloud",
+            "providers",
+            "like",
+            "provide",
+            "create",
+            "account"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "devops",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "registry"
+        },
+        "citations": {
+          "markdown": "[Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers](https://www.youtubetimesearch.com/moment/4614dcc7faa86fd40147/you-deploy-your-own-private-registry-within-your-organization%2C-the-docker-registry%2C-itself-another) — “you deploy your own private registry within your organization, the Docker registry, itself another” (https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5894s)",
+          "academic": "freeCodeCamp.org. *Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/4614dcc7faa86fd40147/you-deploy-your-own-private-registry-within-your-organization%2C-the-docker-registry%2C-itself-another. Timestamp deep-link: https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5894s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/4614dcc7faa86fd40147/you-deploy-your-own-private-registry-within-your-organization%2C-the-docker-registry%2C-itself-another",
+          "timestampCitation": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers. https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5894s (accessed 2026). Quoted moment: “you deploy your own private registry within your organization, the Docker registry, itself another”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "4614dcc7faa86fd40147",
+            "canonicalSlug": "you-deploy-your-own-private-registry-within-your-organization%2C-the-docker-registry%2C-itself-another",
+            "videoId": "fqMOX6JJhGo",
+            "startSeconds": 5894.1,
+            "phrase": "you deploy your own private registry within your organization, the Docker registry, itself another",
+            "snippetExcerpt": "cloud providers like AWS or GCP provide a private registry when you create an account with them. But what if you're running your application on premise and don't have a private registry? How do you deploy your own private registry within your organization, the Docker registry, itself another",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5894s"
+          }
+        }
+      },
+      "qualityScore": 133
+    },
+    {
+      "id": "abb4f4d40c013ea6b7c8",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "it standard deviation, although",
+      "canonicalSlug": "it-standard-deviation%2C-although",
+      "startSeconds": 9202.4,
+      "timestamp": "2:33:22",
+      "snippet": "like negative five, and the max could be something like 15, or like, yeah, I guess a 15. So we'll have some distribution. That's just what we want to understand, right. And this is kind of a strange distribution, because we're dealing with what is it standard deviation, although",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9202s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:00.879Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 23.2,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.89795918367347,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 171.1,
+        "topics": {
+          "primaryTopic": "Standard",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Deviation",
+            "Although"
+          ],
+          "relatedConcepts": [
+            "although",
+            "like",
+            "distribution",
+            "negative",
+            "five",
+            "something",
+            "yeah",
+            "guess",
+            "we'll",
+            "some",
+            "that's",
+            "just"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "standard"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/abb4f4d40c013ea6b7c8/it-standard-deviation%2C-although) — “it standard deviation, although” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9202s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/abb4f4d40c013ea6b7c8/it-standard-deviation%2C-although. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9202s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/abb4f4d40c013ea6b7c8/it-standard-deviation%2C-although",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9202s (accessed 2026). Quoted moment: “it standard deviation, although”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "abb4f4d40c013ea6b7c8",
+            "canonicalSlug": "it-standard-deviation%2C-although",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 9202.4,
+            "phrase": "it standard deviation, although",
+            "snippetExcerpt": "like negative five, and the max could be something like 15, or like, yeah, I guess a 15. So we'll have some distribution. That's just what we want to understand, right. And this is kind of a strange distribution, because we're dealing with what is it standard deviation, although",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9202s"
+          }
+        }
+      },
+      "qualityScore": 130
+    },
+    {
+      "id": "f20ee7d96d1e7a69b4d7",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "the author route of Route dot prop types, equals, and what do we have",
+      "canonicalSlug": "the-author-route-of-route-dot-prop-types%2C-equals%2C-and-what-do-we-have",
+      "startSeconds": 8508.6,
+      "timestamp": "2:21:48",
+      "snippet": "prop types. And it's always good to practice these, these best practices so that you get used to them. Alright, so prop types. And here we say, what is the author route of Route dot prop types, equals, and what do we have? We have just user so prop types dot object",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8508s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.767Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.615384615384617,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 173.1,
+        "topics": {
+          "primaryTopic": "Route",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Author",
+            "Prop",
+            "Types",
+            "Equals"
+          ],
+          "relatedConcepts": [
+            "prop",
+            "types",
+            "equals",
+            "these",
+            "it's",
+            "always",
+            "good",
+            "practice",
+            "best",
+            "practices",
+            "used",
+            "them"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "route"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/f20ee7d96d1e7a69b4d7/the-author-route-of-route-dot-prop-types%2C-equals%2C-and-what-do-we-have) — “the author route of Route dot prop types, equals, and what do we have” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8508s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/f20ee7d96d1e7a69b4d7/the-author-route-of-route-dot-prop-types%2C-equals%2C-and-what-do-we-have. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8508s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/f20ee7d96d1e7a69b4d7/the-author-route-of-route-dot-prop-types%2C-equals%2C-and-what-do-we-have",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8508s (accessed 2026). Quoted moment: “the author route of Route dot prop types, equals, and what do we have”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "f20ee7d96d1e7a69b4d7",
+            "canonicalSlug": "the-author-route-of-route-dot-prop-types%2C-equals%2C-and-what-do-we-have",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 8508.6,
+            "phrase": "the author route of Route dot prop types, equals, and what do we have",
+            "snippetExcerpt": "prop types. And it's always good to practice these, these best practices so that you get used to them. Alright, so prop types. And here we say, what is the author route of Route dot prop types, equals, and what do we have? We have just user so prop types dot object",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8508s"
+          }
+        }
+      },
+      "qualityScore": 129
+    },
+    {
+      "id": "ba30efd2d5afc0851a97",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "a compositional neural network",
+      "canonicalSlug": "a-compositional-neural-network",
+      "startSeconds": 16761.4,
+      "timestamp": "4:39:21",
+      "snippet": "of TensorFlow. But it does use some kind of convolutional neural network to do facial detection and recognition, which is pretty cool as well. So I'll put that link in here. But for that, for now, that's going to be our what is a compositional neural network",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=16761s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:00.902Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 23.2,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.085106382978722,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165.3,
+        "topics": {
+          "primaryTopic": "Compositional",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Neural",
+            "Network"
+          ],
+          "relatedConcepts": [
+            "network",
+            "tensorflow",
+            "does",
+            "some",
+            "kind",
+            "convolutional",
+            "facial",
+            "detection",
+            "recognition",
+            "which",
+            "pretty",
+            "cool"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "compositional"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/ba30efd2d5afc0851a97/a-compositional-neural-network) — “a compositional neural network” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=16761s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/ba30efd2d5afc0851a97/a-compositional-neural-network. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=16761s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/ba30efd2d5afc0851a97/a-compositional-neural-network",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=16761s (accessed 2026). Quoted moment: “a compositional neural network”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "ba30efd2d5afc0851a97",
+            "canonicalSlug": "a-compositional-neural-network",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 16761.4,
+            "phrase": "a compositional neural network",
+            "snippetExcerpt": "of TensorFlow. But it does use some kind of convolutional neural network to do facial detection and recognition, which is pretty cool as well. So I'll put that link in here. But for that, for now, that's going to be our what is a compositional neural network",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=16761s"
+          }
+        }
+      },
+      "qualityScore": 127
+    },
+    {
+      "id": "05e60fe5627fbcc7e3c6",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "t’s participating in the identifying relationship with branch supplier",
+      "canonicalSlug": "t%E2%80%99s-participating-in-the-identifying-relationship-with-branch-supplier",
+      "startSeconds": 15047.5,
+      "timestamp": "4:10:47",
+      "snippet": "In this case, the primary key of the owner is going to be branch ID because the branch is the owner. In other words, the branch is the entity that’s participating in the identifying relationship with branch supplier.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15047s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.161Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 23,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.05263157894737,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 160,
+        "topics": {
+          "primaryTopic": "Participating",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Identifying",
+            "Relationship",
+            "Branch",
+            "Supplier"
+          ],
+          "relatedConcepts": [
+            "relationship",
+            "branch",
+            "supplier",
+            "owner",
+            "case",
+            "primary",
+            "going",
+            "because",
+            "other",
+            "words",
+            "entity"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "participating"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/05e60fe5627fbcc7e3c6/t%E2%80%99s-participating-in-the-identifying-relationship-with-branch-supplier) — “t’s participating in the identifying relationship with branch supplier” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15047s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/05e60fe5627fbcc7e3c6/t%E2%80%99s-participating-in-the-identifying-relationship-with-branch-supplier. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15047s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/05e60fe5627fbcc7e3c6/t%E2%80%99s-participating-in-the-identifying-relationship-with-branch-supplier",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15047s (accessed 2026). Quoted moment: “t’s participating in the identifying relationship with branch supplier”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "05e60fe5627fbcc7e3c6",
+            "canonicalSlug": "t%E2%80%99s-participating-in-the-identifying-relationship-with-branch-supplier",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 15047.5,
+            "phrase": "t’s participating in the identifying relationship with branch supplier",
+            "snippetExcerpt": "In this case, the primary key of the owner is going to be branch ID because the branch is the owner. In other words, the branch is the entity that’s participating in the identifying relationship with branch supplier.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15047s"
+          }
+        }
+      },
+      "qualityScore": 126
+    },
+    {
+      "id": "852e63199ea606ffff7c",
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we c",
+      "canonicalSlug": "a-process-and-a-threat%2C-the-advantages-and-disadvantages-of-both-how-and-why-threads-are-limited-by-the-gil-and-how-we-c",
+      "startSeconds": 14018.9,
+      "timestamp": "3:53:38",
+      "snippet": "and multi processing, you can run code in parallel and speed up your code. And in this tutorial, we will learn what is the difference between a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we can easily",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=14018s",
+      "videoTitle": "Intermediate Python Programming Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:12.138Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.647058823529413,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 18
+        },
+        "totalSemanticRank": 173.1,
+        "topics": {
+          "primaryTopic": "Process",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Threat",
+            "Advantages",
+            "Disadvantages",
+            "Both"
+          ],
+          "relatedConcepts": [
+            "advantages",
+            "disadvantages",
+            "both",
+            "threads",
+            "limited",
+            "code",
+            "multi",
+            "processing",
+            "parallel",
+            "speed",
+            "tutorial",
+            "learn"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "process"
+        },
+        "citations": {
+          "markdown": "[Intermediate Python Programming Course](https://www.youtubetimesearch.com/moment/852e63199ea606ffff7c/a-process-and-a-threat%2C-the-advantages-and-disadvantages-of-both-how-and-why-threads-are-limited-by-the-gil-and-how-we-c) — “a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we c” (https://www.youtube.com/watch?v=HGOBQPFzWKo&t=14018s)",
+          "academic": "freeCodeCamp.org. *Intermediate Python Programming Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/852e63199ea606ffff7c/a-process-and-a-threat%2C-the-advantages-and-disadvantages-of-both-how-and-why-threads-are-limited-by-the-gil-and-how-we-c. Timestamp deep-link: https://www.youtube.com/watch?v=HGOBQPFzWKo&t=14018s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/852e63199ea606ffff7c/a-process-and-a-threat%2C-the-advantages-and-disadvantages-of-both-how-and-why-threads-are-limited-by-the-gil-and-how-we-c",
+          "timestampCitation": "Intermediate Python Programming Course. https://www.youtube.com/watch?v=HGOBQPFzWKo&t=14018s (accessed 2026). Quoted moment: “a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we c”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "852e63199ea606ffff7c",
+            "canonicalSlug": "a-process-and-a-threat%2C-the-advantages-and-disadvantages-of-both-how-and-why-threads-are-limited-by-the-gil-and-how-we-c",
+            "videoId": "HGOBQPFzWKo",
+            "startSeconds": 14018.9,
+            "phrase": "a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we c",
+            "snippetExcerpt": "and multi processing, you can run code in parallel and speed up your code. And in this tutorial, we will learn what is the difference between a process and a threat, the advantages and disadvantages of both how and why threads are limited by the Gil and how we can easily",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=14018s"
+          }
+        }
+      },
+      "qualityScore": 129
+    },
+    {
+      "id": "29166a1b2c6ba0c0535b",
+      "videoId": "8ext9G7xspg",
+      "phrase": "like, for example, if I have one divided by three, that comes out 2",
+      "canonicalSlug": "like%2C-for-example%2C-if-i-have-one-divided-by-three%2C-that-comes-out-2",
+      "startSeconds": 7189.7,
+      "timestamp": "1:59:49",
+      "snippet": "we're going to iterate. So what we can do in order to find this is actually take the row index and divide it by three, but throw away the remainder. What is like, for example, if I have one divided by three, that comes out 2.333. So the base, or whatever you want to call it is zero. And",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=7189s",
+      "videoTitle": "12 Beginner Python Projects - Coding Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:10.402Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.779661016949152,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 164.6,
+        "topics": {
+          "primaryTopic": "Like",
+          "secondaryTopics": [
+            "Python",
+            "Coding",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Example",
+            "Divided",
+            "Three",
+            "Comes"
+          ],
+          "relatedConcepts": [
+            "divided",
+            "three",
+            "comes",
+            "we're",
+            "going",
+            "iterate",
+            "order",
+            "find",
+            "actually",
+            "take",
+            "index",
+            "divide"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "coding",
+              "transcript-search",
+              "find-youtube-quotes"
+            ]
+          },
+          "topicClusterHint": "like"
+        },
+        "citations": {
+          "markdown": "[12 Beginner Python Projects - Coding Course](https://www.youtubetimesearch.com/moment/29166a1b2c6ba0c0535b/like%2C-for-example%2C-if-i-have-one-divided-by-three%2C-that-comes-out-2) — “like, for example, if I have one divided by three, that comes out 2” (https://www.youtube.com/watch?v=8ext9G7xspg&t=7189s)",
+          "academic": "freeCodeCamp.org. *12 Beginner Python Projects - Coding Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/29166a1b2c6ba0c0535b/like%2C-for-example%2C-if-i-have-one-divided-by-three%2C-that-comes-out-2. Timestamp deep-link: https://www.youtube.com/watch?v=8ext9G7xspg&t=7189s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/29166a1b2c6ba0c0535b/like%2C-for-example%2C-if-i-have-one-divided-by-three%2C-that-comes-out-2",
+          "timestampCitation": "12 Beginner Python Projects - Coding Course. https://www.youtube.com/watch?v=8ext9G7xspg&t=7189s (accessed 2026). Quoted moment: “like, for example, if I have one divided by three, that comes out 2”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "29166a1b2c6ba0c0535b",
+            "canonicalSlug": "like%2C-for-example%2C-if-i-have-one-divided-by-three%2C-that-comes-out-2",
+            "videoId": "8ext9G7xspg",
+            "startSeconds": 7189.7,
+            "phrase": "like, for example, if I have one divided by three, that comes out 2",
+            "snippetExcerpt": "we're going to iterate. So what we can do in order to find this is actually take the row index and divide it by three, but throw away the remainder. What is like, for example, if I have one divided by three, that comes out 2.333. So the base, or whatever you want to call it is zero. And",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=7189s"
+          }
+        }
+      },
+      "qualityScore": 124
+    },
+    {
+      "id": "438daceff8978ae7a5e2",
+      "videoId": "09_LlHjoEiY",
+      "phrase": "the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm",
+      "canonicalSlug": "the-optimal-dairy-heap-degree-actually-used-to-maximize-the-performance-of-dec-shor's-algorithm",
+      "startSeconds": 6102.2,
+      "timestamp": "1:41:42",
+      "snippet": "But remember, there are a lot more decreased key operations and Dykstra than there are removals. So this might be beneficial overall. So the question then becomes what is the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm? And",
+      "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=6102s",
+      "videoTitle": "Algorithms Course - Graph Theory Tutorial from a Google Engineer",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:46.904Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 16,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.8,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 181.3,
+        "topics": {
+          "primaryTopic": "Optimal",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Dairy",
+            "Heap",
+            "Degree",
+            "Actually"
+          ],
+          "relatedConcepts": [
+            "heap",
+            "degree",
+            "actually",
+            "used",
+            "maximize",
+            "performance",
+            "there",
+            "remember",
+            "more",
+            "decreased",
+            "operations",
+            "dykstra"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "optimal"
+        },
+        "citations": {
+          "markdown": "[Algorithms Course - Graph Theory Tutorial from a Google Engineer](https://www.youtubetimesearch.com/moment/438daceff8978ae7a5e2/the-optimal-dairy-heap-degree-actually-used-to-maximize-the-performance-of-dec-shor's-algorithm) — “the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm” (https://www.youtube.com/watch?v=09_LlHjoEiY&t=6102s)",
+          "academic": "freeCodeCamp.org. *Algorithms Course - Graph Theory Tutorial from a Google Engineer*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/438daceff8978ae7a5e2/the-optimal-dairy-heap-degree-actually-used-to-maximize-the-performance-of-dec-shor's-algorithm. Timestamp deep-link: https://www.youtube.com/watch?v=09_LlHjoEiY&t=6102s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/438daceff8978ae7a5e2/the-optimal-dairy-heap-degree-actually-used-to-maximize-the-performance-of-dec-shor's-algorithm",
+          "timestampCitation": "Algorithms Course - Graph Theory Tutorial from a Google Engineer. https://www.youtube.com/watch?v=09_LlHjoEiY&t=6102s (accessed 2026). Quoted moment: “the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "438daceff8978ae7a5e2",
+            "canonicalSlug": "the-optimal-dairy-heap-degree-actually-used-to-maximize-the-performance-of-dec-shor's-algorithm",
+            "videoId": "09_LlHjoEiY",
+            "startSeconds": 6102.2,
+            "phrase": "the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm",
+            "snippetExcerpt": "But remember, there are a lot more decreased key operations and Dykstra than there are removals. So this might be beneficial overall. So the question then becomes what is the optimal dairy heap degree actually used to maximize the performance of Dec Shor's algorithm? And",
+            "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=6102s"
+          }
+        }
+      },
+      "qualityScore": 132
+    },
+    {
+      "id": "d44f1dc5719a32b4b31e",
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "the show model scenario",
+      "canonicalSlug": "the-show-model-scenario",
+      "startSeconds": 26594.7,
+      "timestamp": "7:23:14",
+      "snippet": "be hidden by default. And now of course, I would want to come up with my return. So let's go again with our fragment here. And as far as the return, we'll start by just checking the model. What is the show model scenario. So if it is true, then I would want to showcase",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=26594s",
+      "videoTitle": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:49.555Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.1,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.345454545454544,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165.4,
+        "topics": {
+          "primaryTopic": "Show",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Model",
+            "Scenario"
+          ],
+          "relatedConcepts": [
+            "scenario",
+            "want",
+            "return",
+            "hidden",
+            "default",
+            "course",
+            "come",
+            "let's",
+            "again",
+            "fragment",
+            "here",
+            "we'll"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "show"
+        },
+        "citations": {
+          "markdown": "[Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks](https://www.youtubetimesearch.com/moment/d44f1dc5719a32b4b31e/the-show-model-scenario) — “the show model scenario” (https://www.youtube.com/watch?v=4UZrsTqkcW4&t=26594s)",
+          "academic": "freeCodeCamp.org. *Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d44f1dc5719a32b4b31e/the-show-model-scenario. Timestamp deep-link: https://www.youtube.com/watch?v=4UZrsTqkcW4&t=26594s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d44f1dc5719a32b4b31e/the-show-model-scenario",
+          "timestampCitation": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks. https://www.youtube.com/watch?v=4UZrsTqkcW4&t=26594s (accessed 2026). Quoted moment: “the show model scenario”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d44f1dc5719a32b4b31e",
+            "canonicalSlug": "the-show-model-scenario",
+            "videoId": "4UZrsTqkcW4",
+            "startSeconds": 26594.7,
+            "phrase": "the show model scenario",
+            "snippetExcerpt": "be hidden by default. And now of course, I would want to come up with my return. So let's go again with our fragment here. And as far as the return, we'll start by just checking the model. What is the show model scenario. So if it is true, then I would want to showcase",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=26594s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "6b1a1d0da779ee54700c",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "’s stored as the foreign key in the Branch Supplier table gets deleted",
+      "canonicalSlug": "%E2%80%99s-stored-as-the-foreign-key-in-the-branch-supplier-table-gets-deleted",
+      "startSeconds": 12419.2,
+      "timestamp": "3:26:59",
+      "snippet": "but instead of saying ON DELETE SET NULL, we said ON DELETE CASCADE. And when we use ON DELETE CASCADE, what that means is that if the branch ID that’s stored as the foreign key in the Branch Supplier table gets deleted,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12419s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.151Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 23,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 10,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.714285714285715,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 160.2,
+        "topics": {
+          "primaryTopic": "Stored",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Foreign",
+            "Branch",
+            "Supplier",
+            "Table"
+          ],
+          "relatedConcepts": [
+            "branch",
+            "supplier",
+            "table",
+            "gets",
+            "deleted",
+            "delete",
+            "cascade",
+            "instead",
+            "saying",
+            "null",
+            "said",
+            "means"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "stored"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/6b1a1d0da779ee54700c/%E2%80%99s-stored-as-the-foreign-key-in-the-branch-supplier-table-gets-deleted) — “’s stored as the foreign key in the Branch Supplier table gets deleted” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12419s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/6b1a1d0da779ee54700c/%E2%80%99s-stored-as-the-foreign-key-in-the-branch-supplier-table-gets-deleted. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12419s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/6b1a1d0da779ee54700c/%E2%80%99s-stored-as-the-foreign-key-in-the-branch-supplier-table-gets-deleted",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12419s (accessed 2026). Quoted moment: “’s stored as the foreign key in the Branch Supplier table gets deleted”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "6b1a1d0da779ee54700c",
+            "canonicalSlug": "%E2%80%99s-stored-as-the-foreign-key-in-the-branch-supplier-table-gets-deleted",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 12419.2,
+            "phrase": "’s stored as the foreign key in the Branch Supplier table gets deleted",
+            "snippetExcerpt": "but instead of saying ON DELETE SET NULL, we said ON DELETE CASCADE. And when we use ON DELETE CASCADE, what that means is that if the branch ID that’s stored as the foreign key in the Branch Supplier table gets deleted,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12419s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "9df96d0c6ad39c48293c",
+      "videoId": "8ext9G7xspg",
+      "phrase": "using a kernel size three, four blur, and using a kernel size 15 for a blur",
+      "canonicalSlug": "using-a-kernel-size-three%2C-four-blur%2C-and-using-a-kernel-size-15-for-a-blur",
+      "startSeconds": 8611.7,
+      "timestamp": "2:23:31",
+      "snippet": "and then we're going to write image and call it blur k three. And now I'm going to do the same thing with a kernel size of 15. Just so that I can show you guys the difference between using a kernel size three, four blur, and using a kernel size 15 for a blur. So let's run that.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=8611s",
+      "videoTitle": "12 Beginner Python Projects - Coding Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:10.497Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.084745762711865,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 159.9,
+        "topics": {
+          "primaryTopic": "Using",
+          "secondaryTopics": [
+            "Python",
+            "Coding",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Kernel",
+            "Size",
+            "Blur",
+            "Three"
+          ],
+          "relatedConcepts": [
+            "size",
+            "blur",
+            "three",
+            "four",
+            "going",
+            "then",
+            "we're",
+            "write",
+            "image",
+            "call",
+            "same",
+            "thing"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "coding",
+              "transcript-search",
+              "find-youtube-quotes"
+            ]
+          },
+          "topicClusterHint": "using"
+        },
+        "citations": {
+          "markdown": "[12 Beginner Python Projects - Coding Course](https://www.youtubetimesearch.com/moment/9df96d0c6ad39c48293c/using-a-kernel-size-three%2C-four-blur%2C-and-using-a-kernel-size-15-for-a-blur) — “using a kernel size three, four blur, and using a kernel size 15 for a blur” (https://www.youtube.com/watch?v=8ext9G7xspg&t=8611s)",
+          "academic": "freeCodeCamp.org. *12 Beginner Python Projects - Coding Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/9df96d0c6ad39c48293c/using-a-kernel-size-three%2C-four-blur%2C-and-using-a-kernel-size-15-for-a-blur. Timestamp deep-link: https://www.youtube.com/watch?v=8ext9G7xspg&t=8611s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/9df96d0c6ad39c48293c/using-a-kernel-size-three%2C-four-blur%2C-and-using-a-kernel-size-15-for-a-blur",
+          "timestampCitation": "12 Beginner Python Projects - Coding Course. https://www.youtube.com/watch?v=8ext9G7xspg&t=8611s (accessed 2026). Quoted moment: “using a kernel size three, four blur, and using a kernel size 15 for a blur”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "9df96d0c6ad39c48293c",
+            "canonicalSlug": "using-a-kernel-size-three%2C-four-blur%2C-and-using-a-kernel-size-15-for-a-blur",
+            "videoId": "8ext9G7xspg",
+            "startSeconds": 8611.7,
+            "phrase": "using a kernel size three, four blur, and using a kernel size 15 for a blur",
+            "snippetExcerpt": "and then we're going to write image and call it blur k three. And now I'm going to do the same thing with a kernel size of 15. Just so that I can show you guys the difference between using a kernel size three, four blur, and using a kernel size 15 for a blur. So let's run that.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=8611s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "8f766e622ce721791c82",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "it pre trained models",
+      "canonicalSlug": "it-pre-trained-models",
+      "startSeconds": 15736,
+      "timestamp": "4:22:16",
+      "snippet": "images in different areas so that we have a better generalization. Alright, so let's close that. Okay, so now we're gonna talk about using it or sorry, what is it pre trained models? Okay. So we talked about data augmentation, that's a great technique if you want to increase",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=15736s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:00.993Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.1,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.163265306122447,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 162.3,
+        "topics": {
+          "primaryTopic": "Trained",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Models"
+          ],
+          "relatedConcepts": [
+            "okay",
+            "images",
+            "different",
+            "areas",
+            "better",
+            "generalization",
+            "alright",
+            "let's",
+            "close",
+            "we're",
+            "gonna",
+            "talk"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "trained"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/8f766e622ce721791c82/it-pre-trained-models) — “it pre trained models” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=15736s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/8f766e622ce721791c82/it-pre-trained-models. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=15736s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/8f766e622ce721791c82/it-pre-trained-models",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=15736s (accessed 2026). Quoted moment: “it pre trained models”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "8f766e622ce721791c82",
+            "canonicalSlug": "it-pre-trained-models",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 15736,
+            "phrase": "it pre trained models",
+            "snippetExcerpt": "images in different areas so that we have a better generalization. Alright, so let's close that. Okay, so now we're gonna talk about using it or sorry, what is it pre trained models? Okay. So we talked about data augmentation, that's a great technique if you want to increase",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=15736s"
+          }
+        }
+      },
+      "qualityScore": 121
+    },
+    {
+      "id": "16c8a90a8dad83939d30",
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "the difference between function arguments and function parameters",
+      "canonicalSlug": "the-difference-between-function-arguments-and-function-parameters",
+      "startSeconds": 17601.4,
+      "timestamp": "4:53:21",
+      "snippet": "yeah, so this is the most important things about pools. And there are also asynchronous calls to this map and apply functions, but I will not cover them here. First of all, we will learn what is the difference between function arguments and function parameters.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s",
+      "videoTitle": "Intermediate Python Programming Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:12.047Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 10,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 21
+        },
+        "totalSemanticRank": 180.9,
+        "topics": {
+          "primaryTopic": "Function",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Difference",
+            "Between",
+            "Arguments",
+            "Parameters"
+          ],
+          "relatedConcepts": [
+            "between",
+            "arguments",
+            "parameters",
+            "yeah",
+            "most",
+            "important",
+            "things",
+            "pools",
+            "there",
+            "also",
+            "asynchronous",
+            "calls"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "function"
+        },
+        "citations": {
+          "markdown": "[Intermediate Python Programming Course](https://www.youtubetimesearch.com/moment/16c8a90a8dad83939d30/the-difference-between-function-arguments-and-function-parameters) — “the difference between function arguments and function parameters” (https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s)",
+          "academic": "freeCodeCamp.org. *Intermediate Python Programming Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/16c8a90a8dad83939d30/the-difference-between-function-arguments-and-function-parameters. Timestamp deep-link: https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/16c8a90a8dad83939d30/the-difference-between-function-arguments-and-function-parameters",
+          "timestampCitation": "Intermediate Python Programming Course. https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s (accessed 2026). Quoted moment: “the difference between function arguments and function parameters”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "16c8a90a8dad83939d30",
+            "canonicalSlug": "the-difference-between-function-arguments-and-function-parameters",
+            "videoId": "HGOBQPFzWKo",
+            "startSeconds": 17601.4,
+            "phrase": "the difference between function arguments and function parameters",
+            "snippetExcerpt": "yeah, so this is the most important things about pools. And there are also asynchronous calls to this map and apply functions, but I will not cover them here. First of all, we will learn what is the difference between function arguments and function parameters.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s"
+          }
+        }
+      },
+      "qualityScore": 135
+    },
+    {
+      "id": "678573e0f0c7bf465f9a",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "called non-relational databases",
+      "canonicalSlug": "called-non-relational-databases",
+      "startSeconds": 800.5,
+      "timestamp": "13:20",
+      "snippet": "So, the first is called a relational database. You’ll hear people refer to these as SQL[Sequel] databases or S-Q-L databases. And then we also have what are called non-relational databases.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=800s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:16.995Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 23.549999999999997,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 26,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165.6,
+        "topics": {
+          "primaryTopic": "Called",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Relational",
+            "Databases"
+          ],
+          "relatedConcepts": [
+            "databases",
+            "first",
+            "database",
+            "hear",
+            "people",
+            "refer",
+            "these",
+            "sequel",
+            "then",
+            "also"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "called"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/678573e0f0c7bf465f9a/called-non-relational-databases) — “called non-relational databases” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=800s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/678573e0f0c7bf465f9a/called-non-relational-databases. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=800s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/678573e0f0c7bf465f9a/called-non-relational-databases",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=800s (accessed 2026). Quoted moment: “called non-relational databases”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "678573e0f0c7bf465f9a",
+            "canonicalSlug": "called-non-relational-databases",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 800.5,
+            "phrase": "called non-relational databases",
+            "snippetExcerpt": "So, the first is called a relational database. You’ll hear people refer to these as SQL[Sequel] databases or S-Q-L databases. And then we also have what are called non-relational databases.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=800s"
+          }
+        }
+      },
+      "qualityScore": 126
+    },
+    {
+      "id": "620387f6d2c7466c9034",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "the author route of Route",
+      "canonicalSlug": "the-author-route-of-route",
+      "startSeconds": 8507.6,
+      "timestamp": "2:21:47",
+      "snippet": "types as well, because, you know, you never know what's going to happen, because they're prop types. And it's always good to practice these, these best practices so that you get used to them. Alright, so prop types. And here we say, what is the author route of Route",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8507s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.986Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.163265306122447,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 164.7,
+        "topics": {
+          "primaryTopic": "Route",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Author"
+          ],
+          "relatedConcepts": [
+            "types",
+            "because",
+            "know",
+            "prop",
+            "these",
+            "well",
+            "never",
+            "what's",
+            "going",
+            "happen",
+            "they're",
+            "it's"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "route"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/620387f6d2c7466c9034/the-author-route-of-route) — “the author route of Route” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8507s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/620387f6d2c7466c9034/the-author-route-of-route. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8507s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/620387f6d2c7466c9034/the-author-route-of-route",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8507s (accessed 2026). Quoted moment: “the author route of Route”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "620387f6d2c7466c9034",
+            "canonicalSlug": "the-author-route-of-route",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 8507.6,
+            "phrase": "the author route of Route",
+            "snippetExcerpt": "types as well, because, you know, you never know what's going to happen, because they're prop types. And it's always good to practice these, these best practices so that you get used to them. Alright, so prop types. And here we say, what is the author route of Route",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8507s"
+          }
+        }
+      },
+      "qualityScore": 126
+    },
+    {
+      "id": "5b11bf2343707d55cf51",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "in the Client table a foreign key to the branch",
+      "canonicalSlug": "in-the-client-table-a-foreign-key-to-the-branch",
+      "startSeconds": 15233.1,
+      "timestamp": "4:13:53",
+      "snippet": "Same thing down here for a client and branch. So, the branch over here is on the 1 side. And basically, what that means is that we're going to store in the Client table a foreign key to the branch.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15233s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.255Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 24.6,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.2,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 150.8,
+        "topics": {
+          "primaryTopic": "Client",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Table",
+            "Foreign",
+            "Branch"
+          ],
+          "relatedConcepts": [
+            "foreign",
+            "branch",
+            "here",
+            "same",
+            "thing",
+            "down",
+            "over",
+            "side",
+            "basically",
+            "means",
+            "we're",
+            "going"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "client"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/5b11bf2343707d55cf51/in-the-client-table-a-foreign-key-to-the-branch) — “in the Client table a foreign key to the branch” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15233s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/5b11bf2343707d55cf51/in-the-client-table-a-foreign-key-to-the-branch. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15233s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/5b11bf2343707d55cf51/in-the-client-table-a-foreign-key-to-the-branch",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15233s (accessed 2026). Quoted moment: “in the Client table a foreign key to the branch”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "5b11bf2343707d55cf51",
+            "canonicalSlug": "in-the-client-table-a-foreign-key-to-the-branch",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 15233.1,
+            "phrase": "in the Client table a foreign key to the branch",
+            "snippetExcerpt": "Same thing down here for a client and branch. So, the branch over here is on the 1 side. And basically, what that means is that we're going to store in the Client table a foreign key to the branch.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=15233s"
+          }
+        }
+      },
+      "qualityScore": 123
+    },
+    {
+      "id": "26f368080eb6bba6a365",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "it notifications IDs",
+      "canonicalSlug": "it-notifications-ids",
+      "startSeconds": 10446.6,
+      "timestamp": "2:54:06",
+      "snippet": "an array of IDs. So let's say notification IDs. And it's going to take this patch. And here, we just need to send an axios request. So post to slash notifications. And we pass the what is it notifications IDs. And here that then if we get a result, we dispatch",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10446s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.998Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 21.45,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.88235294117647,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 161.3,
+        "topics": {
+          "primaryTopic": "Notifications",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "relatedConcepts": [
+            "here",
+            "array",
+            "let's",
+            "notification",
+            "it's",
+            "going",
+            "take",
+            "patch",
+            "just",
+            "need",
+            "send",
+            "axios"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "notifications"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/26f368080eb6bba6a365/it-notifications-ids) — “it notifications IDs” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10446s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/26f368080eb6bba6a365/it-notifications-ids. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10446s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/26f368080eb6bba6a365/it-notifications-ids",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10446s (accessed 2026). Quoted moment: “it notifications IDs”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "26f368080eb6bba6a365",
+            "canonicalSlug": "it-notifications-ids",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 10446.6,
+            "phrase": "it notifications IDs",
+            "snippetExcerpt": "an array of IDs. So let's say notification IDs. And it's going to take this patch. And here, we just need to send an axios request. So post to slash notifications. And we pass the what is it notifications IDs. And here that then if we get a result, we dispatch",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10446s"
+          }
+        }
+      },
+      "qualityScore": 120
+    },
+    {
+      "id": "c11290d58491701efcbe",
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "the variable name, that is I am G",
+      "canonicalSlug": "the-variable-name%2C-that-is-i-am-g",
+      "startSeconds": 7855.5,
+      "timestamp": "2:10:55",
+      "snippet": "a string is going to be easier copy and paste, I have author, title image. And now of course, where I have the source. Again, I go back to JavaScript land. And what is the variable name, that is I am G. So once I sell it, nothing breaks, which is beautiful. When our remove",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=7855s",
+      "videoTitle": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:49.317Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.345454545454544,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165,
+        "topics": {
+          "primaryTopic": "Variable",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Name"
+          ],
+          "relatedConcepts": [
+            "string",
+            "going",
+            "easier",
+            "copy",
+            "paste",
+            "author",
+            "title",
+            "image",
+            "course",
+            "source",
+            "again",
+            "back"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "variable"
+        },
+        "citations": {
+          "markdown": "[Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks](https://www.youtubetimesearch.com/moment/c11290d58491701efcbe/the-variable-name%2C-that-is-i-am-g) — “the variable name, that is I am G” (https://www.youtube.com/watch?v=4UZrsTqkcW4&t=7855s)",
+          "academic": "freeCodeCamp.org. *Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/c11290d58491701efcbe/the-variable-name%2C-that-is-i-am-g. Timestamp deep-link: https://www.youtube.com/watch?v=4UZrsTqkcW4&t=7855s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/c11290d58491701efcbe/the-variable-name%2C-that-is-i-am-g",
+          "timestampCitation": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks. https://www.youtube.com/watch?v=4UZrsTqkcW4&t=7855s (accessed 2026). Quoted moment: “the variable name, that is I am G”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "c11290d58491701efcbe",
+            "canonicalSlug": "the-variable-name%2C-that-is-i-am-g",
+            "videoId": "4UZrsTqkcW4",
+            "startSeconds": 7855.5,
+            "phrase": "the variable name, that is I am G",
+            "snippetExcerpt": "a string is going to be easier copy and paste, I have author, title image. And now of course, where I have the source. Again, I go back to JavaScript land. And what is the variable name, that is I am G. So once I sell it, nothing breaks, which is beautiful. When our remove",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=7855s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "19635b98c8e7506ad2cd",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "the screen will be in The URL itself, dot scream",
+      "canonicalSlug": "the-screen-will-be-in-the-url-itself%2C-dot-scream",
+      "startSeconds": 6648.6,
+      "timestamp": "1:50:48",
+      "snippet": "a lot again, so request dot user dot handle because this is protected again. That means we have access to that handle. And we chain another word here where scream ID equals request dot params because this is the idea of the screen will be in The URL itself, dot scream",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=6648s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:57.417Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "framework"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.235294117647058,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 151.7,
+        "topics": {
+          "primaryTopic": "Screen",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Itself",
+            "Scream"
+          ],
+          "relatedConcepts": [
+            "scream",
+            "again",
+            "request",
+            "handle",
+            "because",
+            "user",
+            "protected",
+            "means",
+            "access",
+            "chain",
+            "another",
+            "word"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "screen"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/19635b98c8e7506ad2cd/the-screen-will-be-in-the-url-itself%2C-dot-scream) — “the screen will be in The URL itself, dot scream” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=6648s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/19635b98c8e7506ad2cd/the-screen-will-be-in-the-url-itself%2C-dot-scream. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=6648s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/19635b98c8e7506ad2cd/the-screen-will-be-in-the-url-itself%2C-dot-scream",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=6648s (accessed 2026). Quoted moment: “the screen will be in The URL itself, dot scream”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "19635b98c8e7506ad2cd",
+            "canonicalSlug": "the-screen-will-be-in-the-url-itself%2C-dot-scream",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 6648.6,
+            "phrase": "the screen will be in The URL itself, dot scream",
+            "snippetExcerpt": "a lot again, so request dot user dot handle because this is protected again. That means we have access to that handle. And we chain another word here where scream ID equals request dot params because this is the idea of the screen will be in The URL itself, dot scream",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=6648s"
+          }
+        }
+      },
+      "qualityScore": 121
+    },
+    {
+      "id": "c2976f2e7e7e93d3c1d8",
+      "videoId": "8ext9G7xspg",
+      "phrase": "graph composer is derived from a Markov chain",
+      "canonicalSlug": "graph-composer-is-derived-from-a-markov-chain",
+      "startSeconds": 9114.2,
+      "timestamp": "2:31:54",
+      "snippet": "So the last project I have for you guys is what I call graph composer. And it's kind of like an introduction to AI. The idea of graph composer is derived from a Markov chain. And so in a Markov chain, you have a node that represents a value,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=9114s",
+      "videoTitle": "12 Beginner Python Projects - Coding Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:10.535Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "framework"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.26530612244898,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 153.8,
+        "topics": {
+          "primaryTopic": "Graph",
+          "secondaryTopics": [
+            "Python",
+            "Coding",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Composer",
+            "Derived",
+            "Markov",
+            "Chain"
+          ],
+          "relatedConcepts": [
+            "derived",
+            "markov",
+            "chain",
+            "last",
+            "project",
+            "guys",
+            "call",
+            "it's",
+            "kind",
+            "like",
+            "introduction",
+            "idea"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "coding",
+              "transcript-search",
+              "find-youtube-quotes"
+            ]
+          },
+          "topicClusterHint": "graph"
+        },
+        "citations": {
+          "markdown": "[12 Beginner Python Projects - Coding Course](https://www.youtubetimesearch.com/moment/c2976f2e7e7e93d3c1d8/graph-composer-is-derived-from-a-markov-chain) — “graph composer is derived from a Markov chain” (https://www.youtube.com/watch?v=8ext9G7xspg&t=9114s)",
+          "academic": "freeCodeCamp.org. *12 Beginner Python Projects - Coding Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/c2976f2e7e7e93d3c1d8/graph-composer-is-derived-from-a-markov-chain. Timestamp deep-link: https://www.youtube.com/watch?v=8ext9G7xspg&t=9114s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/c2976f2e7e7e93d3c1d8/graph-composer-is-derived-from-a-markov-chain",
+          "timestampCitation": "12 Beginner Python Projects - Coding Course. https://www.youtube.com/watch?v=8ext9G7xspg&t=9114s (accessed 2026). Quoted moment: “graph composer is derived from a Markov chain”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "c2976f2e7e7e93d3c1d8",
+            "canonicalSlug": "graph-composer-is-derived-from-a-markov-chain",
+            "videoId": "8ext9G7xspg",
+            "startSeconds": 9114.2,
+            "phrase": "graph composer is derived from a Markov chain",
+            "snippetExcerpt": "So the last project I have for you guys is what I call graph composer. And it's kind of like an introduction to AI. The idea of graph composer is derived from a Markov chain. And so in a Markov chain, you have a node that represents a value,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=9114s"
+          }
+        }
+      },
+      "qualityScore": 120
+    },
+    {
+      "id": "a129422a419d672fad7d",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "ity Number as the primary key of the table",
+      "canonicalSlug": "ity-number-as-the-primary-key-of-the-table",
+      "startSeconds": 1783.6,
+      "timestamp": "29:43",
+      "snippet": "in order to uniquely identify each citizen. So, in this case we're using the Social Security Number in order to uniquely identify each row in the table. In other words, we're using the Social Security Number as the primary key of the table.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1783s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.290Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.58139534883721,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 152.1,
+        "topics": {
+          "primaryTopic": "Number",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Primary",
+            "Table"
+          ],
+          "relatedConcepts": [
+            "table",
+            "order",
+            "uniquely",
+            "identify",
+            "each",
+            "we're",
+            "using",
+            "social",
+            "security",
+            "citizen",
+            "case",
+            "other"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "number"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/a129422a419d672fad7d/ity-number-as-the-primary-key-of-the-table) — “ity Number as the primary key of the table” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1783s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/a129422a419d672fad7d/ity-number-as-the-primary-key-of-the-table. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1783s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/a129422a419d672fad7d/ity-number-as-the-primary-key-of-the-table",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1783s (accessed 2026). Quoted moment: “ity Number as the primary key of the table”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "a129422a419d672fad7d",
+            "canonicalSlug": "ity-number-as-the-primary-key-of-the-table",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 1783.6,
+            "phrase": "ity Number as the primary key of the table",
+            "snippetExcerpt": "in order to uniquely identify each citizen. So, in this case we're using the Social Security Number in order to uniquely identify each row in the table. In other words, we're using the Social Security Number as the primary key of the table.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1783s"
+          }
+        }
+      },
+      "qualityScore": 120
+    },
+    {
+      "id": "2d2ab732c5516821dd80",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "pliers that supplied Branch 2 when we deleted Branch 2",
+      "canonicalSlug": "pliers-that-supplied-branch-2-when-we-deleted-branch-2",
+      "startSeconds": 12484.1,
+      "timestamp": "3:28:04",
+      "snippet": "So, now I’ll just SELECT ALL from branch_supplier. And when I run this query, you'll notice that there’s no longer any branch ID’s 2 in here. In other words, we got rid of all of the suppliers that supplied Branch 2 when we deleted Branch 2.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12484s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.195Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 21.1,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.043478260869566,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 13
+        },
+        "totalSemanticRank": 159.1,
+        "topics": {
+          "primaryTopic": "Branch",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Pliers",
+            "Supplied",
+            "Deleted"
+          ],
+          "relatedConcepts": [
+            "supplied",
+            "deleted",
+            "just",
+            "select",
+            "supplier",
+            "query",
+            "you'll",
+            "notice",
+            "there",
+            "longer",
+            "here",
+            "other"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "branch"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/2d2ab732c5516821dd80/pliers-that-supplied-branch-2-when-we-deleted-branch-2) — “pliers that supplied Branch 2 when we deleted Branch 2” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12484s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/2d2ab732c5516821dd80/pliers-that-supplied-branch-2-when-we-deleted-branch-2. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12484s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/2d2ab732c5516821dd80/pliers-that-supplied-branch-2-when-we-deleted-branch-2",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12484s (accessed 2026). Quoted moment: “pliers that supplied Branch 2 when we deleted Branch 2”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "2d2ab732c5516821dd80",
+            "canonicalSlug": "pliers-that-supplied-branch-2-when-we-deleted-branch-2",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 12484.1,
+            "phrase": "pliers that supplied Branch 2 when we deleted Branch 2",
+            "snippetExcerpt": "So, now I’ll just SELECT ALL from branch_supplier. And when I run this query, you'll notice that there’s no longer any branch ID’s 2 in here. In other words, we got rid of all of the suppliers that supplied Branch 2 when we deleted Branch 2.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12484s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "234abb4dac63ebbfccd9",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "steps will steps is",
+      "canonicalSlug": "steps-will-steps-is",
+      "startSeconds": 9525.5,
+      "timestamp": "2:38:45",
+      "snippet": "So to create the models pretty easy. I mean, all we do is say model equals TensorFlow distribution dot hidden Markov model, give it the initial distribution, which is equal to initial distribution, transition, distribution, observation, distribution and steps. Now, what is steps will steps is",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9525s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:01.027Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 19,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.608695652173914,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 162.6,
+        "topics": {
+          "primaryTopic": "Steps",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "relatedConcepts": [
+            "distribution",
+            "model",
+            "initial",
+            "create",
+            "models",
+            "pretty",
+            "easy",
+            "mean",
+            "equals",
+            "tensorflow",
+            "hidden",
+            "markov"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "steps"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/234abb4dac63ebbfccd9/steps-will-steps-is) — “steps will steps is” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9525s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/234abb4dac63ebbfccd9/steps-will-steps-is. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9525s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/234abb4dac63ebbfccd9/steps-will-steps-is",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9525s (accessed 2026). Quoted moment: “steps will steps is”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "234abb4dac63ebbfccd9",
+            "canonicalSlug": "steps-will-steps-is",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 9525.5,
+            "phrase": "steps will steps is",
+            "snippetExcerpt": "So to create the models pretty easy. I mean, all we do is say model equals TensorFlow distribution dot hidden Markov model, give it the initial distribution, which is equal to initial distribution, transition, distribution, observation, distribution and steps. Now, what is steps will steps is",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=9525s"
+          }
+        }
+      },
+      "qualityScore": 116
+    },
+    {
+      "id": "8c26f071f7623bc18a2d",
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "our folder structure, what essentially we can find in the fresh instance of create react app",
+      "canonicalSlug": "our-folder-structure%2C-what-essentially-we-can-find-in-the-fresh-instance-of-create-react-app",
+      "startSeconds": 2504.9,
+      "timestamp": "41:44",
+      "snippet": "the browser. And this is going to be our project. Now, don't worry, in the next video, we'll take a closer look on what is our folder structure, what essentially we can find in the fresh instance of create react app. However, for now, I would just want to spin up my bear",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=2504s",
+      "videoTitle": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:48.768Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.660377358490567,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 179.5,
+        "topics": {
+          "primaryTopic": "Folder",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Structure",
+            "Essentially",
+            "Find",
+            "Fresh"
+          ],
+          "relatedConcepts": [
+            "essentially",
+            "find",
+            "fresh",
+            "instance",
+            "create",
+            "react",
+            "browser",
+            "going",
+            "project",
+            "don't",
+            "worry",
+            "next"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "folder"
+        },
+        "citations": {
+          "markdown": "[Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks](https://www.youtubetimesearch.com/moment/8c26f071f7623bc18a2d/our-folder-structure%2C-what-essentially-we-can-find-in-the-fresh-instance-of-create-react-app) — “our folder structure, what essentially we can find in the fresh instance of create react app” (https://www.youtube.com/watch?v=4UZrsTqkcW4&t=2504s)",
+          "academic": "freeCodeCamp.org. *Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/8c26f071f7623bc18a2d/our-folder-structure%2C-what-essentially-we-can-find-in-the-fresh-instance-of-create-react-app. Timestamp deep-link: https://www.youtube.com/watch?v=4UZrsTqkcW4&t=2504s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/8c26f071f7623bc18a2d/our-folder-structure%2C-what-essentially-we-can-find-in-the-fresh-instance-of-create-react-app",
+          "timestampCitation": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks. https://www.youtube.com/watch?v=4UZrsTqkcW4&t=2504s (accessed 2026). Quoted moment: “our folder structure, what essentially we can find in the fresh instance of create react app”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "8c26f071f7623bc18a2d",
+            "canonicalSlug": "our-folder-structure%2C-what-essentially-we-can-find-in-the-fresh-instance-of-create-react-app",
+            "videoId": "4UZrsTqkcW4",
+            "startSeconds": 2504.9,
+            "phrase": "our folder structure, what essentially we can find in the fresh instance of create react app",
+            "snippetExcerpt": "the browser. And this is going to be our project. Now, don't worry, in the next video, we'll take a closer look on what is our folder structure, what essentially we can find in the fresh instance of create react app. However, for now, I would just want to spin up my bear",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=2504s"
+          }
+        }
+      },
+      "qualityScore": 129
+    },
+    {
+      "id": "5da7aab9fb1841101071",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "the training labels",
+      "canonicalSlug": "the-training-labels",
+      "startSeconds": 12183.5,
+      "timestamp": "3:23:03",
+      "snippet": "it's 255, that means that this is white. If it's zero, that means that it is black. Alright, so let's have a look at the first 10 training labels. So that was our training images. Now, what are the training labels? Okay, so we have an array and we get values from zero",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=12183s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:01.039Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.35,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 22.943396226415096,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 159.3,
+        "topics": {
+          "primaryTopic": "Training",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Labels"
+          ],
+          "relatedConcepts": [
+            "it's",
+            "means",
+            "zero",
+            "white",
+            "black",
+            "alright",
+            "let's",
+            "look",
+            "first",
+            "images",
+            "okay",
+            "array"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "training"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/5da7aab9fb1841101071/the-training-labels) — “the training labels” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=12183s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/5da7aab9fb1841101071/the-training-labels. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=12183s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/5da7aab9fb1841101071/the-training-labels",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=12183s (accessed 2026). Quoted moment: “the training labels”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "5da7aab9fb1841101071",
+            "canonicalSlug": "the-training-labels",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 12183.5,
+            "phrase": "the training labels",
+            "snippetExcerpt": "it's 255, that means that this is white. If it's zero, that means that it is black. Alright, so let's have a look at the first 10 training labels. So that was our training images. Now, what are the training labels? Okay, so we have an array and we get values from zero",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=12183s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "93a5a11b36feb70d2470",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "we create databases on the computers",
+      "canonicalSlug": "we-create-databases-on-the-computers",
+      "startSeconds": 551.9,
+      "timestamp": "9:11",
+      "snippet": "and duplicate that information and store that information on different computers. So, the main point of this slide is that computers are great at keeping track of large amounts of information. And so, going forward, we're going to be talking about how can we create databases on the computers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=551s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.376Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 15.799999999999999,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.53061224489796,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 153.3,
+        "topics": {
+          "primaryTopic": "Create",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Databases",
+            "Computers"
+          ],
+          "relatedConcepts": [
+            "computers",
+            "information",
+            "going",
+            "duplicate",
+            "store",
+            "different",
+            "main",
+            "point",
+            "slide",
+            "great",
+            "keeping",
+            "track"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "create"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/93a5a11b36feb70d2470/we-create-databases-on-the-computers) — “we create databases on the computers” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=551s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/93a5a11b36feb70d2470/we-create-databases-on-the-computers. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=551s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/93a5a11b36feb70d2470/we-create-databases-on-the-computers",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=551s (accessed 2026). Quoted moment: “we create databases on the computers”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "93a5a11b36feb70d2470",
+            "canonicalSlug": "we-create-databases-on-the-computers",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 551.9,
+            "phrase": "we create databases on the computers",
+            "snippetExcerpt": "and duplicate that information and store that information on different computers. So, the main point of this slide is that computers are great at keeping track of large amounts of information. And so, going forward, we're going to be talking about how can we create databases on the computers",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=551s"
+          }
+        }
+      },
+      "qualityScore": 116
+    },
+    {
+      "id": "29c7db1d6debebe83fb8",
+      "videoId": "tPYj3fFJGjk",
+      "phrase": "we are classes that are whether this is the value we're looking for",
+      "canonicalSlug": "we-are-classes-that-are-whether-this-is-the-value-we're-looking-for",
+      "startSeconds": 11779.2,
+      "timestamp": "3:16:19",
+      "snippet": "we add the bias, we apply an activation function, we look at the output, and we determine whether we know we are a class Why are we are classes that are whether this is the value we're looking for. And, and that's how it works. Now we're at the training process, right? So we're doing",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=11779s",
+      "videoTitle": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:00.474Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.69090909090909,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 157.4,
+        "topics": {
+          "primaryTopic": "Classes",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Whether",
+            "Value",
+            "We're",
+            "Looking"
+          ],
+          "relatedConcepts": [
+            "value",
+            "we're",
+            "looking",
+            "bias",
+            "apply",
+            "activation",
+            "function",
+            "look",
+            "output",
+            "determine",
+            "know",
+            "class"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "classes"
+        },
+        "citations": {
+          "markdown": "[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtubetimesearch.com/moment/29c7db1d6debebe83fb8/we-are-classes-that-are-whether-this-is-the-value-we're-looking-for) — “we are classes that are whether this is the value we're looking for” (https://www.youtube.com/watch?v=tPYj3fFJGjk&t=11779s)",
+          "academic": "freeCodeCamp.org. *TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/29c7db1d6debebe83fb8/we-are-classes-that-are-whether-this-is-the-value-we're-looking-for. Timestamp deep-link: https://www.youtube.com/watch?v=tPYj3fFJGjk&t=11779s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/29c7db1d6debebe83fb8/we-are-classes-that-are-whether-this-is-the-value-we're-looking-for",
+          "timestampCitation": "TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial. https://www.youtube.com/watch?v=tPYj3fFJGjk&t=11779s (accessed 2026). Quoted moment: “we are classes that are whether this is the value we're looking for”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "29c7db1d6debebe83fb8",
+            "canonicalSlug": "we-are-classes-that-are-whether-this-is-the-value-we're-looking-for",
+            "videoId": "tPYj3fFJGjk",
+            "startSeconds": 11779.2,
+            "phrase": "we are classes that are whether this is the value we're looking for",
+            "snippetExcerpt": "we add the bias, we apply an activation function, we look at the output, and we determine whether we know we are a class Why are we are classes that are whether this is the value we're looking for. And, and that's how it works. Now we're at the training process, right? So we're doing",
+            "youtubeUrl": "https://www.youtube.com/watch?v=tPYj3fFJGjk&t=11779s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "e2bd0c9afafae15f359a",
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages",
+      "canonicalSlug": "can-install-a-few-dependencies.-so-npm%2C-install-express-corps%2C-mongoose%2C-and-dot-e-and-v.-okay%2C-so-what-are-these-packages",
+      "startSeconds": 768,
+      "timestamp": "12:48",
+      "snippet": "now we'll create a package dot JSON file inside the folder by doing NPM and net, and then why to answer yes to all the questions asks. Okay, now we can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages? Well,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7CqJlxBYj-M&t=768s",
+      "videoTitle": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:24.747Z",
+      "semantic": {
+        "extractionKinds": [
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 15,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 16.799999999999997,
+          "technicalSpecificity": 14,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 26,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 13
+        },
+        "totalSemanticRank": 158.6,
+        "topics": {
+          "primaryTopic": "Install",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Dependencies",
+            "Express",
+            "Corps",
+            "Mongoose"
+          ],
+          "relatedConcepts": [
+            "express",
+            "corps",
+            "mongoose",
+            "okay",
+            "these",
+            "packages",
+            "we'll",
+            "create",
+            "package",
+            "json",
+            "file",
+            "inside"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "install"
+        },
+        "citations": {
+          "markdown": "[Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)](https://www.youtubetimesearch.com/moment/e2bd0c9afafae15f359a/can-install-a-few-dependencies.-so-npm%2C-install-express-corps%2C-mongoose%2C-and-dot-e-and-v.-okay%2C-so-what-are-these-packages) — “can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages” (https://www.youtube.com/watch?v=7CqJlxBYj-M&t=768s)",
+          "academic": "freeCodeCamp.org. *Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e2bd0c9afafae15f359a/can-install-a-few-dependencies.-so-npm%2C-install-express-corps%2C-mongoose%2C-and-dot-e-and-v.-okay%2C-so-what-are-these-packages. Timestamp deep-link: https://www.youtube.com/watch?v=7CqJlxBYj-M&t=768s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e2bd0c9afafae15f359a/can-install-a-few-dependencies.-so-npm%2C-install-express-corps%2C-mongoose%2C-and-dot-e-and-v.-okay%2C-so-what-are-these-packages",
+          "timestampCitation": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js). https://www.youtube.com/watch?v=7CqJlxBYj-M&t=768s (accessed 2026). Quoted moment: “can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e2bd0c9afafae15f359a",
+            "canonicalSlug": "can-install-a-few-dependencies.-so-npm%2C-install-express-corps%2C-mongoose%2C-and-dot-e-and-v.-okay%2C-so-what-are-these-packages",
+            "videoId": "7CqJlxBYj-M",
+            "startSeconds": 768,
+            "phrase": "can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages",
+            "snippetExcerpt": "now we'll create a package dot JSON file inside the folder by doing NPM and net, and then why to answer yes to all the questions asks. Okay, now we can install a few dependencies. So NPM, install Express Corps, mongoose, and dot E and V. Okay, so what are these packages? Well,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=7CqJlxBYj-M&t=768s"
+          }
+        }
+      },
+      "qualityScore": 133
+    },
+    {
+      "id": "dfb14c76c6f6f04e3c85",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "h that had an ID of 2",
+      "canonicalSlug": "h-that-had-an-id-of-2",
+      "startSeconds": 12444.8,
+      "timestamp": "3:27:24",
+      "snippet": "So, I have like Hammer Mill supplies paper to branch_id 2. Or Uni-ball supplies writing utensils to branch_id number 2. If I was to delete Branch 2, in other words, if I was to delete the branch that had an ID of 2,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12444s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.962Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 23,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.58139534883721,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 150.4,
+        "topics": {
+          "primaryTopic": "General",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "relatedConcepts": [
+            "branch",
+            "supplies",
+            "delete",
+            "like",
+            "hammer",
+            "mill",
+            "paper",
+            "ball",
+            "writing",
+            "utensils",
+            "number",
+            "other"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "general"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/dfb14c76c6f6f04e3c85/h-that-had-an-id-of-2) — “h that had an ID of 2” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12444s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/dfb14c76c6f6f04e3c85/h-that-had-an-id-of-2. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12444s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/dfb14c76c6f6f04e3c85/h-that-had-an-id-of-2",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12444s (accessed 2026). Quoted moment: “h that had an ID of 2”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "dfb14c76c6f6f04e3c85",
+            "canonicalSlug": "h-that-had-an-id-of-2",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 12444.8,
+            "phrase": "h that had an ID of 2",
+            "snippetExcerpt": "So, I have like Hammer Mill supplies paper to branch_id 2. Or Uni-ball supplies writing utensils to branch_id number 2. If I was to delete Branch 2, in other words, if I was to delete the branch that had an ID of 2,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12444s"
+          }
+        }
+      },
+      "qualityScore": 116
+    },
+    {
+      "id": "08f6ac70663b6d8a6085",
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "rendered, show how I can access whatever",
+      "canonicalSlug": "rendered%2C-show-how-i-can-access-whatever",
+      "startSeconds": 9094.2,
+      "timestamp": "2:31:34",
+      "snippet": "many words you would like sir Marcos, I'm going to go with 20. Now the moment or run it, notice how nothing changes, I don't see any difference. So the paragraph is only for the first one. But there's no difference on what is rendered, show how I can access whatever",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=9094s",
+      "videoTitle": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:49.159Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.294117647058822,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 175,
+        "topics": {
+          "primaryTopic": "Rendered",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Show",
+            "Access",
+            "Whatever"
+          ],
+          "relatedConcepts": [
+            "access",
+            "whatever",
+            "difference",
+            "many",
+            "words",
+            "like",
+            "marcos",
+            "going",
+            "moment",
+            "notice",
+            "nothing",
+            "changes"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "rendered"
+        },
+        "citations": {
+          "markdown": "[Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks](https://www.youtubetimesearch.com/moment/08f6ac70663b6d8a6085/rendered%2C-show-how-i-can-access-whatever) — “rendered, show how I can access whatever” (https://www.youtube.com/watch?v=4UZrsTqkcW4&t=9094s)",
+          "academic": "freeCodeCamp.org. *Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/08f6ac70663b6d8a6085/rendered%2C-show-how-i-can-access-whatever. Timestamp deep-link: https://www.youtube.com/watch?v=4UZrsTqkcW4&t=9094s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/08f6ac70663b6d8a6085/rendered%2C-show-how-i-can-access-whatever",
+          "timestampCitation": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks. https://www.youtube.com/watch?v=4UZrsTqkcW4&t=9094s (accessed 2026). Quoted moment: “rendered, show how I can access whatever”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "08f6ac70663b6d8a6085",
+            "canonicalSlug": "rendered%2C-show-how-i-can-access-whatever",
+            "videoId": "4UZrsTqkcW4",
+            "startSeconds": 9094.2,
+            "phrase": "rendered, show how I can access whatever",
+            "snippetExcerpt": "many words you would like sir Marcos, I'm going to go with 20. Now the moment or run it, notice how nothing changes, I don't see any difference. So the paragraph is only for the first one. But there's no difference on what is rendered, show how I can access whatever",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=9094s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "c17ca3dcb978b3749673",
+      "videoId": "8ext9G7xspg",
+      "phrase": "why we use negative one is sometimes it's ru dot split has some fluff on the inside",
+      "canonicalSlug": "why-we-use-negative-one-is-sometimes-it's-ru-dot-split-has-some-fluff-on-the-inside",
+      "startSeconds": 6434,
+      "timestamp": "1:47:14",
+      "snippet": "Okay, so now that we've split our input, we now know what row and column the user is trying to dig. So we can assign row and column to the user input at zero and the user input at negative one. The reason why we use negative one is sometimes it's ru dot split has some fluff on the inside",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=6434s",
+      "videoTitle": "12 Beginner Python Projects - Coding Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:10.489Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.4,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 13
+        },
+        "totalSemanticRank": 163.1,
+        "topics": {
+          "primaryTopic": "Negative",
+          "secondaryTopics": [
+            "Python",
+            "Coding",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Sometimes",
+            "It's",
+            "Split",
+            "Some"
+          ],
+          "relatedConcepts": [
+            "it's",
+            "split",
+            "some",
+            "fluff",
+            "inside",
+            "input",
+            "user",
+            "column",
+            "okay",
+            "we've",
+            "know",
+            "trying"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "coding",
+              "transcript-search",
+              "find-youtube-quotes"
+            ]
+          },
+          "topicClusterHint": "negative"
+        },
+        "citations": {
+          "markdown": "[12 Beginner Python Projects - Coding Course](https://www.youtubetimesearch.com/moment/c17ca3dcb978b3749673/why-we-use-negative-one-is-sometimes-it's-ru-dot-split-has-some-fluff-on-the-inside) — “why we use negative one is sometimes it's ru dot split has some fluff on the inside” (https://www.youtube.com/watch?v=8ext9G7xspg&t=6434s)",
+          "academic": "freeCodeCamp.org. *12 Beginner Python Projects - Coding Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/c17ca3dcb978b3749673/why-we-use-negative-one-is-sometimes-it's-ru-dot-split-has-some-fluff-on-the-inside. Timestamp deep-link: https://www.youtube.com/watch?v=8ext9G7xspg&t=6434s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/c17ca3dcb978b3749673/why-we-use-negative-one-is-sometimes-it's-ru-dot-split-has-some-fluff-on-the-inside",
+          "timestampCitation": "12 Beginner Python Projects - Coding Course. https://www.youtube.com/watch?v=8ext9G7xspg&t=6434s (accessed 2026). Quoted moment: “why we use negative one is sometimes it's ru dot split has some fluff on the inside”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "c17ca3dcb978b3749673",
+            "canonicalSlug": "why-we-use-negative-one-is-sometimes-it's-ru-dot-split-has-some-fluff-on-the-inside",
+            "videoId": "8ext9G7xspg",
+            "startSeconds": 6434,
+            "phrase": "why we use negative one is sometimes it's ru dot split has some fluff on the inside",
+            "snippetExcerpt": "Okay, so now that we've split our input, we now know what row and column the user is trying to dig. So we can assign row and column to the user input at zero and the user input at negative one. The reason why we use negative one is sometimes it's ru dot split has some fluff on the inside",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=6434s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "c571597608b67b66674c",
+      "videoId": "8ext9G7xspg",
+      "phrase": "like, for example, if I have",
+      "canonicalSlug": "like%2C-for-example%2C-if-i-have",
+      "startSeconds": 7180.1,
+      "timestamp": "1:59:40",
+      "snippet": "And then we're going to say for each row for each of the columns within that three, we're going to iterate. So what we can do in order to find this is actually take the row index and divide it by three, but throw away the remainder. What is like, for example, if I have",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=7180s",
+      "videoTitle": "12 Beginner Python Projects - Coding Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:10.420Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.01818181818182,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 162.7,
+        "topics": {
+          "primaryTopic": "Like",
+          "secondaryTopics": [
+            "Python",
+            "Coding",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Example"
+          ],
+          "relatedConcepts": [
+            "we're",
+            "going",
+            "each",
+            "three",
+            "then",
+            "columns",
+            "within",
+            "iterate",
+            "order",
+            "find",
+            "actually",
+            "take"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "coding",
+              "transcript-search",
+              "find-youtube-quotes"
+            ]
+          },
+          "topicClusterHint": "like"
+        },
+        "citations": {
+          "markdown": "[12 Beginner Python Projects - Coding Course](https://www.youtubetimesearch.com/moment/c571597608b67b66674c/like%2C-for-example%2C-if-i-have) — “like, for example, if I have” (https://www.youtube.com/watch?v=8ext9G7xspg&t=7180s)",
+          "academic": "freeCodeCamp.org. *12 Beginner Python Projects - Coding Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/c571597608b67b66674c/like%2C-for-example%2C-if-i-have. Timestamp deep-link: https://www.youtube.com/watch?v=8ext9G7xspg&t=7180s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/c571597608b67b66674c/like%2C-for-example%2C-if-i-have",
+          "timestampCitation": "12 Beginner Python Projects - Coding Course. https://www.youtube.com/watch?v=8ext9G7xspg&t=7180s (accessed 2026). Quoted moment: “like, for example, if I have”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "c571597608b67b66674c",
+            "canonicalSlug": "like%2C-for-example%2C-if-i-have",
+            "videoId": "8ext9G7xspg",
+            "startSeconds": 7180.1,
+            "phrase": "like, for example, if I have",
+            "snippetExcerpt": "And then we're going to say for each row for each of the columns within that three, we're going to iterate. So what we can do in order to find this is actually take the row index and divide it by three, but throw away the remainder. What is like, for example, if I have",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8ext9G7xspg&t=7180s"
+          }
+        }
+      },
+      "qualityScore": 117
+    },
+    {
+      "id": "df0ad26f4fdd131b83c3",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "that prop types from prop types",
+      "canonicalSlug": "that-prop-types-from-prop-types",
+      "startSeconds": 8532.6,
+      "timestamp": "2:22:12",
+      "snippet": "it didn't work. Come on. Yes, Third time's the charm, I guess. All right, so let's remove the export. And here we're gonna need a couple of things. Of course, we're gonna have prop types. So prop types. What is that prop types from prop types. We're gonna need with styles.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8532s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.936Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.941176470588236,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 162.6,
+        "topics": {
+          "primaryTopic": "Prop",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Types"
+          ],
+          "relatedConcepts": [
+            "we're",
+            "gonna",
+            "need",
+            "didn't",
+            "work",
+            "come",
+            "third",
+            "time's",
+            "charm",
+            "guess",
+            "right",
+            "let's"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "prop"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/df0ad26f4fdd131b83c3/that-prop-types-from-prop-types) — “that prop types from prop types” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8532s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/df0ad26f4fdd131b83c3/that-prop-types-from-prop-types. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8532s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/df0ad26f4fdd131b83c3/that-prop-types-from-prop-types",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8532s (accessed 2026). Quoted moment: “that prop types from prop types”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "df0ad26f4fdd131b83c3",
+            "canonicalSlug": "that-prop-types-from-prop-types",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 8532.6,
+            "phrase": "that prop types from prop types",
+            "snippetExcerpt": "it didn't work. Come on. Yes, Third time's the charm, I guess. All right, so let's remove the export. And here we're gonna need a couple of things. Of course, we're gonna have prop types. So prop types. What is that prop types from prop types. We're gonna need with styles.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=8532s"
+          }
+        }
+      },
+      "qualityScore": 117
+    },
+    {
+      "id": "62dbe4ad92a762331a13",
+      "videoId": "HXV3zeQKqGY",
+      "phrase": "table couldn't have a primary key of 2",
+      "canonicalSlug": "table-couldn't-have-a-primary-key-of-2",
+      "startSeconds": 1633.1,
+      "timestamp": "27:13",
+      "snippet": "It could really be anything that you want. But it has to uniquely identify the specific row. So, in other words, another row in this student table couldn't have a primary key of 2.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1633s",
+      "videoTitle": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:17.340Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 21,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.88235294117647,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 148.7,
+        "topics": {
+          "primaryTopic": "Table",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Couldn't",
+            "Primary"
+          ],
+          "relatedConcepts": [
+            "primary",
+            "really",
+            "anything",
+            "want",
+            "uniquely",
+            "identify",
+            "specific",
+            "other",
+            "words",
+            "another",
+            "student"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "table"
+        },
+        "citations": {
+          "markdown": "[SQL Tutorial - Full Database Course for Beginners](https://www.youtubetimesearch.com/moment/62dbe4ad92a762331a13/table-couldn't-have-a-primary-key-of-2) — “table couldn't have a primary key of 2” (https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1633s)",
+          "academic": "freeCodeCamp.org. *SQL Tutorial - Full Database Course for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/62dbe4ad92a762331a13/table-couldn't-have-a-primary-key-of-2. Timestamp deep-link: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1633s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/62dbe4ad92a762331a13/table-couldn't-have-a-primary-key-of-2",
+          "timestampCitation": "SQL Tutorial - Full Database Course for Beginners. https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1633s (accessed 2026). Quoted moment: “table couldn't have a primary key of 2”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "62dbe4ad92a762331a13",
+            "canonicalSlug": "table-couldn't-have-a-primary-key-of-2",
+            "videoId": "HXV3zeQKqGY",
+            "startSeconds": 1633.1,
+            "phrase": "table couldn't have a primary key of 2",
+            "snippetExcerpt": "It could really be anything that you want. But it has to uniquely identify the specific row. So, in other words, another row in this student table couldn't have a primary key of 2.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1633s"
+          }
+        }
+      },
+      "qualityScore": 114
+    },
+    {
+      "id": "155eec41c5a33d491fbb",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "this the email, the email",
+      "canonicalSlug": "this-the-email%2C-the-email",
+      "startSeconds": 7791.6,
+      "timestamp": "2:09:51",
+      "snippet": "So stick to like, we should stick to camel case, variable names. I'm going to come here gonna give this a value. Actually, we haven't declared our state yet. You're gonna give us a value of this dot State DOT, what is this the email, the email. And here, I'm going",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=7791s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.973Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.235294117647058,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 161.9,
+        "topics": {
+          "primaryTopic": "Email",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "relatedConcepts": [
+            "stick",
+            "going",
+            "here",
+            "gonna",
+            "give",
+            "value",
+            "state",
+            "like",
+            "camel",
+            "case",
+            "variable",
+            "names"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "email"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/155eec41c5a33d491fbb/this-the-email%2C-the-email) — “this the email, the email” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=7791s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/155eec41c5a33d491fbb/this-the-email%2C-the-email. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=7791s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/155eec41c5a33d491fbb/this-the-email%2C-the-email",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=7791s (accessed 2026). Quoted moment: “this the email, the email”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "155eec41c5a33d491fbb",
+            "canonicalSlug": "this-the-email%2C-the-email",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 7791.6,
+            "phrase": "this the email, the email",
+            "snippetExcerpt": "So stick to like, we should stick to camel case, variable names. I'm going to come here gonna give this a value. Actually, we haven't declared our state yet. You're gonna give us a value of this dot State DOT, what is this the email, the email. And here, I'm going",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=7791s"
+          }
+        }
+      },
+      "qualityScore": 117
+    },
+    {
+      "id": "1ae3ea9f7e57baf983d3",
+      "videoId": "4UZrsTqkcW4",
+      "phrase": "the value 40 is error",
+      "canonicalSlug": "the-value-40-is-error",
+      "startSeconds": 22226.7,
+      "timestamp": "6:10:26",
+      "snippet": "once we'll save, check it out. Now it says there is no error. Why not simple? Because error, of course, is false. Correct. So if it is false, then of course, we skip the first part, because we check what is the value 40 is error. And of course it is false. So we",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=22226s",
+      "videoTitle": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:49.581Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.333333333333332,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 163.1,
+        "topics": {
+          "primaryTopic": "Value",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Error"
+          ],
+          "relatedConcepts": [
+            "course",
+            "false",
+            "check",
+            "because",
+            "once",
+            "we'll",
+            "save",
+            "says",
+            "there",
+            "simple",
+            "correct",
+            "then"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "value"
+        },
+        "citations": {
+          "markdown": "[Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks](https://www.youtubetimesearch.com/moment/1ae3ea9f7e57baf983d3/the-value-40-is-error) — “the value 40 is error” (https://www.youtube.com/watch?v=4UZrsTqkcW4&t=22226s)",
+          "academic": "freeCodeCamp.org. *Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/1ae3ea9f7e57baf983d3/the-value-40-is-error. Timestamp deep-link: https://www.youtube.com/watch?v=4UZrsTqkcW4&t=22226s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/1ae3ea9f7e57baf983d3/the-value-40-is-error",
+          "timestampCitation": "Full React Course 2020 - Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks. https://www.youtube.com/watch?v=4UZrsTqkcW4&t=22226s (accessed 2026). Quoted moment: “the value 40 is error”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "1ae3ea9f7e57baf983d3",
+            "canonicalSlug": "the-value-40-is-error",
+            "videoId": "4UZrsTqkcW4",
+            "startSeconds": 22226.7,
+            "phrase": "the value 40 is error",
+            "snippetExcerpt": "once we'll save, check it out. Now it says there is no error. Why not simple? Because error, of course, is false. Correct. So if it is false, then of course, we skip the first part, because we check what is the value 40 is error. And of course it is false. So we",
+            "youtubeUrl": "https://www.youtube.com/watch?v=4UZrsTqkcW4&t=22226s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "d4163105bd267e42160d",
+      "videoId": "7CqJlxBYj-M",
+      "phrase": "document based open source database",
+      "canonicalSlug": "document-based-open-source-database",
+      "startSeconds": 95.6,
+      "timestamp": "1:35",
+      "snippet": "JavaScript code outside of a browser, such as on a server. And Express is a web application framework for node j s, it allows us to easily create a web server. And then MongoDB is the document based open source database. So in our app, we'll be storing our data in MongoDB. And then finally,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7CqJlxBYj-M&t=95s",
+      "videoTitle": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:24.652Z",
+      "semantic": {
+        "extractionKinds": [
+          "noun_phrase",
+          "multi_word_concept"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 11,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 14,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.672727272727272,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 0
+        },
+        "totalSemanticRank": 129.5,
+        "topics": {
+          "primaryTopic": "Document",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Based",
+            "Open",
+            "Source",
+            "Database"
+          ],
+          "relatedConcepts": [
+            "open",
+            "source",
+            "database",
+            "server",
+            "then",
+            "mongodb",
+            "javascript",
+            "code",
+            "outside",
+            "browser",
+            "such",
+            "express"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "document"
+        },
+        "citations": {
+          "markdown": "[Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)](https://www.youtubetimesearch.com/moment/d4163105bd267e42160d/document-based-open-source-database) — “document based open source database” (https://www.youtube.com/watch?v=7CqJlxBYj-M&t=95s)",
+          "academic": "freeCodeCamp.org. *Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d4163105bd267e42160d/document-based-open-source-database. Timestamp deep-link: https://www.youtube.com/watch?v=7CqJlxBYj-M&t=95s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d4163105bd267e42160d/document-based-open-source-database",
+          "timestampCitation": "Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js). https://www.youtube.com/watch?v=7CqJlxBYj-M&t=95s (accessed 2026). Quoted moment: “document based open source database”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d4163105bd267e42160d",
+            "canonicalSlug": "document-based-open-source-database",
+            "videoId": "7CqJlxBYj-M",
+            "startSeconds": 95.6,
+            "phrase": "document based open source database",
+            "snippetExcerpt": "JavaScript code outside of a browser, such as on a server. And Express is a web application framework for node j s, it allows us to easily create a web server. And then MongoDB is the document based open source database. So in our app, we'll be storing our data in MongoDB. And then finally,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=7CqJlxBYj-M&t=95s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "91ead35301709c3bf847",
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "function arguments and function parameters",
+      "canonicalSlug": "function-arguments-and-function-parameters",
+      "startSeconds": 17601.4,
+      "timestamp": "4:53:21",
+      "snippet": "yeah, so this is the most important things about pools. And there are also asynchronous calls to this map and apply functions, but I will not cover them here. First of all, we will learn what is the difference between function arguments and function parameters.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s",
+      "videoTitle": "Intermediate Python Programming Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:12.167Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 166.9,
+        "topics": {
+          "primaryTopic": "Function",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Arguments",
+            "Parameters"
+          ],
+          "relatedConcepts": [
+            "parameters",
+            "yeah",
+            "most",
+            "important",
+            "things",
+            "pools",
+            "there",
+            "also",
+            "asynchronous",
+            "calls",
+            "apply",
+            "functions"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "function"
+        },
+        "citations": {
+          "markdown": "[Intermediate Python Programming Course](https://www.youtubetimesearch.com/moment/91ead35301709c3bf847/function-arguments-and-function-parameters) — “function arguments and function parameters” (https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s)",
+          "academic": "freeCodeCamp.org. *Intermediate Python Programming Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/91ead35301709c3bf847/function-arguments-and-function-parameters. Timestamp deep-link: https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/91ead35301709c3bf847/function-arguments-and-function-parameters",
+          "timestampCitation": "Intermediate Python Programming Course. https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s (accessed 2026). Quoted moment: “function arguments and function parameters”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "91ead35301709c3bf847",
+            "canonicalSlug": "function-arguments-and-function-parameters",
+            "videoId": "HGOBQPFzWKo",
+            "startSeconds": 17601.4,
+            "phrase": "function arguments and function parameters",
+            "snippetExcerpt": "yeah, so this is the most important things about pools. And there are also asynchronous calls to this map and apply functions, but I will not cover them here. First of all, we will learn what is the difference between function arguments and function parameters.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=17601s"
+          }
+        }
+      },
+      "qualityScore": 129
+    },
+    {
+      "id": "bc453a3bf13567ee048b",
+      "videoId": "m_u6P5k0vP0",
+      "phrase": "trying to do is trying to get to the is trying",
+      "canonicalSlug": "trying-to-do-is-trying-to-get-to-the-is-trying",
+      "startSeconds": 10806.6,
+      "timestamp": "3:00:06",
+      "snippet": "could see the into that. And I have this package this tool called live server. And you could just run live server in that directory. And we get a problem. And the problem is the server responded with status 404. Okay, so what is trying to do is trying to get to the is trying",
+      "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10806s",
+      "videoTitle": "Full Stack React & Firebase Tutorial - Build a social media app",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:12:56.841Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 16.2,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.69090909090909,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 158.9,
+        "topics": {
+          "primaryTopic": "Trying",
+          "secondaryTopics": [
+            "React",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "relatedConcepts": [
+            "server",
+            "live",
+            "problem",
+            "package",
+            "tool",
+            "called",
+            "just",
+            "directory",
+            "responded",
+            "status",
+            "okay"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "react",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "trying"
+        },
+        "citations": {
+          "markdown": "[Full Stack React & Firebase Tutorial - Build a social media app](https://www.youtubetimesearch.com/moment/bc453a3bf13567ee048b/trying-to-do-is-trying-to-get-to-the-is-trying) — “trying to do is trying to get to the is trying” (https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10806s)",
+          "academic": "freeCodeCamp.org. *Full Stack React & Firebase Tutorial - Build a social media app*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/bc453a3bf13567ee048b/trying-to-do-is-trying-to-get-to-the-is-trying. Timestamp deep-link: https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10806s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/bc453a3bf13567ee048b/trying-to-do-is-trying-to-get-to-the-is-trying",
+          "timestampCitation": "Full Stack React & Firebase Tutorial - Build a social media app. https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10806s (accessed 2026). Quoted moment: “trying to do is trying to get to the is trying”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "bc453a3bf13567ee048b",
+            "canonicalSlug": "trying-to-do-is-trying-to-get-to-the-is-trying",
+            "videoId": "m_u6P5k0vP0",
+            "startSeconds": 10806.6,
+            "phrase": "trying to do is trying to get to the is trying",
+            "snippetExcerpt": "could see the into that. And I have this package this tool called live server. And you could just run live server in that directory. And we get a problem. And the problem is the server responded with status 404. Okay, so what is trying to do is trying to get to the is trying",
+            "youtubeUrl": "https://www.youtube.com/watch?v=m_u6P5k0vP0&t=10806s"
+          }
+        }
+      },
+      "qualityScore": 105
+    },
+    {
+      "id": "a0c5a8bc21e610f65587",
+      "videoId": "5t1vTLU7s40",
+      "phrase": "hate speech what is dangerous and all that kind of stuff I mean you've different value systems",
+      "canonicalSlug": "hate-speech-what-is-dangerous-and-all-that-kind-of-stuff-i-mean-you've-different-value-systems",
+      "startSeconds": 6909.9,
+      "timestamp": "1:55:09",
+      "snippet": "areas of what is hate speech what is dangerous and all that kind of stuff I mean you've different value systems",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5t1vTLU7s40&t=6909s",
+      "videoTitle": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "how-llms-trained, transformers, llm-fine-tuning",
+      "materializedAt": "2026-05-16T04:12:42.587Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 29.5,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 21.142857142857142,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 185.6,
+        "topics": {
+          "primaryTopic": "how-llms-trained, transformers, llm-fine-tuning",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Speech",
+            "Dangerous",
+            "Kind",
+            "Stuff"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "dangerous",
+            "kind",
+            "stuff",
+            "mean",
+            "you've",
+            "different",
+            "areas",
+            "value",
+            "systems"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "how-llms-trained-transformers-llm-fine-tuning"
+        },
+        "citations": {
+          "markdown": "[Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416](https://www.youtubetimesearch.com/moment/a0c5a8bc21e610f65587/hate-speech-what-is-dangerous-and-all-that-kind-of-stuff-i-mean-you've-different-value-systems) — “hate speech what is dangerous and all that kind of stuff I mean you've different value systems” (https://www.youtube.com/watch?v=5t1vTLU7s40&t=6909s)",
+          "academic": "Lex Fridman. *Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/a0c5a8bc21e610f65587/hate-speech-what-is-dangerous-and-all-that-kind-of-stuff-i-mean-you've-different-value-systems. Timestamp deep-link: https://www.youtube.com/watch?v=5t1vTLU7s40&t=6909s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/a0c5a8bc21e610f65587/hate-speech-what-is-dangerous-and-all-that-kind-of-stuff-i-mean-you've-different-value-systems",
+          "timestampCitation": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416. https://www.youtube.com/watch?v=5t1vTLU7s40&t=6909s (accessed 2026). Quoted moment: “hate speech what is dangerous and all that kind of stuff I mean you've different value systems”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "a0c5a8bc21e610f65587",
+            "canonicalSlug": "hate-speech-what-is-dangerous-and-all-that-kind-of-stuff-i-mean-you've-different-value-systems",
+            "videoId": "5t1vTLU7s40",
+            "startSeconds": 6909.9,
+            "phrase": "hate speech what is dangerous and all that kind of stuff I mean you've different value systems",
+            "snippetExcerpt": "areas of what is hate speech what is dangerous and all that kind of stuff I mean you've different value systems",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5t1vTLU7s40&t=6909s"
+          }
+        }
+      },
+      "qualityScore": 147
+    },
+    {
+      "id": "846b56d0bd62d38f1c5e",
+      "videoId": "HGOBQPFzWKo",
+      "phrase": "a syntax error and an exception",
+      "canonicalSlug": "a-syntax-error-and-an-exception",
+      "startSeconds": 7451.7,
+      "timestamp": "2:04:11",
+      "snippet": "A Python program terminates as soon as it encounters an error, and an error can be either a syntax error or an exception. So in this tutorial, we will have a look at what's the difference between a syntax error and an exception? What are the most common built in exceptions?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=7451s",
+      "videoTitle": "Intermediate Python Programming Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T04:13:12.183Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.294117647058822,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 160,
+        "topics": {
+          "primaryTopic": "Syntax",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Error",
+            "Exception"
+          ],
+          "relatedConcepts": [
+            "exception",
+            "python",
+            "program",
+            "terminates",
+            "soon",
+            "encounters",
+            "either",
+            "tutorial",
+            "look",
+            "what's",
+            "difference",
+            "between"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "syntax"
+        },
+        "citations": {
+          "markdown": "[Intermediate Python Programming Course](https://www.youtubetimesearch.com/moment/846b56d0bd62d38f1c5e/a-syntax-error-and-an-exception) — “a syntax error and an exception” (https://www.youtube.com/watch?v=HGOBQPFzWKo&t=7451s)",
+          "academic": "freeCodeCamp.org. *Intermediate Python Programming Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/846b56d0bd62d38f1c5e/a-syntax-error-and-an-exception. Timestamp deep-link: https://www.youtube.com/watch?v=HGOBQPFzWKo&t=7451s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/846b56d0bd62d38f1c5e/a-syntax-error-and-an-exception",
+          "timestampCitation": "Intermediate Python Programming Course. https://www.youtube.com/watch?v=HGOBQPFzWKo&t=7451s (accessed 2026). Quoted moment: “a syntax error and an exception”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "846b56d0bd62d38f1c5e",
+            "canonicalSlug": "a-syntax-error-and-an-exception",
+            "videoId": "HGOBQPFzWKo",
+            "startSeconds": 7451.7,
+            "phrase": "a syntax error and an exception",
+            "snippetExcerpt": "A Python program terminates as soon as it encounters an error, and an error can be either a syntax error or an exception. So in this tutorial, we will have a look at what's the difference between a syntax error and an exception? What are the most common built in exceptions?",
+            "youtubeUrl": "https://www.youtube.com/watch?v=HGOBQPFzWKo&t=7451s"
+          }
+        }
+      },
+      "qualityScore": 116
     }
   ]
 }

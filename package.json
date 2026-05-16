@@ -42,7 +42,8 @@
     "topic-coverage-report": "tsx scripts/topic-coverage-report.ts",
     "missing-corpus-report": "tsx scripts/missing-corpus-report.ts",
     "corpus-health-report": "tsx scripts/corpus-health-report.ts",
-    "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts"
+    "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",
+    "ingest:wave-1": "tsx scripts/ingest-wave-1.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
