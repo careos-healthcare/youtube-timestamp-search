@@ -26,7 +26,7 @@ export function TrendingSavedStrip() {
   if (clips.length === 0) {
     return (
       <p className="text-sm text-slate-400">
-        Save moments from search or transcript pages — they&apos;ll show here on this device.
+        Save clips from search or transcript pages with “Add to library” — they show here on this device.
       </p>
     );
   }

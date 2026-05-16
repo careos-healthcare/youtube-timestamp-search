@@ -58,13 +58,13 @@ export function SaveMomentButton(props: SaveMomentButtonProps) {
               : "inline-flex h-9 items-center rounded-xl border border-emerald-400/30 bg-emerald-500/10 px-3 text-sm text-emerald-100"
           }
         >
-          Saved
+          In your library
         </span>
         {showFirstSaveBanner ? (
           <div className="rounded-xl border border-emerald-400/30 bg-emerald-500/10 px-3 py-2 text-xs leading-relaxed text-emerald-50">
-            <p className="font-medium text-white">Saved. Build your own searchable quote library.</p>
+            <p className="font-medium text-white">Added to your spoken knowledge library.</p>
             <Link href="/saved" className="mt-1 inline-block font-semibold text-emerald-100 underline-offset-2 hover:text-white">
-              Open saved library →
+              Open library →
             </Link>
           </div>
         ) : null}
@@ -82,7 +82,7 @@ export function SaveMomentButton(props: SaveMomentButtonProps) {
           : "inline-flex h-9 items-center rounded-xl border border-amber-400/30 bg-amber-500/10 px-3 text-sm text-amber-100 hover:bg-amber-500/20"
       }
     >
-      Save moment
+      Add to library
     </button>
   );
 }

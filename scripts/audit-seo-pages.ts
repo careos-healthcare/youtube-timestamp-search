@@ -23,7 +23,7 @@ import { buildMomentSitemapEntries } from "../lib/moment-sitemap";
 import { SITEMAP_INCLUDE_MOMENTS } from "../lib/sitemap-config";
 import { listAllIndexedVideoIds } from "../lib/indexed-videos";
 import { loadPublicMoments } from "../lib/moments/load-public-moments";
-import { buildPublicMomentPath, buildVideoPath, getSiteUrl } from "../lib/seo";
+import { buildPublicMomentPath, buildVideoPath, getSiteUrl, buildCollectionPath } from "../lib/seo";
 
 const MIN_VISIBLE_TEXT = 200;
 const VIDEO_SAMPLE_SIZE = 20;
@@ -625,6 +625,8 @@ function buildQuickAuditPaths(): Array<{ path: string; isPrioritySearch?: boolea
     { path: "/" },
     { path: "/transcripts" },
     { path: "/moments" },
+    { path: "/collections" },
+    { path: buildCollectionPath("best-rag-explanations") },
     ...STATIC_BUILD_SEARCH_SLUGS.map((slug) => ({
       path: `/search/${slug}`,
       isPrioritySearch: true,

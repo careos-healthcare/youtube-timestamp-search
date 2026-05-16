@@ -61,7 +61,17 @@ export type AnalyticsEventName =
   | "moment_youtube_citation_click"
   | "quality_signal_view"
   | "quality_explanation_open"
-  | "quality_badge_click";
+  | "quality_badge_click"
+  | "research_answer_view"
+  | "research_explanation_click"
+  | "compare_explanations_view"
+  | "compare_explanation_click"
+  | "source_authority_badge_view"
+  | "source_authority_explanation_open"
+  | "source_index_request"
+  | "collection_page_view"
+  | "collection_moment_click"
+  | "saved_library_export";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

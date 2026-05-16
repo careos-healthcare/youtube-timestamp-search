@@ -4,6 +4,7 @@ import { BestMomentsSection } from "@/components/best-moments-section";
 import { ChannelMomentsSection } from "@/components/channel-moments-section";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { RelatedSearches } from "@/components/related-searches";
+import { RequestSourceIndexForm } from "@/components/request-source-index-form";
 import type { IndexedVideo } from "@/lib/indexed-videos";
 import {
   loadVideoPageHeavyPayload,
@@ -67,6 +68,7 @@ export async function VideoPageHeavy({ videoId, indexed }: VideoPageHeavyProps) 
           <Link href="/" className="text-sm text-blue-200 hover:text-blue-100">
             Go to search
           </Link>
+          <RequestSourceIndexForm surface="video_transcript_error" />
         </section>
       ) : (
         <>

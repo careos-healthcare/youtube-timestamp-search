@@ -7,6 +7,9 @@ import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { TopicClusterLiveSection } from "@/components/topic-cluster-live-section";
 import { TopicIntelligenceHubSection } from "@/components/topic-intelligence-hub-section";
 import { TopicPageViewTracker } from "@/components/topic-page-view-tracker";
+import { ResearchAnswerPublicSection } from "@/components/research-answer-public-section";
+import { CompareExplanationsSection } from "@/components/compare-explanations-section";
+import { comparePublicMomentsForTopic } from "@/lib/research/compare-explanations";
 import { getTopicClusterData } from "@/lib/topic-cluster-engine";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
 import { PageShell, SiteFooter } from "@/components/page-shell";
@@ -111,6 +114,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
         <TopicIntelligenceHubSection hub={hub} />
 
+        {hub.moments.length >= 3 ? (
+          <>
+            <ResearchAnswerPublicSection queryLabel={hub.displayTitle} topicSlug={hub.slug} moments={hub.moments} />
+            <CompareExplanationsSection
+              variant="public"
+              topicSlug={hub.slug}
+              queryLabel={hub.displayTitle}
+              rows={comparePublicMomentsForTopic(hub.moments, hub.displayTitle, 6)}
+            />
+          </>
+        ) : null}
+
         <CtaSection />
         <SiteFooter />
       </PageShell>
@@ -163,6 +178,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
       {clusterData ? <TopicClusterLiveSection data={clusterData} /> : null}
 
       {hub ? <TopicIntelligenceHubSection hub={hub} /> : null}
+
+      {hub && hub.moments.length >= 3 ? (
+        <>
+          <ResearchAnswerPublicSection queryLabel={hub.displayTitle} topicSlug={hub.slug} moments={hub.moments} />
+          <CompareExplanationsSection
+            variant="public"
+            topicSlug={hub.slug}
+            queryLabel={hub.displayTitle}
+            rows={comparePublicMomentsForTopic(hub.moments, hub.displayTitle, 6)}
+          />
+        </>
+      ) : null}
 
       <InternalLinksPanel
         relatedPhrases={internalLinks.relatedPhrases}

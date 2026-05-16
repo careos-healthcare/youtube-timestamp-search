@@ -5,6 +5,7 @@ import { PageShell, SiteFooter } from "@/components/page-shell";
 import { TrendingPageViewTracker } from "@/components/trending-page-view-tracker";
 import { TrendingSavedStrip } from "@/components/trending-saved-strip";
 import { TrendingSearchesSection } from "@/components/trending-searches-section";
+import { RequestSourceIndexForm } from "@/components/request-source-index-form";
 import { CREATOR_SEEDS } from "@/lib/creator-seeds";
 import { getLatestIndexedVideos } from "@/lib/indexed-videos";
 import { PRODUCT_TAGLINE } from "@/lib/product-copy";
@@ -54,6 +55,10 @@ export default async function TrendingPage() {
         </div>
       </section>
 
+      <section className="rounded-2xl border border-white/10 bg-slate-950/40 p-4 sm:p-5">
+        <RequestSourceIndexForm surface="trending" />
+      </section>
+
       <TrendingSearchesSection data={trending} />
 
       <section className="rounded-2xl border border-indigo-400/25 bg-indigo-500/10 p-4 sm:p-5">
@@ -85,7 +90,7 @@ export default async function TrendingPage() {
           <TrendingSavedStrip />
         </div>
         <Link href="/saved" className="mt-3 inline-block text-sm text-blue-200 hover:text-blue-100">
-          Open saved library
+          Open spoken library
         </Link>
       </section>
 

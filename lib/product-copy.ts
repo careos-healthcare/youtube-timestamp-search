@@ -5,6 +5,10 @@ export const PRODUCT_NAME = "YouTube Time Search";
 export const PRODUCT_TAGLINE =
   "Search inside video the way Google searches webpages.";
 
+/** Homepage hero headline (research positioning). */
+export const HOME_HERO_HEADLINE =
+  "Find the exact moment someone explained an idea in a video, podcast, or talk.";
+
 export const PRODUCT_WEDGE =
   "Find exact useful moments inside long-form YouTube videos.";
 

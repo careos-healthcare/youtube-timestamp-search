@@ -10,6 +10,8 @@ import {
 import { MomentCitationPanel } from "@/components/moment-citation-panel";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { MomentSharePanel } from "@/components/moment-share-panel";
+import { MomentTrustContextStrip } from "@/components/moment-trust-context-strip";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { SaveMomentButton } from "@/components/save-moment-button";
 import { ShareActions } from "@/components/share-actions";
@@ -36,6 +38,7 @@ import {
 } from "@/lib/seo";
 import { fetchTranscriptByVideoId, TranscriptFetchError } from "@/lib/transcript-service";
 import { evaluatePublicMoment } from "@/lib/quality";
+import { evaluateSourceAuthorityForPublicMoment } from "@/lib/research/source-authority";
 
 export const revalidate = 3600;
 
@@ -115,6 +118,7 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
     youtubeUrl,
   });
   const qualityEval = evaluatePublicMoment({ ...row, snippet });
+  const authorityEval = evaluateSourceAuthorityForPublicMoment({ ...row, snippet });
 
   return (
     <PageShell>
@@ -147,6 +151,23 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
               phrase={row.phrase}
               surface="canonical_moment"
             />
+            <div className="mt-4 max-w-3xl">
+              <SourceAuthorityBadge
+                authority={authorityEval}
+                momentId={row.id}
+                videoId={row.videoId}
+                phrase={row.phrase}
+                surface="canonical_moment"
+              />
+            </div>
+            <div className="mt-6 max-w-3xl">
+              <MomentTrustContextStrip
+                phrase={row.phrase}
+                videoTitle={videoTitle}
+                channelName={channelName}
+                topicSlug={row.topic}
+              />
+            </div>
           </div>
 
           <article className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-4 sm:p-5">
@@ -222,6 +243,8 @@ export default async function CanonicalMomentPage({ params }: PageProps) {
               videoTitle: m.videoTitle,
               videoId: m.videoId,
               timestamp: m.timestamp,
+              snippet: m.snippet,
+              channelName: m.channelName,
               quality: evaluatePublicMoment(m),
             }))}
           />

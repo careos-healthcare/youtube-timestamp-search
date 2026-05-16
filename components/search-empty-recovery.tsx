@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { EmptySearchRecoveryTracker } from "@/components/empty-search-recovery-tracker";
+import { RequestSourceIndexForm } from "@/components/request-source-index-form";
 import { trackPersistentEvent } from "@/lib/analytics";
 import { getRelatedSearchPhrases } from "@/lib/internal-linking";
 import { buildLatestPath, buildSearchPath, buildTranscriptsIndexPath } from "@/lib/seo";
@@ -94,6 +95,10 @@ export function SearchEmptyRecovery({ phrase, explorePhrases, peopleAlsoSearched
         Missing a creator or lecture series? Use the Chrome extension request flow from a watch page so the next crawl
         can pick it up (no rehosting — transcript links only).
       </p>
+
+      <div className="mt-6">
+        <RequestSourceIndexForm surface="empty_search_recovery" />
+      </div>
     </section>
   );
 }

@@ -1,8 +1,10 @@
 import type { TopicHub } from "@/lib/topics/topic-hub-types";
 import { TopicAnalyticsLink } from "@/components/topic-analytics-link";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { formatTopicLabel } from "@/lib/topic-keywords";
 import { evaluatePublicMoment } from "@/lib/quality";
+import { evaluateSourceAuthorityForPublicMoment } from "@/lib/research/source-authority";
 import {
   buildCreatorPath,
   buildMomentsIndexPath,
@@ -67,6 +69,17 @@ export function TopicIntelligenceHubSection(props: { hub: TopicHub }) {
                   surface="topic_hub"
                   compact
                 />
+                <div className="mt-2">
+                  <SourceAuthorityBadge
+                    authority={evaluateSourceAuthorityForPublicMoment(m)}
+                    momentId={m.id}
+                    videoId={m.videoId}
+                    phrase={m.phrase}
+                    query={hub.displayTitle}
+                    surface="topic_hub"
+                    compact
+                  />
+                </div>
               </div>
             </li>
           );

@@ -5,8 +5,10 @@ import type { ReactNode } from "react";
 import { useEffect } from "react";
 
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
 import type { MomentQualityEvaluation } from "@/lib/quality/types";
+import { evaluateSourceAuthority } from "@/lib/research/source-authority";
 import { buildPublicMomentPath } from "@/lib/seo";
 
 export function CanonicalMomentPageViewTracker(props: {
@@ -62,6 +64,8 @@ export type CanonicalMomentRelatedItem = {
   videoId: string;
   timestamp: string;
   quality: MomentQualityEvaluation;
+  snippet: string;
+  channelName?: string;
 };
 
 export function CanonicalMomentRelatedList(props: {
@@ -97,6 +101,21 @@ export function CanonicalMomentRelatedList(props: {
               surface="related_moment"
               compact
             />
+            <div className="mt-2">
+              <SourceAuthorityBadge
+                authority={evaluateSourceAuthority({
+                  channelName: m.channelName,
+                  videoTitle: m.videoTitle,
+                  snippet: m.snippet,
+                  phrase: m.phrase,
+                })}
+                momentId={m.id}
+                videoId={m.videoId}
+                phrase={m.phrase}
+                surface="canonical_moment"
+                compact
+              />
+            </div>
           </div>
         </li>
       ))}

@@ -95,6 +95,63 @@ export function buildMomentsIndexPath() {
   return "/moments";
 }
 
+export function buildCollectionsIndexPath() {
+  return "/collections";
+}
+
+export function buildCollectionPath(slug: string) {
+  return `/collections/${encodeURIComponent(slug.toLowerCase())}`;
+}
+
+export function createCollectionsIndexMetadata(): Metadata {
+  const title = "Research collections — spoken knowledge";
+  const description = `${PRODUCT_WEDGE} Curated static collections of transcript-backed moments with source-context labels (heuristic, not fact-checking).`;
+  const url = `${getSiteUrl()}${buildCollectionsIndexPath()}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-placeholder.svg"],
+    },
+    robots: { index: true, follow: true },
+  };
+}
+
+export function createCollectionPageMetadata(input: { title: string; description: string; slug: string }): Metadata {
+  const url = `${getSiteUrl()}${buildCollectionPath(input.slug)}`;
+  return {
+    title: input.title,
+    description: input.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: input.title,
+      description: input.description,
+      url,
+      type: "website",
+      images: ["/og-placeholder.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: input.title,
+      description: input.description,
+      images: ["/og-placeholder.svg"],
+    },
+    robots: { index: true, follow: true },
+  };
+}
+
 export function buildCategoryPath(slug: string) {
   return `/category/${encodeURIComponent(slug.toLowerCase())}`;
 }

@@ -86,6 +86,15 @@ export function exportSavedClipsMarkdown(clips: SavedClip[]): string {
     .join("\n");
 }
 
+/** Markdown export framed as a spoken-knowledge library (same underlying clips). */
+export function exportSpokenKnowledgeLibraryMarkdown(clips: SavedClip[]): string {
+  const header =
+    `# Spoken knowledge library\n\n` +
+    `_Device-local export — ${clips.length} clip${clips.length === 1 ? "" : "s"} — not synced_\n\n` +
+    `Each block links to the canonical moment page and YouTube timestamp.\n\n`;
+  return header + exportSavedClipsMarkdown(clips);
+}
+
 export function exportSavedTimestampLinks(clips: SavedClip[]): string {
   return clips.map((c) => c.youtubeUrl).join("\n");
 }

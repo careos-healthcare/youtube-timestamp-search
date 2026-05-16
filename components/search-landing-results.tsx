@@ -4,12 +4,14 @@ import Link from "next/link";
 
 import { SaveMomentButton } from "@/components/save-moment-button";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
 import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
 import { evaluateMomentQualitySignals } from "@/lib/quality";
+import { evaluateSourceAuthority } from "@/lib/research/source-authority";
 import { buildSearchPath, getSiteUrl } from "@/lib/seo";
 
 type SearchLandingResultsProps = {
@@ -57,6 +59,12 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
           materializationScore: moment.score,
           startSeconds: moment.startSeconds,
         });
+        const authority = evaluateSourceAuthority({
+          channelName: moment.channelName,
+          videoTitle: moment.videoTitle,
+          snippet: moment.snippet,
+          phrase: data.phrase,
+        });
         const syntheticId = `${moment.videoId}:${Math.round(moment.startSeconds)}`;
         return (
         <article
@@ -92,6 +100,17 @@ export function SearchLandingResults({ data }: SearchLandingResultsProps) {
               surface="search_result"
               compact
             />
+            <div className="mt-2">
+              <SourceAuthorityBadge
+                authority={authority}
+                momentId={syntheticId}
+                videoId={moment.videoId}
+                phrase={data.phrase}
+                query={data.phrase}
+                surface="search_result"
+                compact
+              />
+            </div>
             <div className="flex flex-wrap gap-2">
               <a
                 href={moment.youtubeUrl}

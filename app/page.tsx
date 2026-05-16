@@ -17,8 +17,9 @@ import {
   PRODUCT_META_TITLE,
   PRODUCT_TAGLINE,
   PRODUCT_WEDGE,
+  HOME_HERO_HEADLINE,
 } from "@/lib/product-copy";
-import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath, getSiteUrl } from "@/lib/seo";
+import { buildCategoriesIndexPath, buildTranscriptsIndexPath, buildLatestPath, getSiteUrl, buildSearchPath, buildTopicPath, buildCollectionPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: PRODUCT_META_TITLE,
@@ -58,12 +59,49 @@ export default async function HomePage() {
               {PRODUCT_BADGE}
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              {PRODUCT_TAGLINE}
+              {HOME_HERO_HEADLINE}
             </h1>
             <p className="max-w-2xl text-sm leading-6 text-slate-300 sm:text-lg sm:leading-8">
-              {PRODUCT_WEDGE} {PRODUCT_DESCRIPTION}
+              <span className="text-slate-400">{PRODUCT_TAGLINE}</span> {PRODUCT_WEDGE} {PRODUCT_DESCRIPTION}
             </p>
           </div>
+
+          <section className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-4 sm:p-5">
+            <h2 className="text-sm font-semibold text-white">Example research paths</h2>
+            <p className="mt-1 text-xs text-slate-400">Transcript-backed — open a search hub, topic hub, or static collection.</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+              <li className="rounded-xl border border-white/10 bg-slate-950/50 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-200/90">What is RAG?</p>
+                <p className="mt-2 text-sm text-slate-200">Timestamped explanations across indexed uploads.</p>
+                <Link
+                  href={buildSearchPath("what is rag")}
+                  className="mt-3 inline-block text-sm font-medium text-blue-200 hover:text-blue-100"
+                >
+                  Open search →
+                </Link>
+              </li>
+              <li className="rounded-xl border border-white/10 bg-slate-950/50 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-200/90">Kubernetes scheduling</p>
+                <p className="mt-2 text-sm text-slate-200">Technical walkthroughs from curated topic hubs.</p>
+                <Link
+                  href={buildTopicPath("kubernetes-beginners")}
+                  className="mt-3 inline-block text-sm font-medium text-blue-200 hover:text-blue-100"
+                >
+                  Open topic hub →
+                </Link>
+              </li>
+              <li className="rounded-xl border border-white/10 bg-slate-950/50 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-200/90">Anthropic · AI safety</p>
+                <p className="mt-2 text-sm text-slate-200">Source-context labels on indexed podcast clips.</p>
+                <Link
+                  href={buildCollectionPath("anthropic-ai-safety")}
+                  className="mt-3 inline-block text-sm font-medium text-blue-200 hover:text-blue-100"
+                >
+                  Open collection →
+                </Link>
+              </li>
+            </ul>
+          </section>
 
           <StartHereSection />
 

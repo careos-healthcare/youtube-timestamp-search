@@ -4,12 +4,14 @@ import Link from "next/link";
 
 import { SaveMomentButton } from "@/components/save-moment-button";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { ViralShareBlock } from "@/components/viral-share-block";
 import { trackPersistentEvent } from "@/lib/analytics";
 import { recordTimestampClickMilestone } from "@/lib/growth/session-metrics";
 import type { ViralShareContext } from "@/lib/growth/viral-share-text";
 import type { SearchLandingData } from "@/lib/search-landing-engine";
 import { evaluateMomentQualitySignals } from "@/lib/quality";
+import { evaluateSourceAuthority } from "@/lib/research/source-authority";
 import { getSiteUrl } from "@/lib/seo";
 
 type SearchAnswerPanelProps = {
@@ -52,6 +54,12 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
     startSeconds: source.startSeconds,
   });
   const answerMomentId = `${source.videoId}:${Math.round(source.startSeconds)}`;
+  const answerAuthority = evaluateSourceAuthority({
+    channelName: source.channelName,
+    videoTitle: source.videoTitle,
+    snippet: answer.answerSnippet,
+    phrase: data.phrase,
+  });
   const tiered = [
     answer.bestBeginnerExplanation,
     answer.bestTechnicalExplanation,
@@ -77,6 +85,11 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
           &quot;{answer.answerSnippet}&quot;
         </blockquote>
 
+        <p className="text-xs text-slate-500">
+          Transcript excerpt only — check who is speaking, scan quality signals, and follow related links for other
+          views before treating this as settled.
+        </p>
+
         <p className="text-xs text-slate-400">
           Source:{" "}
           <Link href={source.videoPath} className="text-blue-200 hover:text-blue-100">
@@ -90,6 +103,16 @@ export function SearchAnswerPanel({ data }: SearchAnswerPanelProps) {
           momentId={answerMomentId}
           videoId={source.videoId}
           phrase={data.phrase}
+          surface="search_result"
+          compact
+        />
+
+        <SourceAuthorityBadge
+          authority={answerAuthority}
+          momentId={answerMomentId}
+          videoId={source.videoId}
+          phrase={data.phrase}
+          query={data.phrase}
           surface="search_result"
           compact
         />

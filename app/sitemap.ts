@@ -6,6 +6,7 @@ import { SITEMAP_INCLUDE_MOMENTS } from "@/lib/sitemap-config";
 import { SEARCH_QUERY_SLUGS, phraseFromSearchSlug } from "@/lib/search-query-seeds";
 import {
   buildCategoryPath,
+  buildCollectionPath,
   buildCreatorPath,
   buildPublicMomentPath,
   buildSearchPath,
@@ -19,6 +20,7 @@ import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
 import { listTopicHubSlugsForSitemap } from "@/lib/topics/topic-index";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
+import { listCollectionSlugs } from "@/lib/collections/static-collections";
 
 const isNpmBuild = typeof process !== "undefined" && process.env.npm_lifecycle_event === "build";
 
@@ -36,6 +38,7 @@ const STATIC_PAGES = [
   "/stats",
   "/trending",
   "/moments",
+  "/collections",
 ];
 
 export const revalidate = 3600;
@@ -122,6 +125,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.74,
   }));
 
+  const collectionEntries = listCollectionSlugs().map((slug) => ({
+    url: `${siteUrl}${buildCollectionPath(slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.73,
+  }));
+
   return [
     ...staticEntries.filter((entry) => !entry.url.endsWith("/transcripts")),
     transcriptIndexEntry,
@@ -129,6 +139,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...videoEntries,
     ...momentEntries,
     ...publicMomentEntries,
+    ...collectionEntries,
     ...categoryEntries,
     ...topicEntries,
     ...intelligenceTopicEntries,

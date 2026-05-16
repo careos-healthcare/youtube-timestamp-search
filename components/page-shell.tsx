@@ -26,7 +26,7 @@ export function SiteFooter() {
           Trending
         </Link>
         <Link href="/saved" className="hover:text-slate-200">
-          Saved moments
+          Spoken library
         </Link>
         <Link href={buildTranscriptsIndexPath()} className="hover:text-slate-200">
           Video index

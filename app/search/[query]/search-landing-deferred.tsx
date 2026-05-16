@@ -5,6 +5,9 @@ import { EmailDigestPrompt } from "@/components/email-digest-prompt";
 import { InternalLinksPanel } from "@/components/internal-links-panel";
 import { PeopleAlsoSearchForStrip } from "@/components/people-also-search-for-strip";
 import { RecentSearchesPanel } from "@/components/recent-searches-panel";
+import { ResearchAnswerSearchSection } from "@/components/research-answer-search-section";
+import { CompareExplanationsSection } from "@/components/compare-explanations-section";
+import { RequestSourceIndexForm } from "@/components/request-source-index-form";
 import { SearchAnswerPanel } from "@/components/search-answer-panel";
 import { SearchEmptyRecovery } from "@/components/search-empty-recovery";
 import { SearchForm } from "@/components/search-form";
@@ -16,6 +19,7 @@ import { SearchSharePanel } from "@/components/search-share-panel";
 import { SearchTrendingNowStrip } from "@/components/search-trending-now-strip";
 import { TryAnotherAngleSection } from "@/components/try-another-angle-section";
 import { buildInternalLinkGraph } from "@/lib/internal-linking";
+import { compareSearchMoments } from "@/lib/research/compare-explanations";
 import { buildSearchPageUrl } from "@/lib/og-urls";
 import { PRODUCT_WEDGE } from "@/lib/product-copy";
 import { getSearchLandingData } from "@/lib/search-landing-engine";
@@ -85,18 +89,28 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
             ) : null}
             {landing.loadMeta?.timedOut ? (
               <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
-                The transcript index took longer than usual to respond, so this page loaded without
-                live results. Use the search box below, try again in a moment, or{" "}
-                <Link href="/" className="text-amber-50 underline underline-offset-2">
-                  paste a YouTube URL
-                </Link>{" "}
-                to search inside a single video immediately.
+                <p>
+                  The transcript index took longer than usual to respond, so this page loaded without live results. Use
+                  the search box below, try again in a moment, or{" "}
+                  <Link href="/" className="text-amber-50 underline underline-offset-2">
+                    paste a YouTube URL
+                  </Link>{" "}
+                  to search inside a single video immediately.
+                </p>
+                <div className="mt-4">
+                  <RequestSourceIndexForm surface="search_transcript_timeout" />
+                </div>
               </div>
             ) : null}
             {!landing.loadMeta?.timedOut && landing.loadMeta?.degradedReason === "error" ? (
               <div className="rounded-xl border border-rose-400/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-100">
-                Something went wrong loading live index results. You can still search below or open
-                the homepage to paste a video URL.
+                <p>
+                  Something went wrong loading live index results. You can still search below or open the homepage to
+                  paste a video URL.
+                </p>
+                <div className="mt-4">
+                  <RequestSourceIndexForm surface="search_transcript_error" />
+                </div>
               </div>
             ) : null}
             <p className="max-w-3xl text-sm leading-7 text-slate-300 sm:text-lg">
@@ -127,6 +141,17 @@ export async function SearchLandingDeferred({ query, phrase }: SearchLandingDefe
       <SearchAnswerPanel data={landing} />
 
       <SearchLandingResults data={landing} />
+
+      {!landing.loadMeta?.timedOut && landing.loadMeta?.degradedReason !== "error" && landing.moments.length >= 3 ? (
+        <>
+          <ResearchAnswerSearchSection queryLabel={resolved.phrase} moments={landing.moments} />
+          <CompareExplanationsSection
+            variant="search"
+            queryLabel={resolved.phrase}
+            rows={compareSearchMoments(resolved.phrase, landing.moments, 6)}
+          />
+        </>
+      ) : null}
 
       {landing.moments.length > 0 && landing.peopleAlsoSearched.length > 0 ? (
         <PeopleAlsoSearchForStrip phrase={resolved.phrase} items={landing.peopleAlsoSearched} />

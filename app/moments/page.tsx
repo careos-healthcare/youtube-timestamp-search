@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { PageShell, SiteFooter } from "@/components/page-shell";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
+import { RequestSourceIndexForm } from "@/components/request-source-index-form";
+import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import {
   getTranscriptCategoryBySlug,
   TRANSCRIPT_CATEGORY_SLUGS,
@@ -11,7 +13,8 @@ import {
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
 import { evaluatePublicMoment, momentQualityRankingKey } from "@/lib/quality";
-import { buildCategoryPath, buildPublicMomentPath, createMomentsIndexMetadata } from "@/lib/seo";
+import { evaluateSourceAuthorityForPublicMoment } from "@/lib/research/source-authority";
+import { buildCategoryPath, buildPublicMomentPath, buildCollectionsIndexPath, createMomentsIndexMetadata } from "@/lib/seo";
 import { buildMomentsDiscoveryStructuredData } from "@/lib/site-structured-data";
 
 export const revalidate = 3600;
@@ -115,6 +118,16 @@ export default function MomentsDiscoveryPage() {
                             surface="moments_index"
                             compact
                           />
+                          <div className="mt-2">
+                            <SourceAuthorityBadge
+                              authority={evaluateSourceAuthorityForPublicMoment(m)}
+                              momentId={m.id}
+                              videoId={m.videoId}
+                              phrase={m.phrase}
+                              surface="moments_index"
+                              compact
+                            />
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -136,12 +149,19 @@ export default function MomentsDiscoveryPage() {
           <Link href="/transcripts" className="text-blue-200 hover:text-blue-100">
             full transcript index
           </Link>
+          ,{" "}
+          <Link href={buildCollectionsIndexPath()} className="text-blue-200 hover:text-blue-100">
+            research collections
+          </Link>
           , or a{" "}
           <Link href="/search/what-is-rag" className="text-blue-200 hover:text-blue-100">
             seeded search landing
           </Link>
           .
         </p>
+        <div className="mt-6">
+          <RequestSourceIndexForm surface="moments_index" />
+        </div>
       </section>
 
       <SiteFooter />

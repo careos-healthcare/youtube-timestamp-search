@@ -10,7 +10,8 @@ export type MomentQualitySurface =
   | "moments_index"
   | "topic_hub"
   | "search_result"
-  | "related_moment";
+  | "related_moment"
+  | "collection";
 
 function tierStyles(tier: MomentQualityEvaluation["qualityTier"]) {
   if (tier === "high") return "border-emerald-400/35 bg-emerald-500/15 text-emerald-50";
