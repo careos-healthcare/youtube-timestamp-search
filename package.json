@@ -46,6 +46,8 @@
     "report:retrieval-quality": "tsx scripts/retrieval-quality-report.ts",
     "report:retrieval-weight-tuning": "tsx scripts/retrieval-weight-tuning.ts",
     "retrieval-governance-diagnosis": "tsx scripts/retrieval-governance-diagnosis.ts",
+    "prepare:wave-1-review": "tsx scripts/prepare-wave-1-manual-review.ts",
+    "validate:wave-1-review": "tsx scripts/validate-wave-1-manual-review.ts",
     "test:retrieval-calibration": "node --import tsx --test lib/corpus/retrieval-calibration.test.ts",
     "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",
     "ingest:wave-1": "tsx scripts/ingest-wave-1.ts"

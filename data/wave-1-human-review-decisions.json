@@ -1,0 +1,848 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-16T08:41:33.261Z",
+  "sourceArtifacts": {
+    "shortlist": "data/wave-1-manual-review-shortlist.json",
+    "ranked": "data/ingestion-wave-1-ranked.json",
+    "governanceDiagnosis": "data/retrieval-governance-diagnosis.json"
+  },
+  "readyForNextIngestBatch": false,
+  "recommendedNextAction": "manual_review_required",
+  "rubricVersion": 1,
+  "decisions": [
+    {
+      "videoId": "cdiD-9MMpb0",
+      "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channel": "Lex Fridman",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 36,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 51,
+        "priorityScoreTunedV1": 31,
+        "priorityScoreTunedV2": 38,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "how-llms-trained",
+        "machine-learning",
+        "state-of-ai-2026"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "TrdevFK_am4",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 26,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 57,
+        "priorityScoreTunedV1": 38,
+        "priorityScoreTunedV2": 44,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "transformers",
+        "ml-paper-walkthroughs",
+        "machine-learning"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "EeMhj0sPrhE",
+      "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 32,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 56,
+        "priorityScoreTunedV1": 37,
+        "priorityScoreTunedV2": 43,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "machine-learning",
+        "ml-paper-walkthroughs"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "YPfUiOMYOEE",
+      "title": "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 33,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 56,
+        "priorityScoreTunedV1": 37,
+        "priorityScoreTunedV2": 43,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "machine-learning",
+        "ml-paper-walkthroughs"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=YPfUiOMYOEE",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "hQEnzdLkPj4",
+      "title": "Learning To Classify Images Without Labels (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 27,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 57,
+        "priorityScoreTunedV1": 37,
+        "priorityScoreTunedV2": 44,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "machine-learning",
+        "ml-paper-walkthroughs"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=hQEnzdLkPj4",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "00GKzGyWFEs",
+      "title": "Welcome to the Hugging Face course",
+      "channel": "Hugging Face",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 28,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "priorityScorePre": 56,
+        "priorityScoreTunedV1": 37,
+        "priorityScoreTunedV2": 44,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "hf-transformers-topic",
+        "transformers",
+        "llm-fine-tuning"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=00GKzGyWFEs",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "H39Z_720T5s",
+      "title": "The Transformer architecture",
+      "channel": "Hugging Face",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 29,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": false,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 57,
+        "priorityScoreTunedV1": 38,
+        "priorityScoreTunedV2": 44,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "transformers",
+        "hf-transformers-topic"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=H39Z_720T5s",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "kTp5xUtcalw",
+      "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+      "channel": "freeCodeCamp.org",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 6,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 59,
+        "priorityScoreTunedV1": 40,
+        "priorityScoreTunedV2": 46,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "docker-devops",
+        "kubernetes-beginners",
+        "devops-practice"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=kTp5xUtcalw",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "Wf2eSG3owoA",
+      "title": "Docker and Kubernetes - Full Course for Beginners",
+      "channel": "freeCodeCamp.org",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 7,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 59,
+        "priorityScoreTunedV1": 40,
+        "priorityScoreTunedV2": 46,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "docker-devops",
+        "kubernetes-beginners",
+        "kubernetes-comparison-depth"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=Wf2eSG3owoA",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "s_o8dwzRlu4",
+      "title": "Kubernetes Crash Course for Absolute Beginners [NEW]",
+      "channel": "TechWorld with Nana",
+      "category": "uncertain",
+      "profilePosition": {
+        "tunedV2Rank": 8,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": false,
+          "tuned_v1": false,
+          "tuned_v2": false
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 58,
+        "priorityScoreTunedV1": 39,
+        "priorityScoreTunedV2": 46,
+        "citationsPerHour": null,
+        "retrievalOverall": 0.36682242990654196
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles.",
+      "targetTopics": [
+        "kubernetes-beginners",
+        "kubernetes-comparison-depth"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "D",
+        "retrievalOverall": 0.36682242990654196,
+        "explanationDensity": 0,
+        "citationRichness": 0,
+        "actionableTutorialDensity": 0,
+        "technicalTerminologyDensity": 0,
+        "clipExtractionQuality": 0.45,
+        "semanticMomentYield": 0.35,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": [
+          "Overall retrieval normalized score < 0.38",
+          "Low citation language and low technical density together"
+        ]
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=s_o8dwzRlu4",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "title": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+      "channel": "freeCodeCamp.org",
+      "category": "high-score-high-risk",
+      "profilePosition": {
+        "tunedV2Rank": 1,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 71,
+        "priorityScoreTunedV1": 62,
+        "priorityScoreTunedV2": 74,
+        "citationsPerHour": 1.8432707815980134,
+        "retrievalOverall": 0.584821956913141
+      },
+      "predictedStrengths": [
+        "high cite/h in corpus",
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree.",
+      "targetTopics": [
+        "docker-devops",
+        "devops-practice"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "B",
+        "retrievalOverall": 0.584821956913141,
+        "explanationDensity": 0.09049308447735102,
+        "citationRichness": 0.030849915162733305,
+        "actionableTutorialDensity": 0.3650573294256774,
+        "technicalTerminologyDensity": 1,
+        "clipExtractionQuality": 0.8418181818181818,
+        "semanticMomentYield": 0.2891226543099255,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": []
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "5t1vTLU7s40",
+      "title": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+      "channel": "Lex Fridman",
+      "category": "high-score-high-risk",
+      "profilePosition": {
+        "tunedV2Rank": 2,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 61,
+        "priorityScoreTunedV1": 45,
+        "priorityScoreTunedV2": 62,
+        "citationsPerHour": 0.3586764837748707,
+        "retrievalOverall": 0.46392283452554417
+      },
+      "predictedStrengths": [
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "transcript poison heuristics (1)"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree.",
+      "targetTopics": [
+        "how-llms-trained",
+        "transformers",
+        "llm-fine-tuning"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "C",
+        "retrievalOverall": 0.46392283452554417,
+        "explanationDensity": 0.2038087666678712,
+        "citationRichness": 0.026018140425685683,
+        "actionableTutorialDensity": 0.10118165721099989,
+        "technicalTerminologyDensity": 0.2894518122357532,
+        "clipExtractionQuality": 1,
+        "semanticMomentYield": 0.5634503681415577,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": []
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=5t1vTLU7s40",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "title": "Machine Learning for Everybody – Full Course",
+      "channel": "freeCodeCamp.org",
+      "category": "high-score-high-risk",
+      "profilePosition": {
+        "tunedV2Rank": 3,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 67,
+        "priorityScoreTunedV1": 52,
+        "priorityScoreTunedV2": 60,
+        "citationsPerHour": 1.282919354263925,
+        "retrievalOverall": 0.46629312296638087
+      },
+      "predictedStrengths": [
+        "high cite/h in corpus",
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree.",
+      "targetTopics": [
+        "machine-learning",
+        "how-llms-trained"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "C",
+        "retrievalOverall": 0.46629312296638087,
+        "explanationDensity": 0.25611960417879354,
+        "citationRichness": 0.0441162954566343,
+        "actionableTutorialDensity": 0.07046352746545756,
+        "technicalTerminologyDensity": 0.12959161790386323,
+        "clipExtractionQuality": 0.6745454545454544,
+        "semanticMomentYield": 0.32310947578489724,
+        "shallowAuthorityFlag": true,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": []
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=i_LwzRVP7bg",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    },
+    {
+      "videoId": "eyxmSmjmNS0",
+      "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "high-score-high-risk",
+      "profilePosition": {
+        "tunedV2Rank": 4,
+        "tunedV2RankTotal": 36,
+        "inTop5": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "inTop10": {
+          "pre_calibration": true,
+          "tuned_v1": true,
+          "tuned_v2": true
+        },
+        "priorityScorePre": 75,
+        "priorityScoreTunedV1": 66,
+        "priorityScoreTunedV2": 58,
+        "citationsPerHour": 0,
+        "retrievalOverall": 0.45939158481094094
+      },
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "transcript poison heuristics (1)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree.",
+      "targetTopics": [
+        "machine-learning",
+        "ml-paper-walkthroughs"
+      ],
+      "sourceQualityScore": 100,
+      "sourceQualityTier": "A",
+      "retrievalQualityIndicators": {
+        "retrievalTier": "C",
+        "retrievalOverall": 0.45939158481094094,
+        "explanationDensity": 0.2248005801305294,
+        "citationRichness": 0.8919506889050036,
+        "actionableTutorialDensity": 0.12690355329949238,
+        "technicalTerminologyDensity": 0.6200145032632342,
+        "clipExtractionQuality": 0.16363636363636364,
+        "semanticMomentYield": 0,
+        "shallowAuthorityFlag": false,
+        "transcriptPoisonFlags": [],
+        "governanceFlags": []
+      },
+      "youtubeUrl": "https://www.youtube.com/watch?v=eyxmSmjmNS0",
+      "decision": "needs_more_context",
+      "reviewerNotes": ""
+    }
+  ],
+  "summary": {
+    "totalRows": 14,
+    "byCategory": {
+      "uncertain": 10,
+      "high-score-high-risk": 4,
+      "low-score-high-potential": 0
+    },
+    "byDecision": {
+      "approve_next_batch": 0,
+      "hold": 0,
+      "reject": 0,
+      "needs_more_context": 14
+    },
+    "approvedCount": 0
+  }
+}
