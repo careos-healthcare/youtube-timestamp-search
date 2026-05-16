@@ -5,6 +5,11 @@ import Link from "next/link";
 
 import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
 import {
+  instrumentResearchExport,
+  instrumentSavedResearchReturn,
+  withResearchSession,
+} from "@/lib/research/research-session-client";
+import {
   exportSavedTimestampLinks,
   exportSpokenKnowledgeLibraryMarkdown,
   getSavedClips,
@@ -50,7 +55,15 @@ export function SavedClipsPageClient() {
   }, [clips]);
 
   useEffect(() => {
-    trackEvent("saved_page_open", {});
+    const clipCount = getSavedClips().length;
+    if (clipCount > 0) {
+      instrumentSavedResearchReturn(clipCount);
+    }
+    trackEvent("saved_page_open", withResearchSession({ clipCount, returnVisit: clipCount > 0 }));
+    void trackPersistentEvent(
+      "saved_page_open",
+      withResearchSession({ clipCount, returnVisit: clipCount > 0 })
+    );
   }, []);
 
   useEffect(() => {
@@ -62,20 +75,36 @@ export function SavedClipsPageClient() {
   async function copyMarkdown() {
     const md = exportSpokenKnowledgeLibraryMarkdown(clips);
     await navigator.clipboard.writeText(md);
-    void trackPersistentEvent("saved_library_export", {
+    instrumentResearchExport({
       surface: "saved_library",
       format: "markdown",
       clipCount: clips.length,
     });
+    void trackPersistentEvent(
+      "saved_library_export",
+      withResearchSession({
+        surface: "saved_library",
+        format: "markdown",
+        clipCount: clips.length,
+      })
+    );
   }
 
   async function copyLinks() {
     await navigator.clipboard.writeText(exportSavedTimestampLinks(clips));
-    void trackPersistentEvent("saved_library_export", {
+    instrumentResearchExport({
       surface: "saved_library",
       format: "timestamp_links",
       clipCount: clips.length,
     });
+    void trackPersistentEvent(
+      "saved_library_export",
+      withResearchSession({
+        surface: "saved_library",
+        format: "timestamp_links",
+        clipCount: clips.length,
+      })
+    );
   }
 
   return (

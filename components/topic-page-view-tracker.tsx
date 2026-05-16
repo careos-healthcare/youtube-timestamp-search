@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 import { trackPersistentEvent } from "@/lib/analytics";
+import { instrumentResearchTopic, withResearchSession } from "@/lib/research/research-session-client";
 
 export function TopicPageViewTracker(props: {
   topicSlug: string;
@@ -11,12 +12,16 @@ export function TopicPageViewTracker(props: {
   quality?: string;
 }) {
   useEffect(() => {
-    void trackPersistentEvent("topic_page_view", {
-      topicSlug: props.topicSlug,
-      mode: props.mode,
-      momentCount: props.momentCount,
-      quality: props.quality,
-    });
+    instrumentResearchTopic(props.topicSlug, "topic_page");
+    void trackPersistentEvent(
+      "topic_page_view",
+      withResearchSession({
+        topicSlug: props.topicSlug,
+        mode: props.mode,
+        momentCount: props.momentCount,
+        quality: props.quality,
+      })
+    );
   }, [props.topicSlug, props.mode, props.momentCount, props.quality]);
 
   return null;

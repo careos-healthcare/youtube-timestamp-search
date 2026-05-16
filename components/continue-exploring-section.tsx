@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { trackPersistentEvent } from "@/lib/analytics";
+import { instrumentResearchQuery, withResearchSession } from "@/lib/research/research-session-client";
 import { buildSearchPath } from "@/lib/seo";
 
 type IntentPhrase = { phrase: string; href: string };
@@ -54,12 +55,16 @@ export function ContinueExploringSection({
   }
 
   function trackClick(surface: string, target: string, href: string) {
-    trackPersistentEvent("continue_exploring_click", {
-      query: phrase,
-      surface,
-      target,
-      href,
-    });
+    instrumentResearchQuery(target);
+    trackPersistentEvent(
+      "continue_exploring_click",
+      withResearchSession({
+        query: phrase,
+        surface,
+        target,
+        href,
+      })
+    );
   }
 
   return (

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
+import { instrumentResearchSave, withResearchSession } from "@/lib/research/research-session-client";
 import { getSavedClips, isClipSaved, saveClip, type SaveClipInput } from "@/lib/growth/saved-clips";
 import { getSiteUrl } from "@/lib/seo";
 
@@ -30,10 +31,11 @@ export function SaveMomentButton(props: SaveMomentButtonProps) {
         videoId: clip.videoId,
         queryLength: clip.query.length,
       });
-      trackPersistentEvent("saved_clip", {
-        query: clip.query,
-        videoId: clip.videoId,
-      });
+      instrumentResearchSave({ query: clip.query, videoId: clip.videoId });
+      trackPersistentEvent(
+        "saved_clip",
+        withResearchSession({ query: clip.query, videoId: clip.videoId })
+      );
       if (!hadAnySaved) {
         trackEvent("first_clip_saved", {
           videoId: clip.videoId,

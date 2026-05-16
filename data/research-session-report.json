@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-16T13:40:17.596Z",
+  "eventsAnalyzed": 0,
+  "sessionsAnalyzed": 0,
+  "averageResearchDepth": 0,
+  "repeatTopicRate": 0,
+  "compareUsageRate": 0,
+  "saveReturnRate": 0,
+  "citationWorkflowCompletionRate": 0,
+  "collectionRevisitRate": 0,
+  "avgQueryChainLength": 0,
+  "avgTopicChainLength": 0,
+  "cohortCounts": {
+    "bounce": 0,
+    "casual_lookup": 0,
+    "active_explorer": 0,
+    "researcher": 0,
+    "repeat_researcher": 0
+  },
+  "cohortShares": {
+    "bounce": 0,
+    "casual_lookup": 0,
+    "active_explorer": 0,
+    "researcher": 0,
+    "repeat_researcher": 0
+  },
+  "shallowSeoProxyRate": 0,
+  "seriousResearchProxyRate": 0,
+  "topSessionsByDepth": []
+}

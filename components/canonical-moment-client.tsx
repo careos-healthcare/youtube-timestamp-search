@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { MomentQualitySignals } from "@/components/moment-quality-signals";
 import { SourceAuthorityBadge } from "@/components/source-authority-badge";
 import { trackEvent, trackPersistentEvent } from "@/lib/analytics";
+import { instrumentRelatedMomentNavigation, withResearchSession } from "@/lib/research/research-session-client";
 import type { MomentQualityEvaluation } from "@/lib/quality/types";
 import { evaluateSourceAuthority } from "@/lib/research/source-authority";
 import { buildPublicMomentPath } from "@/lib/seo";
@@ -78,13 +79,31 @@ export function CanonicalMomentRelatedList(props: {
         <li key={m.id} className="rounded-xl border border-white/10 bg-white/5 p-3 transition hover:border-violet-400/30 hover:bg-violet-500/10">
           <Link
             href={buildPublicMomentPath(m.id, m.canonicalSlug)}
-            onClick={() =>
-              trackEvent("canonical_moment_related_click", {
+            onClick={() => {
+              instrumentRelatedMomentNavigation({
                 fromMomentId: props.currentId,
                 toMomentId: m.id,
                 videoId: m.videoId,
-              })
-            }
+                surface: "canonical_related",
+              });
+              trackEvent(
+                "canonical_moment_related_click",
+                withResearchSession({
+                  fromMomentId: props.currentId,
+                  toMomentId: m.id,
+                  videoId: m.videoId,
+                })
+              );
+              void trackPersistentEvent(
+                "canonical_moment_related_click",
+                withResearchSession({
+                  fromMomentId: props.currentId,
+                  toMomentId: m.id,
+                  videoId: m.videoId,
+                  surface: "related_moment",
+                })
+              );
+            }}
             className="block text-sm text-slate-200"
           >
             <span className="font-medium text-white">&quot;{m.phrase}&quot;</span>

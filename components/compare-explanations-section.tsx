@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { trackPersistentEvent } from "@/lib/analytics";
+import { instrumentResearchCompare, withResearchSession } from "@/lib/research/research-session-client";
 import type { CompareExplanationPublicRow, CompareExplanationSearchRow } from "@/lib/research/compare-explanations";
 import { evaluateMomentQualitySignals, evaluatePublicMoment } from "@/lib/quality";
 import { buildPublicMomentPath, buildSearchPath, buildTopicPath, buildVideoPath } from "@/lib/seo";
@@ -34,12 +35,21 @@ export function CompareExplanationsSection(props: CompareProps) {
   useEffect(() => {
     if (sent.current) return;
     sent.current = true;
-    void trackPersistentEvent("compare_explanations_view", {
+    instrumentResearchCompare({
       query: queryLabel,
-      topic: topicSlug,
+      topicSlug,
       surface: variant === "public" ? "topic_compare" : "search_compare",
       rowCount,
     });
+    void trackPersistentEvent(
+      "compare_explanations_view",
+      withResearchSession({
+        query: queryLabel,
+        topic: topicSlug,
+        surface: variant === "public" ? "topic_compare" : "search_compare",
+        rowCount,
+      })
+    );
   }, [queryLabel, topicSlug, rowCount, variant]);
 
   if (props.rows.length === 0) return null;
@@ -62,17 +72,25 @@ export function CompareExplanationsSection(props: CompareProps) {
                   <Link
                     href={href}
                     className="block"
-                    onClick={() =>
-                      void trackPersistentEvent("compare_explanation_click", {
+                    onClick={() => {
+                      instrumentResearchCompare({
                         query: props.queryLabel,
-                        topic: props.topicSlug,
-                        momentId: row.moment.id,
-                        videoId: row.moment.videoId,
-                        sourceAuthorityLabel: row.authority.sourceAuthorityLabel,
-                        qualityTier: row.qualityTier,
+                        topicSlug: props.topicSlug,
                         surface: "topic_compare",
-                      })
-                    }
+                      });
+                      void trackPersistentEvent(
+                        "compare_explanation_click",
+                        withResearchSession({
+                          query: props.queryLabel,
+                          topic: props.topicSlug,
+                          momentId: row.moment.id,
+                          videoId: row.moment.videoId,
+                          sourceAuthorityLabel: row.authority.sourceAuthorityLabel,
+                          qualityTier: row.qualityTier,
+                          surface: "topic_compare",
+                        })
+                      );
+                    }}
                   >
                     <p className="text-sm font-semibold text-white line-clamp-2">&quot;{row.moment.phrase}&quot;</p>
                     <p className="mt-1 text-xs text-slate-400">{row.moment.videoTitle}</p>
@@ -129,16 +147,23 @@ export function CompareExplanationsSection(props: CompareProps) {
                   <Link
                     href={row.moment.momentPath}
                     className="block"
-                    onClick={() =>
-                      void trackPersistentEvent("compare_explanation_click", {
+                    onClick={() => {
+                      instrumentResearchCompare({
                         query: props.queryLabel,
-                        momentId: row.syntheticMomentId,
-                        videoId: row.moment.videoId,
-                        sourceAuthorityLabel: row.authority.sourceAuthorityLabel,
-                        qualityTier: row.qualityTier,
                         surface: "search_compare",
-                      })
-                    }
+                      });
+                      void trackPersistentEvent(
+                        "compare_explanation_click",
+                        withResearchSession({
+                          query: props.queryLabel,
+                          momentId: row.syntheticMomentId,
+                          videoId: row.moment.videoId,
+                          sourceAuthorityLabel: row.authority.sourceAuthorityLabel,
+                          qualityTier: row.qualityTier,
+                          surface: "search_compare",
+                        })
+                      );
+                    }}
                   >
                     <p className="text-sm leading-relaxed text-slate-100 line-clamp-4">{row.moment.snippet}</p>
                     <p className="mt-2 text-xs text-slate-400">{row.moment.videoTitle}</p>

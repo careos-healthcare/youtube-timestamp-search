@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { ReferrerTracker } from "@/components/referrer-tracker";
+import { ResearchSessionBridge } from "@/components/research-session-bridge";
 import { getSiteUrl } from "@/lib/seo";
 import {
   PRODUCT_META_DESCRIPTION,
@@ -58,6 +59,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         <ReferrerTracker />
+        <ResearchSessionBridge />
         <Analytics />
       </body>
     </html>

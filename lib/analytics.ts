@@ -77,7 +77,16 @@ export type AnalyticsEventName =
   | "source_promoted"
   | "source_rejected"
   | "source_request_received"
-  | "missing_corpus_detected";
+  | "missing_corpus_detected"
+  | "research_session_started"
+  | "research_session_extended"
+  | "research_compare_used"
+  | "research_chain_depth"
+  | "repeat_topic_research"
+  | "citation_workflow_completed"
+  | "saved_research_return"
+  | "collection_revisit"
+  | "research_export_completed";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

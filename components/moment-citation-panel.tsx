@@ -3,6 +3,7 @@
 import { useCallback, useState } from "react";
 
 import { trackPersistentEvent } from "@/lib/analytics";
+import { instrumentCitationWorkflow, withResearchSession } from "@/lib/research/research-session-client";
 import type { MomentCitationBundle } from "@/lib/citations/moment-citation";
 import { citationAccessDateUtc } from "@/lib/citations/moment-citation";
 
@@ -41,12 +42,11 @@ export function MomentCitationPanel(props: {
     async (format: CitationFormat, text: string) => {
       try {
         await navigator.clipboard.writeText(text);
-        void trackPersistentEvent(format === "htmlEmbed" ? "moment_embed_copy" : "moment_citation_copy", {
-          momentId,
-          videoId,
-          phrase,
-          format,
-        });
+        instrumentCitationWorkflow({ momentId, videoId, format });
+        void trackPersistentEvent(
+          format === "htmlEmbed" ? "moment_embed_copy" : "moment_citation_copy",
+          withResearchSession({ momentId, videoId, phrase, format })
+        );
         setCopied(format);
         window.setTimeout(() => setCopied(null), 1600);
       } catch {

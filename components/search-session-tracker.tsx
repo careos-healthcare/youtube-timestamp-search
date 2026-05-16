@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 
 import { trackPersistentEvent } from "@/lib/analytics";
+import { getResearchSessionId, instrumentResearchQuery, withResearchSession } from "@/lib/research/research-session-client";
 
 type SearchSessionTrackerProps = {
   query: string;
@@ -25,18 +26,28 @@ export function SearchSessionTracker({ query, resultCount, answerMode }: SearchS
   useEffect(() => {
     const sessionId = sessionIdRef.current;
     const previousQuery = previousQueryRef.current;
+    const researchSessionId = getResearchSessionId();
+
+    instrumentResearchQuery(query);
 
     if (previousQuery && previousQuery !== query) {
-      trackPersistentEvent("search_reformulation", {
-        query,
-        previousQuery,
-        sessionId,
-        resultCount,
-      });
+      trackPersistentEvent(
+        "search_reformulation",
+        withResearchSession({
+          query,
+          previousQuery,
+          sessionId,
+          researchSessionId,
+          resultCount,
+        })
+      );
     }
 
     if (resultCount === 0 && previousQuery) {
-      trackPersistentEvent("search_pogo_stick", { query, sessionId, resultCount });
+      trackPersistentEvent(
+        "search_pogo_stick",
+        withResearchSession({ query, sessionId, researchSessionId, resultCount })
+      );
     }
 
     previousQueryRef.current = query;
