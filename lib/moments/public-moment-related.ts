@@ -50,5 +50,9 @@ export function getRelatedPublicMoments(
 
   return out
     .slice(0, limit)
-    .sort((a, b) => momentQualityRankingKey(b) - momentQualityRankingKey(a));
+    .sort((a, b) => {
+      const rel = scoreRelated(current, b) - scoreRelated(current, a);
+      if (rel !== 0) return rel;
+      return momentQualityRankingKey(b) - momentQualityRankingKey(a);
+    });
 }
