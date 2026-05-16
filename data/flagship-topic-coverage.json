@@ -1,0 +1,471 @@
+{
+  "generatedAt": "2026-05-16T15:05:45.354Z",
+  "topics": [
+    {
+      "id": "what-is-rag",
+      "label": "What is RAG?",
+      "primaryQuery": "what is rag",
+      "aliases": [
+        "rag",
+        "retrieval augmented generation",
+        "retrieval-augmented generation"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "homepage_example_search"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 6,
+        "uniqueCreators": 5,
+        "citationRichMoments": 4,
+        "semanticMoments": 4,
+        "totalMatchedMoments": 9,
+        "compareReadyExplanations": 6,
+        "topicHubsAvailable": [
+          "transformers"
+        ],
+        "collectionsAvailable": [
+          "best-rag-explanations"
+        ],
+        "searchResultCount": 33,
+        "searchVideoCount": 33
+      },
+      "status": "healthy",
+      "homepageTrustSatisfied": true,
+      "homepageSafetyRisk": false,
+      "failedMinimums": [],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-003 — Lex Fridman: “Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI…” (tier A, score 100)",
+        "Wave 1 candidate w1-005 — Yannic Kilcher: “An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…” (tier A, score 100)",
+        "Wave 1 candidate w1-011 — Hugging Face: “Welcome to the Hugging Face course…” (tier A, score 100)",
+        "Wave 1 candidate w1-012 — Hugging Face: “The Transformer architecture…” (tier A, score 100)",
+        "Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)",
+        "Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)",
+        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)"
+      ]
+    },
+    {
+      "id": "ai-agents",
+      "label": "AI agents",
+      "primaryQuery": "ai agents",
+      "aliases": [
+        "ai agent",
+        "agentic ai",
+        "autonomous agents"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip",
+        "trending_link"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationRichMoments": 8,
+        "semanticMoments": 8,
+        "totalMatchedMoments": 10,
+        "compareReadyExplanations": 1,
+        "topicHubsAvailable": [],
+        "collectionsAvailable": [
+          "anthropic-ai-safety"
+        ],
+        "searchResultCount": 41,
+        "searchVideoCount": 28
+      },
+      "status": "broken",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": true,
+      "failedMinimums": [
+        "indexedVideos 1 < 2",
+        "uniqueCreators 1 < 2",
+        "compareReadyExplanations 1 < 2"
+      ],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-021 — Berkeley AI Research: “Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…” (tier A, score 100)",
+        "Wave 1 candidate w1-022 — Berkeley AI Research: “AI Agents That Do What We Want: Progress and Open Challenges - Anca Drag…” (tier A, score 100)",
+        "Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)",
+        "Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)",
+        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)"
+      ]
+    },
+    {
+      "id": "kubernetes-scheduling",
+      "label": "Kubernetes scheduling",
+      "primaryQuery": "kubernetes scheduling",
+      "aliases": [
+        "kubernetes",
+        "k8s scheduling",
+        "pod scheduling"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "homepage_example_topic"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationRichMoments": 1,
+        "semanticMoments": 1,
+        "totalMatchedMoments": 16,
+        "compareReadyExplanations": 2,
+        "topicHubsAvailable": [
+          "kubernetes-beginners",
+          "docker-devops"
+        ],
+        "collectionsAvailable": [
+          "kubernetes-explained"
+        ],
+        "searchResultCount": 8,
+        "searchVideoCount": 6
+      },
+      "status": "weak",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": false,
+      "failedMinimums": [
+        "citationRichMoments 1 < 2"
+      ],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-013 — freeCodeCamp.org: “Docker Containers and Kubernetes Fundamentals – Full Hands-On Course…” (tier A, score 100)",
+        "Wave 1 candidate w1-014 — freeCodeCamp.org: “Docker and Kubernetes - Full Course for Beginners…” (tier A, score 100)",
+        "Wave 1 candidate w1-015 — freeCodeCamp.org: “Docker Tutorial for Beginners - A Full DevOps Course on How to Run Appli…” (tier A, score 100)",
+        "Wave 1 candidate w1-016 — TechWorld with Nana: “Kubernetes Crash Course for Absolute Beginners [NEW]…” (tier A, score 100)",
+        "Wave 1 candidate w1-017 — TechWorld with Nana: “Kubernetes Roadmap - Complete Step-by-Step Learning Path…” (tier A, score 100)",
+        "Topic coverage gap — corpus topic “kubernetes-beginners” has 9 moments / 1 videos (weakDepth=true)"
+      ]
+    },
+    {
+      "id": "prompt-engineering",
+      "label": "Prompt engineering",
+      "primaryQuery": "prompt engineering",
+      "aliases": [
+        "prompting",
+        "llm prompts",
+        "prompt design"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationRichMoments": 1,
+        "semanticMoments": 1,
+        "totalMatchedMoments": 5,
+        "compareReadyExplanations": 3,
+        "topicHubsAvailable": [
+          "transformers"
+        ],
+        "collectionsAvailable": [],
+        "searchResultCount": 35,
+        "searchVideoCount": 18
+      },
+      "status": "weak",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": false,
+      "failedMinimums": [
+        "citationRichMoments 1 < 2"
+      ],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-002 — Dwarkesh Patel: “Dario Amodei — “We are near the end of the exponential”…” (tier A, score 100)",
+        "Wave 1 candidate w1-003 — Lex Fridman: “Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI…” (tier A, score 100)",
+        "Wave 1 candidate w1-005 — Yannic Kilcher: “An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…” (tier A, score 100)",
+        "Wave 1 candidate w1-011 — Hugging Face: “Welcome to the Hugging Face course…” (tier A, score 100)",
+        "Wave 1 candidate w1-012 — Hugging Face: “The Transformer architecture…” (tier A, score 100)",
+        "Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)",
+        "Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)",
+        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)"
+      ]
+    },
+    {
+      "id": "react-hooks",
+      "label": "React hooks",
+      "primaryQuery": "react hooks",
+      "aliases": [
+        "useState",
+        "useEffect",
+        "react hook"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 9,
+        "uniqueCreators": 4,
+        "citationRichMoments": 9,
+        "semanticMoments": 9,
+        "totalMatchedMoments": 21,
+        "compareReadyExplanations": 6,
+        "topicHubsAvailable": [
+          "typescript-course"
+        ],
+        "collectionsAvailable": [
+          "typescript-explanations"
+        ],
+        "searchResultCount": 23,
+        "searchVideoCount": 14
+      },
+      "status": "healthy",
+      "homepageTrustSatisfied": true,
+      "homepageSafetyRisk": false,
+      "failedMinimums": [],
+      "ingestionRecommendations": [
+        "Topic coverage gap — corpus topic “react-native” has 5 moments / 1 videos (weakDepth=true)",
+        "Topic coverage gap — corpus topic “react-context” has 2 moments / 1 videos (weakDepth=true)"
+      ]
+    },
+    {
+      "id": "startup-advice",
+      "label": "Startup advice",
+      "primaryQuery": "startup advice",
+      "aliases": [
+        "startup",
+        "founder advice",
+        "product market fit"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationRichMoments": 0,
+        "semanticMoments": 0,
+        "totalMatchedMoments": 0,
+        "compareReadyExplanations": 0,
+        "topicHubsAvailable": [],
+        "collectionsAvailable": [
+          "startup-advice"
+        ],
+        "searchResultCount": 21,
+        "searchVideoCount": 14
+      },
+      "status": "broken",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": true,
+      "failedMinimums": [
+        "indexedVideos 0 < 2",
+        "uniqueCreators 0 < 2",
+        "citationRichMoments 0 < 2",
+        "compareReadyExplanations 0 < 2",
+        "semanticMoments 0 < 1"
+      ],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-024 — Y Combinator: “Lecture 1 - How to Start a Startup (Sam Altman, Dustin Moskovitz)…” (tier A, score 100)",
+        "Wave 1 candidate w1-025 — Y Combinator: “Lecture 2 - Team and Execution (Sam Altman)…” (tier A, score 100)",
+        "Wave 1 candidate w1-026 — a16z: “Marc Andreessen & Amjad Masad on “Good Enough” AI, AGI, and the End of C…” (tier A, score 100)",
+        "Wave 1 candidate w1-027 — a16z: “Who's Coding Now? - AI and the Future of Software Development…” (tier A, score 100)",
+        "Wave 1 candidate w1-028 — a16z: “The 1000x Developer with Amjad Masad…” (tier A, score 100)",
+        "Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)",
+        "Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)",
+        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)"
+      ]
+    },
+    {
+      "id": "system-design",
+      "label": "System design",
+      "primaryQuery": "system design",
+      "aliases": [
+        "systems design",
+        "architecture interview"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationRichMoments": 0,
+        "semanticMoments": 0,
+        "totalMatchedMoments": 0,
+        "compareReadyExplanations": 0,
+        "topicHubsAvailable": [],
+        "collectionsAvailable": [],
+        "searchResultCount": 37,
+        "searchVideoCount": 22
+      },
+      "status": "broken",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": true,
+      "failedMinimums": [
+        "indexedVideos 0 < 2",
+        "uniqueCreators 0 < 2",
+        "citationRichMoments 0 < 2",
+        "compareReadyExplanations 0 < 2",
+        "semanticMoments 0 < 1"
+      ],
+      "ingestionRecommendations": [
+        "Wave 1 candidate w1-029 — GOTO Conferences: “The Many Meanings of Event-Driven Architecture • Martin Fowler • GOTO 20…” (tier A, score 100)",
+        "Wave 1 candidate w1-031 — GOTO Conferences: “Microservices • Martin Fowler • GOTO 2014…” (tier A, score 100)",
+        "Wave 1 candidate w1-032 — GOTO Conferences: “Software Development in the 21st Century • Martin Fowler • GOTO 2013…” (tier A, score 100)",
+        "Wave 1 candidate w1-034 — Strange Loop Conference: “\"Simple Made Easy\" - Rich Hickey (2011)…” (tier A, score 100)",
+        "Topic coverage gap — corpus topic “gpt4-system-card” has 1 moments / 1 videos (weakDepth=true)"
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "Productivity",
+      "primaryQuery": "productivity",
+      "aliases": [
+        "deep work",
+        "focus",
+        "time management"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "start_here_chip"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 4,
+        "uniqueCreators": 4,
+        "citationRichMoments": 2,
+        "semanticMoments": 2,
+        "totalMatchedMoments": 4,
+        "compareReadyExplanations": 4,
+        "topicHubsAvailable": [],
+        "collectionsAvailable": [],
+        "searchResultCount": 9,
+        "searchVideoCount": 6
+      },
+      "status": "healthy",
+      "homepageTrustSatisfied": true,
+      "homepageSafetyRisk": false,
+      "failedMinimums": [],
+      "ingestionRecommendations": []
+    },
+    {
+      "id": "anthropic-ai-safety",
+      "label": "Anthropic · AI safety",
+      "primaryQuery": "anthropic ai safety",
+      "aliases": [
+        "anthropic",
+        "ai safety",
+        "ai alignment"
+      ],
+      "homepagePromoted": true,
+      "promotionSurfaces": [
+        "homepage_example_collection"
+      ],
+      "minimums": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationRichMoments": 2,
+        "minCompareableExplanations": 2,
+        "minSearchResults": 1,
+        "minSemanticMoments": 1
+      },
+      "metrics": {
+        "indexedVideos": 2,
+        "uniqueCreators": 1,
+        "citationRichMoments": 0,
+        "semanticMoments": 0,
+        "totalMatchedMoments": 2,
+        "compareReadyExplanations": 2,
+        "topicHubsAvailable": [],
+        "collectionsAvailable": [
+          "anthropic-ai-safety"
+        ],
+        "searchResultCount": 41,
+        "searchVideoCount": 28
+      },
+      "status": "broken",
+      "homepageTrustSatisfied": false,
+      "homepageSafetyRisk": true,
+      "failedMinimums": [
+        "uniqueCreators 1 < 2",
+        "citationRichMoments 0 < 2",
+        "semanticMoments 0 < 1"
+      ],
+      "ingestionRecommendations": []
+    }
+  ],
+  "homepageSafety": {
+    "promotedCount": 9,
+    "brokenCount": 4,
+    "weakCount": 2,
+    "healthyCount": 3,
+    "brokenTopics": [
+      "AI agents",
+      "Startup advice",
+      "System design",
+      "Anthropic · AI safety"
+    ],
+    "weakTopics": [
+      "Kubernetes scheduling",
+      "Prompt engineering"
+    ]
+  },
+  "summary": {
+    "totalFlagshipTopics": 9,
+    "healthy": 3,
+    "weak": 2,
+    "broken": 4
+  }
+}

@@ -16,6 +16,23 @@ export { tokenJaccard, titlesLikelyDuplicate, phraseSaturationByTopic, dedupeVid
 export { buildTopicCoverageReport, averageQualityTierShare } from "./topic-coverage";
 export type { TopicCoverageRow } from "./topic-coverage";
 export { buildMissingCorpusReport } from "./missing-corpus";
+export {
+  buildFlagshipTopicCoverageReport,
+  buildFlagshipTopicCorpusMetrics,
+  classifyFlagshipCoverageStatus,
+  formatFlagshipTopicCoverageMarkdown,
+  listFlagshipTopics,
+  matchMomentsToFlagship,
+  FLAGSHIP_TOPICS,
+  FLAGSHIP_HOMEPAGE_TRUST_MINIMUMS,
+} from "./flagship-topics";
+export type {
+  FlagshipTopicCoverageReport,
+  FlagshipTopicCoverageRow,
+  FlagshipCoverageStatus,
+  FlagshipTopicDefinition,
+  FlagshipTopicMinimums,
+} from "./flagship-topics";
 export type { MissingCorpusFinding, SourceIndexRequestRecord } from "./missing-corpus";
 export { WAVE1_TARGET_TOPICS, WAVE1_TARGET_TOPIC_SET } from "./ingestion-wave-1-target-topics";
 export type { Wave1TargetTopic } from "./ingestion-wave-1-target-topics";
