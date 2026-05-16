@@ -1,6 +1,6 @@
 # Retrieval-quality calibration report
 
-Generated: 2026-05-16T04:33:29.647Z
+Generated: 2026-05-16T16:14:51.746Z
 
 ## Framing
 
@@ -12,13 +12,13 @@ This report **does not** optimize ingest throughput. It measures **research yiel
 
 | Metric | Value |
 |--------|------:|
-| Total moments | 220 |
-| Unique videos | 54 |
-| Videos with resolved transcript duration | 54 |
-| Sum of known transcript hours (videos counted once each) | 179.828 |
-| Accepted moments / transcript hour (global) | 1.13 |
-| Citation-worthy moments / transcript hour (global) | 0.56 |
-| Moments / transcript hour (known-hours slice) | 1.22 |
+| Total moments | 280 |
+| Unique videos | 58 |
+| Videos with resolved transcript duration | 58 |
+| Sum of known transcript hours (videos counted once each) | 186.980 |
+| Accepted moments / transcript hour (global) | 1.40 |
+| Citation-worthy moments / transcript hour (global) | 0.86 |
+| Moments / transcript hour (known-hours slice) | 1.50 |
 
 ## Repeat research behavior
 
@@ -32,15 +32,15 @@ Sorted by **citation-worthy / transcript hour** (desc). Channels with no resolve
 
 | Channel | Videos | Moments | Known h | accepted/h | cite-worthy/h | moments/h | low-tier % | shallow auth % | research workflow % | poison-pattern % |
 |---------|-------:|--------:|--------:|-----------:|---------------:|------------:|-----------:|-----------------:|----------------------:|------------------:|
+| Yannic Kilcher | 7 | 25 | 4.795 | 3.55 | 4.17 | 5.21 | 32.0% | 8.0% | 100.0% | 0.0% |
+| Lex Fridman | 6 | 33 | 19.131 | 1.72 | 1.46 | 1.72 | 0.0% | 90.9% | 39.4% | 0.0% |
 | unknown_channel | 1 | 2 | 1.741 | 1.15 | 1.15 | 1.15 | 0.0% | 100.0% | 100.0% | 0.0% |
-| Lex Fridman | 5 | 17 | 15.653 | 1.09 | 0.77 | 1.09 | 0.0% | 94.1% | 64.7% | 0.0% |
-| freeCodeCamp.org | 15 | 70 | 99.720 | 0.70 | 0.70 | 0.70 | 0.0% | 0.0% | 54.3% | 0.0% |
-| Dwarkesh Patel | 11 | 35 | 19.001 | 1.47 | 0.68 | 1.84 | 20.0% | 91.4% | 34.3% | 0.0% |
+| Dwarkesh Patel | 12 | 41 | 21.367 | 1.59 | 0.89 | 1.92 | 17.1% | 87.8% | 41.5% | 0.0% |
+| freeCodeCamp.org | 20 | 88 | 117.992 | 0.75 | 0.75 | 0.75 | 0.0% | 0.0% | 50.0% | 0.0% |
 | Andrej Karpathy | 1 | 2 | 3.523 | 0.57 | 0.57 | 0.57 | 0.0% | 0.0% | 100.0% | 0.0% |
 | TechWorld with Nana | 1 | 1 | 2.771 | 0.36 | 0.36 | 0.36 | 0.0% | 0.0% | 0.0% | 0.0% |
 | freeCodeCamp | 22 | 71 | 120.453 | 0.57 | 0.00 | 0.59 | 2.8% | 0.0% | 45.1% | 2.8% |
 | Corey Schafer | 2 | 6 | 6.712 | 0.89 | 0.00 | 0.89 | 0.0% | 0.0% | 16.7% | 0.0% |
-| Yannic Kilcher | 5 | 5 | 3.487 | 0.00 | 0.00 | 1.43 | 100.0% | 40.0% | 100.0% | 0.0% |
 | Traversy Media | 3 | 5 | 5.671 | 0.88 | 0.00 | 0.88 | 0.0% | 0.0% | 40.0% | 0.0% |
 | DeepLearning.AI | 2 | 2 | 4.827 | 0.00 | 0.00 | 0.41 | 100.0% | 100.0% | 100.0% | 0.0% |
 | Stanford Online | 1 | 1 | 1.741 | 0.57 | 0.00 | 0.57 | 0.0% | 0.0% | 100.0% | 0.0% |
@@ -52,7 +52,9 @@ Sorted by **citation-worthy / transcript hour** (desc). Channels with no resolve
 
 | Topic | Videos | Moments | Known h | accepted/h | cite-worthy/h | low-tier % | research workflow % |
 |-------|-------:|--------:|--------:|-----------:|---------------:|-----------:|----------------------:|
-| uncategorized | 25 | 99 | 126.441 | 0.78 | 0.78 | 0.0% | 53.5% |
+| uncategorized | 33 | 127 | 151.543 | 0.84 | 0.84 | 0.0% | 51.2% |
+| statistics-for-ml, statistics-for-ml | 2 | 20 | 4.286 | 4.67 | 4.67 | 0.0% | 50.0% |
+| rag, rag, transformers, vector-database | 1 | 10 | 0.499 | 14.02 | 20.03 | 30.0% | 100.0% |
 | kubernetes-beginners | 1 | 9 | 2.967 | 3.03 | 0.00 | 0.0% | 33.3% |
 | perl-programming | 1 | 8 | 1.783 | 4.49 | 0.00 | 0.0% | 100.0% |
 | backend-python | 1 | 7 | 5.905 | 1.19 | 0.00 | 0.0% | 28.6% |
@@ -77,6 +79,7 @@ Sorted by **citation-worthy / transcript hour** (desc). Channels with no resolve
 | react-context | 1 | 2 | 0.175 | 11.40 | 0.00 | 0.0% | 0.0% |
 | nextjs-14 | 1 | 2 | 3.016 | 0.66 | 0.00 | 0.0% | 100.0% |
 | css | 1 | 2 | 7.016 | 0.29 | 0.00 | 0.0% | 0.0% |
+| how-llms-trained, transformers, llm-fine-tuning | 1 | 2 | 2.788 | 0.72 | 0.72 | 0.0% | 0.0% |
 | how-llms-trained | 1 | 1 | 2.228 | 0.45 | 0.00 | 0.0% | 100.0% |
 | ilya-sutskever | 1 | 1 | 1.600 | 0.00 | 0.00 | 100.0% | 0.0% |
 | michael-levin | 1 | 1 | 3.300 | 0.30 | 0.00 | 0.0% | 0.0% |
@@ -89,9 +92,6 @@ Sorted by **citation-worthy / transcript hour** (desc). Channels with no resolve
 | sam-altman-programming | 1 | 1 | 0.044 | 22.67 | 0.00 | 0.0% | 100.0% |
 | deepseek-openai-nvidia | 1 | 1 | 5.104 | 0.20 | 0.00 | 0.0% | 100.0% |
 | michael-nielsen | 1 | 1 | 2.051 | 0.49 | 0.00 | 0.0% | 100.0% |
-| china-energy-agi | 1 | 1 | 1.131 | 0.88 | 0.00 | 0.0% | 100.0% |
-| flask-python | 1 | 1 | 21.245 | 0.05 | 0.00 | 0.0% | 0.0% |
-| energy-based-transformers | 1 | 1 | 0.798 | 0.00 | 0.00 | 100.0% | 100.0% |
 
 ## How to read “noise” vs “reusable knowledge”
 

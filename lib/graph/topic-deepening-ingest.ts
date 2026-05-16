@@ -1,6 +1,5 @@
 /**
  * Topic-deepening controlled ingest — one topic at a time from topic-deepening-queue.json.
- * No global wave queue; no broad crawl.
  */
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -21,7 +20,7 @@ import {
   type Wave1IngestionRunResult,
 } from "@/lib/ingestion-wave-1-runner";
 import type { SeedTranscriptInput } from "@/lib/seed-transcript-ingestion";
-import { loadPublicMoments } from "@/lib/moments/load-public-moments";
+import { loadPublicMoments, resetPublicMomentsCache } from "@/lib/moments/load-public-moments";
 
 import {
   buildTopicDeepeningFromDisk,
@@ -33,15 +32,19 @@ import {
 export const TOPIC_DEEPENING_RAG_SLUG = "rag";
 export const TOPIC_DEEPENING_RAG_QUEUE_SOURCE = "topic-deepening-rag";
 
+export function topicDeepeningQueueSource(topicSlug: string): string {
+  return `topic-deepening-${topicSlug}`;
+}
+
 export type TopicDeepeningQueueFile = {
   generatedAt?: string;
   queue: TopicDeepeningQueueRow[];
   analyses?: TopicDeepeningAnalysis[];
 };
 
-export type TopicDeepeningRagApproval = {
+export type TopicDeepeningIngestApproval = {
   version: 1;
-  topicSlug: typeof TOPIC_DEEPENING_RAG_SLUG;
+  topicSlug: string;
   approvedAt: string;
   governance: {
     basis: "topic-deepening-queue.json";
@@ -53,39 +56,43 @@ export type TopicDeepeningRagApproval = {
   maxIngestCount: number;
 };
 
-export type RagIngestPlan = {
+export type TopicDeepeningIngestPlan = {
   topicSlug: string;
   queueRow: TopicDeepeningQueueRow;
   candidates: Wave1PlanCandidate[];
   videoIds: string[];
-  approval: TopicDeepeningRagApproval;
+  approval: TopicDeepeningIngestApproval;
 };
 
-export type RagIngestOutcome = {
+export type TopicDeepeningIngestOutcome = {
   generatedAt: string;
   topicSlug: string;
-  plan: RagIngestPlan;
+  plan: TopicDeepeningIngestPlan;
   ingestion: Wave1IngestionRunResult;
   worker?: { processed: number; indexed: number; skipped: number; failed: number; rejected: number };
-  researchGradeBefore: {
-    tier: string;
-    distanceToElite: number;
-    topicTrustScore: number;
-    researchGradeScore: number;
-    momentCount: number;
-  } | null;
-  researchGradeAfter: {
-    tier: string;
-    distanceToElite: number;
-    topicTrustScore: number;
-    researchGradeScore: number;
-    momentCount: number;
-  } | null;
+  researchGradeBefore: ResearchGradeSlice | null;
+  researchGradeAfter: ResearchGradeSlice | null;
   deepeningStatusBefore: TopicDeepeningStatus | null;
   deepeningStatusAfter: TopicDeepeningStatus | null;
   readyToShowcase: boolean;
+  becameElite: boolean;
   notes: string[];
 };
+
+export type ResearchGradeSlice = {
+  tier: string;
+  distanceToElite: number;
+  topicTrustScore: number;
+  researchGradeScore: number;
+  momentCount: number;
+};
+
+/** @deprecated Use TopicDeepeningIngestPlan */
+export type RagIngestPlan = TopicDeepeningIngestPlan;
+/** @deprecated Use TopicDeepeningIngestOutcome */
+export type RagIngestOutcome = TopicDeepeningIngestOutcome;
+/** @deprecated Use TopicDeepeningIngestApproval */
+export type TopicDeepeningRagApproval = TopicDeepeningIngestApproval;
 
 function loadJson<T>(path: string): T | null {
   if (!existsSync(path)) return null;
@@ -100,10 +107,8 @@ export function loadTopicDeepeningQueue(root = process.cwd()): TopicDeepeningQue
   return loadJson<TopicDeepeningQueueFile>(join(root, "data", "topic-deepening-queue.json"));
 }
 
-export function loadRagApproval(root = process.cwd()): TopicDeepeningRagApproval | null {
-  return loadJson<TopicDeepeningRagApproval>(
-    join(root, "data", "topic-deepening-rag-approval.json")
-  );
+export function isTopicInDeepeningQueue(topicSlug: string, root = process.cwd()): boolean {
+  return loadTopicDeepeningQueueRow(topicSlug, root) !== null;
 }
 
 function analysisToQueueRow(a: TopicDeepeningAnalysis): TopicDeepeningQueueRow {
@@ -131,8 +136,16 @@ export function loadTopicDeepeningQueueRow(
   if (fromQueue) return fromQueue;
   const fromAnalysis = file?.analyses?.find((a) => a.topicSlug === topicSlug);
   if (fromAnalysis) return analysisToQueueRow(fromAnalysis);
-  const prior = loadJson<RagIngestOutcome>(join(root, "data", "topic-deepening-rag-ingest-result.json"));
+  const prior = loadJson<TopicDeepeningIngestOutcome>(
+    join(root, "data", `topic-deepening-${topicSlug}-ingest-result.json`)
+  );
   if (prior?.plan.topicSlug === topicSlug) return prior.plan.queueRow;
+  if (topicSlug === TOPIC_DEEPENING_RAG_SLUG) {
+    const legacy = loadJson<TopicDeepeningIngestOutcome>(
+      join(root, "data", "topic-deepening-rag-ingest-result.json")
+    );
+    if (legacy?.plan.topicSlug === topicSlug) return legacy.plan.queueRow;
+  }
   return null;
 }
 
@@ -150,39 +163,38 @@ export function topicDeepeningToSeedInput(
 
 export function resolveWaveCandidatesForQueueRow(
   row: TopicDeepeningQueueRow,
-  root = process.cwd()
+  root = process.cwd(),
+  maxCandidates = 3
 ): Wave1PlanCandidate[] {
   const wavePath = join(root, "data", "ingestion-wave-1-candidates.json");
   if (!existsSync(wavePath)) return [];
   const plan = loadWave1PlanFile(wavePath);
   const all = plan.candidates ?? [];
-  const waveIds = new Set(
-    row.candidateSourceIds.filter((id) => id.startsWith("w1-"))
-  );
+  const waveIds = new Set(row.candidateSourceIds.filter((id) => id.startsWith("w1-")));
   const videoIds = new Set(row.candidateVideoIds);
-  const matched = all.filter(
-    (c) => waveIds.has(c.id) || videoIds.has(c.videoId)
-  );
+  const matched = all.filter((c) => waveIds.has(c.id) || videoIds.has(c.videoId));
   const cap =
-    row.maxRecommendedIngestCount > 0
-      ? row.maxRecommendedIngestCount
-      : Math.max(row.candidateVideoIds.length, matched.length);
+    maxCandidates > 0
+      ? maxCandidates
+      : row.maxRecommendedIngestCount > 0
+        ? row.maxRecommendedIngestCount
+        : Math.max(row.candidateVideoIds.length, matched.length);
   return matched.slice(0, cap);
 }
 
-export function buildRagIngestApproval(
+export function buildTopicDeepeningIngestApproval(
+  topicSlug: string,
   row: TopicDeepeningQueueRow,
   candidates: Wave1PlanCandidate[]
-): TopicDeepeningRagApproval {
+): TopicDeepeningIngestApproval {
   return {
     version: 1,
-    topicSlug: TOPIC_DEEPENING_RAG_SLUG,
+    topicSlug,
     approvedAt: new Date().toISOString(),
     governance: {
       basis: "topic-deepening-queue.json",
       overridesWave1ManualReview: true,
-      reason:
-        "Controlled topic-deepening batch for RAG only; wave-1 shortlist decisions remain needs_more_context globally but this batch is scoped to queue row priority 149.",
+      reason: `Controlled topic-deepening batch for ${topicSlug}; scoped to queue row priority ${row.priority}.`,
     },
     approvedVideoIds: candidates.map((c) => c.videoId),
     approvedWaveCandidateIds: candidates.map((c) => c.id),
@@ -190,39 +202,78 @@ export function buildRagIngestApproval(
   };
 }
 
-export function buildRagIngestPlan(root = process.cwd()): RagIngestPlan {
-  const row = loadTopicDeepeningQueueRow(TOPIC_DEEPENING_RAG_SLUG, root);
-  if (!row) {
-    throw new Error(`No queue row for topic "${TOPIC_DEEPENING_RAG_SLUG}" in data/topic-deepening-queue.json`);
-  }
-  if (row.currentStatus === "broken_do_not_promote") {
-    throw new Error(`Topic ${TOPIC_DEEPENING_RAG_SLUG} is broken_do_not_promote — aborting ingest`);
-  }
-  let candidates = resolveWaveCandidatesForQueueRow(row, root);
-  if (!candidates.length) {
-    const prior = loadJson<RagIngestOutcome>(
-      join(root, "data", "topic-deepening-rag-ingest-result.json")
+export type BuildTopicDeepeningIngestPlanOptions = {
+  force?: boolean;
+  maxCandidates?: number;
+  root?: string;
+};
+
+export function buildTopicDeepeningIngestPlan(
+  topicSlug: string,
+  options: BuildTopicDeepeningIngestPlanOptions = {}
+): TopicDeepeningIngestPlan {
+  const root = options.root ?? process.cwd();
+  const slug = topicSlug.trim().toLowerCase();
+
+  if (!isTopicInDeepeningQueue(slug, root)) {
+    throw new Error(
+      `Topic "${slug}" is not in topic-deepening queue or analyses — run npm run report:topic-deepening`
     );
-    candidates = prior?.plan.candidates ?? [];
   }
+
+  const row = loadTopicDeepeningQueueRow(slug, root);
+  if (!row) {
+    throw new Error(`No queue row for topic "${slug}" in data/topic-deepening-queue.json`);
+  }
+
+  if (row.currentStatus === "broken_do_not_promote") {
+    throw new Error(`Topic ${slug} is broken_do_not_promote — aborting ingest`);
+  }
+
+  if (row.currentStatus === "ready_to_showcase" && !options.force) {
+    throw new Error(
+      `Topic ${slug} is ready_to_showcase — use --force to ingest anyway`
+    );
+  }
+
+  const maxCandidates = options.maxCandidates ?? Math.min(3, row.maxRecommendedIngestCount || 3);
+  let candidates = resolveWaveCandidatesForQueueRow(row, root, maxCandidates);
+
   if (!candidates.length) {
-    throw new Error(`No wave-1 candidates resolved for ${TOPIC_DEEPENING_RAG_SLUG} queue row`);
+    const priorPath =
+      slug === TOPIC_DEEPENING_RAG_SLUG
+        ? join(root, "data", "topic-deepening-rag-ingest-result.json")
+        : join(root, "data", `topic-deepening-${slug}-ingest-result.json`);
+    const prior = loadJson<TopicDeepeningIngestOutcome>(priorPath);
+    candidates = prior?.plan.candidates.slice(0, maxCandidates) ?? [];
   }
+
+  if (!candidates.length) {
+    throw new Error(`No wave-1 candidates resolved for ${slug} queue row`);
+  }
+
   return {
-    topicSlug: TOPIC_DEEPENING_RAG_SLUG,
+    topicSlug: slug,
     queueRow: row,
     candidates,
     videoIds: candidates.map((c) => c.videoId),
-    approval: buildRagIngestApproval(row, candidates),
+    approval: buildTopicDeepeningIngestApproval(slug, row, candidates),
   };
 }
 
-/** Tag pending seed jobs for approved video IDs with topic-deepening topic string. */
-export function patchSeedQueueTopicsForRag(videoIds: string[], root = process.cwd()) {
-  const def = getHighSignalTopicBySlug(TOPIC_DEEPENING_RAG_SLUG);
+export function buildRagIngestPlan(root = process.cwd()): TopicDeepeningIngestPlan {
+  return buildTopicDeepeningIngestPlan(TOPIC_DEEPENING_RAG_SLUG, { root });
+}
+
+export function patchSeedQueueTopicsForDeepening(
+  topicSlug: string,
+  videoIds: string[],
+  root = process.cwd()
+) {
+  const def = getHighSignalTopicBySlug(topicSlug);
   const topicStr = def
-    ? [TOPIC_DEEPENING_RAG_SLUG, ...def.topicHubSlugs].slice(0, 5).join(", ")
-    : TOPIC_DEEPENING_RAG_SLUG;
+    ? [topicSlug, ...def.topicHubSlugs].slice(0, 5).join(", ")
+    : topicSlug;
   const allow = new Set(videoIds);
   const paths = getIngestionQueuePaths(join(root, "data", "ingestion"));
   const queue = loadQueue(paths);
@@ -237,9 +288,16 @@ export function patchSeedQueueTopicsForRag(videoIds: string[], root = process.cw
   return patched;
 }
 
-function ragResearchGradeSlice(moments: ReturnType<typeof loadPublicMoments>) {
+export function patchSeedQueueTopicsForRag(videoIds: string[], root = process.cwd()) {
+  return patchSeedQueueTopicsForDeepening(TOPIC_DEEPENING_RAG_SLUG, videoIds, root);
+}
+
+function researchGradeSlice(
+  topicSlug: string,
+  moments: ReturnType<typeof loadPublicMoments>
+): ResearchGradeSlice | null {
   const report = buildResearchGradeTopicReport(moments);
-  const row = report.topics.find((t) => t.canonicalSlug === TOPIC_DEEPENING_RAG_SLUG);
+  const row = report.topics.find((t) => t.canonicalSlug === topicSlug);
   if (!row) return null;
   return {
     tier: row.tier,
@@ -250,53 +308,72 @@ function ragResearchGradeSlice(moments: ReturnType<typeof loadPublicMoments>) {
   };
 }
 
-export type RunRagTopicDeepeningIngestOptions = {
+export type RunTopicDeepeningIngestOptions = {
   dryRun: boolean;
   reportOnly: boolean;
   skipVerify: boolean;
   writeQueue: boolean;
   ingest: boolean;
+  force?: boolean;
+  maxCandidates?: number;
+  maxLive?: number;
   root?: string;
   checkDelayMs?: number;
 };
 
-export async function runRagTopicDeepeningIngest(
-  options: RunRagTopicDeepeningIngestOptions
-): Promise<RagIngestOutcome> {
+export async function runTopicDeepeningIngest(
+  topicSlug: string,
+  options: RunTopicDeepeningIngestOptions
+): Promise<TopicDeepeningIngestOutcome> {
   const root = options.root ?? process.cwd();
-  const plan = buildRagIngestPlan(root);
-  const approvalPath = join(root, "data", "topic-deepening-rag-approval.json");
+  const slug = topicSlug.trim().toLowerCase();
+  const plan = buildTopicDeepeningIngestPlan(slug, {
+    force: options.force,
+    maxCandidates: options.maxCandidates,
+    root,
+  });
+
+  const approvalPath = join(root, "data", `topic-deepening-${slug}-approval.json`);
   writeFileSync(approvalPath, JSON.stringify(plan.approval, null, 2), "utf-8");
+  if (slug === TOPIC_DEEPENING_RAG_SLUG) {
+    writeFileSync(
+      join(root, "data", "topic-deepening-rag-approval.json"),
+      JSON.stringify(plan.approval, null, 2),
+      "utf-8"
+    );
+  }
 
   const momentsBefore = loadPublicMoments();
-  const gradeBefore = ragResearchGradeSlice(momentsBefore);
+  const gradeBefore = researchGradeSlice(slug, momentsBefore);
   let deepeningBefore: TopicDeepeningStatus | null = null;
   try {
     deepeningBefore =
-      buildTopicDeepeningFromDisk(momentsBefore, root).analyses.find(
-        (a) => a.topicSlug === TOPIC_DEEPENING_RAG_SLUG
-      )?.status ?? null;
+      buildTopicDeepeningFromDisk(momentsBefore, root).analyses.find((a) => a.topicSlug === slug)
+        ?.status ?? null;
   } catch {
-    // graph artifacts optional for before snapshot
+    // optional
   }
 
-  const ingestion = await runWave1IngestionWithCandidates(plan.candidates, {
+  const maxLive = options.maxLive ?? plan.candidates.length;
+  const candidateWindow = plan.candidates.slice(0, maxLive);
+
+  const ingestion = await runWave1IngestionWithCandidates(candidateWindow, {
     dryRun: options.dryRun,
     reportOnly: options.reportOnly,
     skipVerify: options.skipVerify,
     writeQueue: options.writeQueue,
-    limit: plan.candidates.length,
+    limit: candidateWindow.length,
     start: 0,
     checkDelayMs: options.checkDelayMs,
     dataDir: join(root, "data"),
-    queueSource: TOPIC_DEEPENING_RAG_QUEUE_SOURCE,
-    toSeedInput: (c) => topicDeepeningToSeedInput(c, TOPIC_DEEPENING_RAG_SLUG),
+    queueSource: topicDeepeningQueueSource(slug),
+    toSeedInput: (c) => topicDeepeningToSeedInput(c, slug),
   });
 
   const notes: string[] = [];
   if (ingestion.stopReason) notes.push(ingestion.stopReason);
 
-  let worker: RagIngestOutcome["worker"];
+  let worker: TopicDeepeningIngestOutcome["worker"];
   const writesAllowed =
     options.writeQueue &&
     !options.reportOnly &&
@@ -305,7 +382,7 @@ export async function runRagTopicDeepeningIngest(
     !ingestion.stopReason;
 
   if (writesAllowed) {
-    const patched = patchSeedQueueTopicsForRag(plan.videoIds, root);
+    const patched = patchSeedQueueTopicsForDeepening(slug, plan.videoIds, root);
     if (patched > 0) notes.push(`Patched topic field on ${patched} pending seed job(s).`);
   }
 
@@ -316,30 +393,28 @@ export async function runRagTopicDeepeningIngest(
       Number(process.env.SEED_DELAY_MS ?? 1500)
     );
     worker = await runIngestionWorker({
-      limit: plan.videoIds.length,
+      limit: maxLive,
       delayMs,
-      videoIds: plan.videoIds,
+      videoIds: plan.videoIds.slice(0, maxLive),
     });
-    notes.push(`Worker indexed ${worker.indexed} / processed ${worker.processed} for RAG batch.`);
+    notes.push(`Worker indexed ${worker.indexed} / processed ${worker.processed} for ${slug} batch.`);
   }
 
+  resetPublicMomentsCache();
   const momentsAfter = loadPublicMoments();
-  const gradeAfter = ragResearchGradeSlice(momentsAfter);
+  const gradeAfter = researchGradeSlice(slug, momentsAfter);
   let deepeningAfter: TopicDeepeningStatus | null = null;
   try {
     deepeningAfter =
-      buildTopicDeepeningFromDisk(momentsAfter, root).analyses.find(
-        (a) => a.topicSlug === TOPIC_DEEPENING_RAG_SLUG
-      )?.status ?? null;
+      buildTopicDeepeningFromDisk(momentsAfter, root).analyses.find((a) => a.topicSlug === slug)
+        ?.status ?? null;
   } catch {
-    notes.push("Re-run report:research-graph and report:topic-deepening after materialize for after deepening status.");
+    notes.push("Re-run governance reports after materialize for after deepening status.");
   }
-
-  const readyToShowcase = deepeningAfter === "ready_to_showcase";
 
   return {
     generatedAt: new Date().toISOString(),
-    topicSlug: TOPIC_DEEPENING_RAG_SLUG,
+    topicSlug: slug,
     plan,
     ingestion,
     worker,
@@ -347,73 +422,55 @@ export async function runRagTopicDeepeningIngest(
     researchGradeAfter: gradeAfter,
     deepeningStatusBefore: deepeningBefore,
     deepeningStatusAfter: deepeningAfter,
-    readyToShowcase,
+    readyToShowcase: deepeningAfter === "ready_to_showcase",
+    becameElite: gradeAfter?.tier === "elite",
     notes,
   };
 }
 
-/** Snapshot post-ingest / post-materialize metrics without re-running transcript checks. */
-export function refreshRagIngestOutcome(root = process.cwd()): RagIngestOutcome {
-  const plan = buildRagIngestPlan(root);
-  const prior = loadJson<RagIngestOutcome>(join(root, "data", "topic-deepening-rag-ingest-result.json"));
+export async function runRagTopicDeepeningIngest(
+  options: RunTopicDeepeningIngestOptions
+): Promise<TopicDeepeningIngestOutcome> {
+  return runTopicDeepeningIngest(TOPIC_DEEPENING_RAG_SLUG, options);
+}
+
+export function ingestResultPath(topicSlug: string, root = process.cwd()): string {
+  const slug = topicSlug.trim().toLowerCase();
+  if (slug === TOPIC_DEEPENING_RAG_SLUG) {
+    return join(root, "data", "topic-deepening-rag-ingest-result.json");
+  }
+  return join(root, "data", `topic-deepening-${slug}-ingest-result.json`);
+}
+
+export function refreshTopicDeepeningIngestOutcome(
+  topicSlug: string,
+  root = process.cwd()
+): TopicDeepeningIngestOutcome {
+  const slug = topicSlug.trim().toLowerCase();
+  const plan = buildTopicDeepeningIngestPlan(slug, { force: true, root });
+  const prior = loadJson<TopicDeepeningIngestOutcome>(ingestResultPath(slug, root));
   const moments = loadPublicMoments();
-  const gradeAfter = ragResearchGradeSlice(moments);
+  const gradeAfter = researchGradeSlice(slug, moments);
   let deepeningAfter: TopicDeepeningStatus | null = null;
   try {
     deepeningAfter =
-      buildTopicDeepeningFromDisk(moments, root).analyses.find(
-        (a) => a.topicSlug === TOPIC_DEEPENING_RAG_SLUG
-      )?.status ?? null;
+      buildTopicDeepeningFromDisk(moments, root).analyses.find((a) => a.topicSlug === slug)
+        ?.status ?? null;
   } catch {
     // optional
   }
   return {
     generatedAt: new Date().toISOString(),
-    topicSlug: TOPIC_DEEPENING_RAG_SLUG,
+    topicSlug: slug,
     plan,
-    ingestion:
-      prior?.ingestion ??
-      ({
-        generatedAt: new Date().toISOString(),
-        flags: {
-          simulate: true,
-          writesIntended: false,
-          dryRun: true,
-          reportOnly: true,
-          skipVerify: true,
-          writeQueue: false,
-          limit: plan.candidates.length,
-          start: 0,
-        },
-        transcriptGate: {
-          checked: 0,
-          available: 0,
-          unavailable: 0,
-          passed: true,
-          minChecksForGate: 3,
-          maxUnavailableRate: 0.5,
-        },
-        summary: {
-          eligible: 0,
-          alreadyIndexed: plan.candidates.length,
-          cachedTranscript: 0,
-          inSeedQueue: 0,
-          inCorpusQueue: 0,
-          csvExcluded: 0,
-          unavailableTranscript: 0,
-          queued: 0,
-          ingested: 0,
-          failed: 0,
-        },
-        sourceQualitySummary: { meanScore: 100, tierCounts: { A: plan.candidates.length } },
-        rows: [],
-      } as Wave1IngestionRunResult),
+    ingestion: prior?.ingestion ?? ({} as Wave1IngestionRunResult),
     worker: prior?.worker,
     researchGradeBefore: prior?.researchGradeBefore ?? null,
     researchGradeAfter: gradeAfter,
-    deepeningStatusBefore: prior?.deepeningStatusBefore ?? "deepen_next",
+    deepeningStatusBefore: prior?.deepeningStatusBefore ?? null,
     deepeningStatusAfter: deepeningAfter,
     readyToShowcase: deepeningAfter === "ready_to_showcase",
+    becameElite: gradeAfter?.tier === "elite",
     notes: [
       ...(prior?.notes ?? []),
       "Outcome refreshed from current corpus after materialize + governance reports.",
@@ -421,17 +478,21 @@ export function refreshRagIngestOutcome(root = process.cwd()): RagIngestOutcome 
   };
 }
 
-export function formatRagIngestMarkdown(outcome: RagIngestOutcome): string {
+export function refreshRagIngestOutcome(root = process.cwd()): TopicDeepeningIngestOutcome {
+  return refreshTopicDeepeningIngestOutcome(TOPIC_DEEPENING_RAG_SLUG, root);
+}
+
+export function formatTopicDeepeningIngestMarkdown(outcome: TopicDeepeningIngestOutcome): string {
   const lines: string[] = [
-    "# Topic-deepening controlled ingest — RAG",
+    `# Topic-deepening controlled ingest — ${outcome.plan.queueRow.topicSlug}`,
     "",
     `Generated: ${outcome.generatedAt}`,
     "",
     "## Governance",
     "",
     `- Queue basis: \`data/topic-deepening-queue.json\` (priority **${outcome.plan.queueRow.priority}**)`,
-    `- Approval: \`data/topic-deepening-rag-approval.json\``,
-    `- Seed queue source: \`${TOPIC_DEEPENING_RAG_QUEUE_SOURCE}\``,
+    `- Approval: \`data/topic-deepening-${outcome.topicSlug}-approval.json\``,
+    `- Seed queue source: \`${topicDeepeningQueueSource(outcome.topicSlug)}\``,
     `- Max ingest: **${outcome.plan.queueRow.maxRecommendedIngestCount}**`,
     "",
     "## Planned videos",
@@ -458,7 +519,7 @@ export function formatRagIngestMarkdown(outcome: RagIngestOutcome): string {
   );
   lines.push("```");
   lines.push("");
-  lines.push("## RAG research-grade delta");
+  lines.push("## Research-grade delta");
   lines.push("");
   lines.push("| | Before | After |");
   lines.push("| --- | --- | --- |");
@@ -481,6 +542,7 @@ export function formatRagIngestMarkdown(outcome: RagIngestOutcome): string {
     `- Before: **${outcome.deepeningStatusBefore ?? "unknown"}**`,
     `- After: **${outcome.deepeningStatusAfter ?? "unknown"}**`,
     `- Showcase-ready: **${outcome.readyToShowcase ? "yes" : "no"}**`,
+    `- Elite tier: **${outcome.becameElite ? "yes" : "no"}**`,
     ""
   );
   if (outcome.notes.length) {
@@ -489,11 +551,22 @@ export function formatRagIngestMarkdown(outcome: RagIngestOutcome): string {
     for (const n of outcome.notes) lines.push(`- ${n}`);
     lines.push("");
   }
-  lines.push("## Next steps");
-  lines.push("");
-  lines.push("1. `npm run materialize:public-moments` after worker indexes transcripts.");
-  lines.push("2. `npm run report:research-graph` && `npm run report:topic-deepening` && `npm run report:research-grade-topics`.");
-  lines.push("3. Re-run this ingest script with `--report-only` to refresh outcome without writes.");
-  lines.push("");
   return lines.join("\n");
+}
+
+export const formatRagIngestMarkdown = formatTopicDeepeningIngestMarkdown;
+
+export function writeTopicDeepeningIngestArtifacts(
+  outcome: TopicDeepeningIngestOutcome,
+  root = process.cwd()
+) {
+  const slug = outcome.topicSlug;
+  const jsonPath = ingestResultPath(slug, root);
+  const mdPath =
+    slug === TOPIC_DEEPENING_RAG_SLUG
+      ? join(root, "TOPIC_DEEPENING_RAG_INGEST_REPORT.md")
+      : join(root, `TOPIC_DEEPENING_${slug.toUpperCase().replace(/-/g, "_")}_INGEST_REPORT.md`);
+
+  writeFileSync(jsonPath, JSON.stringify(outcome, null, 2), "utf-8");
+  writeFileSync(mdPath, formatTopicDeepeningIngestMarkdown(outcome), "utf-8");
 }

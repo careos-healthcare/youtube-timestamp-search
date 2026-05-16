@@ -1,6 +1,6 @@
 # Research-grade topic report
 
-Generated: 2026-05-16T15:58:01.384Z
+Generated: 2026-05-16T16:14:46.624Z
 
 High-signal corpus program — **64** curated topics. Optimized for trust density and compare depth, not traffic volume.
 
@@ -8,13 +8,14 @@ High-signal corpus program — **64** curated topics. Optimized for trust densit
 
 | Tier | Count | Share |
 |------|------:|------:|
-| elite | 1 | 2% |
-| strong | 1 | 2% |
-| weak | 13 | 20% |
+| elite | 2 | 3% |
+| strong | 2 | 3% |
+| weak | 11 | 17% |
 | broken | 49 | 77% |
 
 ## Elite topics (research-grade)
 
+- **Statistics for ML** (`statistics-for-ml`) — grade 79, trust 75, cite 89%, compare 7
 - **RAG (retrieval-augmented generation)** (`rag`) — grade 73, trust 70, cite 76%, compare 8
 
 ## Weakest flagship topics
@@ -37,16 +38,15 @@ High-signal corpus program — **64** curated topics. Optimized for trust densit
 
 ## Closest to elite
 
+- **Machine learning** — distance 0.00, grade 69, tier `strong`
 - **Transformers** — distance 0.10, grade 65, tier `strong`
-- **Statistics for ML** — distance 0.13, grade 61, tier `weak`
+- **Reinforcement learning** — distance 0.13, grade 62, tier `weak`
+- **Neural networks** — distance 0.19, grade 60, tier `weak`
 - **Fine-tuning** — distance 0.45, grade 59, tier `weak`
-- **Neural networks** — distance 0.45, grade 41, tier `weak`
-- **Machine learning** — distance 0.47, grade 40, tier `weak`
 - **LLM inference** — distance 0.55, grade 38, tier `weak`
 - **NLP fundamentals** — distance 0.55, grade 45, tier `weak`
 - **Database design** — distance 0.56, grade 54, tier `weak`
 - **Large language models** — distance 0.58, grade 56, tier `weak`
-- **Reinforcement learning** — distance 0.65, grade 50, tier `weak`
 - **Docker** — distance 0.70, grade 34, tier `weak`
 - **State management** — distance 0.85, grade 41, tier `weak`
 - **DevOps** — distance 0.89, grade 29, tier `weak`
@@ -73,18 +73,17 @@ _None flagged._
 
 Small corpus + unusually high citation/compare depth:
 
-- **Statistics for ML** — Small corpus (8 moments) with cite density 63% and compare depth 5 — high trust per hour indexed
+- **Reinforcement learning** — Small corpus (8 moments) with cite density 88% and compare depth 3 — high trust per hour indexed
+- **Neural networks** — Small corpus (14 moments) with cite density 64% and compare depth 5 — high trust per hour indexed
 - **Fine-tuning** — Small corpus (10 moments) with cite density 90% and compare depth 4 — high trust per hour indexed
 - **Database design** — Small corpus (11 moments) with cite density 82% and compare depth 2 — high trust per hour indexed
-- **Reinforcement learning** — Small corpus (7 moments) with cite density 86% and compare depth 2 — high trust per hour indexed
 - **NLP fundamentals** — Small corpus (4 moments) with cite density 75% and compare depth 3 — high trust per hour indexed
-- **Neural networks** — Small corpus (12 moments) with cite density 58% and compare depth 3 — high trust per hour indexed
 - **State management** — Small corpus (11 moments) with cite density 64% and compare depth 2 — high trust per hour indexed
 - **Open-source AI** — Small corpus (7 moments) with cite density 57% and compare depth 3 — high trust per hour indexed
 
 ## Topic trust drift
 
-_No drift vs previous report snapshot (run twice after ingest expansion to detect)._
+- **Statistics for ML** (`more_shallow`): shallow authority share +23% after corpus growth
 
 ## Recommended ingestion priorities
 

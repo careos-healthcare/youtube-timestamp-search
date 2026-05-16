@@ -13795,6 +13795,1666 @@
         }
       },
       "qualityScore": 122
+    },
+    {
+      "id": "87a0f914d4b69d6d59e5",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "archive and what is the future of academic research publishing that you",
+      "canonicalSlug": "archive-and-what-is-the-future-of-academic-research-publishing-that-you",
+      "startSeconds": 9115.8,
+      "timestamp": "2:31:55",
+      "snippet": "you've built archive sanity what is archive and what is the future of academic research publishing that you",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.125Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 29.5,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 21,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 187.5,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Future",
+            "Academic",
+            "Research",
+            "Publishing"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "academic",
+            "research",
+            "publishing",
+            "you've",
+            "built",
+            "sanity"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/87a0f914d4b69d6d59e5/archive-and-what-is-the-future-of-academic-research-publishing-that-you) — “archive and what is the future of academic research publishing that you” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/87a0f914d4b69d6d59e5/archive-and-what-is-the-future-of-academic-research-publishing-that-you. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/87a0f914d4b69d6d59e5/archive-and-what-is-the-future-of-academic-research-publishing-that-you",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s (accessed 2026). Quoted moment: “archive and what is the future of academic research publishing that you”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "87a0f914d4b69d6d59e5",
+            "canonicalSlug": "archive-and-what-is-the-future-of-academic-research-publishing-that-you",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 9115.8,
+            "phrase": "archive and what is the future of academic research publishing that you",
+            "snippetExcerpt": "you've built archive sanity what is archive and what is the future of academic research publishing that you",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s"
+          }
+        }
+      },
+      "qualityScore": 147
+    },
+    {
+      "id": "fd7ae409a0c56b9f06ee",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "archive and what is the future",
+      "canonicalSlug": "archive-and-what-is-the-future",
+      "startSeconds": 9112.8,
+      "timestamp": "2:31:52",
+      "snippet": "like massive question at the moment you've built archive sanity what is archive and what is the future",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9112s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.503Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 29.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 22,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 182.5,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Future"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "like",
+            "massive",
+            "question",
+            "moment",
+            "you've",
+            "built",
+            "sanity"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/fd7ae409a0c56b9f06ee/archive-and-what-is-the-future) — “archive and what is the future” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9112s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/fd7ae409a0c56b9f06ee/archive-and-what-is-the-future. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9112s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/fd7ae409a0c56b9f06ee/archive-and-what-is-the-future",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9112s (accessed 2026). Quoted moment: “archive and what is the future”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "fd7ae409a0c56b9f06ee",
+            "canonicalSlug": "archive-and-what-is-the-future",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 9112.8,
+            "phrase": "archive and what is the future",
+            "snippetExcerpt": "like massive question at the moment you've built archive sanity what is archive and what is the future",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9112s"
+          }
+        }
+      },
+      "qualityScore": 145
+    },
+    {
+      "id": "fcfba8dbead35e56c317",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "it what is the actual process Happening Here Yeah so basically it gets a thousand words",
+      "canonicalSlug": "it-what-is-the-actual-process-happening-here-yeah-so-basically-it-gets-a-thousand-words",
+      "startSeconds": 2669.9,
+      "timestamp": "44:29",
+      "snippet": "uh in in like what what is it what is the actual process Happening Here Yeah so basically it gets a thousand words",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2669s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.027Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 28.799999999999997,
+          "technicalSpecificity": 14,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 19.652173913043477,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 194.5,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Process",
+            "Happening",
+            "Here",
+            "Yeah"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "happening",
+            "here",
+            "yeah",
+            "basically",
+            "gets",
+            "thousand",
+            "like",
+            "words"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/fcfba8dbead35e56c317/it-what-is-the-actual-process-happening-here-yeah-so-basically-it-gets-a-thousand-words) — “it what is the actual process Happening Here Yeah so basically it gets a thousand words” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2669s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/fcfba8dbead35e56c317/it-what-is-the-actual-process-happening-here-yeah-so-basically-it-gets-a-thousand-words. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2669s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/fcfba8dbead35e56c317/it-what-is-the-actual-process-happening-here-yeah-so-basically-it-gets-a-thousand-words",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2669s (accessed 2026). Quoted moment: “it what is the actual process Happening Here Yeah so basically it gets a thousand words”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "fcfba8dbead35e56c317",
+            "canonicalSlug": "it-what-is-the-actual-process-happening-here-yeah-so-basically-it-gets-a-thousand-words",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 2669.9,
+            "phrase": "it what is the actual process Happening Here Yeah so basically it gets a thousand words",
+            "snippetExcerpt": "uh in in like what what is it what is the actual process Happening Here Yeah so basically it gets a thousand words",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2669s"
+          }
+        }
+      },
+      "qualityScore": 149
+    },
+    {
+      "id": "cdf2dfbfe60335c88339",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "the GitHub or software 2",
+      "canonicalSlug": "the-github-or-software-2",
+      "startSeconds": 4156.1,
+      "timestamp": "1:09:16",
+      "snippet": "was trying to make those analogies in the new realm like what is the GitHub or software 2.0 it turns out that something",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4156s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.558Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 24.6,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 20.434782608695652,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 171,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Software"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "trying",
+            "make",
+            "those",
+            "analogies",
+            "realm",
+            "like",
+            "turns",
+            "something"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/cdf2dfbfe60335c88339/the-github-or-software-2) — “the GitHub or software 2” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4156s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/cdf2dfbfe60335c88339/the-github-or-software-2. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4156s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/cdf2dfbfe60335c88339/the-github-or-software-2",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4156s (accessed 2026). Quoted moment: “the GitHub or software 2”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "cdf2dfbfe60335c88339",
+            "canonicalSlug": "the-github-or-software-2",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 4156.1,
+            "phrase": "the GitHub or software 2",
+            "snippetExcerpt": "was trying to make those analogies in the new realm like what is the GitHub or software 2.0 it turns out that something",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4156s"
+          }
+        }
+      },
+      "qualityScore": 128
+    },
+    {
+      "id": "1e288f6b392b397e6f98",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "they what are they doing what's the source of solving in the",
+      "canonicalSlug": "they-what-are-they-doing-what's-the-source-of-solving-in-the",
+      "startSeconds": 1834.4,
+      "timestamp": "30:34",
+      "snippet": "of ideas compelling what's their source of fun what are they what are they doing what's the source of solving in the",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1834s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.237Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 20.363636363636363,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 178.4,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Doing",
+            "What's",
+            "Source",
+            "Solving"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "what's",
+            "source",
+            "solving",
+            "ideas",
+            "compelling",
+            "their"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/1e288f6b392b397e6f98/they-what-are-they-doing-what's-the-source-of-solving-in-the) — “they what are they doing what's the source of solving in the” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1834s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/1e288f6b392b397e6f98/they-what-are-they-doing-what's-the-source-of-solving-in-the. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1834s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/1e288f6b392b397e6f98/they-what-are-they-doing-what's-the-source-of-solving-in-the",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1834s (accessed 2026). Quoted moment: “they what are they doing what's the source of solving in the”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "1e288f6b392b397e6f98",
+            "canonicalSlug": "they-what-are-they-doing-what's-the-source-of-solving-in-the",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 1834.4,
+            "phrase": "they what are they doing what's the source of solving in the",
+            "snippetExcerpt": "of ideas compelling what's their source of fun what are they what are they doing what's the source of solving in the",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1834s"
+          }
+        }
+      },
+      "qualityScore": 135
+    },
+    {
+      "id": "6f81395d377c38e4c23b",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "they what are they doing",
+      "canonicalSlug": "they-what-are-they-doing",
+      "startSeconds": 1832.7,
+      "timestamp": "30:32",
+      "snippet": "would you do that so I find those kinds of ideas compelling what's their source of fun what are they what are they doing",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1832s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.551Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 19.75,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 177.8,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Doing"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "find",
+            "those",
+            "kinds",
+            "ideas",
+            "compelling",
+            "what's",
+            "their",
+            "source"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/6f81395d377c38e4c23b/they-what-are-they-doing) — “they what are they doing” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1832s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/6f81395d377c38e4c23b/they-what-are-they-doing. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1832s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/6f81395d377c38e4c23b/they-what-are-they-doing",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1832s (accessed 2026). Quoted moment: “they what are they doing”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "6f81395d377c38e4c23b",
+            "canonicalSlug": "they-what-are-they-doing",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 1832.7,
+            "phrase": "they what are they doing",
+            "snippetExcerpt": "would you do that so I find those kinds of ideas compelling what's their source of fun what are they what are they doing",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=1832s"
+          }
+        }
+      },
+      "qualityScore": 135
+    },
+    {
+      "id": "e86146d4194852ec1479",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "you we share that understanding and so Texas communication medium",
+      "canonicalSlug": "you-we-share-that-understanding-and-so-texas-communication-medium",
+      "startSeconds": 2779.3,
+      "timestamp": "46:19",
+      "snippet": "stuff in text because why would you we share that understanding and so Texas communication medium",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2779s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.189Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 20.875,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 165.4,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Understanding",
+            "Texas",
+            "Communication",
+            "Medium"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "texas",
+            "communication",
+            "medium",
+            "stuff",
+            "text",
+            "because"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/e86146d4194852ec1479/you-we-share-that-understanding-and-so-texas-communication-medium) — “you we share that understanding and so Texas communication medium” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2779s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e86146d4194852ec1479/you-we-share-that-understanding-and-so-texas-communication-medium. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2779s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e86146d4194852ec1479/you-we-share-that-understanding-and-so-texas-communication-medium",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2779s (accessed 2026). Quoted moment: “you we share that understanding and so Texas communication medium”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e86146d4194852ec1479",
+            "canonicalSlug": "you-we-share-that-understanding-and-so-texas-communication-medium",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 2779.3,
+            "phrase": "you we share that understanding and so Texas communication medium",
+            "snippetExcerpt": "stuff in text because why would you we share that understanding and so Texas communication medium",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=2779s"
+          }
+        }
+      },
+      "qualityScore": 119
+    },
+    {
+      "id": "9d2bb0b3941ed76df0b9",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "life and the Deep question with AI is also what is life and what is",
+      "canonicalSlug": "life-and-the-deep-question-with-ai-is-also-what-is-life-and-what-is",
+      "startSeconds": 10268.8,
+      "timestamp": "2:51:08",
+      "snippet": "deeper question with abortion is what is life and the Deep question with AI is also what is life and what is",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=10268s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.166Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 28.799999999999997,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 22,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 183.8,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Deep",
+            "Question",
+            "Also"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "question",
+            "also",
+            "deeper",
+            "abortion"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/9d2bb0b3941ed76df0b9/life-and-the-deep-question-with-ai-is-also-what-is-life-and-what-is) — “life and the Deep question with AI is also what is life and what is” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=10268s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/9d2bb0b3941ed76df0b9/life-and-the-deep-question-with-ai-is-also-what-is-life-and-what-is. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=10268s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/9d2bb0b3941ed76df0b9/life-and-the-deep-question-with-ai-is-also-what-is-life-and-what-is",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=10268s (accessed 2026). Quoted moment: “life and the Deep question with AI is also what is life and what is”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "9d2bb0b3941ed76df0b9",
+            "canonicalSlug": "life-and-the-deep-question-with-ai-is-also-what-is-life-and-what-is",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 10268.8,
+            "phrase": "life and the Deep question with AI is also what is life and what is",
+            "snippetExcerpt": "deeper question with abortion is what is life and the Deep question with AI is also what is life and what is",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=10268s"
+          }
+        }
+      },
+      "qualityScore": 144
+    },
+    {
+      "id": "8a9dafdc0cdd572ac388",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "it seem to uh do such a surprisingly good job of learning what is a neural network",
+      "canonicalSlug": "it-seem-to-uh-do-such-a-surprisingly-good-job-of-learning-what-is-a-neural-network",
+      "startSeconds": 61,
+      "timestamp": "1:01",
+      "snippet": "what is a neural network and why does it seem to uh do such a surprisingly good job of learning what is a neural network",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=61s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.051Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 21.28,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 18
+        },
+        "totalSemanticRank": 178.3,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Such",
+            "Surprisingly",
+            "Good",
+            "Learning"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "surprisingly",
+            "good",
+            "learning",
+            "neural",
+            "network",
+            "does"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/8a9dafdc0cdd572ac388/it-seem-to-uh-do-such-a-surprisingly-good-job-of-learning-what-is-a-neural-network) — “it seem to uh do such a surprisingly good job of learning what is a neural network” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=61s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/8a9dafdc0cdd572ac388/it-seem-to-uh-do-such-a-surprisingly-good-job-of-learning-what-is-a-neural-network. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=61s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/8a9dafdc0cdd572ac388/it-seem-to-uh-do-such-a-surprisingly-good-job-of-learning-what-is-a-neural-network",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=61s (accessed 2026). Quoted moment: “it seem to uh do such a surprisingly good job of learning what is a neural network”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "8a9dafdc0cdd572ac388",
+            "canonicalSlug": "it-seem-to-uh-do-such-a-surprisingly-good-job-of-learning-what-is-a-neural-network",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 61,
+            "phrase": "it seem to uh do such a surprisingly good job of learning what is a neural network",
+            "snippetExcerpt": "what is a neural network and why does it seem to uh do such a surprisingly good job of learning what is a neural network",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=61s"
+          }
+        }
+      },
+      "qualityScore": 135
+    },
+    {
+      "id": "e57a4e08b0f8e0dc94b0",
+      "videoId": "cdiD-9MMpb0",
+      "phrase": "strengths and limitations of cameras",
+      "canonicalSlug": "strengths-and-limitations-of-cameras",
+      "startSeconds": 4719.6,
+      "timestamp": "1:18:39",
+      "snippet": "data sets and I was pretty comfortable with where that was at the time so what are strengths and limitations of cameras",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4719s",
+      "videoTitle": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:51.430Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 21.181818181818183,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 173.1,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Limitations",
+            "Cameras"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "cameras",
+            "data",
+            "sets",
+            "pretty",
+            "comfortable",
+            "time"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333](https://www.youtubetimesearch.com/moment/e57a4e08b0f8e0dc94b0/strengths-and-limitations-of-cameras) — “strengths and limitations of cameras” (https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4719s)",
+          "academic": "Lex Fridman. *Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e57a4e08b0f8e0dc94b0/strengths-and-limitations-of-cameras. Timestamp deep-link: https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4719s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e57a4e08b0f8e0dc94b0/strengths-and-limitations-of-cameras",
+          "timestampCitation": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333. https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4719s (accessed 2026). Quoted moment: “strengths and limitations of cameras”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e57a4e08b0f8e0dc94b0",
+            "canonicalSlug": "strengths-and-limitations-of-cameras",
+            "videoId": "cdiD-9MMpb0",
+            "startSeconds": 4719.6,
+            "phrase": "strengths and limitations of cameras",
+            "snippetExcerpt": "data sets and I was pretty comfortable with where that was at the time so what are strengths and limitations of cameras",
+            "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=4719s"
+          }
+        }
+      },
+      "qualityScore": 127
+    },
+    {
+      "id": "e01a56d4572d87f3e3be",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "that that is when i have for example a variational autoencoder variational autoencoder",
+      "canonicalSlug": "that-that-is-when-i-have-for-example-a-variational-autoencoder-variational-autoencoder",
+      "startSeconds": 957.1,
+      "timestamp": "15:57",
+      "snippet": "so what is that that is when i have for example a variational autoencoder variational autoencoder",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.636Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 16.2,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 19.75,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 156.6,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Autoencoder",
+            "Example"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "example"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/e01a56d4572d87f3e3be/that-that-is-when-i-have-for-example-a-variational-autoencoder-variational-autoencoder) — “that that is when i have for example a variational autoencoder variational autoencoder” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e01a56d4572d87f3e3be/that-that-is-when-i-have-for-example-a-variational-autoencoder-variational-autoencoder. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e01a56d4572d87f3e3be/that-that-is-when-i-have-for-example-a-variational-autoencoder-variational-autoencoder",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s (accessed 2026). Quoted moment: “that that is when i have for example a variational autoencoder variational autoencoder”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e01a56d4572d87f3e3be",
+            "canonicalSlug": "that-that-is-when-i-have-for-example-a-variational-autoencoder-variational-autoencoder",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 957.1,
+            "phrase": "that that is when i have for example a variational autoencoder variational autoencoder",
+            "snippetExcerpt": "so what is that that is when i have for example a variational autoencoder variational autoencoder",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s"
+          }
+        }
+      },
+      "qualityScore": 98
+    },
+    {
+      "id": "a972bcf3e834547a92fd",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "this sampling step so this sampling step it it kind of smooths the loss function",
+      "canonicalSlug": "this-sampling-step-so-this-sampling-step-it-it-kind-of-smooths-the-loss-function",
+      "startSeconds": 1319.8,
+      "timestamp": "21:59",
+      "snippet": "because of this sampling step so this sampling step it it kind of smooths the loss function",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1319s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.651Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 17.764705882352942,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 135.1,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Step",
+            "Kind",
+            "Smooths",
+            "Loss"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "kind",
+            "smooths",
+            "loss",
+            "function",
+            "because"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/a972bcf3e834547a92fd/this-sampling-step-so-this-sampling-step-it-it-kind-of-smooths-the-loss-function) — “this sampling step so this sampling step it it kind of smooths the loss function” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1319s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/a972bcf3e834547a92fd/this-sampling-step-so-this-sampling-step-it-it-kind-of-smooths-the-loss-function. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1319s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/a972bcf3e834547a92fd/this-sampling-step-so-this-sampling-step-it-it-kind-of-smooths-the-loss-function",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1319s (accessed 2026). Quoted moment: “this sampling step so this sampling step it it kind of smooths the loss function”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "a972bcf3e834547a92fd",
+            "canonicalSlug": "this-sampling-step-so-this-sampling-step-it-it-kind-of-smooths-the-loss-function",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 1319.8,
+            "phrase": "this sampling step so this sampling step it it kind of smooths the loss function",
+            "snippetExcerpt": "because of this sampling step so this sampling step it it kind of smooths the loss function",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1319s"
+          }
+        }
+      },
+      "qualityScore": 99
+    },
+    {
+      "id": "faaf1c2f8380bb7a6e8d",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "this sampling step so this",
+      "canonicalSlug": "this-sampling-step-so-this",
+      "startSeconds": 1314.1,
+      "timestamp": "21:54",
+      "snippet": "actual loss function here has a sort of a smoothing in it right because of this sampling step so this",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1314s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.670Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 24,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 18.4,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 130.7,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Step"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "actual",
+            "loss",
+            "function",
+            "here",
+            "sort",
+            "smoothing",
+            "right",
+            "because"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/faaf1c2f8380bb7a6e8d/this-sampling-step-so-this) — “this sampling step so this” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1314s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/faaf1c2f8380bb7a6e8d/this-sampling-step-so-this. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1314s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/faaf1c2f8380bb7a6e8d/this-sampling-step-so-this",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1314s (accessed 2026). Quoted moment: “this sampling step so this”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "faaf1c2f8380bb7a6e8d",
+            "canonicalSlug": "this-sampling-step-so-this",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 1314.1,
+            "phrase": "this sampling step so this",
+            "snippetExcerpt": "actual loss function here has a sort of a smoothing in it right because of this sampling step so this",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1314s"
+          }
+        }
+      },
+      "qualityScore": 98
+    },
+    {
+      "id": "198afe1e8f3edcc06341",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "the true gradient because in chaotic systems true gradients variances explodes",
+      "canonicalSlug": "the-true-gradient-because-in-chaotic-systems-true-gradients-variances-explodes",
+      "startSeconds": 2808.3,
+      "timestamp": "46:48",
+      "snippet": "gradient estimator rather than the true gradient because in chaotic systems true gradients variances explodes",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2808s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.687Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 20,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 14.399999999999999,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 22,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 131,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Gradient",
+            "Because",
+            "Chaotic",
+            "Systems"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "because",
+            "chaotic",
+            "systems",
+            "gradients",
+            "variances",
+            "explodes",
+            "estimator",
+            "rather",
+            "than"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/198afe1e8f3edcc06341/the-true-gradient-because-in-chaotic-systems-true-gradients-variances-explodes) — “the true gradient because in chaotic systems true gradients variances explodes” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2808s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/198afe1e8f3edcc06341/the-true-gradient-because-in-chaotic-systems-true-gradients-variances-explodes. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2808s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/198afe1e8f3edcc06341/the-true-gradient-because-in-chaotic-systems-true-gradients-variances-explodes",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2808s (accessed 2026). Quoted moment: “the true gradient because in chaotic systems true gradients variances explodes”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "198afe1e8f3edcc06341",
+            "canonicalSlug": "the-true-gradient-because-in-chaotic-systems-true-gradients-variances-explodes",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 2808.3,
+            "phrase": "the true gradient because in chaotic systems true gradients variances explodes",
+            "snippetExcerpt": "gradient estimator rather than the true gradient because in chaotic systems true gradients variances explodes",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2808s"
+          }
+        }
+      },
+      "qualityScore": 96
+    },
+    {
+      "id": "a278db7dcac3c0e7771e",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "i need to change this",
+      "canonicalSlug": "i-need-to-change-this",
+      "startSeconds": 382,
+      "timestamp": "6:22",
+      "snippet": "whatever that is a state transition in a reinforcement learning problem for example how do i need to change this",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=382s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.679Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 22,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 10.2,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.2,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 124,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Change"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "whatever",
+            "state",
+            "transition",
+            "reinforcement",
+            "learning",
+            "problem",
+            "example"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/a278db7dcac3c0e7771e/i-need-to-change-this) — “i need to change this” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=382s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/a278db7dcac3c0e7771e/i-need-to-change-this. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=382s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/a278db7dcac3c0e7771e/i-need-to-change-this",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=382s (accessed 2026). Quoted moment: “i need to change this”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "a278db7dcac3c0e7771e",
+            "canonicalSlug": "i-need-to-change-this",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 382,
+            "phrase": "i need to change this",
+            "snippetExcerpt": "whatever that is a state transition in a reinforcement learning problem for example how do i need to change this",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=382s"
+          }
+        }
+      },
+      "qualityScore": 81
+    },
+    {
+      "id": "c6c316f15f299b61a3f5",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "i pack the disks such that they're packed the most and you can do",
+      "canonicalSlug": "i-pack-the-disks-such-that-they're-packed-the-most-and-you-can-do",
+      "startSeconds": 2197.8,
+      "timestamp": "36:37",
+      "snippet": "and you you want to figure out like how how should i pack the disks such that they're packed the most and you can do",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2197s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.653Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 13.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.56,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 129.9,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Disks",
+            "Such",
+            "They're",
+            "Packed"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "such",
+            "they're",
+            "packed",
+            "most",
+            "want",
+            "figure",
+            "like"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/c6c316f15f299b61a3f5/i-pack-the-disks-such-that-they're-packed-the-most-and-you-can-do) — “i pack the disks such that they're packed the most and you can do” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2197s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/c6c316f15f299b61a3f5/i-pack-the-disks-such-that-they're-packed-the-most-and-you-can-do. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2197s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/c6c316f15f299b61a3f5/i-pack-the-disks-such-that-they're-packed-the-most-and-you-can-do",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2197s (accessed 2026). Quoted moment: “i pack the disks such that they're packed the most and you can do”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "c6c316f15f299b61a3f5",
+            "canonicalSlug": "i-pack-the-disks-such-that-they're-packed-the-most-and-you-can-do",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 2197.8,
+            "phrase": "i pack the disks such that they're packed the most and you can do",
+            "snippetExcerpt": "and you you want to figure out like how how should i pack the disks such that they're packed the most and you can do",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2197s"
+          }
+        }
+      },
+      "qualityScore": 94
+    },
+    {
+      "id": "bc7059589a8307f86f55",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "i pack the disks such that",
+      "canonicalSlug": "i-pack-the-disks-such-that",
+      "startSeconds": 2194.2,
+      "timestamp": "36:34",
+      "snippet": "and small discs and you you want to figure out like how how should i pack the disks such that",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2194s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.671Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 13.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 21.1,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 129.4,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Disks",
+            "Such"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "such",
+            "small",
+            "discs",
+            "want",
+            "figure",
+            "like"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/bc7059589a8307f86f55/i-pack-the-disks-such-that) — “i pack the disks such that” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2194s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/bc7059589a8307f86f55/i-pack-the-disks-such-that. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2194s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/bc7059589a8307f86f55/i-pack-the-disks-such-that",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2194s (accessed 2026). Quoted moment: “i pack the disks such that”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "bc7059589a8307f86f55",
+            "canonicalSlug": "i-pack-the-disks-such-that",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 2194.2,
+            "phrase": "i pack the disks such that",
+            "snippetExcerpt": "and small discs and you you want to figure out like how how should i pack the disks such that",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=2194s"
+          }
+        }
+      },
+      "qualityScore": 93
+    },
+    {
+      "id": "1a3c250a038353474de4",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "i need to change this such that i do a better job at uh predicting the future and therefore",
+      "canonicalSlug": "i-need-to-change-this-such-that-i-do-a-better-job-at-uh-predicting-the-future-and-therefore",
+      "startSeconds": 386,
+      "timestamp": "6:26",
+      "snippet": "example how do i need to change this such that i do a better job at uh predicting the future and therefore",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=386s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.644Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 10.2,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.363636363636363,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 129.2,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Change",
+            "Such",
+            "Better",
+            "Predicting"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "such",
+            "better",
+            "predicting",
+            "future",
+            "therefore",
+            "example"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/1a3c250a038353474de4/i-need-to-change-this-such-that-i-do-a-better-job-at-uh-predicting-the-future-and-therefore) — “i need to change this such that i do a better job at uh predicting the future and therefore” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=386s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/1a3c250a038353474de4/i-need-to-change-this-such-that-i-do-a-better-job-at-uh-predicting-the-future-and-therefore. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=386s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/1a3c250a038353474de4/i-need-to-change-this-such-that-i-do-a-better-job-at-uh-predicting-the-future-and-therefore",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=386s (accessed 2026). Quoted moment: “i need to change this such that i do a better job at uh predicting the future and therefore”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "1a3c250a038353474de4",
+            "canonicalSlug": "i-need-to-change-this-such-that-i-do-a-better-job-at-uh-predicting-the-future-and-therefore",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 386,
+            "phrase": "i need to change this such that i do a better job at uh predicting the future and therefore",
+            "snippetExcerpt": "example how do i need to change this such that i do a better job at uh predicting the future and therefore",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=386s"
+          }
+        }
+      },
+      "qualityScore": 83
+    },
+    {
+      "id": "7ef16d43a73c6f434901",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "we train we could do",
+      "canonicalSlug": "we-train-we-could-do",
+      "startSeconds": 1083.6,
+      "timestamp": "18:03",
+      "snippet": "and then get an image out here and all is good but now we have to train the thing so how do we train we could do",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1083s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.681Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 22,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 10.2,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 21.333333333333332,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 18
+        },
+        "totalSemanticRank": 133.1,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "then",
+            "image",
+            "here",
+            "good",
+            "thing"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/7ef16d43a73c6f434901/we-train-we-could-do) — “we train we could do” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1083s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/7ef16d43a73c6f434901/we-train-we-could-do. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1083s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/7ef16d43a73c6f434901/we-train-we-could-do",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1083s (accessed 2026). Quoted moment: “we train we could do”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "7ef16d43a73c6f434901",
+            "canonicalSlug": "we-train-we-could-do",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 1083.6,
+            "phrase": "we train we could do",
+            "snippetExcerpt": "and then get an image out here and all is good but now we have to train the thing so how do we train we could do",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=1083s"
+          }
+        }
+      },
+      "qualityScore": 85
+    },
+    {
+      "id": "f982ce667b2bd4c76531",
+      "videoId": "EeMhj0sPrhE",
+      "phrase": "i need my to change my estimator of this series whatever that is a state transition in a",
+      "canonicalSlug": "i-need-my-to-change-my-estimator-of-this-series-whatever-that-is-a-state-transition-in-a",
+      "startSeconds": 376.2,
+      "timestamp": "6:16",
+      "snippet": "my neural network how do i need my to change my estimator of this series whatever that is a state transition in a",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=376s",
+      "videoTitle": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "materializedAt": "2026-05-16T16:13:50.648Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 10.2,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.434782608695652,
+          "engagementPrior": 15.6,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 132.2,
+        "topics": {
+          "primaryTopic": "statistics-for-ml, statistics-for-ml",
+          "secondaryTopics": [
+            "Learning",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Change",
+            "Estimator",
+            "Series",
+            "Whatever"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "estimator",
+            "series",
+            "whatever",
+            "state",
+            "transition",
+            "neural",
+            "network"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "learning",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "statistics-for-ml-statistics-for-ml"
+        },
+        "citations": {
+          "markdown": "[Gradients are Not All You Need (Machine Learning Research Paper Explained)](https://www.youtubetimesearch.com/moment/f982ce667b2bd4c76531/i-need-my-to-change-my-estimator-of-this-series-whatever-that-is-a-state-transition-in-a) — “i need my to change my estimator of this series whatever that is a state transition in a” (https://www.youtube.com/watch?v=EeMhj0sPrhE&t=376s)",
+          "academic": "Yannic Kilcher. *Gradients are Not All You Need (Machine Learning Research Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/f982ce667b2bd4c76531/i-need-my-to-change-my-estimator-of-this-series-whatever-that-is-a-state-transition-in-a. Timestamp deep-link: https://www.youtube.com/watch?v=EeMhj0sPrhE&t=376s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/f982ce667b2bd4c76531/i-need-my-to-change-my-estimator-of-this-series-whatever-that-is-a-state-transition-in-a",
+          "timestampCitation": "Gradients are Not All You Need (Machine Learning Research Paper Explained). https://www.youtube.com/watch?v=EeMhj0sPrhE&t=376s (accessed 2026). Quoted moment: “i need my to change my estimator of this series whatever that is a state transition in a”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "f982ce667b2bd4c76531",
+            "canonicalSlug": "i-need-my-to-change-my-estimator-of-this-series-whatever-that-is-a-state-transition-in-a",
+            "videoId": "EeMhj0sPrhE",
+            "startSeconds": 376.2,
+            "phrase": "i need my to change my estimator of this series whatever that is a state transition in a",
+            "snippetExcerpt": "my neural network how do i need my to change my estimator of this series whatever that is a state transition in a",
+            "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=376s"
+          }
+        }
+      },
+      "qualityScore": 85
     }
   ]
 }

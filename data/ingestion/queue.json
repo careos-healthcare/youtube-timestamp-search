@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T15:52:02.848Z",
+  "updatedAt": "2026-05-16T16:13:49.637Z",
   "jobs": [
     {
       "id": "ab636693-6976-413c-bc77-16d54bb0bdc3",
@@ -59,14 +59,16 @@
       "url": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
       "category": "AI podcasts",
       "creator": "Lex Fridman",
-      "topic": "how-llms-trained, machine-learning, state-of-ai-2026",
+      "topic": "statistics-for-ml, statistics-for-ml",
       "priority": 5,
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "maxAttempts": 3,
       "source": "wave-1",
       "createdAt": "2026-05-16T04:12:06.677Z",
-      "updatedAt": "2026-05-16T04:12:06.677Z"
+      "updatedAt": "2026-05-16T16:13:46.104Z",
+      "segmentCount": 6006,
+      "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333"
     },
     {
       "id": "48ba868a-bf9c-470b-bf8d-a1e4fd481d0b",
@@ -101,6 +103,40 @@
       "updatedAt": "2026-05-16T15:52:02.848Z",
       "segmentCount": 103,
       "title": "Welcome to the Hugging Face course"
+    },
+    {
+      "id": "2f91dfcc-d352-4a93-9aae-5ade0e351c48",
+      "videoId": "EeMhj0sPrhE",
+      "url": "https://www.youtube.com/watch?v=EeMhj0sPrhE",
+      "category": "AI podcasts",
+      "creator": "Yannic Kilcher",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "priority": 5,
+      "status": "completed",
+      "attempts": 1,
+      "maxAttempts": 3,
+      "source": "topic-deepening-statistics-for-ml",
+      "createdAt": "2026-05-16T16:13:45.530Z",
+      "updatedAt": "2026-05-16T16:13:47.882Z",
+      "segmentCount": 1226,
+      "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)"
+    },
+    {
+      "id": "9bfedfc9-d53f-46d0-b58b-d2c8ba027a60",
+      "videoId": "YPfUiOMYOEE",
+      "url": "https://www.youtube.com/watch?v=YPfUiOMYOEE",
+      "category": "AI podcasts",
+      "creator": "Yannic Kilcher",
+      "topic": "statistics-for-ml, statistics-for-ml",
+      "priority": 5,
+      "status": "completed",
+      "attempts": 1,
+      "maxAttempts": 3,
+      "source": "topic-deepening-statistics-for-ml",
+      "createdAt": "2026-05-16T16:13:45.530Z",
+      "updatedAt": "2026-05-16T16:13:49.637Z",
+      "segmentCount": 704,
+      "title": "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)"
     }
   ]
 }

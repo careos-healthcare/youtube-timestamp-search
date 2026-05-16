@@ -1,18 +1,71 @@
 {
-  "generatedAt": "2026-05-16T15:58:02.032Z",
-  "graphGeneratedAt": "2026-05-16T15:58:00.769Z",
+  "generatedAt": "2026-05-16T16:14:51.128Z",
+  "graphGeneratedAt": "2026-05-16T16:14:45.989Z",
   "summary": {
-    "readyToShowcase": 2,
-    "deepenNext": 2,
+    "readyToShowcase": 3,
+    "deepenNext": 3,
     "brokenDoNotPromote": 48,
-    "queuedForIngest": 14
+    "queuedForIngest": 13
   },
   "queue": [
     {
       "topicSlug": "statistics-for-ml",
+      "currentStatus": "deepen_next",
+      "priority": 132,
+      "reason": "Within 16% of elite bar — deepen graph before broad promotion.",
+      "targetMissingCapabilities": [
+        "compare_with edges",
+        "supports/contradicts edges",
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "candidateVideoIds": [
+        "YPfUiOMYOEE",
+        "hQEnzdLkPj4"
+      ],
+      "candidateSourceIds": [
+        "w1-008",
+        "w1-009",
+        "w1-018",
+        "w1-020"
+      ],
+      "maxRecommendedIngestCount": 2,
+      "riskLevel": "low"
+    },
+    {
+      "topicSlug": "reinforcement-learning",
       "currentStatus": "needs_primary_sources",
       "priority": 124,
       "reason": "Primary-source share 13% below governance minimum.",
+      "targetMissingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "contradicts_or_caveats edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "candidateVideoIds": [
+        "wraCgn27kVA"
+      ],
+      "candidateSourceIds": [
+        "w1-021",
+        "allowlist:Dwarkesh Patel",
+        "allowlist:Lex Fridman"
+      ],
+      "maxRecommendedIngestCount": 3,
+      "riskLevel": "medium"
+    },
+    {
+      "topicSlug": "neural-networks",
+      "currentStatus": "needs_primary_sources",
+      "priority": 123,
+      "reason": "Primary-source share 7% below governance minimum.",
       "targetMissingCapabilities": [
         "primary_source_moment",
         "academic_technical voice",
@@ -23,20 +76,13 @@
         "webinar",
         "internal_upload"
       ],
-      "candidateVideoIds": [
-        "cdiD-9MMpb0",
-        "EeMhj0sPrhE",
-        "YPfUiOMYOEE"
-      ],
+      "candidateVideoIds": [],
       "candidateSourceIds": [
-        "w1-004",
-        "w1-007",
-        "w1-008",
-        "w1-009",
-        "w1-018"
+        "allowlist:Dwarkesh Patel",
+        "allowlist:Lex Fridman"
       ],
       "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
+      "riskLevel": "low"
     },
     {
       "topicSlug": "inference",
@@ -154,85 +200,6 @@
       "candidateSourceIds": [
         "allowlist:Dwarkesh Patel",
         "allowlist:Lex Fridman"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "reinforcement-learning",
-      "currentStatus": "needs_primary_sources",
-      "priority": 114,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [
-        "wraCgn27kVA"
-      ],
-      "candidateSourceIds": [
-        "w1-021",
-        "allowlist:Dwarkesh Patel",
-        "allowlist:Lex Fridman"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "neural-networks",
-      "currentStatus": "needs_primary_sources",
-      "priority": 108,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [],
-      "candidateSourceIds": [
-        "allowlist:Dwarkesh Patel",
-        "allowlist:Lex Fridman"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "low"
-    },
-    {
-      "topicSlug": "machine-learning",
-      "currentStatus": "needs_primary_sources",
-      "priority": 108,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [
-        "cdiD-9MMpb0",
-        "EeMhj0sPrhE",
-        "YPfUiOMYOEE"
-      ],
-      "candidateSourceIds": [
-        "w1-004",
-        "w1-007",
-        "w1-008",
-        "w1-009",
-        "w1-018"
       ],
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
@@ -363,65 +330,43 @@
     {
       "topicSlug": "statistics-for-ml",
       "label": "Statistics for ML",
-      "status": "needs_primary_sources",
-      "priority": 124,
+      "status": "deepen_next",
+      "priority": 132,
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 8,
-        "graphVideoCount": 5,
-        "graphCreatorCount": 3,
-        "graphEdgeCount": 57,
+        "graphMomentCount": 28,
+        "graphVideoCount": 7,
+        "graphCreatorCount": 4,
+        "graphEdgeCount": 219,
         "compareReadiness": 1,
         "orphanMomentCount": 2,
-        "weakContextShare": 0.125,
+        "weakContextShare": 0.35714285714285715,
         "missingEdgeTypes": [
-          "compared_with",
           "saved_in",
           "same_topic_as"
         ],
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload",
-          "primary_source_voice"
+          "internal_upload"
         ],
-        "citationDensity": 0.625,
-        "creatorDiversity": 4,
+        "citationDensity": 0.8928571428571429,
+        "creatorDiversity": 5,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
           "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.75,
-          "technicalShare": 0.25,
-          "counterpointShare": 0.125
+          "beginnerShare": 0.5357142857142857,
+          "technicalShare": 0.07142857142857142,
+          "counterpointShare": 0.07142857142857142
         },
-        "primarySourceCoverage": 0.125,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.13,
-        "topicTrustScore": 57
+        "primarySourceCoverage": 0.42857142857142855,
+        "researchGradeTier": "elite",
+        "distanceToElite": 0.16,
+        "topicTrustScore": 75
       },
       "ingestionCandidates": [
-        {
-          "id": "w1-004",
-          "kind": "wave1_video",
-          "videoId": "cdiD-9MMpb0",
-          "channelName": "Lex Fridman",
-          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
-          "score": 120
-        },
-        {
-          "id": "w1-007",
-          "kind": "wave1_video",
-          "videoId": "EeMhj0sPrhE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Adds optimization-theory counterpoints useful for technical comparison pages.",
-          "score": 120
-        },
         {
           "id": "w1-008",
           "kind": "wave1_video",
@@ -451,6 +396,159 @@
           "riskLevel": "low",
           "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
           "score": 120
+        },
+        {
+          "id": "w1-020",
+          "kind": "wave1_video",
+          "videoId": "PNKj529yY5c",
+          "channelName": "MIT OpenCourseWare",
+          "label": "w1-020 — MIT OpenCourseWare: 2. Reasoning: Goal Trees and Problem Solving…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Second lecture in same course improves multi-video depth for AI fundamentals topics.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 93
+        }
+      ]
+    },
+    {
+      "topicSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "status": "needs_primary_sources",
+      "priority": 124,
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 8,
+        "graphVideoCount": 3,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 61,
+        "compareReadiness": 0.75,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.125,
+        "missingEdgeTypes": [
+          "compared_with",
+          "contradicts_or_caveats",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload",
+          "primary_source_voice"
+        ],
+        "citationDensity": 0.875,
+        "creatorDiversity": 4,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": false,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.625,
+          "technicalShare": 0.5,
+          "counterpointShare": 0
+        },
+        "primarySourceCoverage": 0.125,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.13,
+        "topicTrustScore": 64
+      },
+      "ingestionCandidates": [
+        {
+          "id": "w1-021",
+          "kind": "wave1_video",
+          "videoId": "wraCgn27kVA",
+          "channelName": "Berkeley AI Research",
+          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
+          "riskLevel": "medium",
+          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
+          "score": 92
+        }
+      ]
+    },
+    {
+      "topicSlug": "neural-networks",
+      "label": "Neural networks",
+      "status": "needs_primary_sources",
+      "priority": 123,
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 14,
+        "graphVideoCount": 5,
+        "graphCreatorCount": 4,
+        "graphEdgeCount": 93,
+        "compareReadiness": 1,
+        "orphanMomentCount": 5,
+        "weakContextShare": 0.21428571428571427,
+        "missingEdgeTypes": [
+          "compared_with",
+          "saved_in",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload",
+          "primary_source_voice"
+        ],
+        "citationDensity": 0.6428571428571429,
+        "creatorDiversity": 5,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.7857142857142857,
+          "technicalShare": 0.2857142857142857,
+          "counterpointShare": 0.07142857142857142
+        },
+        "primarySourceCoverage": 0.07142857142857142,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.19,
+        "topicTrustScore": 57
+      },
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.",
+          "score": 92
         }
       ]
     },
@@ -790,234 +888,6 @@
       ]
     },
     {
-      "topicSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "status": "needs_primary_sources",
-      "priority": 114,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 7,
-        "graphVideoCount": 2,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 53,
-        "compareReadiness": 0.5,
-        "orphanMomentCount": 1,
-        "weakContextShare": 0.14285714285714285,
-        "missingEdgeTypes": [
-          "compared_with",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.8571428571428571,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.7142857142857143,
-          "technicalShare": 0.5714285714285714,
-          "counterpointShare": 0
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.65,
-        "topicTrustScore": 52
-      },
-      "ingestionCandidates": [
-        {
-          "id": "w1-021",
-          "kind": "wave1_video",
-          "videoId": "wraCgn27kVA",
-          "channelName": "Berkeley AI Research",
-          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
-          "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
-        }
-      ]
-    },
-    {
-      "topicSlug": "neural-networks",
-      "label": "Neural networks",
-      "status": "needs_primary_sources",
-      "priority": 108,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 12,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 77,
-        "compareReadiness": 0.75,
-        "orphanMomentCount": 5,
-        "weakContextShare": 0.16666666666666666,
-        "missingEdgeTypes": [
-          "compared_with",
-          "saved_in",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.5833333333333334,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.8333333333333334,
-          "technicalShare": 0.3333333333333333,
-          "counterpointShare": 0.08333333333333333
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.45,
-        "topicTrustScore": 41
-      },
-      "ingestionCandidates": [
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
-        }
-      ]
-    },
-    {
-      "topicSlug": "machine-learning",
-      "label": "Machine learning",
-      "status": "needs_primary_sources",
-      "priority": 108,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 13,
-        "graphVideoCount": 4,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 85,
-        "compareReadiness": 1,
-        "orphanMomentCount": 2,
-        "weakContextShare": 0.07692307692307693,
-        "missingEdgeTypes": [
-          "compared_with",
-          "saved_in",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.38461538461538464,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6923076923076923,
-          "technicalShare": 0.07692307692307693,
-          "counterpointShare": 0.3076923076923077
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.47,
-        "topicTrustScore": 38
-      },
-      "ingestionCandidates": [
-        {
-          "id": "w1-004",
-          "kind": "wave1_video",
-          "videoId": "cdiD-9MMpb0",
-          "channelName": "Lex Fridman",
-          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
-          "score": 120
-        },
-        {
-          "id": "w1-007",
-          "kind": "wave1_video",
-          "videoId": "EeMhj0sPrhE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Adds optimization-theory counterpoints useful for technical comparison pages.",
-          "score": 120
-        },
-        {
-          "id": "w1-008",
-          "kind": "wave1_video",
-          "videoId": "YPfUiOMYOEE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics.",
-          "score": 120
-        },
-        {
-          "id": "w1-009",
-          "kind": "wave1_video",
-          "videoId": "hQEnzdLkPj4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-009 — Yannic Kilcher: Learning To Classify Images Without Labels (Paper Explained)…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
-          "score": 120
-        },
-        {
-          "id": "w1-018",
-          "kind": "wave1_video",
-          "videoId": "jGwO_UgTS7I",
-          "channelName": "Stanford Online",
-          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
-          "score": 120
-        }
-      ]
-    },
-    {
       "topicSlug": "docker",
       "label": "Docker",
       "status": "needs_primary_sources",
@@ -1211,25 +1081,21 @@
           "score": 86
         }
       ]
-    }
-  ],
-  "analyses": [
+    },
     {
-      "topicSlug": "statistics-for-ml",
-      "label": "Statistics for ML",
-      "vertical": "education",
+      "topicSlug": "open-source-ai",
+      "label": "Open-source AI",
       "status": "needs_primary_sources",
-      "priority": 124,
-      "reason": "Primary-source share 13% below governance minimum.",
+      "priority": 99,
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 8,
-        "graphVideoCount": 5,
+        "graphMomentCount": 7,
+        "graphVideoCount": 3,
         "graphCreatorCount": 3,
-        "graphEdgeCount": 57,
-        "compareReadiness": 1,
-        "orphanMomentCount": 2,
-        "weakContextShare": 0.125,
+        "graphEdgeCount": 43,
+        "compareReadiness": 0.75,
+        "orphanMomentCount": 0,
+        "weakContextShare": 0.8571428571428571,
         "missingEdgeTypes": [
           "compared_with",
           "saved_in",
@@ -1241,26 +1107,89 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.625,
-        "creatorDiversity": 4,
+        "citationDensity": 0.5714285714285714,
+        "creatorDiversity": 3,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": false,
+          "beginnerShare": 1,
+          "technicalShare": 0.42857142857142855,
+          "counterpointShare": 0.2857142857142857
+        },
+        "primarySourceCoverage": 0,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.91,
+        "topicTrustScore": 30
+      },
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 92
+        }
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "topicSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "vertical": "education",
+      "status": "deepen_next",
+      "priority": 132,
+      "reason": "Within 16% of elite bar — deepen graph before broad promotion.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 28,
+        "graphVideoCount": 7,
+        "graphCreatorCount": 4,
+        "graphEdgeCount": 219,
+        "compareReadiness": 1,
+        "orphanMomentCount": 2,
+        "weakContextShare": 0.35714285714285715,
+        "missingEdgeTypes": [
+          "saved_in",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.8928571428571429,
+        "creatorDiversity": 5,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
           "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.75,
-          "technicalShare": 0.25,
-          "counterpointShare": 0.125
+          "beginnerShare": 0.5357142857142857,
+          "technicalShare": 0.07142857142857142,
+          "counterpointShare": 0.07142857142857142
         },
-        "primarySourceCoverage": 0.125,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.13,
-        "topicTrustScore": 57
+        "primarySourceCoverage": 0.42857142857142855,
+        "researchGradeTier": "elite",
+        "distanceToElite": 0.16,
+        "topicTrustScore": 75
       },
       "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
+        "compare_with edges",
+        "supports/contradicts edges",
         "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
@@ -1268,26 +1197,6 @@
         "internal_upload"
       ],
       "ingestionCandidates": [
-        {
-          "id": "w1-004",
-          "kind": "wave1_video",
-          "videoId": "cdiD-9MMpb0",
-          "channelName": "Lex Fridman",
-          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
-          "score": 120
-        },
-        {
-          "id": "w1-007",
-          "kind": "wave1_video",
-          "videoId": "EeMhj0sPrhE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Adds optimization-theory counterpoints useful for technical comparison pages.",
-          "score": 120
-        },
         {
           "id": "w1-008",
           "kind": "wave1_video",
@@ -1317,11 +1226,194 @@
           "riskLevel": "low",
           "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
           "score": 120
+        },
+        {
+          "id": "w1-020",
+          "kind": "wave1_video",
+          "videoId": "PNKj529yY5c",
+          "channelName": "MIT OpenCourseWare",
+          "label": "w1-020 — MIT OpenCourseWare: 2. Reasoning: Goal Trees and Problem Solving…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Second lecture in same course improves multi-video depth for AI fundamentals topics.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 93
         }
       ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
+      "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics. | Unsupervised / weak-label angle for ML topic authority diversity.",
+      "maxRecommendedIngestCount": 2,
+      "riskLevel": "low"
+    },
+    {
+      "topicSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "vertical": "ai_ml",
+      "status": "needs_primary_sources",
+      "priority": 124,
+      "reason": "Primary-source share 13% below governance minimum.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 8,
+        "graphVideoCount": 3,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 61,
+        "compareReadiness": 0.75,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.125,
+        "missingEdgeTypes": [
+          "compared_with",
+          "contradicts_or_caveats",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload",
+          "primary_source_voice"
+        ],
+        "citationDensity": 0.875,
+        "creatorDiversity": 4,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": false,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.625,
+          "technicalShare": 0.5,
+          "counterpointShare": 0
+        },
+        "primarySourceCoverage": 0.125,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.13,
+        "topicTrustScore": 64
+      },
+      "targetMissingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "contradicts_or_caveats edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "w1-021",
+          "kind": "wave1_video",
+          "videoId": "wraCgn27kVA",
+          "channelName": "Berkeley AI Research",
+          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
+          "riskLevel": "medium",
+          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
+          "score": 92
+        }
+      ],
+      "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
+    },
+    {
+      "topicSlug": "neural-networks",
+      "label": "Neural networks",
+      "vertical": "ai_ml",
+      "status": "needs_primary_sources",
+      "priority": 123,
+      "reason": "Primary-source share 7% below governance minimum.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 14,
+        "graphVideoCount": 5,
+        "graphCreatorCount": 4,
+        "graphEdgeCount": 93,
+        "compareReadiness": 1,
+        "orphanMomentCount": 5,
+        "weakContextShare": 0.21428571428571427,
+        "missingEdgeTypes": [
+          "compared_with",
+          "saved_in",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload",
+          "primary_source_voice"
+        ],
+        "citationDensity": 0.6428571428571429,
+        "creatorDiversity": 5,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.7857142857142857,
+          "technicalShare": 0.2857142857142857,
+          "counterpointShare": 0.07142857142857142
+        },
+        "primarySourceCoverage": 0.07142857142857142,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.19,
+        "topicTrustScore": 57
+      },
+      "targetMissingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.",
+          "score": 92
+        }
+      ],
+      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.",
+      "maxRecommendedIngestCount": 3,
+      "riskLevel": "low"
     },
     {
       "topicSlug": "inference",
@@ -1728,279 +1820,6 @@
         }
       ],
       "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "vertical": "ai_ml",
-      "status": "needs_primary_sources",
-      "priority": 114,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 7,
-        "graphVideoCount": 2,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 53,
-        "compareReadiness": 0.5,
-        "orphanMomentCount": 1,
-        "weakContextShare": 0.14285714285714285,
-        "missingEdgeTypes": [
-          "compared_with",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.8571428571428571,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.7142857142857143,
-          "technicalShare": 0.5714285714285714,
-          "counterpointShare": 0
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.65,
-        "topicTrustScore": 52
-      },
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "ingestionCandidates": [
-        {
-          "id": "w1-021",
-          "kind": "wave1_video",
-          "videoId": "wraCgn27kVA",
-          "channelName": "Berkeley AI Research",
-          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
-          "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
-        }
-      ],
-      "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "neural-networks",
-      "label": "Neural networks",
-      "vertical": "ai_ml",
-      "status": "needs_primary_sources",
-      "priority": 108,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 12,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 77,
-        "compareReadiness": 0.75,
-        "orphanMomentCount": 5,
-        "weakContextShare": 0.16666666666666666,
-        "missingEdgeTypes": [
-          "compared_with",
-          "saved_in",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.5833333333333334,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.8333333333333334,
-          "technicalShare": 0.3333333333333333,
-          "counterpointShare": 0.08333333333333333
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.45,
-        "topicTrustScore": 41
-      },
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "ingestionCandidates": [
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
-        }
-      ],
-      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "low"
-    },
-    {
-      "topicSlug": "machine-learning",
-      "label": "Machine learning",
-      "vertical": "education",
-      "status": "needs_primary_sources",
-      "priority": 108,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 13,
-        "graphVideoCount": 4,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 85,
-        "compareReadiness": 1,
-        "orphanMomentCount": 2,
-        "weakContextShare": 0.07692307692307693,
-        "missingEdgeTypes": [
-          "compared_with",
-          "saved_in",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.38461538461538464,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6923076923076923,
-          "technicalShare": 0.07692307692307693,
-          "counterpointShare": 0.3076923076923077
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.47,
-        "topicTrustScore": 38
-      },
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "ingestionCandidates": [
-        {
-          "id": "w1-004",
-          "kind": "wave1_video",
-          "videoId": "cdiD-9MMpb0",
-          "channelName": "Lex Fridman",
-          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
-          "score": 120
-        },
-        {
-          "id": "w1-007",
-          "kind": "wave1_video",
-          "videoId": "EeMhj0sPrhE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Adds optimization-theory counterpoints useful for technical comparison pages.",
-          "score": 120
-        },
-        {
-          "id": "w1-008",
-          "kind": "wave1_video",
-          "videoId": "YPfUiOMYOEE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics.",
-          "score": 120
-        },
-        {
-          "id": "w1-009",
-          "kind": "wave1_video",
-          "videoId": "hQEnzdLkPj4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-009 — Yannic Kilcher: Learning To Classify Images Without Labels (Paper Explained)…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
-          "score": 120
-        },
-        {
-          "id": "w1-018",
-          "kind": "wave1_video",
-          "videoId": "jGwO_UgTS7I",
-          "channelName": "Stanford Online",
-          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
-          "score": 120
-        }
-      ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
@@ -2571,6 +2390,109 @@
         }
       ],
       "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Core architecture explanations to complement existing thin transformer topic coverage.",
+      "maxRecommendedIngestCount": 0,
+      "riskLevel": "low"
+    },
+    {
+      "topicSlug": "machine-learning",
+      "label": "Machine learning",
+      "vertical": "education",
+      "status": "ready_to_showcase",
+      "priority": 15,
+      "reason": "Research-grade strong with graph depth 23 moments across 5 videos; trust 66.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 23,
+        "graphVideoCount": 5,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 187,
+        "compareReadiness": 1,
+        "orphanMomentCount": 2,
+        "weakContextShare": 0.043478260869565216,
+        "missingEdgeTypes": [
+          "saved_in",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.6521739130434783,
+        "creatorDiversity": 4,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.5217391304347826,
+          "technicalShare": 0.043478260869565216,
+          "counterpointShare": 0.21739130434782608
+        },
+        "primarySourceCoverage": 0.43478260869565216,
+        "researchGradeTier": "strong",
+        "distanceToElite": 0,
+        "topicTrustScore": 66
+      },
+      "targetMissingCapabilities": [
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "w1-008",
+          "kind": "wave1_video",
+          "videoId": "YPfUiOMYOEE",
+          "channelName": "Yannic Kilcher",
+          "label": "w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics.",
+          "score": 120
+        },
+        {
+          "id": "w1-009",
+          "kind": "wave1_video",
+          "videoId": "hQEnzdLkPj4",
+          "channelName": "Yannic Kilcher",
+          "label": "w1-009 — Yannic Kilcher: Learning To Classify Images Without Labels (Paper Explained)…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
+          "score": 120
+        },
+        {
+          "id": "w1-018",
+          "kind": "wave1_video",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
+          "score": 120
+        },
+        {
+          "id": "w1-020",
+          "kind": "wave1_video",
+          "videoId": "PNKj529yY5c",
+          "channelName": "MIT OpenCourseWare",
+          "label": "w1-020 — MIT OpenCourseWare: 2. Reasoning: Goal Trees and Problem Solving…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Second lecture in same course improves multi-video depth for AI fundamentals topics.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 93
+        }
+      ],
+      "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics. | Unsupervised / weak-label angle for ML topic authority diversity.",
       "maxRecommendedIngestCount": 0,
       "riskLevel": "low"
     },
@@ -5312,26 +5234,6 @@
       ],
       "ingestionCandidates": [
         {
-          "id": "w1-004",
-          "kind": "wave1_video",
-          "videoId": "cdiD-9MMpb0",
-          "channelName": "Lex Fridman",
-          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives.",
-          "score": 120
-        },
-        {
-          "id": "w1-007",
-          "kind": "wave1_video",
-          "videoId": "EeMhj0sPrhE",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Adds optimization-theory counterpoints useful for technical comparison pages.",
-          "score": 120
-        },
-        {
           "id": "w1-008",
           "kind": "wave1_video",
           "videoId": "YPfUiOMYOEE",
@@ -5360,11 +5262,30 @@
           "riskLevel": "low",
           "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
           "score": 120
+        },
+        {
+          "id": "w1-020",
+          "kind": "wave1_video",
+          "videoId": "PNKj529yY5c",
+          "channelName": "MIT OpenCourseWare",
+          "label": "w1-020 — MIT OpenCourseWare: 2. Reasoning: Goal Trees and Problem Solving…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Second lecture in same course improves multi-video depth for AI fundamentals topics.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for videos 0<2 gaps.",
+          "score": 93
         }
       ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
+      "expectedGraphGain": "Self-supervised learning depth adjacent to transformers / HF curriculum topics. | Unsupervised / weak-label angle for ML topic authority diversity.",
       "maxRecommendedIngestCount": 2,
-      "riskLevel": "medium"
+      "riskLevel": "low"
     },
     {
       "topicSlug": "computer-vision",

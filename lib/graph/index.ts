@@ -31,9 +31,29 @@ export type {
 export {
   TOPIC_DEEPENING_RAG_SLUG,
   TOPIC_DEEPENING_RAG_QUEUE_SOURCE,
+  topicDeepeningQueueSource,
+  buildTopicDeepeningIngestPlan,
   buildRagIngestPlan,
+  runTopicDeepeningIngest,
   runRagTopicDeepeningIngest,
+  refreshTopicDeepeningIngestOutcome,
   refreshRagIngestOutcome,
+  formatTopicDeepeningIngestMarkdown,
   formatRagIngestMarkdown,
+  writeTopicDeepeningIngestArtifacts,
+  isTopicInDeepeningQueue,
 } from "./topic-deepening-ingest";
-export type { RagIngestOutcome, RagIngestPlan, RunRagTopicDeepeningIngestOptions } from "./topic-deepening-ingest";
+export type {
+  TopicDeepeningIngestPlan,
+  TopicDeepeningIngestOutcome,
+  RunTopicDeepeningIngestOptions,
+  RagIngestOutcome,
+  RagIngestPlan,
+} from "./topic-deepening-ingest";
+export {
+  buildEliteTopicProgram,
+  writeEliteTopicProgramArtifacts,
+  formatEliteTopicProgramMarkdown,
+  selectEliteProgramTopics,
+} from "./elite-topic-program";
+export type { EliteTopicProgram, EliteTopicProgramEntry } from "./elite-topic-program";

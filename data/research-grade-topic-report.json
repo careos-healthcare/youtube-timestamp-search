@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-16T15:58:01.384Z",
+  "generatedAt": "2026-05-16T16:14:46.624Z",
   "topicCount": 64,
   "summary": {
-    "elite": 1,
-    "strong": 1,
-    "weak": 13,
+    "elite": 2,
+    "strong": 2,
+    "weak": 11,
     "broken": 49
   },
   "topics": [
@@ -456,26 +456,26 @@
         "minSemanticExplanationRatio": 0.2
       },
       "metrics": {
-        "momentCount": 7,
-        "indexedVideos": 2,
-        "uniqueCreators": 3,
-        "citationDensity": 0.8571428571428571,
-        "compareDepth": 2,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.8571428571428571,
-        "shallowAuthorityShare": 0.14285714285714285,
+        "momentCount": 8,
+        "indexedVideos": 3,
+        "uniqueCreators": 4,
+        "citationDensity": 0.875,
+        "compareDepth": 3,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.125,
+        "semanticExplanationRatio": 0.875,
+        "shallowAuthorityShare": 0.125,
         "conversationalShare": 0,
-        "repeatSearchPotential": 0.5535714285714286,
-        "topicTrustScore": 52,
-        "researchGradeScore": 50
+        "repeatSearchPotential": 0.7062499999999999,
+        "topicTrustScore": 64,
+        "researchGradeScore": 62
       },
       "tier": "weak",
       "failedRequirements": [
-        "primarySource 0.00<0.15"
+        "primarySource 0.13<0.15"
       ],
-      "distanceToElite": 0.65,
-      "ingestionPriority": 109,
+      "distanceToElite": 0.13,
+      "ingestionPriority": 88,
       "notes": []
     },
     {
@@ -536,26 +536,26 @@
         "minSemanticExplanationRatio": 0.2
       },
       "metrics": {
-        "momentCount": 12,
-        "indexedVideos": 3,
-        "uniqueCreators": 3,
-        "citationDensity": 0.5833333333333334,
-        "compareDepth": 3,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.5833333333333334,
-        "shallowAuthorityShare": 0.16666666666666666,
-        "conversationalShare": 0.16666666666666666,
-        "repeatSearchPotential": 0.5583333333333332,
-        "topicTrustScore": 41,
-        "researchGradeScore": 41
+        "momentCount": 14,
+        "indexedVideos": 5,
+        "uniqueCreators": 5,
+        "citationDensity": 0.6428571428571429,
+        "compareDepth": 5,
+        "sourceDiversity": 4,
+        "primarySourceRatio": 0.07142857142857142,
+        "semanticExplanationRatio": 0.6428571428571429,
+        "shallowAuthorityShare": 0.21428571428571427,
+        "conversationalShare": 0.14285714285714285,
+        "repeatSearchPotential": 0.7797619047619048,
+        "topicTrustScore": 57,
+        "researchGradeScore": 60
       },
       "tier": "weak",
       "failedRequirements": [
-        "primarySource 0.00<0.15"
+        "primarySource 0.07<0.15"
       ],
-      "distanceToElite": 0.45,
-      "ingestionPriority": 107,
+      "distanceToElite": 0.19,
+      "ingestionPriority": 93,
       "notes": []
     },
     {
@@ -1971,26 +1971,24 @@
         "minSemanticExplanationRatio": 0.2
       },
       "metrics": {
-        "momentCount": 13,
-        "indexedVideos": 4,
-        "uniqueCreators": 3,
-        "citationDensity": 0.38461538461538464,
-        "compareDepth": 4,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.38461538461538464,
-        "shallowAuthorityShare": 0.07692307692307693,
-        "conversationalShare": 0.15384615384615385,
-        "repeatSearchPotential": 0.6160256410256411,
-        "topicTrustScore": 38,
-        "researchGradeScore": 40
+        "momentCount": 23,
+        "indexedVideos": 5,
+        "uniqueCreators": 4,
+        "citationDensity": 0.6521739130434783,
+        "compareDepth": 5,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.43478260869565216,
+        "semanticExplanationRatio": 0.6521739130434783,
+        "shallowAuthorityShare": 0.043478260869565216,
+        "conversationalShare": 0.08695652173913043,
+        "repeatSearchPotential": 0.7186594202898551,
+        "topicTrustScore": 66,
+        "researchGradeScore": 69
       },
-      "tier": "weak",
-      "failedRequirements": [
-        "primarySource 0.00<0.15"
-      ],
-      "distanceToElite": 0.47,
-      "ingestionPriority": 109,
+      "tier": "strong",
+      "failedRequirements": [],
+      "distanceToElite": 0,
+      "ingestionPriority": 54,
       "notes": []
     },
     {
@@ -2008,26 +2006,24 @@
         "minSemanticExplanationRatio": 0.2
       },
       "metrics": {
-        "momentCount": 8,
-        "indexedVideos": 5,
-        "uniqueCreators": 4,
-        "citationDensity": 0.625,
-        "compareDepth": 5,
-        "sourceDiversity": 3,
-        "primarySourceRatio": 0.125,
-        "semanticExplanationRatio": 0.625,
-        "shallowAuthorityShare": 0.125,
+        "momentCount": 28,
+        "indexedVideos": 7,
+        "uniqueCreators": 5,
+        "citationDensity": 0.8928571428571429,
+        "compareDepth": 7,
+        "sourceDiversity": 5,
+        "primarySourceRatio": 0.42857142857142855,
+        "semanticExplanationRatio": 0.8928571428571429,
+        "shallowAuthorityShare": 0.35714285714285715,
         "conversationalShare": 0,
-        "repeatSearchPotential": 0.7145833333333333,
-        "topicTrustScore": 57,
-        "researchGradeScore": 61
+        "repeatSearchPotential": 0.8172619047619047,
+        "topicTrustScore": 75,
+        "researchGradeScore": 79
       },
-      "tier": "weak",
-      "failedRequirements": [
-        "primarySource 0.13<0.15"
-      ],
-      "distanceToElite": 0.13,
-      "ingestionPriority": 91,
+      "tier": "elite",
+      "failedRequirements": [],
+      "distanceToElite": 0.16,
+      "ingestionPriority": 25,
       "notes": []
     },
     {
@@ -2653,6 +2649,41 @@
     }
   ],
   "eliteTopics": [
+    {
+      "canonicalSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "vertical": "education",
+      "primaryQuery": "statistics for machine learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 28,
+        "indexedVideos": 7,
+        "uniqueCreators": 5,
+        "citationDensity": 0.8928571428571429,
+        "compareDepth": 7,
+        "sourceDiversity": 5,
+        "primarySourceRatio": 0.42857142857142855,
+        "semanticExplanationRatio": 0.8928571428571429,
+        "shallowAuthorityShare": 0.35714285714285715,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.8172619047619047,
+        "topicTrustScore": 75,
+        "researchGradeScore": 79
+      },
+      "tier": "elite",
+      "failedRequirements": [],
+      "distanceToElite": 0.16,
+      "ingestionPriority": 25,
+      "notes": []
+    },
     {
       "canonicalSlug": "rag",
       "label": "RAG (retrieval-augmented generation)",
@@ -3338,6 +3369,41 @@
   ],
   "closestToElite": [
     {
+      "canonicalSlug": "machine-learning",
+      "label": "Machine learning",
+      "vertical": "education",
+      "primaryQuery": "machine learning course",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 23,
+        "indexedVideos": 5,
+        "uniqueCreators": 4,
+        "citationDensity": 0.6521739130434783,
+        "compareDepth": 5,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.43478260869565216,
+        "semanticExplanationRatio": 0.6521739130434783,
+        "shallowAuthorityShare": 0.043478260869565216,
+        "conversationalShare": 0.08695652173913043,
+        "repeatSearchPotential": 0.7186594202898551,
+        "topicTrustScore": 66,
+        "researchGradeScore": 69
+      },
+      "tier": "strong",
+      "failedRequirements": [],
+      "distanceToElite": 0,
+      "ingestionPriority": 54,
+      "notes": []
+    },
+    {
       "canonicalSlug": "transformers",
       "label": "Transformers",
       "vertical": "ai_ml",
@@ -3373,10 +3439,10 @@
       "notes": []
     },
     {
-      "canonicalSlug": "statistics-for-ml",
-      "label": "Statistics for ML",
-      "vertical": "education",
-      "primaryQuery": "statistics for machine learning",
+      "canonicalSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "vertical": "ai_ml",
+      "primaryQuery": "reinforcement learning",
       "requirements": {
         "minIndexedVideos": 2,
         "minUniqueCreators": 2,
@@ -3388,25 +3454,62 @@
       },
       "metrics": {
         "momentCount": 8,
-        "indexedVideos": 5,
+        "indexedVideos": 3,
         "uniqueCreators": 4,
-        "citationDensity": 0.625,
-        "compareDepth": 5,
+        "citationDensity": 0.875,
+        "compareDepth": 3,
         "sourceDiversity": 3,
         "primarySourceRatio": 0.125,
-        "semanticExplanationRatio": 0.625,
+        "semanticExplanationRatio": 0.875,
         "shallowAuthorityShare": 0.125,
         "conversationalShare": 0,
-        "repeatSearchPotential": 0.7145833333333333,
-        "topicTrustScore": 57,
-        "researchGradeScore": 61
+        "repeatSearchPotential": 0.7062499999999999,
+        "topicTrustScore": 64,
+        "researchGradeScore": 62
       },
       "tier": "weak",
       "failedRequirements": [
         "primarySource 0.13<0.15"
       ],
       "distanceToElite": 0.13,
-      "ingestionPriority": 91,
+      "ingestionPriority": 88,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "neural-networks",
+      "label": "Neural networks",
+      "vertical": "ai_ml",
+      "primaryQuery": "neural networks explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 14,
+        "indexedVideos": 5,
+        "uniqueCreators": 5,
+        "citationDensity": 0.6428571428571429,
+        "compareDepth": 5,
+        "sourceDiversity": 4,
+        "primarySourceRatio": 0.07142857142857142,
+        "semanticExplanationRatio": 0.6428571428571429,
+        "shallowAuthorityShare": 0.21428571428571427,
+        "conversationalShare": 0.14285714285714285,
+        "repeatSearchPotential": 0.7797619047619048,
+        "topicTrustScore": 57,
+        "researchGradeScore": 60
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.07<0.15"
+      ],
+      "distanceToElite": 0.19,
+      "ingestionPriority": 93,
       "notes": []
     },
     {
@@ -3444,80 +3547,6 @@
       ],
       "distanceToElite": 0.45,
       "ingestionPriority": 99,
-      "notes": []
-    },
-    {
-      "canonicalSlug": "neural-networks",
-      "label": "Neural networks",
-      "vertical": "ai_ml",
-      "primaryQuery": "neural networks explained",
-      "requirements": {
-        "minIndexedVideos": 2,
-        "minUniqueCreators": 2,
-        "minCitationDensity": 0.25,
-        "minCompareDepth": 2,
-        "minSourceDiversity": 2,
-        "minPrimarySourceCoverage": 0.15,
-        "minSemanticExplanationRatio": 0.2
-      },
-      "metrics": {
-        "momentCount": 12,
-        "indexedVideos": 3,
-        "uniqueCreators": 3,
-        "citationDensity": 0.5833333333333334,
-        "compareDepth": 3,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.5833333333333334,
-        "shallowAuthorityShare": 0.16666666666666666,
-        "conversationalShare": 0.16666666666666666,
-        "repeatSearchPotential": 0.5583333333333332,
-        "topicTrustScore": 41,
-        "researchGradeScore": 41
-      },
-      "tier": "weak",
-      "failedRequirements": [
-        "primarySource 0.00<0.15"
-      ],
-      "distanceToElite": 0.45,
-      "ingestionPriority": 107,
-      "notes": []
-    },
-    {
-      "canonicalSlug": "machine-learning",
-      "label": "Machine learning",
-      "vertical": "education",
-      "primaryQuery": "machine learning course",
-      "requirements": {
-        "minIndexedVideos": 2,
-        "minUniqueCreators": 2,
-        "minCitationDensity": 0.25,
-        "minCompareDepth": 2,
-        "minSourceDiversity": 2,
-        "minPrimarySourceCoverage": 0.15,
-        "minSemanticExplanationRatio": 0.2
-      },
-      "metrics": {
-        "momentCount": 13,
-        "indexedVideos": 4,
-        "uniqueCreators": 3,
-        "citationDensity": 0.38461538461538464,
-        "compareDepth": 4,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.38461538461538464,
-        "shallowAuthorityShare": 0.07692307692307693,
-        "conversationalShare": 0.15384615384615385,
-        "repeatSearchPotential": 0.6160256410256411,
-        "topicTrustScore": 38,
-        "researchGradeScore": 40
-      },
-      "tier": "weak",
-      "failedRequirements": [
-        "primarySource 0.00<0.15"
-      ],
-      "distanceToElite": 0.47,
-      "ingestionPriority": 109,
       "notes": []
     },
     {
@@ -3662,43 +3691,6 @@
       ],
       "distanceToElite": 0.58,
       "ingestionPriority": 107,
-      "notes": []
-    },
-    {
-      "canonicalSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "vertical": "ai_ml",
-      "primaryQuery": "reinforcement learning",
-      "requirements": {
-        "minIndexedVideos": 2,
-        "minUniqueCreators": 2,
-        "minCitationDensity": 0.25,
-        "minCompareDepth": 2,
-        "minSourceDiversity": 2,
-        "minPrimarySourceCoverage": 0.15,
-        "minSemanticExplanationRatio": 0.2
-      },
-      "metrics": {
-        "momentCount": 7,
-        "indexedVideos": 2,
-        "uniqueCreators": 3,
-        "citationDensity": 0.8571428571428571,
-        "compareDepth": 2,
-        "sourceDiversity": 2,
-        "primarySourceRatio": 0,
-        "semanticExplanationRatio": 0.8571428571428571,
-        "shallowAuthorityShare": 0.14285714285714285,
-        "conversationalShare": 0,
-        "repeatSearchPotential": 0.5535714285714286,
-        "topicTrustScore": 52,
-        "researchGradeScore": 50
-      },
-      "tier": "weak",
-      "failedRequirements": [
-        "primarySource 0.00<0.15"
-      ],
-      "distanceToElite": 0.65,
-      "ingestionPriority": 109,
       "notes": []
     },
     {
@@ -4284,13 +4276,22 @@
   "highDiversityWeakExplanations": [],
   "researchMoatCandidates": [
     {
-      "canonicalSlug": "statistics-for-ml",
-      "label": "Statistics for ML",
+      "canonicalSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
       "momentCount": 8,
-      "citationDensity": 0.625,
+      "citationDensity": 0.875,
+      "compareDepth": 3,
+      "researchGradeScore": 62,
+      "rationale": "Small corpus (8 moments) with cite density 88% and compare depth 3 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "neural-networks",
+      "label": "Neural networks",
+      "momentCount": 14,
+      "citationDensity": 0.6428571428571429,
       "compareDepth": 5,
-      "researchGradeScore": 61,
-      "rationale": "Small corpus (8 moments) with cite density 63% and compare depth 5 — high trust per hour indexed"
+      "researchGradeScore": 60,
+      "rationale": "Small corpus (14 moments) with cite density 64% and compare depth 5 — high trust per hour indexed"
     },
     {
       "canonicalSlug": "fine-tuning",
@@ -4311,15 +4312,6 @@
       "rationale": "Small corpus (11 moments) with cite density 82% and compare depth 2 — high trust per hour indexed"
     },
     {
-      "canonicalSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "momentCount": 7,
-      "citationDensity": 0.8571428571428571,
-      "compareDepth": 2,
-      "researchGradeScore": 50,
-      "rationale": "Small corpus (7 moments) with cite density 86% and compare depth 2 — high trust per hour indexed"
-    },
-    {
       "canonicalSlug": "nlp-fundamentals",
       "label": "NLP fundamentals",
       "momentCount": 4,
@@ -4327,15 +4319,6 @@
       "compareDepth": 3,
       "researchGradeScore": 45,
       "rationale": "Small corpus (4 moments) with cite density 75% and compare depth 3 — high trust per hour indexed"
-    },
-    {
-      "canonicalSlug": "neural-networks",
-      "label": "Neural networks",
-      "momentCount": 12,
-      "citationDensity": 0.5833333333333334,
-      "compareDepth": 3,
-      "researchGradeScore": 41,
-      "rationale": "Small corpus (12 moments) with cite density 58% and compare depth 3 — high trust per hour indexed"
     },
     {
       "canonicalSlug": "state-management",
@@ -4356,7 +4339,17 @@
       "rationale": "Small corpus (7 moments) with cite density 57% and compare depth 3 — high trust per hour indexed"
     }
   ],
-  "topicTrustDrift": [],
+  "topicTrustDrift": [
+    {
+      "canonicalSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "driftKind": "more_shallow",
+      "detail": "shallow authority share +23% after corpus growth",
+      "shallowAuthorityDelta": 0.23214285714285715,
+      "citationDensityDelta": 0.2678571428571429,
+      "conversationalShareDelta": 0
+    }
+  ],
   "ingestionPriorities": [
     {
       "canonicalSlug": "backpropagation",

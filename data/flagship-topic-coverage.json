@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T15:41:45.846Z",
+  "generatedAt": "2026-05-16T16:14:50.520Z",
   "topics": [
     {
       "id": "what-is-rag",
@@ -23,11 +23,11 @@
         "minSemanticMoments": 1
       },
       "metrics": {
-        "indexedVideos": 6,
+        "indexedVideos": 8,
         "uniqueCreators": 5,
-        "citationRichMoments": 4,
-        "semanticMoments": 4,
-        "totalMatchedMoments": 9,
+        "citationRichMoments": 16,
+        "semanticMoments": 16,
+        "totalMatchedMoments": 21,
         "compareReadyExplanations": 6,
         "topicHubsAvailable": [
           "transformers"
@@ -35,8 +35,8 @@
         "collectionsAvailable": [
           "best-rag-explanations"
         ],
-        "searchResultCount": 33,
-        "searchVideoCount": 33
+        "searchResultCount": 35,
+        "searchVideoCount": 35
       },
       "status": "healthy",
       "homepageTrustSatisfied": true,
@@ -49,7 +49,8 @@
         "Wave 1 candidate w1-012 — Hugging Face: “The Transformer architecture…” (tier A, score 100)",
         "Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)",
         "Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)",
-        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)"
+        "Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)",
+        "Topic coverage gap — corpus topic “rag, rag, transformers, vector-database” has 10 moments / 1 videos (weakDepth=true)"
       ]
     },
     {
@@ -85,7 +86,7 @@
         "collectionsAvailable": [
           "anthropic-ai-safety"
         ],
-        "searchResultCount": 41,
+        "searchResultCount": 43,
         "searchVideoCount": 28
       },
       "status": "broken",
@@ -179,25 +180,23 @@
         "minSemanticMoments": 1
       },
       "metrics": {
-        "indexedVideos": 3,
+        "indexedVideos": 4,
         "uniqueCreators": 3,
-        "citationRichMoments": 1,
-        "semanticMoments": 1,
-        "totalMatchedMoments": 5,
-        "compareReadyExplanations": 3,
+        "citationRichMoments": 12,
+        "semanticMoments": 12,
+        "totalMatchedMoments": 16,
+        "compareReadyExplanations": 4,
         "topicHubsAvailable": [
           "transformers"
         ],
         "collectionsAvailable": [],
         "searchResultCount": 35,
-        "searchVideoCount": 18
+        "searchVideoCount": 19
       },
-      "status": "weak",
-      "homepageTrustSatisfied": false,
+      "status": "healthy",
+      "homepageTrustSatisfied": true,
       "homepageSafetyRisk": false,
-      "failedMinimums": [
-        "citationRichMoments 1 < 2"
-      ],
+      "failedMinimums": [],
       "ingestionRecommendations": [
         "Wave 1 candidate w1-002 — Dwarkesh Patel: “Dario Amodei — “We are near the end of the exponential”…” (tier A, score 100)",
         "Wave 1 candidate w1-003 — Lex Fridman: “Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI…” (tier A, score 100)",
@@ -233,18 +232,19 @@
       "metrics": {
         "indexedVideos": 9,
         "uniqueCreators": 4,
-        "citationRichMoments": 9,
-        "semanticMoments": 9,
-        "totalMatchedMoments": 21,
+        "citationRichMoments": 10,
+        "semanticMoments": 10,
+        "totalMatchedMoments": 22,
         "compareReadyExplanations": 6,
         "topicHubsAvailable": [
+          "javascript",
           "typescript-course"
         ],
         "collectionsAvailable": [
           "typescript-explanations"
         ],
-        "searchResultCount": 23,
-        "searchVideoCount": 14
+        "searchResultCount": 25,
+        "searchVideoCount": 16
       },
       "status": "healthy",
       "homepageTrustSatisfied": true,
@@ -288,7 +288,7 @@
           "startup-advice"
         ],
         "searchResultCount": 21,
-        "searchVideoCount": 14
+        "searchVideoCount": 13
       },
       "status": "broken",
       "homepageTrustSatisfied": false,
@@ -340,8 +340,8 @@
         "compareReadyExplanations": 0,
         "topicHubsAvailable": [],
         "collectionsAvailable": [],
-        "searchResultCount": 37,
-        "searchVideoCount": 22
+        "searchResultCount": 39,
+        "searchVideoCount": 23
       },
       "status": "broken",
       "homepageTrustSatisfied": false,
@@ -391,8 +391,8 @@
         "compareReadyExplanations": 4,
         "topicHubsAvailable": [],
         "collectionsAvailable": [],
-        "searchResultCount": 9,
-        "searchVideoCount": 6
+        "searchResultCount": 11,
+        "searchVideoCount": 7
       },
       "status": "healthy",
       "homepageTrustSatisfied": true,
@@ -432,7 +432,7 @@
         "collectionsAvailable": [
           "anthropic-ai-safety"
         ],
-        "searchResultCount": 41,
+        "searchResultCount": 43,
         "searchVideoCount": 28
       },
       "status": "broken",
@@ -449,8 +449,8 @@
   "homepageSafety": {
     "promotedCount": 9,
     "brokenCount": 4,
-    "weakCount": 2,
-    "healthyCount": 3,
+    "weakCount": 1,
+    "healthyCount": 4,
     "brokenTopics": [
       "AI agents",
       "Startup advice",
@@ -458,14 +458,13 @@
       "Anthropic · AI safety"
     ],
     "weakTopics": [
-      "Kubernetes scheduling",
-      "Prompt engineering"
+      "Kubernetes scheduling"
     ]
   },
   "summary": {
     "totalFlagshipTopics": 9,
-    "healthy": 3,
-    "weak": 2,
+    "healthy": 4,
+    "weak": 1,
     "broken": 4
   }
 }

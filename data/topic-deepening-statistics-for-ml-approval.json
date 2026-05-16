@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "topicSlug": "statistics-for-ml",
+  "approvedAt": "2026-05-16T16:13:43.007Z",
+  "governance": {
+    "basis": "topic-deepening-queue.json",
+    "overridesWave1ManualReview": true,
+    "reason": "Controlled topic-deepening batch for statistics-for-ml; scoped to queue row priority 124."
+  },
+  "approvedVideoIds": [
+    "cdiD-9MMpb0",
+    "EeMhj0sPrhE",
+    "YPfUiOMYOEE"
+  ],
+  "approvedWaveCandidateIds": [
+    "w1-004",
+    "w1-007",
+    "w1-008"
+  ],
+  "maxIngestCount": 3
+}

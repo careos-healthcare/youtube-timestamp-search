@@ -1,60 +1,61 @@
 # Retrieval quality report
 
-Generated: 2026-05-16T04:44:23.193Z
+Generated: 2026-05-16T16:14:53.509Z
 
 ## Best current sources (by mean retrieval normalized score)
 
 | Channel | Videos | Moments | mean retrieval | mean semantic dim | mean cite dim |
 |---------|-------:|--------:|---------------:|------------------:|----------------:|
-| freeCodeCamp | 22 | 127 | 0.453 | 0.203 | 0.050 |
-| Stanford Online | 1 | 3 | 0.445 | 0.410 | 0.130 |
-| Corey Schafer | 2 | 13 | 0.443 | 0.215 | 0.013 |
-| MIT OpenCourseWare | 1 | 1 | 0.431 | 0.000 | 0.016 |
-| Stanford | 1 | 1 | 0.420 | 0.000 | 0.060 |
-| Traversy Media | 3 | 13 | 0.417 | 0.180 | 0.048 |
-| Lex Fridman | 5 | 17 | 0.414 | 0.301 | 0.083 |
-| Dwarkesh Patel | 13 | 35 | 0.402 | 0.185 | 0.107 |
-| Yannic Kilcher | 5 | 5 | 0.400 | 0.000 | 0.311 |
-| DeepLearning.AI | 2 | 4 | 0.386 | 0.194 | 0.066 |
-| The Net Ninja | 1 | 1 | 0.379 | 0.000 | 0.000 |
-| unknown_channel | 30 | 0 | 0.367 | 0.350 | 0.000 |
+| Lex Fridman | 6 | 33 | 0.627 | 0.449 | 0.089 |
+| Corey Schafer | 2 | 14 | 0.620 | 0.307 | 0.013 |
+| freeCodeCamp | 22 | 144 | 0.565 | 0.263 | 0.050 |
+| Stanford Online | 1 | 3 | 0.563 | 0.410 | 0.130 |
+| Dwarkesh Patel | 13 | 41 | 0.463 | 0.256 | 0.107 |
+| Traversy Media | 3 | 13 | 0.438 | 0.180 | 0.048 |
+| DeepLearning.AI | 2 | 4 | 0.424 | 0.194 | 0.066 |
+| unknown_channel | 26 | 0 | 0.415 | 0.350 | 0.000 |
+| Hugging Face | 1 | 0 | 0.401 | 0.350 | 0.000 |
+| MIT OpenCourseWare | 1 | 1 | 0.348 | 0.000 | 0.016 |
+| Yannic Kilcher | 7 | 25 | 0.323 | 0.286 | 0.397 |
+| The Net Ninja | 1 | 1 | 0.312 | 0.000 | 0.000 |
+| Stanford | 1 | 1 | 0.292 | 0.000 | 0.060 |
 
 ## Weakest current sources
 
 | Channel | mean retrieval |
 |---------|---------------:|
-| unknown_channel | 0.367 |
-| The Net Ninja | 0.379 |
-| DeepLearning.AI | 0.386 |
-| Yannic Kilcher | 0.400 |
-| Dwarkesh Patel | 0.402 |
-| Lex Fridman | 0.414 |
-| Traversy Media | 0.417 |
-| Stanford | 0.420 |
-| MIT OpenCourseWare | 0.431 |
-| Corey Schafer | 0.443 |
-| Stanford Online | 0.445 |
-| freeCodeCamp | 0.453 |
+| Stanford | 0.292 |
+| The Net Ninja | 0.312 |
+| Yannic Kilcher | 0.323 |
+| MIT OpenCourseWare | 0.348 |
+| Hugging Face | 0.401 |
+| unknown_channel | 0.415 |
+| DeepLearning.AI | 0.424 |
+| Traversy Media | 0.438 |
+| Dwarkesh Patel | 0.463 |
+| Stanford Online | 0.563 |
+| freeCodeCamp | 0.565 |
+| Corey Schafer | 0.620 |
 
 ## Highest semantic yield (dimension)
 
+- **Lex Fridman** — 0.449
 - **Stanford Online** — 0.410
+- **Hugging Face** — 0.350
 - **unknown_channel** — 0.350
-- **Lex Fridman** — 0.301
-- **Corey Schafer** — 0.215
-- **freeCodeCamp** — 0.203
+- **Corey Schafer** — 0.307
+- **Yannic Kilcher** — 0.286
+- **freeCodeCamp** — 0.263
+- **Dwarkesh Patel** — 0.256
 - **DeepLearning.AI** — 0.194
-- **Dwarkesh Patel** — 0.185
 - **Traversy Media** — 0.180
-- **Yannic Kilcher** — 0.000
-- **The Net Ninja** — 0.000
 
 ## Highest citation yield (dimension)
 
-- **Yannic Kilcher** — 0.311
+- **Yannic Kilcher** — 0.397
 - **Stanford Online** — 0.130
 - **Dwarkesh Patel** — 0.107
-- **Lex Fridman** — 0.083
+- **Lex Fridman** — 0.089
 - **DeepLearning.AI** — 0.066
 - **Stanford** — 0.060
 - **freeCodeCamp** — 0.050
@@ -64,6 +65,6 @@ Generated: 2026-05-16T04:44:23.193Z
 
 ## Low-value transcript patterns (reject heuristics, matched videos)
 
-- `poor_semantic_extraction_yield`: 40 videos
-- `low_information_conversational_drift`: 1 videos
+- `poor_semantic_extraction_yield`: 36 videos
+- `low_information_conversational_drift`: 2 videos
 - `generic_ai_news_chatter`: 3 videos

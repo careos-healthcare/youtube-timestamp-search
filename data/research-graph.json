@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-16T15:58:00.769Z",
+  "generatedAt": "2026-05-16T16:14:45.989Z",
   "nodes": [
     {
       "id": "source:youtube",
@@ -739,6 +739,28 @@
       }
     },
     {
+      "id": "video:cdiD-9MMpb0",
+      "kind": "Video",
+      "label": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+        "channelName": "Lex Fridman",
+        "youtubeUrl": "https://www.youtube.com/watch?v=cdiD-9MMpb0&t=9115s"
+      }
+    },
+    {
+      "id": "video:EeMhj0sPrhE",
+      "kind": "Video",
+      "label": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+        "channelName": "Yannic Kilcher",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EeMhj0sPrhE&t=957s"
+      }
+    },
+    {
       "id": "topic:perl-programming",
       "kind": "Topic",
       "label": "perl-programming",
@@ -777,7 +799,7 @@
       "label": "transformers",
       "properties": {
         "slug": "transformers",
-        "researchGradeTier": "weak",
+        "researchGradeTier": "strong",
         "momentCount": 3,
         "hubQuality": "thin"
       }
@@ -1351,6 +1373,17 @@
         "slug": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
         "researchGradeTier": null,
         "momentCount": 1,
+        "hubQuality": null
+      }
+    },
+    {
+      "id": "topic:statistics-for-ml, statistics-for-ml",
+      "kind": "Topic",
+      "label": "statistics-for-ml, statistics-for-ml",
+      "properties": {
+        "slug": "statistics-for-ml, statistics-for-ml",
+        "researchGradeTier": null,
+        "momentCount": 20,
         "hubQuality": null
       }
     },
@@ -14138,6 +14171,1086 @@
         "hasMarkdown": true,
         "hasAcademic": true
       }
+    },
+    {
+      "id": "moment:87a0f914d4b69d6d59e5",
+      "kind": "PublicMoment",
+      "label": "archive and what is the future of academic research publishing that you",
+      "properties": {
+        "momentId": "87a0f914d4b69d6d59e5",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "academic_technical"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:9115.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:31:55",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 9115.8,
+        "anchorMomentId": "87a0f914d4b69d6d59e5"
+      }
+    },
+    {
+      "id": "explanation:87a0f914d4b69d6d59e5",
+      "kind": "Explanation",
+      "label": "Explanation — archive and what is the future of academic resea",
+      "properties": {
+        "anchorMomentId": "87a0f914d4b69d6d59e5",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:87a0f914d4b69d6d59e5",
+      "kind": "ClaimLikeStatement",
+      "label": "archive and what is the future of academic research publishing that you",
+      "properties": {
+        "anchorMomentId": "87a0f914d4b69d6d59e5",
+        "phrase": "archive and what is the future of academic research publishing that you",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:87a0f914d4b69d6d59e5",
+      "kind": "Citation",
+      "label": "Citation — 87a0f914d4b69d6d59e5",
+      "properties": {
+        "anchorMomentId": "87a0f914d4b69d6d59e5",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:fd7ae409a0c56b9f06ee",
+      "kind": "PublicMoment",
+      "label": "archive and what is the future",
+      "properties": {
+        "momentId": "fd7ae409a0c56b9f06ee",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:9112.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:31:52",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 9112.8,
+        "anchorMomentId": "fd7ae409a0c56b9f06ee"
+      }
+    },
+    {
+      "id": "explanation:fd7ae409a0c56b9f06ee",
+      "kind": "Explanation",
+      "label": "Explanation — archive and what is the future",
+      "properties": {
+        "anchorMomentId": "fd7ae409a0c56b9f06ee",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:fd7ae409a0c56b9f06ee",
+      "kind": "ClaimLikeStatement",
+      "label": "archive and what is the future",
+      "properties": {
+        "anchorMomentId": "fd7ae409a0c56b9f06ee",
+        "phrase": "archive and what is the future",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:fd7ae409a0c56b9f06ee",
+      "kind": "Citation",
+      "label": "Citation — fd7ae409a0c56b9f06ee",
+      "properties": {
+        "anchorMomentId": "fd7ae409a0c56b9f06ee",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:fcfba8dbead35e56c317",
+      "kind": "PublicMoment",
+      "label": "it what is the actual process Happening Here Yeah so basically it gets a thousan",
+      "properties": {
+        "momentId": "fcfba8dbead35e56c317",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:2669.9",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 44:29",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 2669.9,
+        "anchorMomentId": "fcfba8dbead35e56c317"
+      }
+    },
+    {
+      "id": "explanation:fcfba8dbead35e56c317",
+      "kind": "Explanation",
+      "label": "Explanation — it what is the actual process Happening Here Yea",
+      "properties": {
+        "anchorMomentId": "fcfba8dbead35e56c317",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:fcfba8dbead35e56c317",
+      "kind": "ClaimLikeStatement",
+      "label": "it what is the actual process Happening Here Yeah so basically it gets a",
+      "properties": {
+        "anchorMomentId": "fcfba8dbead35e56c317",
+        "phrase": "it what is the actual process Happening Here Yeah so basically it gets a thousand words",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:fcfba8dbead35e56c317",
+      "kind": "Citation",
+      "label": "Citation — fcfba8dbead35e56c317",
+      "properties": {
+        "anchorMomentId": "fcfba8dbead35e56c317",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:cdf2dfbfe60335c88339",
+      "kind": "PublicMoment",
+      "label": "the GitHub or software 2",
+      "properties": {
+        "momentId": "cdf2dfbfe60335c88339",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:4156.1",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:09:16",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 4156.1,
+        "anchorMomentId": "cdf2dfbfe60335c88339"
+      }
+    },
+    {
+      "id": "explanation:cdf2dfbfe60335c88339",
+      "kind": "Explanation",
+      "label": "Explanation — the GitHub or software 2",
+      "properties": {
+        "anchorMomentId": "cdf2dfbfe60335c88339",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:cdf2dfbfe60335c88339",
+      "kind": "ClaimLikeStatement",
+      "label": "the GitHub or software 2",
+      "properties": {
+        "anchorMomentId": "cdf2dfbfe60335c88339",
+        "phrase": "the GitHub or software 2",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:cdf2dfbfe60335c88339",
+      "kind": "Citation",
+      "label": "Citation — cdf2dfbfe60335c88339",
+      "properties": {
+        "anchorMomentId": "cdf2dfbfe60335c88339",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:1e288f6b392b397e6f98",
+      "kind": "PublicMoment",
+      "label": "they what are they doing what's the source of solving in the",
+      "properties": {
+        "momentId": "1e288f6b392b397e6f98",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:1834.4",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 30:34",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 1834.4,
+        "anchorMomentId": "1e288f6b392b397e6f98"
+      }
+    },
+    {
+      "id": "explanation:1e288f6b392b397e6f98",
+      "kind": "Explanation",
+      "label": "Explanation — they what are they doing what's the source of so",
+      "properties": {
+        "anchorMomentId": "1e288f6b392b397e6f98",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:1e288f6b392b397e6f98",
+      "kind": "ClaimLikeStatement",
+      "label": "they what are they doing what's the source of solving in the",
+      "properties": {
+        "anchorMomentId": "1e288f6b392b397e6f98",
+        "phrase": "they what are they doing what's the source of solving in the",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:1e288f6b392b397e6f98",
+      "kind": "Citation",
+      "label": "Citation — 1e288f6b392b397e6f98",
+      "properties": {
+        "anchorMomentId": "1e288f6b392b397e6f98",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:6f81395d377c38e4c23b",
+      "kind": "PublicMoment",
+      "label": "they what are they doing",
+      "properties": {
+        "momentId": "6f81395d377c38e4c23b",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:1832.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 30:32",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 1832.7,
+        "anchorMomentId": "6f81395d377c38e4c23b"
+      }
+    },
+    {
+      "id": "explanation:6f81395d377c38e4c23b",
+      "kind": "Explanation",
+      "label": "Explanation — they what are they doing",
+      "properties": {
+        "anchorMomentId": "6f81395d377c38e4c23b",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:6f81395d377c38e4c23b",
+      "kind": "ClaimLikeStatement",
+      "label": "they what are they doing",
+      "properties": {
+        "anchorMomentId": "6f81395d377c38e4c23b",
+        "phrase": "they what are they doing",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:6f81395d377c38e4c23b",
+      "kind": "Citation",
+      "label": "Citation — 6f81395d377c38e4c23b",
+      "properties": {
+        "anchorMomentId": "6f81395d377c38e4c23b",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:e86146d4194852ec1479",
+      "kind": "PublicMoment",
+      "label": "you we share that understanding and so Texas communication medium",
+      "properties": {
+        "momentId": "e86146d4194852ec1479",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:2779.3",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 46:19",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 2779.3,
+        "anchorMomentId": "e86146d4194852ec1479"
+      }
+    },
+    {
+      "id": "explanation:e86146d4194852ec1479",
+      "kind": "Explanation",
+      "label": "Explanation — you we share that understanding and so Texas com",
+      "properties": {
+        "anchorMomentId": "e86146d4194852ec1479",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:e86146d4194852ec1479",
+      "kind": "ClaimLikeStatement",
+      "label": "you we share that understanding and so Texas communication medium",
+      "properties": {
+        "anchorMomentId": "e86146d4194852ec1479",
+        "phrase": "you we share that understanding and so Texas communication medium",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:e86146d4194852ec1479",
+      "kind": "Citation",
+      "label": "Citation — e86146d4194852ec1479",
+      "properties": {
+        "anchorMomentId": "e86146d4194852ec1479",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:9d2bb0b3941ed76df0b9",
+      "kind": "PublicMoment",
+      "label": "life and the Deep question with AI is also what is life and what is",
+      "properties": {
+        "momentId": "9d2bb0b3941ed76df0b9",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:10268.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:51:08",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 10268.8,
+        "anchorMomentId": "9d2bb0b3941ed76df0b9"
+      }
+    },
+    {
+      "id": "explanation:9d2bb0b3941ed76df0b9",
+      "kind": "Explanation",
+      "label": "Explanation — life and the Deep question with AI is also what ",
+      "properties": {
+        "anchorMomentId": "9d2bb0b3941ed76df0b9",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:9d2bb0b3941ed76df0b9",
+      "kind": "ClaimLikeStatement",
+      "label": "life and the Deep question with AI is also what is life and what is",
+      "properties": {
+        "anchorMomentId": "9d2bb0b3941ed76df0b9",
+        "phrase": "life and the Deep question with AI is also what is life and what is",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:9d2bb0b3941ed76df0b9",
+      "kind": "Citation",
+      "label": "Citation — 9d2bb0b3941ed76df0b9",
+      "properties": {
+        "anchorMomentId": "9d2bb0b3941ed76df0b9",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:8a9dafdc0cdd572ac388",
+      "kind": "PublicMoment",
+      "label": "it seem to uh do such a surprisingly good job of learning what is a neural netwo",
+      "properties": {
+        "momentId": "8a9dafdc0cdd572ac388",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:61",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:01",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 61,
+        "anchorMomentId": "8a9dafdc0cdd572ac388"
+      }
+    },
+    {
+      "id": "explanation:8a9dafdc0cdd572ac388",
+      "kind": "Explanation",
+      "label": "Explanation — it seem to uh do such a surprisingly good job of",
+      "properties": {
+        "anchorMomentId": "8a9dafdc0cdd572ac388",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:8a9dafdc0cdd572ac388",
+      "kind": "ClaimLikeStatement",
+      "label": "it seem to uh do such a surprisingly good job of learning what is a neur",
+      "properties": {
+        "anchorMomentId": "8a9dafdc0cdd572ac388",
+        "phrase": "it seem to uh do such a surprisingly good job of learning what is a neural network",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:8a9dafdc0cdd572ac388",
+      "kind": "Citation",
+      "label": "Citation — 8a9dafdc0cdd572ac388",
+      "properties": {
+        "anchorMomentId": "8a9dafdc0cdd572ac388",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:e57a4e08b0f8e0dc94b0",
+      "kind": "PublicMoment",
+      "label": "strengths and limitations of cameras",
+      "properties": {
+        "momentId": "e57a4e08b0f8e0dc94b0",
+        "videoId": "cdiD-9MMpb0",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:cdiD-9MMpb0:4719.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:18:39",
+      "properties": {
+        "videoId": "cdiD-9MMpb0",
+        "startSeconds": 4719.6,
+        "anchorMomentId": "e57a4e08b0f8e0dc94b0"
+      }
+    },
+    {
+      "id": "explanation:e57a4e08b0f8e0dc94b0",
+      "kind": "Explanation",
+      "label": "Explanation — strengths and limitations of cameras",
+      "properties": {
+        "anchorMomentId": "e57a4e08b0f8e0dc94b0",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:e57a4e08b0f8e0dc94b0",
+      "kind": "ClaimLikeStatement",
+      "label": "strengths and limitations of cameras",
+      "properties": {
+        "anchorMomentId": "e57a4e08b0f8e0dc94b0",
+        "phrase": "strengths and limitations of cameras",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:e57a4e08b0f8e0dc94b0",
+      "kind": "Citation",
+      "label": "Citation — e57a4e08b0f8e0dc94b0",
+      "properties": {
+        "anchorMomentId": "e57a4e08b0f8e0dc94b0",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:e01a56d4572d87f3e3be",
+      "kind": "PublicMoment",
+      "label": "that that is when i have for example a variational autoencoder variational autoe",
+      "properties": {
+        "momentId": "e01a56d4572d87f3e3be",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:957.1",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 15:57",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 957.1,
+        "anchorMomentId": "e01a56d4572d87f3e3be"
+      }
+    },
+    {
+      "id": "explanation:e01a56d4572d87f3e3be",
+      "kind": "Explanation",
+      "label": "Explanation — that that is when i have for example a variation",
+      "properties": {
+        "anchorMomentId": "e01a56d4572d87f3e3be",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:e01a56d4572d87f3e3be",
+      "kind": "ClaimLikeStatement",
+      "label": "that that is when i have for example a variational autoencoder variation",
+      "properties": {
+        "anchorMomentId": "e01a56d4572d87f3e3be",
+        "phrase": "that that is when i have for example a variational autoencoder variational autoencoder",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:e01a56d4572d87f3e3be",
+      "kind": "Citation",
+      "label": "Citation — e01a56d4572d87f3e3be",
+      "properties": {
+        "anchorMomentId": "e01a56d4572d87f3e3be",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:a972bcf3e834547a92fd",
+      "kind": "PublicMoment",
+      "label": "this sampling step so this sampling step it it kind of smooths the loss function",
+      "properties": {
+        "momentId": "a972bcf3e834547a92fd",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:1319.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 21:59",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 1319.8,
+        "anchorMomentId": "a972bcf3e834547a92fd"
+      }
+    },
+    {
+      "id": "explanation:a972bcf3e834547a92fd",
+      "kind": "Explanation",
+      "label": "Explanation — this sampling step so this sampling step it it k",
+      "properties": {
+        "anchorMomentId": "a972bcf3e834547a92fd",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:a972bcf3e834547a92fd",
+      "kind": "ClaimLikeStatement",
+      "label": "this sampling step so this sampling step it it kind of smooths the loss ",
+      "properties": {
+        "anchorMomentId": "a972bcf3e834547a92fd",
+        "phrase": "this sampling step so this sampling step it it kind of smooths the loss function",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:a972bcf3e834547a92fd",
+      "kind": "Citation",
+      "label": "Citation — a972bcf3e834547a92fd",
+      "properties": {
+        "anchorMomentId": "a972bcf3e834547a92fd",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:faaf1c2f8380bb7a6e8d",
+      "kind": "PublicMoment",
+      "label": "this sampling step so this",
+      "properties": {
+        "momentId": "faaf1c2f8380bb7a6e8d",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:1314.1",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 21:54",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 1314.1,
+        "anchorMomentId": "faaf1c2f8380bb7a6e8d"
+      }
+    },
+    {
+      "id": "explanation:faaf1c2f8380bb7a6e8d",
+      "kind": "Explanation",
+      "label": "Explanation — this sampling step so this",
+      "properties": {
+        "anchorMomentId": "faaf1c2f8380bb7a6e8d",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:faaf1c2f8380bb7a6e8d",
+      "kind": "ClaimLikeStatement",
+      "label": "this sampling step so this",
+      "properties": {
+        "anchorMomentId": "faaf1c2f8380bb7a6e8d",
+        "phrase": "this sampling step so this",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:faaf1c2f8380bb7a6e8d",
+      "kind": "Citation",
+      "label": "Citation — faaf1c2f8380bb7a6e8d",
+      "properties": {
+        "anchorMomentId": "faaf1c2f8380bb7a6e8d",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:198afe1e8f3edcc06341",
+      "kind": "PublicMoment",
+      "label": "the true gradient because in chaotic systems true gradients variances explodes",
+      "properties": {
+        "momentId": "198afe1e8f3edcc06341",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:2808.3",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 46:48",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 2808.3,
+        "anchorMomentId": "198afe1e8f3edcc06341"
+      }
+    },
+    {
+      "id": "explanation:198afe1e8f3edcc06341",
+      "kind": "Explanation",
+      "label": "Explanation — the true gradient because in chaotic systems tru",
+      "properties": {
+        "anchorMomentId": "198afe1e8f3edcc06341",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:198afe1e8f3edcc06341",
+      "kind": "ClaimLikeStatement",
+      "label": "the true gradient because in chaotic systems true gradients variances ex",
+      "properties": {
+        "anchorMomentId": "198afe1e8f3edcc06341",
+        "phrase": "the true gradient because in chaotic systems true gradients variances explodes",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:198afe1e8f3edcc06341",
+      "kind": "Citation",
+      "label": "Citation — 198afe1e8f3edcc06341",
+      "properties": {
+        "anchorMomentId": "198afe1e8f3edcc06341",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:a278db7dcac3c0e7771e",
+      "kind": "PublicMoment",
+      "label": "i need to change this",
+      "properties": {
+        "momentId": "a278db7dcac3c0e7771e",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:382",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:22",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 382,
+        "anchorMomentId": "a278db7dcac3c0e7771e"
+      }
+    },
+    {
+      "id": "explanation:a278db7dcac3c0e7771e",
+      "kind": "Explanation",
+      "label": "Explanation — i need to change this",
+      "properties": {
+        "anchorMomentId": "a278db7dcac3c0e7771e",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:a278db7dcac3c0e7771e",
+      "kind": "ClaimLikeStatement",
+      "label": "i need to change this",
+      "properties": {
+        "anchorMomentId": "a278db7dcac3c0e7771e",
+        "phrase": "i need to change this",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:a278db7dcac3c0e7771e",
+      "kind": "Citation",
+      "label": "Citation — a278db7dcac3c0e7771e",
+      "properties": {
+        "anchorMomentId": "a278db7dcac3c0e7771e",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:c6c316f15f299b61a3f5",
+      "kind": "PublicMoment",
+      "label": "i pack the disks such that they're packed the most and you can do",
+      "properties": {
+        "momentId": "c6c316f15f299b61a3f5",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:2197.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 36:37",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 2197.8,
+        "anchorMomentId": "c6c316f15f299b61a3f5"
+      }
+    },
+    {
+      "id": "explanation:c6c316f15f299b61a3f5",
+      "kind": "Explanation",
+      "label": "Explanation — i pack the disks such that they're packed the mo",
+      "properties": {
+        "anchorMomentId": "c6c316f15f299b61a3f5",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:c6c316f15f299b61a3f5",
+      "kind": "ClaimLikeStatement",
+      "label": "i pack the disks such that they're packed the most and you can do",
+      "properties": {
+        "anchorMomentId": "c6c316f15f299b61a3f5",
+        "phrase": "i pack the disks such that they're packed the most and you can do",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:c6c316f15f299b61a3f5",
+      "kind": "Citation",
+      "label": "Citation — c6c316f15f299b61a3f5",
+      "properties": {
+        "anchorMomentId": "c6c316f15f299b61a3f5",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:bc7059589a8307f86f55",
+      "kind": "PublicMoment",
+      "label": "i pack the disks such that",
+      "properties": {
+        "momentId": "bc7059589a8307f86f55",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:2194.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 36:34",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 2194.2,
+        "anchorMomentId": "bc7059589a8307f86f55"
+      }
+    },
+    {
+      "id": "explanation:bc7059589a8307f86f55",
+      "kind": "Explanation",
+      "label": "Explanation — i pack the disks such that",
+      "properties": {
+        "anchorMomentId": "bc7059589a8307f86f55",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:bc7059589a8307f86f55",
+      "kind": "ClaimLikeStatement",
+      "label": "i pack the disks such that",
+      "properties": {
+        "anchorMomentId": "bc7059589a8307f86f55",
+        "phrase": "i pack the disks such that",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:bc7059589a8307f86f55",
+      "kind": "Citation",
+      "label": "Citation — bc7059589a8307f86f55",
+      "properties": {
+        "anchorMomentId": "bc7059589a8307f86f55",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:1a3c250a038353474de4",
+      "kind": "PublicMoment",
+      "label": "i need to change this such that i do a better job at uh predicting the future an",
+      "properties": {
+        "momentId": "1a3c250a038353474de4",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:386",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:26",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 386,
+        "anchorMomentId": "1a3c250a038353474de4"
+      }
+    },
+    {
+      "id": "explanation:1a3c250a038353474de4",
+      "kind": "Explanation",
+      "label": "Explanation — i need to change this such that i do a better jo",
+      "properties": {
+        "anchorMomentId": "1a3c250a038353474de4",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:1a3c250a038353474de4",
+      "kind": "ClaimLikeStatement",
+      "label": "i need to change this such that i do a better job at uh predicting the f",
+      "properties": {
+        "anchorMomentId": "1a3c250a038353474de4",
+        "phrase": "i need to change this such that i do a better job at uh predicting the future and therefore",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:1a3c250a038353474de4",
+      "kind": "Citation",
+      "label": "Citation — 1a3c250a038353474de4",
+      "properties": {
+        "anchorMomentId": "1a3c250a038353474de4",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:7ef16d43a73c6f434901",
+      "kind": "PublicMoment",
+      "label": "we train we could do",
+      "properties": {
+        "momentId": "7ef16d43a73c6f434901",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:1083.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 18:03",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 1083.6,
+        "anchorMomentId": "7ef16d43a73c6f434901"
+      }
+    },
+    {
+      "id": "explanation:7ef16d43a73c6f434901",
+      "kind": "Explanation",
+      "label": "Explanation — we train we could do",
+      "properties": {
+        "anchorMomentId": "7ef16d43a73c6f434901",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:7ef16d43a73c6f434901",
+      "kind": "ClaimLikeStatement",
+      "label": "we train we could do",
+      "properties": {
+        "anchorMomentId": "7ef16d43a73c6f434901",
+        "phrase": "we train we could do",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:7ef16d43a73c6f434901",
+      "kind": "Citation",
+      "label": "Citation — 7ef16d43a73c6f434901",
+      "properties": {
+        "anchorMomentId": "7ef16d43a73c6f434901",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:f982ce667b2bd4c76531",
+      "kind": "PublicMoment",
+      "label": "i need my to change my estimator of this series whatever that is a state transit",
+      "properties": {
+        "momentId": "f982ce667b2bd4c76531",
+        "videoId": "EeMhj0sPrhE",
+        "topic": "statistics-for-ml, statistics-for-ml",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:EeMhj0sPrhE:376.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:16",
+      "properties": {
+        "videoId": "EeMhj0sPrhE",
+        "startSeconds": 376.2,
+        "anchorMomentId": "f982ce667b2bd4c76531"
+      }
+    },
+    {
+      "id": "explanation:f982ce667b2bd4c76531",
+      "kind": "Explanation",
+      "label": "Explanation — i need my to change my estimator of this series ",
+      "properties": {
+        "anchorMomentId": "f982ce667b2bd4c76531",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:f982ce667b2bd4c76531",
+      "kind": "ClaimLikeStatement",
+      "label": "i need my to change my estimator of this series whatever that is a state",
+      "properties": {
+        "anchorMomentId": "f982ce667b2bd4c76531",
+        "phrase": "i need my to change my estimator of this series whatever that is a state transition in a",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:f982ce667b2bd4c76531",
+      "kind": "Citation",
+      "label": "Citation — f982ce667b2bd4c76531",
+      "properties": {
+        "anchorMomentId": "f982ce667b2bd4c76531",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
     }
   ],
   "edges": [
@@ -15148,6 +16261,42 @@
       "weight": 1,
       "properties": {},
       "id": "created_by:video:n1E9IZfvGMA->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "video:cdiD-9MMpb0",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {
+        "platform": "youtube"
+      },
+      "id": "source_context:video:cdiD-9MMpb0->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "video:cdiD-9MMpb0",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:video:cdiD-9MMpb0->creator:lex-fridman"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "video:EeMhj0sPrhE",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {
+        "platform": "youtube"
+      },
+      "id": "source_context:video:EeMhj0sPrhE->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "video:EeMhj0sPrhE",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:video:EeMhj0sPrhE->creator:yannic-kilcher"
     },
     {
       "kind": "same_topic_as",
@@ -33104,6 +34253,1696 @@
       "id": "contradicts_or_caveats:moment:a67e70377aced5eb583b->moment:25120b4c8094215e6a4d"
     },
     {
+      "kind": "cites",
+      "sourceId": "citation:87a0f914d4b69d6d59e5",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:87a0f914d4b69d6d59e5->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:87a0f914d4b69d6d59e5->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "segment:cdiD-9MMpb0:9115.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:87a0f914d4b69d6d59e5->segment:cdiD-9MMpb0:9115.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:9115.8",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:9115.8->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:87a0f914d4b69d6d59e5",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:87a0f914d4b69d6d59e5->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:87a0f914d4b69d6d59e5->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:87a0f914d4b69d6d59e5->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:87a0f914d4b69d6d59e5->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:87a0f914d4b69d6d59e5->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:87a0f914d4b69d6d59e5->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:fd7ae409a0c56b9f06ee",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:fd7ae409a0c56b9f06ee->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:fd7ae409a0c56b9f06ee->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "segment:cdiD-9MMpb0:9112.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:fd7ae409a0c56b9f06ee->segment:cdiD-9MMpb0:9112.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:9112.8",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:9112.8->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:fd7ae409a0c56b9f06ee",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:fd7ae409a0c56b9f06ee->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:fd7ae409a0c56b9f06ee->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:fd7ae409a0c56b9f06ee->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:fd7ae409a0c56b9f06ee->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:fd7ae409a0c56b9f06ee->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fd7ae409a0c56b9f06ee",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:fd7ae409a0c56b9f06ee->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:fcfba8dbead35e56c317",
+      "targetId": "moment:fcfba8dbead35e56c317",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:fcfba8dbead35e56c317->moment:fcfba8dbead35e56c317"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:fcfba8dbead35e56c317->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "segment:cdiD-9MMpb0:2669.9",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:fcfba8dbead35e56c317->segment:cdiD-9MMpb0:2669.9"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:2669.9",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:2669.9->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:fcfba8dbead35e56c317",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:fcfba8dbead35e56c317->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:fcfba8dbead35e56c317->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:fcfba8dbead35e56c317->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:fcfba8dbead35e56c317->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:fcfba8dbead35e56c317->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fcfba8dbead35e56c317",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:fcfba8dbead35e56c317->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:cdf2dfbfe60335c88339",
+      "targetId": "moment:cdf2dfbfe60335c88339",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:cdf2dfbfe60335c88339->moment:cdf2dfbfe60335c88339"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:cdf2dfbfe60335c88339->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "segment:cdiD-9MMpb0:4156.1",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:cdf2dfbfe60335c88339->segment:cdiD-9MMpb0:4156.1"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:4156.1",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:4156.1->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:cdf2dfbfe60335c88339",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:cdf2dfbfe60335c88339->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:cdf2dfbfe60335c88339->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:cdf2dfbfe60335c88339->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:cdf2dfbfe60335c88339->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:cdf2dfbfe60335c88339->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:cdf2dfbfe60335c88339",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:cdf2dfbfe60335c88339->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:1e288f6b392b397e6f98",
+      "targetId": "moment:1e288f6b392b397e6f98",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:1e288f6b392b397e6f98->moment:1e288f6b392b397e6f98"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:1e288f6b392b397e6f98->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "segment:cdiD-9MMpb0:1834.4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:1e288f6b392b397e6f98->segment:cdiD-9MMpb0:1834.4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:1834.4",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:1834.4->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:1e288f6b392b397e6f98",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:1e288f6b392b397e6f98->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:1e288f6b392b397e6f98->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:1e288f6b392b397e6f98->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:1e288f6b392b397e6f98->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:1e288f6b392b397e6f98->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1e288f6b392b397e6f98",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:1e288f6b392b397e6f98->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:6f81395d377c38e4c23b",
+      "targetId": "moment:6f81395d377c38e4c23b",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:6f81395d377c38e4c23b->moment:6f81395d377c38e4c23b"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:6f81395d377c38e4c23b->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "segment:cdiD-9MMpb0:1832.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:6f81395d377c38e4c23b->segment:cdiD-9MMpb0:1832.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:1832.7",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:1832.7->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:6f81395d377c38e4c23b",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:6f81395d377c38e4c23b->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:6f81395d377c38e4c23b->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:6f81395d377c38e4c23b->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:6f81395d377c38e4c23b->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:6f81395d377c38e4c23b->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:6f81395d377c38e4c23b",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:6f81395d377c38e4c23b->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:e86146d4194852ec1479",
+      "targetId": "moment:e86146d4194852ec1479",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:e86146d4194852ec1479->moment:e86146d4194852ec1479"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:e86146d4194852ec1479->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "segment:cdiD-9MMpb0:2779.3",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:e86146d4194852ec1479->segment:cdiD-9MMpb0:2779.3"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:2779.3",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:2779.3->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:e86146d4194852ec1479",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:e86146d4194852ec1479->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:e86146d4194852ec1479->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:e86146d4194852ec1479->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:e86146d4194852ec1479->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e86146d4194852ec1479->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e86146d4194852ec1479",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e86146d4194852ec1479->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:9d2bb0b3941ed76df0b9",
+      "targetId": "moment:9d2bb0b3941ed76df0b9",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:9d2bb0b3941ed76df0b9->moment:9d2bb0b3941ed76df0b9"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:9d2bb0b3941ed76df0b9->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "segment:cdiD-9MMpb0:10268.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:9d2bb0b3941ed76df0b9->segment:cdiD-9MMpb0:10268.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:10268.8",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:10268.8->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:9d2bb0b3941ed76df0b9",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:9d2bb0b3941ed76df0b9->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:9d2bb0b3941ed76df0b9->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:9d2bb0b3941ed76df0b9->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:9d2bb0b3941ed76df0b9->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:9d2bb0b3941ed76df0b9->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:9d2bb0b3941ed76df0b9",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:9d2bb0b3941ed76df0b9->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:8a9dafdc0cdd572ac388",
+      "targetId": "moment:8a9dafdc0cdd572ac388",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:8a9dafdc0cdd572ac388->moment:8a9dafdc0cdd572ac388"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:8a9dafdc0cdd572ac388->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "segment:cdiD-9MMpb0:61",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:8a9dafdc0cdd572ac388->segment:cdiD-9MMpb0:61"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:61",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:61->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:8a9dafdc0cdd572ac388",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:8a9dafdc0cdd572ac388->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:8a9dafdc0cdd572ac388->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:8a9dafdc0cdd572ac388->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:8a9dafdc0cdd572ac388->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:8a9dafdc0cdd572ac388->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:8a9dafdc0cdd572ac388",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:8a9dafdc0cdd572ac388->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:e57a4e08b0f8e0dc94b0",
+      "targetId": "moment:e57a4e08b0f8e0dc94b0",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:e57a4e08b0f8e0dc94b0->moment:e57a4e08b0f8e0dc94b0"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:e57a4e08b0f8e0dc94b0->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "segment:cdiD-9MMpb0:4719.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:e57a4e08b0f8e0dc94b0->segment:cdiD-9MMpb0:4719.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:cdiD-9MMpb0:4719.6",
+      "targetId": "video:cdiD-9MMpb0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:cdiD-9MMpb0:4719.6->video:cdiD-9MMpb0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:e57a4e08b0f8e0dc94b0",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:e57a4e08b0f8e0dc94b0->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:e57a4e08b0f8e0dc94b0->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:e57a4e08b0f8e0dc94b0->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:e57a4e08b0f8e0dc94b0->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e57a4e08b0f8e0dc94b0->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e57a4e08b0f8e0dc94b0",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e57a4e08b0f8e0dc94b0->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:e01a56d4572d87f3e3be",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:e01a56d4572d87f3e3be->moment:e01a56d4572d87f3e3be"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:e01a56d4572d87f3e3be->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "segment:EeMhj0sPrhE:957.1",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:e01a56d4572d87f3e3be->segment:EeMhj0sPrhE:957.1"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:957.1",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:957.1->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:e01a56d4572d87f3e3be",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:e01a56d4572d87f3e3be->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:e01a56d4572d87f3e3be->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:e01a56d4572d87f3e3be->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:e01a56d4572d87f3e3be->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e01a56d4572d87f3e3be->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e01a56d4572d87f3e3be",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:e01a56d4572d87f3e3be->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:a972bcf3e834547a92fd",
+      "targetId": "moment:a972bcf3e834547a92fd",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:a972bcf3e834547a92fd->moment:a972bcf3e834547a92fd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:a972bcf3e834547a92fd->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "segment:EeMhj0sPrhE:1319.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:a972bcf3e834547a92fd->segment:EeMhj0sPrhE:1319.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:1319.8",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:1319.8->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:a972bcf3e834547a92fd",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:a972bcf3e834547a92fd->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:a972bcf3e834547a92fd->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:a972bcf3e834547a92fd->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:a972bcf3e834547a92fd->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:a972bcf3e834547a92fd->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:a972bcf3e834547a92fd",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:a972bcf3e834547a92fd->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:faaf1c2f8380bb7a6e8d",
+      "targetId": "moment:faaf1c2f8380bb7a6e8d",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:faaf1c2f8380bb7a6e8d->moment:faaf1c2f8380bb7a6e8d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:faaf1c2f8380bb7a6e8d->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "segment:EeMhj0sPrhE:1314.1",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:faaf1c2f8380bb7a6e8d->segment:EeMhj0sPrhE:1314.1"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:1314.1",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:1314.1->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:faaf1c2f8380bb7a6e8d",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:faaf1c2f8380bb7a6e8d->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:faaf1c2f8380bb7a6e8d->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:faaf1c2f8380bb7a6e8d->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:faaf1c2f8380bb7a6e8d->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:faaf1c2f8380bb7a6e8d->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:faaf1c2f8380bb7a6e8d",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:faaf1c2f8380bb7a6e8d->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:198afe1e8f3edcc06341",
+      "targetId": "moment:198afe1e8f3edcc06341",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:198afe1e8f3edcc06341->moment:198afe1e8f3edcc06341"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:198afe1e8f3edcc06341->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "segment:EeMhj0sPrhE:2808.3",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:198afe1e8f3edcc06341->segment:EeMhj0sPrhE:2808.3"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:2808.3",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:2808.3->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:198afe1e8f3edcc06341",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:198afe1e8f3edcc06341->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:198afe1e8f3edcc06341->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:198afe1e8f3edcc06341->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:198afe1e8f3edcc06341->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:198afe1e8f3edcc06341->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:198afe1e8f3edcc06341",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:198afe1e8f3edcc06341->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:a278db7dcac3c0e7771e",
+      "targetId": "moment:a278db7dcac3c0e7771e",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:a278db7dcac3c0e7771e->moment:a278db7dcac3c0e7771e"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:a278db7dcac3c0e7771e->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "segment:EeMhj0sPrhE:382",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:a278db7dcac3c0e7771e->segment:EeMhj0sPrhE:382"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:382",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:382->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:a278db7dcac3c0e7771e",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:a278db7dcac3c0e7771e->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:a278db7dcac3c0e7771e->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:a278db7dcac3c0e7771e->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:a278db7dcac3c0e7771e->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:a278db7dcac3c0e7771e->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:a278db7dcac3c0e7771e",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:a278db7dcac3c0e7771e->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:c6c316f15f299b61a3f5",
+      "targetId": "moment:c6c316f15f299b61a3f5",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:c6c316f15f299b61a3f5->moment:c6c316f15f299b61a3f5"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:c6c316f15f299b61a3f5->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "segment:EeMhj0sPrhE:2197.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:c6c316f15f299b61a3f5->segment:EeMhj0sPrhE:2197.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:2197.8",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:2197.8->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:c6c316f15f299b61a3f5",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:c6c316f15f299b61a3f5->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:c6c316f15f299b61a3f5->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:c6c316f15f299b61a3f5->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:c6c316f15f299b61a3f5->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:c6c316f15f299b61a3f5->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:c6c316f15f299b61a3f5",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:c6c316f15f299b61a3f5->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:bc7059589a8307f86f55",
+      "targetId": "moment:bc7059589a8307f86f55",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:bc7059589a8307f86f55->moment:bc7059589a8307f86f55"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:bc7059589a8307f86f55->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "segment:EeMhj0sPrhE:2194.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:bc7059589a8307f86f55->segment:EeMhj0sPrhE:2194.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:2194.2",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:2194.2->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:bc7059589a8307f86f55",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:bc7059589a8307f86f55->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:bc7059589a8307f86f55->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:bc7059589a8307f86f55->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:bc7059589a8307f86f55->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:bc7059589a8307f86f55->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:bc7059589a8307f86f55",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:bc7059589a8307f86f55->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:1a3c250a038353474de4",
+      "targetId": "moment:1a3c250a038353474de4",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:1a3c250a038353474de4->moment:1a3c250a038353474de4"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:1a3c250a038353474de4->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "segment:EeMhj0sPrhE:386",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:1a3c250a038353474de4->segment:EeMhj0sPrhE:386"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:386",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:386->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:1a3c250a038353474de4",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:1a3c250a038353474de4->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:1a3c250a038353474de4->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:1a3c250a038353474de4->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:1a3c250a038353474de4->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:1a3c250a038353474de4->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1a3c250a038353474de4",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:1a3c250a038353474de4->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:7ef16d43a73c6f434901",
+      "targetId": "moment:7ef16d43a73c6f434901",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:7ef16d43a73c6f434901->moment:7ef16d43a73c6f434901"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:7ef16d43a73c6f434901->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "segment:EeMhj0sPrhE:1083.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:7ef16d43a73c6f434901->segment:EeMhj0sPrhE:1083.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:1083.6",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:1083.6->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:7ef16d43a73c6f434901",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:7ef16d43a73c6f434901->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:7ef16d43a73c6f434901->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:7ef16d43a73c6f434901->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:7ef16d43a73c6f434901->creator:yannic-kilcher"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:7ef16d43a73c6f434901->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:7ef16d43a73c6f434901->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:7ef16d43a73c6f434901",
+      "targetId": "moment:fcfba8dbead35e56c317",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:7ef16d43a73c6f434901->moment:fcfba8dbead35e56c317"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:f982ce667b2bd4c76531",
+      "targetId": "moment:f982ce667b2bd4c76531",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:f982ce667b2bd4c76531->moment:f982ce667b2bd4c76531"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:f982ce667b2bd4c76531->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "segment:EeMhj0sPrhE:376.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:f982ce667b2bd4c76531->segment:EeMhj0sPrhE:376.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:EeMhj0sPrhE:376.2",
+      "targetId": "video:EeMhj0sPrhE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:EeMhj0sPrhE:376.2->video:EeMhj0sPrhE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:f982ce667b2bd4c76531",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:f982ce667b2bd4c76531->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "topic:statistics-for-ml, statistics-for-ml",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:f982ce667b2bd4c76531->topic:statistics-for-ml, statistics-for-ml"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:f982ce667b2bd4c76531->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:f982ce667b2bd4c76531->creator:yannic-kilcher"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "moment:87a0f914d4b69d6d59e5",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:f982ce667b2bd4c76531->moment:87a0f914d4b69d6d59e5"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f982ce667b2bd4c76531",
+      "targetId": "moment:fd7ae409a0c56b9f06ee",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "supports:moment:f982ce667b2bd4c76531->moment:fd7ae409a0c56b9f06ee"
+    },
+    {
       "kind": "saved_in",
       "sourceId": "moment:cd9083c6855cce37372c",
       "targetId": "collection:best-rag-explanations",
@@ -33392,6 +36231,16 @@
         "topic": "uncategorized"
       },
       "id": "compared_with:moment:2021f1999681e35a6a3e->moment:2fd33f960f6403893732"
+    },
+    {
+      "kind": "compared_with",
+      "sourceId": "moment:87a0f914d4b69d6d59e5",
+      "targetId": "moment:e01a56d4572d87f3e3be",
+      "weight": 1,
+      "properties": {
+        "topic": "statistics-for-ml, statistics-for-ml"
+      },
+      "id": "compared_with:moment:87a0f914d4b69d6d59e5->moment:e01a56d4572d87f3e3be"
     },
     {
       "kind": "same_topic_as",
@@ -34905,38 +37754,38 @@
     }
   ],
   "metrics": {
-    "nodeCount": 1299,
-    "edgeCount": 2453,
+    "nodeCount": 1402,
+    "edgeCount": 2659,
     "nodeCountsByKind": {
       "Source": 1,
-      "Video": 56,
+      "Video": 58,
       "Creator": 11,
-      "Topic": 56,
+      "Topic": 57,
       "Collection": 5,
-      "PublicMoment": 260,
-      "TranscriptSegment": 250,
-      "Explanation": 260,
-      "ClaimLikeStatement": 260,
-      "Citation": 140
+      "PublicMoment": 280,
+      "TranscriptSegment": 270,
+      "Explanation": 280,
+      "ClaimLikeStatement": 280,
+      "Citation": 160
     },
     "edgeCountsByKind": {
-      "source_context": 316,
-      "created_by": 314,
+      "source_context": 338,
+      "created_by": 336,
       "same_topic_as": 160,
-      "clipped_from": 510,
-      "explains": 520,
-      "contradicts_or_caveats": 118,
-      "cites": 280,
-      "supports": 206,
+      "clipped_from": 550,
+      "explains": 560,
+      "contradicts_or_caveats": 121,
+      "cites": 320,
+      "supports": 244,
       "saved_in": 14,
-      "compared_with": 15
+      "compared_with": 16
     },
-    "topicCoverageDepth": 1,
+    "topicCoverageDepth": 2,
     "creatorDiversity": 11,
-    "citationDensity": 0.5384615384615384,
+    "citationDensity": 0.5714285714285714,
     "explanationDensity": 1,
-    "compareReadiness": 0.14423076923076922,
-    "weakContextShare": 0.2423076923076923,
+    "compareReadiness": 0.14285714285714285,
+    "weakContextShare": 0.2571428571428571,
     "orphanMomentCount": 0,
     "lowTrustClusterCount": 4,
     "strongestTopicClusters": [
@@ -34948,6 +37797,15 @@
         "citationDensity": 1,
         "compareReadiness": 0.23622047244094488,
         "clusterScore": 85
+      },
+      {
+        "topicSlug": "statistics-for-ml, statistics-for-ml",
+        "momentCount": 20,
+        "videoCount": 2,
+        "creatorCount": 2,
+        "citationDensity": 1,
+        "compareReadiness": 0.1,
+        "clusterScore": 57
       },
       {
         "topicSlug": "how-llms-trained, transformers, llm-fine-tuning",
@@ -35038,18 +37896,9 @@
         "citationDensity": 0,
         "compareReadiness": 0,
         "clusterScore": 13
-      },
-      {
-        "topicSlug": "ilya-sutskever",
-        "momentCount": 1,
-        "videoCount": 1,
-        "creatorCount": 1,
-        "citationDensity": 0,
-        "compareReadiness": 0,
-        "clusterScore": 13
       }
     ],
-    "enterpriseReadinessScore": 19,
+    "enterpriseReadinessScore": 21,
     "enterpriseReadinessLevel": "L0 public search prototype",
     "enterpriseReadinessNotes": [
       "Compare-readiness weak — expand multi-creator topics"

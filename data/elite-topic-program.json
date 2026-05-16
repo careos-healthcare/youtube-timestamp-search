@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-16T16:13:33.552Z",
+  "milestone": "RAG elite + at least one additional topic via controlled topic-deepening loop",
+  "alreadyEliteOrShowcase": [
+    "rag",
+    "transformers"
+  ],
+  "selectedTopics": [
+    {
+      "topicSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "vertical": "education",
+      "selectionRank": 1,
+      "selectionScore": 299,
+      "selectionRationale": [
+        "Queue priority 124; elite distance 0.13.",
+        "Citation density 63%; compare readiness 100%.",
+        "3 wave-1 video candidate(s) with transcript path.",
+        "Primary-source gap is the main blocker — ingest targets paper/tutorial voices."
+      ],
+      "currentStatus": "needs_primary_sources",
+      "researchGradeTier": "weak",
+      "distanceToElite": 0.13,
+      "topicTrustScore": 57,
+      "researchGradeScore": 61,
+      "momentCount": 8,
+      "missingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "targetMetrics": {
+        "minCitationDensity": 0.25,
+        "minPrimarySourceCoverage": 0.15,
+        "minCompareDepth": 2,
+        "minUniqueCreators": 2,
+        "targetTier": "elite",
+        "targetDeepeningStatus": "ready_to_showcase"
+      },
+      "candidateVideos": [
+        {
+          "id": "w1-004",
+          "videoId": "cdiD-9MMpb0",
+          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
+          "riskLevel": "medium"
+        },
+        {
+          "id": "w1-007",
+          "videoId": "EeMhj0sPrhE",
+          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
+          "riskLevel": "low"
+        },
+        {
+          "id": "w1-008",
+          "videoId": "YPfUiOMYOEE",
+          "label": "w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn…",
+          "riskLevel": "low"
+        }
+      ],
+      "maxIngestCount": 3,
+      "risks": [
+        "medium",
+        "wave_verified"
+      ],
+      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
+      "expectedUserValue": "Structured learning paths with citation-rich tutorial moments.",
+      "homepageFlagshipValue": true
+    },
+    {
+      "topicSlug": "machine-learning",
+      "label": "Machine learning",
+      "vertical": "education",
+      "selectionRank": 2,
+      "selectionScore": 275,
+      "selectionRationale": [
+        "Queue priority 108; elite distance 0.47.",
+        "Citation density 38%; compare readiness 100%.",
+        "3 wave-1 video candidate(s) with transcript path.",
+        "Primary-source gap is the main blocker — ingest targets paper/tutorial voices."
+      ],
+      "currentStatus": "needs_primary_sources",
+      "researchGradeTier": "weak",
+      "distanceToElite": 0.47,
+      "topicTrustScore": 38,
+      "researchGradeScore": 40,
+      "momentCount": 13,
+      "missingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "targetMetrics": {
+        "minCitationDensity": 0.25,
+        "minPrimarySourceCoverage": 0.15,
+        "minCompareDepth": 2,
+        "minUniqueCreators": 2,
+        "targetTier": "elite",
+        "targetDeepeningStatus": "ready_to_showcase"
+      },
+      "candidateVideos": [
+        {
+          "id": "w1-004",
+          "videoId": "cdiD-9MMpb0",
+          "label": "w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex …",
+          "riskLevel": "medium"
+        },
+        {
+          "id": "w1-007",
+          "videoId": "EeMhj0sPrhE",
+          "label": "w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine…",
+          "riskLevel": "low"
+        },
+        {
+          "id": "w1-008",
+          "videoId": "YPfUiOMYOEE",
+          "label": "w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn…",
+          "riskLevel": "low"
+        }
+      ],
+      "maxIngestCount": 3,
+      "risks": [
+        "medium",
+        "wave_verified"
+      ],
+      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
+      "expectedUserValue": "Structured learning paths with citation-rich tutorial moments.",
+      "homepageFlagshipValue": true
+    },
+    {
+      "topicSlug": "fine-tuning",
+      "label": "Fine-tuning",
+      "vertical": "ai_ml",
+      "selectionRank": 3,
+      "selectionScore": 257,
+      "selectionRationale": [
+        "Queue priority 118; elite distance 0.45.",
+        "Citation density 90%; compare readiness 100%.",
+        "3 wave-1 video candidate(s) with transcript path.",
+        "Primary-source gap is the main blocker — ingest targets paper/tutorial voices."
+      ],
+      "currentStatus": "needs_primary_sources",
+      "researchGradeTier": "weak",
+      "distanceToElite": 0.45,
+      "topicTrustScore": 61,
+      "researchGradeScore": 59,
+      "momentCount": 10,
+      "missingCapabilities": [
+        "primary_source_moment",
+        "academic_technical voice",
+        "compared_with edges",
+        "contradicts_or_caveats edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "targetMetrics": {
+        "minCitationDensity": 0.25,
+        "minPrimarySourceCoverage": 0.15,
+        "minCompareDepth": 2,
+        "minUniqueCreators": 2,
+        "targetTier": "elite",
+        "targetDeepeningStatus": "ready_to_showcase"
+      },
+      "candidateVideos": [
+        {
+          "id": "w1-011",
+          "videoId": "00GKzGyWFEs",
+          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
+          "riskLevel": "low"
+        },
+        {
+          "id": "w1-023",
+          "videoId": "WAvO8FTDJ8M",
+          "label": "w1-023 — Berkeley AI Research: Teaching LLMs to Use Tools at Scale - Shishir Patil | Stanford MLSys #98…",
+          "riskLevel": "medium"
+        },
+        {
+          "id": "w1-026",
+          "videoId": "g-WeCOUYBrk",
+          "label": "w1-026 — a16z: Marc Andreessen & Amjad Masad on “Good Enough” AI, AGI, and the End of C…",
+          "riskLevel": "medium"
+        }
+      ],
+      "maxIngestCount": 3,
+      "risks": [
+        "medium",
+        "wave_verified"
+      ],
+      "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Tool-use / systems angle for LLM topics with weak multi-creator comparison depth.",
+      "expectedUserValue": "Research-grade compare/cite surfaces for technical search intent.",
+      "homepageFlagshipValue": true
+    }
+  ],
+  "primaryLiveIngestTopic": "statistics-for-ml",
+  "selectionNotes": [
+    "Excluded broken_do_not_promote and ready_to_showcase topics from selection pool.",
+    "Prefer topics with wave-1 video IDs (not allowlist-only) and smallest elite distance.",
+    "vector-databases, embeddings, prompt-engineering, ai-agents skipped — broken in current corpus."
+  ]
+}

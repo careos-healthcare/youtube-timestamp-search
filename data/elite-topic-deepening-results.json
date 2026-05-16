@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-05-16T16:20:00.000Z",
+  "program": {
+    "version": 1,
+    "generatedAt": "2026-05-16T16:13:33.552Z",
+    "milestone": "RAG elite + at least one additional topic via controlled topic-deepening loop",
+    "alreadyEliteOrShowcase": ["rag", "transformers"],
+    "primaryLiveIngestTopic": "statistics-for-ml",
+    "selectionNotes": [
+      "Excluded broken_do_not_promote and ready_to_showcase topics from selection pool.",
+      "Prefer topics with wave-1 video IDs (not allowlist-only) and smallest elite distance.",
+      "vector-databases, embeddings, prompt-engineering, ai-agents skipped — broken in current corpus."
+    ],
+    "selectedTopics": [
+      {
+        "topicSlug": "statistics-for-ml",
+        "label": "Statistics for ML",
+        "selectionRank": 1,
+        "selectionScore": 299
+      },
+      {
+        "topicSlug": "machine-learning",
+        "label": "Machine learning",
+        "selectionRank": 2,
+        "selectionScore": 275
+      },
+      {
+        "topicSlug": "fine-tuning",
+        "label": "Fine-tuning",
+        "selectionRank": 3,
+        "selectionScore": 272
+      }
+    ]
+  },
+  "dryRuns": [
+    {
+      "topicSlug": "statistics-for-ml",
+      "summary": {
+        "eligible": 2,
+        "alreadyIndexed": 1,
+        "cachedTranscript": 0,
+        "inSeedQueue": 0,
+        "inCorpusQueue": 0,
+        "csvExcluded": 0,
+        "unavailableTranscript": 0,
+        "queued": 0,
+        "ingested": 0,
+        "failed": 0
+      },
+      "transcriptGatePassed": true
+    },
+    {
+      "topicSlug": "machine-learning",
+      "summary": {
+        "eligible": 2,
+        "alreadyIndexed": 0,
+        "cachedTranscript": 0,
+        "inSeedQueue": 0,
+        "inCorpusQueue": 0,
+        "csvExcluded": 0,
+        "unavailableTranscript": 0,
+        "queued": 0,
+        "ingested": 0,
+        "failed": 0
+      },
+      "transcriptGatePassed": true
+    },
+    {
+      "topicSlug": "fine-tuning",
+      "summary": {
+        "eligible": 2,
+        "alreadyIndexed": 2,
+        "cachedTranscript": 0,
+        "inSeedQueue": 0,
+        "inCorpusQueue": 0,
+        "csvExcluded": 0,
+        "unavailableTranscript": 0,
+        "queued": 0,
+        "ingested": 0,
+        "failed": 0
+      },
+      "transcriptGatePassed": true
+    }
+  ],
+  "liveIngestTopic": "statistics-for-ml",
+  "ingestedVideoIds": ["cdiD-9MMpb0", "EeMhj0sPrhE", "YPfUiOMYOEE"],
+  "liveIngest": {
+    "topicSlug": "statistics-for-ml",
+    "researchGradeBefore": {
+      "tier": "weak",
+      "distanceToElite": 0.13,
+      "topicTrustScore": 57,
+      "researchGradeScore": 61,
+      "momentCount": 8
+    },
+    "researchGradeAfter": {
+      "tier": "elite",
+      "distanceToElite": 0.16,
+      "topicTrustScore": 75,
+      "researchGradeScore": 79,
+      "momentCount": 28
+    },
+    "deepeningStatusBefore": "needs_primary_sources",
+    "deepeningStatusAfter": "deepen_next",
+    "readyToShowcase": false,
+    "becameElite": true,
+    "worker": {
+      "processed": 3,
+      "indexed": 3,
+      "skipped": 0,
+      "failed": 0,
+      "rejected": 0
+    }
+  },
+  "loopRepeatable": true,
+  "loopNotes": [
+    "Selected statistics-for-ml, machine-learning, fine-tuning from queue (not vector-databases/embeddings/prompt-engineering/ai-agents — broken).",
+    "Dry-run transcript gates passed for all three program topics.",
+    "Live ingest: statistics-for-ml — w1-004, w1-007, w1-008 (cdiD-9MMpb0, EeMhj0sPrhE, YPfUiOMYOEE).",
+    "RAG already elite/showcase from prior controlled ingest.",
+    "statistics-for-ml reached elite research-grade tier (28 moments, 89% citation density).",
+    "machine-learning and fine-tuning deferred — dry-run only this cycle.",
+    "Weak: statistics-for-ml still deepen_next in graph planner (shallow-authority share); tune governance or add compare edges next batch."
+  ],
+  "whatStayedWeak": [
+    "vector-databases, embeddings, prompt-engineering, ai-agents remain broken_do_not_promote",
+    "inference, nlp-fundamentals have allowlist-only candidates (no wave videos) — poor live-ingest fit",
+    "statistics-for-ml elite on research-grade but not yet ready_to_showcase (graph shallow-context cluster)"
+  ]
+}

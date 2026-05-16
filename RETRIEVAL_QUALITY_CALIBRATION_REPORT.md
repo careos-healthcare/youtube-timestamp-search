@@ -1,28 +1,28 @@
 # Retrieval quality — calibration summary
 
-Generated: 2026-05-16T04:44:23.193Z
+Generated: 2026-05-16T16:14:53.509Z
 
 ## Strongest sources (current corpus)
 
-- **freeCodeCamp** (mean retrieval 0.453)
-- **Stanford Online** (mean retrieval 0.445)
-- **Corey Schafer** (mean retrieval 0.443)
-- **MIT OpenCourseWare** (mean retrieval 0.431)
-- **Stanford** (mean retrieval 0.420)
-- **Traversy Media** (mean retrieval 0.417)
-- **Lex Fridman** (mean retrieval 0.414)
-- **Dwarkesh Patel** (mean retrieval 0.402)
+- **Lex Fridman** (mean retrieval 0.627)
+- **Corey Schafer** (mean retrieval 0.620)
+- **freeCodeCamp** (mean retrieval 0.565)
+- **Stanford Online** (mean retrieval 0.563)
+- **Dwarkesh Patel** (mean retrieval 0.463)
+- **Traversy Media** (mean retrieval 0.438)
+- **DeepLearning.AI** (mean retrieval 0.424)
+- **unknown_channel** (mean retrieval 0.415)
 
 ## Weakest sources (deprioritize for scale, not necessarily delete)
 
-- **unknown_channel** (mean retrieval 0.367)
-- **The Net Ninja** (mean retrieval 0.379)
-- **DeepLearning.AI** (mean retrieval 0.386)
-- **Yannic Kilcher** (mean retrieval 0.400)
-- **Dwarkesh Patel** (mean retrieval 0.402)
-- **Lex Fridman** (mean retrieval 0.414)
-- **Traversy Media** (mean retrieval 0.417)
-- **Stanford** (mean retrieval 0.420)
+- **Stanford** (mean retrieval 0.292)
+- **The Net Ninja** (mean retrieval 0.312)
+- **Yannic Kilcher** (mean retrieval 0.323)
+- **MIT OpenCourseWare** (mean retrieval 0.348)
+- **Hugging Face** (mean retrieval 0.401)
+- **unknown_channel** (mean retrieval 0.415)
+- **DeepLearning.AI** (mean retrieval 0.424)
+- **Traversy Media** (mean retrieval 0.438)
 
 ## Remaining Wave 1 batch
 
@@ -30,18 +30,18 @@ Generated: 2026-05-16T04:44:23.193Z
 
 ## Recommended ingestion ordering (top 12)
 
-- **w1-006** eyxmSmjmNS0 (Yannic Kilcher) — priority 75 retrieval 0.459 tier C
-- **w1-005** TrdevFK_am4 (Yannic Kilcher) — priority 71 retrieval 0.491 tier C
-- **w1-007** EeMhj0sPrhE (Yannic Kilcher) — priority 70 retrieval 0.491 tier C
-- **w1-008** YPfUiOMYOEE (Yannic Kilcher) — priority 70 retrieval 0.491 tier C
-- **w1-009** hQEnzdLkPj4 (Yannic Kilcher) — priority 70 retrieval 0.491 tier C
-- **w1-003** 5t1vTLU7s40 (Lex Fridman) — priority 61 retrieval 0.464 tier C
-- **w1-016** s_o8dwzRlu4 (TechWorld with Nana) — priority 61 retrieval 0.491 tier C
-- **w1-017** S8eX0MxfnB4 (TechWorld with Nana) — priority 61 retrieval 0.491 tier C
-- **w1-024** CBYhVcO4WgI (Y Combinator) — priority 61 retrieval 0.463 tier C
-- **w1-012** H39Z_720T5s (Hugging Face) — priority 60 retrieval 0.491 tier C
-- **w1-018** jGwO_UgTS7I (Stanford Online) — priority 60 retrieval 0.398 tier C
-- **w1-027** 6Z5hlKIDV44 (a16z) — priority 60 retrieval 0.454 tier C
+- **w1-005** TrdevFK_am4 (Yannic Kilcher) — priority 72 retrieval 0.549 tier C
+- **w1-007** EeMhj0sPrhE (Yannic Kilcher) — priority 64 retrieval 0.646 tier B
+- **w1-016** s_o8dwzRlu4 (TechWorld with Nana) — priority 60 retrieval 0.461 tier C
+- **w1-003** 5t1vTLU7s40 (Lex Fridman) — priority 59 retrieval 0.754 tier A
+- **w1-017** S8eX0MxfnB4 (TechWorld with Nana) — priority 59 retrieval 0.461 tier C
+- **w1-029** STKCRSUsyP0 (GOTO Conferences) — priority 59 retrieval 0.461 tier C
+- **w1-004** cdiD-9MMpb0 (Lex Fridman) — priority 58 retrieval 0.688 tier B
+- **w1-012** H39Z_720T5s (Hugging Face) — priority 58 retrieval 0.461 tier C
+- **w1-015** fqMOX6JJhGo (freeCodeCamp.org) — priority 58 retrieval 0.652 tier B
+- **w1-002** n1E9IZfvGMA (Dwarkesh Patel) — priority 56 retrieval 0.773 tier A
+- **w1-011** 00GKzGyWFEs (Hugging Face) — priority 54 retrieval 0.401 tier C
+- **w1-027** 6Z5hlKIDV44 (a16z) — priority 48 retrieval 0.461 tier C
 
 ## Scoring weaknesses / next improvements
 

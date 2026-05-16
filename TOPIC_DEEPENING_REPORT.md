@@ -1,15 +1,15 @@
 # Topic Deepening Report
 
-Generated: 2026-05-16T15:58:02.032Z
-Research graph snapshot: 2026-05-16T15:58:00.769Z
+Generated: 2026-05-16T16:14:51.128Z
+Research graph snapshot: 2026-05-16T16:14:45.989Z
 
 ## Summary
 
 - Topics analyzed: **64**
-- Ready to showcase: **2**
-- Deepen next: **2**
+- Ready to showcase: **3**
+- Deepen next: **3**
 - Broken / do not promote: **48**
-- Queued for topic-deepening ingest: **14**
+- Queued for topic-deepening ingest: **13**
 
 > Next ingestion must be **topic-deepening driven**, not a global best queue. Target ~10 elite research topics.
 
@@ -17,18 +17,45 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 
 ### Statistics for ML (`statistics-for-ml`)
 
-- Status: **needs_primary_sources** | Priority: **124** | Risk: **medium**
-- Graph depth: **100** | Moments: **8** | Compare readiness: **100%**
-- Citation density: **63%** | Creators: **4** | Orphans: **2**
-- Reason: Primary-source share 13% below governance minimum.
-- Missing: primary_source_moment, academic_technical voice, compared_with edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
-- Expected gain: Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.
+- Status: **deepen_next** | Priority: **132** | Risk: **low**
+- Graph depth: **100** | Moments: **28** | Compare readiness: **100%**
+- Citation density: **89%** | Creators: **5** | Orphans: **2**
+- Reason: Within 16% of elite bar — deepen graph before broad promotion.
+- Missing: compare_with edges, supports/contradicts edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
+- Expected gain: Self-supervised learning depth adjacent to transformers / HF curriculum topics. | Unsupervised / weak-label angle for ML topic authority diversity.
 
 **Candidates:**
-- w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex … (medium risk)
-- w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine… (low risk)
 - w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn… (low risk)
 - w1-009 — Yannic Kilcher: Learning To Classify Images Without Labels (Paper Explained)… (low risk)
+- w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2… (low risk)
+- w1-020 — MIT OpenCourseWare: 2. Reasoning: Goal Trees and Problem Solving… (low risk)
+
+### Reinforcement learning (`reinforcement-learning`)
+
+- Status: **needs_primary_sources** | Priority: **124** | Risk: **medium**
+- Graph depth: **100** | Moments: **8** | Compare readiness: **75%**
+- Citation density: **88%** | Creators: **4** | Orphans: **1**
+- Reason: Primary-source share 13% below governance minimum.
+- Missing: primary_source_moment, academic_technical voice, compared_with edges, contradicts_or_caveats edges, same_topic_as edges, podcast_rss, webinar, internal_upload
+- Expected gain: BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.
+
+**Candidates:**
+- w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono… (medium risk)
+- Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
+- Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
+
+### Neural networks (`neural-networks`)
+
+- Status: **needs_primary_sources** | Priority: **123** | Risk: **low**
+- Graph depth: **100** | Moments: **14** | Compare readiness: **100%**
+- Citation density: **64%** | Creators: **5** | Orphans: **5**
+- Reason: Primary-source share 7% below governance minimum.
+- Missing: primary_source_moment, academic_technical voice, compared_with edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
+- Expected gain: Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.07<0.15 gaps.
+
+**Candidates:**
+- Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
+- Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
 
 ### LLM inference (`inference`)
 
@@ -97,48 +124,6 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 - Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
 - Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
 
-### Reinforcement learning (`reinforcement-learning`)
-
-- Status: **needs_primary_sources** | Priority: **114** | Risk: **medium**
-- Graph depth: **100** | Moments: **7** | Compare readiness: **50%**
-- Citation density: **86%** | Creators: **3** | Orphans: **1**
-- Reason: Primary-source share 0% below governance minimum.
-- Missing: primary_source_moment, academic_technical voice, compared_with edges, contradicts_or_caveats edges, same_topic_as edges, podcast_rss, webinar, internal_upload
-- Expected gain: BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.
-
-**Candidates:**
-- w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono… (medium risk)
-- Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
-- Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
-
-### Neural networks (`neural-networks`)
-
-- Status: **needs_primary_sources** | Priority: **108** | Risk: **low**
-- Graph depth: **100** | Moments: **12** | Compare readiness: **75%**
-- Citation density: **58%** | Creators: **3** | Orphans: **5**
-- Reason: Primary-source share 0% below governance minimum.
-- Missing: primary_source_moment, academic_technical voice, compared_with edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
-- Expected gain: Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.
-
-**Candidates:**
-- Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
-- Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
-
-### Machine learning (`machine-learning`)
-
-- Status: **needs_primary_sources** | Priority: **108** | Risk: **medium**
-- Graph depth: **100** | Moments: **13** | Compare readiness: **100%**
-- Citation density: **38%** | Creators: **3** | Orphans: **2**
-- Reason: Primary-source share 0% below governance minimum.
-- Missing: primary_source_moment, academic_technical voice, compared_with edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
-- Expected gain: Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.
-
-**Candidates:**
-- w1-004 — Lex Fridman: Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex … (medium risk)
-- w1-007 — Yannic Kilcher: Gradients are Not All You Need (Machine Learning Research Paper Explaine… (low risk)
-- w1-008 — Yannic Kilcher: BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learn… (low risk)
-- w1-009 — Yannic Kilcher: Learning To Classify Images Without Labels (Paper Explained)… (low risk)
-
 ### Docker (`docker`)
 
 - Status: **needs_primary_sources** | Priority: **103** | Risk: **low**
@@ -179,6 +164,19 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 - w1-030 — GOTO Conferences: When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowle… (low risk)
 - Allowlist — Corey Schafer (programming_tutorials, priority 86) (low risk)
 
+### Open-source AI (`open-source-ai`)
+
+- Status: **needs_primary_sources** | Priority: **99** | Risk: **medium**
+- Graph depth: **100** | Moments: **7** | Compare readiness: **75%**
+- Citation density: **57%** | Creators: **3** | Orphans: **0**
+- Reason: Primary-source share 0% below governance minimum.
+- Missing: primary_source_moment, academic_technical voice, compared_with edges, saved_in edges, same_topic_as edges, podcast_rss, webinar, internal_upload
+- Expected gain: Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.
+
+**Candidates:**
+- Allowlist — Dwarkesh Patel (ai_research, priority 95) (low risk)
+- Allowlist — Lex Fridman (ai_research, priority 92) (low risk)
+
 ## Topics not safe to promote
 
 - **Vector databases** (`vector-databases`) — Broken tier (videos 1<2; creators 1<2; compareDepth 1<2) — do not promote or ingest blindly.
@@ -196,26 +194,25 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 
 ## Closest to showcase-ready
 
-- **Statistics for ML** (`statistics-for-ml`) — needs_primary_sources, elite distance 0.13, trust 57
+- **Reinforcement learning** (`reinforcement-learning`) — needs_primary_sources, elite distance 0.13, trust 64
+- **Statistics for ML** (`statistics-for-ml`) — deepen_next, elite distance 0.16, trust 75
+- **Neural networks** (`neural-networks`) — needs_primary_sources, elite distance 0.19, trust 57
 - **Fine-tuning** (`fine-tuning`) — needs_primary_sources, elite distance 0.45, trust 61
-- **Neural networks** (`neural-networks`) — needs_primary_sources, elite distance 0.45, trust 41
-- **Machine learning** (`machine-learning`) — needs_primary_sources, elite distance 0.47, trust 38
 - **LLM inference** (`inference`) — deepen_next, elite distance 0.55, trust 34
 - **NLP fundamentals** (`nlp-fundamentals`) — deepen_next, elite distance 0.55, trust 49
 - **Database design** (`database-design`) — needs_primary_sources, elite distance 0.56, trust 56
 - **Large language models** (`large-language-models`) — needs_primary_sources, elite distance 0.58, trust 50
-- **Reinforcement learning** (`reinforcement-learning`) — needs_primary_sources, elite distance 0.65, trust 52
 - **Docker** (`docker`) — needs_primary_sources, elite distance 0.70, trust 32
+- **JavaScript** (`javascript`) — needs_primary_sources, elite distance 0.81, trust 33
 
 ## Recommended next ingest batch (topic-deepening)
 
 
 | Topic | Status | Priority | Max ingest | Video IDs |
 | --- | --- | ---: | ---: | --- |
-| statistics-for-ml | needs_primary_sources | 124 | 3 | cdiD-9MMpb0, EeMhj0sPrhE, YPfUiOMYOEE |
+| statistics-for-ml | deepen_next | 132 | 2 | YPfUiOMYOEE, hQEnzdLkPj4 |
+| reinforcement-learning | needs_primary_sources | 124 | 3 | wraCgn27kVA |
 | fine-tuning | needs_primary_sources | 118 | 3 | 00GKzGyWFEs, WAvO8FTDJ8M, g-WeCOUYBrk |
-| reinforcement-learning | needs_primary_sources | 114 | 3 | wraCgn27kVA |
-| machine-learning | needs_primary_sources | 108 | 3 | cdiD-9MMpb0, EeMhj0sPrhE, YPfUiOMYOEE |
 | docker | needs_primary_sources | 103 | 3 | kTp5xUtcalw |
 | devops | needs_primary_sources | 99 | 3 | kTp5xUtcalw, S8eX0MxfnB4, GBTdnfD6s5Q |
 
@@ -225,10 +222,9 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 
 ## Graph deltas expected
 
-- **statistics-for-ml**: Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.
+- **statistics-for-ml**: Self-supervised learning depth adjacent to transformers / HF curriculum topics. | Unsupervised / weak-label angle for ML topic authority diversity.
+- **reinforcement-learning**: BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.
 - **fine-tuning**: Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Tool-use / systems angle for LLM topics with weak multi-creator comparison depth.
-- **reinforcement-learning**: BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.
-- **machine-learning**: Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.
 - **docker**: Adds multi-hour Docker+K8s material to deepen kubernetes-beginners / docker-devops comparison depth. | Channel prior for devops; use for sourceDiversity 1<2 gaps.
 - **devops**: Adds multi-hour Docker+K8s material to deepen kubernetes-beginners / docker-devops comparison depth. | Structured learning-path explanations to complement single-video kubernetes-beginners cluster.
 
@@ -237,15 +233,14 @@ Research graph snapshot: 2026-05-16T15:58:00.769Z
 
 | Slug | Status | Priority | Risk | Targets |
 | --- | --- | ---: | --- | --- |
-| statistics-for-ml | needs_primary_sources | 124 | medium | primary_source_moment; academic_technical voice; compared_with edges |
+| statistics-for-ml | deepen_next | 132 | low | compare_with edges; supports/contradicts edges; saved_in edges |
+| reinforcement-learning | needs_primary_sources | 124 | medium | primary_source_moment; academic_technical voice; compared_with edges |
+| neural-networks | needs_primary_sources | 123 | low | primary_source_moment; academic_technical voice; compared_with edges |
 | inference | deepen_next | 119 | medium | compare_with edges; supports/contradicts edges; compared_with edges |
 | nlp-fundamentals | deepen_next | 119 | medium | compare_with edges; supports/contradicts edges; same_topic_as edges |
 | fine-tuning | needs_primary_sources | 118 | medium | primary_source_moment; academic_technical voice; compared_with edges |
 | database-design | needs_primary_sources | 116 | low | primary_source_moment; academic_technical voice; compared_with edges |
 | large-language-models | needs_primary_sources | 115 | medium | primary_source_moment; academic_technical voice; same_topic_as edges |
-| reinforcement-learning | needs_primary_sources | 114 | medium | primary_source_moment; academic_technical voice; compared_with edges |
-| neural-networks | needs_primary_sources | 108 | low | primary_source_moment; academic_technical voice; compared_with edges |
-| machine-learning | needs_primary_sources | 108 | medium | primary_source_moment; academic_technical voice; compared_with edges |
 | docker | needs_primary_sources | 103 | low | primary_source_moment; academic_technical voice; same_topic_as edges |
 | state-management | needs_primary_sources | 100 | low | primary_source_moment; academic_technical voice; saved_in edges |
 | devops | needs_primary_sources | 99 | low | primary_source_moment; academic_technical voice; compared_with edges |

@@ -1,17 +1,17 @@
 # Flagship topic coverage report
 
-Generated: 2026-05-16T15:41:45.846Z
+Generated: 2026-05-16T16:14:50.520Z
 
 ## Summary
 
 | Metric | Value |
 |--------|------:|
 | Flagship topics tracked | 9 |
-| Healthy | 3 (33%) |
-| Weak | 2 |
+| Healthy | 4 (44%) |
+| Weak | 1 |
 | Broken | 4 |
 | Homepage promoted | 9 |
-| Homepage healthy | 3 |
+| Homepage healthy | 4 |
 
 
 
@@ -22,15 +22,15 @@ Generated: 2026-05-16T15:41:45.846Z
 
 | Topic | Status | Search hits | Videos | Creators | Cite-rich | Compare | Hubs | Collections | Homepage OK |
 |-------|--------|------------:|-------:|---------:|----------:|--------:|------|-------------|:-------------:|
-| What is RAG? | **healthy** | 33 | 6 | 5 | 4 | 6 | 1 | 1 | yes |
-| AI agents | **broken** | 41 | 1 | 1 | 8 | 1 | 0 | 1 | no |
+| What is RAG? | **healthy** | 35 | 8 | 5 | 16 | 6 | 1 | 1 | yes |
+| AI agents | **broken** | 43 | 1 | 1 | 8 | 1 | 0 | 1 | no |
 | Kubernetes scheduling | **weak** | 8 | 2 | 2 | 1 | 2 | 2 | 1 | no |
-| Prompt engineering | **weak** | 35 | 3 | 3 | 1 | 3 | 1 | 0 | no |
-| React hooks | **healthy** | 23 | 9 | 4 | 9 | 6 | 1 | 1 | yes |
+| Prompt engineering | **healthy** | 35 | 4 | 3 | 12 | 4 | 1 | 0 | yes |
+| React hooks | **healthy** | 25 | 9 | 4 | 10 | 6 | 2 | 1 | yes |
 | Startup advice | **broken** | 21 | 0 | 0 | 0 | 0 | 0 | 1 | no |
-| System design | **broken** | 37 | 0 | 0 | 0 | 0 | 0 | 0 | no |
-| Productivity | **healthy** | 9 | 4 | 4 | 2 | 4 | 0 | 0 | yes |
-| Anthropic · AI safety | **broken** | 41 | 2 | 1 | 0 | 2 | 0 | 1 | no |
+| System design | **broken** | 39 | 0 | 0 | 0 | 0 | 0 | 0 | no |
+| Productivity | **healthy** | 11 | 4 | 4 | 2 | 4 | 0 | 0 | yes |
+| Anthropic · AI safety | **broken** | 43 | 2 | 1 | 0 | 2 | 0 | 1 | no |
 
 ## Per-topic detail
 
@@ -38,9 +38,9 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `what is rag`
 - **Status:** `healthy` — homepage promoted: true (homepage_example_search)
-- **Production search:** 33 moments across 33 videos
-- **Corpus match:** 9 moments, 6 videos, 5 creators
-- **Citation-rich / semantic:** 4 / 4
+- **Production search:** 35 moments across 35 videos
+- **Corpus match:** 21 moments, 8 videos, 5 creators
+- **Citation-rich / semantic:** 16 / 16
 - **Compare-ready rows:** 6
 - **Topic hubs:** `transformers`
 - **Collections:** `best-rag-explanations`
@@ -54,12 +54,13 @@ Generated: 2026-05-16T15:41:45.846Z
   - Allowlist priority — index channel “Dwarkesh Patel” (ai_research, priority 95)
   - Allowlist priority — index channel “Lex Fridman” (ai_research, priority 92)
   - Allowlist priority — index channel “Yannic Kilcher” (ai_research, priority 94)
+  - Topic coverage gap — corpus topic “rag, rag, transformers, vector-database” has 10 moments / 1 videos (weakDepth=true)
 
 ### AI agents (`ai-agents`)
 
 - **Primary query:** `ai agents`
 - **Status:** `broken` — homepage promoted: true (start_here_chip, trending_link)
-- **Production search:** 41 moments across 28 videos
+- **Production search:** 43 moments across 28 videos
 - **Corpus match:** 10 moments, 1 videos, 1 creators
 - **Citation-rich / semantic:** 8 / 8
 - **Compare-ready rows:** 1
@@ -97,15 +98,15 @@ Generated: 2026-05-16T15:41:45.846Z
 ### Prompt engineering (`prompt-engineering`)
 
 - **Primary query:** `prompt engineering`
-- **Status:** `weak` — homepage promoted: true (start_here_chip)
-- **Production search:** 35 moments across 18 videos
-- **Corpus match:** 5 moments, 3 videos, 3 creators
-- **Citation-rich / semantic:** 1 / 1
-- **Compare-ready rows:** 3
+- **Status:** `healthy` — homepage promoted: true (start_here_chip)
+- **Production search:** 35 moments across 19 videos
+- **Corpus match:** 16 moments, 4 videos, 3 creators
+- **Citation-rich / semantic:** 12 / 12
+- **Compare-ready rows:** 4
 - **Topic hubs:** `transformers`
 - **Collections:** —
-- **Homepage trust satisfied:** false
-- **Failed minimums:** citationRichMoments 1 < 2
+- **Homepage trust satisfied:** true
+
 - **Ingestion recommendations:**
   - Wave 1 candidate w1-002 — Dwarkesh Patel: “Dario Amodei — “We are near the end of the exponential”…” (tier A, score 100)
   - Wave 1 candidate w1-003 — Lex Fridman: “Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI…” (tier A, score 100)
@@ -120,11 +121,11 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `react hooks`
 - **Status:** `healthy` — homepage promoted: true (start_here_chip)
-- **Production search:** 23 moments across 14 videos
-- **Corpus match:** 21 moments, 9 videos, 4 creators
-- **Citation-rich / semantic:** 9 / 9
+- **Production search:** 25 moments across 16 videos
+- **Corpus match:** 22 moments, 9 videos, 4 creators
+- **Citation-rich / semantic:** 10 / 10
 - **Compare-ready rows:** 6
-- **Topic hubs:** `typescript-course`
+- **Topic hubs:** `javascript`, `typescript-course`
 - **Collections:** `typescript-explanations`
 - **Homepage trust satisfied:** true
 
@@ -136,7 +137,7 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `startup advice`
 - **Status:** `broken` — homepage promoted: true (start_here_chip)
-- **Production search:** 21 moments across 14 videos
+- **Production search:** 21 moments across 13 videos
 - **Corpus match:** 0 moments, 0 videos, 0 creators
 - **Citation-rich / semantic:** 0 / 0
 - **Compare-ready rows:** 0
@@ -158,7 +159,7 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `system design`
 - **Status:** `broken` — homepage promoted: true (start_here_chip)
-- **Production search:** 37 moments across 22 videos
+- **Production search:** 39 moments across 23 videos
 - **Corpus match:** 0 moments, 0 videos, 0 creators
 - **Citation-rich / semantic:** 0 / 0
 - **Compare-ready rows:** 0
@@ -177,7 +178,7 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `productivity`
 - **Status:** `healthy` — homepage promoted: true (start_here_chip)
-- **Production search:** 9 moments across 6 videos
+- **Production search:** 11 moments across 7 videos
 - **Corpus match:** 4 moments, 4 videos, 4 creators
 - **Citation-rich / semantic:** 2 / 2
 - **Compare-ready rows:** 4
@@ -191,7 +192,7 @@ Generated: 2026-05-16T15:41:45.846Z
 
 - **Primary query:** `anthropic ai safety`
 - **Status:** `broken` — homepage promoted: true (homepage_example_collection)
-- **Production search:** 41 moments across 28 videos
+- **Production search:** 43 moments across 28 videos
 - **Corpus match:** 2 moments, 2 videos, 1 creators
 - **Citation-rich / semantic:** 0 / 0
 - **Compare-ready rows:** 2
