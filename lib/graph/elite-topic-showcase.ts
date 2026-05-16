@@ -32,6 +32,7 @@ import {
   type SourceAuthorityLabel,
 } from "@/lib/research/source-authority";
 import { isTopicKeyword } from "@/lib/topic-keywords";
+import { ELITE_TOPIC_PAGE_SLUGS, isEliteTopicPageSlug } from "@/lib/topics/elite-topic-pages";
 import { getTopicHubBySlug } from "@/lib/topics/topic-index";
 import {
   buildCollectionPath,
@@ -42,7 +43,7 @@ import {
 
 import { buildTopicDeepeningFromDisk, type TopicDeepeningAnalysis } from "./topic-deepening";
 
-export const ELITE_SHOWCASE_TOPIC_SLUGS = ["rag", "statistics-for-ml"] as const;
+export const ELITE_SHOWCASE_TOPIC_SLUGS = ELITE_TOPIC_PAGE_SLUGS;
 
 export type EliteShowcaseMomentRef = {
   id: string;
@@ -97,6 +98,7 @@ export type EliteTopicShowcaseEntry = {
     hubQuality: "hub" | "thin" | null;
     hubMomentCount: number;
     curatedSeedKeyword: boolean;
+    eliteTopicPage: boolean;
     pageReachable: boolean;
     gapNote: string | null;
   };
@@ -507,15 +509,15 @@ function buildTopicEntry(
 
   const hub = getTopicHubBySlug(def.canonicalSlug);
   const seed = isTopicKeyword(def.canonicalSlug);
+  const elitePage = isEliteTopicPageSlug(def.canonicalSlug);
   const pageReachable = Boolean(hub || seed);
   let gapNote: string | null = null;
   if (!pageReachable) {
-    gapNote =
-      `/topic/${def.canonicalSlug} is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.`;
-  } else if (!hub && seed) {
-    gapNote = null;
+    gapNote = `/topic/${def.canonicalSlug} has fewer than 3 matched corpus moments — page may 404.`;
   } else if (hub && hub.quality === "thin") {
-    gapNote = `Topic hub exists but quality=thin (${hub.moments.length} moments) — compare/citation still render; SEO may noindex.`;
+    gapNote = `Topic hub quality=thin (${hub.moments.length} moments) — compare/citation still render; SEO may noindex.`;
+  } else if (elitePage && !seed) {
+    gapNote = null;
   }
 
   const site = getSiteUrl();
@@ -540,6 +542,7 @@ function buildTopicEntry(
       hubQuality: hub?.quality ?? null,
       hubMomentCount: hub?.moments.length ?? 0,
       curatedSeedKeyword: seed,
+      eliteTopicPage: elitePage,
       pageReachable,
       gapNote,
     },

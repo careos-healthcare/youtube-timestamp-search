@@ -37,6 +37,8 @@ export type TopicClusterData = {
 function resolveSearchPhrase(slug: string, label: string) {
   if (slug === "artificial-intelligence") return "artificial intelligence";
   if (slug === "startup") return "startup advice";
+  if (slug === "rag") return "what is rag";
+  if (slug === "statistics-for-ml") return "statistics for machine learning";
   return label.toLowerCase();
 }
 

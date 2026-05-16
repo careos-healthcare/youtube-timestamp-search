@@ -131,6 +131,22 @@ const MANUAL_TOPIC_SEEDS: TopicSeed[] = [
   { slug: "artificial-intelligence", displayName: "Artificial intelligence", cluster: "ai-software", description: "Search artificial intelligence lectures, demos, and debates across indexed long-form videos.", featured: true },
   { slug: "chatgpt", displayName: "ChatGPT", cluster: "ai-software", description: "Find ChatGPT tutorials, prompts, and workflow tips in tech videos.", featured: true },
   { slug: "machine-learning", displayName: "Machine learning", cluster: "ai-software", description: "Search machine learning lectures for models, training, and evaluation.", featured: false },
+  {
+    slug: "rag",
+    displayName: "RAG (retrieval-augmented generation)",
+    cluster: "ai-software",
+    description:
+      "Compare indexed explanations of retrieval-augmented generation — timestamped tutorial and course moments with citation export.",
+    featured: false,
+  },
+  {
+    slug: "statistics-for-ml",
+    displayName: "Statistics for ML",
+    cluster: "education-lecture",
+    description:
+      "Search statistics for machine learning in lecture transcripts — probability, inference, and model foundations with timestamp links.",
+    featured: false,
+  },
   { slug: "coding", displayName: "Coding", cluster: "ai-software", description: "Find coding tutorials, walkthroughs, and debugging explanations on YouTube.", featured: true },
   { slug: "javascript", displayName: "JavaScript", cluster: "ai-software", description: "Search JavaScript tutorials for syntax, frameworks, and project builds.", featured: false },
   { slug: "python", displayName: "Python", cluster: "ai-software", description: "Locate Python lessons for scripting, data, and backend development.", featured: false },

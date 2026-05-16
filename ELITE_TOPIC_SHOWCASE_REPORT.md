@@ -1,6 +1,6 @@
 # Elite topic showcase validation
 
-Generated: 2026-05-16T16:40:21.850Z
+Generated: 2026-05-16T16:50:57.922Z
 
 Validate whether real users experience RAG and statistics-for-ML as meaningfully better than YouTube/Google for research — not add another elite topic.
 
@@ -11,8 +11,7 @@ Validate whether real users experience RAG and statistics-for-ML as meaningfully
 
 ## Page representation gaps (document only — no UI in this milestone)
 
-- rag — /topic/rag is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.
-- statistics-for-ml — /topic/statistics-for-ml is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds. — Collection gap: recommend `statistics-for-ml-explanations`.
+- statistics-for-ml — Collection gap: recommend `statistics-for-ml-explanations`.
 
 ## RAG (retrieval-augmented generation) (`rag`)
 
@@ -32,7 +31,6 @@ Validate whether real users experience RAG and statistics-for-ML as meaningfully
 
 ### What still feels weak
 
-- /topic/rag is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.
 - Topic trust 70/100 — below ideal showcase bar.
 
 ### Trust caveats
@@ -109,7 +107,6 @@ Retrieved: 2026-05-16
 
 ### What still feels weak
 
-- /topic/statistics-for-ml is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.
 - No static public collection links this topic slug yet; topic hub + compare still work. Add a curated collection when distribution needs a second landing surface.
 - Graph status **deepen_next** — Within 16% of elite bar — deepen graph before broad promotion. (weak context 36%).
 - Shallow-authority share 36% — label clips before citing.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T16:40:21.850Z",
+  "generatedAt": "2026-05-16T16:50:57.922Z",
   "milestone": "Validate whether real users experience RAG and statistics-for-ML as meaningfully better than YouTube/Google for research — not add another elite topic.",
   "siteUrl": "https://www.youtubetimesearch.com",
   "topics": [
@@ -10,12 +10,13 @@
       "vertical": "ai_ml",
       "publicTopicUrl": "https://www.youtubetimesearch.com/topic/rag",
       "topicPage": {
-        "hubSlug": null,
-        "hubQuality": null,
-        "hubMomentCount": 0,
-        "curatedSeedKeyword": false,
-        "pageReachable": false,
-        "gapNote": "/topic/rag is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds."
+        "hubSlug": "rag",
+        "hubQuality": "hub",
+        "hubMomentCount": 21,
+        "curatedSeedKeyword": true,
+        "eliteTopicPage": true,
+        "pageReachable": true,
+        "gapNote": null
       },
       "collection": {
         "kind": "linked",
@@ -234,7 +235,6 @@
         "21 indexed moments — enough for browse + compare."
       ],
       "weaknesses": [
-        "/topic/rag is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.",
         "Topic trust 70/100 — below ideal showcase bar."
       ],
       "distribution": {
@@ -277,12 +277,13 @@
       "vertical": "education",
       "publicTopicUrl": "https://www.youtubetimesearch.com/topic/statistics-for-ml",
       "topicPage": {
-        "hubSlug": null,
-        "hubQuality": null,
-        "hubMomentCount": 0,
-        "curatedSeedKeyword": false,
-        "pageReachable": false,
-        "gapNote": "/topic/statistics-for-ml is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds."
+        "hubSlug": "statistics-for-ml",
+        "hubQuality": "hub",
+        "hubMomentCount": 28,
+        "curatedSeedKeyword": true,
+        "eliteTopicPage": true,
+        "pageReachable": true,
+        "gapNote": null
       },
       "collection": {
         "kind": "gap",
@@ -505,7 +506,6 @@
         "28 indexed moments — enough for browse + compare."
       ],
       "weaknesses": [
-        "/topic/statistics-for-ml is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.",
         "No static public collection links this topic slug yet; topic hub + compare still work. Add a curated collection when distribution needs a second landing surface.",
         "Graph status **deepen_next** — Within 16% of elite bar — deepen graph before broad promotion. (weak context 36%).",
         "Shallow-authority share 36% — label clips before citing."
@@ -545,8 +545,7 @@
     }
   ],
   "pageRepresentationGaps": [
-    "rag — /topic/rag is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds.",
-    "statistics-for-ml — /topic/statistics-for-ml is not a curated TOPIC_KEYWORDS seed and no topic hub was built from moments — page may 404 until hub materializes or slug is added to seeds. — Collection gap: recommend `statistics-for-ml-explanations`."
+    "statistics-for-ml — Collection gap: recommend `statistics-for-ml-explanations`."
   ],
   "researchSessionTestPlan": {
     "flow": [

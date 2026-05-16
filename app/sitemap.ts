@@ -17,6 +17,7 @@ import {
 } from "@/lib/seo";
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import { TOPIC_KEYWORDS } from "@/lib/topic-keywords";
+import { listEliteTopicPageSlugsForSitemap } from "@/lib/topics/elite-topic-pages";
 import { listTopicHubSlugsForSitemap } from "@/lib/topics/topic-index";
 import { CREATOR_SLUGS } from "@/lib/creator-data";
 import { TRANSCRIPT_CATEGORY_SLUGS } from "@/lib/category-data";
@@ -62,7 +63,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const seedTopicUrls = new Set(topicEntries.map((e) => e.url));
-  const intelligenceTopicEntries = listTopicHubSlugsForSitemap()
+  const intelligenceSlugs = [
+    ...new Set([...listTopicHubSlugsForSitemap(), ...listEliteTopicPageSlugsForSitemap()]),
+  ];
+  const intelligenceTopicEntries = intelligenceSlugs
     .map((slug) => ({
       url: `${siteUrl}${buildTopicPath(slug)}`,
       lastModified: new Date(),

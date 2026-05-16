@@ -11,6 +11,7 @@ import type {
   TopicIndexBuildStats,
   TopicPillar,
 } from "@/lib/topics/topic-hub-types";
+import { buildEliteTopicHub } from "@/lib/topics/elite-topic-pages";
 import {
   inferTopicPillar,
   isWeakTopicSlug,
@@ -268,7 +269,7 @@ function ensureBuilt() {
 export function getTopicHubBySlug(rawSlug: string): TopicHub | undefined {
   const slug = normalizeIncomingTopicSlug(rawSlug);
   ensureBuilt();
-  return hubCache!.get(slug);
+  return hubCache!.get(slug) ?? buildEliteTopicHub(slug);
 }
 
 export function listTopicHubs(): TopicHub[] {
