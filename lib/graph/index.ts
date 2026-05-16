@@ -13,3 +13,18 @@ export {
   computeEnterpriseReadinessPlaceholder,
 } from "./research-graph-metrics";
 export type { ResearchGraphMetrics, TopicClusterMetric } from "./research-graph-metrics";
+export {
+  buildTopicDeepeningReport,
+  buildTopicDeepeningFromDisk,
+  formatTopicDeepeningMarkdown,
+  loadResearchGraphSnapshot,
+  loadResearchGradeReportFromDisk,
+} from "./topic-deepening";
+export type {
+  TopicDeepeningStatus,
+  TopicDeepeningReport,
+  TopicDeepeningQueueRow,
+  TopicDeepeningAnalysis,
+  TopicDeepeningMetrics,
+  BuildTopicDeepeningInput,
+} from "./topic-deepening";

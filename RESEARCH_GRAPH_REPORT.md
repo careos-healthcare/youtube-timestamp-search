@@ -1,6 +1,6 @@
 # Research graph report
 
-Generated: 2026-05-16T15:32:27.600Z
+Generated: 2026-05-16T15:41:42.062Z
 
 Cross-source spoken knowledge as a **research graph** (nodes + edges), not isolated pages.
 

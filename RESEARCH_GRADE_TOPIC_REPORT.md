@@ -1,6 +1,6 @@
 # Research-grade topic report
 
-Generated: 2026-05-16T15:18:57.930Z
+Generated: 2026-05-16T15:41:42.646Z
 
 High-signal corpus program — **64** curated topics. Optimized for trust density and compare depth, not traffic volume.
 
