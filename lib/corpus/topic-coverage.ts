@@ -1,4 +1,5 @@
 import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
+import { isPublicMomentCitationRich } from "@/lib/moments/public-moment-citation-rich";
 import { evaluatePublicMoment } from "@/lib/quality";
 import { classifyExplanationFromText } from "@/lib/research/classify-explanation-role";
 import { evaluateSourceAuthorityForPublicMoment } from "@/lib/research/source-authority";
@@ -27,12 +28,6 @@ export type TopicCoverageRow = {
 
 function topicKey(m: PublicMomentRecord) {
   return (m.topic ?? "uncategorized").trim() || "uncategorized";
-}
-
-function isCitationRich(m: PublicMomentRecord): boolean {
-  const s = m.semantic;
-  if (!s?.citations) return false;
-  return Boolean(s.citations.markdown?.length || s.citations.academic?.length);
 }
 
 export function buildTopicCoverageReport(moments: PublicMomentRecord[]): TopicCoverageRow[] {
@@ -69,7 +64,7 @@ export function buildTopicCoverageReport(moments: PublicMomentRecord[]): TopicCo
       if (cls.beginnerLikelihood >= 1 || cls.tutorialLikelihood >= 0.5) beginner += 1;
       if (cls.technicalLikelihood >= 1) technical += 1;
       if (cls.counterLikelihood >= 1) counter += 1;
-      if (isCitationRich(m)) citeRich += 1;
+      if (isPublicMomentCitationRich(m)) citeRich += 1;
     }
 
     const n = list.length;

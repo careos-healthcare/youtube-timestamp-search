@@ -8,19 +8,13 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import type { PublicMomentRecord } from "@/lib/moments/public-moment-types";
 import { loadPublicMoments } from "@/lib/moments/load-public-moments";
 import { evaluatePublicMoment } from "@/lib/quality";
 import { evaluateSourceAuthorityForPublicMoment } from "@/lib/research/source-authority";
 import { classifyExplanationFromText } from "@/lib/research/classify-explanation-role";
 import { averageQualityTierShare } from "@/lib/corpus/topic-coverage";
 import { recordCorpusPipelineEvent } from "@/lib/corpus/corpus-analytics";
-
-function isCitationRich(m: PublicMomentRecord): boolean {
-  const s = m.semantic;
-  if (!s?.citations) return false;
-  return Boolean(s.citations.markdown?.length || s.citations.academic?.length);
-}
+import { isPublicMomentCitationRich } from "@/lib/moments/public-moment-citation-rich";
 
 function main() {
   const moments = loadPublicMoments();
@@ -38,7 +32,7 @@ function main() {
   for (const m of moments) {
     const label = evaluateSourceAuthorityForPublicMoment(m).sourceAuthorityLabel;
     authorityMix.set(label, (authorityMix.get(label) ?? 0) + 1);
-    if (isCitationRich(m)) citeRich += 1;
+    if (isPublicMomentCitationRich(m)) citeRich += 1;
     const ev = evaluatePublicMoment(m);
     if (ev.qualityTier === "low") weakTier += 1;
 
