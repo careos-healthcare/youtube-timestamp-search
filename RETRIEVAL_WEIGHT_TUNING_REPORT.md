@@ -1,6 +1,6 @@
 # Retrieval weight tuning — validation report
 
-Generated: 2026-05-16T08:21:21.926Z
+Generated: 2026-05-16T08:34:27.085Z
 
 ## North star
 

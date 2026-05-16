@@ -1,0 +1,964 @@
+{
+  "generatedAt": "2026-05-16T08:34:27.555Z",
+  "wave1CandidateCount": 36,
+  "evalSliceCount": 36,
+  "answers": {
+    "candidatesTooSimilar": true,
+    "candidatesTooSimilarDetail": "Wave 1 has 36 candidates across 14 channels; 5/5 top-5 slots are identical across pre/v1/v2. Tuning reorders scores but rarely changes the research-value frontier.",
+    "sameVideosInAllTop5": true,
+    "top5OverlapDetail": "Shared: eyxmSmjmNS0, fqMOX6JJhGo, i_LwzRVP7bg, 5t1vTLU7s40, qTogNUV3CAI. Jaccard pre↔v1=1.00, pre↔v2=1.00, v1↔v2=1.00. Swaps: pre-only —; v2-only —.",
+    "citeHourPenalizesTutorials": true,
+    "citeHourPenalizesTutorialsDetail": "Tutorial/action dim vs cite/h correlation r=0.733 — tutorials are not systematically punished by cite/h; missing materialized moments (null cite/h) distort batch comparisons.",
+    "sourcePriorsOverpowerRetrieval": true,
+    "sourcePriorsOverpowerDetail": "Pre-calibration positive priority mass is ~42% from source_quality (many A-tier=100 scores). Tuned v2 reduces this to ~15% but overlap keeps batch cite/h flat.",
+    "penaltiesSuppressTechnical": false,
+    "penaltiesSuppressTechnicalDetail": "Governance penalties target poison/CTA heuristics; tutorial-dense rows with high action dim generally retain priority via technical/tutorial boosts and drift heuristic sparing (action≥0.45).",
+    "batchMetricMethodologySkewsPre": false,
+    "batchMetricMethodologyDetail": "Pre top-5 cite/h mean excluding null = 0.697; tuned v2 with null=0 = 0.697. Fair comparison (both null=0): pre 0.697 vs v2 0.697."
+  },
+  "overlapTop5": {
+    "pre_calibration": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "tuned_v1": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "tuned_v2": [
+      "fqMOX6JJhGo",
+      "5t1vTLU7s40",
+      "i_LwzRVP7bg",
+      "eyxmSmjmNS0",
+      "qTogNUV3CAI"
+    ],
+    "sharedAllThree": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "sharedPreAndV1": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "sharedPreAndV2": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "sharedV1AndV2": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI"
+    ],
+    "uniquePre": [],
+    "uniqueV1": [],
+    "uniqueV2": [],
+    "jaccardPreV1Top5": 1,
+    "jaccardPreV2Top5": 1,
+    "jaccardV1V2Top5": 1
+  },
+  "overlapTop10": {
+    "pre_calibration": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "s_o8dwzRlu4",
+      "jGwO_UgTS7I"
+    ],
+    "tuned_v1": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "H39Z_720T5s",
+      "s_o8dwzRlu4"
+    ],
+    "tuned_v2": [
+      "fqMOX6JJhGo",
+      "5t1vTLU7s40",
+      "i_LwzRVP7bg",
+      "eyxmSmjmNS0",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "H39Z_720T5s",
+      "s_o8dwzRlu4"
+    ],
+    "sharedAllThree": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "s_o8dwzRlu4"
+    ],
+    "sharedPreAndV1": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "s_o8dwzRlu4"
+    ],
+    "sharedPreAndV2": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "s_o8dwzRlu4"
+    ],
+    "sharedV1AndV2": [
+      "eyxmSmjmNS0",
+      "fqMOX6JJhGo",
+      "i_LwzRVP7bg",
+      "5t1vTLU7s40",
+      "qTogNUV3CAI",
+      "n1E9IZfvGMA",
+      "kTp5xUtcalw",
+      "Wf2eSG3owoA",
+      "H39Z_720T5s",
+      "s_o8dwzRlu4"
+    ],
+    "uniquePre": [
+      "jGwO_UgTS7I"
+    ],
+    "uniqueV1": [],
+    "uniqueV2": [],
+    "jaccardPreV1Top5": 0.8181818181818182,
+    "jaccardPreV2Top5": 0.8181818181818182,
+    "jaccardV1V2Top5": 1
+  },
+  "batchObjectivesTop5": {
+    "pre_calibration": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "qTogNUV3CAI"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.6969733239273619,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.6969733239273619,
+      "acceptedPerHour_mean": 1.403904880918437,
+      "semanticMomentsPerHour_mean": 0.6969733239273619,
+      "semanticYieldDim_mean": 0.30513649964727607,
+      "clipExtractionDim_mean": 0.626,
+      "researchWorkflowScore_mean": 0.2559971632138128,
+      "topicCoverageGain_mean": 0.5944444444444443,
+      "uniqueCreators": 4,
+      "uniqueTopics": 9,
+      "shallowAuthorityShare": 0.8,
+      "transcriptPoisonFlagShare": 0.4,
+      "meanPriorityScore": 65.6
+    },
+    "tuned_v1": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "qTogNUV3CAI"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.6969733239273619,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.6969733239273619,
+      "acceptedPerHour_mean": 1.403904880918437,
+      "semanticMomentsPerHour_mean": 0.6969733239273619,
+      "semanticYieldDim_mean": 0.30513649964727607,
+      "clipExtractionDim_mean": 0.626,
+      "researchWorkflowScore_mean": 0.2559971632138128,
+      "topicCoverageGain_mean": 0.5944444444444443,
+      "uniqueCreators": 4,
+      "uniqueTopics": 9,
+      "shallowAuthorityShare": 0.8,
+      "transcriptPoisonFlagShare": 0.4,
+      "meanPriorityScore": 53.2
+    },
+    "tuned_v2": {
+      "videoIds": [
+        "fqMOX6JJhGo",
+        "5t1vTLU7s40",
+        "i_LwzRVP7bg",
+        "eyxmSmjmNS0",
+        "qTogNUV3CAI"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.6969733239273619,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.6969733239273619,
+      "acceptedPerHour_mean": 1.403904880918437,
+      "semanticMomentsPerHour_mean": 0.6969733239273619,
+      "semanticYieldDim_mean": 0.30513649964727607,
+      "clipExtractionDim_mean": 0.626,
+      "researchWorkflowScore_mean": 0.2559971632138128,
+      "topicCoverageGain_mean": 0.5944444444444443,
+      "uniqueCreators": 4,
+      "uniqueTopics": 9,
+      "shallowAuthorityShare": 0.8,
+      "transcriptPoisonFlagShare": 0.4,
+      "meanPriorityScore": 60
+    }
+  },
+  "batchObjectivesTop10": {
+    "pre_calibration": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "qTogNUV3CAI",
+        "n1E9IZfvGMA",
+        "kTp5xUtcalw",
+        "Wf2eSG3owoA",
+        "s_o8dwzRlu4",
+        "jGwO_UgTS7I"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.5808111032728015,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.34848666196368094,
+      "acceptedPerHour_mean": 1.1699207340986975,
+      "semanticMomentsPerHour_mean": 0.5808111032728015,
+      "semanticYieldDim_mean": 0.3275682498236381,
+      "clipExtractionDim_mean": 0.538,
+      "researchWorkflowScore_mean": 0.1482363981885271,
+      "topicCoverageGain_mean": 0.616111111111111,
+      "uniqueCreators": 6,
+      "uniqueTopics": 12,
+      "shallowAuthorityShare": 0.9,
+      "transcriptPoisonFlagShare": 0.2,
+      "meanPriorityScore": 58.7
+    },
+    "tuned_v1": {
+      "videoIds": [
+        "eyxmSmjmNS0",
+        "fqMOX6JJhGo",
+        "i_LwzRVP7bg",
+        "5t1vTLU7s40",
+        "qTogNUV3CAI",
+        "n1E9IZfvGMA",
+        "kTp5xUtcalw",
+        "Wf2eSG3owoA",
+        "H39Z_720T5s",
+        "s_o8dwzRlu4"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.5808111032728015,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.34848666196368094,
+      "acceptedPerHour_mean": 1.1699207340986975,
+      "semanticMomentsPerHour_mean": 0.5808111032728015,
+      "semanticYieldDim_mean": 0.3275682498236381,
+      "clipExtractionDim_mean": 0.538,
+      "researchWorkflowScore_mean": 0.1482363981885271,
+      "topicCoverageGain_mean": 0.6035555555555556,
+      "uniqueCreators": 6,
+      "uniqueTopics": 12,
+      "shallowAuthorityShare": 0.9,
+      "transcriptPoisonFlagShare": 0.2,
+      "meanPriorityScore": 44.4
+    },
+    "tuned_v2": {
+      "videoIds": [
+        "fqMOX6JJhGo",
+        "5t1vTLU7s40",
+        "i_LwzRVP7bg",
+        "eyxmSmjmNS0",
+        "qTogNUV3CAI",
+        "n1E9IZfvGMA",
+        "kTp5xUtcalw",
+        "Wf2eSG3owoA",
+        "H39Z_720T5s",
+        "s_o8dwzRlu4"
+      ],
+      "citeWorthyPerHour_meanExcludingNull": 0.5808111032728015,
+      "citeWorthyPerHour_meanTreatNullAsZero": 0.34848666196368094,
+      "acceptedPerHour_mean": 1.1699207340986975,
+      "semanticMomentsPerHour_mean": 0.5808111032728015,
+      "semanticYieldDim_mean": 0.3275682498236381,
+      "clipExtractionDim_mean": 0.538,
+      "researchWorkflowScore_mean": 0.1482363981885271,
+      "topicCoverageGain_mean": 0.6035555555555556,
+      "uniqueCreators": 6,
+      "uniqueTopics": 12,
+      "shallowAuthorityShare": 0.9,
+      "transcriptPoisonFlagShare": 0.2,
+      "meanPriorityScore": 48.6
+    }
+  },
+  "swaps": [
+    {
+      "videoId": "eyxmSmjmNS0",
+      "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "inPreTop5": true,
+      "inV1Top5": true,
+      "inV2Top5": true,
+      "citationsPerHour": 0,
+      "deltaCiteHourIfInVsOut": "retained in pre and v2 top-5",
+      "priorityDeltaPreToV2": -17,
+      "topFactorPre": "source_quality_0_1 (22.0)",
+      "topFactorV2": "semantic_yield_estimate (14.0)"
+    },
+    {
+      "videoId": "qTogNUV3CAI",
+      "title": "Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold",
+      "channelName": "Dwarkesh Patel",
+      "inPreTop5": true,
+      "inV1Top5": true,
+      "inV2Top5": true,
+      "citationsPerHour": 0,
+      "deltaCiteHourIfInVsOut": "retained in pre and v2 top-5",
+      "priorityDeltaPreToV2": -8,
+      "topFactorPre": "source_quality_0_1 (22.0)",
+      "topFactorV2": "semantic_yield_estimate (13.2)"
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "title": "Machine Learning for Everybody – Full Course",
+      "channelName": "freeCodeCamp.org",
+      "inPreTop5": true,
+      "inV1Top5": true,
+      "inV2Top5": true,
+      "citationsPerHour": 1.282919354263925,
+      "deltaCiteHourIfInVsOut": "retained in pre and v2 top-5",
+      "priorityDeltaPreToV2": -7,
+      "topFactorPre": "source_quality_0_1 (22.0)",
+      "topFactorV2": "semantic_yield_estimate (12.6)"
+    },
+    {
+      "videoId": "fqMOX6JJhGo",
+      "title": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+      "channelName": "freeCodeCamp.org",
+      "inPreTop5": true,
+      "inV1Top5": true,
+      "inV2Top5": true,
+      "citationsPerHour": 1.8432707815980134,
+      "deltaCiteHourIfInVsOut": "retained in pre and v2 top-5",
+      "priorityDeltaPreToV2": 3,
+      "topFactorPre": "source_quality_0_1 (22.0)",
+      "topFactorV2": "clip_extraction_boost (13.5)"
+    },
+    {
+      "videoId": "5t1vTLU7s40",
+      "title": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+      "channelName": "Lex Fridman",
+      "inPreTop5": true,
+      "inV1Top5": true,
+      "inV2Top5": true,
+      "citationsPerHour": 0.3586764837748707,
+      "deltaCiteHourIfInVsOut": "retained in pre and v2 top-5",
+      "priorityDeltaPreToV2": 1,
+      "topFactorPre": "source_quality_0_1 (22.0)",
+      "topFactorV2": "clip_extraction_boost (16.0)"
+    }
+  ],
+  "misrankings": [
+    {
+      "videoId": "qTogNUV3CAI",
+      "title": "Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold",
+      "channelName": "Dwarkesh Patel",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 54,
+      "priorityScoreTunedV2": 46,
+      "citationsPerHour": 0,
+      "researchWorkflowScore": 0.2197823365116055,
+      "reason": "Strong cite/h (0.00) or semantic/clip dims but priority ≤48 (v2=46)."
+    },
+    {
+      "videoId": "n1E9IZfvGMA",
+      "title": "Dario Amodei — “We are near the end of the exponential”",
+      "channelName": "Dwarkesh Patel",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 53,
+      "priorityScoreTunedV2": 44,
+      "citationsPerHour": 0,
+      "researchWorkflowScore": 0.20237816581620713,
+      "reason": "Strong cite/h (0.00) or semantic/clip dims but priority ≤48 (v2=44)."
+    },
+    {
+      "videoId": "cdiD-9MMpb0",
+      "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channelName": "Lex Fridman",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 43,
+      "priorityScoreTunedV2": 28,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=28)."
+    },
+    {
+      "videoId": "TrdevFK_am4",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "EeMhj0sPrhE",
+      "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 33,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=33)."
+    },
+    {
+      "videoId": "YPfUiOMYOEE",
+      "title": "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 33,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=33)."
+    },
+    {
+      "videoId": "hQEnzdLkPj4",
+      "title": "Learning To Classify Images Without Labels (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "00GKzGyWFEs",
+      "title": "Welcome to the Hugging Face course",
+      "channelName": "Hugging Face",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "H39Z_720T5s",
+      "title": "The Transformer architecture",
+      "channelName": "Hugging Face",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "kTp5xUtcalw",
+      "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+      "channelName": "freeCodeCamp.org",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 52,
+      "priorityScoreTunedV2": 36,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=36)."
+    },
+    {
+      "videoId": "Wf2eSG3owoA",
+      "title": "Docker and Kubernetes - Full Course for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 52,
+      "priorityScoreTunedV2": 36,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=36)."
+    },
+    {
+      "videoId": "s_o8dwzRlu4",
+      "title": "Kubernetes Crash Course for Absolute Beginners [NEW]",
+      "channelName": "TechWorld with Nana",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "S8eX0MxfnB4",
+      "title": "Kubernetes Roadmap - Complete Step-by-Step Learning Path",
+      "channelName": "TechWorld with Nana",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "jGwO_UgTS7I",
+      "title": "Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2018)",
+      "channelName": "Stanford Online",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "TjZBTDzGeGg",
+      "title": "1. Introduction and Scope",
+      "channelName": "MIT OpenCourseWare",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "PNKj529yY5c",
+      "title": "2. Reasoning: Goal Trees and Problem Solving",
+      "channelName": "MIT OpenCourseWare",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "wraCgn27kVA",
+      "title": "Reinforcement Learning with Large Datasets: a Path to Resourceful Autonomous Agents - Sergey Levine",
+      "channelName": "Berkeley AI Research",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "8yYgaW2to1Q",
+      "title": "AI Agents That Do What We Want: Progress and Open Challenges - Anca Dragan",
+      "channelName": "Berkeley AI Research",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "WAvO8FTDJ8M",
+      "title": "Teaching LLMs to Use Tools at Scale - Shishir Patil | Stanford MLSys #98",
+      "channelName": "Berkeley AI Research",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "CBYhVcO4WgI",
+      "title": "Lecture 1 - How to Start a Startup (Sam Altman, Dustin Moskovitz)",
+      "channelName": "Y Combinator",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "CVfnkM44Urs",
+      "title": "Lecture 2 - Team and Execution (Sam Altman)",
+      "channelName": "Y Combinator",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "g-WeCOUYBrk",
+      "title": "Marc Andreessen & Amjad Masad on “Good Enough” AI, AGI, and the End of Coding",
+      "channelName": "a16z",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "6Z5hlKIDV44",
+      "title": "Who's Coding Now? - AI and the Future of Software Development",
+      "channelName": "a16z",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "ji5rdhzT53o",
+      "title": "The 1000x Developer with Amjad Masad",
+      "channelName": "a16z",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 50,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "STKCRSUsyP0",
+      "title": "The Many Meanings of Event-Driven Architecture • Martin Fowler • GOTO 2017",
+      "channelName": "GOTO Conferences",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "GBTdnfD6s5Q",
+      "title": "When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowler • GOTO 2020",
+      "channelName": "GOTO Conferences",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "wgdBVIX9ifA",
+      "title": "Microservices • Martin Fowler • GOTO 2014",
+      "channelName": "GOTO Conferences",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "TgdFA72crHM",
+      "title": "Software Development in the 21st Century • Martin Fowler • GOTO 2013",
+      "channelName": "GOTO Conferences",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "86-Dy5U2p5Y",
+      "title": "Panel: Where Is SW Development Going? • Fowler, Cummins, Gee, Terhorst-North & Farley • GOTO 2024",
+      "channelName": "GOTO Conferences",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 51,
+      "priorityScoreTunedV2": 35,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=35)."
+    },
+    {
+      "videoId": "SxdOUGdseq4",
+      "title": "\"Simple Made Easy\" - Rich Hickey (2011)",
+      "channelName": "Strange Loop Conference",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 49,
+      "priorityScoreTunedV2": 34,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=34)."
+    },
+    {
+      "videoId": "MwZwr5Tvyxo",
+      "title": "Python Flask Tutorial: Full-Featured Web App Part 1 - Getting Started",
+      "channelName": "Corey Schafer",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 44,
+      "priorityScoreTunedV2": 29,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=29)."
+    },
+    {
+      "videoId": "UmljXZIypDc",
+      "title": "Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started",
+      "channelName": "Corey Schafer",
+      "kind": "obviously_good_ranks_low",
+      "priorityScorePre": 45,
+      "priorityScoreTunedV2": 30,
+      "citationsPerHour": null,
+      "researchWorkflowScore": 0,
+      "reason": "Strong cite/h (—) or semantic/clip dims but priority ≤48 (v2=30)."
+    }
+  ],
+  "manualReviewShortlist": {
+    "uncertain": [
+      {
+        "videoId": "cdiD-9MMpb0",
+        "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+        "channel": "Lex Fridman",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+        "channel": "Yannic Kilcher",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "EeMhj0sPrhE",
+        "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+        "channel": "Yannic Kilcher",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "YPfUiOMYOEE",
+        "title": "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)",
+        "channel": "Yannic Kilcher",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "hQEnzdLkPj4",
+        "title": "Learning To Classify Images Without Labels (Paper Explained)",
+        "channel": "Yannic Kilcher",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "title": "Welcome to the Hugging Face course",
+        "channel": "Hugging Face",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "H39Z_720T5s",
+        "title": "The Transformer architecture",
+        "channel": "Hugging Face",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "kTp5xUtcalw",
+        "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+        "channel": "freeCodeCamp.org",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "Wf2eSG3owoA",
+        "title": "Docker and Kubernetes - Full Course for Beginners",
+        "channel": "freeCodeCamp.org",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      },
+      {
+        "videoId": "s_o8dwzRlu4",
+        "title": "Kubernetes Crash Course for Absolute Beginners [NEW]",
+        "channel": "TechWorld with Nana",
+        "category": "uncertain",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "cite/h not measurable (no materialized moments)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+      }
+    ],
+    "highScoreHighRisk": [
+      {
+        "videoId": "fqMOX6JJhGo",
+        "title": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+        "channel": "freeCodeCamp.org",
+        "category": "high_score_high_risk",
+        "predictedStrengths": [
+          "high cite/h in corpus",
+          "strong clip extraction dim",
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped"
+        ],
+        "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+      },
+      {
+        "videoId": "5t1vTLU7s40",
+        "title": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+        "channel": "Lex Fridman",
+        "category": "high_score_high_risk",
+        "predictedStrengths": [
+          "strong clip extraction dim",
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped",
+          "transcript poison heuristics (1)"
+        ],
+        "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+      },
+      {
+        "videoId": "i_LwzRVP7bg",
+        "title": "Machine Learning for Everybody – Full Course",
+        "channel": "freeCodeCamp.org",
+        "category": "high_score_high_risk",
+        "predictedStrengths": [
+          "high cite/h in corpus",
+          "strong clip extraction dim",
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "shallow authority / interview-shaped"
+        ],
+        "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+      },
+      {
+        "videoId": "eyxmSmjmNS0",
+        "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+        "channel": "Yannic Kilcher",
+        "category": "high_score_high_risk",
+        "predictedStrengths": [
+          "allowlist A-tier source prior"
+        ],
+        "predictedRisks": [
+          "transcript poison heuristics (1)",
+          "low cite/h despite high priority"
+        ],
+        "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+      }
+    ],
+    "lowScoreHighPotential": []
+  },
+  "recommendation": "manual_review_required",
+  "recommendationRationale": [
+    "Top-5 overlap is very high (5/5 shared across all profiles; Jaccard pre↔v2=1.00). Weight changes mostly reorder marginally, not rebuild the batch.",
+    "With fair comparison (null cite/h as 0), pre and v2 top-5 cite/h means are nearly identical (0.697 vs 0.697). Tuning failed because the batch barely changed.",
+    "Pre-calibration priority is ~42% driven by source_quality factor; allowlist scores cluster at 100, overpowering retrieval signals.",
+    "32 under-ranked high-potential and 0 over-ranked weak candidates — human judgment needed before trusting automation.",
+    "Tutorial/action density correlates positively with cite/h (r≈0.73) — cite/h alone is not penalizing tutorials; null/zero cite/h on non-materialized videos is the larger distortion.",
+    "ready_for_controlled_ingest is NOT supported: tuned profiles do not reliably beat pre-calibration on fair cite/h and multi-objective top-5 metrics."
+  ]
+}

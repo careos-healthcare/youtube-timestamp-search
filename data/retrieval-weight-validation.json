@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T08:21:21.926Z",
+  "generatedAt": "2026-05-16T08:34:27.085Z",
   "predictiveness": [
     {
       "dimensionId": "explanation_density",
@@ -441,7 +441,7 @@
   },
   "weightsFile": {
     "version": 1,
-    "generatedAt": "2026-05-16T08:21:21.926Z",
+    "generatedAt": "2026-05-16T08:34:27.085Z",
     "notes": "v2 emphasizes semantic moment yield + clip extraction (empirical cite/h predictors). Do not ingest until capped simulation shows positive Δ cite/h vs pre-calibration.",
     "retrievalDimensionWeights": {
       "explanation_density": 0.01691151269199729,

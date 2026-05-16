@@ -66,3 +66,8 @@ export type {
   Wave1SimulationComparison,
   ExpertVsConversationalComparison,
 } from "./retrieval-weight-validation";
+export { runRetrievalGovernanceDiagnosis, formatDiagnosisMarkdown } from "./retrieval-governance-diagnosis";
+export type {
+  RetrievalGovernanceDiagnosis,
+  GovernanceRecommendation,
+} from "./retrieval-governance-diagnosis";

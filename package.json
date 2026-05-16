@@ -45,6 +45,7 @@
     "report:retrieval-calibration": "tsx scripts/retrieval-calibration-report.ts",
     "report:retrieval-quality": "tsx scripts/retrieval-quality-report.ts",
     "report:retrieval-weight-tuning": "tsx scripts/retrieval-weight-tuning.ts",
+    "retrieval-governance-diagnosis": "tsx scripts/retrieval-governance-diagnosis.ts",
     "test:retrieval-calibration": "node --import tsx --test lib/corpus/retrieval-calibration.test.ts",
     "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",
     "ingest:wave-1": "tsx scripts/ingest-wave-1.ts"

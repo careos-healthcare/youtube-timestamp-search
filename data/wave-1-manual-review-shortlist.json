@@ -1,0 +1,218 @@
+{
+  "generatedAt": "2026-05-16T08:34:27.555Z",
+  "recommendation": "manual_review_required",
+  "uncertain": [
+    {
+      "videoId": "cdiD-9MMpb0",
+      "title": "Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333",
+      "channel": "Lex Fridman",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "TrdevFK_am4",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "EeMhj0sPrhE",
+      "title": "Gradients are Not All You Need (Machine Learning Research Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "YPfUiOMYOEE",
+      "title": "BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "hQEnzdLkPj4",
+      "title": "Learning To Classify Images Without Labels (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "00GKzGyWFEs",
+      "title": "Welcome to the Hugging Face course",
+      "channel": "Hugging Face",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "H39Z_720T5s",
+      "title": "The Transformer architecture",
+      "channel": "Hugging Face",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "kTp5xUtcalw",
+      "title": "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course",
+      "channel": "freeCodeCamp.org",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "Wf2eSG3owoA",
+      "title": "Docker and Kubernetes - Full Course for Beginners",
+      "channel": "freeCodeCamp.org",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    },
+    {
+      "videoId": "s_o8dwzRlu4",
+      "title": "Kubernetes Crash Course for Absolute Beginners [NEW]",
+      "channel": "TechWorld with Nana",
+      "category": "uncertain",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "cite/h not measurable (no materialized moments)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Borderline governance signals; ranking unstable across profiles."
+    }
+  ],
+  "highScoreHighRisk": [
+    {
+      "videoId": "fqMOX6JJhGo",
+      "title": "Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers",
+      "channel": "freeCodeCamp.org",
+      "category": "high_score_high_risk",
+      "predictedStrengths": [
+        "high cite/h in corpus",
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+    },
+    {
+      "videoId": "5t1vTLU7s40",
+      "title": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+      "channel": "Lex Fridman",
+      "category": "high_score_high_risk",
+      "predictedStrengths": [
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped",
+        "transcript poison heuristics (1)"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+    },
+    {
+      "videoId": "i_LwzRVP7bg",
+      "title": "Machine Learning for Everybody – Full Course",
+      "channel": "freeCodeCamp.org",
+      "category": "high_score_high_risk",
+      "predictedStrengths": [
+        "high cite/h in corpus",
+        "strong clip extraction dim",
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "shallow authority / interview-shaped"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+    },
+    {
+      "videoId": "eyxmSmjmNS0",
+      "title": "[Classic] Generative Adversarial Networks (Paper Explained)",
+      "channel": "Yannic Kilcher",
+      "category": "high_score_high_risk",
+      "predictedStrengths": [
+        "allowlist A-tier source prior"
+      ],
+      "predictedRisks": [
+        "transcript poison heuristics (1)",
+        "low cite/h despite high priority"
+      ],
+      "whyHumanReviewNeeded": "Scores high for ingest but research-density or poison flags disagree."
+    }
+  ],
+  "lowScoreHighPotential": []
+}
