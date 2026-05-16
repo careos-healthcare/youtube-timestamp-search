@@ -50,6 +50,7 @@
     "validate:wave-1-review": "tsx scripts/validate-wave-1-manual-review.ts",
     "report:research-sessions": "tsx scripts/research-session-report.ts",
     "report:flagship-topics": "tsx scripts/flagship-topic-coverage-report.ts",
+    "report:research-grade-topics": "tsx scripts/research-grade-topic-report.ts",
     "test:retrieval-calibration": "node --import tsx --test lib/corpus/retrieval-calibration.test.ts",
     "test:research-session": "node --import tsx --test lib/research/research-session.test.ts",
     "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",

@@ -1,0 +1,4466 @@
+{
+  "generatedAt": "2026-05-16T15:18:57.930Z",
+  "topicCount": 64,
+  "summary": {
+    "elite": 0,
+    "strong": 1,
+    "weak": 14,
+    "broken": 49
+  },
+  "topics": [
+    {
+      "canonicalSlug": "rag",
+      "label": "RAG (retrieval-augmented generation)",
+      "vertical": "ai_ml",
+      "primaryQuery": "what is rag",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 9,
+        "indexedVideos": 6,
+        "uniqueCreators": 5,
+        "citationDensity": 0.4444444444444444,
+        "compareDepth": 6,
+        "sourceDiversity": 4,
+        "primarySourceRatio": 0.2222222222222222,
+        "semanticExplanationRatio": 0.4444444444444444,
+        "shallowAuthorityShare": 0.1111111111111111,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.75,
+        "topicTrustScore": 55,
+        "researchGradeScore": 59
+      },
+      "tier": "strong",
+      "failedRequirements": [],
+      "distanceToElite": 0.03,
+      "ingestionPriority": 59,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "vector-databases",
+      "label": "Vector databases",
+      "vertical": "ai_ml",
+      "primaryQuery": "vector database",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.16666666666666666,
+        "topicTrustScore": 0,
+        "researchGradeScore": 2
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "embeddings",
+      "label": "Embeddings",
+      "vertical": "ai_ml",
+      "primaryQuery": "embeddings explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.42500000000000004,
+        "topicTrustScore": 54,
+        "researchGradeScore": 51
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 150,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "transformers",
+      "label": "Transformers",
+      "vertical": "ai_ml",
+      "primaryQuery": "transformer architecture",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.2,
+        "compareDepth": 3,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.2,
+        "semanticExplanationRatio": 0.2,
+        "shallowAuthorityShare": 0.2,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.5633333333333332,
+        "topicTrustScore": 33,
+        "researchGradeScore": 34
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "citeDensity 0.20<0.25"
+      ],
+      "distanceToElite": 0.4,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "inference",
+      "label": "LLM inference",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm inference",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 4,
+        "uniqueCreators": 2,
+        "citationDensity": 0.2,
+        "compareDepth": 4,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.4,
+        "semanticExplanationRatio": 0.2,
+        "shallowAuthorityShare": 0.6,
+        "conversationalShare": 0.2,
+        "repeatSearchPotential": 0.6925,
+        "topicTrustScore": 30,
+        "researchGradeScore": 31
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "citeDensity 0.20<0.25"
+      ],
+      "distanceToElite": 0.75,
+      "ingestionPriority": 121,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "fine-tuning",
+      "label": "Fine-tuning",
+      "vertical": "ai_ml",
+      "primaryQuery": "fine tuning llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 7,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.8571428571428571,
+        "compareDepth": 3,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8571428571428571,
+        "shallowAuthorityShare": 0.2857142857142857,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.6827380952380951,
+        "topicTrustScore": 53,
+        "researchGradeScore": 52
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.54,
+      "ingestionPriority": 105,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "context-windows",
+      "label": "Context windows",
+      "vertical": "ai_ml",
+      "primaryQuery": "context window llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.42500000000000004,
+        "topicTrustScore": 54,
+        "researchGradeScore": 51
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 150,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "llm-evals",
+      "label": "LLM evaluation",
+      "vertical": "safety_eval",
+      "primaryQuery": "llm evals",
+      "requirements": {
+        "minIndexedVideos": 3,
+        "minUniqueCreators": 3,
+        "minCitationDensity": 0.4,
+        "minCompareDepth": 3,
+        "minSourceDiversity": 3,
+        "minPrimarySourceCoverage": 0.25,
+        "minSemanticExplanationRatio": 0.35
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<3",
+        "creators 0<3",
+        "citeDensity 0.00<0.4",
+        "compareDepth 0<3",
+        "sourceDiversity 0<3",
+        "primarySource 0.00<0.25",
+        "semantic 0.00<0.35"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "ai-agents",
+      "label": "AI agents",
+      "vertical": "ai_ml",
+      "primaryQuery": "ai agents",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 10,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0.8,
+        "compareDepth": 1,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0.3,
+        "repeatSearchPotential": 0.4575,
+        "topicTrustScore": 23,
+        "researchGradeScore": 19
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.65,
+      "ingestionPriority": 180,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "prompt-engineering",
+      "label": "Prompt engineering",
+      "vertical": "ai_ml",
+      "primaryQuery": "prompt engineering",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "large-language-models",
+      "label": "Large language models",
+      "vertical": "ai_ml",
+      "primaryQuery": "large language models",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 27,
+        "indexedVideos": 11,
+        "uniqueCreators": 8,
+        "citationDensity": 0.6296296296296297,
+        "compareDepth": 8,
+        "sourceDiversity": 6,
+        "primarySourceRatio": 0.1111111111111111,
+        "semanticExplanationRatio": 0.6296296296296297,
+        "shallowAuthorityShare": 0.6666666666666666,
+        "conversationalShare": 0.14814814814814814,
+        "repeatSearchPotential": 0.8194444444444444,
+        "topicTrustScore": 47,
+        "researchGradeScore": 52
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.11<0.15"
+      ],
+      "distanceToElite": 0.61,
+      "ingestionPriority": 110,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "vertical": "ai_ml",
+      "primaryQuery": "reinforcement learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 6,
+        "indexedVideos": 2,
+        "uniqueCreators": 3,
+        "citationDensity": 0.8333333333333334,
+        "compareDepth": 2,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8333333333333334,
+        "shallowAuthorityShare": 0.16666666666666666,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.55,
+        "topicTrustScore": 51,
+        "researchGradeScore": 49
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.65,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "attention-mechanism",
+      "label": "Attention mechanism",
+      "vertical": "ai_ml",
+      "primaryQuery": "attention mechanism",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "neural-networks",
+      "label": "Neural networks",
+      "vertical": "ai_ml",
+      "primaryQuery": "neural networks explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 12,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.5833333333333334,
+        "compareDepth": 3,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.5833333333333334,
+        "shallowAuthorityShare": 0.16666666666666666,
+        "conversationalShare": 0.16666666666666666,
+        "repeatSearchPotential": 0.5583333333333332,
+        "topicTrustScore": 41,
+        "researchGradeScore": 41
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.45,
+      "ingestionPriority": 107,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "backpropagation",
+      "label": "Backpropagation",
+      "vertical": "ai_ml",
+      "primaryQuery": "backpropagation",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": -14,
+        "researchGradeScore": -16
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "gradient-descent",
+      "label": "Gradient descent",
+      "vertical": "ai_ml",
+      "primaryQuery": "gradient descent",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": -14,
+        "researchGradeScore": -16
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "rag-chunking",
+      "label": "RAG chunking",
+      "vertical": "ai_ml",
+      "primaryQuery": "rag chunking strategy",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "semantic-search",
+      "label": "Semantic search",
+      "vertical": "ai_ml",
+      "primaryQuery": "semantic search",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "hallucination-mitigation",
+      "label": "Hallucination mitigation",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm hallucination",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "mixture-of-experts",
+      "label": "Mixture of experts",
+      "vertical": "ai_ml",
+      "primaryQuery": "mixture of experts",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.3833333333333333,
+        "topicTrustScore": 32,
+        "researchGradeScore": 26
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.85,
+      "ingestionPriority": 183,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "ai-safety",
+      "label": "AI safety",
+      "vertical": "safety_eval",
+      "primaryQuery": "ai safety",
+      "requirements": {
+        "minIndexedVideos": 3,
+        "minUniqueCreators": 3,
+        "minCitationDensity": 0.4,
+        "minCompareDepth": 3,
+        "minSourceDiversity": 3,
+        "minPrimarySourceCoverage": 0.25,
+        "minSemanticExplanationRatio": 0.35
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.275,
+        "topicTrustScore": -14,
+        "researchGradeScore": -15
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<3",
+        "creators 1<3",
+        "citeDensity 0.00<0.4",
+        "compareDepth 1<3",
+        "sourceDiversity 1<3",
+        "primarySource 0.00<0.25",
+        "semantic 0.00<0.35"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "ai-policy-scaling",
+      "label": "AI policy & scaling",
+      "vertical": "safety_eval",
+      "primaryQuery": "ai policy scaling",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "red-teaming-llm",
+      "label": "Red teaming LLMs",
+      "vertical": "safety_eval",
+      "primaryQuery": "red teaming llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "model-guardrails",
+      "label": "Model guardrails",
+      "vertical": "safety_eval",
+      "primaryQuery": "llm guardrails",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "kubernetes",
+      "label": "Kubernetes",
+      "vertical": "devops",
+      "primaryQuery": "kubernetes explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 16,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.0625,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.0625,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.371875,
+        "topicTrustScore": 15,
+        "researchGradeScore": 17
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "citeDensity 0.06<0.25",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.06<0.2"
+      ],
+      "distanceToElite": 1.48,
+      "ingestionPriority": 178,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "kubernetes-scheduling",
+      "label": "Kubernetes scheduling",
+      "vertical": "devops",
+      "primaryQuery": "kubernetes scheduling",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "docker",
+      "label": "Docker",
+      "vertical": "devops",
+      "primaryQuery": "docker containers",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 17,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.35294117647058826,
+        "compareDepth": 3,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.35294117647058826,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.4612745098039215,
+        "topicTrustScore": 32,
+        "researchGradeScore": 34
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.7,
+      "ingestionPriority": 118,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "devops",
+      "label": "DevOps",
+      "vertical": "devops",
+      "primaryQuery": "devops practices",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.36363636363636365,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.36363636363636365,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.37537878787878787,
+        "topicTrustScore": 29,
+        "researchGradeScore": 29
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.89,
+      "ingestionPriority": 125,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "system-design",
+      "label": "System design",
+      "vertical": "devops",
+      "primaryQuery": "system design interview",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "distributed-systems",
+      "label": "Distributed systems",
+      "vertical": "devops",
+      "primaryQuery": "distributed systems",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "microservices",
+      "label": "Microservices",
+      "vertical": "devops",
+      "primaryQuery": "microservices architecture",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "observability",
+      "label": "Observability",
+      "vertical": "devops",
+      "primaryQuery": "observability engineering",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "terraform",
+      "label": "Terraform",
+      "vertical": "devops",
+      "primaryQuery": "terraform tutorial",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": 8,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 1.8,
+      "ingestionPriority": 191,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "networking-fundamentals",
+      "label": "Networking fundamentals",
+      "vertical": "devops",
+      "primaryQuery": "computer networking explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "react-hooks",
+      "label": "React hooks",
+      "vertical": "frontend",
+      "primaryQuery": "react hooks",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 10,
+        "indexedVideos": 1,
+        "uniqueCreators": 2,
+        "citationDensity": 0.7,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.7,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.38,
+        "topicTrustScore": 40,
+        "researchGradeScore": 39
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 156,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "typescript",
+      "label": "TypeScript",
+      "vertical": "frontend",
+      "primaryQuery": "typescript tutorial",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": 8,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 1.8,
+      "ingestionPriority": 191,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "javascript",
+      "label": "JavaScript",
+      "vertical": "frontend",
+      "primaryQuery": "javascript fundamentals",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 22,
+        "indexedVideos": 10,
+        "uniqueCreators": 5,
+        "citationDensity": 0.18181818181818182,
+        "compareDepth": 8,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0.045454545454545456,
+        "semanticExplanationRatio": 0.09090909090909091,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0.045454545454545456,
+        "repeatSearchPotential": 0.5856060606060606,
+        "topicTrustScore": 31,
+        "researchGradeScore": 38
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "citeDensity 0.18<0.25",
+        "primarySource 0.05<0.15",
+        "semantic 0.09<0.2"
+      ],
+      "distanceToElite": 0.88,
+      "ingestionPriority": 154,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "nextjs",
+      "label": "Next.js",
+      "vertical": "frontend",
+      "primaryQuery": "nextjs tutorial",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": 8,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 1.8,
+      "ingestionPriority": 191,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "graphql",
+      "label": "GraphQL",
+      "vertical": "frontend",
+      "primaryQuery": "graphql explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "state-management",
+      "label": "State management",
+      "vertical": "frontend",
+      "primaryQuery": "react state management",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 3,
+        "citationDensity": 0.6363636363636364,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6363636363636364,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.45795454545454545,
+        "topicTrustScore": 41,
+        "researchGradeScore": 41
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.85,
+      "ingestionPriority": 119,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "web-performance",
+      "label": "Web performance",
+      "vertical": "frontend",
+      "primaryQuery": "web performance optimization",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "startup-strategy",
+      "label": "Startup strategy",
+      "vertical": "startups",
+      "primaryQuery": "startup strategy",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "product-market-fit",
+      "label": "Product-market fit",
+      "vertical": "startups",
+      "primaryQuery": "product market fit",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "fundraising",
+      "label": "Fundraising",
+      "vertical": "startups",
+      "primaryQuery": "startup fundraising",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "saas-pricing",
+      "label": "SaaS pricing",
+      "vertical": "startups",
+      "primaryQuery": "saas pricing strategy",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "go-to-market",
+      "label": "Go-to-market",
+      "vertical": "startups",
+      "primaryQuery": "go to market strategy",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "competitive-moat",
+      "label": "Competitive moat",
+      "vertical": "startups",
+      "primaryQuery": "competitive moat startup",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "machine-learning",
+      "label": "Machine learning",
+      "vertical": "education",
+      "primaryQuery": "machine learning course",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 13,
+        "indexedVideos": 4,
+        "uniqueCreators": 3,
+        "citationDensity": 0.38461538461538464,
+        "compareDepth": 4,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.38461538461538464,
+        "shallowAuthorityShare": 0.07692307692307693,
+        "conversationalShare": 0.15384615384615385,
+        "repeatSearchPotential": 0.6160256410256411,
+        "topicTrustScore": 38,
+        "researchGradeScore": 40
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.47,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "vertical": "education",
+      "primaryQuery": "statistics for machine learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 8,
+        "indexedVideos": 5,
+        "uniqueCreators": 4,
+        "citationDensity": 0.625,
+        "compareDepth": 5,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.125,
+        "semanticExplanationRatio": 0.625,
+        "shallowAuthorityShare": 0.125,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.7145833333333333,
+        "topicTrustScore": 57,
+        "researchGradeScore": 61
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.13<0.15"
+      ],
+      "distanceToElite": 0.13,
+      "ingestionPriority": 91,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "linear-algebra-ml",
+      "label": "Linear algebra for ML",
+      "vertical": "education",
+      "primaryQuery": "linear algebra machine learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "computer-vision",
+      "label": "Computer vision",
+      "vertical": "education",
+      "primaryQuery": "computer vision explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "nlp-fundamentals",
+      "label": "NLP fundamentals",
+      "vertical": "education",
+      "primaryQuery": "natural language processing",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 3,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.6666666666666666,
+        "compareDepth": 2,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6666666666666666,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0.3333333333333333,
+        "repeatSearchPotential": 0.5458333333333333,
+        "topicTrustScore": 25,
+        "researchGradeScore": 21
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.25,
+      "ingestionPriority": 138,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "database-design",
+      "label": "Database design",
+      "vertical": "education",
+      "primaryQuery": "database design explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.8181818181818182,
+        "compareDepth": 2,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0.09090909090909091,
+        "semanticExplanationRatio": 0.8181818181818182,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.5477272727272727,
+        "topicTrustScore": 56,
+        "researchGradeScore": 54
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.09<0.15"
+      ],
+      "distanceToElite": 0.56,
+      "ingestionPriority": 104,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "api-design",
+      "label": "API design",
+      "vertical": "education",
+      "primaryQuery": "rest api design",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "security-fundamentals",
+      "label": "Security fundamentals",
+      "vertical": "education",
+      "primaryQuery": "cybersecurity basics",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "open-source-ai",
+      "label": "Open-source AI",
+      "vertical": "ai_ml",
+      "primaryQuery": "open source llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.4,
+        "compareDepth": 3,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.4,
+        "shallowAuthorityShare": 0.8,
+        "conversationalShare": 0.6,
+        "repeatSearchPotential": 0.635,
+        "topicTrustScore": 18,
+        "researchGradeScore": 17
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.85,
+      "ingestionPriority": 128,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "gpu-training",
+      "label": "GPU training",
+      "vertical": "ai_ml",
+      "primaryQuery": "gpu training deep learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0.6,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.32333333333333336,
+        "topicTrustScore": 14,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.85,
+      "ingestionPriority": 190,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "data-pipelines",
+      "label": "Data pipelines",
+      "vertical": "ai_ml",
+      "primaryQuery": "data pipeline architecture",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "rag-evaluation",
+      "label": "RAG evaluation",
+      "vertical": "safety_eval",
+      "primaryQuery": "rag evaluation metrics",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "constitutional-ai",
+      "label": "Constitutional AI",
+      "vertical": "safety_eval",
+      "primaryQuery": "constitutional ai",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": 8,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 1.8,
+      "ingestionPriority": 191,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "multimodal-models",
+      "label": "Multimodal models",
+      "vertical": "ai_ml",
+      "primaryQuery": "multimodal llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 1,
+        "uniqueCreators": 2,
+        "citationDensity": 0.8,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.35333333333333333,
+        "topicTrustScore": 45,
+        "researchGradeScore": 43
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 154,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "quantization",
+      "label": "Quantization",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm quantization",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "agents-tool-use",
+      "label": "Agents & tool use",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm tool use",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "memory-agents",
+      "label": "Agent memory",
+      "vertical": "ai_ml",
+      "primaryQuery": "ai agent memory",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 10,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0.8,
+        "compareDepth": 1,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0.3,
+        "repeatSearchPotential": 0.41583333333333333,
+        "topicTrustScore": 23,
+        "researchGradeScore": 18
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.65,
+      "ingestionPriority": 180,
+      "notes": []
+    }
+  ],
+  "eliteTopics": [],
+  "weakestFlagshipTopics": [
+    {
+      "canonicalSlug": "backpropagation",
+      "label": "Backpropagation",
+      "vertical": "ai_ml",
+      "primaryQuery": "backpropagation",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": -14,
+        "researchGradeScore": -16
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "gradient-descent",
+      "label": "Gradient descent",
+      "vertical": "ai_ml",
+      "primaryQuery": "gradient descent",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 2,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.23333333333333334,
+        "topicTrustScore": -14,
+        "researchGradeScore": -16
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "ai-safety",
+      "label": "AI safety",
+      "vertical": "safety_eval",
+      "primaryQuery": "ai safety",
+      "requirements": {
+        "minIndexedVideos": 3,
+        "minUniqueCreators": 3,
+        "minCitationDensity": 0.4,
+        "minCompareDepth": 3,
+        "minSourceDiversity": 3,
+        "minPrimarySourceCoverage": 0.25,
+        "minSemanticExplanationRatio": 0.35
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.275,
+        "topicTrustScore": -14,
+        "researchGradeScore": -15
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<3",
+        "creators 1<3",
+        "citeDensity 0.00<0.4",
+        "compareDepth 1<3",
+        "sourceDiversity 1<3",
+        "primarySource 0.00<0.25",
+        "semantic 0.00<0.35"
+      ],
+      "distanceToElite": 2.6,
+      "ingestionPriority": 224,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "llm-evals",
+      "label": "LLM evaluation",
+      "vertical": "safety_eval",
+      "primaryQuery": "llm evals",
+      "requirements": {
+        "minIndexedVideos": 3,
+        "minUniqueCreators": 3,
+        "minCitationDensity": 0.4,
+        "minCompareDepth": 3,
+        "minSourceDiversity": 3,
+        "minPrimarySourceCoverage": 0.25,
+        "minSemanticExplanationRatio": 0.35
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<3",
+        "creators 0<3",
+        "citeDensity 0.00<0.4",
+        "compareDepth 0<3",
+        "sourceDiversity 0<3",
+        "primarySource 0.00<0.25",
+        "semantic 0.00<0.35"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "prompt-engineering",
+      "label": "Prompt engineering",
+      "vertical": "ai_ml",
+      "primaryQuery": "prompt engineering",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "attention-mechanism",
+      "label": "Attention mechanism",
+      "vertical": "ai_ml",
+      "primaryQuery": "attention mechanism",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "rag-chunking",
+      "label": "RAG chunking",
+      "vertical": "ai_ml",
+      "primaryQuery": "rag chunking strategy",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "semantic-search",
+      "label": "Semantic search",
+      "vertical": "ai_ml",
+      "primaryQuery": "semantic search",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "hallucination-mitigation",
+      "label": "Hallucination mitigation",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm hallucination",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "ai-policy-scaling",
+      "label": "AI policy & scaling",
+      "vertical": "safety_eval",
+      "primaryQuery": "ai policy scaling",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "red-teaming-llm",
+      "label": "Red teaming LLMs",
+      "vertical": "safety_eval",
+      "primaryQuery": "red teaming llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "model-guardrails",
+      "label": "Model guardrails",
+      "vertical": "safety_eval",
+      "primaryQuery": "llm guardrails",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "kubernetes-scheduling",
+      "label": "Kubernetes scheduling",
+      "vertical": "devops",
+      "primaryQuery": "kubernetes scheduling",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.08333333333333333,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "system-design",
+      "label": "System design",
+      "vertical": "devops",
+      "primaryQuery": "system design interview",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "distributed-systems",
+      "label": "Distributed systems",
+      "vertical": "devops",
+      "primaryQuery": "distributed systems",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 0,
+        "indexedVideos": 0,
+        "uniqueCreators": 0,
+        "citationDensity": 0,
+        "compareDepth": 0,
+        "sourceDiversity": 0,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.125,
+        "topicTrustScore": 0,
+        "researchGradeScore": 1
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 0<2",
+        "creators 0<2",
+        "citeDensity 0.00<0.25",
+        "compareDepth 0<2",
+        "sourceDiversity 0<2",
+        "primarySource 0.00<0.15",
+        "semantic 0.00<0.2"
+      ],
+      "distanceToElite": 2.2,
+      "ingestionPriority": 206,
+      "notes": []
+    }
+  ],
+  "closestToElite": [
+    {
+      "canonicalSlug": "rag",
+      "label": "RAG (retrieval-augmented generation)",
+      "vertical": "ai_ml",
+      "primaryQuery": "what is rag",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 9,
+        "indexedVideos": 6,
+        "uniqueCreators": 5,
+        "citationDensity": 0.4444444444444444,
+        "compareDepth": 6,
+        "sourceDiversity": 4,
+        "primarySourceRatio": 0.2222222222222222,
+        "semanticExplanationRatio": 0.4444444444444444,
+        "shallowAuthorityShare": 0.1111111111111111,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.75,
+        "topicTrustScore": 55,
+        "researchGradeScore": 59
+      },
+      "tier": "strong",
+      "failedRequirements": [],
+      "distanceToElite": 0.03,
+      "ingestionPriority": 59,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "vertical": "education",
+      "primaryQuery": "statistics for machine learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 8,
+        "indexedVideos": 5,
+        "uniqueCreators": 4,
+        "citationDensity": 0.625,
+        "compareDepth": 5,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.125,
+        "semanticExplanationRatio": 0.625,
+        "shallowAuthorityShare": 0.125,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.7145833333333333,
+        "topicTrustScore": 57,
+        "researchGradeScore": 61
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.13<0.15"
+      ],
+      "distanceToElite": 0.13,
+      "ingestionPriority": 91,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "transformers",
+      "label": "Transformers",
+      "vertical": "ai_ml",
+      "primaryQuery": "transformer architecture",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.2,
+        "compareDepth": 3,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.2,
+        "semanticExplanationRatio": 0.2,
+        "shallowAuthorityShare": 0.2,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.5633333333333332,
+        "topicTrustScore": 33,
+        "researchGradeScore": 34
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "citeDensity 0.20<0.25"
+      ],
+      "distanceToElite": 0.4,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "neural-networks",
+      "label": "Neural networks",
+      "vertical": "ai_ml",
+      "primaryQuery": "neural networks explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 12,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.5833333333333334,
+        "compareDepth": 3,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.5833333333333334,
+        "shallowAuthorityShare": 0.16666666666666666,
+        "conversationalShare": 0.16666666666666666,
+        "repeatSearchPotential": 0.5583333333333332,
+        "topicTrustScore": 41,
+        "researchGradeScore": 41
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.45,
+      "ingestionPriority": 107,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "machine-learning",
+      "label": "Machine learning",
+      "vertical": "education",
+      "primaryQuery": "machine learning course",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 13,
+        "indexedVideos": 4,
+        "uniqueCreators": 3,
+        "citationDensity": 0.38461538461538464,
+        "compareDepth": 4,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.38461538461538464,
+        "shallowAuthorityShare": 0.07692307692307693,
+        "conversationalShare": 0.15384615384615385,
+        "repeatSearchPotential": 0.6160256410256411,
+        "topicTrustScore": 38,
+        "researchGradeScore": 40
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.47,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "fine-tuning",
+      "label": "Fine-tuning",
+      "vertical": "ai_ml",
+      "primaryQuery": "fine tuning llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 7,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.8571428571428571,
+        "compareDepth": 3,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8571428571428571,
+        "shallowAuthorityShare": 0.2857142857142857,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.6827380952380951,
+        "topicTrustScore": 53,
+        "researchGradeScore": 52
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.54,
+      "ingestionPriority": 105,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "database-design",
+      "label": "Database design",
+      "vertical": "education",
+      "primaryQuery": "database design explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.8181818181818182,
+        "compareDepth": 2,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0.09090909090909091,
+        "semanticExplanationRatio": 0.8181818181818182,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.5477272727272727,
+        "topicTrustScore": 56,
+        "researchGradeScore": 54
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.09<0.15"
+      ],
+      "distanceToElite": 0.56,
+      "ingestionPriority": 104,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "large-language-models",
+      "label": "Large language models",
+      "vertical": "ai_ml",
+      "primaryQuery": "large language models",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 27,
+        "indexedVideos": 11,
+        "uniqueCreators": 8,
+        "citationDensity": 0.6296296296296297,
+        "compareDepth": 8,
+        "sourceDiversity": 6,
+        "primarySourceRatio": 0.1111111111111111,
+        "semanticExplanationRatio": 0.6296296296296297,
+        "shallowAuthorityShare": 0.6666666666666666,
+        "conversationalShare": 0.14814814814814814,
+        "repeatSearchPotential": 0.8194444444444444,
+        "topicTrustScore": 47,
+        "researchGradeScore": 52
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.11<0.15"
+      ],
+      "distanceToElite": 0.61,
+      "ingestionPriority": 110,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "vertical": "ai_ml",
+      "primaryQuery": "reinforcement learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 6,
+        "indexedVideos": 2,
+        "uniqueCreators": 3,
+        "citationDensity": 0.8333333333333334,
+        "compareDepth": 2,
+        "sourceDiversity": 2,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8333333333333334,
+        "shallowAuthorityShare": 0.16666666666666666,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.55,
+        "topicTrustScore": 51,
+        "researchGradeScore": 49
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.65,
+      "ingestionPriority": 109,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "docker",
+      "label": "Docker",
+      "vertical": "devops",
+      "primaryQuery": "docker containers",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 17,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.35294117647058826,
+        "compareDepth": 3,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.35294117647058826,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.4612745098039215,
+        "topicTrustScore": 32,
+        "researchGradeScore": 34
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.7,
+      "ingestionPriority": 118,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "inference",
+      "label": "LLM inference",
+      "vertical": "ai_ml",
+      "primaryQuery": "llm inference",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 4,
+        "uniqueCreators": 2,
+        "citationDensity": 0.2,
+        "compareDepth": 4,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0.4,
+        "semanticExplanationRatio": 0.2,
+        "shallowAuthorityShare": 0.6,
+        "conversationalShare": 0.2,
+        "repeatSearchPotential": 0.6925,
+        "topicTrustScore": 30,
+        "researchGradeScore": 31
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "citeDensity 0.20<0.25"
+      ],
+      "distanceToElite": 0.75,
+      "ingestionPriority": 121,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "state-management",
+      "label": "State management",
+      "vertical": "frontend",
+      "primaryQuery": "react state management",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 3,
+        "citationDensity": 0.6363636363636364,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6363636363636364,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.45795454545454545,
+        "topicTrustScore": 41,
+        "researchGradeScore": 41
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.85,
+      "ingestionPriority": 119,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "open-source-ai",
+      "label": "Open-source AI",
+      "vertical": "ai_ml",
+      "primaryQuery": "open source llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 3,
+        "uniqueCreators": 3,
+        "citationDensity": 0.4,
+        "compareDepth": 3,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.4,
+        "shallowAuthorityShare": 0.8,
+        "conversationalShare": 0.6,
+        "repeatSearchPotential": 0.635,
+        "topicTrustScore": 18,
+        "researchGradeScore": 17
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.85,
+      "ingestionPriority": 128,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "devops",
+      "label": "DevOps",
+      "vertical": "devops",
+      "primaryQuery": "devops practices",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.36363636363636365,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.36363636363636365,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.37537878787878787,
+        "topicTrustScore": 29,
+        "researchGradeScore": 29
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.89,
+      "ingestionPriority": 125,
+      "notes": []
+    },
+    {
+      "canonicalSlug": "nlp-fundamentals",
+      "label": "NLP fundamentals",
+      "vertical": "education",
+      "primaryQuery": "natural language processing",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 3,
+        "indexedVideos": 2,
+        "uniqueCreators": 2,
+        "citationDensity": 0.6666666666666666,
+        "compareDepth": 2,
+        "sourceDiversity": 3,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6666666666666666,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0.3333333333333333,
+        "repeatSearchPotential": 0.5458333333333333,
+        "topicTrustScore": 25,
+        "researchGradeScore": 21
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.25,
+      "ingestionPriority": 138,
+      "notes": []
+    }
+  ],
+  "highCitationLowDiversity": [
+    {
+      "canonicalSlug": "embeddings",
+      "label": "Embeddings",
+      "vertical": "ai_ml",
+      "primaryQuery": "embeddings explained",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.42500000000000004,
+        "topicTrustScore": 54,
+        "researchGradeScore": 51
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 150,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "context-windows",
+      "label": "Context windows",
+      "vertical": "ai_ml",
+      "primaryQuery": "context window llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.42500000000000004,
+        "topicTrustScore": 54,
+        "researchGradeScore": 51
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 150,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "mixture-of-experts",
+      "label": "Mixture of experts",
+      "vertical": "ai_ml",
+      "primaryQuery": "mixture of experts",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 1,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 1,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 1,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.3833333333333333,
+        "topicTrustScore": 32,
+        "researchGradeScore": 26
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.85,
+      "ingestionPriority": 183,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "multimodal-models",
+      "label": "Multimodal models",
+      "vertical": "ai_ml",
+      "primaryQuery": "multimodal llm",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 1,
+        "uniqueCreators": 2,
+        "citationDensity": 0.8,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.8,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.35333333333333333,
+        "topicTrustScore": 45,
+        "researchGradeScore": 43
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 154,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "react-hooks",
+      "label": "React hooks",
+      "vertical": "frontend",
+      "primaryQuery": "react hooks",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 10,
+        "indexedVideos": 1,
+        "uniqueCreators": 2,
+        "citationDensity": 0.7,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.7,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.38,
+        "topicTrustScore": 40,
+        "researchGradeScore": 39
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.05,
+      "ingestionPriority": 156,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "state-management",
+      "label": "State management",
+      "vertical": "frontend",
+      "primaryQuery": "react state management",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 11,
+        "indexedVideos": 2,
+        "uniqueCreators": 3,
+        "citationDensity": 0.6363636363636364,
+        "compareDepth": 2,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6363636363636364,
+        "shallowAuthorityShare": 0,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.45795454545454545,
+        "topicTrustScore": 41,
+        "researchGradeScore": 41
+      },
+      "tier": "weak",
+      "failedRequirements": [
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 0.85,
+      "ingestionPriority": 119,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    },
+    {
+      "canonicalSlug": "gpu-training",
+      "label": "GPU training",
+      "vertical": "ai_ml",
+      "primaryQuery": "gpu training deep learning",
+      "requirements": {
+        "minIndexedVideos": 2,
+        "minUniqueCreators": 2,
+        "minCitationDensity": 0.25,
+        "minCompareDepth": 2,
+        "minSourceDiversity": 2,
+        "minPrimarySourceCoverage": 0.15,
+        "minSemanticExplanationRatio": 0.2
+      },
+      "metrics": {
+        "momentCount": 5,
+        "indexedVideos": 1,
+        "uniqueCreators": 1,
+        "citationDensity": 0.6,
+        "compareDepth": 1,
+        "sourceDiversity": 1,
+        "primarySourceRatio": 0,
+        "semanticExplanationRatio": 0.6,
+        "shallowAuthorityShare": 1,
+        "conversationalShare": 0,
+        "repeatSearchPotential": 0.32333333333333336,
+        "topicTrustScore": 14,
+        "researchGradeScore": 9
+      },
+      "tier": "broken",
+      "failedRequirements": [
+        "videos 1<2",
+        "creators 1<2",
+        "compareDepth 1<2",
+        "sourceDiversity 1<2",
+        "primarySource 0.00<0.15"
+      ],
+      "distanceToElite": 1.85,
+      "ingestionPriority": 190,
+      "notes": [
+        "high citation but low creator/authority diversity"
+      ]
+    }
+  ],
+  "highDiversityWeakExplanations": [],
+  "researchMoatCandidates": [
+    {
+      "canonicalSlug": "statistics-for-ml",
+      "label": "Statistics for ML",
+      "momentCount": 8,
+      "citationDensity": 0.625,
+      "compareDepth": 5,
+      "researchGradeScore": 61,
+      "rationale": "Small corpus (8 moments) with cite density 63% and compare depth 5 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "database-design",
+      "label": "Database design",
+      "momentCount": 11,
+      "citationDensity": 0.8181818181818182,
+      "compareDepth": 2,
+      "researchGradeScore": 54,
+      "rationale": "Small corpus (11 moments) with cite density 82% and compare depth 2 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "fine-tuning",
+      "label": "Fine-tuning",
+      "momentCount": 7,
+      "citationDensity": 0.8571428571428571,
+      "compareDepth": 3,
+      "researchGradeScore": 52,
+      "rationale": "Small corpus (7 moments) with cite density 86% and compare depth 3 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "momentCount": 6,
+      "citationDensity": 0.8333333333333334,
+      "compareDepth": 2,
+      "researchGradeScore": 49,
+      "rationale": "Small corpus (6 moments) with cite density 83% and compare depth 2 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "neural-networks",
+      "label": "Neural networks",
+      "momentCount": 12,
+      "citationDensity": 0.5833333333333334,
+      "compareDepth": 3,
+      "researchGradeScore": 41,
+      "rationale": "Small corpus (12 moments) with cite density 58% and compare depth 3 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "state-management",
+      "label": "State management",
+      "momentCount": 11,
+      "citationDensity": 0.6363636363636364,
+      "compareDepth": 2,
+      "researchGradeScore": 41,
+      "rationale": "Small corpus (11 moments) with cite density 64% and compare depth 2 — high trust per hour indexed"
+    },
+    {
+      "canonicalSlug": "nlp-fundamentals",
+      "label": "NLP fundamentals",
+      "momentCount": 3,
+      "citationDensity": 0.6666666666666666,
+      "compareDepth": 2,
+      "researchGradeScore": 21,
+      "rationale": "Small corpus (3 moments) with cite density 67% and compare depth 2 — high trust per hour indexed"
+    }
+  ],
+  "topicTrustDrift": [],
+  "ingestionPriorities": [
+    {
+      "canonicalSlug": "backpropagation",
+      "label": "Backpropagation",
+      "priority": 224,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "gradient-descent",
+      "label": "Gradient descent",
+      "priority": 224,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "ai-safety",
+      "label": "AI safety",
+      "priority": 224,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "vector-databases",
+      "label": "Vector databases",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "llm-evals",
+      "label": "LLM evaluation",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "prompt-engineering",
+      "label": "Prompt engineering",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "attention-mechanism",
+      "label": "Attention mechanism",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "rag-chunking",
+      "label": "RAG chunking",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-024 Y Combinator — Lecture 1 - How to Start a Startup (Sam Altman, Dustin Mosko…",
+        "Wave 1: w1-028 a16z — The 1000x Developer with Amjad Masad…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "semantic-search",
+      "label": "Semantic search",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "hallucination-mitigation",
+      "label": "Hallucination mitigation",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "ai-policy-scaling",
+      "label": "AI policy & scaling",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "red-teaming-llm",
+      "label": "Red teaming LLMs",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "model-guardrails",
+      "label": "Model guardrails",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-001 Dwarkesh Patel — Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLM…",
+        "Wave 1: w1-002 Dwarkesh Patel — Dario Amodei — “We are near the end of the exponential”…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "kubernetes-scheduling",
+      "label": "Kubernetes scheduling",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-013 freeCodeCamp.org — Docker Containers and Kubernetes Fundamentals – Full Hands-O…",
+        "Wave 1: w1-014 freeCodeCamp.org — Docker and Kubernetes - Full Course for Beginners…",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "system-design",
+      "label": "System design",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "distributed-systems",
+      "label": "Distributed systems",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "microservices",
+      "label": "Microservices",
+      "priority": 206,
+      "actions": [
+        "Wave 1: w1-029 GOTO Conferences — The Many Meanings of Event-Driven Architecture • Martin Fowl…",
+        "Wave 1: w1-030 GOTO Conferences — When To Use Microservices (And When Not To!) • Sam Newman & …",
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter"
+      ]
+    },
+    {
+      "canonicalSlug": "observability",
+      "label": "Observability",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "networking-fundamentals",
+      "label": "Networking fundamentals",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    },
+    {
+      "canonicalSlug": "graphql",
+      "label": "GraphQL",
+      "priority": 206,
+      "actions": [
+        "Allowlist: prioritize Dwarkesh Patel (ai_research)",
+        "Add second creator/video with contrasting framing for compare depth",
+        "Index citation-dense tutorials or paper-walkthroughs, not interview chatter",
+        "Prioritize primary-source shaped content (docs, papers, official explainers)"
+      ]
+    }
+  ]
+}

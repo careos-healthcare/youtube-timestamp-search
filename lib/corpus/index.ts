@@ -33,6 +33,34 @@ export type {
   FlagshipTopicDefinition,
   FlagshipTopicMinimums,
 } from "./flagship-topics";
+export {
+  listHighSignalTopics,
+  getHighSignalTopicBySlug,
+  matchMomentsToHighSignalTopic,
+  HIGH_SIGNAL_TOPICS,
+  HIGH_SIGNAL_DEFAULT_REQUIREMENTS,
+  HIGH_SIGNAL_ELITE_REQUIREMENTS,
+} from "./high-signal-topics";
+export type {
+  HighSignalTopicDefinition,
+  HighSignalTrustRequirements,
+  HighSignalVertical,
+} from "./high-signal-topics";
+export {
+  buildResearchGradeTopicReport,
+  scoreTopicResearchGrade,
+  classifyResearchGradeTier,
+  detectResearchMoatCandidates,
+  detectTopicTrustDrift,
+  formatResearchGradeTopicMarkdown,
+} from "./topic-research-grade";
+export type {
+  ResearchGradeTopicReport,
+  ResearchGradeTier,
+  TopicResearchGradeRow,
+  ResearchMoatCandidate,
+  TopicTrustDriftSignal,
+} from "./topic-research-grade";
 export type { MissingCorpusFinding, SourceIndexRequestRecord } from "./missing-corpus";
 export { WAVE1_TARGET_TOPICS, WAVE1_TARGET_TOPIC_SET } from "./ingestion-wave-1-target-topics";
 export type { Wave1TargetTopic } from "./ingestion-wave-1-target-topics";
