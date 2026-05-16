@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-05-16T03:29:17.185Z",
+  "findings": [
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “kubernetes-beginners” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “perl-programming” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “backend-python” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “docker-devops” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “adam-marblestone” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “bootstrap” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "low_depth_topic",
+      "detail": "Topic “react-native” has 1 videos / 1 creators — weak comparison depth",
+      "weight": 2
+    },
+    {
+      "kind": "search_seed_gap",
+      "detail": "High-priority allowlist channel “Hugging Face” not detected in indexed moment channel names",
+      "weight": 1
+    },
+    {
+      "kind": "search_seed_gap",
+      "detail": "High-priority allowlist channel “Berkeley AI Research” not detected in indexed moment channel names",
+      "weight": 1
+    },
+    {
+      "kind": "search_seed_gap",
+      "detail": "High-priority allowlist channel “GOTO Conferences” not detected in indexed moment channel names",
+      "weight": 1
+    },
+    {
+      "kind": "search_seed_gap",
+      "detail": "High-priority allowlist channel “Strange Loop Conference” not detected in indexed moment channel names",
+      "weight": 1
+    }
+  ],
+  "requestCount": 0
+}

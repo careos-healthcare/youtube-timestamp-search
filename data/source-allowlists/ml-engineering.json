@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "ml_engineering",
+  "sources": [
+    {
+      "channelName": "freeCodeCamp.org",
+      "channelId": null,
+      "category": "ml_engineering",
+      "sourceType": "youtube_channel",
+      "trustTier": "medium",
+      "explanationDensityEstimate": 0.65,
+      "citationLikelihood": 0.55,
+      "ingestPriority": 78,
+      "notes": "Long courses; prefer ML fine-tuning / systems playlists over shorts.",
+      "enabled": true
+    },
+    {
+      "channelName": "Hugging Face",
+      "channelId": null,
+      "category": "ml_engineering",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.7,
+      "citationLikelihood": 0.66,
+      "ingestPriority": 90,
+      "notes": "Library-adjacent tutorials and talks.",
+      "enabled": true
+    }
+  ]
+}

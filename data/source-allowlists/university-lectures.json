@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "category": "university_lectures",
+  "sources": [
+    {
+      "channelName": "MIT OpenCourseWare",
+      "channelId": null,
+      "category": "university_lectures",
+      "sourceType": "university_course",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.75,
+      "citationLikelihood": 0.72,
+      "ingestPriority": 93,
+      "notes": "Primary-style lecture corpus; long-form only.",
+      "enabled": true
+    },
+    {
+      "channelName": "Stanford Online",
+      "channelId": null,
+      "category": "university_lectures",
+      "sourceType": "university_course",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.73,
+      "citationLikelihood": 0.7,
+      "ingestPriority": 91,
+      "notes": "CS / AI lecture series; verify caption quality.",
+      "enabled": true
+    },
+    {
+      "channelName": "Berkeley AI Research",
+      "channelId": null,
+      "category": "university_lectures",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.76,
+      "citationLikelihood": 0.74,
+      "ingestPriority": 92,
+      "notes": "Research seminars; high citation potential.",
+      "enabled": true
+    }
+  ]
+}

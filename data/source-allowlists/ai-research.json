@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "category": "ai_research",
+  "sources": [
+    {
+      "channelName": "Dwarkesh Patel",
+      "channelId": null,
+      "category": "ai_research",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.72,
+      "citationLikelihood": 0.68,
+      "ingestPriority": 95,
+      "notes": "Long-form technical interviews; primary corpus target.",
+      "enabled": true
+    },
+    {
+      "channelName": "Lex Fridman",
+      "channelId": null,
+      "category": "ai_research",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.7,
+      "citationLikelihood": 0.62,
+      "ingestPriority": 92,
+      "notes": "Mixed depth; filter for technical episodes at ingest time.",
+      "enabled": true
+    },
+    {
+      "channelName": "Yannic Kilcher",
+      "channelId": null,
+      "category": "ai_research",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.78,
+      "citationLikelihood": 0.74,
+      "ingestPriority": 94,
+      "notes": "Paper walkthroughs; high technical density prior.",
+      "enabled": true
+    }
+  ]
+}

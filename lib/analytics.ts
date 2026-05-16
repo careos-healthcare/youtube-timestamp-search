@@ -71,7 +71,13 @@ export type AnalyticsEventName =
   | "source_index_request"
   | "collection_page_view"
   | "collection_moment_click"
-  | "saved_library_export";
+  | "saved_library_export"
+  | "source_allowlist_match"
+  | "ingestion_source_scored"
+  | "source_promoted"
+  | "source_rejected"
+  | "source_request_received"
+  | "missing_corpus_detected";
 
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

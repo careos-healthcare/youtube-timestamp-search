@@ -1,0 +1,1315 @@
+{
+  "generatedAt": "2026-05-16T03:29:16.715Z",
+  "rows": [
+    {
+      "topic": "uncategorized",
+      "numberOfMoments": 56,
+      "numberOfVideos": 22,
+      "uniqueCreators": 5,
+      "authorityDiversity": 5,
+      "beginnerCoverage": 0.875,
+      "technicalCoverage": 0.35714285714285715,
+      "counterpointCoverage": 0.10714285714285714,
+      "citationRichCoverage": 1,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "docker container and how to create different containers",
+          "share": 0.017857142857142856
+        },
+        {
+          "phrase": "agi, which is artificial general intelligence, and what is asi, artificial superintelligence, and what are the language",
+          "share": 0.017857142857142856
+        },
+        {
+          "phrase": "pre-training and what is posttraining",
+          "share": 0.017857142857142856
+        }
+      ],
+      "weakComparisonDepth": false,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "kubernetes-beginners",
+      "numberOfMoments": 9,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0.2222222222222222,
+      "counterpointCoverage": 0.1111111111111111,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "kubernetes",
+          "share": 0.1111111111111111
+        },
+        {
+          "phrase": "different",
+          "share": 0.1111111111111111
+        },
+        {
+          "phrase": "deployments",
+          "share": 0.1111111111111111
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "perl-programming",
+      "numberOfMoments": 8,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0.25,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 0.125
+        },
+        {
+          "phrase": "exercises",
+          "share": 0.125
+        },
+        {
+          "phrase": "actually",
+          "share": 0.125
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "backend-python",
+      "numberOfMoments": 7,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0.2857142857142857,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "different",
+          "share": 0.14285714285714285
+        },
+        {
+          "phrase": "actually",
+          "share": 0.14285714285714285
+        },
+        {
+          "phrase": "important",
+          "share": 0.14285714285714285
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "docker-devops",
+      "numberOfMoments": 6,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0.6666666666666666,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "kubernetes",
+          "share": 0.16666666666666666
+        },
+        {
+          "phrase": "container",
+          "share": 0.16666666666666666
+        },
+        {
+          "phrase": "containers",
+          "share": 0.16666666666666666
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "adam-marblestone",
+      "numberOfMoments": 5,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 2,
+      "beginnerCoverage": 0.6,
+      "technicalCoverage": 0.2,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "inference",
+          "share": 0.2
+        },
+        {
+          "phrase": "learning",
+          "share": 0.2
+        },
+        {
+          "phrase": "steering",
+          "share": 0.2
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "bootstrap",
+      "numberOfMoments": 5,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0.4,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0.6,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "probability",
+          "share": 0.2
+        },
+        {
+          "phrase": "different",
+          "share": 0.2
+        },
+        {
+          "phrase": "positive",
+          "share": 0.2
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "react-native",
+      "numberOfMoments": 5,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0.4,
+      "counterpointCoverage": 0.2,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "algorithm",
+          "share": 0.2
+        },
+        {
+          "phrase": "actually",
+          "share": 0.2
+        },
+        {
+          "phrase": "shortest",
+          "share": 0.2
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "c-programming",
+      "numberOfMoments": 4,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "basically",
+          "share": 0.25
+        },
+        {
+          "phrase": "function",
+          "share": 0.25
+        },
+        {
+          "phrase": "variable",
+          "share": 0.25
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "flask-tutorial",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "underscore",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "actually",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "transformers",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0.3333333333333333,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "essentially",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "function",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "mark-zuckerberg-llama",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0.3333333333333333,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "basically",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "actually",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "git-github",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0.3333333333333333,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "terminal",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "branches",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "repository",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "backend-development",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "component",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "essentially",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "whatever",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "angular-full-course",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "application",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "different",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "textview",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "dylan-patel-compute",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 2,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0.3333333333333333,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "capacity",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "gigawatts",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "anthropic",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "terence-tao",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 2,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "problems",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "progress",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "important",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "terminal",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0.3333333333333333,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "elements",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "different",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "processes",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "golang",
+      "numberOfMoments": 3,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "actually",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "function",
+          "share": 0.3333333333333333
+        },
+        {
+          "phrase": "computer",
+          "share": 0.3333333333333333
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "state-of-ai-2026",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "pre-training",
+          "share": 0.5
+        },
+        {
+          "phrase": "training",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "sergey-levine",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0.5,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "learning",
+          "share": 0.5
+        },
+        {
+          "phrase": "different",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "typescript-course",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "typescript",
+          "share": 0.5
+        },
+        {
+          "phrase": "javascript",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "react-context",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "databases",
+          "share": 0.5
+        },
+        {
+          "phrase": "database",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "nextjs-14",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "actually",
+          "share": 0.5
+        },
+        {
+          "phrase": "component",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "css",
+      "numberOfMoments": 2,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "actually",
+          "share": 0.5
+        },
+        {
+          "phrase": "different",
+          "share": 0.5
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "how-llms-trained",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "inference",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "ilya-sutskever",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "gemini-3",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "michael-levin",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "patterns",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "sql-fundamentals",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "machine-learning",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "claude-code",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "llm-fine-tuning",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "free-transformer-vae",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "inference",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "html5-css3",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "javascript",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "sam-altman-programming",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 1,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "predisposition",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "deepseek-openai-nvidia",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "michael-nielsen",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "certainly",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "china-energy-agi",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 1,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 1,
+      "topPhraseSaturation": [
+        {
+          "phrase": "actually",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "flask-python",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "javascript",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "energy-based-transformers",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "inference",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "nodejs-tutorial",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "javascript",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "grpo-deepseekmath",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "cs224n-glove",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "gpt4-system-card",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "nodejs-mongodb-oauth",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "modern-javascript",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "javascript",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "gan-paper",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "ai-scaling-alignment",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "deep-learning",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "patrick-collison",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "probably",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "aws",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 1,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "database",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "terraform",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "operator",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "sam-altman",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 0,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "postgress",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    },
+    {
+      "topic": "algorithms",
+      "numberOfMoments": 1,
+      "numberOfVideos": 1,
+      "uniqueCreators": 1,
+      "authorityDiversity": 1,
+      "beginnerCoverage": 0,
+      "technicalCoverage": 1,
+      "counterpointCoverage": 0,
+      "citationRichCoverage": 0,
+      "collectionCoverage": 0,
+      "topPhraseSaturation": [
+        {
+          "phrase": "training",
+          "share": 1
+        }
+      ],
+      "weakComparisonDepth": true,
+      "missingBeginner": false,
+      "missingCounterpoint": false
+    }
+  ]
+}

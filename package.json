@@ -38,7 +38,10 @@
     "report:topic-intelligence": "tsx scripts/build-topic-intelligence-report.ts",
     "test:moments": "node --import tsx --test lib/moments/semantic-moments.test.ts",
     "distribution:export-links": "tsx scripts/distribution-export-links.ts",
-    "validate:quality-signals": "tsx scripts/validate-quality-signals.ts"
+    "validate:quality-signals": "tsx scripts/validate-quality-signals.ts",
+    "topic-coverage-report": "tsx scripts/topic-coverage-report.ts",
+    "missing-corpus-report": "tsx scripts/missing-corpus-report.ts",
+    "corpus-health-report": "tsx scripts/corpus-health-report.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",

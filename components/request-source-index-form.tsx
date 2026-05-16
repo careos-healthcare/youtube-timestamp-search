@@ -35,6 +35,16 @@ export function RequestSourceIndexForm(props: { surface: SourceIndexRequestSurfa
       surface: props.surface,
       hasEmail: email.trim() ? "1" : "0",
     });
+    void fetch("/api/corpus/request-index", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        requestedUrl: trimmed,
+        topic: topic.trim() || undefined,
+        sourceType,
+        surface: props.surface,
+      }),
+    }).catch(() => {});
     setSent("ok");
     setUrl("");
     setTopic("");

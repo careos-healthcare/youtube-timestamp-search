@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "backend_devops",
+  "sources": [
+    {
+      "channelName": "freeCodeCamp",
+      "channelId": null,
+      "category": "backend_devops",
+      "sourceType": "youtube_channel",
+      "trustTier": "medium",
+      "explanationDensityEstimate": 0.62,
+      "citationLikelihood": 0.52,
+      "ingestPriority": 75,
+      "notes": "DevOps / Docker / K8s full courses; avoid duplicate uploads.",
+      "enabled": true
+    },
+    {
+      "channelName": "TechWorld with Nana",
+      "channelId": null,
+      "category": "backend_devops",
+      "sourceType": "youtube_channel",
+      "trustTier": "medium",
+      "explanationDensityEstimate": 0.6,
+      "citationLikelihood": 0.5,
+      "ingestPriority": 72,
+      "notes": "Infra walkthroughs; verify transcript density before bulk ingest.",
+      "enabled": true
+    }
+  ]
+}

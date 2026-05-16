@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "startup_founder",
+  "sources": [
+    {
+      "channelName": "Y Combinator",
+      "channelId": null,
+      "category": "startup_founder",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.58,
+      "citationLikelihood": 0.55,
+      "ingestPriority": 84,
+      "notes": "Startup talks; prefer full sessions over highlight reels.",
+      "enabled": true
+    },
+    {
+      "channelName": "a16z",
+      "channelId": null,
+      "category": "startup_founder",
+      "sourceType": "youtube_channel",
+      "trustTier": "medium",
+      "explanationDensityEstimate": 0.52,
+      "citationLikelihood": 0.48,
+      "ingestPriority": 70,
+      "notes": "Operator commentary — label as opinion-heavy at moment layer.",
+      "enabled": true
+    }
+  ]
+}

@@ -42,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local corpus pipeline analytics (append-only; do not commit noise)
+data/analytics/corpus-pipeline-events.jsonl

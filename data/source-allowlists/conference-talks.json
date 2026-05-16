@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "conference_talks",
+  "sources": [
+    {
+      "channelName": "GOTO Conferences",
+      "channelId": null,
+      "category": "conference_talks",
+      "sourceType": "conference_archive",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.66,
+      "citationLikelihood": 0.64,
+      "ingestPriority": 88,
+      "notes": "Engineering keynotes; prefer full talk uploads.",
+      "enabled": true
+    },
+    {
+      "channelName": "Strange Loop Conference",
+      "channelId": null,
+      "category": "conference_talks",
+      "sourceType": "conference_archive",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.7,
+      "citationLikelihood": 0.66,
+      "ingestPriority": 89,
+      "notes": "Deep technical stack; low volume, high signal.",
+      "enabled": true
+    }
+  ]
+}

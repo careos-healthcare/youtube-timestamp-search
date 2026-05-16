@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "programming_tutorials",
+  "sources": [
+    {
+      "channelName": "freeCodeCamp",
+      "channelId": null,
+      "category": "programming_tutorials",
+      "sourceType": "youtube_channel",
+      "trustTier": "medium",
+      "explanationDensityEstimate": 0.64,
+      "citationLikelihood": 0.5,
+      "ingestPriority": 76,
+      "notes": "Canonical long-form tutorials; dedupe overlapping curricula.",
+      "enabled": true
+    },
+    {
+      "channelName": "Corey Schafer",
+      "channelId": null,
+      "category": "programming_tutorials",
+      "sourceType": "youtube_channel",
+      "trustTier": "high",
+      "explanationDensityEstimate": 0.7,
+      "citationLikelihood": 0.58,
+      "ingestPriority": 86,
+      "notes": "Python / backend fundamentals; high repeat-research value.",
+      "enabled": true
+    }
+  ]
+}
