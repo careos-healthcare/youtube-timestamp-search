@@ -56,6 +56,7 @@
     "ingest:topic-deepening": "tsx scripts/ingest-topic-deepening.ts",
     "ingest:topic-deepening-rag": "tsx scripts/ingest-topic-deepening-rag.ts",
     "elite-topic-deepening": "tsx scripts/elite-topic-deepening-execution.ts",
+    "report:elite-showcase": "tsx scripts/elite-topic-showcase-report.ts",
     "test:retrieval-calibration": "node --import tsx --test lib/corpus/retrieval-calibration.test.ts",
     "test:research-session": "node --import tsx --test lib/research/research-session.test.ts",
     "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",

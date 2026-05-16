@@ -57,3 +57,13 @@ export {
   selectEliteProgramTopics,
 } from "./elite-topic-program";
 export type { EliteTopicProgram, EliteTopicProgramEntry } from "./elite-topic-program";
+export {
+  buildEliteTopicShowcaseReport,
+  formatEliteTopicShowcaseMarkdown,
+  ELITE_SHOWCASE_TOPIC_SLUGS,
+} from "./elite-topic-showcase";
+export type {
+  EliteTopicShowcaseReport,
+  EliteTopicShowcaseEntry,
+  ResearchSessionTestPlan,
+} from "./elite-topic-showcase";
