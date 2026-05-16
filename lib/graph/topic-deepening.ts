@@ -619,6 +619,14 @@ export type BuildTopicDeepeningInput = {
   rootDir?: string;
 };
 
+function effectiveCompareReadiness(
+  graphCompare: number,
+  row: TopicResearchGradeRow
+): number {
+  const fromGrade = Math.min(1, row.metrics.compareDepth / Math.max(1, row.requirements.minCompareDepth * 2));
+  return Math.max(graphCompare, fromGrade);
+}
+
 export function buildTopicDeepeningReport(input: BuildTopicDeepeningInput): TopicDeepeningReport {
   const root = input.rootDir ?? process.cwd();
   const { graph, researchGrade, moments } = input;
@@ -651,6 +659,7 @@ export function buildTopicDeepeningReport(input: BuildTopicDeepeningInput): Topi
 
     const metrics: TopicDeepeningMetrics = {
       ...graphSlice,
+      compareReadiness: effectiveCompareReadiness(graphSlice.compareReadiness, row),
       citationDensity: row.metrics.citationDensity,
       creatorDiversity: row.metrics.uniqueCreators,
       explanationRoleCoverage: explanation,

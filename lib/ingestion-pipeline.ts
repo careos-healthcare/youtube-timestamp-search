@@ -188,12 +188,13 @@ export async function runIngestionWorker(options?: {
   limit?: number;
   delayMs?: number;
   baseRetryDelayMs?: number;
+  videoIds?: string[];
 }) {
   const limit = options?.limit ?? Number(process.env.INGEST_WORKER_BATCH ?? 10);
   const delayMs = options?.delayMs ?? Number(process.env.SEED_DELAY_MS ?? 1500);
   const baseRetryDelayMs = options?.baseRetryDelayMs ?? delayMs;
   const paths = getIngestionQueuePaths();
-  const pending = getPendingJobs(limit, paths);
+  const pending = getPendingJobs(limit, paths, { videoIds: options?.videoIds });
 
   const result: WorkerRunResult = {
     processed: 0,

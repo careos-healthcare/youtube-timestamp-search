@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-16T15:41:42.062Z",
+  "generatedAt": "2026-05-16T15:58:00.769Z",
   "nodes": [
     {
       "id": "source:youtube",
@@ -717,6 +717,28 @@
       }
     },
     {
+      "id": "video:TrdevFK_am4",
+      "kind": "Video",
+      "label": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+        "channelName": "Yannic Kilcher",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s"
+      }
+    },
+    {
+      "id": "video:n1E9IZfvGMA",
+      "kind": "Video",
+      "label": "Dario Amodei — “We are near the end of the exponential”",
+      "properties": {
+        "videoId": "n1E9IZfvGMA",
+        "title": "Dario Amodei — “We are near the end of the exponential”",
+        "channelName": "Dwarkesh Patel",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s"
+      }
+    },
+    {
       "id": "topic:perl-programming",
       "kind": "Topic",
       "label": "perl-programming",
@@ -1305,6 +1327,28 @@
       "label": "how-llms-trained, transformers, llm-fine-tuning",
       "properties": {
         "slug": "how-llms-trained, transformers, llm-fine-tuning",
+        "researchGradeTier": null,
+        "momentCount": 2,
+        "hubQuality": null
+      }
+    },
+    {
+      "id": "topic:rag, rag, transformers, vector-database",
+      "kind": "Topic",
+      "label": "rag, rag, transformers, vector-database",
+      "properties": {
+        "slug": "rag, rag, transformers, vector-database",
+        "researchGradeTier": null,
+        "momentCount": 10,
+        "hubQuality": null
+      }
+    },
+    {
+      "id": "topic:llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+      "kind": "Topic",
+      "label": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+      "properties": {
+        "slug": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
         "researchGradeTier": null,
         "momentCount": 1,
         "hubQuality": null
@@ -11934,6 +11978,2166 @@
         "hasMarkdown": true,
         "hasAcademic": true
       }
+    },
+    {
+      "id": "moment:9eb888feff183e055fa5",
+      "kind": "PublicMoment",
+      "label": "it called bias because it will buy us our estimator our",
+      "properties": {
+        "momentId": "9eb888feff183e055fa5",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1476.1",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 24:36",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1476.1,
+        "anchorMomentId": "9eb888feff183e055fa5"
+      }
+    },
+    {
+      "id": "explanation:9eb888feff183e055fa5",
+      "kind": "Explanation",
+      "label": "Explanation — it called bias because it will buy us our estima",
+      "properties": {
+        "anchorMomentId": "9eb888feff183e055fa5",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:9eb888feff183e055fa5",
+      "kind": "ClaimLikeStatement",
+      "label": "it called bias because it will buy us our estimator our",
+      "properties": {
+        "anchorMomentId": "9eb888feff183e055fa5",
+        "phrase": "it called bias because it will buy us our estimator our",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:9eb888feff183e055fa5",
+      "kind": "Citation",
+      "label": "Citation — 9eb888feff183e055fa5",
+      "properties": {
+        "anchorMomentId": "9eb888feff183e055fa5",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:3d2e036031c5c489d0d7",
+      "kind": "PublicMoment",
+      "label": "it called bias",
+      "properties": {
+        "momentId": "3d2e036031c5c489d0d7",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1473.3",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 24:33",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1473.3,
+        "anchorMomentId": "3d2e036031c5c489d0d7"
+      }
+    },
+    {
+      "id": "explanation:3d2e036031c5c489d0d7",
+      "kind": "Explanation",
+      "label": "Explanation — it called bias",
+      "properties": {
+        "anchorMomentId": "3d2e036031c5c489d0d7",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:3d2e036031c5c489d0d7",
+      "kind": "ClaimLikeStatement",
+      "label": "it called bias",
+      "properties": {
+        "anchorMomentId": "3d2e036031c5c489d0d7",
+        "phrase": "it called bias",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:3d2e036031c5c489d0d7",
+      "kind": "Citation",
+      "label": "Citation — 3d2e036031c5c489d0d7",
+      "properties": {
+        "anchorMomentId": "3d2e036031c5c489d0d7",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:d57c4fcb426ae26fc68a",
+      "kind": "PublicMoment",
+      "label": "it's a paper that's",
+      "properties": {
+        "momentId": "d57c4fcb426ae26fc68a",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:13.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 0:13",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 13.7,
+        "anchorMomentId": "d57c4fcb426ae26fc68a"
+      }
+    },
+    {
+      "id": "explanation:d57c4fcb426ae26fc68a",
+      "kind": "Explanation",
+      "label": "Explanation — it's a paper that's",
+      "properties": {
+        "anchorMomentId": "d57c4fcb426ae26fc68a",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:d57c4fcb426ae26fc68a",
+      "kind": "ClaimLikeStatement",
+      "label": "it's a paper that's",
+      "properties": {
+        "anchorMomentId": "d57c4fcb426ae26fc68a",
+        "phrase": "it's a paper that's",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:d57c4fcb426ae26fc68a",
+      "kind": "Citation",
+      "label": "Citation — d57c4fcb426ae26fc68a",
+      "properties": {
+        "anchorMomentId": "d57c4fcb426ae26fc68a",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:4f2425487768beb05dda",
+      "kind": "PublicMoment",
+      "label": "feed forward network",
+      "properties": {
+        "momentId": "4f2425487768beb05dda",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1316.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 21:56",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1316.6,
+        "anchorMomentId": "4f2425487768beb05dda"
+      }
+    },
+    {
+      "id": "explanation:4f2425487768beb05dda",
+      "kind": "Explanation",
+      "label": "Explanation — feed forward network",
+      "properties": {
+        "anchorMomentId": "4f2425487768beb05dda",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:4f2425487768beb05dda",
+      "kind": "ClaimLikeStatement",
+      "label": "feed forward network",
+      "properties": {
+        "anchorMomentId": "4f2425487768beb05dda",
+        "phrase": "feed forward network",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:4f2425487768beb05dda",
+      "kind": "Citation",
+      "label": "Citation — 4f2425487768beb05dda",
+      "properties": {
+        "anchorMomentId": "4f2425487768beb05dda",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:3c961870767771f07713",
+      "kind": "PublicMoment",
+      "label": "i don't know",
+      "properties": {
+        "momentId": "3c961870767771f07713",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:59",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 0:59",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 59,
+        "anchorMomentId": "3c961870767771f07713"
+      }
+    },
+    {
+      "id": "explanation:3c961870767771f07713",
+      "kind": "Explanation",
+      "label": "Explanation — i don't know",
+      "properties": {
+        "anchorMomentId": "3c961870767771f07713",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:3c961870767771f07713",
+      "kind": "ClaimLikeStatement",
+      "label": "i don't know",
+      "properties": {
+        "anchorMomentId": "3c961870767771f07713",
+        "phrase": "i don't know",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:3c961870767771f07713",
+      "kind": "Citation",
+      "label": "Citation — 3c961870767771f07713",
+      "properties": {
+        "anchorMomentId": "3c961870767771f07713",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:3adc6cd015a5d50e12c2",
+      "kind": "PublicMoment",
+      "label": "e are useful",
+      "properties": {
+        "momentId": "3adc6cd015a5d50e12c2",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1418.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 23:38",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1418.8,
+        "anchorMomentId": "3adc6cd015a5d50e12c2"
+      }
+    },
+    {
+      "id": "explanation:3adc6cd015a5d50e12c2",
+      "kind": "Explanation",
+      "label": "Explanation — e are useful",
+      "properties": {
+        "anchorMomentId": "3adc6cd015a5d50e12c2",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:3adc6cd015a5d50e12c2",
+      "kind": "ClaimLikeStatement",
+      "label": "e are useful",
+      "properties": {
+        "anchorMomentId": "3adc6cd015a5d50e12c2",
+        "phrase": "e are useful",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:3adc6cd015a5d50e12c2",
+      "kind": "Citation",
+      "label": "Citation — 3adc6cd015a5d50e12c2",
+      "properties": {
+        "anchorMomentId": "3adc6cd015a5d50e12c2",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:2154b2f3e65031298c49",
+      "kind": "PublicMoment",
+      "label": "really simple architecture",
+      "properties": {
+        "momentId": "2154b2f3e65031298c49",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "medium",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:910.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 15:10",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 910.6,
+        "anchorMomentId": "2154b2f3e65031298c49"
+      }
+    },
+    {
+      "id": "explanation:2154b2f3e65031298c49",
+      "kind": "Explanation",
+      "label": "Explanation — really simple architecture",
+      "properties": {
+        "anchorMomentId": "2154b2f3e65031298c49",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:2154b2f3e65031298c49",
+      "kind": "ClaimLikeStatement",
+      "label": "really simple architecture",
+      "properties": {
+        "anchorMomentId": "2154b2f3e65031298c49",
+        "phrase": "really simple architecture",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:2154b2f3e65031298c49",
+      "kind": "Citation",
+      "label": "Citation — 2154b2f3e65031298c49",
+      "properties": {
+        "anchorMomentId": "2154b2f3e65031298c49",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:ba46aed137e5dbe14874",
+      "kind": "PublicMoment",
+      "label": "a convolutional embedding",
+      "properties": {
+        "momentId": "ba46aed137e5dbe14874",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "low",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:974.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 16:14",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 974.6,
+        "anchorMomentId": "ba46aed137e5dbe14874"
+      }
+    },
+    {
+      "id": "explanation:ba46aed137e5dbe14874",
+      "kind": "Explanation",
+      "label": "Explanation — a convolutional embedding",
+      "properties": {
+        "anchorMomentId": "ba46aed137e5dbe14874",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:ba46aed137e5dbe14874",
+      "kind": "ClaimLikeStatement",
+      "label": "a convolutional embedding",
+      "properties": {
+        "anchorMomentId": "ba46aed137e5dbe14874",
+        "phrase": "a convolutional embedding",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:ba46aed137e5dbe14874",
+      "kind": "Citation",
+      "label": "Citation — ba46aed137e5dbe14874",
+      "properties": {
+        "anchorMomentId": "ba46aed137e5dbe14874",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:e471a1106fb09ca8869c",
+      "kind": "PublicMoment",
+      "label": "rmers aren't",
+      "properties": {
+        "momentId": "e471a1106fb09ca8869c",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "low",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1511.4",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 25:11",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1511.4,
+        "anchorMomentId": "e471a1106fb09ca8869c"
+      }
+    },
+    {
+      "id": "explanation:e471a1106fb09ca8869c",
+      "kind": "Explanation",
+      "label": "Explanation — rmers aren't",
+      "properties": {
+        "anchorMomentId": "e471a1106fb09ca8869c",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 1,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:e471a1106fb09ca8869c",
+      "kind": "ClaimLikeStatement",
+      "label": "rmers aren't",
+      "properties": {
+        "anchorMomentId": "e471a1106fb09ca8869c",
+        "phrase": "rmers aren't",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:e471a1106fb09ca8869c",
+      "kind": "Citation",
+      "label": "Citation — e471a1106fb09ca8869c",
+      "properties": {
+        "anchorMomentId": "e471a1106fb09ca8869c",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:d7c5a9d554b51e1f77c7",
+      "kind": "PublicMoment",
+      "label": "l right with",
+      "properties": {
+        "momentId": "d7c5a9d554b51e1f77c7",
+        "videoId": "TrdevFK_am4",
+        "topic": "rag, rag, transformers, vector-database",
+        "qualityTier": "low",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:TrdevFK_am4:1788.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 29:48",
+      "properties": {
+        "videoId": "TrdevFK_am4",
+        "startSeconds": 1788.8,
+        "anchorMomentId": "d7c5a9d554b51e1f77c7"
+      }
+    },
+    {
+      "id": "explanation:d7c5a9d554b51e1f77c7",
+      "kind": "Explanation",
+      "label": "Explanation — l right with",
+      "properties": {
+        "anchorMomentId": "d7c5a9d554b51e1f77c7",
+        "framing": "primary_source_moment",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:d7c5a9d554b51e1f77c7",
+      "kind": "ClaimLikeStatement",
+      "label": "l right with",
+      "properties": {
+        "anchorMomentId": "d7c5a9d554b51e1f77c7",
+        "phrase": "l right with",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:d7c5a9d554b51e1f77c7",
+      "kind": "Citation",
+      "label": "Citation — d7c5a9d554b51e1f77c7",
+      "properties": {
+        "anchorMomentId": "d7c5a9d554b51e1f77c7",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:0ab03fd2372fbf3b89a8",
+      "kind": "PublicMoment",
+      "label": "an attribute selector",
+      "properties": {
+        "momentId": "0ab03fd2372fbf3b89a8",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:6970.1",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:56:10",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 6970.1,
+        "anchorMomentId": "0ab03fd2372fbf3b89a8"
+      }
+    },
+    {
+      "id": "explanation:0ab03fd2372fbf3b89a8",
+      "kind": "Explanation",
+      "label": "Explanation — an attribute selector",
+      "properties": {
+        "anchorMomentId": "0ab03fd2372fbf3b89a8",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:0ab03fd2372fbf3b89a8",
+      "kind": "ClaimLikeStatement",
+      "label": "an attribute selector",
+      "properties": {
+        "anchorMomentId": "0ab03fd2372fbf3b89a8",
+        "phrase": "an attribute selector",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:0ab03fd2372fbf3b89a8",
+      "kind": "Citation",
+      "label": "Citation — 0ab03fd2372fbf3b89a8",
+      "properties": {
+        "anchorMomentId": "0ab03fd2372fbf3b89a8",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:92a9be14ed993ecc87d8",
+      "kind": "PublicMoment",
+      "label": "the Hamiltonian cycle of minimum cost",
+      "properties": {
+        "momentId": "92a9be14ed993ecc87d8",
+        "videoId": "09_LlHjoEiY",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:09_LlHjoEiY:12048.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 3:20:48",
+      "properties": {
+        "videoId": "09_LlHjoEiY",
+        "startSeconds": 12048.6,
+        "anchorMomentId": "92a9be14ed993ecc87d8"
+      }
+    },
+    {
+      "id": "explanation:92a9be14ed993ecc87d8",
+      "kind": "Explanation",
+      "label": "Explanation — the Hamiltonian cycle of minimum cost",
+      "properties": {
+        "anchorMomentId": "92a9be14ed993ecc87d8",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:92a9be14ed993ecc87d8",
+      "kind": "ClaimLikeStatement",
+      "label": "the Hamiltonian cycle of minimum cost",
+      "properties": {
+        "anchorMomentId": "92a9be14ed993ecc87d8",
+        "phrase": "the Hamiltonian cycle of minimum cost",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:92a9be14ed993ecc87d8",
+      "kind": "Citation",
+      "label": "Citation — 92a9be14ed993ecc87d8",
+      "properties": {
+        "anchorMomentId": "92a9be14ed993ecc87d8",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:10d3a9562cdddad69981",
+      "kind": "PublicMoment",
+      "label": "MTB MTB massive text embedding benchmark",
+      "properties": {
+        "momentId": "10d3a9562cdddad69981",
+        "videoId": "CcrC5zSv1iA",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:CcrC5zSv1iA:38337",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 10:38:57",
+      "properties": {
+        "videoId": "CcrC5zSv1iA",
+        "startSeconds": 38337,
+        "anchorMomentId": "10d3a9562cdddad69981"
+      }
+    },
+    {
+      "id": "explanation:10d3a9562cdddad69981",
+      "kind": "Explanation",
+      "label": "Explanation — MTB MTB massive text embedding benchmark",
+      "properties": {
+        "anchorMomentId": "10d3a9562cdddad69981",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:10d3a9562cdddad69981",
+      "kind": "ClaimLikeStatement",
+      "label": "MTB MTB massive text embedding benchmark",
+      "properties": {
+        "anchorMomentId": "10d3a9562cdddad69981",
+        "phrase": "MTB MTB massive text embedding benchmark",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:10d3a9562cdddad69981",
+      "kind": "Citation",
+      "label": "Citation — 10d3a9562cdddad69981",
+      "properties": {
+        "anchorMomentId": "10d3a9562cdddad69981",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:425d568a2ccdba2c8f1b",
+      "kind": "PublicMoment",
+      "label": "that large powerful models trained",
+      "properties": {
+        "momentId": "425d568a2ccdba2c8f1b",
+        "videoId": "48pxVdmkMIE",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "unknown_weak_context"
+      }
+    },
+    {
+      "id": "segment:48pxVdmkMIE:3881.5",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:04:41",
+      "properties": {
+        "videoId": "48pxVdmkMIE",
+        "startSeconds": 3881.5,
+        "anchorMomentId": "425d568a2ccdba2c8f1b"
+      }
+    },
+    {
+      "id": "explanation:425d568a2ccdba2c8f1b",
+      "kind": "Explanation",
+      "label": "Explanation — that large powerful models trained",
+      "properties": {
+        "anchorMomentId": "425d568a2ccdba2c8f1b",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:425d568a2ccdba2c8f1b",
+      "kind": "ClaimLikeStatement",
+      "label": "that large powerful models trained",
+      "properties": {
+        "anchorMomentId": "425d568a2ccdba2c8f1b",
+        "phrase": "that large powerful models trained",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:425d568a2ccdba2c8f1b",
+      "kind": "Citation",
+      "label": "Citation — 425d568a2ccdba2c8f1b",
+      "properties": {
+        "anchorMomentId": "425d568a2ccdba2c8f1b",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:b8ef8ca960ecd63a6a2a",
+      "kind": "PublicMoment",
+      "label": "ecause the things it knows how to",
+      "properties": {
+        "momentId": "b8ef8ca960ecd63a6a2a",
+        "videoId": "Qp0rCU49lMs",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:Qp0rCU49lMs:1723.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 28:43",
+      "properties": {
+        "videoId": "Qp0rCU49lMs",
+        "startSeconds": 1723.6,
+        "anchorMomentId": "b8ef8ca960ecd63a6a2a"
+      }
+    },
+    {
+      "id": "explanation:b8ef8ca960ecd63a6a2a",
+      "kind": "Explanation",
+      "label": "Explanation — ecause the things it knows how to",
+      "properties": {
+        "anchorMomentId": "b8ef8ca960ecd63a6a2a",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1,
+        "technicalLikelihood": 0.35
+      }
+    },
+    {
+      "id": "claim:b8ef8ca960ecd63a6a2a",
+      "kind": "ClaimLikeStatement",
+      "label": "ecause the things it knows how to",
+      "properties": {
+        "anchorMomentId": "b8ef8ca960ecd63a6a2a",
+        "phrase": "ecause the things it knows how to",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:b8ef8ca960ecd63a6a2a",
+      "kind": "Citation",
+      "label": "Citation — b8ef8ca960ecd63a6a2a",
+      "properties": {
+        "anchorMomentId": "b8ef8ca960ecd63a6a2a",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:1968a3eaecbed4fe47e5",
+      "kind": "PublicMoment",
+      "label": "you using the term persuadability",
+      "properties": {
+        "momentId": "1968a3eaecbed4fe47e5",
+        "videoId": "Qp0rCU49lMs",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "academic_technical"
+      }
+    },
+    {
+      "id": "segment:Qp0rCU49lMs:276.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 4:36",
+      "properties": {
+        "videoId": "Qp0rCU49lMs",
+        "startSeconds": 276.8,
+        "anchorMomentId": "1968a3eaecbed4fe47e5"
+      }
+    },
+    {
+      "id": "explanation:1968a3eaecbed4fe47e5",
+      "kind": "Explanation",
+      "label": "Explanation — you using the term persuadability",
+      "properties": {
+        "anchorMomentId": "1968a3eaecbed4fe47e5",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:1968a3eaecbed4fe47e5",
+      "kind": "ClaimLikeStatement",
+      "label": "you using the term persuadability",
+      "properties": {
+        "anchorMomentId": "1968a3eaecbed4fe47e5",
+        "phrase": "you using the term persuadability",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:1968a3eaecbed4fe47e5",
+      "kind": "Citation",
+      "label": "Citation — 1968a3eaecbed4fe47e5",
+      "properties": {
+        "anchorMomentId": "1968a3eaecbed4fe47e5",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:336caf696c3019135891",
+      "kind": "PublicMoment",
+      "label": "our worldview",
+      "properties": {
+        "momentId": "336caf696c3019135891",
+        "videoId": "Qp0rCU49lMs",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:Qp0rCU49lMs:10890.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 3:01:30",
+      "properties": {
+        "videoId": "Qp0rCU49lMs",
+        "startSeconds": 10890.6,
+        "anchorMomentId": "336caf696c3019135891"
+      }
+    },
+    {
+      "id": "explanation:336caf696c3019135891",
+      "kind": "Explanation",
+      "label": "Explanation — our worldview",
+      "properties": {
+        "anchorMomentId": "336caf696c3019135891",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:336caf696c3019135891",
+      "kind": "ClaimLikeStatement",
+      "label": "our worldview",
+      "properties": {
+        "anchorMomentId": "336caf696c3019135891",
+        "phrase": "our worldview",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:336caf696c3019135891",
+      "kind": "Citation",
+      "label": "Citation — 336caf696c3019135891",
+      "properties": {
+        "anchorMomentId": "336caf696c3019135891",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:d49e2486f61b455ee83d",
+      "kind": "PublicMoment",
+      "label": "the advantages of using an animation",
+      "properties": {
+        "momentId": "d49e2486f61b455ee83d",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:24515.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:48:35",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 24515.2,
+        "anchorMomentId": "d49e2486f61b455ee83d"
+      }
+    },
+    {
+      "id": "explanation:d49e2486f61b455ee83d",
+      "kind": "Explanation",
+      "label": "Explanation — the advantages of using an animation",
+      "properties": {
+        "anchorMomentId": "d49e2486f61b455ee83d",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:d49e2486f61b455ee83d",
+      "kind": "ClaimLikeStatement",
+      "label": "the advantages of using an animation",
+      "properties": {
+        "anchorMomentId": "d49e2486f61b455ee83d",
+        "phrase": "the advantages of using an animation",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:d49e2486f61b455ee83d",
+      "kind": "Citation",
+      "label": "Citation — d49e2486f61b455ee83d",
+      "properties": {
+        "anchorMomentId": "d49e2486f61b455ee83d",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:9d5850e3e796ba71865f",
+      "kind": "PublicMoment",
+      "label": "we supposed to do with it",
+      "properties": {
+        "momentId": "9d5850e3e796ba71865f",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:9018",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:30:18",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 9018,
+        "anchorMomentId": "9d5850e3e796ba71865f"
+      }
+    },
+    {
+      "id": "explanation:9d5850e3e796ba71865f",
+      "kind": "Explanation",
+      "label": "Explanation — we supposed to do with it",
+      "properties": {
+        "anchorMomentId": "9d5850e3e796ba71865f",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:9d5850e3e796ba71865f",
+      "kind": "ClaimLikeStatement",
+      "label": "we supposed to do with it",
+      "properties": {
+        "anchorMomentId": "9d5850e3e796ba71865f",
+        "phrase": "we supposed to do with it",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:9d5850e3e796ba71865f",
+      "kind": "Citation",
+      "label": "Citation — 9d5850e3e796ba71865f",
+      "properties": {
+        "anchorMomentId": "9d5850e3e796ba71865f",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:e6942b1576c65c56dc59",
+      "kind": "PublicMoment",
+      "label": "our worldview specifically not able to see, right",
+      "properties": {
+        "momentId": "e6942b1576c65c56dc59",
+        "videoId": "Qp0rCU49lMs",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:Qp0rCU49lMs:10894.5",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 3:01:34",
+      "properties": {
+        "videoId": "Qp0rCU49lMs",
+        "startSeconds": 10894.5,
+        "anchorMomentId": "e6942b1576c65c56dc59"
+      }
+    },
+    {
+      "id": "explanation:e6942b1576c65c56dc59",
+      "kind": "Explanation",
+      "label": "Explanation — our worldview specifically not able to see, righ",
+      "properties": {
+        "anchorMomentId": "e6942b1576c65c56dc59",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:e6942b1576c65c56dc59",
+      "kind": "ClaimLikeStatement",
+      "label": "our worldview specifically not able to see, right",
+      "properties": {
+        "anchorMomentId": "e6942b1576c65c56dc59",
+        "phrase": "our worldview specifically not able to see, right",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:e6942b1576c65c56dc59",
+      "kind": "Citation",
+      "label": "Citation — e6942b1576c65c56dc59",
+      "properties": {
+        "anchorMomentId": "e6942b1576c65c56dc59",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:5ce426eef95e7995e01f",
+      "kind": "PublicMoment",
+      "label": "your advice as a student to other students, if you don't have a Karpathy who is ",
+      "properties": {
+        "momentId": "5ce426eef95e7995e01f",
+        "videoId": "lXUZvyajciY",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:lXUZvyajciY:8631.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:23:51",
+      "properties": {
+        "videoId": "lXUZvyajciY",
+        "startSeconds": 8631.2,
+        "anchorMomentId": "5ce426eef95e7995e01f"
+      }
+    },
+    {
+      "id": "explanation:5ce426eef95e7995e01f",
+      "kind": "Explanation",
+      "label": "Explanation — your advice as a student to other students, if y",
+      "properties": {
+        "anchorMomentId": "5ce426eef95e7995e01f",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:5ce426eef95e7995e01f",
+      "kind": "ClaimLikeStatement",
+      "label": "your advice as a student to other students, if you don't have a Karpathy",
+      "properties": {
+        "anchorMomentId": "5ce426eef95e7995e01f",
+        "phrase": "your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:5ce426eef95e7995e01f",
+      "kind": "Citation",
+      "label": "Citation — 5ce426eef95e7995e01f",
+      "properties": {
+        "anchorMomentId": "5ce426eef95e7995e01f",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:f9a1d64dbd313bc58400",
+      "kind": "PublicMoment",
+      "label": "Git branching",
+      "properties": {
+        "momentId": "f9a1d64dbd313bc58400",
+        "videoId": "RGOj5yH7evk",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:RGOj5yH7evk:1948.9",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 32:28",
+      "properties": {
+        "videoId": "RGOj5yH7evk",
+        "startSeconds": 1948.9,
+        "anchorMomentId": "f9a1d64dbd313bc58400"
+      }
+    },
+    {
+      "id": "explanation:f9a1d64dbd313bc58400",
+      "kind": "Explanation",
+      "label": "Explanation — Git branching",
+      "properties": {
+        "anchorMomentId": "f9a1d64dbd313bc58400",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:f9a1d64dbd313bc58400",
+      "kind": "ClaimLikeStatement",
+      "label": "Git branching",
+      "properties": {
+        "anchorMomentId": "f9a1d64dbd313bc58400",
+        "phrase": "Git branching",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:f9a1d64dbd313bc58400",
+      "kind": "Citation",
+      "label": "Citation — f9a1d64dbd313bc58400",
+      "properties": {
+        "anchorMomentId": "f9a1d64dbd313bc58400",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:116ad62b5efc76b62f53",
+      "kind": "PublicMoment",
+      "label": "the parent to an element that we insert between these two paragraph tags in othe",
+      "properties": {
+        "momentId": "116ad62b5efc76b62f53",
+        "videoId": "zJSY8tbf_ys",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:zJSY8tbf_ys:43972.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 12:12:52",
+      "properties": {
+        "videoId": "zJSY8tbf_ys",
+        "startSeconds": 43972.7,
+        "anchorMomentId": "116ad62b5efc76b62f53"
+      }
+    },
+    {
+      "id": "explanation:116ad62b5efc76b62f53",
+      "kind": "Explanation",
+      "label": "Explanation — the parent to an element that we insert between ",
+      "properties": {
+        "anchorMomentId": "116ad62b5efc76b62f53",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:116ad62b5efc76b62f53",
+      "kind": "ClaimLikeStatement",
+      "label": "the parent to an element that we insert between these two paragraph tags",
+      "properties": {
+        "anchorMomentId": "116ad62b5efc76b62f53",
+        "phrase": "the parent to an element that we insert between these two paragraph tags in other words what is the parent of one",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:116ad62b5efc76b62f53",
+      "kind": "Citation",
+      "label": "Citation — 116ad62b5efc76b62f53",
+      "properties": {
+        "anchorMomentId": "116ad62b5efc76b62f53",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:2d2a4f44fb7b31699978",
+      "kind": "PublicMoment",
+      "label": "we can use this integer class in order to have an ArrayList",
+      "properties": {
+        "momentId": "2d2a4f44fb7b31699978",
+        "videoId": "fis26HvvDII",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:fis26HvvDII:14028.9",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 3:53:48",
+      "properties": {
+        "videoId": "fis26HvvDII",
+        "startSeconds": 14028.9,
+        "anchorMomentId": "2d2a4f44fb7b31699978"
+      }
+    },
+    {
+      "id": "explanation:2d2a4f44fb7b31699978",
+      "kind": "Explanation",
+      "label": "Explanation — we can use this integer class in order to have a",
+      "properties": {
+        "anchorMomentId": "2d2a4f44fb7b31699978",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0.35
+      }
+    },
+    {
+      "id": "claim:2d2a4f44fb7b31699978",
+      "kind": "ClaimLikeStatement",
+      "label": "we can use this integer class in order to have an ArrayList",
+      "properties": {
+        "anchorMomentId": "2d2a4f44fb7b31699978",
+        "phrase": "we can use this integer class in order to have an ArrayList",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:2d2a4f44fb7b31699978",
+      "kind": "Citation",
+      "label": "Citation — 2d2a4f44fb7b31699978",
+      "properties": {
+        "anchorMomentId": "2d2a4f44fb7b31699978",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:89e2c26c7acf79a86d77",
+      "kind": "PublicMoment",
+      "label": "the model quality impact",
+      "properties": {
+        "momentId": "89e2c26c7acf79a86d77",
+        "videoId": "xmkSf5IS-zw",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "primary_source"
+      }
+    },
+    {
+      "id": "segment:xmkSf5IS-zw:1733.4",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 28:53",
+      "properties": {
+        "videoId": "xmkSf5IS-zw",
+        "startSeconds": 1733.4,
+        "anchorMomentId": "89e2c26c7acf79a86d77"
+      }
+    },
+    {
+      "id": "explanation:89e2c26c7acf79a86d77",
+      "kind": "Explanation",
+      "label": "Explanation — the model quality impact",
+      "properties": {
+        "anchorMomentId": "89e2c26c7acf79a86d77",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:89e2c26c7acf79a86d77",
+      "kind": "ClaimLikeStatement",
+      "label": "the model quality impact",
+      "properties": {
+        "anchorMomentId": "89e2c26c7acf79a86d77",
+        "phrase": "the model quality impact",
+        "confidence": "higher"
+      }
+    },
+    {
+      "id": "citation:89e2c26c7acf79a86d77",
+      "kind": "Citation",
+      "label": "Citation — 89e2c26c7acf79a86d77",
+      "properties": {
+        "anchorMomentId": "89e2c26c7acf79a86d77",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:0eebb22a60118f552470",
+      "kind": "PublicMoment",
+      "label": "joint embedding what are what are these architectures that",
+      "properties": {
+        "momentId": "0eebb22a60118f552470",
+        "videoId": "5t1vTLU7s40",
+        "topic": "how-llms-trained, transformers, llm-fine-tuning",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:5t1vTLU7s40:1506.5",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 25:06",
+      "properties": {
+        "videoId": "5t1vTLU7s40",
+        "startSeconds": 1506.5,
+        "anchorMomentId": "0eebb22a60118f552470"
+      }
+    },
+    {
+      "id": "explanation:0eebb22a60118f552470",
+      "kind": "Explanation",
+      "label": "Explanation — joint embedding what are what are these architec",
+      "properties": {
+        "anchorMomentId": "0eebb22a60118f552470",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:0eebb22a60118f552470",
+      "kind": "ClaimLikeStatement",
+      "label": "joint embedding what are what are these architectures that",
+      "properties": {
+        "anchorMomentId": "0eebb22a60118f552470",
+        "phrase": "joint embedding what are what are these architectures that",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:0eebb22a60118f552470",
+      "kind": "Citation",
+      "label": "Citation — 0eebb22a60118f552470",
+      "properties": {
+        "anchorMomentId": "0eebb22a60118f552470",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:366df8b1de146a8844cb",
+      "kind": "PublicMoment",
+      "label": "we create them and also what are the most usages of a class in this video we are",
+      "properties": {
+        "momentId": "366df8b1de146a8844cb",
+        "videoId": "fis26HvvDII",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:fis26HvvDII:10168.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:49:28",
+      "properties": {
+        "videoId": "fis26HvvDII",
+        "startSeconds": 10168.6,
+        "anchorMomentId": "366df8b1de146a8844cb"
+      }
+    },
+    {
+      "id": "explanation:366df8b1de146a8844cb",
+      "kind": "Explanation",
+      "label": "Explanation — we create them and also what are the most usages",
+      "properties": {
+        "anchorMomentId": "366df8b1de146a8844cb",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:366df8b1de146a8844cb",
+      "kind": "ClaimLikeStatement",
+      "label": "we create them and also what are the most usages of a class in this vide",
+      "properties": {
+        "anchorMomentId": "366df8b1de146a8844cb",
+        "phrase": "we create them and also what are the most usages of a class in this video we are",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:366df8b1de146a8844cb",
+      "kind": "Citation",
+      "label": "Citation — 366df8b1de146a8844cb",
+      "properties": {
+        "anchorMomentId": "366df8b1de146a8844cb",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:9cfeed027a9e516607dc",
+      "kind": "PublicMoment",
+      "label": "a kind of specific qualitative change where you'd be training Llama-5 or Llama-4",
+      "properties": {
+        "momentId": "9cfeed027a9e516607dc",
+        "videoId": "bc6uFV9CJGg",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "unknown_weak_context"
+      }
+    },
+    {
+      "id": "segment:bc6uFV9CJGg:2323.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 38:43",
+      "properties": {
+        "videoId": "bc6uFV9CJGg",
+        "startSeconds": 2323.6,
+        "anchorMomentId": "9cfeed027a9e516607dc"
+      }
+    },
+    {
+      "id": "explanation:9cfeed027a9e516607dc",
+      "kind": "Explanation",
+      "label": "Explanation — a kind of specific qualitative change where you'",
+      "properties": {
+        "anchorMomentId": "9cfeed027a9e516607dc",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:9cfeed027a9e516607dc",
+      "kind": "ClaimLikeStatement",
+      "label": "a kind of specific qualitative change where you'd be training Llama-5 or",
+      "properties": {
+        "anchorMomentId": "9cfeed027a9e516607dc",
+        "phrase": "a kind of specific qualitative change where you'd be training Llama-5 or Llama-4",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:9cfeed027a9e516607dc",
+      "kind": "Citation",
+      "label": "Citation — 9cfeed027a9e516607dc",
+      "properties": {
+        "anchorMomentId": "9cfeed027a9e516607dc",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:aabdb99cef048bfeecdd",
+      "kind": "PublicMoment",
+      "label": "telling us what iteration of the loop are currently on",
+      "properties": {
+        "momentId": "aabdb99cef048bfeecdd",
+        "videoId": "KJgsSFOSQv0",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:KJgsSFOSQv0:10287",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:51:27",
+      "properties": {
+        "videoId": "KJgsSFOSQv0",
+        "startSeconds": 10287,
+        "anchorMomentId": "aabdb99cef048bfeecdd"
+      }
+    },
+    {
+      "id": "explanation:aabdb99cef048bfeecdd",
+      "kind": "Explanation",
+      "label": "Explanation — telling us what iteration of the loop are curren",
+      "properties": {
+        "anchorMomentId": "aabdb99cef048bfeecdd",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1,
+        "technicalLikelihood": 0.35
+      }
+    },
+    {
+      "id": "claim:aabdb99cef048bfeecdd",
+      "kind": "ClaimLikeStatement",
+      "label": "telling us what iteration of the loop are currently on",
+      "properties": {
+        "anchorMomentId": "aabdb99cef048bfeecdd",
+        "phrase": "telling us what iteration of the loop are currently on",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:aabdb99cef048bfeecdd",
+      "kind": "Citation",
+      "label": "Citation — aabdb99cef048bfeecdd",
+      "properties": {
+        "anchorMomentId": "aabdb99cef048bfeecdd",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:be1df0ece89426a5a9ba",
+      "kind": "PublicMoment",
+      "label": "that task that's just been created",
+      "properties": {
+        "momentId": "be1df0ece89426a5a9ba",
+        "videoId": "Z1RJmh_OqeA",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:Z1RJmh_OqeA:1170.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 19:30",
+      "properties": {
+        "videoId": "Z1RJmh_OqeA",
+        "startSeconds": 1170.7,
+        "anchorMomentId": "be1df0ece89426a5a9ba"
+      }
+    },
+    {
+      "id": "explanation:be1df0ece89426a5a9ba",
+      "kind": "Explanation",
+      "label": "Explanation — that task that's just been created",
+      "properties": {
+        "anchorMomentId": "be1df0ece89426a5a9ba",
+        "framing": "technical_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 1.35
+      }
+    },
+    {
+      "id": "claim:be1df0ece89426a5a9ba",
+      "kind": "ClaimLikeStatement",
+      "label": "that task that's just been created",
+      "properties": {
+        "anchorMomentId": "be1df0ece89426a5a9ba",
+        "phrase": "that task that's just been created",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:be1df0ece89426a5a9ba",
+      "kind": "Citation",
+      "label": "Citation — be1df0ece89426a5a9ba",
+      "properties": {
+        "anchorMomentId": "be1df0ece89426a5a9ba",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:088ee292f491f8171972",
+      "kind": "PublicMoment",
+      "label": "the two is that text manipulation",
+      "properties": {
+        "momentId": "088ee292f491f8171972",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:16122.8",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 4:28:42",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 16122.8,
+        "anchorMomentId": "088ee292f491f8171972"
+      }
+    },
+    {
+      "id": "explanation:088ee292f491f8171972",
+      "kind": "Explanation",
+      "label": "Explanation — the two is that text manipulation",
+      "properties": {
+        "anchorMomentId": "088ee292f491f8171972",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:088ee292f491f8171972",
+      "kind": "ClaimLikeStatement",
+      "label": "the two is that text manipulation",
+      "properties": {
+        "anchorMomentId": "088ee292f491f8171972",
+        "phrase": "the two is that text manipulation",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:088ee292f491f8171972",
+      "kind": "Citation",
+      "label": "Citation — 088ee292f491f8171972",
+      "properties": {
+        "anchorMomentId": "088ee292f491f8171972",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:ffa09298143b07ad1f97",
+      "kind": "PublicMoment",
+      "label": "not having a transition and having it",
+      "properties": {
+        "momentId": "ffa09298143b07ad1f97",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:24297.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:44:57",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 24297.2,
+        "anchorMomentId": "ffa09298143b07ad1f97"
+      }
+    },
+    {
+      "id": "explanation:ffa09298143b07ad1f97",
+      "kind": "Explanation",
+      "label": "Explanation — not having a transition and having it",
+      "properties": {
+        "anchorMomentId": "ffa09298143b07ad1f97",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:ffa09298143b07ad1f97",
+      "kind": "ClaimLikeStatement",
+      "label": "not having a transition and having it",
+      "properties": {
+        "anchorMomentId": "ffa09298143b07ad1f97",
+        "phrase": "not having a transition and having it",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:ffa09298143b07ad1f97",
+      "kind": "Citation",
+      "label": "Citation — ffa09298143b07ad1f97",
+      "properties": {
+        "anchorMomentId": "ffa09298143b07ad1f97",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:f7d1a8a01704fa2d845e",
+      "kind": "PublicMoment",
+      "label": "a class and an ID",
+      "properties": {
+        "momentId": "f7d1a8a01704fa2d845e",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:3622.6",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:00:22",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 3622.6,
+        "anchorMomentId": "f7d1a8a01704fa2d845e"
+      }
+    },
+    {
+      "id": "explanation:f7d1a8a01704fa2d845e",
+      "kind": "Explanation",
+      "label": "Explanation — a class and an ID",
+      "properties": {
+        "anchorMomentId": "f7d1a8a01704fa2d845e",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:f7d1a8a01704fa2d845e",
+      "kind": "ClaimLikeStatement",
+      "label": "a class and an ID",
+      "properties": {
+        "anchorMomentId": "f7d1a8a01704fa2d845e",
+        "phrase": "a class and an ID",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:f7d1a8a01704fa2d845e",
+      "kind": "Citation",
+      "label": "Citation — f7d1a8a01704fa2d845e",
+      "properties": {
+        "anchorMomentId": "f7d1a8a01704fa2d845e",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:f06463cfb05b723d0f74",
+      "kind": "PublicMoment",
+      "label": "an inline element and an inline block element",
+      "properties": {
+        "momentId": "f06463cfb05b723d0f74",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:22959.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:22:39",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 22959.2,
+        "anchorMomentId": "f06463cfb05b723d0f74"
+      }
+    },
+    {
+      "id": "explanation:f06463cfb05b723d0f74",
+      "kind": "Explanation",
+      "label": "Explanation — an inline element and an inline block element",
+      "properties": {
+        "anchorMomentId": "f06463cfb05b723d0f74",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:f06463cfb05b723d0f74",
+      "kind": "ClaimLikeStatement",
+      "label": "an inline element and an inline block element",
+      "properties": {
+        "anchorMomentId": "f06463cfb05b723d0f74",
+        "phrase": "an inline element and an inline block element",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:f06463cfb05b723d0f74",
+      "kind": "Citation",
+      "label": "Citation — f06463cfb05b723d0f74",
+      "properties": {
+        "anchorMomentId": "f06463cfb05b723d0f74",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:d06fccdf7f5608ab02a5",
+      "kind": "PublicMoment",
+      "label": "cellular automata type",
+      "properties": {
+        "momentId": "d06fccdf7f5608ab02a5",
+        "videoId": "Qp0rCU49lMs",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "entertainment_commentary"
+      }
+    },
+    {
+      "id": "segment:Qp0rCU49lMs:3463.3",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 57:43",
+      "properties": {
+        "videoId": "Qp0rCU49lMs",
+        "startSeconds": 3463.3,
+        "anchorMomentId": "d06fccdf7f5608ab02a5"
+      }
+    },
+    {
+      "id": "explanation:d06fccdf7f5608ab02a5",
+      "kind": "Explanation",
+      "label": "Explanation — cellular automata type",
+      "properties": {
+        "anchorMomentId": "d06fccdf7f5608ab02a5",
+        "framing": "technical_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:d06fccdf7f5608ab02a5",
+      "kind": "ClaimLikeStatement",
+      "label": "cellular automata type",
+      "properties": {
+        "anchorMomentId": "d06fccdf7f5608ab02a5",
+        "phrase": "cellular automata type",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:d06fccdf7f5608ab02a5",
+      "kind": "Citation",
+      "label": "Citation — d06fccdf7f5608ab02a5",
+      "properties": {
+        "anchorMomentId": "d06fccdf7f5608ab02a5",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:915fccf8a9666e2e322c",
+      "kind": "PublicMoment",
+      "label": "you're predicting profit is that you are systematically underinvesting in comput",
+      "properties": {
+        "momentId": "915fccf8a9666e2e322c",
+        "videoId": "n1E9IZfvGMA",
+        "topic": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "unknown_weak_context"
+      }
+    },
+    {
+      "id": "segment:n1E9IZfvGMA:3688.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 1:01:28",
+      "properties": {
+        "videoId": "n1E9IZfvGMA",
+        "startSeconds": 3688.7,
+        "anchorMomentId": "915fccf8a9666e2e322c"
+      }
+    },
+    {
+      "id": "explanation:915fccf8a9666e2e322c",
+      "kind": "Explanation",
+      "label": "Explanation — you're predicting profit is that you are systema",
+      "properties": {
+        "anchorMomentId": "915fccf8a9666e2e322c",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:915fccf8a9666e2e322c",
+      "kind": "ClaimLikeStatement",
+      "label": "you're predicting profit is that you are systematically underinvesting i",
+      "properties": {
+        "anchorMomentId": "915fccf8a9666e2e322c",
+        "phrase": "you're predicting profit is that you are systematically underinvesting in compute",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:915fccf8a9666e2e322c",
+      "kind": "Citation",
+      "label": "Citation — 915fccf8a9666e2e322c",
+      "properties": {
+        "anchorMomentId": "915fccf8a9666e2e322c",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:fe16bd4d0da0eaa8d9eb",
+      "kind": "PublicMoment",
+      "label": "a pull request or a PR, it's basically a request to have your code",
+      "properties": {
+        "momentId": "fe16bd4d0da0eaa8d9eb",
+        "videoId": "RGOj5yH7evk",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:RGOj5yH7evk:2595.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 43:15",
+      "properties": {
+        "videoId": "RGOj5yH7evk",
+        "startSeconds": 2595.2,
+        "anchorMomentId": "fe16bd4d0da0eaa8d9eb"
+      }
+    },
+    {
+      "id": "explanation:fe16bd4d0da0eaa8d9eb",
+      "kind": "Explanation",
+      "label": "Explanation — a pull request or a PR, it's basically a request",
+      "properties": {
+        "anchorMomentId": "fe16bd4d0da0eaa8d9eb",
+        "framing": "beginner_explanation",
+        "beginnerLikelihood": 1.4,
+        "technicalLikelihood": 0
+      }
+    },
+    {
+      "id": "claim:fe16bd4d0da0eaa8d9eb",
+      "kind": "ClaimLikeStatement",
+      "label": "a pull request or a PR, it's basically a request to have your code",
+      "properties": {
+        "anchorMomentId": "fe16bd4d0da0eaa8d9eb",
+        "phrase": "a pull request or a PR, it's basically a request to have your code",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:fe16bd4d0da0eaa8d9eb",
+      "kind": "Citation",
+      "label": "Citation — fe16bd4d0da0eaa8d9eb",
+      "properties": {
+        "anchorMomentId": "fe16bd4d0da0eaa8d9eb",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:11a2341da87ec8bfd5ef",
+      "kind": "PublicMoment",
+      "label": "building models and abstractions and understanding that there's a first-order",
+      "properties": {
+        "momentId": "11a2341da87ec8bfd5ef",
+        "videoId": "lXUZvyajciY",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "unknown_weak_context"
+      }
+    },
+    {
+      "id": "segment:lXUZvyajciY:8183",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 2:16:23",
+      "properties": {
+        "videoId": "lXUZvyajciY",
+        "startSeconds": 8183,
+        "anchorMomentId": "11a2341da87ec8bfd5ef"
+      }
+    },
+    {
+      "id": "explanation:11a2341da87ec8bfd5ef",
+      "kind": "Explanation",
+      "label": "Explanation — building models and abstractions and understandi",
+      "properties": {
+        "anchorMomentId": "11a2341da87ec8bfd5ef",
+        "framing": "best_explanation",
+        "beginnerLikelihood": 0.4,
+        "technicalLikelihood": 0.35
+      }
+    },
+    {
+      "id": "claim:11a2341da87ec8bfd5ef",
+      "kind": "ClaimLikeStatement",
+      "label": "building models and abstractions and understanding that there's a first-",
+      "properties": {
+        "anchorMomentId": "11a2341da87ec8bfd5ef",
+        "phrase": "building models and abstractions and understanding that there's a first-order",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:11a2341da87ec8bfd5ef",
+      "kind": "Citation",
+      "label": "Citation — 11a2341da87ec8bfd5ef",
+      "properties": {
+        "anchorMomentId": "11a2341da87ec8bfd5ef",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:207318b27eeb2c425db1",
+      "kind": "PublicMoment",
+      "label": "the added height to the container",
+      "properties": {
+        "momentId": "207318b27eeb2c425db1",
+        "videoId": "1Rs2ND1ryYc",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:1Rs2ND1ryYc:23291.2",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 6:28:11",
+      "properties": {
+        "videoId": "1Rs2ND1ryYc",
+        "startSeconds": 23291.2,
+        "anchorMomentId": "207318b27eeb2c425db1"
+      }
+    },
+    {
+      "id": "explanation:207318b27eeb2c425db1",
+      "kind": "Explanation",
+      "label": "Explanation — the added height to the container",
+      "properties": {
+        "anchorMomentId": "207318b27eeb2c425db1",
+        "framing": "technical_explanation",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:207318b27eeb2c425db1",
+      "kind": "ClaimLikeStatement",
+      "label": "the added height to the container",
+      "properties": {
+        "anchorMomentId": "207318b27eeb2c425db1",
+        "phrase": "the added height to the container",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:207318b27eeb2c425db1",
+      "kind": "Citation",
+      "label": "Citation — 207318b27eeb2c425db1",
+      "properties": {
+        "anchorMomentId": "207318b27eeb2c425db1",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
+    },
+    {
+      "id": "moment:a67e70377aced5eb583b",
+      "kind": "PublicMoment",
+      "label": "my experience in Android app development",
+      "properties": {
+        "momentId": "a67e70377aced5eb583b",
+        "videoId": "fis26HvvDII",
+        "topic": "uncategorized",
+        "qualityTier": "high",
+        "citationRich": true,
+        "sourceAuthorityLabel": "tutorial_source"
+      }
+    },
+    {
+      "id": "segment:fis26HvvDII:630.7",
+      "kind": "TranscriptSegment",
+      "label": "Segment @ 10:30",
+      "properties": {
+        "videoId": "fis26HvvDII",
+        "startSeconds": 630.7,
+        "anchorMomentId": "a67e70377aced5eb583b"
+      }
+    },
+    {
+      "id": "explanation:a67e70377aced5eb583b",
+      "kind": "Explanation",
+      "label": "Explanation — my experience in Android app development",
+      "properties": {
+        "anchorMomentId": "a67e70377aced5eb583b",
+        "framing": "counterpoint_caveat",
+        "beginnerLikelihood": 0,
+        "technicalLikelihood": 1
+      }
+    },
+    {
+      "id": "claim:a67e70377aced5eb583b",
+      "kind": "ClaimLikeStatement",
+      "label": "my experience in Android app development",
+      "properties": {
+        "anchorMomentId": "a67e70377aced5eb583b",
+        "phrase": "my experience in Android app development",
+        "confidence": "heuristic"
+      }
+    },
+    {
+      "id": "citation:a67e70377aced5eb583b",
+      "kind": "Citation",
+      "label": "Citation — a67e70377aced5eb583b",
+      "properties": {
+        "anchorMomentId": "a67e70377aced5eb583b",
+        "hasMarkdown": true,
+        "hasAcademic": true
+      }
     }
   ],
   "edges": [
@@ -12908,6 +15112,42 @@
       "weight": 1,
       "properties": {},
       "id": "created_by:video:5t1vTLU7s40->creator:lex-fridman"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "video:TrdevFK_am4",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {
+        "platform": "youtube"
+      },
+      "id": "source_context:video:TrdevFK_am4->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "video:TrdevFK_am4",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:video:TrdevFK_am4->creator:yannic-kilcher"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "video:n1E9IZfvGMA",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {
+        "platform": "youtube"
+      },
+      "id": "source_context:video:n1E9IZfvGMA->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "video:n1E9IZfvGMA",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:video:n1E9IZfvGMA->creator:dwarkesh-patel"
     },
     {
       "kind": "same_topic_as",
@@ -27644,6 +29884,3226 @@
       "id": "supports:moment:846b56d0bd62d38f1c5e->moment:19844e822c84edeeea76"
     },
     {
+      "kind": "cites",
+      "sourceId": "citation:9eb888feff183e055fa5",
+      "targetId": "moment:9eb888feff183e055fa5",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:9eb888feff183e055fa5->moment:9eb888feff183e055fa5"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:9eb888feff183e055fa5",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:9eb888feff183e055fa5->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:9eb888feff183e055fa5",
+      "targetId": "segment:TrdevFK_am4:1476.1",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:9eb888feff183e055fa5->segment:TrdevFK_am4:1476.1"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1476.1",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1476.1->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:9eb888feff183e055fa5",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:9eb888feff183e055fa5->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:9eb888feff183e055fa5",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:9eb888feff183e055fa5->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:9eb888feff183e055fa5",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:9eb888feff183e055fa5->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:9eb888feff183e055fa5",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:9eb888feff183e055fa5->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:3d2e036031c5c489d0d7",
+      "targetId": "moment:3d2e036031c5c489d0d7",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:3d2e036031c5c489d0d7->moment:3d2e036031c5c489d0d7"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:3d2e036031c5c489d0d7",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:3d2e036031c5c489d0d7->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:3d2e036031c5c489d0d7",
+      "targetId": "segment:TrdevFK_am4:1473.3",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:3d2e036031c5c489d0d7->segment:TrdevFK_am4:1473.3"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1473.3",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1473.3->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:3d2e036031c5c489d0d7",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:3d2e036031c5c489d0d7->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:3d2e036031c5c489d0d7",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:3d2e036031c5c489d0d7->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:3d2e036031c5c489d0d7",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:3d2e036031c5c489d0d7->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:3d2e036031c5c489d0d7",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:3d2e036031c5c489d0d7->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:d57c4fcb426ae26fc68a",
+      "targetId": "moment:d57c4fcb426ae26fc68a",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:d57c4fcb426ae26fc68a->moment:d57c4fcb426ae26fc68a"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:d57c4fcb426ae26fc68a",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:d57c4fcb426ae26fc68a->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:d57c4fcb426ae26fc68a",
+      "targetId": "segment:TrdevFK_am4:13.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:d57c4fcb426ae26fc68a->segment:TrdevFK_am4:13.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:13.7",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:13.7->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:d57c4fcb426ae26fc68a",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:d57c4fcb426ae26fc68a->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:d57c4fcb426ae26fc68a",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:d57c4fcb426ae26fc68a->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:d57c4fcb426ae26fc68a",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:d57c4fcb426ae26fc68a->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:d57c4fcb426ae26fc68a",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:d57c4fcb426ae26fc68a->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:4f2425487768beb05dda",
+      "targetId": "moment:4f2425487768beb05dda",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:4f2425487768beb05dda->moment:4f2425487768beb05dda"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:4f2425487768beb05dda",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:4f2425487768beb05dda->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:4f2425487768beb05dda",
+      "targetId": "segment:TrdevFK_am4:1316.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:4f2425487768beb05dda->segment:TrdevFK_am4:1316.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1316.6",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1316.6->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:4f2425487768beb05dda",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:4f2425487768beb05dda->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:4f2425487768beb05dda",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:4f2425487768beb05dda->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:4f2425487768beb05dda",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:4f2425487768beb05dda->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:4f2425487768beb05dda",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:4f2425487768beb05dda->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:3c961870767771f07713",
+      "targetId": "moment:3c961870767771f07713",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:3c961870767771f07713->moment:3c961870767771f07713"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:3c961870767771f07713->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "segment:TrdevFK_am4:59",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:3c961870767771f07713->segment:TrdevFK_am4:59"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:59",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:59->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:3c961870767771f07713",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:3c961870767771f07713->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:3c961870767771f07713->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:3c961870767771f07713->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:3c961870767771f07713->creator:yannic-kilcher"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "moment:9eb888feff183e055fa5",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:3c961870767771f07713->moment:9eb888feff183e055fa5"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "moment:3d2e036031c5c489d0d7",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:3c961870767771f07713->moment:3d2e036031c5c489d0d7"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:3c961870767771f07713",
+      "targetId": "moment:d57c4fcb426ae26fc68a",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:3c961870767771f07713->moment:d57c4fcb426ae26fc68a"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:3adc6cd015a5d50e12c2",
+      "targetId": "moment:3adc6cd015a5d50e12c2",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:3adc6cd015a5d50e12c2->moment:3adc6cd015a5d50e12c2"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:3adc6cd015a5d50e12c2",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:3adc6cd015a5d50e12c2->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:3adc6cd015a5d50e12c2",
+      "targetId": "segment:TrdevFK_am4:1418.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:3adc6cd015a5d50e12c2->segment:TrdevFK_am4:1418.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1418.8",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1418.8->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:3adc6cd015a5d50e12c2",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:3adc6cd015a5d50e12c2->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:3adc6cd015a5d50e12c2",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:3adc6cd015a5d50e12c2->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:3adc6cd015a5d50e12c2",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:3adc6cd015a5d50e12c2->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:3adc6cd015a5d50e12c2",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:3adc6cd015a5d50e12c2->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:2154b2f3e65031298c49",
+      "targetId": "moment:2154b2f3e65031298c49",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:2154b2f3e65031298c49->moment:2154b2f3e65031298c49"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:2154b2f3e65031298c49",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:2154b2f3e65031298c49->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:2154b2f3e65031298c49",
+      "targetId": "segment:TrdevFK_am4:910.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:2154b2f3e65031298c49->segment:TrdevFK_am4:910.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:910.6",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:910.6->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:2154b2f3e65031298c49",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:2154b2f3e65031298c49->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:2154b2f3e65031298c49",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:2154b2f3e65031298c49->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:2154b2f3e65031298c49",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:2154b2f3e65031298c49->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:2154b2f3e65031298c49",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:2154b2f3e65031298c49->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:ba46aed137e5dbe14874",
+      "targetId": "moment:ba46aed137e5dbe14874",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:ba46aed137e5dbe14874->moment:ba46aed137e5dbe14874"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:ba46aed137e5dbe14874",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:ba46aed137e5dbe14874->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:ba46aed137e5dbe14874",
+      "targetId": "segment:TrdevFK_am4:974.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:ba46aed137e5dbe14874->segment:TrdevFK_am4:974.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:974.6",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:974.6->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:ba46aed137e5dbe14874",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:ba46aed137e5dbe14874->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:ba46aed137e5dbe14874",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:ba46aed137e5dbe14874->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:ba46aed137e5dbe14874",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:ba46aed137e5dbe14874->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:ba46aed137e5dbe14874",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:ba46aed137e5dbe14874->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:e471a1106fb09ca8869c",
+      "targetId": "moment:e471a1106fb09ca8869c",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:e471a1106fb09ca8869c->moment:e471a1106fb09ca8869c"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:e471a1106fb09ca8869c",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:e471a1106fb09ca8869c->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:e471a1106fb09ca8869c",
+      "targetId": "segment:TrdevFK_am4:1511.4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:e471a1106fb09ca8869c->segment:TrdevFK_am4:1511.4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1511.4",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1511.4->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:e471a1106fb09ca8869c",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:e471a1106fb09ca8869c->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:e471a1106fb09ca8869c",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:e471a1106fb09ca8869c->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:e471a1106fb09ca8869c",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:e471a1106fb09ca8869c->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:e471a1106fb09ca8869c",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:e471a1106fb09ca8869c->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:d7c5a9d554b51e1f77c7",
+      "targetId": "moment:d7c5a9d554b51e1f77c7",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:d7c5a9d554b51e1f77c7->moment:d7c5a9d554b51e1f77c7"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:d7c5a9d554b51e1f77c7",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:d7c5a9d554b51e1f77c7->video:TrdevFK_am4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:d7c5a9d554b51e1f77c7",
+      "targetId": "segment:TrdevFK_am4:1788.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:d7c5a9d554b51e1f77c7->segment:TrdevFK_am4:1788.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:TrdevFK_am4:1788.8",
+      "targetId": "video:TrdevFK_am4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:TrdevFK_am4:1788.8->video:TrdevFK_am4"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:d7c5a9d554b51e1f77c7",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:d7c5a9d554b51e1f77c7->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:d7c5a9d554b51e1f77c7",
+      "targetId": "topic:rag, rag, transformers, vector-database",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:d7c5a9d554b51e1f77c7->topic:rag, rag, transformers, vector-database"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:d7c5a9d554b51e1f77c7",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:d7c5a9d554b51e1f77c7->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:d7c5a9d554b51e1f77c7",
+      "targetId": "creator:yannic-kilcher",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:d7c5a9d554b51e1f77c7->creator:yannic-kilcher"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:0ab03fd2372fbf3b89a8",
+      "targetId": "moment:0ab03fd2372fbf3b89a8",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:0ab03fd2372fbf3b89a8->moment:0ab03fd2372fbf3b89a8"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:0ab03fd2372fbf3b89a8->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "segment:1Rs2ND1ryYc:6970.1",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:0ab03fd2372fbf3b89a8->segment:1Rs2ND1ryYc:6970.1"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:6970.1",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:6970.1->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:0ab03fd2372fbf3b89a8",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:0ab03fd2372fbf3b89a8->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:0ab03fd2372fbf3b89a8->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:0ab03fd2372fbf3b89a8->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:0ab03fd2372fbf3b89a8->creator:freecodecamp-org"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:0ab03fd2372fbf3b89a8->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:0ab03fd2372fbf3b89a8->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:0ab03fd2372fbf3b89a8",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:0ab03fd2372fbf3b89a8->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:92a9be14ed993ecc87d8",
+      "targetId": "moment:92a9be14ed993ecc87d8",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:92a9be14ed993ecc87d8->moment:92a9be14ed993ecc87d8"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "video:09_LlHjoEiY",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:92a9be14ed993ecc87d8->video:09_LlHjoEiY"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "segment:09_LlHjoEiY:12048.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:92a9be14ed993ecc87d8->segment:09_LlHjoEiY:12048.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:09_LlHjoEiY:12048.6",
+      "targetId": "video:09_LlHjoEiY",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:09_LlHjoEiY:12048.6->video:09_LlHjoEiY"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:92a9be14ed993ecc87d8",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:92a9be14ed993ecc87d8->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:92a9be14ed993ecc87d8->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:92a9be14ed993ecc87d8->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:92a9be14ed993ecc87d8->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:92a9be14ed993ecc87d8->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:92a9be14ed993ecc87d8",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:92a9be14ed993ecc87d8->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:10d3a9562cdddad69981",
+      "targetId": "moment:10d3a9562cdddad69981",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:10d3a9562cdddad69981->moment:10d3a9562cdddad69981"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "video:CcrC5zSv1iA",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:10d3a9562cdddad69981->video:CcrC5zSv1iA"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "segment:CcrC5zSv1iA:38337",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:10d3a9562cdddad69981->segment:CcrC5zSv1iA:38337"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:CcrC5zSv1iA:38337",
+      "targetId": "video:CcrC5zSv1iA",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:CcrC5zSv1iA:38337->video:CcrC5zSv1iA"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:10d3a9562cdddad69981",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:10d3a9562cdddad69981->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:10d3a9562cdddad69981->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:10d3a9562cdddad69981->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:10d3a9562cdddad69981->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:10d3a9562cdddad69981->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:10d3a9562cdddad69981",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:10d3a9562cdddad69981->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:425d568a2ccdba2c8f1b",
+      "targetId": "moment:425d568a2ccdba2c8f1b",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:425d568a2ccdba2c8f1b->moment:425d568a2ccdba2c8f1b"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "video:48pxVdmkMIE",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:425d568a2ccdba2c8f1b->video:48pxVdmkMIE"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "segment:48pxVdmkMIE:3881.5",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:425d568a2ccdba2c8f1b->segment:48pxVdmkMIE:3881.5"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:48pxVdmkMIE:3881.5",
+      "targetId": "video:48pxVdmkMIE",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:48pxVdmkMIE:3881.5->video:48pxVdmkMIE"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:425d568a2ccdba2c8f1b",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:425d568a2ccdba2c8f1b->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:425d568a2ccdba2c8f1b->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:425d568a2ccdba2c8f1b->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:425d568a2ccdba2c8f1b->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:425d568a2ccdba2c8f1b->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:425d568a2ccdba2c8f1b->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:425d568a2ccdba2c8f1b",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:425d568a2ccdba2c8f1b->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:b8ef8ca960ecd63a6a2a",
+      "targetId": "moment:b8ef8ca960ecd63a6a2a",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:b8ef8ca960ecd63a6a2a->moment:b8ef8ca960ecd63a6a2a"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:b8ef8ca960ecd63a6a2a->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "segment:Qp0rCU49lMs:1723.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:b8ef8ca960ecd63a6a2a->segment:Qp0rCU49lMs:1723.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Qp0rCU49lMs:1723.6",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Qp0rCU49lMs:1723.6->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:b8ef8ca960ecd63a6a2a",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:b8ef8ca960ecd63a6a2a->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:b8ef8ca960ecd63a6a2a->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:b8ef8ca960ecd63a6a2a->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:b8ef8ca960ecd63a6a2a->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:b8ef8ca960ecd63a6a2a->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:b8ef8ca960ecd63a6a2a",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:b8ef8ca960ecd63a6a2a->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:1968a3eaecbed4fe47e5",
+      "targetId": "moment:1968a3eaecbed4fe47e5",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:1968a3eaecbed4fe47e5->moment:1968a3eaecbed4fe47e5"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:1968a3eaecbed4fe47e5->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "segment:Qp0rCU49lMs:276.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:1968a3eaecbed4fe47e5->segment:Qp0rCU49lMs:276.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Qp0rCU49lMs:276.8",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Qp0rCU49lMs:276.8->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:1968a3eaecbed4fe47e5",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:1968a3eaecbed4fe47e5->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:1968a3eaecbed4fe47e5->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:1968a3eaecbed4fe47e5->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:1968a3eaecbed4fe47e5->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:1968a3eaecbed4fe47e5->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:1968a3eaecbed4fe47e5",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:1968a3eaecbed4fe47e5->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:336caf696c3019135891",
+      "targetId": "moment:336caf696c3019135891",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:336caf696c3019135891->moment:336caf696c3019135891"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:336caf696c3019135891->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "segment:Qp0rCU49lMs:10890.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:336caf696c3019135891->segment:Qp0rCU49lMs:10890.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Qp0rCU49lMs:10890.6",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Qp0rCU49lMs:10890.6->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:336caf696c3019135891",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:336caf696c3019135891->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:336caf696c3019135891->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:336caf696c3019135891->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:336caf696c3019135891->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:336caf696c3019135891->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:336caf696c3019135891",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:336caf696c3019135891->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:d49e2486f61b455ee83d",
+      "targetId": "moment:d49e2486f61b455ee83d",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:d49e2486f61b455ee83d->moment:d49e2486f61b455ee83d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:d49e2486f61b455ee83d->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "segment:1Rs2ND1ryYc:24515.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:d49e2486f61b455ee83d->segment:1Rs2ND1ryYc:24515.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:24515.2",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:24515.2->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:d49e2486f61b455ee83d",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:d49e2486f61b455ee83d->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:d49e2486f61b455ee83d->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:d49e2486f61b455ee83d->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:d49e2486f61b455ee83d->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:d49e2486f61b455ee83d->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:d49e2486f61b455ee83d",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:d49e2486f61b455ee83d->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:9d5850e3e796ba71865f",
+      "targetId": "moment:9d5850e3e796ba71865f",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:9d5850e3e796ba71865f->moment:9d5850e3e796ba71865f"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:9d5850e3e796ba71865f->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "segment:1Rs2ND1ryYc:9018",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:9d5850e3e796ba71865f->segment:1Rs2ND1ryYc:9018"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:9018",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:9018->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:9d5850e3e796ba71865f",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:9d5850e3e796ba71865f->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:9d5850e3e796ba71865f->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:9d5850e3e796ba71865f->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:9d5850e3e796ba71865f->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:9d5850e3e796ba71865f->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:9d5850e3e796ba71865f",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:9d5850e3e796ba71865f->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:e6942b1576c65c56dc59",
+      "targetId": "moment:e6942b1576c65c56dc59",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:e6942b1576c65c56dc59->moment:e6942b1576c65c56dc59"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:e6942b1576c65c56dc59->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "segment:Qp0rCU49lMs:10894.5",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:e6942b1576c65c56dc59->segment:Qp0rCU49lMs:10894.5"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Qp0rCU49lMs:10894.5",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Qp0rCU49lMs:10894.5->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:e6942b1576c65c56dc59",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:e6942b1576c65c56dc59->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:e6942b1576c65c56dc59->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:e6942b1576c65c56dc59->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:e6942b1576c65c56dc59->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:e6942b1576c65c56dc59->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:e6942b1576c65c56dc59",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:e6942b1576c65c56dc59->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:5ce426eef95e7995e01f",
+      "targetId": "moment:5ce426eef95e7995e01f",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:5ce426eef95e7995e01f->moment:5ce426eef95e7995e01f"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "video:lXUZvyajciY",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:5ce426eef95e7995e01f->video:lXUZvyajciY"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "segment:lXUZvyajciY:8631.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:5ce426eef95e7995e01f->segment:lXUZvyajciY:8631.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:lXUZvyajciY:8631.2",
+      "targetId": "video:lXUZvyajciY",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:lXUZvyajciY:8631.2->video:lXUZvyajciY"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:5ce426eef95e7995e01f",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:5ce426eef95e7995e01f->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:5ce426eef95e7995e01f->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:5ce426eef95e7995e01f->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:5ce426eef95e7995e01f->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:5ce426eef95e7995e01f->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:5ce426eef95e7995e01f",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:5ce426eef95e7995e01f->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:f9a1d64dbd313bc58400",
+      "targetId": "moment:f9a1d64dbd313bc58400",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:f9a1d64dbd313bc58400->moment:f9a1d64dbd313bc58400"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "video:RGOj5yH7evk",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:f9a1d64dbd313bc58400->video:RGOj5yH7evk"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "segment:RGOj5yH7evk:1948.9",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:f9a1d64dbd313bc58400->segment:RGOj5yH7evk:1948.9"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:RGOj5yH7evk:1948.9",
+      "targetId": "video:RGOj5yH7evk",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:RGOj5yH7evk:1948.9->video:RGOj5yH7evk"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:f9a1d64dbd313bc58400",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:f9a1d64dbd313bc58400->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:f9a1d64dbd313bc58400->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:f9a1d64dbd313bc58400->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:f9a1d64dbd313bc58400->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f9a1d64dbd313bc58400->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f9a1d64dbd313bc58400",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f9a1d64dbd313bc58400->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:116ad62b5efc76b62f53",
+      "targetId": "moment:116ad62b5efc76b62f53",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:116ad62b5efc76b62f53->moment:116ad62b5efc76b62f53"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "video:zJSY8tbf_ys",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:116ad62b5efc76b62f53->video:zJSY8tbf_ys"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "segment:zJSY8tbf_ys:43972.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:116ad62b5efc76b62f53->segment:zJSY8tbf_ys:43972.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:zJSY8tbf_ys:43972.7",
+      "targetId": "video:zJSY8tbf_ys",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:zJSY8tbf_ys:43972.7->video:zJSY8tbf_ys"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:116ad62b5efc76b62f53",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:116ad62b5efc76b62f53->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:116ad62b5efc76b62f53->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:116ad62b5efc76b62f53->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:116ad62b5efc76b62f53->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:116ad62b5efc76b62f53->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:116ad62b5efc76b62f53",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:116ad62b5efc76b62f53->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:2d2a4f44fb7b31699978",
+      "targetId": "moment:2d2a4f44fb7b31699978",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:2d2a4f44fb7b31699978->moment:2d2a4f44fb7b31699978"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "video:fis26HvvDII",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:2d2a4f44fb7b31699978->video:fis26HvvDII"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "segment:fis26HvvDII:14028.9",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:2d2a4f44fb7b31699978->segment:fis26HvvDII:14028.9"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:fis26HvvDII:14028.9",
+      "targetId": "video:fis26HvvDII",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:fis26HvvDII:14028.9->video:fis26HvvDII"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:2d2a4f44fb7b31699978",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:2d2a4f44fb7b31699978->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:2d2a4f44fb7b31699978->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:2d2a4f44fb7b31699978->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:2d2a4f44fb7b31699978->creator:freecodecamp-org"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:2d2a4f44fb7b31699978->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:2d2a4f44fb7b31699978->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:2d2a4f44fb7b31699978",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:2d2a4f44fb7b31699978->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:89e2c26c7acf79a86d77",
+      "targetId": "moment:89e2c26c7acf79a86d77",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:89e2c26c7acf79a86d77->moment:89e2c26c7acf79a86d77"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "video:xmkSf5IS-zw",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:89e2c26c7acf79a86d77->video:xmkSf5IS-zw"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "segment:xmkSf5IS-zw:1733.4",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:89e2c26c7acf79a86d77->segment:xmkSf5IS-zw:1733.4"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:xmkSf5IS-zw:1733.4",
+      "targetId": "video:xmkSf5IS-zw",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:xmkSf5IS-zw:1733.4->video:xmkSf5IS-zw"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:89e2c26c7acf79a86d77",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:89e2c26c7acf79a86d77->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:89e2c26c7acf79a86d77->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:89e2c26c7acf79a86d77->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:89e2c26c7acf79a86d77->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:89e2c26c7acf79a86d77->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:89e2c26c7acf79a86d77->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:89e2c26c7acf79a86d77",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:89e2c26c7acf79a86d77->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:0eebb22a60118f552470",
+      "targetId": "moment:0eebb22a60118f552470",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:0eebb22a60118f552470->moment:0eebb22a60118f552470"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:0eebb22a60118f552470",
+      "targetId": "video:5t1vTLU7s40",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:0eebb22a60118f552470->video:5t1vTLU7s40"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:0eebb22a60118f552470",
+      "targetId": "segment:5t1vTLU7s40:1506.5",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:0eebb22a60118f552470->segment:5t1vTLU7s40:1506.5"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:5t1vTLU7s40:1506.5",
+      "targetId": "video:5t1vTLU7s40",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:5t1vTLU7s40:1506.5->video:5t1vTLU7s40"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:0eebb22a60118f552470",
+      "targetId": "topic:how-llms-trained, transformers, llm-fine-tuning",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:0eebb22a60118f552470->topic:how-llms-trained, transformers, llm-fine-tuning"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:0eebb22a60118f552470",
+      "targetId": "topic:how-llms-trained, transformers, llm-fine-tuning",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:0eebb22a60118f552470->topic:how-llms-trained, transformers, llm-fine-tuning"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:0eebb22a60118f552470",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:0eebb22a60118f552470->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:0eebb22a60118f552470",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:0eebb22a60118f552470->creator:lex-fridman"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:366df8b1de146a8844cb",
+      "targetId": "moment:366df8b1de146a8844cb",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:366df8b1de146a8844cb->moment:366df8b1de146a8844cb"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "video:fis26HvvDII",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:366df8b1de146a8844cb->video:fis26HvvDII"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "segment:fis26HvvDII:10168.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:366df8b1de146a8844cb->segment:fis26HvvDII:10168.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:fis26HvvDII:10168.6",
+      "targetId": "video:fis26HvvDII",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:fis26HvvDII:10168.6->video:fis26HvvDII"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:366df8b1de146a8844cb",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:366df8b1de146a8844cb->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:366df8b1de146a8844cb->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:366df8b1de146a8844cb->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:366df8b1de146a8844cb->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:366df8b1de146a8844cb->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:366df8b1de146a8844cb",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:366df8b1de146a8844cb->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:9cfeed027a9e516607dc",
+      "targetId": "moment:9cfeed027a9e516607dc",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:9cfeed027a9e516607dc->moment:9cfeed027a9e516607dc"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "video:bc6uFV9CJGg",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:9cfeed027a9e516607dc->video:bc6uFV9CJGg"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "segment:bc6uFV9CJGg:2323.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:9cfeed027a9e516607dc->segment:bc6uFV9CJGg:2323.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:bc6uFV9CJGg:2323.6",
+      "targetId": "video:bc6uFV9CJGg",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:bc6uFV9CJGg:2323.6->video:bc6uFV9CJGg"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:9cfeed027a9e516607dc",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:9cfeed027a9e516607dc->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:9cfeed027a9e516607dc->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:9cfeed027a9e516607dc->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:9cfeed027a9e516607dc->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:9cfeed027a9e516607dc->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:9cfeed027a9e516607dc->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:9cfeed027a9e516607dc",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:9cfeed027a9e516607dc->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:aabdb99cef048bfeecdd",
+      "targetId": "moment:aabdb99cef048bfeecdd",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:aabdb99cef048bfeecdd->moment:aabdb99cef048bfeecdd"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "video:KJgsSFOSQv0",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:aabdb99cef048bfeecdd->video:KJgsSFOSQv0"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "segment:KJgsSFOSQv0:10287",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:aabdb99cef048bfeecdd->segment:KJgsSFOSQv0:10287"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:KJgsSFOSQv0:10287",
+      "targetId": "video:KJgsSFOSQv0",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:KJgsSFOSQv0:10287->video:KJgsSFOSQv0"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:aabdb99cef048bfeecdd",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:aabdb99cef048bfeecdd->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:aabdb99cef048bfeecdd->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:aabdb99cef048bfeecdd->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:aabdb99cef048bfeecdd->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:aabdb99cef048bfeecdd->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:aabdb99cef048bfeecdd",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:aabdb99cef048bfeecdd->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:be1df0ece89426a5a9ba",
+      "targetId": "moment:be1df0ece89426a5a9ba",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:be1df0ece89426a5a9ba->moment:be1df0ece89426a5a9ba"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "video:Z1RJmh_OqeA",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:be1df0ece89426a5a9ba->video:Z1RJmh_OqeA"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "segment:Z1RJmh_OqeA:1170.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:be1df0ece89426a5a9ba->segment:Z1RJmh_OqeA:1170.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Z1RJmh_OqeA:1170.7",
+      "targetId": "video:Z1RJmh_OqeA",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Z1RJmh_OqeA:1170.7->video:Z1RJmh_OqeA"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:be1df0ece89426a5a9ba",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:be1df0ece89426a5a9ba->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:be1df0ece89426a5a9ba->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:be1df0ece89426a5a9ba->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:be1df0ece89426a5a9ba->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:be1df0ece89426a5a9ba->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:be1df0ece89426a5a9ba",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:be1df0ece89426a5a9ba->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:088ee292f491f8171972",
+      "targetId": "moment:088ee292f491f8171972",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:088ee292f491f8171972->moment:088ee292f491f8171972"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:088ee292f491f8171972->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "segment:1Rs2ND1ryYc:16122.8",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:088ee292f491f8171972->segment:1Rs2ND1ryYc:16122.8"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:16122.8",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:16122.8->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:088ee292f491f8171972",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:088ee292f491f8171972->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:088ee292f491f8171972->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:088ee292f491f8171972->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:088ee292f491f8171972->creator:freecodecamp-org"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:088ee292f491f8171972->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:088ee292f491f8171972->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:088ee292f491f8171972",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:088ee292f491f8171972->moment:25120b4c8094215e6a4d"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:ffa09298143b07ad1f97",
+      "targetId": "moment:ffa09298143b07ad1f97",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:ffa09298143b07ad1f97->moment:ffa09298143b07ad1f97"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:ffa09298143b07ad1f97->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "segment:1Rs2ND1ryYc:24297.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:ffa09298143b07ad1f97->segment:1Rs2ND1ryYc:24297.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:24297.2",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:24297.2->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:ffa09298143b07ad1f97",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:ffa09298143b07ad1f97->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:ffa09298143b07ad1f97->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:ffa09298143b07ad1f97->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:ffa09298143b07ad1f97->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:ffa09298143b07ad1f97->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:ffa09298143b07ad1f97",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:ffa09298143b07ad1f97->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:f7d1a8a01704fa2d845e",
+      "targetId": "moment:f7d1a8a01704fa2d845e",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:f7d1a8a01704fa2d845e->moment:f7d1a8a01704fa2d845e"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:f7d1a8a01704fa2d845e->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "segment:1Rs2ND1ryYc:3622.6",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:f7d1a8a01704fa2d845e->segment:1Rs2ND1ryYc:3622.6"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:3622.6",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:3622.6->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:f7d1a8a01704fa2d845e",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:f7d1a8a01704fa2d845e->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:f7d1a8a01704fa2d845e->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:f7d1a8a01704fa2d845e->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:f7d1a8a01704fa2d845e->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f7d1a8a01704fa2d845e->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f7d1a8a01704fa2d845e",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f7d1a8a01704fa2d845e->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:f06463cfb05b723d0f74",
+      "targetId": "moment:f06463cfb05b723d0f74",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:f06463cfb05b723d0f74->moment:f06463cfb05b723d0f74"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:f06463cfb05b723d0f74->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "segment:1Rs2ND1ryYc:22959.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:f06463cfb05b723d0f74->segment:1Rs2ND1ryYc:22959.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:22959.2",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:22959.2->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:f06463cfb05b723d0f74",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:f06463cfb05b723d0f74->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:f06463cfb05b723d0f74->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:f06463cfb05b723d0f74->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:f06463cfb05b723d0f74->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f06463cfb05b723d0f74->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:f06463cfb05b723d0f74",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:f06463cfb05b723d0f74->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:d06fccdf7f5608ab02a5",
+      "targetId": "moment:d06fccdf7f5608ab02a5",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:d06fccdf7f5608ab02a5->moment:d06fccdf7f5608ab02a5"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:d06fccdf7f5608ab02a5->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "segment:Qp0rCU49lMs:3463.3",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:d06fccdf7f5608ab02a5->segment:Qp0rCU49lMs:3463.3"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:Qp0rCU49lMs:3463.3",
+      "targetId": "video:Qp0rCU49lMs",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:Qp0rCU49lMs:3463.3->video:Qp0rCU49lMs"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:d06fccdf7f5608ab02a5",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:d06fccdf7f5608ab02a5->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:d06fccdf7f5608ab02a5->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:d06fccdf7f5608ab02a5->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "creator:lex-fridman",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:d06fccdf7f5608ab02a5->creator:lex-fridman"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:d06fccdf7f5608ab02a5->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:d06fccdf7f5608ab02a5",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:d06fccdf7f5608ab02a5->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:915fccf8a9666e2e322c",
+      "targetId": "moment:915fccf8a9666e2e322c",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:915fccf8a9666e2e322c->moment:915fccf8a9666e2e322c"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:915fccf8a9666e2e322c",
+      "targetId": "video:n1E9IZfvGMA",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:915fccf8a9666e2e322c->video:n1E9IZfvGMA"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:915fccf8a9666e2e322c",
+      "targetId": "segment:n1E9IZfvGMA:3688.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:915fccf8a9666e2e322c->segment:n1E9IZfvGMA:3688.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:n1E9IZfvGMA:3688.7",
+      "targetId": "video:n1E9IZfvGMA",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:n1E9IZfvGMA:3688.7->video:n1E9IZfvGMA"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:915fccf8a9666e2e322c",
+      "targetId": "topic:llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:915fccf8a9666e2e322c->topic:llm-fine-tuning, state-of-ai-2026, ai-policy-scaling"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:915fccf8a9666e2e322c",
+      "targetId": "topic:llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:915fccf8a9666e2e322c->topic:llm-fine-tuning, state-of-ai-2026, ai-policy-scaling"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:915fccf8a9666e2e322c",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:915fccf8a9666e2e322c->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:915fccf8a9666e2e322c",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:915fccf8a9666e2e322c->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:fe16bd4d0da0eaa8d9eb",
+      "targetId": "moment:fe16bd4d0da0eaa8d9eb",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:fe16bd4d0da0eaa8d9eb->moment:fe16bd4d0da0eaa8d9eb"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "video:RGOj5yH7evk",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:fe16bd4d0da0eaa8d9eb->video:RGOj5yH7evk"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "segment:RGOj5yH7evk:2595.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:fe16bd4d0da0eaa8d9eb->segment:RGOj5yH7evk:2595.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:RGOj5yH7evk:2595.2",
+      "targetId": "video:RGOj5yH7evk",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:RGOj5yH7evk:2595.2->video:RGOj5yH7evk"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:fe16bd4d0da0eaa8d9eb",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:fe16bd4d0da0eaa8d9eb->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:fe16bd4d0da0eaa8d9eb->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:fe16bd4d0da0eaa8d9eb->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:fe16bd4d0da0eaa8d9eb->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:fe16bd4d0da0eaa8d9eb->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:fe16bd4d0da0eaa8d9eb",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:fe16bd4d0da0eaa8d9eb->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:11a2341da87ec8bfd5ef",
+      "targetId": "moment:11a2341da87ec8bfd5ef",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:11a2341da87ec8bfd5ef->moment:11a2341da87ec8bfd5ef"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "video:lXUZvyajciY",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:11a2341da87ec8bfd5ef->video:lXUZvyajciY"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "segment:lXUZvyajciY:8183",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:11a2341da87ec8bfd5ef->segment:lXUZvyajciY:8183"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:lXUZvyajciY:8183",
+      "targetId": "video:lXUZvyajciY",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:lXUZvyajciY:8183->video:lXUZvyajciY"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:11a2341da87ec8bfd5ef",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:11a2341da87ec8bfd5ef->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:11a2341da87ec8bfd5ef->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:11a2341da87ec8bfd5ef->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "creator:dwarkesh-patel",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:11a2341da87ec8bfd5ef->creator:dwarkesh-patel"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:11a2341da87ec8bfd5ef->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:11a2341da87ec8bfd5ef",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:11a2341da87ec8bfd5ef->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:207318b27eeb2c425db1",
+      "targetId": "moment:207318b27eeb2c425db1",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:207318b27eeb2c425db1->moment:207318b27eeb2c425db1"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:207318b27eeb2c425db1->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "segment:1Rs2ND1ryYc:23291.2",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:207318b27eeb2c425db1->segment:1Rs2ND1ryYc:23291.2"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:1Rs2ND1ryYc:23291.2",
+      "targetId": "video:1Rs2ND1ryYc",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:1Rs2ND1ryYc:23291.2->video:1Rs2ND1ryYc"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:207318b27eeb2c425db1",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:207318b27eeb2c425db1->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:207318b27eeb2c425db1->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:207318b27eeb2c425db1->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:207318b27eeb2c425db1->creator:freecodecamp-org"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:207318b27eeb2c425db1->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "supports",
+      "sourceId": "moment:207318b27eeb2c425db1",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.5,
+      "properties": {
+        "sameTopic": "uncategorized"
+      },
+      "id": "supports:moment:207318b27eeb2c425db1->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "citation:a67e70377aced5eb583b",
+      "targetId": "moment:a67e70377aced5eb583b",
+      "weight": 1,
+      "properties": {},
+      "id": "cites:citation:a67e70377aced5eb583b->moment:a67e70377aced5eb583b"
+    },
+    {
+      "kind": "cites",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "video:fis26HvvDII",
+      "weight": 0.9,
+      "properties": {},
+      "id": "cites:moment:a67e70377aced5eb583b->video:fis26HvvDII"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "segment:fis26HvvDII:630.7",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:moment:a67e70377aced5eb583b->segment:fis26HvvDII:630.7"
+    },
+    {
+      "kind": "clipped_from",
+      "sourceId": "segment:fis26HvvDII:630.7",
+      "targetId": "video:fis26HvvDII",
+      "weight": 1,
+      "properties": {},
+      "id": "clipped_from:segment:fis26HvvDII:630.7->video:fis26HvvDII"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "explanation:a67e70377aced5eb583b",
+      "targetId": "topic:uncategorized",
+      "weight": 1,
+      "properties": {},
+      "id": "explains:explanation:a67e70377aced5eb583b->topic:uncategorized"
+    },
+    {
+      "kind": "explains",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "topic:uncategorized",
+      "weight": 0.85,
+      "properties": {},
+      "id": "explains:moment:a67e70377aced5eb583b->topic:uncategorized"
+    },
+    {
+      "kind": "source_context",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "source:youtube",
+      "weight": 1,
+      "properties": {},
+      "id": "source_context:moment:a67e70377aced5eb583b->source:youtube"
+    },
+    {
+      "kind": "created_by",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "creator:freecodecamp-org",
+      "weight": 1,
+      "properties": {},
+      "id": "created_by:moment:a67e70377aced5eb583b->creator:freecodecamp-org"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "moment:6d912c21306211de4523",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:a67e70377aced5eb583b->moment:6d912c21306211de4523"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "moment:19844e822c84edeeea76",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:a67e70377aced5eb583b->moment:19844e822c84edeeea76"
+    },
+    {
+      "kind": "contradicts_or_caveats",
+      "sourceId": "moment:a67e70377aced5eb583b",
+      "targetId": "moment:25120b4c8094215e6a4d",
+      "weight": 0.7,
+      "properties": {
+        "heuristic": true
+      },
+      "id": "contradicts_or_caveats:moment:a67e70377aced5eb583b->moment:25120b4c8094215e6a4d"
+    },
+    {
       "kind": "saved_in",
       "sourceId": "moment:cd9083c6855cce37372c",
       "targetId": "collection:best-rag-explanations",
@@ -29445,52 +34905,70 @@
     }
   ],
   "metrics": {
-    "nodeCount": 1095,
-    "edgeCount": 2063,
+    "nodeCount": 1299,
+    "edgeCount": 2453,
     "nodeCountsByKind": {
       "Source": 1,
-      "Video": 54,
+      "Video": 56,
       "Creator": 11,
-      "Topic": 54,
+      "Topic": 56,
       "Collection": 5,
-      "PublicMoment": 220,
-      "TranscriptSegment": 210,
-      "Explanation": 220,
-      "ClaimLikeStatement": 220,
-      "Citation": 100
+      "PublicMoment": 260,
+      "TranscriptSegment": 250,
+      "Explanation": 260,
+      "ClaimLikeStatement": 260,
+      "Citation": 140
     },
     "edgeCountsByKind": {
-      "source_context": 274,
-      "created_by": 272,
+      "source_context": 316,
+      "created_by": 314,
       "same_topic_as": 160,
-      "clipped_from": 430,
-      "explains": 440,
-      "contradicts_or_caveats": 94,
-      "cites": 200,
-      "supports": 164,
+      "clipped_from": 510,
+      "explains": 520,
+      "contradicts_or_caveats": 118,
+      "cites": 280,
+      "supports": 206,
       "saved_in": 14,
       "compared_with": 15
     },
     "topicCoverageDepth": 1,
     "creatorDiversity": 11,
-    "citationDensity": 0.45454545454545453,
+    "citationDensity": 0.5384615384615384,
     "explanationDensity": 1,
-    "compareReadiness": 0.17045454545454544,
-    "weakContextShare": 0.24545454545454545,
+    "compareReadiness": 0.14423076923076922,
+    "weakContextShare": 0.2423076923076923,
     "orphanMomentCount": 0,
     "lowTrustClusterCount": 4,
     "strongestTopicClusters": [
       {
         "topicSlug": "uncategorized",
-        "momentCount": 99,
-        "videoCount": 25,
+        "momentCount": 127,
+        "videoCount": 33,
         "creatorCount": 7,
         "citationDensity": 1,
-        "compareReadiness": 0.30303030303030304,
-        "clusterScore": 86
+        "compareReadiness": 0.23622047244094488,
+        "clusterScore": 85
       },
       {
         "topicSlug": "how-llms-trained, transformers, llm-fine-tuning",
+        "momentCount": 2,
+        "videoCount": 1,
+        "creatorCount": 1,
+        "citationDensity": 1,
+        "compareReadiness": 0,
+        "clusterScore": 43
+      },
+      {
+        "topicSlug": "rag, rag, transformers, vector-database",
+        "momentCount": 10,
+        "videoCount": 1,
+        "creatorCount": 1,
+        "citationDensity": 1,
+        "compareReadiness": 0,
+        "clusterScore": 43
+      },
+      {
+        "topicSlug": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
         "momentCount": 1,
         "videoCount": 1,
         "creatorCount": 1,
@@ -29569,28 +35047,12 @@
         "citationDensity": 0,
         "compareReadiness": 0,
         "clusterScore": 13
-      },
-      {
-        "topicSlug": "kubernetes-beginners",
-        "momentCount": 9,
-        "videoCount": 1,
-        "creatorCount": 1,
-        "citationDensity": 0,
-        "compareReadiness": 0,
-        "clusterScore": 13
-      },
-      {
-        "topicSlug": "state-of-ai-2026",
-        "momentCount": 2,
-        "videoCount": 1,
-        "creatorCount": 1,
-        "citationDensity": 0,
-        "compareReadiness": 0,
-        "clusterScore": 13
       }
     ],
-    "enterpriseReadinessScore": 18,
+    "enterpriseReadinessScore": 19,
     "enterpriseReadinessLevel": "L0 public search prototype",
-    "enterpriseReadinessNotes": []
+    "enterpriseReadinessNotes": [
+      "Compare-readiness weak — expand multi-creator topics"
+    ]
   }
 }

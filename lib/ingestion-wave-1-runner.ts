@@ -179,6 +179,10 @@ export type RunWave1Options = {
   start: number;
   checkDelayMs?: number;
   dataDir?: string;
+  /** Seed queue source label (default `wave-1`). */
+  queueSource?: string;
+  /** Map wave candidate → seed job (default `wave1ToSeedInput`). */
+  toSeedInput?: (c: Wave1PlanCandidate) => SeedTranscriptInput;
 };
 
 const GATE_MIN_CHECKS = 3;
@@ -190,6 +194,8 @@ export async function runWave1IngestionWithCandidates(
 ): Promise<Wave1IngestionRunResult> {
   const checkDelayMs = options.checkDelayMs ?? Number(process.env.CHECK_DELAY_MS ?? 1500);
   const dataDir = options.dataDir ?? join(process.cwd(), "data");
+  const queueSource = options.queueSource ?? "wave-1";
+  const toSeed = options.toSeedInput ?? wave1ToSeedInput;
 
   const window = allCandidates.slice(options.start, options.start + options.limit);
   const moments = loadPublicMoments();
@@ -273,7 +279,7 @@ export async function runWave1IngestionWithCandidates(
     }
 
     if (!options.skipVerify) {
-      const av = await checkTranscriptAvailability(wave1ToSeedInput(c));
+      const av = await checkTranscriptAvailability(toSeed(c));
       transcriptChecked += 1;
       if (av.available) {
         transcriptAvailable += 1;
@@ -333,9 +339,9 @@ export async function runWave1IngestionWithCandidates(
   if (options.writeQueue && allowWrites) {
     const cap = Math.min(seedsToMaybeQueue.length, options.limit);
     const batchCandidates = seedsToMaybeQueue.slice(0, cap);
-    const batch = batchCandidates.map(wave1ToSeedInput);
+    const batch = batchCandidates.map(toSeed);
     enqueue = await enqueueCandidates(batch, {
-      source: "wave-1",
+      source: queueSource,
       dataDir,
     });
     queued = enqueue.added;
@@ -344,7 +350,7 @@ export async function runWave1IngestionWithCandidates(
     for (const r of rows) {
       if (r.status !== "eligible") continue;
       if (!batch.some((s) => s.videoId === r.videoId)) continue;
-      const job = qAfter.jobs.find((j) => j.videoId === r.videoId && j.source === "wave-1");
+      const job = qAfter.jobs.find((j) => j.videoId === r.videoId && j.source === queueSource);
       if (job) r.status = "queued";
     }
   }

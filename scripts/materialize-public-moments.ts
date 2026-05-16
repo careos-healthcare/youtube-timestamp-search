@@ -39,6 +39,11 @@ const SEMANTIC_ADDITIVE_CAP = Math.min(
 );
 const PRESERVE_TOTAL_MAX = Math.min(280, Math.max(CAP, Number(process.env.PUBLIC_MOMENTS_MAX_TOTAL ?? 220)));
 const PRESERVE_EXISTING = process.env.PUBLIC_MOMENTS_PRESERVE_EXISTING !== "0";
+const PRIORITIZE_VIDEO_IDS = (process.env.PUBLIC_MOMENTS_PRIORITIZE_VIDEO_IDS ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+const PRIORITIZE_SET = new Set(PRIORITIZE_VIDEO_IDS);
 
 type Candidate = PublicMomentRecord & {
   qualityScore: number;
@@ -407,19 +412,24 @@ async function main() {
     }
   }
 
-  let unique = [...byId.values()].sort(
-    (a, b) =>
+  let unique = [...byId.values()].sort((a, b) => {
+    const aPri = PRIORITIZE_SET.has(a.videoId) ? 1 : 0;
+    const bPri = PRIORITIZE_SET.has(b.videoId) ? 1 : 0;
+    return (
+      bPri - aPri ||
       Number(b.fromSemantic) - Number(a.fromSemantic) ||
       momentQualityRankingKey(b) - momentQualityRankingKey(a)
-  );
+    );
+  });
   unique = dedupeGreedyNearDuplicates(unique);
 
   const reserved = preserved.length;
+  const prioritizeBoost = PRIORITIZE_VIDEO_IDS.length * MAX_PER_VIDEO;
   /** When preserving URLs, keep all legacy rows and append new semantic/keyword rows up to additive budget. */
   const effectiveCap =
     PRESERVE_EXISTING && reserved > 0
-      ? Math.min(PRESERVE_TOTAL_MAX, reserved + SEMANTIC_ADDITIVE_CAP)
-      : CAP;
+      ? Math.min(PRESERVE_TOTAL_MAX, reserved + SEMANTIC_ADDITIVE_CAP + prioritizeBoost)
+      : CAP + prioritizeBoost;
 
   const perVideo = new Map<string, number>();
   for (const p of preserved) {

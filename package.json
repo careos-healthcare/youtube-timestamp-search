@@ -53,6 +53,7 @@
     "report:research-grade-topics": "tsx scripts/research-grade-topic-report.ts",
     "report:research-graph": "tsx scripts/research-graph-report.ts",
     "report:topic-deepening": "tsx scripts/topic-deepening-report.ts",
+    "ingest:topic-deepening-rag": "tsx scripts/ingest-topic-deepening-rag.ts",
     "test:retrieval-calibration": "node --import tsx --test lib/corpus/retrieval-calibration.test.ts",
     "test:research-session": "node --import tsx --test lib/research/research-session.test.ts",
     "validate:ingestion-wave-1": "tsx scripts/validate-ingestion-wave-1.ts",

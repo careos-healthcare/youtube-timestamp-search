@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T04:12:27.228Z",
+  "updatedAt": "2026-05-16T15:52:02.848Z",
   "jobs": [
     {
       "id": "ab636693-6976-413c-bc77-16d54bb0bdc3",
@@ -74,14 +74,33 @@
       "url": "https://www.youtube.com/watch?v=TrdevFK_am4",
       "category": "AI podcasts",
       "creator": "Yannic Kilcher",
-      "topic": "transformers, ml-paper-walkthroughs, machine-learning",
+      "topic": "rag, rag, transformers, vector-database",
       "priority": 5,
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "maxAttempts": 3,
       "source": "wave-1",
       "createdAt": "2026-05-16T04:12:06.677Z",
-      "updatedAt": "2026-05-16T04:12:06.677Z"
+      "updatedAt": "2026-05-16T15:52:01.138Z",
+      "segmentCount": 818,
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)"
+    },
+    {
+      "id": "f0131138-9cc9-409c-b0c5-c417494b5563",
+      "videoId": "00GKzGyWFEs",
+      "url": "https://www.youtube.com/watch?v=00GKzGyWFEs",
+      "category": "AI podcasts",
+      "creator": "Hugging Face",
+      "topic": "rag, rag, transformers, vector-database",
+      "priority": 5,
+      "status": "completed",
+      "attempts": 1,
+      "maxAttempts": 3,
+      "source": "topic-deepening-rag",
+      "createdAt": "2026-05-16T15:52:00.692Z",
+      "updatedAt": "2026-05-16T15:52:02.848Z",
+      "segmentCount": 103,
+      "title": "Welcome to the Hugging Face course"
     }
   ]
 }

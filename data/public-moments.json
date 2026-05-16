@@ -10441,6 +10441,3360 @@
         }
       },
       "qualityScore": 116
+    },
+    {
+      "id": "9eb888feff183e055fa5",
+      "videoId": "TrdevFK_am4",
+      "phrase": "it called bias because it will buy us our estimator our",
+      "canonicalSlug": "it-called-bias-because-it-will-buy-us-our-estimator-our",
+      "startSeconds": 1476.1,
+      "timestamp": "24:36",
+      "snippet": "lots and lots of data and we know bias why is it called bias because it will buy us our estimator our",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.144Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 16.2,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.363636363636363,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 137.4,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Bias",
+            "Because",
+            "Estimator"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "because",
+            "estimator",
+            "lots",
+            "data",
+            "know"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/9eb888feff183e055fa5/it-called-bias-because-it-will-buy-us-our-estimator-our) — “it called bias because it will buy us our estimator our” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/9eb888feff183e055fa5/it-called-bias-because-it-will-buy-us-our-estimator-our. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/9eb888feff183e055fa5/it-called-bias-because-it-will-buy-us-our-estimator-our",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s (accessed 2026). Quoted moment: “it called bias because it will buy us our estimator our”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "9eb888feff183e055fa5",
+            "canonicalSlug": "it-called-bias-because-it-will-buy-us-our-estimator-our",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1476.1,
+            "phrase": "it called bias because it will buy us our estimator our",
+            "snippetExcerpt": "lots and lots of data and we know bias why is it called bias because it will buy us our estimator our",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1476s"
+          }
+        }
+      },
+      "qualityScore": 90
+    },
+    {
+      "id": "3d2e036031c5c489d0d7",
+      "videoId": "TrdevFK_am4",
+      "phrase": "it called bias",
+      "canonicalSlug": "it-called-bias",
+      "startSeconds": 1473.3,
+      "timestamp": "24:33",
+      "snippet": "where we have lots of data and lots and lots of data and we know bias why is it called bias",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1473s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.149Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 22,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 17.25,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 21.142857142857142,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 131.2,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Bias"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "lots",
+            "data",
+            "know"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/3d2e036031c5c489d0d7/it-called-bias) — “it called bias” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1473s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/3d2e036031c5c489d0d7/it-called-bias. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1473s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/3d2e036031c5c489d0d7/it-called-bias",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1473s (accessed 2026). Quoted moment: “it called bias”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "3d2e036031c5c489d0d7",
+            "canonicalSlug": "it-called-bias",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1473.3,
+            "phrase": "it called bias",
+            "snippetExcerpt": "where we have lots of data and lots and lots of data and we know bias why is it called bias",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1473s"
+          }
+        }
+      },
+      "qualityScore": 91
+    },
+    {
+      "id": "d57c4fcb426ae26fc68a",
+      "videoId": "TrdevFK_am4",
+      "phrase": "it's a paper that's",
+      "canonicalSlug": "it's-a-paper-that's",
+      "startSeconds": 13.7,
+      "timestamp": "0:13",
+      "snippet": "tweeted this out and i'm going to guess many of you have seen it already it's a paper that's",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=13s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.167Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 11,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 18.210526315789473,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 102,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Paper",
+            "That's"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "that's",
+            "tweeted",
+            "going",
+            "guess",
+            "many",
+            "seen",
+            "already"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/d57c4fcb426ae26fc68a/it's-a-paper-that's) — “it's a paper that's” (https://www.youtube.com/watch?v=TrdevFK_am4&t=13s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d57c4fcb426ae26fc68a/it's-a-paper-that's. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=13s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d57c4fcb426ae26fc68a/it's-a-paper-that's",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=13s (accessed 2026). Quoted moment: “it's a paper that's”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d57c4fcb426ae26fc68a",
+            "canonicalSlug": "it's-a-paper-that's",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 13.7,
+            "phrase": "it's a paper that's",
+            "snippetExcerpt": "tweeted this out and i'm going to guess many of you have seen it already it's a paper that's",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=13s"
+          }
+        }
+      },
+      "qualityScore": 77
+    },
+    {
+      "id": "4f2425487768beb05dda",
+      "videoId": "TrdevFK_am4",
+      "phrase": "feed forward network",
+      "canonicalSlug": "feed-forward-network",
+      "startSeconds": 1316.6,
+      "timestamp": "21:56",
+      "snippet": "so technically if you think about it if you have something like an mlp a feed forward network like we",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1316s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.153Z",
+      "semantic": {
+        "extractionKinds": [
+          "noun_phrase",
+          "multi_word_concept"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 6,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 9.45,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 21.1,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 0
+        },
+        "totalSemanticRank": 97.4,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Forward",
+            "Network"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "network",
+            "like",
+            "technically",
+            "think",
+            "something"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/4f2425487768beb05dda/feed-forward-network) — “feed forward network” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1316s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/4f2425487768beb05dda/feed-forward-network. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1316s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/4f2425487768beb05dda/feed-forward-network",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1316s (accessed 2026). Quoted moment: “feed forward network”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "4f2425487768beb05dda",
+            "canonicalSlug": "feed-forward-network",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1316.6,
+            "phrase": "feed forward network",
+            "snippetExcerpt": "so technically if you think about it if you have something like an mlp a feed forward network like we",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1316s"
+          }
+        }
+      },
+      "qualityScore": 82
+    },
+    {
+      "id": "3c961870767771f07713",
+      "videoId": "TrdevFK_am4",
+      "phrase": "i don't know",
+      "canonicalSlug": "i-don't-know",
+      "startSeconds": 59,
+      "timestamp": "0:59",
+      "snippet": "uh ctrl c ctrl v memory i just pasted this here i don't know why but this is this other paper",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=59s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.171Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 9,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 1.75,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 18.571428571428573,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 95.1,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Know"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "ctrl",
+            "memory",
+            "just",
+            "pasted",
+            "here",
+            "other",
+            "paper"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/3c961870767771f07713/i-don't-know) — “i don't know” (https://www.youtube.com/watch?v=TrdevFK_am4&t=59s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/3c961870767771f07713/i-don't-know. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=59s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/3c961870767771f07713/i-don't-know",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=59s (accessed 2026). Quoted moment: “i don't know”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "3c961870767771f07713",
+            "canonicalSlug": "i-don't-know",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 59,
+            "phrase": "i don't know",
+            "snippetExcerpt": "uh ctrl c ctrl v memory i just pasted this here i don't know why but this is this other paper",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=59s"
+          }
+        }
+      },
+      "qualityScore": 59
+    },
+    {
+      "id": "3adc6cd015a5d50e12c2",
+      "videoId": "TrdevFK_am4",
+      "phrase": "e are useful",
+      "canonicalSlug": "e-are-useful",
+      "startSeconds": 1418.8,
+      "timestamp": "23:38",
+      "snippet": "we bias the model towards solutions that we think in general are relevant are are useful",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1418s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.176Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 9,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 5.25,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.875,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 100.9,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "bias",
+            "model",
+            "towards",
+            "solutions",
+            "think",
+            "general",
+            "relevant"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/3adc6cd015a5d50e12c2/e-are-useful) — “e are useful” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1418s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/3adc6cd015a5d50e12c2/e-are-useful. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1418s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/3adc6cd015a5d50e12c2/e-are-useful",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1418s (accessed 2026). Quoted moment: “e are useful”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "3adc6cd015a5d50e12c2",
+            "canonicalSlug": "e-are-useful",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1418.8,
+            "phrase": "e are useful",
+            "snippetExcerpt": "we bias the model towards solutions that we think in general are relevant are are useful",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1418s"
+          }
+        }
+      },
+      "qualityScore": 71
+    },
+    {
+      "id": "2154b2f3e65031298c49",
+      "videoId": "TrdevFK_am4",
+      "phrase": "really simple architecture",
+      "canonicalSlug": "really-simple-architecture",
+      "startSeconds": 910.6,
+      "timestamp": "15:10",
+      "snippet": "in order to classify this is just a standard classifier so it's a really simple architecture except for the",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=910s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.151Z",
+      "semantic": {
+        "extractionKinds": [
+          "noun_phrase",
+          "multi_word_concept"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 6,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 5.949999999999999,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.105263157894736,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 0
+        },
+        "totalSemanticRank": 94.9,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Simple",
+            "Architecture"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "architecture",
+            "order",
+            "classify",
+            "just",
+            "standard",
+            "classifier",
+            "it's",
+            "except"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/2154b2f3e65031298c49/really-simple-architecture) — “really simple architecture” (https://www.youtube.com/watch?v=TrdevFK_am4&t=910s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/2154b2f3e65031298c49/really-simple-architecture. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=910s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/2154b2f3e65031298c49/really-simple-architecture",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=910s (accessed 2026). Quoted moment: “really simple architecture”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "2154b2f3e65031298c49",
+            "canonicalSlug": "really-simple-architecture",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 910.6,
+            "phrase": "really simple architecture",
+            "snippetExcerpt": "in order to classify this is just a standard classifier so it's a really simple architecture except for the",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=910s"
+          }
+        }
+      },
+      "qualityScore": 71
+    },
+    {
+      "id": "ba46aed137e5dbe14874",
+      "videoId": "TrdevFK_am4",
+      "phrase": "a convolutional embedding",
+      "canonicalSlug": "a-convolutional-embedding",
+      "startSeconds": 974.6,
+      "timestamp": "16:14",
+      "snippet": "they have a variant where they i believe replace this patch embedding here with a convolutional embedding",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=974s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.166Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 9,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 11.549999999999999,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 17.764705882352942,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 108.1,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Embedding"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "they",
+            "variant",
+            "believe",
+            "replace",
+            "patch",
+            "here"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/ba46aed137e5dbe14874/a-convolutional-embedding) — “a convolutional embedding” (https://www.youtube.com/watch?v=TrdevFK_am4&t=974s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/ba46aed137e5dbe14874/a-convolutional-embedding. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=974s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/ba46aed137e5dbe14874/a-convolutional-embedding",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=974s (accessed 2026). Quoted moment: “a convolutional embedding”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "ba46aed137e5dbe14874",
+            "canonicalSlug": "a-convolutional-embedding",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 974.6,
+            "phrase": "a convolutional embedding",
+            "snippetExcerpt": "they have a variant where they i believe replace this patch embedding here with a convolutional embedding",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=974s"
+          }
+        }
+      },
+      "qualityScore": 92
+    },
+    {
+      "id": "e471a1106fb09ca8869c",
+      "videoId": "TrdevFK_am4",
+      "phrase": "rmers aren't",
+      "canonicalSlug": "rmers-aren't",
+      "startSeconds": 1511.4,
+      "timestamp": "25:11",
+      "snippet": "now transformers come along and transformers are basically transformers aren't an another",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1511s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.179Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 7,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 3.5,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 22,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 98.3,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Aren't"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "transformers",
+            "come",
+            "along",
+            "basically",
+            "another"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/e471a1106fb09ca8869c/rmers-aren't) — “rmers aren't” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1511s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e471a1106fb09ca8869c/rmers-aren't. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1511s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e471a1106fb09ca8869c/rmers-aren't",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1511s (accessed 2026). Quoted moment: “rmers aren't”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e471a1106fb09ca8869c",
+            "canonicalSlug": "rmers-aren't",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1511.4,
+            "phrase": "rmers aren't",
+            "snippetExcerpt": "now transformers come along and transformers are basically transformers aren't an another",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1511s"
+          }
+        }
+      },
+      "qualityScore": 65
+    },
+    {
+      "id": "d7c5a9d554b51e1f77c7",
+      "videoId": "TrdevFK_am4",
+      "phrase": "l right with",
+      "canonicalSlug": "l-right-with",
+      "startSeconds": 1788.8,
+      "timestamp": "29:48",
+      "snippet": "definitely you know keep an eye on this on open review it's going to be very very interesting all right with",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1788s",
+      "videoTitle": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)",
+      "channelName": "Yannic Kilcher",
+      "category": "ai-podcasts",
+      "topic": "rag, rag, transformers, vector-database",
+      "materializedAt": "2026-05-16T15:55:41.180Z",
+      "semantic": {
+        "extractionKinds": [
+          "prediction"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 9,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 1.75,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 20.285714285714285,
+          "engagementPrior": 14.8,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 96.8,
+        "topics": {
+          "primaryTopic": "rag, rag, transformers, vector-database",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "very",
+            "definitely",
+            "know",
+            "keep",
+            "open",
+            "review",
+            "it's",
+            "going",
+            "interesting"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "rag-rag-transformers-vector-database"
+        },
+        "citations": {
+          "markdown": "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)](https://www.youtubetimesearch.com/moment/d7c5a9d554b51e1f77c7/l-right-with) — “l right with” (https://www.youtube.com/watch?v=TrdevFK_am4&t=1788s)",
+          "academic": "Yannic Kilcher. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d7c5a9d554b51e1f77c7/l-right-with. Timestamp deep-link: https://www.youtube.com/watch?v=TrdevFK_am4&t=1788s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d7c5a9d554b51e1f77c7/l-right-with",
+          "timestampCitation": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained). https://www.youtube.com/watch?v=TrdevFK_am4&t=1788s (accessed 2026). Quoted moment: “l right with”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d7c5a9d554b51e1f77c7",
+            "canonicalSlug": "l-right-with",
+            "videoId": "TrdevFK_am4",
+            "startSeconds": 1788.8,
+            "phrase": "l right with",
+            "snippetExcerpt": "definitely you know keep an eye on this on open review it's going to be very very interesting all right with",
+            "youtubeUrl": "https://www.youtube.com/watch?v=TrdevFK_am4&t=1788s"
+          }
+        }
+      },
+      "qualityScore": 60
+    },
+    {
+      "id": "0ab03fd2372fbf3b89a8",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "an attribute selector",
+      "canonicalSlug": "an-attribute-selector",
+      "startSeconds": 6970.1,
+      "timestamp": "1:56:10",
+      "snippet": "These are called attribute selectors. They're a little bit complicated once you get started, but once we actually start using them, they become very easy to use. So first of all, what is an attribute selector? Well, as we know, in HTML, we can actually add attributes",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=6970s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:07.869Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 21.45,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.851063829787233,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165.3,
+        "topics": {
+          "primaryTopic": "Attribute",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Selector"
+          ],
+          "relatedConcepts": [
+            "once",
+            "actually",
+            "these",
+            "called",
+            "selectors",
+            "they're",
+            "little",
+            "complicated",
+            "started",
+            "start",
+            "using",
+            "them"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "attribute"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/0ab03fd2372fbf3b89a8/an-attribute-selector) — “an attribute selector” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=6970s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/0ab03fd2372fbf3b89a8/an-attribute-selector. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=6970s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/0ab03fd2372fbf3b89a8/an-attribute-selector",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=6970s (accessed 2026). Quoted moment: “an attribute selector”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "0ab03fd2372fbf3b89a8",
+            "canonicalSlug": "an-attribute-selector",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 6970.1,
+            "phrase": "an attribute selector",
+            "snippetExcerpt": "These are called attribute selectors. They're a little bit complicated once you get started, but once we actually start using them, they become very easy to use. So first of all, what is an attribute selector? Well, as we know, in HTML, we can actually add attributes",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=6970s"
+          }
+        }
+      },
+      "qualityScore": 123
+    },
+    {
+      "id": "92a9be14ed993ecc87d8",
+      "videoId": "09_LlHjoEiY",
+      "phrase": "the Hamiltonian cycle of minimum cost",
+      "canonicalSlug": "the-hamiltonian-cycle-of-minimum-cost",
+      "startSeconds": 12048.6,
+      "timestamp": "3:20:48",
+      "snippet": "and you want to find the shortest possible route that visits each city exactly once and then returns to the city of origin. In some other words, we can say that the problem is given a complete graph with weighted edges, what is the Hamiltonian cycle of minimum cost?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=12048s",
+      "videoTitle": "Algorithms Course - Graph Theory Tutorial from a Google Engineer",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:55:45.641Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.26530612244898,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 167.8,
+        "topics": {
+          "primaryTopic": "Hamiltonian",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Cycle",
+            "Minimum",
+            "Cost"
+          ],
+          "relatedConcepts": [
+            "minimum",
+            "cost",
+            "city",
+            "want",
+            "find",
+            "shortest",
+            "possible",
+            "route",
+            "visits",
+            "each",
+            "exactly",
+            "once"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "hamiltonian"
+        },
+        "citations": {
+          "markdown": "[Algorithms Course - Graph Theory Tutorial from a Google Engineer](https://www.youtubetimesearch.com/moment/92a9be14ed993ecc87d8/the-hamiltonian-cycle-of-minimum-cost) — “the Hamiltonian cycle of minimum cost” (https://www.youtube.com/watch?v=09_LlHjoEiY&t=12048s)",
+          "academic": "freeCodeCamp.org. *Algorithms Course - Graph Theory Tutorial from a Google Engineer*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/92a9be14ed993ecc87d8/the-hamiltonian-cycle-of-minimum-cost. Timestamp deep-link: https://www.youtube.com/watch?v=09_LlHjoEiY&t=12048s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/92a9be14ed993ecc87d8/the-hamiltonian-cycle-of-minimum-cost",
+          "timestampCitation": "Algorithms Course - Graph Theory Tutorial from a Google Engineer. https://www.youtube.com/watch?v=09_LlHjoEiY&t=12048s (accessed 2026). Quoted moment: “the Hamiltonian cycle of minimum cost”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "92a9be14ed993ecc87d8",
+            "canonicalSlug": "the-hamiltonian-cycle-of-minimum-cost",
+            "videoId": "09_LlHjoEiY",
+            "startSeconds": 12048.6,
+            "phrase": "the Hamiltonian cycle of minimum cost",
+            "snippetExcerpt": "and you want to find the shortest possible route that visits each city exactly once and then returns to the city of origin. In some other words, we can say that the problem is given a complete graph with weighted edges, what is the Hamiltonian cycle of minimum cost?",
+            "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY&t=12048s"
+          }
+        }
+      },
+      "qualityScore": 127
+    },
+    {
+      "id": "10d3a9562cdddad69981",
+      "videoId": "CcrC5zSv1iA",
+      "phrase": "MTB MTB massive text embedding benchmark",
+      "canonicalSlug": "mtb-mtb-massive-text-embedding-benchmark",
+      "startSeconds": 38337,
+      "timestamp": "10:38:57",
+      "snippet": "uh look into this MTEB. So see what is MTB MTB massive text embedding benchmark. So it's providing",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CcrC5zSv1iA&t=38337s",
+      "videoTitle": "LLM Fine-Tuning Course – From Supervised FT to RLHF, LoRA, and Multimodal",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:06.861Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 18,
+          "explanatoryQuality": 21.799999999999997,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 20,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 156.8,
+        "topics": {
+          "primaryTopic": "Massive",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Text",
+            "Embedding",
+            "Benchmark"
+          ],
+          "relatedConcepts": [
+            "embedding",
+            "benchmark",
+            "look",
+            "mteb",
+            "it's",
+            "providing"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "massive"
+        },
+        "citations": {
+          "markdown": "[LLM Fine-Tuning Course – From Supervised FT to RLHF, LoRA, and Multimodal](https://www.youtubetimesearch.com/moment/10d3a9562cdddad69981/mtb-mtb-massive-text-embedding-benchmark) — “MTB MTB massive text embedding benchmark” (https://www.youtube.com/watch?v=CcrC5zSv1iA&t=38337s)",
+          "academic": "freeCodeCamp.org. *LLM Fine-Tuning Course – From Supervised FT to RLHF, LoRA, and Multimodal*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/10d3a9562cdddad69981/mtb-mtb-massive-text-embedding-benchmark. Timestamp deep-link: https://www.youtube.com/watch?v=CcrC5zSv1iA&t=38337s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/10d3a9562cdddad69981/mtb-mtb-massive-text-embedding-benchmark",
+          "timestampCitation": "LLM Fine-Tuning Course – From Supervised FT to RLHF, LoRA, and Multimodal. https://www.youtube.com/watch?v=CcrC5zSv1iA&t=38337s (accessed 2026). Quoted moment: “MTB MTB massive text embedding benchmark”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "10d3a9562cdddad69981",
+            "canonicalSlug": "mtb-mtb-massive-text-embedding-benchmark",
+            "videoId": "CcrC5zSv1iA",
+            "startSeconds": 38337,
+            "phrase": "MTB MTB massive text embedding benchmark",
+            "snippetExcerpt": "uh look into this MTEB. So see what is MTB MTB massive text embedding benchmark. So it's providing",
+            "youtubeUrl": "https://www.youtube.com/watch?v=CcrC5zSv1iA&t=38337s"
+          }
+        }
+      },
+      "qualityScore": 114
+    },
+    {
+      "id": "425d568a2ccdba2c8f1b",
+      "videoId": "48pxVdmkMIE",
+      "phrase": "that large powerful models trained",
+      "canonicalSlug": "that-large-powerful-models-trained",
+      "startSeconds": 3881.5,
+      "timestamp": "1:04:41",
+      "snippet": "Meta learning is emergent, as you pointed out before. LLMs essentially do a kind of meta learning via in-context learning. We can debate how much that's learning or not, but the point is that large powerful models trained",
+      "youtubeUrl": "https://www.youtube.com/watch?v=48pxVdmkMIE&t=3881s",
+      "videoTitle": "Fully autonomous robots are much closer than you think – Sergey Levine",
+      "channelName": "Dwarkesh Patel",
+      "materializedAt": "2026-05-16T15:56:13.218Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 24,
+          "transcriptCompleteness": 23,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 25.05263157894737,
+          "engagementPrior": 15.3,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 148.4,
+        "topics": {
+          "primaryTopic": "Large",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Powerful",
+            "Models",
+            "Trained"
+          ],
+          "relatedConcepts": [
+            "models",
+            "trained",
+            "learning",
+            "meta",
+            "emergent",
+            "pointed",
+            "before",
+            "llms",
+            "essentially",
+            "kind",
+            "context",
+            "debate"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "large"
+        },
+        "citations": {
+          "markdown": "[Fully autonomous robots are much closer than you think – Sergey Levine](https://www.youtubetimesearch.com/moment/425d568a2ccdba2c8f1b/that-large-powerful-models-trained) — “that large powerful models trained” (https://www.youtube.com/watch?v=48pxVdmkMIE&t=3881s)",
+          "academic": "Dwarkesh Patel. *Fully autonomous robots are much closer than you think – Sergey Levine*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/425d568a2ccdba2c8f1b/that-large-powerful-models-trained. Timestamp deep-link: https://www.youtube.com/watch?v=48pxVdmkMIE&t=3881s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/425d568a2ccdba2c8f1b/that-large-powerful-models-trained",
+          "timestampCitation": "Fully autonomous robots are much closer than you think – Sergey Levine. https://www.youtube.com/watch?v=48pxVdmkMIE&t=3881s (accessed 2026). Quoted moment: “that large powerful models trained”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "425d568a2ccdba2c8f1b",
+            "canonicalSlug": "that-large-powerful-models-trained",
+            "videoId": "48pxVdmkMIE",
+            "startSeconds": 3881.5,
+            "phrase": "that large powerful models trained",
+            "snippetExcerpt": "Meta learning is emergent, as you pointed out before. LLMs essentially do a kind of meta learning via in-context learning. We can debate how much that's learning or not, but the point is that large powerful models trained",
+            "youtubeUrl": "https://www.youtube.com/watch?v=48pxVdmkMIE&t=3881s"
+          }
+        }
+      },
+      "qualityScore": 127
+    },
+    {
+      "id": "b8ef8ca960ecd63a6a2a",
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "ecause the things it knows how to",
+      "canonicalSlug": "ecause-the-things-it-knows-how-to",
+      "startSeconds": 1723.6,
+      "timestamp": "28:43",
+      "snippet": "call things alive to the extent that the cognitive light cone of that thing is bigger than that of its parts. So, in other words, rocks aren't very exciting because the things it knows how to",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=1723s",
+      "videoTitle": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+      "channelName": "Lex Fridman",
+      "materializedAt": "2026-05-16T15:56:14.998Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 25.299999999999997,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 24,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 13
+        },
+        "totalSemanticRank": 171.3,
+        "topics": {
+          "primaryTopic": "Ecause",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Things",
+            "Knows"
+          ],
+          "relatedConcepts": [
+            "knows",
+            "call",
+            "alive",
+            "extent",
+            "cognitive",
+            "light",
+            "cone",
+            "thing",
+            "bigger",
+            "than",
+            "parts",
+            "other"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "ecause"
+        },
+        "citations": {
+          "markdown": "[Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486](https://www.youtubetimesearch.com/moment/b8ef8ca960ecd63a6a2a/ecause-the-things-it-knows-how-to) — “ecause the things it knows how to” (https://www.youtube.com/watch?v=Qp0rCU49lMs&t=1723s)",
+          "academic": "Lex Fridman. *Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/b8ef8ca960ecd63a6a2a/ecause-the-things-it-knows-how-to. Timestamp deep-link: https://www.youtube.com/watch?v=Qp0rCU49lMs&t=1723s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/b8ef8ca960ecd63a6a2a/ecause-the-things-it-knows-how-to",
+          "timestampCitation": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486. https://www.youtube.com/watch?v=Qp0rCU49lMs&t=1723s (accessed 2026). Quoted moment: “ecause the things it knows how to”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "b8ef8ca960ecd63a6a2a",
+            "canonicalSlug": "ecause-the-things-it-knows-how-to",
+            "videoId": "Qp0rCU49lMs",
+            "startSeconds": 1723.6,
+            "phrase": "ecause the things it knows how to",
+            "snippetExcerpt": "call things alive to the extent that the cognitive light cone of that thing is bigger than that of its parts. So, in other words, rocks aren't very exciting because the things it knows how to",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=1723s"
+          }
+        }
+      },
+      "qualityScore": 133
+    },
+    {
+      "id": "1968a3eaecbed4fe47e5",
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "you using the term persuadability",
+      "canonicalSlug": "you-using-the-term-persuadability",
+      "startSeconds": 276.8,
+      "timestamp": "4:36",
+      "snippet": "are other kinds of minds that we think we study in biology or in psychology or other sciences. - Why are you using the term persuadability? Who are you persuading, and of what?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=276s",
+      "videoTitle": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+      "channelName": "Lex Fridman",
+      "materializedAt": "2026-05-16T15:56:14.555Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "question",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 21,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 25.454545454545453,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 167.2,
+        "topics": {
+          "primaryTopic": "Using",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Term",
+            "Persuadability"
+          ],
+          "relatedConcepts": [
+            "persuadability",
+            "other",
+            "kinds",
+            "minds",
+            "think",
+            "study",
+            "biology",
+            "psychology",
+            "sciences",
+            "persuading"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "using"
+        },
+        "citations": {
+          "markdown": "[Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486](https://www.youtubetimesearch.com/moment/1968a3eaecbed4fe47e5/you-using-the-term-persuadability) — “you using the term persuadability” (https://www.youtube.com/watch?v=Qp0rCU49lMs&t=276s)",
+          "academic": "Lex Fridman. *Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/1968a3eaecbed4fe47e5/you-using-the-term-persuadability. Timestamp deep-link: https://www.youtube.com/watch?v=Qp0rCU49lMs&t=276s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/1968a3eaecbed4fe47e5/you-using-the-term-persuadability",
+          "timestampCitation": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486. https://www.youtube.com/watch?v=Qp0rCU49lMs&t=276s (accessed 2026). Quoted moment: “you using the term persuadability”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "1968a3eaecbed4fe47e5",
+            "canonicalSlug": "you-using-the-term-persuadability",
+            "videoId": "Qp0rCU49lMs",
+            "startSeconds": 276.8,
+            "phrase": "you using the term persuadability",
+            "snippetExcerpt": "are other kinds of minds that we think we study in biology or in psychology or other sciences. - Why are you using the term persuadability? Who are you persuading, and of what?",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=276s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "336caf696c3019135891",
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "our worldview",
+      "canonicalSlug": "our-worldview",
+      "startSeconds": 10890.6,
+      "timestamp": "3:01:30",
+      "snippet": "a lot of it comes from releasing constraints. I very specifically think about, okay, this is what we know. What would things look like if we were wrong? Or what would it look like if I was wrong? What are we missing? What is our worldview",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10890s",
+      "videoTitle": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+      "channelName": "Lex Fridman",
+      "materializedAt": "2026-05-16T15:56:14.642Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 24.82608695652174,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 170.5,
+        "topics": {
+          "primaryTopic": "Worldview",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "relatedConcepts": [
+            "look",
+            "like",
+            "wrong",
+            "comes",
+            "releasing",
+            "constraints",
+            "very",
+            "specifically",
+            "think",
+            "okay",
+            "know",
+            "things"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "worldview"
+        },
+        "citations": {
+          "markdown": "[Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486](https://www.youtubetimesearch.com/moment/336caf696c3019135891/our-worldview) — “our worldview” (https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10890s)",
+          "academic": "Lex Fridman. *Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/336caf696c3019135891/our-worldview. Timestamp deep-link: https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10890s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/336caf696c3019135891/our-worldview",
+          "timestampCitation": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486. https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10890s (accessed 2026). Quoted moment: “our worldview”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "336caf696c3019135891",
+            "canonicalSlug": "our-worldview",
+            "videoId": "Qp0rCU49lMs",
+            "startSeconds": 10890.6,
+            "phrase": "our worldview",
+            "snippetExcerpt": "a lot of it comes from releasing constraints. I very specifically think about, okay, this is what we know. What would things look like if we were wrong? Or what would it look like if I was wrong? What are we missing? What is our worldview",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10890s"
+          }
+        }
+      },
+      "qualityScore": 119
+    },
+    {
+      "id": "d49e2486f61b455ee83d",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "the advantages of using an animation",
+      "canonicalSlug": "the-advantages-of-using-an-animation",
+      "startSeconds": 24515.2,
+      "timestamp": "6:48:35",
+      "snippet": "be learning another essential component, which are animations. So we're going to be covering this over the next few videos. And for the first one, we're going to be creating the animation. So first of all, what are the advantages of using an animation? Well, firstly, when",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24515s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:07.782Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.617021276595743,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 167.3,
+        "topics": {
+          "primaryTopic": "Advantages",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Using",
+            "Animation"
+          ],
+          "relatedConcepts": [
+            "animation",
+            "we're",
+            "going",
+            "first",
+            "learning",
+            "another",
+            "essential",
+            "component",
+            "which",
+            "animations",
+            "covering",
+            "over"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "advantages"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/d49e2486f61b455ee83d/the-advantages-of-using-an-animation) — “the advantages of using an animation” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24515s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d49e2486f61b455ee83d/the-advantages-of-using-an-animation. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24515s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d49e2486f61b455ee83d/the-advantages-of-using-an-animation",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24515s (accessed 2026). Quoted moment: “the advantages of using an animation”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d49e2486f61b455ee83d",
+            "canonicalSlug": "the-advantages-of-using-an-animation",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 24515.2,
+            "phrase": "the advantages of using an animation",
+            "snippetExcerpt": "be learning another essential component, which are animations. So we're going to be covering this over the next few videos. And for the first one, we're going to be creating the animation. So first of all, what are the advantages of using an animation? Well, firstly, when",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24515s"
+          }
+        }
+      },
+      "qualityScore": 119
+    },
+    {
+      "id": "9d5850e3e796ba71865f",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "we supposed to do with it",
+      "canonicalSlug": "we-supposed-to-do-with-it",
+      "startSeconds": 9018,
+      "timestamp": "2:30:18",
+      "snippet": "about selectors, we're going to actually start styling up our website and making it look good. So first of all, let's just talk about coloring. In general, I mean, what is coloring? And what are we supposed to do with it. So as we know, we already have a bunch of colors",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=9018s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:07.839Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.307692307692307,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 165,
+        "topics": {
+          "primaryTopic": "Supposed",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "relatedConcepts": [
+            "coloring",
+            "selectors",
+            "we're",
+            "going",
+            "actually",
+            "start",
+            "styling",
+            "website",
+            "making",
+            "look",
+            "good",
+            "first"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "supposed"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/9d5850e3e796ba71865f/we-supposed-to-do-with-it) — “we supposed to do with it” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=9018s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/9d5850e3e796ba71865f/we-supposed-to-do-with-it. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=9018s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/9d5850e3e796ba71865f/we-supposed-to-do-with-it",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=9018s (accessed 2026). Quoted moment: “we supposed to do with it”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "9d5850e3e796ba71865f",
+            "canonicalSlug": "we-supposed-to-do-with-it",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 9018,
+            "phrase": "we supposed to do with it",
+            "snippetExcerpt": "about selectors, we're going to actually start styling up our website and making it look good. So first of all, let's just talk about coloring. In general, I mean, what is coloring? And what are we supposed to do with it. So as we know, we already have a bunch of colors",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=9018s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "e6942b1576c65c56dc59",
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "our worldview specifically not able to see, right",
+      "canonicalSlug": "our-worldview-specifically-not-able-to-see%2C-right",
+      "startSeconds": 10894.5,
+      "timestamp": "3:01:34",
+      "snippet": "this is what we know. What would things look like if we were wrong? Or what would it look like if I was wrong? What are we missing? What is our worldview specifically not able to see, right? Whatever model I have. Or another way I",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10894s",
+      "videoTitle": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+      "channelName": "Lex Fridman",
+      "materializedAt": "2026-05-16T15:56:14.494Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 23,
+          "explanatoryQuality": 16.2,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 25.217391304347828,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 173.4,
+        "topics": {
+          "primaryTopic": "Worldview",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Specifically",
+            "Able",
+            "Right"
+          ],
+          "relatedConcepts": [
+            "able",
+            "right",
+            "look",
+            "like",
+            "wrong",
+            "know",
+            "things",
+            "were",
+            "missing",
+            "whatever",
+            "model",
+            "another"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "worldview"
+        },
+        "citations": {
+          "markdown": "[Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486](https://www.youtubetimesearch.com/moment/e6942b1576c65c56dc59/our-worldview-specifically-not-able-to-see%2C-right) — “our worldview specifically not able to see, right” (https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10894s)",
+          "academic": "Lex Fridman. *Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/e6942b1576c65c56dc59/our-worldview-specifically-not-able-to-see%2C-right. Timestamp deep-link: https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10894s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/e6942b1576c65c56dc59/our-worldview-specifically-not-able-to-see%2C-right",
+          "timestampCitation": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486. https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10894s (accessed 2026). Quoted moment: “our worldview specifically not able to see, right”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "e6942b1576c65c56dc59",
+            "canonicalSlug": "our-worldview-specifically-not-able-to-see%2C-right",
+            "videoId": "Qp0rCU49lMs",
+            "startSeconds": 10894.5,
+            "phrase": "our worldview specifically not able to see, right",
+            "snippetExcerpt": "this is what we know. What would things look like if we were wrong? Or what would it look like if I was wrong? What are we missing? What is our worldview specifically not able to see, right? Whatever model I have. Or another way I",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=10894s"
+          }
+        }
+      },
+      "qualityScore": 109
+    },
+    {
+      "id": "5ce426eef95e7995e01f",
+      "videoId": "lXUZvyajciY",
+      "phrase": "your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea",
+      "canonicalSlug": "your-advice-as-a-student-to-other-students%2C-if-you-don't-have-a-karpathy-who-is-doing-the-exposition-of-an-idea",
+      "startSeconds": 8631.2,
+      "timestamp": "2:23:51",
+      "snippet": "perspective of how somebody who's trying to explain an idea should formulate it better. What is your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea? If you're reading a paper from somebody",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lXUZvyajciY&t=8631s",
+      "videoTitle": "Andrej Karpathy — “We’re summoning ghosts, not building animals”",
+      "channelName": "Dwarkesh Patel",
+      "materializedAt": "2026-05-16T15:56:24.449Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 19,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 25.6,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 169.6,
+        "topics": {
+          "primaryTopic": "Advice",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Student",
+            "Other",
+            "Students",
+            "Don't"
+          ],
+          "relatedConcepts": [
+            "other",
+            "students",
+            "don't",
+            "karpathy",
+            "doing",
+            "exposition",
+            "somebody",
+            "idea",
+            "perspective",
+            "who's",
+            "trying",
+            "explain"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "advice"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy — “We’re summoning ghosts, not building animals”](https://www.youtubetimesearch.com/moment/5ce426eef95e7995e01f/your-advice-as-a-student-to-other-students%2C-if-you-don't-have-a-karpathy-who-is-doing-the-exposition-of-an-idea) — “your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea” (https://www.youtube.com/watch?v=lXUZvyajciY&t=8631s)",
+          "academic": "Dwarkesh Patel. *Andrej Karpathy — “We’re summoning ghosts, not building animals”*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/5ce426eef95e7995e01f/your-advice-as-a-student-to-other-students%2C-if-you-don't-have-a-karpathy-who-is-doing-the-exposition-of-an-idea. Timestamp deep-link: https://www.youtube.com/watch?v=lXUZvyajciY&t=8631s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/5ce426eef95e7995e01f/your-advice-as-a-student-to-other-students%2C-if-you-don't-have-a-karpathy-who-is-doing-the-exposition-of-an-idea",
+          "timestampCitation": "Andrej Karpathy — “We’re summoning ghosts, not building animals”. https://www.youtube.com/watch?v=lXUZvyajciY&t=8631s (accessed 2026). Quoted moment: “your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "5ce426eef95e7995e01f",
+            "canonicalSlug": "your-advice-as-a-student-to-other-students%2C-if-you-don't-have-a-karpathy-who-is-doing-the-exposition-of-an-idea",
+            "videoId": "lXUZvyajciY",
+            "startSeconds": 8631.2,
+            "phrase": "your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea",
+            "snippetExcerpt": "perspective of how somebody who's trying to explain an idea should formulate it better. What is your advice as a student to other students, if you don't have a Karpathy who is doing the exposition of an idea? If you're reading a paper from somebody",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lXUZvyajciY&t=8631s"
+          }
+        }
+      },
+      "qualityScore": 116
+    },
+    {
+      "id": "f9a1d64dbd313bc58400",
+      "videoId": "RGOj5yH7evk",
+      "phrase": "Git branching",
+      "canonicalSlug": "git-branching",
+      "startSeconds": 1948.9,
+      "timestamp": "32:28",
+      "snippet": "we'll need to make a pull request. So these two methods cover the most basic ways to use Git, by using the GitHub web interface and then doing it locally. If you have any questions about this, then please leave them in the comments below. Otherwise, let's move on to Git branching.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=RGOj5yH7evk&t=1948s",
+      "videoTitle": "Git and GitHub for Beginners - Crash Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:15.988Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.96153846153846,
+          "engagementPrior": 14.1,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 160.6,
+        "topics": {
+          "primaryTopic": "Branching",
+          "secondaryTopics": [
+            "GitHub",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript"
+          ],
+          "relatedConcepts": [
+            "then",
+            "we'll",
+            "need",
+            "make",
+            "pull",
+            "request",
+            "these",
+            "methods",
+            "cover",
+            "most",
+            "basic",
+            "ways"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "github",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "branching"
+        },
+        "citations": {
+          "markdown": "[Git and GitHub for Beginners - Crash Course](https://www.youtubetimesearch.com/moment/f9a1d64dbd313bc58400/git-branching) — “Git branching” (https://www.youtube.com/watch?v=RGOj5yH7evk&t=1948s)",
+          "academic": "freeCodeCamp.org. *Git and GitHub for Beginners - Crash Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/f9a1d64dbd313bc58400/git-branching. Timestamp deep-link: https://www.youtube.com/watch?v=RGOj5yH7evk&t=1948s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/f9a1d64dbd313bc58400/git-branching",
+          "timestampCitation": "Git and GitHub for Beginners - Crash Course. https://www.youtube.com/watch?v=RGOj5yH7evk&t=1948s (accessed 2026). Quoted moment: “Git branching”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "f9a1d64dbd313bc58400",
+            "canonicalSlug": "git-branching",
+            "videoId": "RGOj5yH7evk",
+            "startSeconds": 1948.9,
+            "phrase": "Git branching",
+            "snippetExcerpt": "we'll need to make a pull request. So these two methods cover the most basic ways to use Git, by using the GitHub web interface and then doing it locally. If you have any questions about this, then please leave them in the comments below. Otherwise, let's move on to Git branching.",
+            "youtubeUrl": "https://www.youtube.com/watch?v=RGOj5yH7evk&t=1948s"
+          }
+        }
+      },
+      "qualityScore": 124
+    },
+    {
+      "id": "116ad62b5efc76b62f53",
+      "videoId": "zJSY8tbf_ys",
+      "phrase": "the parent to an element that we insert between these two paragraph tags in other words what is the parent of one",
+      "canonicalSlug": "the-parent-to-an-element-that-we-insert-between-these-two-paragraph-tags-in-other-words-what-is-the-parent-of-one",
+      "startSeconds": 43972.7,
+      "timestamp": "12:12:52",
+      "snippet": "what is the parent to an element that we insert between these two paragraph tags in other words what is the parent of one",
+      "youtubeUrl": "https://www.youtube.com/watch?v=zJSY8tbf_ys&t=43972s",
+      "videoTitle": "Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:55:50.050Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 21.25,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 169.3,
+        "topics": {
+          "primaryTopic": "Parent",
+          "secondaryTopics": [
+            "JavaScript",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Element",
+            "Insert",
+            "Between",
+            "These"
+          ],
+          "relatedConcepts": [
+            "insert",
+            "between",
+            "these",
+            "paragraph",
+            "tags",
+            "other",
+            "words"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "javascript",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "parent"
+        },
+        "citations": {
+          "markdown": "[Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)](https://www.youtubetimesearch.com/moment/116ad62b5efc76b62f53/the-parent-to-an-element-that-we-insert-between-these-two-paragraph-tags-in-other-words-what-is-the-parent-of-one) — “the parent to an element that we insert between these two paragraph tags in other words what is the parent of one” (https://www.youtube.com/watch?v=zJSY8tbf_ys&t=43972s)",
+          "academic": "freeCodeCamp.org. *Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/116ad62b5efc76b62f53/the-parent-to-an-element-that-we-insert-between-these-two-paragraph-tags-in-other-words-what-is-the-parent-of-one. Timestamp deep-link: https://www.youtube.com/watch?v=zJSY8tbf_ys&t=43972s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/116ad62b5efc76b62f53/the-parent-to-an-element-that-we-insert-between-these-two-paragraph-tags-in-other-words-what-is-the-parent-of-one",
+          "timestampCitation": "Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS). https://www.youtube.com/watch?v=zJSY8tbf_ys&t=43972s (accessed 2026). Quoted moment: “the parent to an element that we insert between these two paragraph tags in other words what is the parent of one”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "116ad62b5efc76b62f53",
+            "canonicalSlug": "the-parent-to-an-element-that-we-insert-between-these-two-paragraph-tags-in-other-words-what-is-the-parent-of-one",
+            "videoId": "zJSY8tbf_ys",
+            "startSeconds": 43972.7,
+            "phrase": "the parent to an element that we insert between these two paragraph tags in other words what is the parent of one",
+            "snippetExcerpt": "what is the parent to an element that we insert between these two paragraph tags in other words what is the parent of one",
+            "youtubeUrl": "https://www.youtube.com/watch?v=zJSY8tbf_ys&t=43972s"
+          }
+        }
+      },
+      "qualityScore": 131
+    },
+    {
+      "id": "2d2a4f44fb7b31699978",
+      "videoId": "fis26HvvDII",
+      "phrase": "we can use this integer class in order to have an ArrayList",
+      "canonicalSlug": "we-can-use-this-integer-class-in-order-to-have-an-arraylist",
+      "startSeconds": 14028.9,
+      "timestamp": "3:53:48",
+      "snippet": "integer with a capital I. And now I have an ArrayList of integer. Right now I am getting an error because I'm trying to add some strings to this integer array list. But you get the idea of we can use this integer class in order to have an ArrayList. So in Java equivalent",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=14028s",
+      "videoTitle": "Android Development for Beginners - Full Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:21.413Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "framework"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 25.333333333333332,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 154.8,
+        "topics": {
+          "primaryTopic": "Integer",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Class",
+            "Order",
+            "Arraylist"
+          ],
+          "relatedConcepts": [
+            "order",
+            "arraylist",
+            "capital",
+            "right",
+            "getting",
+            "error",
+            "because",
+            "trying",
+            "some",
+            "strings",
+            "array",
+            "list"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "integer"
+        },
+        "citations": {
+          "markdown": "[Android Development for Beginners - Full Course](https://www.youtubetimesearch.com/moment/2d2a4f44fb7b31699978/we-can-use-this-integer-class-in-order-to-have-an-arraylist) — “we can use this integer class in order to have an ArrayList” (https://www.youtube.com/watch?v=fis26HvvDII&t=14028s)",
+          "academic": "freeCodeCamp.org. *Android Development for Beginners - Full Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/2d2a4f44fb7b31699978/we-can-use-this-integer-class-in-order-to-have-an-arraylist. Timestamp deep-link: https://www.youtube.com/watch?v=fis26HvvDII&t=14028s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/2d2a4f44fb7b31699978/we-can-use-this-integer-class-in-order-to-have-an-arraylist",
+          "timestampCitation": "Android Development for Beginners - Full Course. https://www.youtube.com/watch?v=fis26HvvDII&t=14028s (accessed 2026). Quoted moment: “we can use this integer class in order to have an ArrayList”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "2d2a4f44fb7b31699978",
+            "canonicalSlug": "we-can-use-this-integer-class-in-order-to-have-an-arraylist",
+            "videoId": "fis26HvvDII",
+            "startSeconds": 14028.9,
+            "phrase": "we can use this integer class in order to have an ArrayList",
+            "snippetExcerpt": "integer with a capital I. And now I have an ArrayList of integer. Right now I am getting an error because I'm trying to add some strings to this integer array list. But you get the idea of we can use this integer class in order to have an ArrayList. So in Java equivalent",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=14028s"
+          }
+        }
+      },
+      "qualityScore": 122
+    },
+    {
+      "id": "89e2c26c7acf79a86d77",
+      "videoId": "xmkSf5IS-zw",
+      "phrase": "the model quality impact",
+      "canonicalSlug": "the-model-quality-impact",
+      "startSeconds": 1733.4,
+      "timestamp": "28:53",
+      "snippet": "This paper is \"Unified Scaling Laws for Routed Language Models.\" It's a somewhat old paper by this stage, but one of the things they looked at is if I keep increasing sparsity, what is the model quality impact?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xmkSf5IS-zw&t=1733s",
+      "videoTitle": "How GPT, Claude, and Gemini are actually trained and served – Reiner Pope",
+      "channelName": "Dwarkesh Patel",
+      "materializedAt": "2026-05-16T15:56:03.640Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 21.1,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 24.105263157894736,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 153.2,
+        "topics": {
+          "primaryTopic": "Model",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Quality",
+            "Impact"
+          ],
+          "relatedConcepts": [
+            "impact",
+            "paper",
+            "unified",
+            "scaling",
+            "laws",
+            "routed",
+            "language",
+            "models",
+            "it's",
+            "somewhat",
+            "stage",
+            "things"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "model"
+        },
+        "citations": {
+          "markdown": "[How GPT, Claude, and Gemini are actually trained and served – Reiner Pope](https://www.youtubetimesearch.com/moment/89e2c26c7acf79a86d77/the-model-quality-impact) — “the model quality impact” (https://www.youtube.com/watch?v=xmkSf5IS-zw&t=1733s)",
+          "academic": "Dwarkesh Patel. *How GPT, Claude, and Gemini are actually trained and served – Reiner Pope*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/89e2c26c7acf79a86d77/the-model-quality-impact. Timestamp deep-link: https://www.youtube.com/watch?v=xmkSf5IS-zw&t=1733s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/89e2c26c7acf79a86d77/the-model-quality-impact",
+          "timestampCitation": "How GPT, Claude, and Gemini are actually trained and served – Reiner Pope. https://www.youtube.com/watch?v=xmkSf5IS-zw&t=1733s (accessed 2026). Quoted moment: “the model quality impact”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "89e2c26c7acf79a86d77",
+            "canonicalSlug": "the-model-quality-impact",
+            "videoId": "xmkSf5IS-zw",
+            "startSeconds": 1733.4,
+            "phrase": "the model quality impact",
+            "snippetExcerpt": "This paper is \"Unified Scaling Laws for Routed Language Models.\" It's a somewhat old paper by this stage, but one of the things they looked at is if I keep increasing sparsity, what is the model quality impact?",
+            "youtubeUrl": "https://www.youtube.com/watch?v=xmkSf5IS-zw&t=1733s"
+          }
+        }
+      },
+      "qualityScore": 114
+    },
+    {
+      "id": "0eebb22a60118f552470",
+      "videoId": "5t1vTLU7s40",
+      "phrase": "joint embedding what are what are these architectures that",
+      "canonicalSlug": "joint-embedding-what-are-what-are-these-architectures-that",
+      "startSeconds": 1506.5,
+      "timestamp": "25:06",
+      "snippet": "alternative the alternative is joint embedding what is joint embedding what are what are these architectures that",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5t1vTLU7s40&t=1506s",
+      "videoTitle": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416",
+      "channelName": "Lex Fridman",
+      "category": "ai-podcasts",
+      "topic": "how-llms-trained, transformers, llm-fine-tuning",
+      "materializedAt": "2026-05-16T15:55:41.427Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 19,
+          "explanatoryQuality": 28.099999999999998,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 20.941176470588236,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 23
+        },
+        "totalSemanticRank": 185,
+        "topics": {
+          "primaryTopic": "how-llms-trained, transformers, llm-fine-tuning",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Embedding",
+            "These",
+            "Architectures"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "these",
+            "architectures",
+            "alternative"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "how-llms-trained-transformers-llm-fine-tuning"
+        },
+        "citations": {
+          "markdown": "[Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416](https://www.youtubetimesearch.com/moment/0eebb22a60118f552470/joint-embedding-what-are-what-are-these-architectures-that) — “joint embedding what are what are these architectures that” (https://www.youtube.com/watch?v=5t1vTLU7s40&t=1506s)",
+          "academic": "Lex Fridman. *Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/0eebb22a60118f552470/joint-embedding-what-are-what-are-these-architectures-that. Timestamp deep-link: https://www.youtube.com/watch?v=5t1vTLU7s40&t=1506s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/0eebb22a60118f552470/joint-embedding-what-are-what-are-these-architectures-that",
+          "timestampCitation": "Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast #416. https://www.youtube.com/watch?v=5t1vTLU7s40&t=1506s (accessed 2026). Quoted moment: “joint embedding what are what are these architectures that”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "0eebb22a60118f552470",
+            "canonicalSlug": "joint-embedding-what-are-what-are-these-architectures-that",
+            "videoId": "5t1vTLU7s40",
+            "startSeconds": 1506.5,
+            "phrase": "joint embedding what are what are these architectures that",
+            "snippetExcerpt": "alternative the alternative is joint embedding what is joint embedding what are what are these architectures that",
+            "youtubeUrl": "https://www.youtube.com/watch?v=5t1vTLU7s40&t=1506s"
+          }
+        }
+      },
+      "qualityScore": 143
+    },
+    {
+      "id": "366df8b1de146a8844cb",
+      "videoId": "fis26HvvDII",
+      "phrase": "we create them and also what are the most usages of a class in this video we are",
+      "canonicalSlug": "we-create-them-and-also-what-are-the-most-usages-of-a-class-in-this-video-we-are",
+      "startSeconds": 10168.6,
+      "timestamp": "2:49:28",
+      "snippet": "programming. There are many more things left that we need to talk about. See you in the next video. In the previous video, we have talked briefly about classes what those are, how can we create them and also what are the most usages of a class in this video we are",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=10168s",
+      "videoTitle": "Android Development for Beginners - Full Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:21.159Z",
+      "semantic": {
+        "extractionKinds": [
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 23,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 20,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.615384615384617,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 18
+        },
+        "totalSemanticRank": 160.6,
+        "topics": {
+          "primaryTopic": "Create",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Them",
+            "Also",
+            "Most",
+            "Usages"
+          ],
+          "relatedConcepts": [
+            "also",
+            "most",
+            "usages",
+            "class",
+            "video",
+            "programming",
+            "there",
+            "many",
+            "more",
+            "things",
+            "left",
+            "need"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "create"
+        },
+        "citations": {
+          "markdown": "[Android Development for Beginners - Full Course](https://www.youtubetimesearch.com/moment/366df8b1de146a8844cb/we-create-them-and-also-what-are-the-most-usages-of-a-class-in-this-video-we-are) — “we create them and also what are the most usages of a class in this video we are” (https://www.youtube.com/watch?v=fis26HvvDII&t=10168s)",
+          "academic": "freeCodeCamp.org. *Android Development for Beginners - Full Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/366df8b1de146a8844cb/we-create-them-and-also-what-are-the-most-usages-of-a-class-in-this-video-we-are. Timestamp deep-link: https://www.youtube.com/watch?v=fis26HvvDII&t=10168s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/366df8b1de146a8844cb/we-create-them-and-also-what-are-the-most-usages-of-a-class-in-this-video-we-are",
+          "timestampCitation": "Android Development for Beginners - Full Course. https://www.youtube.com/watch?v=fis26HvvDII&t=10168s (accessed 2026). Quoted moment: “we create them and also what are the most usages of a class in this video we are”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "366df8b1de146a8844cb",
+            "canonicalSlug": "we-create-them-and-also-what-are-the-most-usages-of-a-class-in-this-video-we-are",
+            "videoId": "fis26HvvDII",
+            "startSeconds": 10168.6,
+            "phrase": "we create them and also what are the most usages of a class in this video we are",
+            "snippetExcerpt": "programming. There are many more things left that we need to talk about. See you in the next video. In the previous video, we have talked briefly about classes what those are, how can we create them and also what are the most usages of a class in this video we are",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=10168s"
+          }
+        }
+      },
+      "qualityScore": 130
+    },
+    {
+      "id": "9cfeed027a9e516607dc",
+      "videoId": "bc6uFV9CJGg",
+      "phrase": "a kind of specific qualitative change where you'd be training Llama-5 or Llama-4",
+      "canonicalSlug": "a-kind-of-specific-qualitative-change-where-you'd-be-training-llama-5-or-llama-4",
+      "startSeconds": 2323.6,
+      "timestamp": "38:43",
+      "snippet": "however there's some qualitative change in what the thing is capable of, and we feel like it's not responsible to open source it, then we won't. It's all very difficult to predict. What is a kind of specific qualitative change where you'd be training Llama-5 or Llama-4,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bc6uFV9CJGg&t=2323s",
+      "videoTitle": "Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters",
+      "channelName": "Dwarkesh Patel",
+      "materializedAt": "2026-05-16T15:56:27.220Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 23.2,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 24.46808510638298,
+          "engagementPrior": 14.4,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 164.1,
+        "topics": {
+          "primaryTopic": "Llama",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Kind",
+            "Specific",
+            "Qualitative",
+            "Change"
+          ],
+          "relatedConcepts": [
+            "specific",
+            "qualitative",
+            "change",
+            "you'd",
+            "training",
+            "it's",
+            "however",
+            "there's",
+            "some",
+            "thing",
+            "capable",
+            "feel"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "llama"
+        },
+        "citations": {
+          "markdown": "[Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters](https://www.youtubetimesearch.com/moment/9cfeed027a9e516607dc/a-kind-of-specific-qualitative-change-where-you'd-be-training-llama-5-or-llama-4) — “a kind of specific qualitative change where you'd be training Llama-5 or Llama-4” (https://www.youtube.com/watch?v=bc6uFV9CJGg&t=2323s)",
+          "academic": "Dwarkesh Patel. *Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/9cfeed027a9e516607dc/a-kind-of-specific-qualitative-change-where-you'd-be-training-llama-5-or-llama-4. Timestamp deep-link: https://www.youtube.com/watch?v=bc6uFV9CJGg&t=2323s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/9cfeed027a9e516607dc/a-kind-of-specific-qualitative-change-where-you'd-be-training-llama-5-or-llama-4",
+          "timestampCitation": "Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters. https://www.youtube.com/watch?v=bc6uFV9CJGg&t=2323s (accessed 2026). Quoted moment: “a kind of specific qualitative change where you'd be training Llama-5 or Llama-4”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "9cfeed027a9e516607dc",
+            "canonicalSlug": "a-kind-of-specific-qualitative-change-where-you'd-be-training-llama-5-or-llama-4",
+            "videoId": "bc6uFV9CJGg",
+            "startSeconds": 2323.6,
+            "phrase": "a kind of specific qualitative change where you'd be training Llama-5 or Llama-4",
+            "snippetExcerpt": "however there's some qualitative change in what the thing is capable of, and we feel like it's not responsible to open source it, then we won't. It's all very difficult to predict. What is a kind of specific qualitative change where you'd be training Llama-5 or Llama-4,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=bc6uFV9CJGg&t=2323s"
+          }
+        }
+      },
+      "qualityScore": 127
+    },
+    {
+      "id": "aabdb99cef048bfeecdd",
+      "videoId": "KJgsSFOSQv0",
+      "phrase": "telling us what iteration of the loop are currently on",
+      "canonicalSlug": "telling-us-what-iteration-of-the-loop-are-currently-on",
+      "startSeconds": 10287,
+      "timestamp": "2:51:27",
+      "snippet": "so the first time that we go through this while loop we're printing out 1 The second time we're printing out to the third time. We're printing out 3 in other words this variable I is Basically telling us what iteration of the loop are currently on",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KJgsSFOSQv0&t=10287s",
+      "videoTitle": "C Programming Tutorial for Beginners",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:12.432Z",
+      "semantic": {
+        "extractionKinds": [
+          "framework",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.851063829787233,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 13
+        },
+        "totalSemanticRank": 160.6,
+        "topics": {
+          "primaryTopic": "Telling",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Iteration",
+            "Loop",
+            "Currently"
+          ],
+          "relatedConcepts": [
+            "loop",
+            "currently",
+            "time",
+            "we're",
+            "printing",
+            "first",
+            "through",
+            "while",
+            "second",
+            "third",
+            "other",
+            "words"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "telling"
+        },
+        "citations": {
+          "markdown": "[C Programming Tutorial for Beginners](https://www.youtubetimesearch.com/moment/aabdb99cef048bfeecdd/telling-us-what-iteration-of-the-loop-are-currently-on) — “telling us what iteration of the loop are currently on” (https://www.youtube.com/watch?v=KJgsSFOSQv0&t=10287s)",
+          "academic": "freeCodeCamp.org. *C Programming Tutorial for Beginners*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/aabdb99cef048bfeecdd/telling-us-what-iteration-of-the-loop-are-currently-on. Timestamp deep-link: https://www.youtube.com/watch?v=KJgsSFOSQv0&t=10287s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/aabdb99cef048bfeecdd/telling-us-what-iteration-of-the-loop-are-currently-on",
+          "timestampCitation": "C Programming Tutorial for Beginners. https://www.youtube.com/watch?v=KJgsSFOSQv0&t=10287s (accessed 2026). Quoted moment: “telling us what iteration of the loop are currently on”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "aabdb99cef048bfeecdd",
+            "canonicalSlug": "telling-us-what-iteration-of-the-loop-are-currently-on",
+            "videoId": "KJgsSFOSQv0",
+            "startSeconds": 10287,
+            "phrase": "telling us what iteration of the loop are currently on",
+            "snippetExcerpt": "so the first time that we go through this while loop we're printing out 1 The second time we're printing out to the third time. We're printing out 3 in other words this variable I is Basically telling us what iteration of the loop are currently on",
+            "youtubeUrl": "https://www.youtube.com/watch?v=KJgsSFOSQv0&t=10287s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "be1df0ece89426a5a9ba",
+      "videoId": "Z1RJmh_OqeA",
+      "phrase": "that task that's just been created",
+      "canonicalSlug": "that-task-that's-just-been-created",
+      "startSeconds": 1170.7,
+      "timestamp": "19:30",
+      "snippet": "it's just going to return task and then the idea of that task that's just been created. And that does it for our model here. So let's go ahead and set up the database. Now. We're gonna head",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1170s",
+      "videoTitle": "Learn Flask for Python - Full Tutorial",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:28.610Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "framework"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 16.2,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.157894736842106,
+          "engagementPrior": 13.2,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 138.6,
+        "topics": {
+          "primaryTopic": "Task",
+          "secondaryTopics": [
+            "Python",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "That's",
+            "Just",
+            "Created"
+          ],
+          "relatedConcepts": [
+            "just",
+            "created",
+            "it's",
+            "going",
+            "return",
+            "then",
+            "idea",
+            "does",
+            "model",
+            "here",
+            "let's",
+            "ahead"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "python",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "task"
+        },
+        "citations": {
+          "markdown": "[Learn Flask for Python - Full Tutorial](https://www.youtubetimesearch.com/moment/be1df0ece89426a5a9ba/that-task-that's-just-been-created) — “that task that's just been created” (https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1170s)",
+          "academic": "freeCodeCamp.org. *Learn Flask for Python - Full Tutorial*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/be1df0ece89426a5a9ba/that-task-that's-just-been-created. Timestamp deep-link: https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1170s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/be1df0ece89426a5a9ba/that-task-that's-just-been-created",
+          "timestampCitation": "Learn Flask for Python - Full Tutorial. https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1170s (accessed 2026). Quoted moment: “that task that's just been created”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "be1df0ece89426a5a9ba",
+            "canonicalSlug": "that-task-that's-just-been-created",
+            "videoId": "Z1RJmh_OqeA",
+            "startSeconds": 1170.7,
+            "phrase": "that task that's just been created",
+            "snippetExcerpt": "it's just going to return task and then the idea of that task that's just been created. And that does it for our model here. So let's go ahead and set up the database. Now. We're gonna head",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1170s"
+          }
+        }
+      },
+      "qualityScore": 95
+    },
+    {
+      "id": "088ee292f491f8171972",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "the two is that text manipulation",
+      "canonicalSlug": "the-two-is-that-text-manipulation",
+      "startSeconds": 16122.8,
+      "timestamp": "4:28:42",
+      "snippet": "although they sound like the same thing, they're actually very different. So the first part in this video, we're going to be covering text manipulation. Now, there's not that much to look at. But pretty much the difference between the two is that text manipulation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=16122s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:08.306Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.6,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 158.3,
+        "topics": {
+          "primaryTopic": "Text",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Manipulation"
+          ],
+          "relatedConcepts": [
+            "much",
+            "although",
+            "they",
+            "sound",
+            "like",
+            "same",
+            "thing",
+            "they're",
+            "actually",
+            "very",
+            "different",
+            "first"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "text"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/088ee292f491f8171972/the-two-is-that-text-manipulation) — “the two is that text manipulation” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=16122s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/088ee292f491f8171972/the-two-is-that-text-manipulation. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=16122s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/088ee292f491f8171972/the-two-is-that-text-manipulation",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=16122s (accessed 2026). Quoted moment: “the two is that text manipulation”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "088ee292f491f8171972",
+            "canonicalSlug": "the-two-is-that-text-manipulation",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 16122.8,
+            "phrase": "the two is that text manipulation",
+            "snippetExcerpt": "although they sound like the same thing, they're actually very different. So the first part in this video, we're going to be covering text manipulation. Now, there's not that much to look at. But pretty much the difference between the two is that text manipulation",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=16122s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "ffa09298143b07ad1f97",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "not having a transition and having it",
+      "canonicalSlug": "not-having-a-transition-and-having-it",
+      "startSeconds": 24297.2,
+      "timestamp": "6:44:57",
+      "snippet": "page. And like I said, just play around with this tinker with it and see how it works. So you can see when we do this, that it changes the color. And when we hover over it changes back. So now you can see the difference between not having a transition and having it. Let's",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24297s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:08.276Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.381818181818183,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 158.1,
+        "topics": {
+          "primaryTopic": "Having",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Transition"
+          ],
+          "relatedConcepts": [
+            "changes",
+            "page",
+            "like",
+            "said",
+            "just",
+            "play",
+            "around",
+            "tinker",
+            "works",
+            "color",
+            "hover",
+            "over"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "having"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/ffa09298143b07ad1f97/not-having-a-transition-and-having-it) — “not having a transition and having it” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24297s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/ffa09298143b07ad1f97/not-having-a-transition-and-having-it. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24297s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/ffa09298143b07ad1f97/not-having-a-transition-and-having-it",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24297s (accessed 2026). Quoted moment: “not having a transition and having it”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "ffa09298143b07ad1f97",
+            "canonicalSlug": "not-having-a-transition-and-having-it",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 24297.2,
+            "phrase": "not having a transition and having it",
+            "snippetExcerpt": "page. And like I said, just play around with this tinker with it and see how it works. So you can see when we do this, that it changes the color. And when we hover over it changes back. So now you can see the difference between not having a transition and having it. Let's",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=24297s"
+          }
+        }
+      },
+      "qualityScore": 115
+    },
+    {
+      "id": "f7d1a8a01704fa2d845e",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "a class and an ID",
+      "canonicalSlug": "a-class-and-an-id",
+      "startSeconds": 3622.6,
+      "timestamp": "1:00:22",
+      "snippet": "change the way that you use selectors. Right now, we're just assuming that all of these selectors kind of work in the same in a similar way. We don't actually know why. They're why they exist. I mean, why is there a class and an id selector when they both do the same",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=3622s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:08.525Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 27,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 23.962264150943398,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 155.7,
+        "topics": {
+          "primaryTopic": "Class",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips"
+          ],
+          "relatedConcepts": [
+            "selectors",
+            "same",
+            "they",
+            "change",
+            "right",
+            "we're",
+            "just",
+            "assuming",
+            "these",
+            "kind",
+            "work",
+            "similar"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "class"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/f7d1a8a01704fa2d845e/a-class-and-an-id) — “a class and an ID” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=3622s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/f7d1a8a01704fa2d845e/a-class-and-an-id. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=3622s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/f7d1a8a01704fa2d845e/a-class-and-an-id",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=3622s (accessed 2026). Quoted moment: “a class and an ID”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "f7d1a8a01704fa2d845e",
+            "canonicalSlug": "a-class-and-an-id",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 3622.6,
+            "phrase": "a class and an ID",
+            "snippetExcerpt": "change the way that you use selectors. Right now, we're just assuming that all of these selectors kind of work in the same in a similar way. We don't actually know why. They're why they exist. I mean, why is there a class and an id selector when they both do the same",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=3622s"
+          }
+        }
+      },
+      "qualityScore": 114
+    },
+    {
+      "id": "f06463cfb05b723d0f74",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "an inline element and an inline block element",
+      "canonicalSlug": "an-inline-element-and-an-inline-block-element",
+      "startSeconds": 22959.2,
+      "timestamp": "6:22:39",
+      "snippet": "ahead and change this to inline here, you'll see this very apparent, you can see that that click here to Google text has now moved around. It's a little bit of a weird box here. So you can see the difference between an inline element and an inline block element. So there",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=22959s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:08.262Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 0,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 22.884615384615383,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 155.6,
+        "topics": {
+          "primaryTopic": "Inline",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Element",
+            "Block"
+          ],
+          "relatedConcepts": [
+            "block",
+            "here",
+            "ahead",
+            "change",
+            "you'll",
+            "very",
+            "apparent",
+            "click",
+            "google",
+            "text",
+            "moved",
+            "around"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "inline"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/f06463cfb05b723d0f74/an-inline-element-and-an-inline-block-element) — “an inline element and an inline block element” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=22959s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/f06463cfb05b723d0f74/an-inline-element-and-an-inline-block-element. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=22959s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/f06463cfb05b723d0f74/an-inline-element-and-an-inline-block-element",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=22959s (accessed 2026). Quoted moment: “an inline element and an inline block element”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "f06463cfb05b723d0f74",
+            "canonicalSlug": "an-inline-element-and-an-inline-block-element",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 22959.2,
+            "phrase": "an inline element and an inline block element",
+            "snippetExcerpt": "ahead and change this to inline here, you'll see this very apparent, you can see that that click here to Google text has now moved around. It's a little bit of a weird box here. So you can see the difference between an inline element and an inline block element. So there",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=22959s"
+          }
+        }
+      },
+      "qualityScore": 114
+    },
+    {
+      "id": "d06fccdf7f5608ab02a5",
+      "videoId": "Qp0rCU49lMs",
+      "phrase": "cellular automata type",
+      "canonicalSlug": "cellular-automata-type",
+      "startSeconds": 3463.3,
+      "timestamp": "57:43",
+      "snippet": "whatever we're gonna be. And I specifically am telling you that specifically am telling you that this general idea when people model that with cellular automata type of ideas,",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=3463s",
+      "videoTitle": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+      "channelName": "Lex Fridman",
+      "materializedAt": "2026-05-16T15:56:15.102Z",
+      "semantic": {
+        "extractionKinds": [
+          "comparison",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 22,
+          "transcriptCompleteness": 21,
+          "explanatoryQuality": 21.45,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 22,
+          "snippetCoherence": 23.517241379310345,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 10
+        },
+        "totalSemanticRank": 164,
+        "topics": {
+          "primaryTopic": "Cellular",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Automata",
+            "Type"
+          ],
+          "relatedConcepts": [
+            "type",
+            "specifically",
+            "telling",
+            "whatever",
+            "we're",
+            "gonna",
+            "general",
+            "idea",
+            "people",
+            "model",
+            "ideas"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "lex-fridman",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "cellular"
+        },
+        "citations": {
+          "markdown": "[Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486](https://www.youtubetimesearch.com/moment/d06fccdf7f5608ab02a5/cellular-automata-type) — “cellular automata type” (https://www.youtube.com/watch?v=Qp0rCU49lMs&t=3463s)",
+          "academic": "Lex Fridman. *Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/d06fccdf7f5608ab02a5/cellular-automata-type. Timestamp deep-link: https://www.youtube.com/watch?v=Qp0rCU49lMs&t=3463s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/d06fccdf7f5608ab02a5/cellular-automata-type",
+          "timestampCitation": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486. https://www.youtube.com/watch?v=Qp0rCU49lMs&t=3463s (accessed 2026). Quoted moment: “cellular automata type”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "d06fccdf7f5608ab02a5",
+            "canonicalSlug": "cellular-automata-type",
+            "videoId": "Qp0rCU49lMs",
+            "startSeconds": 3463.3,
+            "phrase": "cellular automata type",
+            "snippetExcerpt": "whatever we're gonna be. And I specifically am telling you that specifically am telling you that this general idea when people model that with cellular automata type of ideas,",
+            "youtubeUrl": "https://www.youtube.com/watch?v=Qp0rCU49lMs&t=3463s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "915fccf8a9666e2e322c",
+      "videoId": "n1E9IZfvGMA",
+      "phrase": "you're predicting profit is that you are systematically underinvesting in compute",
+      "canonicalSlug": "you're-predicting-profit-is-that-you-are-systematically-underinvesting-in-compute",
+      "startSeconds": 3688.7,
+      "timestamp": "1:01:28",
+      "snippet": "inference versus training, but that gets determined by demand. It doesn't get determined by you. What I'm hearing is the reason you're predicting profit is that you are systematically underinvesting in compute?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s",
+      "videoTitle": "Dario Amodei — “We are near the end of the exponential”",
+      "channelName": "Dwarkesh Patel",
+      "category": "ai-podcasts",
+      "topic": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+      "materializedAt": "2026-05-16T15:55:42.089Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 22,
+          "explanatoryQuality": 23.9,
+          "technicalSpecificity": 6,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 24.3125,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 150.2,
+        "topics": {
+          "primaryTopic": "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Predicting",
+            "Profit",
+            "Systematically",
+            "Underinvesting"
+          ],
+          "topicCategory": "ai-podcasts",
+          "relatedConcepts": [
+            "profit",
+            "systematically",
+            "underinvesting",
+            "compute",
+            "determined",
+            "inference",
+            "versus",
+            "training",
+            "gets",
+            "demand",
+            "doesn't",
+            "hearing"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "llm-fine-tuning-state-of-ai-2026-ai-policy-scaling"
+        },
+        "citations": {
+          "markdown": "[Dario Amodei — “We are near the end of the exponential”](https://www.youtubetimesearch.com/moment/915fccf8a9666e2e322c/you're-predicting-profit-is-that-you-are-systematically-underinvesting-in-compute) — “you're predicting profit is that you are systematically underinvesting in compute” (https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s)",
+          "academic": "Dwarkesh Patel. *Dario Amodei — “We are near the end of the exponential”*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/915fccf8a9666e2e322c/you're-predicting-profit-is-that-you-are-systematically-underinvesting-in-compute. Timestamp deep-link: https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/915fccf8a9666e2e322c/you're-predicting-profit-is-that-you-are-systematically-underinvesting-in-compute",
+          "timestampCitation": "Dario Amodei — “We are near the end of the exponential”. https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s (accessed 2026). Quoted moment: “you're predicting profit is that you are systematically underinvesting in compute”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "915fccf8a9666e2e322c",
+            "canonicalSlug": "you're-predicting-profit-is-that-you-are-systematically-underinvesting-in-compute",
+            "videoId": "n1E9IZfvGMA",
+            "startSeconds": 3688.7,
+            "phrase": "you're predicting profit is that you are systematically underinvesting in compute",
+            "snippetExcerpt": "inference versus training, but that gets determined by demand. It doesn't get determined by you. What I'm hearing is the reason you're predicting profit is that you are systematically underinvesting in compute?",
+            "youtubeUrl": "https://www.youtube.com/watch?v=n1E9IZfvGMA&t=3688s"
+          }
+        }
+      },
+      "qualityScore": 121
+    },
+    {
+      "id": "fe16bd4d0da0eaa8d9eb",
+      "videoId": "RGOj5yH7evk",
+      "phrase": "a pull request or a PR, it's basically a request to have your code",
+      "canonicalSlug": "a-pull-request-or-a-pr%2C-it's-basically-a-request-to-have-your-code",
+      "startSeconds": 2595.2,
+      "timestamp": "43:15",
+      "snippet": "just shorthand for set upstream. So I'm going to hit enter here. And now it's pushed up to GitHub. And it's even giving me a hint for how to create a pull request on GitHub, by giving me these instructions here. So what is a pull request or a PR, it's basically a request to have your code",
+      "youtubeUrl": "https://www.youtube.com/watch?v=RGOj5yH7evk&t=2595s",
+      "videoTitle": "Git and GitHub for Beginners - Crash Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:15.980Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "explanation",
+          "question"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 28,
+          "transcriptCompleteness": 26,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.448275862068964,
+          "engagementPrior": 14.1,
+          "searchIntentLikelihood": 15
+        },
+        "totalSemanticRank": 163.2,
+        "topics": {
+          "primaryTopic": "Request",
+          "secondaryTopics": [
+            "GitHub",
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Pull",
+            "It's",
+            "Basically",
+            "Code"
+          ],
+          "relatedConcepts": [
+            "it's",
+            "basically",
+            "code",
+            "here",
+            "github",
+            "giving",
+            "just",
+            "shorthand",
+            "upstream",
+            "going",
+            "enter",
+            "pushed"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "github",
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript"
+            ]
+          },
+          "topicClusterHint": "request"
+        },
+        "citations": {
+          "markdown": "[Git and GitHub for Beginners - Crash Course](https://www.youtubetimesearch.com/moment/fe16bd4d0da0eaa8d9eb/a-pull-request-or-a-pr%2C-it's-basically-a-request-to-have-your-code) — “a pull request or a PR, it's basically a request to have your code” (https://www.youtube.com/watch?v=RGOj5yH7evk&t=2595s)",
+          "academic": "freeCodeCamp.org. *Git and GitHub for Beginners - Crash Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/fe16bd4d0da0eaa8d9eb/a-pull-request-or-a-pr%2C-it's-basically-a-request-to-have-your-code. Timestamp deep-link: https://www.youtube.com/watch?v=RGOj5yH7evk&t=2595s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/fe16bd4d0da0eaa8d9eb/a-pull-request-or-a-pr%2C-it's-basically-a-request-to-have-your-code",
+          "timestampCitation": "Git and GitHub for Beginners - Crash Course. https://www.youtube.com/watch?v=RGOj5yH7evk&t=2595s (accessed 2026). Quoted moment: “a pull request or a PR, it's basically a request to have your code”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "fe16bd4d0da0eaa8d9eb",
+            "canonicalSlug": "a-pull-request-or-a-pr%2C-it's-basically-a-request-to-have-your-code",
+            "videoId": "RGOj5yH7evk",
+            "startSeconds": 2595.2,
+            "phrase": "a pull request or a PR, it's basically a request to have your code",
+            "snippetExcerpt": "just shorthand for set upstream. So I'm going to hit enter here. And now it's pushed up to GitHub. And it's even giving me a hint for how to create a pull request on GitHub, by giving me these instructions here. So what is a pull request or a PR, it's basically a request to have your code",
+            "youtubeUrl": "https://www.youtube.com/watch?v=RGOj5yH7evk&t=2595s"
+          }
+        }
+      },
+      "qualityScore": 118
+    },
+    {
+      "id": "11a2341da87ec8bfd5ef",
+      "videoId": "lXUZvyajciY",
+      "phrase": "building models and abstractions and understanding that there's a first-order",
+      "canonicalSlug": "building-models-and-abstractions-and-understanding-that-there's-a-first-order",
+      "startSeconds": 8183,
+      "timestamp": "2:16:23",
+      "snippet": "Physics uniquely boots up the brain the best because some of the things that they get you to do in your brain during physics is extremely valuable later. The idea of building models and abstractions and understanding that there's a first-order",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lXUZvyajciY&t=8183s",
+      "videoTitle": "Andrej Karpathy — “We’re summoning ghosts, not building animals”",
+      "channelName": "Dwarkesh Patel",
+      "materializedAt": "2026-05-16T15:56:24.663Z",
+      "semantic": {
+        "extractionKinds": [
+          "definition",
+          "framework"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 24,
+          "explanatoryQuality": 26,
+          "technicalSpecificity": 8,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 4,
+          "snippetCoherence": 24.24390243902439,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 156.2,
+        "topics": {
+          "primaryTopic": "Building",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Models",
+            "Abstractions",
+            "Understanding",
+            "There's"
+          ],
+          "relatedConcepts": [
+            "abstractions",
+            "understanding",
+            "there's",
+            "first",
+            "order",
+            "physics",
+            "brain",
+            "uniquely",
+            "boots",
+            "best",
+            "because",
+            "some"
+          ],
+          "creatorTopicLinks": {
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "building"
+        },
+        "citations": {
+          "markdown": "[Andrej Karpathy — “We’re summoning ghosts, not building animals”](https://www.youtubetimesearch.com/moment/11a2341da87ec8bfd5ef/building-models-and-abstractions-and-understanding-that-there's-a-first-order) — “building models and abstractions and understanding that there's a first-order” (https://www.youtube.com/watch?v=lXUZvyajciY&t=8183s)",
+          "academic": "Dwarkesh Patel. *Andrej Karpathy — “We’re summoning ghosts, not building animals”*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/11a2341da87ec8bfd5ef/building-models-and-abstractions-and-understanding-that-there's-a-first-order. Timestamp deep-link: https://www.youtube.com/watch?v=lXUZvyajciY&t=8183s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/11a2341da87ec8bfd5ef/building-models-and-abstractions-and-understanding-that-there's-a-first-order",
+          "timestampCitation": "Andrej Karpathy — “We’re summoning ghosts, not building animals”. https://www.youtube.com/watch?v=lXUZvyajciY&t=8183s (accessed 2026). Quoted moment: “building models and abstractions and understanding that there's a first-order”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "11a2341da87ec8bfd5ef",
+            "canonicalSlug": "building-models-and-abstractions-and-understanding-that-there's-a-first-order",
+            "videoId": "lXUZvyajciY",
+            "startSeconds": 8183,
+            "phrase": "building models and abstractions and understanding that there's a first-order",
+            "snippetExcerpt": "Physics uniquely boots up the brain the best because some of the things that they get you to do in your brain during physics is extremely valuable later. The idea of building models and abstractions and understanding that there's a first-order",
+            "youtubeUrl": "https://www.youtube.com/watch?v=lXUZvyajciY&t=8183s"
+          }
+        }
+      },
+      "qualityScore": 131
+    },
+    {
+      "id": "207318b27eeb2c425db1",
+      "videoId": "1Rs2ND1ryYc",
+      "phrase": "the added height to the container",
+      "canonicalSlug": "the-added-height-to-the-container",
+      "startSeconds": 23291.2,
+      "timestamp": "6:28:11",
+      "snippet": "which actually align them in a pretty different way than you would expect. So let's talk about justify content. Now first of all, you'll notice that these are a little bit stretched out, don't worry about that for now, that's just because of the added height to the container",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=23291s",
+      "videoTitle": "CSS Tutorial - Zero to Hero (Complete Course)",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:08.322Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 19.7,
+          "technicalSpecificity": 2,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.53061224489796,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 151.2,
+        "topics": {
+          "primaryTopic": "Added",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Height",
+            "Container"
+          ],
+          "relatedConcepts": [
+            "container",
+            "which",
+            "actually",
+            "align",
+            "them",
+            "pretty",
+            "different",
+            "than",
+            "expect",
+            "let's",
+            "talk",
+            "justify"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "added"
+        },
+        "citations": {
+          "markdown": "[CSS Tutorial - Zero to Hero (Complete Course)](https://www.youtubetimesearch.com/moment/207318b27eeb2c425db1/the-added-height-to-the-container) — “the added height to the container” (https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=23291s)",
+          "academic": "freeCodeCamp.org. *CSS Tutorial - Zero to Hero (Complete Course)*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/207318b27eeb2c425db1/the-added-height-to-the-container. Timestamp deep-link: https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=23291s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/207318b27eeb2c425db1/the-added-height-to-the-container",
+          "timestampCitation": "CSS Tutorial - Zero to Hero (Complete Course). https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=23291s (accessed 2026). Quoted moment: “the added height to the container”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "207318b27eeb2c425db1",
+            "canonicalSlug": "the-added-height-to-the-container",
+            "videoId": "1Rs2ND1ryYc",
+            "startSeconds": 23291.2,
+            "phrase": "the added height to the container",
+            "snippetExcerpt": "which actually align them in a pretty different way than you would expect. So let's talk about justify content. Now first of all, you'll notice that these are a little bit stretched out, don't worry about that for now, that's just because of the added height to the container",
+            "youtubeUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=23291s"
+          }
+        }
+      },
+      "qualityScore": 112
+    },
+    {
+      "id": "a67e70377aced5eb583b",
+      "videoId": "fis26HvvDII",
+      "phrase": "my experience in Android app development",
+      "canonicalSlug": "my-experience-in-android-app-development",
+      "startSeconds": 630.7,
+      "timestamp": "10:30",
+      "snippet": "structure also installed API level 28, down in here installed API level 26. And after that, level, 21, and also 19. Because in this version of SDKs, there were a lot of changes. And I'm just saying this because of my experience in Android app development. But if you don't",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=630s",
+      "videoTitle": "Android Development for Beginners - Full Course",
+      "channelName": "freeCodeCamp.org",
+      "materializedAt": "2026-05-16T15:56:21.635Z",
+      "semantic": {
+        "extractionKinds": [
+          "argument",
+          "explanation"
+        ],
+        "rankingSignals": {
+          "semanticDensity": 25,
+          "transcriptCompleteness": 25,
+          "explanatoryQuality": 22.5,
+          "technicalSpecificity": 4,
+          "phraseUniqueness": 24,
+          "creatorAuthority": 10,
+          "snippetCoherence": 24.2,
+          "engagementPrior": 16,
+          "searchIntentLikelihood": 5
+        },
+        "totalSemanticRank": 155.7,
+        "topics": {
+          "primaryTopic": "Experience",
+          "secondaryTopics": [
+            "Transcript search",
+            "Find YouTube quotes",
+            "Podcast transcript",
+            "Podcast clips",
+            "Android",
+            "Development"
+          ],
+          "relatedConcepts": [
+            "development",
+            "level",
+            "also",
+            "installed",
+            "because",
+            "structure",
+            "down",
+            "here",
+            "after",
+            "version",
+            "sdks",
+            "there"
+          ],
+          "creatorTopicLinks": {
+            "creatorSlug": "freecodecamp",
+            "relatedTopicSlugs": [
+              "transcript-search",
+              "find-youtube-quotes",
+              "podcast-transcript",
+              "podcast-clips"
+            ]
+          },
+          "topicClusterHint": "experience"
+        },
+        "citations": {
+          "markdown": "[Android Development for Beginners - Full Course](https://www.youtubetimesearch.com/moment/a67e70377aced5eb583b/my-experience-in-android-app-development) — “my experience in Android app development” (https://www.youtube.com/watch?v=fis26HvvDII&t=630s)",
+          "academic": "freeCodeCamp.org. *Android Development for Beginners - Full Course*. YouTube video (2026). Retrieved from https://www.youtubetimesearch.com/moment/a67e70377aced5eb583b/my-experience-in-android-app-development. Timestamp deep-link: https://www.youtube.com/watch?v=fis26HvvDII&t=630s.",
+          "quotePermalink": "https://www.youtubetimesearch.com/moment/a67e70377aced5eb583b/my-experience-in-android-app-development",
+          "timestampCitation": "Android Development for Beginners - Full Course. https://www.youtube.com/watch?v=fis26HvvDII&t=630s (accessed 2026). Quoted moment: “my experience in Android app development”.",
+          "embedSnippet": {
+            "type": "VideoMomentSnippet",
+            "version": "1",
+            "site": "https://www.youtubetimesearch.com",
+            "momentId": "a67e70377aced5eb583b",
+            "canonicalSlug": "my-experience-in-android-app-development",
+            "videoId": "fis26HvvDII",
+            "startSeconds": 630.7,
+            "phrase": "my experience in Android app development",
+            "snippetExcerpt": "structure also installed API level 28, down in here installed API level 26. And after that, level, 21, and also 19. Because in this version of SDKs, there were a lot of changes. And I'm just saying this because of my experience in Android app development. But if you don't",
+            "youtubeUrl": "https://www.youtube.com/watch?v=fis26HvvDII&t=630s"
+          }
+        }
+      },
+      "qualityScore": 122
     }
   ]
 }

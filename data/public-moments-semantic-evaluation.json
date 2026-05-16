@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-05-16T04:13:34.673Z",
+  "generatedAt": "2026-05-16T15:56:34.206Z",
   "semanticQuality": {
-    "momentsWithSemanticLayer": 100,
-    "totalMoments": 220,
-    "avgTotalSemanticRank": 170.84
+    "momentsWithSemanticLayer": 140,
+    "totalMoments": 260,
+    "avgTotalSemanticRank": 164.17
   },
   "rejectedPhrasesReport": {
-    "totalRejected": 4554,
+    "totalRejected": 4657,
     "byReason": {
+      "snippet_under_88_chars": 169,
+      "keyword_single_token_requires_strict": 3224,
+      "below_threshold_0": 54,
+      "below_threshold_10": 119,
       "below_threshold_1": 111,
       "below_threshold_6": 58,
       "below_threshold_7": 131,
       "below_threshold_-19": 20,
       "below_threshold_-9": 51,
-      "below_threshold_0": 52,
       "below_threshold_11": 170,
-      "snippet_under_88_chars": 149,
-      "below_threshold_10": 117,
       "below_threshold_-10": 15,
       "below_threshold_9": 25,
-      "keyword_single_token_requires_strict": 3145,
       "phrase_not_reflected_in_snippet": 24,
       "below_threshold_-2": 25,
       "below_threshold_5": 36,
@@ -60,6 +60,624 @@
       "below_threshold_-30": 1
     },
     "sample": [
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "Hugging Face",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -22
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "hugging",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "face",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "fast",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "transformers",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "tensorflow",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "merve",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "lucile",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "transformer",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "2022",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "python",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -42
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "deeplearning",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "pytorch",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "parsley",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "automatic",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "sasha",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "mila",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "codecarbon",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "00GKzGyWFEs",
+        "phrase": "leandro",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "you ever work against the core incentives of people like clearly these authors have",
+        "reason": "below_threshold_0",
+        "totalScore": 0
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "where it's not like the transformer in a way is a generalization of an mlp of a",
+        "reason": "below_threshold_0",
+        "totalScore": 0
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "it called bias because it will buy us our estimator our estimator",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -28
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "where it's not like the transformer in a way is a",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "you ever work against the core incentives of",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -18
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "convolutional neural network",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -13
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "fact that their model",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -24
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "other papers model",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -19
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "that their model",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -29
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "it when the when they compare against things they say",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -58
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "lstm are more specialized mlps then the",
+        "reason": "below_threshold_10",
+        "totalScore": 10
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "it when the when they compare against",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -38
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "that being said that was it from me",
+        "reason": "below_threshold_10",
+        "totalScore": 10
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "right we we we tell the model look",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -32
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "able up here yeah so the huge",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -28
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "eady with five it it is many",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -18
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "ansformer would somehow",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -23
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "s a 256 dimensional",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -14
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "ediate neighborhood",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -18
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "0 it's a 256",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -14
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "had in lstms",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -25
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "velet filter",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -30
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "s still open",
+        "reason": "snippet_under_88_chars",
+        "totalScore": -35
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "like",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "here",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "they",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "it's",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "these",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "right",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "transformer",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "paper",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -12
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "very",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "transformers",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "know",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "what",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "that's",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": 0
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "then",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "thing",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "data",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "just",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "actually",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "which",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "image",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "into",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "inductive",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -23
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "course",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "because",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "don't",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "other",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -12
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "even",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -71
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "things",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "would",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "something",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "think",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "bias",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "general",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "mean",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "model",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -54
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "same",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "where",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "images",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "embedding",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -17
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "there",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "many",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "about",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "only",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "also",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "more",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "will",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -71
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "learn",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "layers",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "patch",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -12
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "good",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "train",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "much",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "first",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "patches",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": 0
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "layer",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -60
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "network",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": 0
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "biases",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "want",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -72
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "look",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -120
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "guess",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -12
+      },
+      {
+        "videoId": "TrdevFK_am4",
+        "phrase": "review",
+        "reason": "keyword_single_token_requires_strict",
+        "totalScore": -48
+      },
       {
         "videoId": "5t1vTLU7s40",
         "phrase": "called AI doomers a lot uh can you explain their perspective and why you think they're wrong okay so a I",
@@ -641,628 +1259,11 @@
         "phrase": "will",
         "reason": "keyword_single_token_requires_strict",
         "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "mean",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "very",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "would",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "been",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "we're",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -11
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "video",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -12
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "more",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "thing",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "something",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "predict",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 0
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "well",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "only",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -120
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "train",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -11
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "need",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -72
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "when",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "take",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "than",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "okay",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -72
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "able",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "make",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -120
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "learn",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -60
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "years",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -11
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "where",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "open",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -120
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "time",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -72
-      },
-      {
-        "videoId": "5t1vTLU7s40",
-        "phrase": "level",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -11
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "the value of the tokens that the model outputs when someone calls them up and says, \"My Mac isn't working,\" or something",
-        "reason": "phrase_not_reflected_in_snippet",
-        "totalScore": -34
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "we doing all this RL scaling if we think there's something that's going to be human-like in its ability to learn on the",
-        "reason": "below_threshold_-2",
-        "totalScore": -2
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "we doing all this RL scaling if we think there's something that's going to be",
-        "reason": "below_threshold_-2",
-        "totalScore": -2
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "n so it's fine that it's not sample efficient, then if we're going to get super sample-efficient agent from in-context l",
-        "reason": "below_threshold_6",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "-state, you build a data center and if you knew exactly the demand you were getting, you would get a certain amount of r",
-        "reason": "below_threshold_5",
-        "totalScore": 5
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "to get a reputation of telling the company the truth about what's happening, to call things what they are, to acknowledg",
-        "reason": "below_threshold_6",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "n so it's fine that it's not sample efficient, then if we're going to get super sample-efficient",
-        "reason": "below_threshold_4",
-        "totalScore": 4
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "how much should the model have an inherent set of values and go off and do things on its own",
-        "reason": "below_threshold_9",
-        "totalScore": 9
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "you think about how those principles should be set",
-        "reason": "below_threshold_-5",
-        "totalScore": -5
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "are complicated. Closing the loop on self-contained systems, whether it’s just writing software or something, how much broader gains would we see just from that",
-        "reason": "below_threshold_4",
-        "totalScore": 4
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "where is this renaissance of software? And then 2) when people do these independent evaluations, why are we not seeing the productivity benefits we would expect",
-        "reason": "below_threshold_-11",
-        "totalScore": -11
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "how you construct that. How does that work? Do you just go away for a couple of weeks and then you tell your company, \"This is the memo. Here's what we're doing",
-        "reason": "below_threshold_4",
-        "totalScore": 4
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "think",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -65
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "it's",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "like",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "about",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "there",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -68
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "what",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "just",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "we're",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -11
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "that's",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 8
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "going",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "things",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "model",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -1
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "there's",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 4
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "more",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -68
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "people",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "these",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -65
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "will",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "would",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "world",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "because",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "models",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 11
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "don't",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -9
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "then",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "where",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "some",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "thing",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "could",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "year",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "they",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -68
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "which",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "when",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "should",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "much",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "you're",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 5
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "other",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -8
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "make",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "very",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "than",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "maybe",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -7
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "years",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -9
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "them",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "data",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "compute",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "fast",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -68
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "country",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 7
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "know",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "even",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "human",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "happen",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "well",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "code",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "billion",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 7
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "company",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "something",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -66
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "want",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -71
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "were",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -67
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "doesn't",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": 6
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "we've",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -7
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "three",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -9
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "been",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -69
-      },
-      {
-        "videoId": "n1E9IZfvGMA",
-        "phrase": "point",
-        "reason": "keyword_single_token_requires_strict",
-        "totalScore": -7
-      },
-      {
-        "videoId": "qTogNUV3CAI",
-        "phrase": "the early research directions, or something that was done way back in the past, that you think will be a big deal but pe",
-        "reason": "below_threshold_-2",
-        "totalScore": -2
-      },
-      {
-        "videoId": "qTogNUV3CAI",
-        "phrase": "you make sense of the fact that in these LLMs, when you give them a lot of data in any specific domain, they tend to get",
-        "reason": "below_threshold_-19",
-        "totalScore": -19
-      },
-      {
-        "videoId": "qTogNUV3CAI",
-        "phrase": "you get to the point with these models where the synthetic data they’re outputting on the self-play they’re doing is not",
-        "reason": "below_threshold_-8",
-        "totalScore": -8
-      },
-      {
-        "videoId": "qTogNUV3CAI",
-        "phrase": "you think about securing the weights to make sure something like this doesn’t happen, making sure a very key group of pe",
-        "reason": "below_threshold_-22",
-        "totalScore": -22
       }
     ]
   },
   "topicCoverageReport": {
+    "rag, rag, transformers, vector-database": 10,
     "Training": 3,
     "Probability": 3,
     "Different": 3,
@@ -1271,12 +1272,17 @@
     "Property": 2,
     "Valid": 2,
     "Analyzing": 2,
+    "Task": 2,
     "Preferences": 2,
     "Biggest": 2,
     "Process": 2,
     "Route": 2,
     "Like": 2,
+    "Using": 2,
     "Function": 2,
+    "Create": 2,
+    "how-llms-trained, transformers, llm-fine-tuning": 2,
+    "Worldview": 2,
     "Docker": 1,
     "They": 1,
     "Posttraining": 1,
@@ -1296,7 +1302,6 @@
     "Models": 1,
     "Question": 1,
     "Excited": 1,
-    "Task": 1,
     "Many": 1,
     "Exceptions": 1,
     "Flesh": 1,
@@ -1321,7 +1326,6 @@
     "Optimal": 1,
     "Show": 1,
     "Stored": 1,
-    "Using": 1,
     "Trained": 1,
     "Client": 1,
     "Notifications": 1,
@@ -1332,7 +1336,6 @@
     "Branch": 1,
     "Steps": 1,
     "Folder": 1,
-    "Create": 1,
     "Classes": 1,
     "Install": 1,
     "General": 1,
@@ -1344,8 +1347,31 @@
     "Value": 1,
     "Document": 1,
     "Trying": 1,
-    "how-llms-trained, transformers, llm-fine-tuning": 1,
-    "Syntax": 1
+    "Syntax": 1,
+    "Attribute": 1,
+    "Hamiltonian": 1,
+    "Massive": 1,
+    "Large": 1,
+    "Ecause": 1,
+    "Advantages": 1,
+    "Supposed": 1,
+    "Advice": 1,
+    "Branching": 1,
+    "Parent": 1,
+    "Integer": 1,
+    "Model": 1,
+    "Llama": 1,
+    "Telling": 1,
+    "Text": 1,
+    "Having": 1,
+    "Class": 1,
+    "Inline": 1,
+    "Cellular": 1,
+    "llm-fine-tuning, state-of-ai-2026, ai-policy-scaling": 1,
+    "Request": 1,
+    "Building": 1,
+    "Added": 1,
+    "Experience": 1
   },
   "duplicateClusterReport": []
 }

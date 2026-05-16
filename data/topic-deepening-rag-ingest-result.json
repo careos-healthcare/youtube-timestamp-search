@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-05-16T16:02:21.285Z",
+  "topicSlug": "rag",
+  "plan": {
+    "topicSlug": "rag",
+    "queueRow": {
+      "topicSlug": "rag",
+      "currentStatus": "ready_to_showcase",
+      "priority": 15,
+      "reason": "Research-grade elite with graph depth 21 moments across 8 videos; trust 70.",
+      "targetMissingCapabilities": [
+        "compared_with edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "candidateVideoIds": [
+        "00GKzGyWFEs",
+        "H39Z_720T5s"
+      ],
+      "candidateSourceIds": [
+        "w1-011",
+        "w1-012",
+        "allowlist:Dwarkesh Patel",
+        "allowlist:Lex Fridman"
+      ],
+      "maxRecommendedIngestCount": 0,
+      "riskLevel": "low"
+    },
+    "candidates": [
+      {
+        "id": "w1-011",
+        "videoId": "00GKzGyWFEs",
+        "url": "https://www.youtube.com/watch?v=00GKzGyWFEs",
+        "channelName": "Hugging Face",
+        "channelId": null,
+        "matchedAllowlistChannel": "Hugging Face",
+        "allowlistCategory": "ml_engineering",
+        "videoTitle": "Welcome to the Hugging Face course",
+        "targetTopics": [
+          "hf-transformers-topic",
+          "transformers",
+          "llm-fine-tuning"
+        ],
+        "expectedTopicCoverageGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+        "riskLevel": "low",
+        "rationale": "High-priority allowlist channel absent from indexed creators per MISSING_CORPUS_REPORT.",
+        "durationMinutesEstimate": 5,
+        "ingestKind": "youtube_video",
+        "dedupeKey": "wave1:video:00GKzGyWFEs",
+        "sourceQuality": {
+          "score": 100,
+          "tier": "A",
+          "reasons": [
+            "Allowlisted channel (“Hugging Face”, high trust prior)",
+            "Transcript available for preflight",
+            "Long transcript (high segment count) — long-form prior",
+            "Educational / course language in title"
+          ],
+          "penalties": [
+            "Very short runtime — likely clip / low research value"
+          ],
+          "ingestRecommendation": "promote"
+        }
+      },
+      {
+        "id": "w1-012",
+        "videoId": "H39Z_720T5s",
+        "url": "https://www.youtube.com/watch?v=H39Z_720T5s",
+        "channelName": "Hugging Face",
+        "channelId": null,
+        "matchedAllowlistChannel": "Hugging Face",
+        "allowlistCategory": "ml_engineering",
+        "videoTitle": "The Transformer architecture",
+        "targetTopics": [
+          "transformers",
+          "hf-transformers-topic"
+        ],
+        "expectedTopicCoverageGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
+        "riskLevel": "low",
+        "rationale": "Short but citation-friendly title; pair with longer HF chapters in same ingest batch.",
+        "durationMinutesEstimate": 3,
+        "ingestKind": "youtube_video",
+        "dedupeKey": "wave1:video:H39Z_720T5s",
+        "sourceQuality": {
+          "score": 100,
+          "tier": "A",
+          "reasons": [
+            "Allowlisted channel (“Hugging Face”, high trust prior)",
+            "Transcript available for preflight",
+            "Long transcript (high segment count) — long-form prior",
+            "Technical tokens in title"
+          ],
+          "penalties": [
+            "Very short runtime — likely clip / low research value"
+          ],
+          "ingestRecommendation": "promote"
+        }
+      }
+    ],
+    "videoIds": [
+      "00GKzGyWFEs",
+      "H39Z_720T5s"
+    ],
+    "approval": {
+      "version": 1,
+      "topicSlug": "rag",
+      "approvedAt": "2026-05-16T16:02:20.884Z",
+      "governance": {
+        "basis": "topic-deepening-queue.json",
+        "overridesWave1ManualReview": true,
+        "reason": "Controlled topic-deepening batch for RAG only; wave-1 shortlist decisions remain needs_more_context globally but this batch is scoped to queue row priority 149."
+      },
+      "approvedVideoIds": [
+        "00GKzGyWFEs",
+        "H39Z_720T5s"
+      ],
+      "approvedWaveCandidateIds": [
+        "w1-011",
+        "w1-012"
+      ],
+      "maxIngestCount": 0
+    }
+  },
+  "ingestion": {
+    "generatedAt": "2026-05-16T15:52:00.703Z",
+    "flags": {
+      "simulate": false,
+      "writesIntended": true,
+      "dryRun": false,
+      "reportOnly": false,
+      "skipVerify": false,
+      "writeQueue": true,
+      "ingest": false,
+      "limit": 2,
+      "start": 0
+    },
+    "transcriptGate": {
+      "checked": 1,
+      "available": 1,
+      "unavailable": 0,
+      "passed": true,
+      "minChecksForGate": 3,
+      "maxUnavailableRate": 0.5
+    },
+    "summary": {
+      "eligible": 1,
+      "alreadyIndexed": 0,
+      "cachedTranscript": 0,
+      "inSeedQueue": 1,
+      "inCorpusQueue": 0,
+      "csvExcluded": 0,
+      "unavailableTranscript": 0,
+      "queued": 1,
+      "ingested": 0,
+      "failed": 0
+    },
+    "sourceQualitySummary": {
+      "meanScore": 100,
+      "tierCounts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "w1-005",
+        "videoId": "TrdevFK_am4",
+        "url": "https://www.youtube.com/watch?v=TrdevFK_am4",
+        "channelName": "Yannic Kilcher",
+        "status": "in_seed_queue",
+        "expectedTopicCoverageGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
+        "sourceQualityScore": 100,
+        "sourceQualityTier": "A",
+        "detail": "Present in data/ingestion queue.json"
+      },
+      {
+        "id": "w1-011",
+        "videoId": "00GKzGyWFEs",
+        "url": "https://www.youtube.com/watch?v=00GKzGyWFEs",
+        "channelName": "Hugging Face",
+        "status": "queued",
+        "expectedTopicCoverageGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+        "sourceQualityScore": 100,
+        "sourceQualityTier": "A",
+        "segmentCount": 103,
+        "detail": "transcript ok"
+      }
+    ],
+    "enqueue": {
+      "added": 1,
+      "skippedDuplicate": 0,
+      "skippedCached": 0,
+      "skippedInQueue": 0
+    },
+    "corpusMetricsBefore": {
+      "momentCount": 220,
+      "uniqueVideos": 54,
+      "uniqueCreators": 14,
+      "lowTierShare": 0.07272727272727272,
+      "highTierShare": 0.5590909090909091,
+      "citeRichShare": 0.45454545454545453
+    },
+    "corpusMetricsAfter": {
+      "momentCount": 220,
+      "uniqueVideos": 54,
+      "uniqueCreators": 14,
+      "lowTierShare": 0.07272727272727272,
+      "highTierShare": 0.5590909090909091,
+      "citeRichShare": 0.45454545454545453
+    },
+    "proceedToRemaining31": true
+  },
+  "worker": {
+    "processed": 2,
+    "indexed": 2,
+    "skipped": 0,
+    "failed": 0,
+    "rejected": 0
+  },
+  "researchGradeBefore": {
+    "tier": "strong",
+    "distanceToElite": 0.03,
+    "topicTrustScore": 55,
+    "researchGradeScore": 59,
+    "momentCount": 9
+  },
+  "researchGradeAfter": {
+    "tier": "elite",
+    "distanceToElite": 0,
+    "topicTrustScore": 70,
+    "researchGradeScore": 73,
+    "momentCount": 21
+  },
+  "deepeningStatusBefore": "deepen_next",
+  "deepeningStatusAfter": "ready_to_showcase",
+  "readyToShowcase": true,
+  "notes": [
+    "Patched topic field on 2 pending seed job(s).",
+    "Worker indexed 2 / processed 2 for RAG batch.",
+    "Outcome refreshed from current corpus after materialize + governance reports."
+  ]
+}

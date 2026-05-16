@@ -1,6 +1,6 @@
 # Research graph report
 
-Generated: 2026-05-16T15:41:42.062Z
+Generated: 2026-05-16T15:58:00.769Z
 
 Cross-source spoken knowledge as a **research graph** (nodes + edges), not isolated pages.
 
@@ -8,10 +8,10 @@ Cross-source spoken knowledge as a **research graph** (nodes + edges), not isola
 
 | Metric | Value |
 |--------|------:|
-| Nodes | 1095 |
-| Edges | 2063 |
-| Public moments | 220 |
-| Topics | 54 |
+| Nodes | 1299 |
+| Edges | 2453 |
+| Public moments | 260 |
+| Topics | 56 |
 | Creators | 11 |
 
 ## Quality metrics
@@ -20,10 +20,10 @@ Cross-source spoken knowledge as a **research graph** (nodes + edges), not isola
 |--------|------:|
 | Topic coverage depth (multi-video topics) | 1 |
 | Creator diversity | 11 |
-| Citation density | 45.5% |
+| Citation density | 53.8% |
 | Explanation density | 100.0% |
-| Compare-readiness | 17.0% |
-| Weak-context share | 24.5% |
+| Compare-readiness | 14.4% |
+| Weak-context share | 24.2% |
 | Orphan moments | 0 |
 | Low-trust clusters | 4 |
 
@@ -31,36 +31,36 @@ Cross-source spoken knowledge as a **research graph** (nodes + edges), not isola
 
 | Field | Value |
 |-------|-------|
-| Score (0–100) | 18 |
+| Score (0–100) | 19 |
 | Level | L0 public search prototype |
 
-_No blockers flagged._
+- Compare-readiness weak — expand multi-creator topics
 
 ## Strongest topic clusters
 
 | Topic | Moments | Videos | Creators | Cite % | Score |
 |-------|--------:|-------:|---------:|-------:|------:|
-| uncategorized | 99 | 25 | 7 | 100% | 86 |
-| how-llms-trained, transformers, llm-fine-tuning | 1 | 1 | 1 | 100% | 43 |
+| uncategorized | 127 | 33 | 7 | 100% | 85 |
+| how-llms-trained, transformers, llm-fine-tuning | 2 | 1 | 1 | 100% | 43 |
+| rag, rag, transformers, vector-database | 10 | 1 | 1 | 100% | 43 |
+| llm-fine-tuning, state-of-ai-2026, ai-policy-scaling | 1 | 1 | 1 | 100% | 43 |
 | perl-programming | 8 | 1 | 1 | 0% | 13 |
 | docker-devops | 6 | 1 | 1 | 0% | 13 |
 | flask-tutorial | 3 | 1 | 1 | 0% | 13 |
 | transformers | 3 | 1 | 1 | 0% | 13 |
 | mark-zuckerberg-llama | 3 | 1 | 1 | 0% | 13 |
 | adam-marblestone | 5 | 1 | 1 | 0% | 13 |
-| how-llms-trained | 1 | 1 | 1 | 0% | 13 |
-| ilya-sutskever | 1 | 1 | 1 | 0% | 13 |
 
 ## Edge distribution
 
-- `source_context`: 274
-- `created_by`: 272
+- `source_context`: 316
+- `created_by`: 314
 - `same_topic_as`: 160
-- `clipped_from`: 430
-- `explains`: 440
-- `contradicts_or_caveats`: 94
-- `cites`: 200
-- `supports`: 164
+- `clipped_from`: 510
+- `explains`: 520
+- `contradicts_or_caveats`: 118
+- `cites`: 280
+- `supports`: 206
 - `saved_in`: 14
 - `compared_with`: 15
 

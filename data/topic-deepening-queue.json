@@ -1,40 +1,13 @@
 {
-  "generatedAt": "2026-05-16T15:43:01.918Z",
-  "graphGeneratedAt": "2026-05-16T15:41:42.062Z",
+  "generatedAt": "2026-05-16T15:58:02.032Z",
+  "graphGeneratedAt": "2026-05-16T15:58:00.769Z",
   "summary": {
-    "readyToShowcase": 0,
-    "deepenNext": 1,
+    "readyToShowcase": 2,
+    "deepenNext": 2,
     "brokenDoNotPromote": 48,
-    "queuedForIngest": 16
+    "queuedForIngest": 14
   },
   "queue": [
-    {
-      "topicSlug": "rag",
-      "currentStatus": "deepen_next",
-      "priority": 149,
-      "reason": "Within 3% of elite bar — deepen graph before broad promotion.",
-      "targetMissingCapabilities": [
-        "compare_with edges",
-        "supports/contradicts edges",
-        "compared_with edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [
-        "TrdevFK_am4",
-        "00GKzGyWFEs"
-      ],
-      "candidateSourceIds": [
-        "w1-005",
-        "w1-011",
-        "w1-012",
-        "allowlist:Dwarkesh Patel"
-      ],
-      "maxRecommendedIngestCount": 2,
-      "riskLevel": "low"
-    },
     {
       "topicSlug": "statistics-for-ml",
       "currentStatus": "needs_primary_sources",
@@ -52,23 +25,67 @@
       ],
       "candidateVideoIds": [
         "cdiD-9MMpb0",
-        "TrdevFK_am4",
-        "EeMhj0sPrhE"
+        "EeMhj0sPrhE",
+        "YPfUiOMYOEE"
       ],
       "candidateSourceIds": [
         "w1-004",
-        "w1-005",
         "w1-007",
         "w1-008",
-        "w1-009"
+        "w1-009",
+        "w1-018"
       ],
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
     {
+      "topicSlug": "inference",
+      "currentStatus": "deepen_next",
+      "priority": 119,
+      "reason": "Within 55% of elite bar — deepen graph before broad promotion.",
+      "targetMissingCapabilities": [
+        "compare_with edges",
+        "supports/contradicts edges",
+        "compared_with edges",
+        "contradicts_or_caveats edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "candidateVideoIds": [],
+      "candidateSourceIds": [
+        "allowlist:Dwarkesh Patel",
+        "allowlist:Lex Fridman"
+      ],
+      "maxRecommendedIngestCount": 2,
+      "riskLevel": "medium"
+    },
+    {
+      "topicSlug": "nlp-fundamentals",
+      "currentStatus": "deepen_next",
+      "priority": 119,
+      "reason": "Within 55% of elite bar — deepen graph before broad promotion.",
+      "targetMissingCapabilities": [
+        "compare_with edges",
+        "supports/contradicts edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "candidateVideoIds": [],
+      "candidateSourceIds": [
+        "allowlist:MIT OpenCourseWare",
+        "allowlist:Corey Schafer"
+      ],
+      "maxRecommendedIngestCount": 2,
+      "riskLevel": "medium"
+    },
+    {
       "topicSlug": "fine-tuning",
       "currentStatus": "needs_primary_sources",
-      "priority": 116,
+      "priority": 118,
       "reason": "Primary-source share 0% below governance minimum.",
       "targetMissingCapabilities": [
         "primary_source_moment",
@@ -81,16 +98,16 @@
         "internal_upload"
       ],
       "candidateVideoIds": [
-        "n1E9IZfvGMA",
         "00GKzGyWFEs",
-        "WAvO8FTDJ8M"
+        "WAvO8FTDJ8M",
+        "g-WeCOUYBrk"
       ],
       "candidateSourceIds": [
-        "w1-002",
         "w1-011",
         "w1-023",
         "w1-026",
-        "w1-027"
+        "w1-027",
+        "allowlist:Dwarkesh Patel"
       ],
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
@@ -119,40 +136,10 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "transformers",
-      "currentStatus": "needs_citations",
-      "priority": 115,
-      "reason": "Citation density 20% below 25% bar.",
-      "targetMissingCapabilities": [
-        "citation-rich moments",
-        "cites edges",
-        "compared_with edges",
-        "supports edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar"
-      ],
-      "candidateVideoIds": [
-        "TrdevFK_am4",
-        "00GKzGyWFEs",
-        "H39Z_720T5s"
-      ],
-      "candidateSourceIds": [
-        "w1-005",
-        "w1-011",
-        "w1-012",
-        "allowlist:Dwarkesh Patel",
-        "allowlist:Lex Fridman"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "low"
-    },
-    {
       "topicSlug": "large-language-models",
       "currentStatus": "needs_primary_sources",
       "priority": 115,
-      "reason": "Primary-source share 11% below governance minimum.",
+      "reason": "Primary-source share 13% below governance minimum.",
       "targetMissingCapabilities": [
         "primary_source_moment",
         "academic_technical voice",
@@ -161,7 +148,7 @@
         "webinar",
         "internal_upload",
         "primary_source_voice",
-        "close gap: primarySource 0.11<0.15"
+        "close gap: primarySource 0.13<0.15"
       ],
       "candidateVideoIds": [],
       "candidateSourceIds": [
@@ -172,13 +159,13 @@
       "riskLevel": "medium"
     },
     {
-      "topicSlug": "inference",
-      "currentStatus": "needs_citations",
-      "priority": 108,
-      "reason": "Citation density 20% below 25% bar.",
+      "topicSlug": "reinforcement-learning",
+      "currentStatus": "needs_primary_sources",
+      "priority": 114,
+      "reason": "Primary-source share 0% below governance minimum.",
       "targetMissingCapabilities": [
-        "citation-rich moments",
-        "cites edges",
+        "primary_source_moment",
+        "academic_technical voice",
         "compared_with edges",
         "contradicts_or_caveats edges",
         "same_topic_as edges",
@@ -186,8 +173,11 @@
         "webinar",
         "internal_upload"
       ],
-      "candidateVideoIds": [],
+      "candidateVideoIds": [
+        "wraCgn27kVA"
+      ],
       "candidateSourceIds": [
+        "w1-021",
         "allowlist:Dwarkesh Patel",
         "allowlist:Lex Fridman"
       ],
@@ -234,41 +224,15 @@
       ],
       "candidateVideoIds": [
         "cdiD-9MMpb0",
-        "TrdevFK_am4",
-        "EeMhj0sPrhE"
+        "EeMhj0sPrhE",
+        "YPfUiOMYOEE"
       ],
       "candidateSourceIds": [
         "w1-004",
-        "w1-005",
         "w1-007",
         "w1-008",
-        "w1-009"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "reinforcement-learning",
-      "currentStatus": "needs_primary_sources",
-      "priority": 104,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [
-        "wraCgn27kVA"
-      ],
-      "candidateSourceIds": [
-        "w1-021",
-        "allowlist:Dwarkesh Patel",
-        "allowlist:Lex Fridman"
+        "w1-009",
+        "w1-018"
       ],
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
@@ -321,29 +285,6 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "open-source-ai",
-      "currentStatus": "needs_primary_sources",
-      "priority": 100,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "candidateVideoIds": [],
-      "candidateSourceIds": [
-        "allowlist:Dwarkesh Patel",
-        "allowlist:Lex Fridman"
-      ],
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
       "topicSlug": "devops",
       "currentStatus": "needs_primary_sources",
       "priority": 99,
@@ -373,24 +314,24 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "nlp-fundamentals",
+      "topicSlug": "open-source-ai",
       "currentStatus": "needs_primary_sources",
-      "priority": 97,
+      "priority": 99,
       "reason": "Primary-source share 0% below governance minimum.",
       "targetMissingCapabilities": [
         "primary_source_moment",
         "academic_technical voice",
+        "compared_with edges",
+        "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
         "webinar",
-        "internal_upload",
-        "primary_source_voice",
-        "close gap: primarySource 0.00<0.15"
+        "internal_upload"
       ],
       "candidateVideoIds": [],
       "candidateSourceIds": [
-        "allowlist:MIT OpenCourseWare",
-        "allowlist:Corey Schafer"
+        "allowlist:Dwarkesh Patel",
+        "allowlist:Lex Fridman"
       ],
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
@@ -398,8 +339,8 @@
     {
       "topicSlug": "javascript",
       "currentStatus": "needs_primary_sources",
-      "priority": 84,
-      "reason": "Primary-source share 5% below governance minimum.",
+      "priority": 86,
+      "reason": "Primary-source share 4% below governance minimum.",
       "targetMissingCapabilities": [
         "primary_source_moment",
         "academic_technical voice",
@@ -420,96 +361,6 @@
   ],
   "topDeepenNow": [
     {
-      "topicSlug": "rag",
-      "label": "RAG (retrieval-augmented generation)",
-      "status": "deepen_next",
-      "priority": 149,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 9,
-        "graphVideoCount": 6,
-        "graphCreatorCount": 4,
-        "graphEdgeCount": 52,
-        "compareReadiness": 0,
-        "orphanMomentCount": 5,
-        "weakContextShare": 0.1111111111111111,
-        "missingEdgeTypes": [
-          "compared_with",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload"
-        ],
-        "citationDensity": 0.4444444444444444,
-        "creatorDiversity": 5,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.7777777777777778,
-          "technicalShare": 0.4444444444444444,
-          "counterpointShare": 0.1111111111111111
-        },
-        "primarySourceCoverage": 0.2222222222222222,
-        "researchGradeTier": "strong",
-        "distanceToElite": 0.03,
-        "topicTrustScore": 55
-      },
-      "ingestionCandidates": [
-        {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "w1-011",
-          "kind": "wave1_video",
-          "videoId": "00GKzGyWFEs",
-          "channelName": "Hugging Face",
-          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
-          "score": 120
-        },
-        {
-          "id": "w1-012",
-          "kind": "wave1_video",
-          "videoId": "H39Z_720T5s",
-          "channelName": "Hugging Face",
-          "label": "w1-012 — Hugging Face: The Transformer architecture…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
-          "score": 92
-        }
-      ]
-    },
-    {
       "topicSlug": "statistics-for-ml",
       "label": "Statistics for ML",
       "status": "needs_primary_sources",
@@ -520,7 +371,7 @@
         "graphVideoCount": 5,
         "graphCreatorCount": 3,
         "graphEdgeCount": 57,
-        "compareReadiness": 0,
+        "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 0.125,
         "missingEdgeTypes": [
@@ -562,16 +413,6 @@
           "score": 120
         },
         {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
           "id": "w1-007",
           "kind": "wave1_video",
           "videoId": "EeMhj0sPrhE",
@@ -600,6 +441,136 @@
           "riskLevel": "low",
           "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
           "score": 120
+        },
+        {
+          "id": "w1-018",
+          "kind": "wave1_video",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
+          "score": 120
+        }
+      ]
+    },
+    {
+      "topicSlug": "inference",
+      "label": "LLM inference",
+      "status": "deepen_next",
+      "priority": 119,
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 6,
+        "graphVideoCount": 5,
+        "graphCreatorCount": 2,
+        "graphEdgeCount": 31,
+        "compareReadiness": 1,
+        "orphanMomentCount": 4,
+        "weakContextShare": 0.6666666666666666,
+        "missingEdgeTypes": [
+          "compared_with",
+          "contradicts_or_caveats",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.3333333333333333,
+        "creatorDiversity": 2,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.3333333333333333,
+          "technicalShare": 1,
+          "counterpointShare": 0.16666666666666666
+        },
+        "primarySourceCoverage": 0.3333333333333333,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.55,
+        "topicTrustScore": 34
+      },
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 92
+        }
+      ]
+    },
+    {
+      "topicSlug": "nlp-fundamentals",
+      "label": "NLP fundamentals",
+      "status": "deepen_next",
+      "priority": 119,
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 4,
+        "graphVideoCount": 3,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 156,
+        "compareReadiness": 1,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.75,
+        "missingEdgeTypes": [
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.75,
+        "creatorDiversity": 3,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.75,
+          "technicalShare": 0.5,
+          "counterpointShare": 0.25
+        },
+        "primarySourceCoverage": 0.25,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.55,
+        "topicTrustScore": 49
+      },
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 93
+        },
+        {
+          "id": "allowlist:Corey Schafer",
+          "kind": "allowlist_channel",
+          "channelName": "Corey Schafer",
+          "label": "Allowlist — Corey Schafer (programming_tutorials, priority 86)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 86
         }
       ]
     },
@@ -607,16 +578,16 @@
       "topicSlug": "fine-tuning",
       "label": "Fine-tuning",
       "status": "needs_primary_sources",
-      "priority": 116,
+      "priority": 118,
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 7,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 51,
-        "compareReadiness": 0,
+        "graphMomentCount": 10,
+        "graphVideoCount": 4,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 71,
+        "compareReadiness": 1,
         "orphanMomentCount": 1,
-        "weakContextShare": 0.2857142857142857,
+        "weakContextShare": 0.4,
         "missingEdgeTypes": [
           "compared_with",
           "contradicts_or_caveats",
@@ -628,33 +599,23 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.8571428571428571,
-        "creatorDiversity": 3,
+        "citationDensity": 0.9,
+        "creatorDiversity": 4,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
-          "hasCounterpoint": false,
+          "hasCounterpoint": true,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.7142857142857143,
-          "technicalShare": 0.5714285714285714,
-          "counterpointShare": 0
+          "beginnerShare": 0.7,
+          "technicalShare": 0.5,
+          "counterpointShare": 0.1
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.54,
-        "topicTrustScore": 53
+        "distanceToElite": 0.45,
+        "topicTrustScore": 61
       },
       "ingestionCandidates": [
-        {
-          "id": "w1-002",
-          "kind": "wave1_video",
-          "videoId": "n1E9IZfvGMA",
-          "channelName": "Dwarkesh Patel",
-          "label": "w1-002 — Dwarkesh Patel: Dario Amodei — “We are near the end of the exponential”…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
-          "score": 120
-        },
         {
           "id": "w1-011",
           "kind": "wave1_video",
@@ -694,6 +655,15 @@
           "riskLevel": "medium",
           "expectedGraphGain": "Adds VC infra perspective on developer productivity vs ML engineering tutorials.",
           "score": 120
+        },
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 95
         }
       ]
     },
@@ -708,7 +678,7 @@
         "graphVideoCount": 2,
         "graphCreatorCount": 1,
         "graphEdgeCount": 82,
-        "compareReadiness": 0,
+        "compareReadiness": 0.5,
         "orphanMomentCount": 2,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -760,111 +730,19 @@
       ]
     },
     {
-      "topicSlug": "transformers",
-      "label": "Transformers",
-      "status": "needs_citations",
-      "priority": 115,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 5,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 3,
-        "graphEdgeCount": 23,
-        "compareReadiness": 0,
-        "orphanMomentCount": 4,
-        "weakContextShare": 0.2,
-        "missingEdgeTypes": [
-          "compared_with",
-          "supports",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload"
-        ],
-        "citationDensity": 0.2,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.8,
-          "technicalShare": 0.4,
-          "counterpointShare": 0
-        },
-        "primarySourceCoverage": 0.2,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.4,
-        "topicTrustScore": 33
-      },
-      "ingestionCandidates": [
-        {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "w1-011",
-          "kind": "wave1_video",
-          "videoId": "00GKzGyWFEs",
-          "channelName": "Hugging Face",
-          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
-          "score": 120
-        },
-        {
-          "id": "w1-012",
-          "kind": "wave1_video",
-          "videoId": "H39Z_720T5s",
-          "channelName": "Hugging Face",
-          "label": "w1-012 — Hugging Face: The Transformer architecture…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
-          "score": 92
-        }
-      ]
-    },
-    {
       "topicSlug": "large-language-models",
       "label": "Large language models",
       "status": "needs_primary_sources",
       "priority": 115,
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 27,
-        "graphVideoCount": 11,
+        "graphMomentCount": 32,
+        "graphVideoCount": 12,
         "graphCreatorCount": 6,
-        "graphEdgeCount": 268,
-        "compareReadiness": 0.37037037037037035,
+        "graphEdgeCount": 331,
+        "compareReadiness": 1,
         "orphanMomentCount": 10,
-        "weakContextShare": 0.6666666666666666,
+        "weakContextShare": 0.65625,
         "missingEdgeTypes": [
           "same_topic_as"
         ],
@@ -874,21 +752,21 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.6296296296296297,
+        "citationDensity": 0.6875,
         "creatorDiversity": 8,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.5185185185185185,
-          "technicalShare": 0.7037037037037037,
-          "counterpointShare": 0.07407407407407407
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.53125,
+          "technicalShare": 0.65625,
+          "counterpointShare": 0.15625
         },
-        "primarySourceCoverage": 0.1111111111111111,
+        "primarySourceCoverage": 0.125,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.61,
-        "topicTrustScore": 47
+        "distanceToElite": 0.58,
+        "topicTrustScore": 50
       },
       "ingestionCandidates": [
         {
@@ -897,7 +775,7 @@
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
           "score": 95
         },
         {
@@ -906,25 +784,25 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
           "score": 92
         }
       ]
     },
     {
-      "topicSlug": "inference",
-      "label": "LLM inference",
-      "status": "needs_citations",
-      "priority": 108,
+      "topicSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "status": "needs_primary_sources",
+      "priority": 114,
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 5,
-        "graphVideoCount": 4,
+        "graphMomentCount": 7,
+        "graphVideoCount": 2,
         "graphCreatorCount": 2,
-        "graphEdgeCount": 25,
-        "compareReadiness": 0,
-        "orphanMomentCount": 4,
-        "weakContextShare": 0.6,
+        "graphEdgeCount": 53,
+        "compareReadiness": 0.5,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.14285714285714285,
         "missingEdgeTypes": [
           "compared_with",
           "contradicts_or_caveats",
@@ -933,32 +811,43 @@
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload"
+          "internal_upload",
+          "primary_source_voice"
         ],
-        "citationDensity": 0.2,
-        "creatorDiversity": 2,
+        "citationDensity": 0.8571428571428571,
+        "creatorDiversity": 3,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": false,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.4,
-          "technicalShare": 1,
+          "hasPrimarySourceMoment": false,
+          "beginnerShare": 0.7142857142857143,
+          "technicalShare": 0.5714285714285714,
           "counterpointShare": 0
         },
-        "primarySourceCoverage": 0.4,
+        "primarySourceCoverage": 0,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.75,
-        "topicTrustScore": 30
+        "distanceToElite": 0.65,
+        "topicTrustScore": 52
       },
       "ingestionCandidates": [
+        {
+          "id": "w1-021",
+          "kind": "wave1_video",
+          "videoId": "wraCgn27kVA",
+          "channelName": "Berkeley AI Research",
+          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
+          "riskLevel": "medium",
+          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "score": 120
+        },
         {
           "id": "allowlist:Dwarkesh Patel",
           "kind": "allowlist_channel",
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
           "score": 95
         },
         {
@@ -967,7 +856,7 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
           "score": 92
         }
       ]
@@ -983,7 +872,7 @@
         "graphVideoCount": 3,
         "graphCreatorCount": 2,
         "graphEdgeCount": 77,
-        "compareReadiness": 0,
+        "compareReadiness": 0.75,
         "orphanMomentCount": 5,
         "weakContextShare": 0.16666666666666666,
         "missingEdgeTypes": [
@@ -1045,7 +934,7 @@
         "graphVideoCount": 4,
         "graphCreatorCount": 2,
         "graphEdgeCount": 85,
-        "compareReadiness": 0,
+        "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 0.07692307692307693,
         "missingEdgeTypes": [
@@ -1087,16 +976,6 @@
           "score": 120
         },
         {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
           "id": "w1-007",
           "kind": "wave1_video",
           "videoId": "EeMhj0sPrhE",
@@ -1125,78 +1004,16 @@
           "riskLevel": "low",
           "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
           "score": 120
-        }
-      ]
-    },
-    {
-      "topicSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "status": "needs_primary_sources",
-      "priority": 104,
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 6,
-        "graphVideoCount": 2,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 45,
-        "compareReadiness": 0,
-        "orphanMomentCount": 1,
-        "weakContextShare": 0.16666666666666666,
-        "missingEdgeTypes": [
-          "compared_with",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.8333333333333334,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6666666666666666,
-          "technicalShare": 0.6666666666666666,
-          "counterpointShare": 0
         },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.65,
-        "topicTrustScore": 51
-      },
-      "ingestionCandidates": [
         {
-          "id": "w1-021",
+          "id": "w1-018",
           "kind": "wave1_video",
-          "videoId": "wraCgn27kVA",
-          "channelName": "Berkeley AI Research",
-          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
           "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
         }
       ]
     },
@@ -1210,8 +1027,8 @@
         "graphMomentCount": 17,
         "graphVideoCount": 3,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 200,
-        "compareReadiness": 0.5882352941176471,
+        "graphEdgeCount": 228,
+        "compareReadiness": 0.75,
         "orphanMomentCount": 5,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -1312,25 +1129,21 @@
           "score": 86
         }
       ]
-    }
-  ],
-  "analyses": [
+    },
     {
-      "topicSlug": "rag",
-      "label": "RAG (retrieval-augmented generation)",
-      "vertical": "ai_ml",
-      "status": "deepen_next",
-      "priority": 149,
-      "reason": "Within 3% of elite bar — deepen graph before broad promotion.",
+      "topicSlug": "devops",
+      "label": "DevOps",
+      "status": "needs_primary_sources",
+      "priority": 99,
       "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 9,
-        "graphVideoCount": 6,
-        "graphCreatorCount": 4,
-        "graphEdgeCount": 52,
-        "compareReadiness": 0,
-        "orphanMomentCount": 5,
-        "weakContextShare": 0.1111111111111111,
+        "graphDepth": 84,
+        "graphMomentCount": 11,
+        "graphVideoCount": 2,
+        "graphCreatorCount": 1,
+        "graphEdgeCount": 69,
+        "compareReadiness": 0.5,
+        "orphanMomentCount": 2,
+        "weakContextShare": 0,
         "missingEdgeTypes": [
           "compared_with",
           "same_topic_as"
@@ -1338,87 +1151,69 @@
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload"
+          "internal_upload",
+          "primary_source_voice"
         ],
-        "citationDensity": 0.4444444444444444,
-        "creatorDiversity": 5,
+        "citationDensity": 0.36363636363636365,
+        "creatorDiversity": 2,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.7777777777777778,
-          "technicalShare": 0.4444444444444444,
-          "counterpointShare": 0.1111111111111111
+          "hasPrimarySourceMoment": false,
+          "beginnerShare": 0.9090909090909091,
+          "technicalShare": 0.5454545454545454,
+          "counterpointShare": 0.2727272727272727
         },
-        "primarySourceCoverage": 0.2222222222222222,
-        "researchGradeTier": "strong",
-        "distanceToElite": 0.03,
-        "topicTrustScore": 55
+        "primarySourceCoverage": 0,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.89,
+        "topicTrustScore": 29
       },
-      "targetMissingCapabilities": [
-        "compare_with edges",
-        "supports/contradicts edges",
-        "compared_with edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
       "ingestionCandidates": [
         {
-          "id": "w1-005",
+          "id": "w1-013",
           "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
+          "videoId": "kTp5xUtcalw",
+          "channelName": "freeCodeCamp.org",
+          "label": "w1-013 — freeCodeCamp.org: Docker Containers and Kubernetes Fundamentals – Full Hands-On Course…",
           "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
+          "expectedGraphGain": "Adds multi-hour Docker+K8s material to deepen kubernetes-beginners / docker-devops comparison depth.",
           "score": 120
         },
         {
-          "id": "w1-011",
+          "id": "w1-017",
           "kind": "wave1_video",
-          "videoId": "00GKzGyWFEs",
-          "channelName": "Hugging Face",
-          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
+          "videoId": "S8eX0MxfnB4",
+          "channelName": "TechWorld with Nana",
+          "label": "w1-017 — TechWorld with Nana: Kubernetes Roadmap - Complete Step-by-Step Learning Path…",
           "riskLevel": "low",
-          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+          "expectedGraphGain": "Structured learning-path explanations to complement single-video kubernetes-beginners cluster.",
           "score": 120
         },
         {
-          "id": "w1-012",
+          "id": "w1-030",
           "kind": "wave1_video",
-          "videoId": "H39Z_720T5s",
-          "channelName": "Hugging Face",
-          "label": "w1-012 — Hugging Face: The Transformer architecture…",
+          "videoId": "GBTdnfD6s5Q",
+          "channelName": "GOTO Conferences",
+          "label": "w1-030 — GOTO Conferences: When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowle…",
           "riskLevel": "low",
-          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
+          "expectedGraphGain": "Microservices tradeoff discourse for weak comparison depth in backend/devops topics.",
           "score": 120
         },
         {
-          "id": "allowlist:Dwarkesh Patel",
+          "id": "allowlist:Corey Schafer",
           "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "channelName": "Corey Schafer",
+          "label": "Allowlist — Corey Schafer (programming_tutorials, priority 86)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
-          "score": 92
+          "expectedGraphGain": "Channel prior for devops; use for sourceDiversity 1<2 gaps.",
+          "score": 86
         }
-      ],
-      "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage. | Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
-      "maxRecommendedIngestCount": 2,
-      "riskLevel": "low"
-    },
+      ]
+    }
+  ],
+  "analyses": [
     {
       "topicSlug": "statistics-for-ml",
       "label": "Statistics for ML",
@@ -1432,7 +1227,7 @@
         "graphVideoCount": 5,
         "graphCreatorCount": 3,
         "graphEdgeCount": 57,
-        "compareReadiness": 0,
+        "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 0.125,
         "missingEdgeTypes": [
@@ -1484,16 +1279,6 @@
           "score": 120
         },
         {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
           "id": "w1-007",
           "kind": "wave1_video",
           "videoId": "EeMhj0sPrhE",
@@ -1522,10 +1307,168 @@
           "riskLevel": "low",
           "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
           "score": 120
+        },
+        {
+          "id": "w1-018",
+          "kind": "wave1_video",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
+          "score": 120
         }
       ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
+      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
       "maxRecommendedIngestCount": 3,
+      "riskLevel": "medium"
+    },
+    {
+      "topicSlug": "inference",
+      "label": "LLM inference",
+      "vertical": "ai_ml",
+      "status": "deepen_next",
+      "priority": 119,
+      "reason": "Within 55% of elite bar — deepen graph before broad promotion.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 6,
+        "graphVideoCount": 5,
+        "graphCreatorCount": 2,
+        "graphEdgeCount": 31,
+        "compareReadiness": 1,
+        "orphanMomentCount": 4,
+        "weakContextShare": 0.6666666666666666,
+        "missingEdgeTypes": [
+          "compared_with",
+          "contradicts_or_caveats",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.3333333333333333,
+        "creatorDiversity": 2,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.3333333333333333,
+          "technicalShare": 1,
+          "counterpointShare": 0.16666666666666666
+        },
+        "primarySourceCoverage": 0.3333333333333333,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.55,
+        "topicTrustScore": 34
+      },
+      "targetMissingCapabilities": [
+        "compare_with edges",
+        "supports/contradicts edges",
+        "compared_with edges",
+        "contradicts_or_caveats edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 92
+        }
+      ],
+      "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps. | Channel prior for ai_ml; use for diversity gaps.",
+      "maxRecommendedIngestCount": 2,
+      "riskLevel": "medium"
+    },
+    {
+      "topicSlug": "nlp-fundamentals",
+      "label": "NLP fundamentals",
+      "vertical": "education",
+      "status": "deepen_next",
+      "priority": 119,
+      "reason": "Within 55% of elite bar — deepen graph before broad promotion.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 4,
+        "graphVideoCount": 3,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 156,
+        "compareReadiness": 1,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.75,
+        "missingEdgeTypes": [
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.75,
+        "creatorDiversity": 3,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.75,
+          "technicalShare": 0.5,
+          "counterpointShare": 0.25
+        },
+        "primarySourceCoverage": 0.25,
+        "researchGradeTier": "weak",
+        "distanceToElite": 0.55,
+        "topicTrustScore": 49
+      },
+      "targetMissingCapabilities": [
+        "compare_with edges",
+        "supports/contradicts edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:MIT OpenCourseWare",
+          "kind": "allowlist_channel",
+          "channelName": "MIT OpenCourseWare",
+          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 93
+        },
+        {
+          "id": "allowlist:Corey Schafer",
+          "kind": "allowlist_channel",
+          "channelName": "Corey Schafer",
+          "label": "Allowlist — Corey Schafer (programming_tutorials, priority 86)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for education; use for diversity gaps.",
+          "score": 86
+        }
+      ],
+      "expectedGraphGain": "Channel prior for education; use for diversity gaps. | Channel prior for education; use for diversity gaps.",
+      "maxRecommendedIngestCount": 2,
       "riskLevel": "medium"
     },
     {
@@ -1533,17 +1476,17 @@
       "label": "Fine-tuning",
       "vertical": "ai_ml",
       "status": "needs_primary_sources",
-      "priority": 116,
+      "priority": 118,
       "reason": "Primary-source share 0% below governance minimum.",
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 7,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 51,
-        "compareReadiness": 0,
+        "graphMomentCount": 10,
+        "graphVideoCount": 4,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 71,
+        "compareReadiness": 1,
         "orphanMomentCount": 1,
-        "weakContextShare": 0.2857142857142857,
+        "weakContextShare": 0.4,
         "missingEdgeTypes": [
           "compared_with",
           "contradicts_or_caveats",
@@ -1555,21 +1498,21 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.8571428571428571,
-        "creatorDiversity": 3,
+        "citationDensity": 0.9,
+        "creatorDiversity": 4,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
-          "hasCounterpoint": false,
+          "hasCounterpoint": true,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.7142857142857143,
-          "technicalShare": 0.5714285714285714,
-          "counterpointShare": 0
+          "beginnerShare": 0.7,
+          "technicalShare": 0.5,
+          "counterpointShare": 0.1
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.54,
-        "topicTrustScore": 53
+        "distanceToElite": 0.45,
+        "topicTrustScore": 61
       },
       "targetMissingCapabilities": [
         "primary_source_moment",
@@ -1582,16 +1525,6 @@
         "internal_upload"
       ],
       "ingestionCandidates": [
-        {
-          "id": "w1-002",
-          "kind": "wave1_video",
-          "videoId": "n1E9IZfvGMA",
-          "channelName": "Dwarkesh Patel",
-          "label": "w1-002 — Dwarkesh Patel: Dario Amodei — “We are near the end of the exponential”…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
-          "score": 120
-        },
         {
           "id": "w1-011",
           "kind": "wave1_video",
@@ -1631,9 +1564,18 @@
           "riskLevel": "medium",
           "expectedGraphGain": "Adds VC infra perspective on developer productivity vs ML engineering tutorials.",
           "score": 120
+        },
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 95
         }
       ],
-      "expectedGraphGain": "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth. | Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+      "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Tool-use / systems angle for LLM topics with weak multi-creator comparison depth.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
@@ -1650,7 +1592,7 @@
         "graphVideoCount": 2,
         "graphCreatorCount": 1,
         "graphEdgeCount": 82,
-        "compareReadiness": 0,
+        "compareReadiness": 0.5,
         "orphanMomentCount": 2,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -1715,128 +1657,21 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "transformers",
-      "label": "Transformers",
-      "vertical": "ai_ml",
-      "status": "needs_citations",
-      "priority": 115,
-      "reason": "Citation density 20% below 25% bar.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 5,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 3,
-        "graphEdgeCount": 23,
-        "compareReadiness": 0,
-        "orphanMomentCount": 4,
-        "weakContextShare": 0.2,
-        "missingEdgeTypes": [
-          "compared_with",
-          "supports",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload"
-        ],
-        "citationDensity": 0.2,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.8,
-          "technicalShare": 0.4,
-          "counterpointShare": 0
-        },
-        "primarySourceCoverage": 0.2,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.4,
-        "topicTrustScore": 33
-      },
-      "targetMissingCapabilities": [
-        "citation-rich moments",
-        "cites edges",
-        "compared_with edges",
-        "supports edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar"
-      ],
-      "ingestionCandidates": [
-        {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "w1-011",
-          "kind": "wave1_video",
-          "videoId": "00GKzGyWFEs",
-          "channelName": "Hugging Face",
-          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
-          "score": 120
-        },
-        {
-          "id": "w1-012",
-          "kind": "wave1_video",
-          "videoId": "H39Z_720T5s",
-          "channelName": "Hugging Face",
-          "label": "w1-012 — Hugging Face: The Transformer architecture…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
-          "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
-          "score": 92
-        }
-      ],
-      "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage. | Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "low"
-    },
-    {
       "topicSlug": "large-language-models",
       "label": "Large language models",
       "vertical": "ai_ml",
       "status": "needs_primary_sources",
       "priority": 115,
-      "reason": "Primary-source share 11% below governance minimum.",
+      "reason": "Primary-source share 13% below governance minimum.",
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 27,
-        "graphVideoCount": 11,
+        "graphMomentCount": 32,
+        "graphVideoCount": 12,
         "graphCreatorCount": 6,
-        "graphEdgeCount": 268,
-        "compareReadiness": 0.37037037037037035,
+        "graphEdgeCount": 331,
+        "compareReadiness": 1,
         "orphanMomentCount": 10,
-        "weakContextShare": 0.6666666666666666,
+        "weakContextShare": 0.65625,
         "missingEdgeTypes": [
           "same_topic_as"
         ],
@@ -1846,21 +1681,21 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.6296296296296297,
+        "citationDensity": 0.6875,
         "creatorDiversity": 8,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.5185185185185185,
-          "technicalShare": 0.7037037037037037,
-          "counterpointShare": 0.07407407407407407
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.53125,
+          "technicalShare": 0.65625,
+          "counterpointShare": 0.15625
         },
-        "primarySourceCoverage": 0.1111111111111111,
+        "primarySourceCoverage": 0.125,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.61,
-        "topicTrustScore": 47
+        "distanceToElite": 0.58,
+        "topicTrustScore": 50
       },
       "targetMissingCapabilities": [
         "primary_source_moment",
@@ -1870,7 +1705,7 @@
         "webinar",
         "internal_upload",
         "primary_source_voice",
-        "close gap: primarySource 0.11<0.15"
+        "close gap: primarySource 0.13<0.15"
       ],
       "ingestionCandidates": [
         {
@@ -1879,7 +1714,7 @@
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
           "score": 95
         },
         {
@@ -1888,30 +1723,30 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
           "score": 92
         }
       ],
-      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.11<0.15 gaps.",
+      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.13<0.15 gaps.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
     {
-      "topicSlug": "inference",
-      "label": "LLM inference",
+      "topicSlug": "reinforcement-learning",
+      "label": "Reinforcement learning",
       "vertical": "ai_ml",
-      "status": "needs_citations",
-      "priority": 108,
-      "reason": "Citation density 20% below 25% bar.",
+      "status": "needs_primary_sources",
+      "priority": 114,
+      "reason": "Primary-source share 0% below governance minimum.",
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 5,
-        "graphVideoCount": 4,
+        "graphMomentCount": 7,
+        "graphVideoCount": 2,
         "graphCreatorCount": 2,
-        "graphEdgeCount": 25,
-        "compareReadiness": 0,
-        "orphanMomentCount": 4,
-        "weakContextShare": 0.6,
+        "graphEdgeCount": 53,
+        "compareReadiness": 0.5,
+        "orphanMomentCount": 1,
+        "weakContextShare": 0.14285714285714285,
         "missingEdgeTypes": [
           "compared_with",
           "contradicts_or_caveats",
@@ -1920,27 +1755,28 @@
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload"
+          "internal_upload",
+          "primary_source_voice"
         ],
-        "citationDensity": 0.2,
-        "creatorDiversity": 2,
+        "citationDensity": 0.8571428571428571,
+        "creatorDiversity": 3,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": false,
-          "hasPrimarySourceMoment": true,
-          "beginnerShare": 0.4,
-          "technicalShare": 1,
+          "hasPrimarySourceMoment": false,
+          "beginnerShare": 0.7142857142857143,
+          "technicalShare": 0.5714285714285714,
           "counterpointShare": 0
         },
-        "primarySourceCoverage": 0.4,
+        "primarySourceCoverage": 0,
         "researchGradeTier": "weak",
-        "distanceToElite": 0.75,
-        "topicTrustScore": 30
+        "distanceToElite": 0.65,
+        "topicTrustScore": 52
       },
       "targetMissingCapabilities": [
-        "citation-rich moments",
-        "cites edges",
+        "primary_source_moment",
+        "academic_technical voice",
         "compared_with edges",
         "contradicts_or_caveats edges",
         "same_topic_as edges",
@@ -1950,12 +1786,22 @@
       ],
       "ingestionCandidates": [
         {
+          "id": "w1-021",
+          "kind": "wave1_video",
+          "videoId": "wraCgn27kVA",
+          "channelName": "Berkeley AI Research",
+          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
+          "riskLevel": "medium",
+          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "score": 120
+        },
+        {
           "id": "allowlist:Dwarkesh Patel",
           "kind": "allowlist_channel",
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
           "score": 95
         },
         {
@@ -1964,11 +1810,11 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
           "score": 92
         }
       ],
-      "expectedGraphGain": "Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps. | Channel prior for ai_ml; use for citeDensity 0.20<0.25 gaps.",
+      "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
@@ -1985,7 +1831,7 @@
         "graphVideoCount": 3,
         "graphCreatorCount": 2,
         "graphEdgeCount": 77,
-        "compareReadiness": 0,
+        "compareReadiness": 0.75,
         "orphanMomentCount": 5,
         "weakContextShare": 0.16666666666666666,
         "missingEdgeTypes": [
@@ -2062,7 +1908,7 @@
         "graphVideoCount": 4,
         "graphCreatorCount": 2,
         "graphEdgeCount": 85,
-        "compareReadiness": 0,
+        "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 0.07692307692307693,
         "missingEdgeTypes": [
@@ -2114,16 +1960,6 @@
           "score": 120
         },
         {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
           "id": "w1-007",
           "kind": "wave1_video",
           "videoId": "EeMhj0sPrhE",
@@ -2152,96 +1988,19 @@
           "riskLevel": "low",
           "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
           "score": 120
-        }
-      ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
-      "topicSlug": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "vertical": "ai_ml",
-      "status": "needs_primary_sources",
-      "priority": 104,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 6,
-        "graphVideoCount": 2,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 45,
-        "compareReadiness": 0,
-        "orphanMomentCount": 1,
-        "weakContextShare": 0.16666666666666666,
-        "missingEdgeTypes": [
-          "compared_with",
-          "contradicts_or_caveats",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.8333333333333334,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6666666666666666,
-          "technicalShare": 0.6666666666666666,
-          "counterpointShare": 0
         },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.65,
-        "topicTrustScore": 51
-      },
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "contradicts_or_caveats edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "ingestionCandidates": [
         {
-          "id": "w1-021",
+          "id": "w1-018",
           "kind": "wave1_video",
-          "videoId": "wraCgn27kVA",
-          "channelName": "Berkeley AI Research",
-          "label": "w1-021 — Berkeley AI Research: Reinforcement Learning with Large Datasets: a Path to Resourceful Autono…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research.",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
           "score": 120
-        },
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
         }
       ],
-      "expectedGraphGain": "BAIR-aligned RL seminar content; targets missing-corpus seed gap for Berkeley AI Research. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
@@ -2257,8 +2016,8 @@
         "graphMomentCount": 17,
         "graphVideoCount": 3,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 200,
-        "compareReadiness": 0.5882352941176471,
+        "graphEdgeCount": 228,
+        "compareReadiness": 0.75,
         "orphanMomentCount": 5,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -2389,83 +2148,6 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "open-source-ai",
-      "label": "Open-source AI",
-      "vertical": "ai_ml",
-      "status": "needs_primary_sources",
-      "priority": 100,
-      "reason": "Primary-source share 0% below governance minimum.",
-      "metrics": {
-        "graphDepth": 100,
-        "graphMomentCount": 5,
-        "graphVideoCount": 3,
-        "graphCreatorCount": 3,
-        "graphEdgeCount": 28,
-        "compareReadiness": 0,
-        "orphanMomentCount": 0,
-        "weakContextShare": 0.8,
-        "missingEdgeTypes": [
-          "compared_with",
-          "saved_in",
-          "same_topic_as"
-        ],
-        "missingSourceTypes": [
-          "podcast_rss",
-          "webinar",
-          "internal_upload",
-          "primary_source_voice"
-        ],
-        "citationDensity": 0.4,
-        "creatorDiversity": 3,
-        "explanationRoleCoverage": {
-          "hasBeginner": true,
-          "hasTechnical": true,
-          "hasCounterpoint": true,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 1,
-          "technicalShare": 0.4,
-          "counterpointShare": 0.2
-        },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "weak",
-        "distanceToElite": 0.85,
-        "topicTrustScore": 18
-      },
-      "targetMissingCapabilities": [
-        "primary_source_moment",
-        "academic_technical voice",
-        "compared_with edges",
-        "saved_in edges",
-        "same_topic_as edges",
-        "podcast_rss",
-        "webinar",
-        "internal_upload"
-      ],
-      "ingestionCandidates": [
-        {
-          "id": "allowlist:Dwarkesh Patel",
-          "kind": "allowlist_channel",
-          "channelName": "Dwarkesh Patel",
-          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 95
-        },
-        {
-          "id": "allowlist:Lex Fridman",
-          "kind": "allowlist_channel",
-          "channelName": "Lex Fridman",
-          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
-          "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-          "score": 92
-        }
-      ],
-      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
-      "maxRecommendedIngestCount": 3,
-      "riskLevel": "medium"
-    },
-    {
       "topicSlug": "devops",
       "label": "DevOps",
       "vertical": "devops",
@@ -2478,7 +2160,7 @@
         "graphVideoCount": 2,
         "graphCreatorCount": 1,
         "graphEdgeCount": 69,
-        "compareReadiness": 0,
+        "compareReadiness": 0.5,
         "orphanMomentCount": 2,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -2563,22 +2245,24 @@
       "riskLevel": "low"
     },
     {
-      "topicSlug": "nlp-fundamentals",
-      "label": "NLP fundamentals",
-      "vertical": "education",
+      "topicSlug": "open-source-ai",
+      "label": "Open-source AI",
+      "vertical": "ai_ml",
       "status": "needs_primary_sources",
-      "priority": 97,
+      "priority": 99,
       "reason": "Primary-source share 0% below governance minimum.",
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 3,
-        "graphVideoCount": 2,
-        "graphCreatorCount": 2,
-        "graphEdgeCount": 120,
-        "compareReadiness": 1,
-        "orphanMomentCount": 1,
-        "weakContextShare": 1,
+        "graphMomentCount": 7,
+        "graphVideoCount": 3,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 43,
+        "compareReadiness": 0.75,
+        "orphanMomentCount": 0,
+        "weakContextShare": 0.8571428571428571,
         "missingEdgeTypes": [
+          "compared_with",
+          "saved_in",
           "same_topic_as"
         ],
         "missingSourceTypes": [
@@ -2587,53 +2271,53 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.6666666666666666,
-        "creatorDiversity": 2,
+        "citationDensity": 0.5714285714285714,
+        "creatorDiversity": 3,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
-          "hasCounterpoint": false,
+          "hasCounterpoint": true,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6666666666666666,
-          "technicalShare": 0.3333333333333333,
-          "counterpointShare": 0
+          "beginnerShare": 1,
+          "technicalShare": 0.42857142857142855,
+          "counterpointShare": 0.2857142857142857
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "weak",
-        "distanceToElite": 1.25,
-        "topicTrustScore": 25
+        "distanceToElite": 0.91,
+        "topicTrustScore": 30
       },
       "targetMissingCapabilities": [
         "primary_source_moment",
         "academic_technical voice",
+        "compared_with edges",
+        "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
         "webinar",
-        "internal_upload",
-        "primary_source_voice",
-        "close gap: primarySource 0.00<0.15"
+        "internal_upload"
       ],
       "ingestionCandidates": [
         {
-          "id": "allowlist:MIT OpenCourseWare",
+          "id": "allowlist:Dwarkesh Patel",
           "kind": "allowlist_channel",
-          "channelName": "MIT OpenCourseWare",
-          "label": "Allowlist — MIT OpenCourseWare (university_lectures, priority 93)",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for education; use for primarySource 0.00<0.15 gaps.",
-          "score": 93
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 95
         },
         {
-          "id": "allowlist:Corey Schafer",
+          "id": "allowlist:Lex Fridman",
           "kind": "allowlist_channel",
-          "channelName": "Corey Schafer",
-          "label": "Allowlist — Corey Schafer (programming_tutorials, priority 86)",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for education; use for primarySource 0.00<0.15 gaps.",
-          "score": 86
+          "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
+          "score": 92
         }
       ],
-      "expectedGraphGain": "Channel prior for education; use for primarySource 0.00<0.15 gaps. | Channel prior for education; use for primarySource 0.00<0.15 gaps.",
+      "expectedGraphGain": "Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps. | Channel prior for ai_ml; use for primarySource 0.00<0.15 gaps.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "medium"
     },
@@ -2642,15 +2326,15 @@
       "label": "JavaScript",
       "vertical": "frontend",
       "status": "needs_primary_sources",
-      "priority": 84,
-      "reason": "Primary-source share 5% below governance minimum.",
+      "priority": 86,
+      "reason": "Primary-source share 4% below governance minimum.",
       "metrics": {
         "graphDepth": 100,
-        "graphMomentCount": 22,
+        "graphMomentCount": 23,
         "graphVideoCount": 10,
         "graphCreatorCount": 4,
-        "graphEdgeCount": 113,
-        "compareReadiness": 0,
+        "graphEdgeCount": 121,
+        "compareReadiness": 1,
         "orphanMomentCount": 11,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -2663,21 +2347,21 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.18181818181818182,
+        "citationDensity": 0.21739130434782608,
         "creatorDiversity": 5,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": true,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.8636363636363636,
-          "technicalShare": 0.7272727272727273,
-          "counterpointShare": 0.09090909090909091
+          "beginnerShare": 0.8695652173913043,
+          "technicalShare": 0.6956521739130435,
+          "counterpointShare": 0.08695652173913043
         },
-        "primarySourceCoverage": 0.045454545454545456,
+        "primarySourceCoverage": 0.043478260869565216,
         "researchGradeTier": "broken",
-        "distanceToElite": 0.88,
-        "topicTrustScore": 31
+        "distanceToElite": 0.81,
+        "topicTrustScore": 33
       },
       "targetMissingCapabilities": [
         "primary_source_moment",
@@ -2696,36 +2380,32 @@
           "channelName": "Corey Schafer",
           "label": "Allowlist — Corey Schafer (programming_tutorials, priority 86)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for frontend; use for citeDensity 0.18<0.25 gaps.",
+          "expectedGraphGain": "Channel prior for frontend; use for citeDensity 0.22<0.25 gaps.",
           "score": 86
         }
       ],
-      "expectedGraphGain": "Channel prior for frontend; use for citeDensity 0.18<0.25 gaps.",
+      "expectedGraphGain": "Channel prior for frontend; use for citeDensity 0.22<0.25 gaps.",
       "maxRecommendedIngestCount": 3,
       "riskLevel": "low"
     },
     {
-      "topicSlug": "vector-databases",
-      "label": "Vector databases",
+      "topicSlug": "rag",
+      "label": "RAG (retrieval-augmented generation)",
       "vertical": "ai_ml",
-      "status": "broken_do_not_promote",
-      "priority": 0,
-      "reason": "Broken tier (videos 0<2; creators 0<2; citeDensity 0.00<0.25) — do not promote or ingest blindly.",
+      "status": "ready_to_showcase",
+      "priority": 15,
+      "reason": "Research-grade elite with graph depth 21 moments across 8 videos; trust 70.",
       "metrics": {
-        "graphDepth": 0,
-        "graphMomentCount": 0,
-        "graphVideoCount": 0,
-        "graphCreatorCount": 0,
-        "graphEdgeCount": 0,
-        "compareReadiness": 0,
-        "orphanMomentCount": 0,
-        "weakContextShare": 0,
+        "graphDepth": 100,
+        "graphMomentCount": 21,
+        "graphVideoCount": 8,
+        "graphCreatorCount": 4,
+        "graphEdgeCount": 129,
+        "compareReadiness": 1,
+        "orphanMomentCount": 5,
+        "weakContextShare": 0.09523809523809523,
         "missingEdgeTypes": [
           "compared_with",
-          "cites",
-          "supports",
-          "contradicts_or_caveats",
-          "saved_in",
           "same_topic_as"
         ],
         "missingSourceTypes": [
@@ -2733,40 +2413,57 @@
           "webinar",
           "internal_upload"
         ],
-        "citationDensity": 0,
-        "creatorDiversity": 0,
+        "citationDensity": 0.7619047619047619,
+        "creatorDiversity": 5,
         "explanationRoleCoverage": {
-          "hasBeginner": false,
-          "hasTechnical": false,
-          "hasCounterpoint": false,
-          "hasPrimarySourceMoment": false,
-          "beginnerShare": 0,
-          "technicalShare": 0,
-          "counterpointShare": 0
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.47619047619047616,
+          "technicalShare": 0.2857142857142857,
+          "counterpointShare": 0.09523809523809523
         },
-        "primarySourceCoverage": 0,
-        "researchGradeTier": "broken",
-        "distanceToElite": 2.2,
-        "topicTrustScore": 0
+        "primarySourceCoverage": 0.5714285714285714,
+        "researchGradeTier": "elite",
+        "distanceToElite": 0,
+        "topicTrustScore": 70
       },
       "targetMissingCapabilities": [
         "compared_with edges",
-        "cites edges",
-        "supports edges",
-        "contradicts_or_caveats edges",
-        "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
-        "webinar"
+        "webinar",
+        "internal_upload"
       ],
       "ingestionCandidates": [
+        {
+          "id": "w1-011",
+          "kind": "wave1_video",
+          "videoId": "00GKzGyWFEs",
+          "channelName": "Hugging Face",
+          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+          "score": 120
+        },
+        {
+          "id": "w1-012",
+          "kind": "wave1_video",
+          "videoId": "H39Z_720T5s",
+          "channelName": "Hugging Face",
+          "label": "w1-012 — Hugging Face: The Transformer architecture…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
+          "score": 120
+        },
         {
           "id": "allowlist:Dwarkesh Patel",
           "kind": "allowlist_channel",
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for videos 0<2 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
           "score": 95
         },
         {
@@ -2775,12 +2472,183 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for ai_ml; use for videos 0<2 gaps.",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
           "score": 92
         }
       ],
-      "expectedGraphGain": "Channel prior for ai_ml; use for videos 0<2 gaps. | Channel prior for ai_ml; use for videos 0<2 gaps.",
-      "maxRecommendedIngestCount": 2,
+      "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Core architecture explanations to complement existing thin transformer topic coverage.",
+      "maxRecommendedIngestCount": 0,
+      "riskLevel": "low"
+    },
+    {
+      "topicSlug": "transformers",
+      "label": "Transformers",
+      "vertical": "ai_ml",
+      "status": "ready_to_showcase",
+      "priority": 15,
+      "reason": "Research-grade strong with graph depth 16 moments across 4 videos; trust 65.",
+      "metrics": {
+        "graphDepth": 100,
+        "graphMomentCount": 16,
+        "graphVideoCount": 4,
+        "graphCreatorCount": 3,
+        "graphEdgeCount": 92,
+        "compareReadiness": 1,
+        "orphanMomentCount": 4,
+        "weakContextShare": 0.125,
+        "missingEdgeTypes": [
+          "compared_with",
+          "supports",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 0.75,
+        "creatorDiversity": 3,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.375,
+          "technicalShare": 0.25,
+          "counterpointShare": 0.0625
+        },
+        "primarySourceCoverage": 0.6875,
+        "researchGradeTier": "strong",
+        "distanceToElite": 0.1,
+        "topicTrustScore": 65
+      },
+      "targetMissingCapabilities": [
+        "compared_with edges",
+        "supports edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "w1-011",
+          "kind": "wave1_video",
+          "videoId": "00GKzGyWFEs",
+          "channelName": "Hugging Face",
+          "label": "w1-011 — Hugging Face: Welcome to the Hugging Face course…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel.",
+          "score": 120
+        },
+        {
+          "id": "w1-012",
+          "kind": "wave1_video",
+          "videoId": "H39Z_720T5s",
+          "channelName": "Hugging Face",
+          "label": "w1-012 — Hugging Face: The Transformer architecture…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Core architecture explanations to complement existing thin transformer topic coverage.",
+          "score": 120
+        },
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for diversity gaps.",
+          "score": 92
+        }
+      ],
+      "expectedGraphGain": "Seeds official HF curriculum moments — directly targets missing-corpus gap for Hugging Face channel. | Core architecture explanations to complement existing thin transformer topic coverage.",
+      "maxRecommendedIngestCount": 0,
+      "riskLevel": "low"
+    },
+    {
+      "topicSlug": "vector-databases",
+      "label": "Vector databases",
+      "vertical": "ai_ml",
+      "status": "broken_do_not_promote",
+      "priority": 0,
+      "reason": "Broken tier (videos 1<2; creators 1<2; compareDepth 1<2) — do not promote or ingest blindly.",
+      "metrics": {
+        "graphDepth": 72,
+        "graphMomentCount": 10,
+        "graphVideoCount": 1,
+        "graphCreatorCount": 1,
+        "graphEdgeCount": 63,
+        "compareReadiness": 0.25,
+        "orphanMomentCount": 0,
+        "weakContextShare": 0,
+        "missingEdgeTypes": [
+          "compared_with",
+          "supports",
+          "saved_in",
+          "same_topic_as"
+        ],
+        "missingSourceTypes": [
+          "podcast_rss",
+          "webinar",
+          "internal_upload"
+        ],
+        "citationDensity": 1,
+        "creatorDiversity": 1,
+        "explanationRoleCoverage": {
+          "hasBeginner": true,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
+          "hasPrimarySourceMoment": true,
+          "beginnerShare": 0.1,
+          "technicalShare": 0.2,
+          "counterpointShare": 0.1
+        },
+        "primarySourceCoverage": 1,
+        "researchGradeTier": "broken",
+        "distanceToElite": 0.95,
+        "topicTrustScore": 60
+      },
+      "targetMissingCapabilities": [
+        "compared_with edges",
+        "supports edges",
+        "saved_in edges",
+        "same_topic_as edges",
+        "podcast_rss",
+        "webinar",
+        "internal_upload",
+        "close gap: videos 1<2"
+      ],
+      "ingestionCandidates": [
+        {
+          "id": "allowlist:Dwarkesh Patel",
+          "kind": "allowlist_channel",
+          "channelName": "Dwarkesh Patel",
+          "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for videos 1<2 gaps.",
+          "score": 95
+        },
+        {
+          "id": "allowlist:Lex Fridman",
+          "kind": "allowlist_channel",
+          "channelName": "Lex Fridman",
+          "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
+          "riskLevel": "low",
+          "expectedGraphGain": "Channel prior for ai_ml; use for videos 1<2 gaps.",
+          "score": 92
+        }
+      ],
+      "expectedGraphGain": "Channel prior for ai_ml; use for videos 1<2 gaps. | Channel prior for ai_ml; use for videos 1<2 gaps.",
+      "maxRecommendedIngestCount": 1,
       "riskLevel": "low"
     },
     {
@@ -2796,7 +2664,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 9,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 0,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -2873,7 +2741,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 8,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 0,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -2944,20 +2812,18 @@
       "vertical": "safety_eval",
       "status": "broken_do_not_promote",
       "priority": 0,
-      "reason": "Broken tier (videos 0<3; creators 0<3; citeDensity 0.00<0.4) — do not promote or ingest blindly.",
+      "reason": "Broken tier (videos 1<3; creators 1<3; compareDepth 1<3) — do not promote or ingest blindly.",
       "metrics": {
-        "graphDepth": 0,
-        "graphMomentCount": 0,
-        "graphVideoCount": 0,
-        "graphCreatorCount": 0,
-        "graphEdgeCount": 0,
-        "compareReadiness": 0,
+        "graphDepth": 86,
+        "graphMomentCount": 1,
+        "graphVideoCount": 1,
+        "graphCreatorCount": 1,
+        "graphEdgeCount": 8,
+        "compareReadiness": 0.16666666666666666,
         "orphanMomentCount": 0,
         "weakContextShare": 0,
         "missingEdgeTypes": [
           "compared_with",
-          "cites",
-          "supports",
           "contradicts_or_caveats",
           "saved_in",
           "same_topic_as"
@@ -2965,33 +2831,34 @@
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload"
+          "internal_upload",
+          "primary_source_voice"
         ],
-        "citationDensity": 0,
-        "creatorDiversity": 0,
+        "citationDensity": 1,
+        "creatorDiversity": 1,
         "explanationRoleCoverage": {
-          "hasBeginner": false,
+          "hasBeginner": true,
           "hasTechnical": false,
           "hasCounterpoint": false,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0,
+          "beginnerShare": 1,
           "technicalShare": 0,
           "counterpointShare": 0
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "broken",
-        "distanceToElite": 2.2,
-        "topicTrustScore": 0
+        "distanceToElite": 1.05,
+        "topicTrustScore": 54
       },
       "targetMissingCapabilities": [
         "compared_with edges",
-        "cites edges",
-        "supports edges",
         "contradicts_or_caveats edges",
         "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
-        "webinar"
+        "webinar",
+        "internal_upload",
+        "primary_source_voice"
       ],
       "ingestionCandidates": [
         {
@@ -3000,7 +2867,7 @@
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for safety_eval; use for videos 0<3 gaps.",
+          "expectedGraphGain": "Channel prior for safety_eval; use for videos 1<3 gaps.",
           "score": 95
         },
         {
@@ -3009,12 +2876,12 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for safety_eval; use for videos 0<3 gaps.",
+          "expectedGraphGain": "Channel prior for safety_eval; use for videos 1<3 gaps.",
           "score": 92
         }
       ],
-      "expectedGraphGain": "Channel prior for safety_eval; use for videos 0<3 gaps. | Channel prior for safety_eval; use for videos 0<3 gaps.",
-      "maxRecommendedIngestCount": 2,
+      "expectedGraphGain": "Channel prior for safety_eval; use for videos 1<3 gaps. | Channel prior for safety_eval; use for videos 1<3 gaps.",
+      "maxRecommendedIngestCount": 1,
       "riskLevel": "low"
     },
     {
@@ -3029,7 +2896,7 @@
         "graphMomentCount": 10,
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 174,
+        "graphEdgeCount": 202,
         "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 1,
@@ -3263,7 +3130,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 8,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 2,
         "weakContextShare": 1,
         "missingEdgeTypes": [
@@ -3343,7 +3210,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 8,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 2,
         "weakContextShare": 1,
         "missingEdgeTypes": [
@@ -3660,7 +3527,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 8,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 0,
         "weakContextShare": 1,
         "missingEdgeTypes": [
@@ -3738,7 +3605,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 4,
-        "compareReadiness": 0,
+        "compareReadiness": 0.16666666666666666,
         "orphanMomentCount": 1,
         "weakContextShare": 1,
         "missingEdgeTypes": [
@@ -3811,19 +3678,18 @@
       "vertical": "safety_eval",
       "status": "broken_do_not_promote",
       "priority": 0,
-      "reason": "Broken tier (videos 0<2; creators 0<2; citeDensity 0.00<0.25) — do not promote or ingest blindly.",
+      "reason": "Broken tier (videos 1<2; creators 1<2; compareDepth 1<2) — do not promote or ingest blindly.",
       "metrics": {
-        "graphDepth": 0,
-        "graphMomentCount": 0,
-        "graphVideoCount": 0,
-        "graphCreatorCount": 0,
-        "graphEdgeCount": 0,
-        "compareReadiness": 0,
+        "graphDepth": 70,
+        "graphMomentCount": 1,
+        "graphVideoCount": 1,
+        "graphCreatorCount": 1,
+        "graphEdgeCount": 6,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 0,
-        "weakContextShare": 0,
+        "weakContextShare": 1,
         "missingEdgeTypes": [
           "compared_with",
-          "cites",
           "supports",
           "contradicts_or_caveats",
           "saved_in",
@@ -3832,33 +3698,34 @@
         "missingSourceTypes": [
           "podcast_rss",
           "webinar",
-          "internal_upload"
+          "internal_upload",
+          "primary_source_voice"
         ],
-        "citationDensity": 0,
-        "creatorDiversity": 0,
+        "citationDensity": 1,
+        "creatorDiversity": 1,
         "explanationRoleCoverage": {
           "hasBeginner": false,
-          "hasTechnical": false,
-          "hasCounterpoint": false,
+          "hasTechnical": true,
+          "hasCounterpoint": true,
           "hasPrimarySourceMoment": false,
           "beginnerShare": 0,
-          "technicalShare": 0,
-          "counterpointShare": 0
+          "technicalShare": 1,
+          "counterpointShare": 1
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "broken",
-        "distanceToElite": 2.2,
-        "topicTrustScore": 0
+        "distanceToElite": 1.85,
+        "topicTrustScore": 32
       },
       "targetMissingCapabilities": [
         "compared_with edges",
-        "cites edges",
         "supports edges",
         "contradicts_or_caveats edges",
         "saved_in edges",
         "same_topic_as edges",
         "podcast_rss",
-        "webinar"
+        "webinar",
+        "internal_upload"
       ],
       "ingestionCandidates": [
         {
@@ -3869,16 +3736,6 @@
           "label": "w1-001 — Dwarkesh Patel: Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold…",
           "riskLevel": "low",
           "expectedGraphGain": "Adds a second frontier-lab voice on scaling and planning; improves authority diversity vs single-video topics in missing-corpus signals.",
-          "score": 120
-        },
-        {
-          "id": "w1-002",
-          "kind": "wave1_video",
-          "videoId": "n1E9IZfvGMA",
-          "channelName": "Dwarkesh Patel",
-          "label": "w1-002 — Dwarkesh Patel: Dario Amodei — “We are near the end of the exponential”…",
-          "riskLevel": "medium",
-          "expectedGraphGain": "Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
           "score": 120
         },
         {
@@ -3897,7 +3754,7 @@
           "channelName": "Dwarkesh Patel",
           "label": "Allowlist — Dwarkesh Patel (ai_research, priority 95)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for safety_eval; use for videos 0<2 gaps.",
+          "expectedGraphGain": "Channel prior for safety_eval; use for videos 1<2 gaps.",
           "score": 95
         },
         {
@@ -3906,12 +3763,12 @@
           "channelName": "Lex Fridman",
           "label": "Allowlist — Lex Fridman (ai_research, priority 92)",
           "riskLevel": "low",
-          "expectedGraphGain": "Channel prior for safety_eval; use for videos 0<2 gaps.",
+          "expectedGraphGain": "Channel prior for safety_eval; use for videos 1<2 gaps.",
           "score": 92
         }
       ],
-      "expectedGraphGain": "Adds a second frontier-lab voice on scaling and planning; improves authority diversity vs single-video topics in missing | Strengthens Anthropic / scaling-policy counterpoints for topics that currently have single-creator depth.",
-      "maxRecommendedIngestCount": 2,
+      "expectedGraphGain": "Adds a second frontier-lab voice on scaling and planning; improves authority diversity vs single-video topics in missing | Human-alignment / objectives angle for counterpoint coverage vs single-creator AI topics.",
+      "maxRecommendedIngestCount": 1,
       "riskLevel": "medium"
     },
     {
@@ -4084,8 +3941,8 @@
         "graphMomentCount": 16,
         "graphVideoCount": 2,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 182,
-        "compareReadiness": 0,
+        "graphEdgeCount": 210,
+        "compareReadiness": 0.5,
         "orphanMomentCount": 7,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -4541,7 +4398,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 4,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 1,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -4749,7 +4606,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 10,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 2,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -4819,7 +4676,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 8,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 2,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -5465,16 +5322,6 @@
           "score": 120
         },
         {
-          "id": "w1-005",
-          "kind": "wave1_video",
-          "videoId": "TrdevFK_am4",
-          "channelName": "Yannic Kilcher",
-          "label": "w1-005 — Yannic Kilcher: An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca…",
-          "riskLevel": "low",
-          "expectedGraphGain": "Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
-          "score": 120
-        },
-        {
           "id": "w1-007",
           "kind": "wave1_video",
           "videoId": "EeMhj0sPrhE",
@@ -5503,9 +5350,19 @@
           "riskLevel": "low",
           "expectedGraphGain": "Unsupervised / weak-label angle for ML topic authority diversity.",
           "score": 120
+        },
+        {
+          "id": "w1-018",
+          "kind": "wave1_video",
+          "videoId": "jGwO_UgTS7I",
+          "channelName": "Stanford Online",
+          "label": "w1-018 — Stanford Online: Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2…",
+          "riskLevel": "low",
+          "expectedGraphGain": "Canonical university ML lecture to boost academic_technical authority mix in corpus health.",
+          "score": 120
         }
       ],
-      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Directly thickens transformer topic beyond single-video depth flagged in topic coverage.",
+      "expectedGraphGain": "Broadens practitioner explanations tying systems ML to modern LLM narratives. | Adds optimization-theory counterpoints useful for technical comparison pages.",
       "maxRecommendedIngestCount": 2,
       "riskLevel": "medium"
     },
@@ -5759,7 +5616,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 34,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 2,
         "weakContextShare": 1,
         "missingEdgeTypes": [
@@ -5994,7 +5851,7 @@
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
         "graphEdgeCount": 7,
-        "compareReadiness": 0,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 0,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -6067,12 +5924,12 @@
       "priority": 0,
       "reason": "Broken tier (videos 1<2; compareDepth 1<2; sourceDiversity 1<2) — do not promote or ingest blindly.",
       "metrics": {
-        "graphDepth": 81,
-        "graphMomentCount": 5,
+        "graphDepth": 82,
+        "graphMomentCount": 6,
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 37,
-        "compareReadiness": 0,
+        "graphEdgeCount": 45,
+        "compareReadiness": 0.25,
         "orphanMomentCount": 1,
         "weakContextShare": 0,
         "missingEdgeTypes": [
@@ -6086,21 +5943,21 @@
           "internal_upload",
           "primary_source_voice"
         ],
-        "citationDensity": 0.8,
+        "citationDensity": 0.8333333333333334,
         "creatorDiversity": 2,
         "explanationRoleCoverage": {
           "hasBeginner": true,
           "hasTechnical": true,
           "hasCounterpoint": false,
           "hasPrimarySourceMoment": false,
-          "beginnerShare": 0.6,
-          "technicalShare": 0.6,
+          "beginnerShare": 0.6666666666666666,
+          "technicalShare": 0.5,
           "counterpointShare": 0
         },
         "primarySourceCoverage": 0,
         "researchGradeTier": "broken",
         "distanceToElite": 1.05,
-        "topicTrustScore": 45
+        "topicTrustScore": 46
       },
       "targetMissingCapabilities": [
         "compared_with edges",
@@ -6306,7 +6163,7 @@
         "graphMomentCount": 10,
         "graphVideoCount": 1,
         "graphCreatorCount": 1,
-        "graphEdgeCount": 174,
+        "graphEdgeCount": 202,
         "compareReadiness": 1,
         "orphanMomentCount": 2,
         "weakContextShare": 1,

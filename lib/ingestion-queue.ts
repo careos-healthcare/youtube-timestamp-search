@@ -209,13 +209,16 @@ export async function enqueueCandidates(
 
 export function getPendingJobs(
   limit: number,
-  paths: IngestionQueuePaths = getIngestionQueuePaths()
+  paths: IngestionQueuePaths = getIngestionQueuePaths(),
+  options?: { videoIds?: string[] }
 ): IngestionJob[] {
   const queue = loadQueue(paths);
   const now = Date.now();
+  const allow = options?.videoIds?.length ? new Set(options.videoIds) : null;
 
   return queue.jobs
     .filter((job) => {
+      if (allow && !allow.has(job.videoId)) return false;
       if (job.status !== "pending" && job.status !== "failed") return false;
       if (job.attempts >= job.maxAttempts) return false;
       if (job.nextRetryAt && Date.parse(job.nextRetryAt) > now) return false;

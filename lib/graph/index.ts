@@ -28,3 +28,12 @@ export type {
   TopicDeepeningMetrics,
   BuildTopicDeepeningInput,
 } from "./topic-deepening";
+export {
+  TOPIC_DEEPENING_RAG_SLUG,
+  TOPIC_DEEPENING_RAG_QUEUE_SOURCE,
+  buildRagIngestPlan,
+  runRagTopicDeepeningIngest,
+  refreshRagIngestOutcome,
+  formatRagIngestMarkdown,
+} from "./topic-deepening-ingest";
+export type { RagIngestOutcome, RagIngestPlan, RunRagTopicDeepeningIngestOptions } from "./topic-deepening-ingest";
