@@ -17,3 +17,5 @@ export { buildTopicCoverageReport, averageQualityTierShare } from "./topic-cover
 export type { TopicCoverageRow } from "./topic-coverage";
 export { buildMissingCorpusReport } from "./missing-corpus";
 export type { MissingCorpusFinding, SourceIndexRequestRecord } from "./missing-corpus";
+export { WAVE1_TARGET_TOPICS, WAVE1_TARGET_TOPIC_SET } from "./ingestion-wave-1-target-topics";
+export type { Wave1TargetTopic } from "./ingestion-wave-1-target-topics";

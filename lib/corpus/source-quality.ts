@@ -47,11 +47,13 @@ export function scoreIngestionSource(input: IngestionSourceScoreInput): Ingestio
   if (allow) {
     score += 22;
     reasons.push(`Allowlisted channel (“${allow.channelName}”, ${allow.trustTier} trust prior)`);
-    recordCorpusPipelineEvent("source_allowlist_match", {
-      channelName: allow.channelName,
-      category: allow.category,
-      trustTier: allow.trustTier,
-    });
+    if (process.env.CORPUS_SCORING_SKIP_ANALYTICS !== "1") {
+      recordCorpusPipelineEvent("source_allowlist_match", {
+        channelName: allow.channelName,
+        category: allow.category,
+        trustTier: allow.trustTier,
+      });
+    }
     score += allow.ingestPriority * 0.06;
     score += allow.explanationDensityEstimate * 10;
     score += allow.citationLikelihood * 8;
@@ -128,13 +130,15 @@ export function scoreIngestionSource(input: IngestionSourceScoreInput): Ingestio
 
   const result: IngestionSourceScoreResult = { score, tier, reasons, penalties, ingestRecommendation };
 
-  recordCorpusPipelineEvent("ingestion_source_scored", {
-    score,
-    tier,
-    ingestRecommendation,
-    channelName: input.channelName,
-    hasAllowlist: Boolean(allow),
-  });
+  if (process.env.CORPUS_SCORING_SKIP_ANALYTICS !== "1") {
+    recordCorpusPipelineEvent("ingestion_source_scored", {
+      score,
+      tier,
+      ingestRecommendation,
+      channelName: input.channelName,
+      hasAllowlist: Boolean(allow),
+    });
+  }
 
   return result;
 }
